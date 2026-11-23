@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m7-023",
+  "q": "Phần “Benefits” trình bày lợi ích như thế nào?",
+  "correct": "Ngắn hạn và dài hạn",
+  "wrong": [
+   "Chỉ lợi ích tài chính",
+   "Chỉ lợi ích cho nhóm",
+   "Chỉ lợi ích trước mắt"
+  ]
+ },
+ {
+  "id": "r-m7-024",
+  "q": "“Ethos” nghĩa là gì?",
+  "correct": "Độ tin cậy, năng lực, tư cách và thiện chí",
+  "wrong": [
+   "Cảm xúc, đam mê và sự đồng cảm",
+   "Logic, lý do và bằng chứng",
+   "Được yêu cầu qua RFP / RFQ / IFB; phải bám chặt định dạng, tiêu chí và deadline"
+  ]
+ },
+ {
+  "id": "r-m7-025",
+  "q": "Ý sau mô tả khái niệm nào: “Độ tin cậy, năng lực, tư cách và thiện chí”?",
+  "correct": "Ethos",
+  "wrong": [
+   "Pathos",
+   "Logos",
+   "Unsolicited"
+  ]
+ },
+ {
+  "id": "r-m7-026",
+  "q": "“Pathos” nghĩa là gì?",
+  "correct": "Cảm xúc, đam mê và sự đồng cảm",
+  "wrong": [
+   "Logic, lý do và bằng chứng",
+   "Độ tin cậy, năng lực, tư cách và thiện chí",
+   "Tự đề xuất; linh hoạt hơn nhưng phải chứng minh rõ nhu cầu, giá trị và mức liên quan"
+  ]
+ },
+ {
+  "id": "r-m7-027",
+  "q": "Ý sau mô tả khái niệm nào: “Cảm xúc, đam mê và sự đồng cảm”?",
+  "correct": "Pathos",
+  "wrong": [
+   "Ethos",
+   "Logos",
+   "Solicited"
+  ]
+ },
+ {
+  "id": "r-m7-028",
+  "q": "“Logos” nghĩa là gì?",
+  "correct": "Logic, lý do và bằng chứng",
+  "wrong": [
+   "Độ tin cậy, năng lực, tư cách và thiện chí",
+   "Cảm xúc, đam mê và sự đồng cảm",
+   "Được yêu cầu qua RFP / RFQ / IFB; phải bám chặt định dạng, tiêu chí và deadline"
+  ]
+ },
+ {
+  "id": "r-m7-029",
+  "q": "Ý sau mô tả khái niệm nào: “Logic, lý do và bằng chứng”?",
+  "correct": "Logos",
+  "wrong": [
+   "Pathos",
+   "Ethos",
+   "Unsolicited"
+  ]
+ },
+ {
+  "id": "r-m7-030",
+  "q": "Proposal / thuyết trình thuyết phục tốt cần gì về ethos, pathos, logos?",
+  "correct": "Cân bằng cả ba",
+  "wrong": [
+   "Chỉ cần logos",
+   "Ưu tiên pathos",
+   "Chỉ cần ethos"
+  ]
+ },
+ {
+  "id": "r-m7-031",
+  "q": "Pathos có được thay thế bằng chứng không?",
+  "correct": "Không",
+  "wrong": [
+   "Có",
+   "Có, nếu câu chuyện đủ cảm động",
+   "Có, khi thiếu số liệu"
+  ]
+ },
+ {
+  "id": "r-m7-032",
+  "q": "Tên dự án nhóm của môn là gì?",
+  "correct": "Student Project: Creating Social Solutions",
+  "wrong": [
+   "Social Impact Challenge",
+   "Community Startup Project",
+   "Green Campus Initiative"
+  ]
+ },
+ {
+  "id": "r-m7-033",
+  "q": "Quy mô gợi ý của nhóm dự án là bao nhiêu người?",
+  "correct": "5–7",
+  "wrong": [
+   "3–4",
+   "8–10",
+   "2–3"
+  ]
+ },
+ {
+  "id": "r-m7-034",
+  "q": "Tổng trọng số của dự án nhóm là bao nhiêu?",
+  "correct": "30%",
+  "wrong": [
+   "20%",
+   "25%",
+   "40%"
+  ]
+ },
+ {
+  "id": "r-m7-035",
+  "q": "Thứ tự ba giai đoạn của dự án?",
+  "correct": "Thành lập team & proposal → Triển khai, theo dõi, đánh giá → Báo cáo cuối kỳ & thuyết trình",
+  "wrong": [
+   "Triển khai → Proposal → Báo cáo",
+   "Proposal → Báo cáo → Triển khai",
+   "Báo cáo → Triển khai → Thuyết trình"
+  ]
+ },
+ {
+  "id": "r-m7-036",
+  "q": "Ý nào là loại dự án được gợi ý?",
+  "correct": "Sáng kiến công nghệ số",
+  "wrong": [
+   "Kinh doanh thu lợi nhuận",
+   "Nghiên cứu khoa học cơ bản",
+   "Sự kiện giải trí thương mại"
+  ]
+ },
+ {
+  "id": "r-m7-037",
+  "q": "Ý nào KHÔNG thuộc nội dung proposal của dự án?",
+  "correct": "Điểm số từng thành viên",
+  "wrong": [
+   "Problem statement và objectives",
+   "Implementation plan, roles và responsibilities",
+   "Budget và risk management"
+  ]
+ },
+ {
+  "id": "r-m7-038",
+  "q": "Dự án cần liên hệ với điều gì?",
+  "correct": "Một UN Sustainable Development Goal",
+  "wrong": [
+   "Một doanh nghiệp tài trợ",
+   "Một môn học khác",
+   "Một cuộc thi quốc tế"
+  ]
+ },
+ {
+  "id": "r-m8-001",
+  "q": "Report là gì theo tài liệu?",
+  "correct": "Tài liệu ghi nhận và truyền đạt thông tin cho một audience, mục tiêu hoặc chức năng cụ thể",
+  "wrong": [
+   "Đề nghị thuyết phục chấp nhận kế hoạch",
+   "Văn bản nội bộ ngắn",
+   "Thư gửi đối tác"
+  ]
+ },
+ {
+  "id": "r-m8-002",
+  "q": "Informational report khác analytical report thế nào?",
+  "correct": "Informational trình bày dữ kiện; analytical diễn giải và khuyến nghị",
+  "wrong": [
+   "Informational dài hơn",
+   "Analytical không có số liệu",
+   "Không khác nhau"
+  ]
+ },
+ {
+  "id": "r-m8-003",
+  "q": "Ý nào là cặp phân loại report trong tài liệu?",
+  "correct": "Vertical vs. lateral",
+  "wrong": [
+   "Solicited vs. unsolicited",
+   "Formal vs. colloquial",
+   "Paraphrase vs. summary"
+  ]
+ },
+ {
+  "id": "r-m8-004",
+  "q": "Ý nào KHÔNG thuộc các cặp phân loại report?",
+  "correct": "Hard vs. soft",
+  "wrong": [
+   "Short vs. long/formal",
+   "Routine vs. special",
+   "Internal vs. external"
+  ]
+ },
+ {
+  "id": "r-m8-005",
+  "q": "Ý nào là mục đích của report?",
+  "correct": "Ghi nhận tiến độ, vấn đề và bước tiếp theo",
+  "wrong": [
+   "Thuyết phục mua sản phẩm",
+   "Giới thiệu bản thân",
+   "Mời thầu"
+  ]
+ },
+ {
+  "id": "r-m8-006",
+  "q": "Thứ tự ba phần của báo cáo chính thức?",
+  "correct": "Preliminary → Body → Supplementary",
+  "wrong": [
+   "Body → Preliminary → Supplementary",
+   "Introduction → Body → Conclusion",
+   "Supplementary → Body → Preliminary"
+  ]
+ },
+ {
+  "id": "r-m8-007",
+  "q": "Executive summary / abstract thuộc phần nào?",
+  "correct": "Preliminary section",
+  "wrong": [
+   "Body",
+   "Supplementary section",
+   "Appendices"
+  ]
+ },
+ {
+  "id": "r-m8-008",
+  "q": "Methodology thuộc phần nào?",
+  "correct": "Body",
+  "wrong": [
+   "Preliminary section",
+   "Supplementary section",
+   "Title page"
+  ]
+ },
+ {
+  "id": "r-m8-009",
+  "q": "Recommendations thuộc phần nào?",
+  "correct": "Body",
+  "wrong": [
+   "Preliminary section",
+   "Supplementary section",
+   "Executive summary"
+  ]
+ }
+]

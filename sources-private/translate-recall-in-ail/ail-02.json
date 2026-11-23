@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m1-026",
+  "q": "Trong kiểm định giả thuyết thống kê, Giả thuyết không (H0) thường biểu thị điều gì?",
+  "correct": "Giả định không có hiệu ứng hoặc không có sự khác biệt",
+  "wrong": [
+   "Giả định chắc chắn tồn tại một hiệu ứng hoặc sự khác biệt rõ rệt",
+   "Mức ý nghĩa tối đa cho phép chấp nhận sai số dương tính giả",
+   "Xác suất dữ liệu rơi vào miền bác bỏ của phân phối chuẩn"
+  ]
+ },
+ {
+  "id": "r-m1-027",
+  "q": "Quy tắc ra quyết định trong kiểm định giả thuyết khi so sánh giá trị p (p-value) với mức ý nghĩa alpha (thường là 0.05) là gì?",
+  "correct": "Nếu p-value < alpha thì bác bỏ H0",
+  "wrong": [
+   "Nếu p-value < alpha thì bắt buộc chấp nhận H0",
+   "Nếu p-value > alpha thì bác bỏ H0",
+   "Nếu p-value = 1 thì bác bỏ hoàn toàn giả thuyết đối H1"
+  ]
+ },
+ {
+  "id": "r-m1-028",
+  "q": "Sai lầm loại I (Type I Error) trong kiểm định giả thuyết xảy ra khi nào?",
+  "correct": "Bác bỏ H0 khi H0 đúng (Dương tính giả)",
+  "wrong": [
+   "Chấp nhận H0 khi H1 đúng (Âm tính giả)",
+   "Chấp nhận H0 khi H0 đúng",
+   "Bác bỏ H0 khi H1 đúng"
+  ]
+ },
+ {
+  "id": "r-m1-029",
+  "q": "Phát biểu nào sau đây đúng về mối liên hệ giữa Tương quan (Correlation) và Nhân quả (Causation)?",
+  "correct": "Tương quan giúp dự đoán nhưng không ngụ ý nhân quả do có thể có biến gây nhiễu hoặc tương quan ảo",
+  "wrong": [
+   "Nếu hai biến có hệ số tương quan cao thì chắc chắn tồn tại mối quan hệ nhân quả trực tiếp",
+   "Tương quan không thể dùng để dự đoán nếu không chứng minh được quan hệ nhân quả",
+   "Biến gây nhiễu (Confounding variables) chỉ tồn tại khi hai biến hoàn toàn độc lập"
+  ]
+ },
+ {
+  "id": "r-m1-030",
+  "q": "Đặc điểm bắt buộc của dữ liệu đưa vào huấn luyện trong Học có giám sát (Supervised Learning) là gì?",
+  "correct": "Dữ liệu đưa vào huấn luyện phải được gán nhãn (labeled)",
+  "wrong": [
+   "Dữ liệu huấn luyện hoàn toàn không được có nhãn đi kèm",
+   "Dữ liệu chỉ bao gồm một biến đặc trưng duy nhất dạng chuỗi ký tự",
+   "Tất cả các nhãn bắt buộc phải là biến số liên tục lớn hơn 0"
+  ]
+ },
+ {
+  "id": "r-m1-031",
+  "q": "Hai từ khóa quan trọng cốt lõi (Keywords) của Học tăng cường (Reinforcement Learning) là gì?",
+  "correct": "Policy và Action",
+  "wrong": [
+   "Target và Feature",
+   "Entropy và Information Gain",
+   "Centroid và Inertia"
+  ]
+ },
+ {
+  "id": "r-m1-032",
+  "q": "Điểm khác biệt chính giữa bài toán Hồi quy (Regression) và Phân loại (Classification) trong Học có giám sát là gì?",
+  "correct": "Biến mục tiêu của Hồi quy là dạng số liên tục, còn Phân loại là dạng danh mục rời rạc",
+  "wrong": [
+   "Hồi quy không cần nhãn mục tiêu, còn phân loại bắt buộc phải có nhãn",
+   "Hồi quy sử dụng hàm mất mát Hinge Loss, còn phân loại luôn dùng hàm mất mát SSE",
+   "Hồi quy chỉ áp dụng cho dữ liệu văn bản, còn phân loại chỉ áp dụng cho dữ liệu âm thanh"
+  ]
+ },
+ {
+  "id": "r-m1-033",
+  "q": "Trong scikit-learn, phương thức nào được gọi trên đối tượng mô hình để thực hiện huấn luyện với tập dữ liệu?",
+  "correct": "`model.fit(X_train, y_train)`",
+  "wrong": [
+   "`model.predict(X_train, y_train)`",
+   "`model.transform(X_train, y_train)`",
+   "`model.evaluate(X_train, y_train)`"
+  ]
+ },
+ {
+  "id": "r-m1-034",
+  "q": "Trong quy trình chia dữ liệu, tập kiểm định (Validation Set) được sử dụng nhằm mục đích gì?",
+  "correct": "Tối ưu hóa các siêu tham số (hyperparameters) của mô hình",
+  "wrong": [
+   "Huấn luyện trực tiếp các trọng số cơ sở của mô hình",
+   "Đánh giá hiệu suất tổng thể cuối cùng của mô hình trước khi triển khai",
+   "Kiểm tra tính đúng đắn của việc mã hóa One-hot encoding"
+  ]
+ },
+ {
+  "id": "r-m1-035",
+  "q": "Mục đích cơ bản của việc phân chia dữ liệu thành tập huấn luyện (Train) và tập kiểm tra (Test) là gì?",
+  "correct": "Kiểm tra khả năng tổng quát hóa (generalization) trên dữ liệu mới và tránh quá khớp (overfitting)",
+  "wrong": [
+   "Đảm bảo kích thước dữ liệu giảm xuống để thuật toán hội tụ nhanh hơn",
+   "Chuyển đổi dữ liệu từ dạng phi tuyến tính sang dạng tuyến tính",
+   "Tự động điền các giá trị thiếu trong toàn bộ tập dữ liệu"
+  ]
+ },
+ {
+  "id": "r-m1-036",
+  "q": "Phương pháp Kiểm chéo K-lần (K-fold Cross Validation) hoạt động như thế nào?",
+  "correct": "Chia dữ liệu thành K phần, mỗi phần lần lượt làm tập kiểm tra trong khi các phần còn lại làm tập huấn luyện",
+  "wrong": [
+   "Chia dữ liệu thành K phần độc lập và huấn luyện K mô hình khác nhau không liên quan",
+   "Lặp lại việc huấn luyện K lần trên toàn bộ tập dữ liệu gốc mà không phân chia",
+   "Chọn ngẫu nhiên K điểm dữ liệu làm các tâm phân cụm đại diện"
+  ]
+ },
+ {
+  "id": "r-m1-037",
+  "q": "Trong đoạn mã `cross_val_score(lr, X, y, cv=5)`, tham số `cv=5` biểu thị điều gì?",
+  "correct": "Số phần chia (folds) trong quy trình kiểm chéo là 5",
+  "wrong": [
+   "Tỷ lệ dữ liệu của tập kiểm tra là 5%",
+   "Số lượng đặc trưng đầu vào được lựa chọn là 5",
+   "Số vòng lặp tối đa của mô hình hồi quy là 5"
+  ]
+ },
+ {
+  "id": "r-m1-038",
+  "q": "Trong Hồi quy Tuyến tính, khái niệm 'Phần dư (Residual)' được hiểu là gì?",
+  "correct": "Khoảng cách giữa giá trị thực tế và giá trị dự đoán của mô hình",
+  "wrong": [
+   "Tổng bình phương của tất cả các sai số trên tập huấn luyện",
+   "Khoảng cách giữa các quan sát và giá trị trung bình của biến độc lập",
+   "Tỷ lệ phương sai của biến mục tiêu được giải thích bởi mô hình"
+  ]
+ },
+ {
+  "id": "r-m1-039",
+  "q": "Hàm mất mát (Cost Function) thường được sử dụng trong Hồi quy Tuyến tính để tìm đường khớp tối ưu là gì?",
+  "correct": "SSE (Sum of Squared Errors) nhằm cực tiểu hóa tổng bình phương phần dư",
+  "wrong": [
+   "Hinge Loss nhằm phạt các lỗi phân loại sai trên biên",
+   "Deviance (binomial log-likelihood) nhằm tối đa hóa độ hợp lý",
+   "Exponential Loss nhằm gán trọng số lũy thừa cho các mẫu sai"
+  ]
+ },
+ {
+  "id": "r-m1-040",
+  "q": "Ý nghĩa của Hệ số xác định (R-squared / Coefficient of Determination) trong đánh giá mô hình hồi quy là gì?",
+  "correct": "Tỷ lệ phương sai của biến mục tiêu được giải thích bởi mô hình; giá trị càng gần 1 mô hình càng tốt",
+  "wrong": [
+   "Tổng độ lớn các phần dư tuyệt đối; giá trị càng lớn mô hình càng chính xác",
+   "Tỷ lệ giữa số mẫu phân loại đúng và tổng số mẫu trong ma trận nhầm lẫn",
+   "Độ dốc của siêu phẳng phân tách trong không gian đặc trưng nhiều chiều"
+  ]
+ },
+ {
+  "id": "r-m1-041",
+  "q": "Khi gọi lệnh `model.score(X_test, y_test)` với `model` là một đối tượng `LinearRegression`, kết quả nhận được là chỉ số nào?",
+  "correct": "Hệ số xác định R-squared (R^2)",
+  "wrong": [
+   "Tổng bình phương sai số SSE",
+   "Sai số tuyệt đối trung bình MAE",
+   "Độ chính xác phân loại Accuracy"
+  ]
+ },
+ {
+  "id": "r-m1-042",
+  "q": "Hồi quy Đa thức (Polynomial Regression) được sử dụng nhằm mục đích chính nào?",
+  "correct": "Nắm bắt các mối quan hệ phi tuyến tính bằng cách thêm các bậc cao của biến đặc trưng",
+  "wrong": [
+   "Ép các hệ số hồi quy không quan trọng về bằng 0 để chọn đặc trưng",
+   "Chuyển đổi bài toán hồi quy liên tục thành bài toán phân loại danh mục",
+   "Tạo thêm các mẫu giả lập cho lớp dữ liệu thiểu số"
+  ]
+ },
+ {
+  "id": "r-m1-043",
+  "q": "Rủi ro chính khi tăng bậc đa thức (degree) lên quá cao trong Hồi quy Đa thức là gì?",
+  "correct": "Mô hình rất dễ dẫn đến hiện tượng quá khớp (Overfitting)",
+  "wrong": [
+   "Mô hình bị dưới khớp (Underfitting) do giả định quá đơn giản",
+   "Phương sai của mô hình giảm mạnh về mức bằng 0",
+   "Dữ liệu huấn luyện tự động bị chuẩn hóa về khoảng [0, 1]"
+  ]
+ },
+ {
+  "id": "r-m1-044",
+  "q": "Trong scikit-learn, lớp nào được sử dụng để tạo ra các đặc trưng bậc cao cho mô hình Hồi quy Đa thức?",
+  "correct": "`PolynomialFeatures` từ thư viện `sklearn.preprocessing`",
+  "wrong": [
+   "`StandardScaler` từ thư viện `sklearn.preprocessing`",
+   "`LinearRegression` từ thư viện `sklearn.linear_model`",
+   "`DecisionTreeRegressor` từ thư viện `sklearn.tree`"
+  ]
+ },
+ {
+  "id": "r-m1-045",
+  "q": "Mục đích cơ bản của kỹ thuật Điều chuẩn (Regularization) trong học máy là gì?",
+  "correct": "Giúp giảm phương sai (Variance) bằng cách phạt các hệ số hồi quy lớn, ép chúng nhỏ lại hoặc bằng 0",
+  "wrong": [
+   "Giúp giảm độ chệch (Bias) bằng cách tăng vô hạn số lượng đặc trưng đa thức",
+   "Tự động loại bỏ tất cả các hàng dữ liệu có chứa giá trị ngoại lai",
+   "Tối ưu hóa tốc độ huấn luyện mô hình bằng cách song song hóa các luồng xử lý"
+  ]
+ },
+ {
+  "id": "r-m1-046",
+  "q": "Phương pháp điều chuẩn LASSO (L1) có đặc điểm nổi bật nào so với Ridge (L2)?",
+  "correct": "Phạt tổng trị tuyệt đối hệ số và có khả năng triệt tiêu hệ số về 0, hỗ trợ lựa chọn đặc trưng (Feature Selection)",
+  "wrong": [
+   "Phạt tổng bình phương hệ số và không bao giờ triệt tiêu hệ số về 0",
+   "Luôn kết hợp cả hai hình thức phạt L1 và L2 cùng lúc",
+   "Không yêu cầu chuẩn hóa thang đo dữ liệu trước khi huấn luyện"
+  ]
+ },
+ {
+  "id": "r-m1-047",
+  "q": "Đặc điểm chính của phương pháp hồi quy Ridge (L2) là gì?",
+  "correct": "Phạt theo tổng bình phương hệ số, giúp giảm kích thước hệ số nhưng không triệt tiêu về 0",
+  "wrong": [
+   "Phạt theo tổng trị tuyệt đối hệ số, giúp triệt tiêu hoàn toàn hệ số về 0",
+   "Tự động gán nhãn cho các điểm dữ liệu thiếu trước khi huấn luyện",
+   "Chỉ sử dụng được khi các biến đặc trưng hoàn toàn không có tương quan"
+  ]
+ },
+ {
+  "id": "r-m1-048",
+  "q": "Phương pháp điều chuẩn Elastic Net được khuyến nghị sử dụng trong trường hợp nào?",
+  "correct": "Khi tập dữ liệu có nhiều biến đặc trưng tương quan mạnh với nhau",
+  "wrong": [
+   "Khi tất cả các biến đặc trưng đều hoàn toàn độc lập và không tương quan",
+   "Khi tập dữ liệu chỉ có một biến giải thích duy nhất và không có nhiễu",
+   "Khi bài toán yêu cầu chuyển đổi dữ liệu thành các cụm phân cấp"
+  ]
+ },
+ {
+  "id": "r-m1-049",
+  "q": "Tại sao luôn cần thực hiện Scaling (ví dụ StandardScaler) trước khi áp dụng kỹ thuật Regularization?",
+  "correct": "Để các hệ số có cùng đơn vị đo, đảm bảo hình phạt được áp dụng công bằng lên mọi đặc trưng",
+  "wrong": [
+   "Để biến đổi toàn bộ nhãn mục tiêu về phân phối chuẩn có trung bình bằng 0",
+   "Để biến đổi các bài toán hồi quy phi tuyến tính thành bài toán phân loại",
+   "Để loại bỏ hoàn toàn hiện tượng đa cộng tuyến giữa các biến độc lập"
+  ]
+ },
+ {
+  "id": "r-m2-001",
+  "q": "Hồi quy Logistic (Logistic Regression) sử dụng hàm toán học nào để chuyển đổi giá trị đầu ra về khoảng xác suất từ 0 đến 1?",
+  "correct": "Hàm Sigmoid",
+  "wrong": [
+   "Hàm Hinge Loss",
+   "Hàm Softmax đa biến",
+   "Hàm mất mát SSE"
+  ]
+ }
+]

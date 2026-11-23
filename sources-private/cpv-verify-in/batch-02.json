@@ -1,0 +1,1906 @@
+[
+ {
+  "png": "cpv-slides-png/slide-025.png",
+  "png_no": 25,
+  "html_no": 27,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 14,
+    "slide": 22,
+    "question": "______ is a method of enhancing the image quality of textures on surfaces of computer graphics that are at oblique viewing angles with respect to the camera where the projection of the texture. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Anisotropic filtering",
+     "Gaussian White filter"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 15,
+    "slide": 23,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 16,
+    "slide": 24,
+    "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+    "options": [
+     "Image segmentation",
+     "Image analysis",
+     "Object detection",
+     "Object recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 17,
+    "slide": 25,
+    "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+    "options": [
+     "Geometric transformation",
+     "Image transformation",
+     "Geometric computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 18,
+    "slide": 26,
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+     "Graph transformation",
+     "Image transformation",
+     "Graph computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Khác"
+   },
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-026.png",
+  "png_no": 26,
+  "html_no": 28,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 15,
+    "slide": 23,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 16,
+    "slide": 24,
+    "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+    "options": [
+     "Image segmentation",
+     "Image analysis",
+     "Object detection",
+     "Object recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 17,
+    "slide": 25,
+    "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+    "options": [
+     "Geometric transformation",
+     "Image transformation",
+     "Geometric computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 18,
+    "slide": 26,
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+     "Graph transformation",
+     "Image transformation",
+     "Graph computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Khác"
+   },
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-027.png",
+  "png_no": 27,
+  "html_no": 29,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 16,
+    "slide": 24,
+    "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+    "options": [
+     "Image segmentation",
+     "Image analysis",
+     "Object detection",
+     "Object recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 17,
+    "slide": 25,
+    "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+    "options": [
+     "Geometric transformation",
+     "Image transformation",
+     "Geometric computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 18,
+    "slide": 26,
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+     "Graph transformation",
+     "Image transformation",
+     "Graph computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Khác"
+   },
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-028.png",
+  "png_no": 28,
+  "html_no": 30,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 17,
+    "slide": 25,
+    "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+    "options": [
+     "Geometric transformation",
+     "Image transformation",
+     "Geometric computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 18,
+    "slide": 26,
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+     "Graph transformation",
+     "Image transformation",
+     "Graph computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Khác"
+   },
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-029.png",
+  "png_no": 29,
+  "html_no": 31,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 18,
+    "slide": 26,
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+     "Graph transformation",
+     "Image transformation",
+     "Graph computing",
+     "Image computing"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Khác"
+   },
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-030.png",
+  "png_no": 30,
+  "html_no": 32,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 19,
+    "slide": 27,
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+     "Peak detector",
+     "Peak descriptor",
+     "Edge detection.",
+     "Edge descriptor"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-031.png",
+  "png_no": 31,
+  "html_no": 33,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 20,
+    "slide": 28,
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+     "Cylindrical projection",
+     "Cylindrical viewing",
+     "Cylindrical panoramic",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-032.png",
+  "png_no": 32,
+  "html_no": 34,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 21,
+    "slide": 29,
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+     "K-mean clustering model",
+     "SVN model",
+     "Gaussian Mixture Models",
+     "K- nearest model"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-033.png",
+  "png_no": 33,
+  "html_no": 35,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 22,
+    "slide": 30,
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+     "Edge features",
+     "Line features",
+     "Object features",
+     "Point features"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-034.png",
+  "png_no": 34,
+  "html_no": 36,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 23,
+    "slide": 31,
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+     "Projective transformation",
+     "Euclidean transformation",
+     "Affine transformation",
+     "Similarity transformation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-035.png",
+  "png_no": 35,
+  "html_no": 37,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 24,
+    "slide": 32,
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+     "Video Brush system",
+     "Multiple-image stitching",
+     "Panoramic video textures",
+     "Summarize and compress videos"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-036.png",
+  "png_no": 36,
+  "html_no": 38,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 25,
+    "slide": 33,
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+     "Content-based techniques",
+     "Gaussian technique",
+     "Convolution based technique",
+     "Edge detection technique"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-037.png",
+  "png_no": 37,
+  "html_no": 39,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 26,
+    "slide": 34,
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+     "Detection, identifying, and locating",
+     "Identifying, and locating",
+     "Detection and locating",
+     "Recognizing, identifying, and locating"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-038.png",
+  "png_no": 38,
+  "html_no": 40,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 27,
+    "slide": 35,
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+     "Saturation",
+     "Contrast",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-039.png",
+  "png_no": 39,
+  "html_no": 41,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 28,
+    "slide": 36,
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+     "MIP Mapping filter",
+     "Gaussian White filter",
+     "Elliptical Weighted Average (EWA) filter",
+     "Multi pass filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-040.png",
+  "png_no": 40,
+  "html_no": 42,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 29,
+    "slide": 37,
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+     "Image transformation",
+     "Heuristic transformation",
+     "Hybrid transformation",
+     "Watershed transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ }
+]

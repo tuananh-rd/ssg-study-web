@@ -1,0 +1,42 @@
+// Kiểm thử luồng nhật ký trên dev-server: node scripts/test-logs.mjs [port]
+const B = 'http://localhost:' + (process.argv[2] || 8799);
+class Jar { constructor() { this.c = ''; } async req(path, method = 'GET', body) {
+  const r = await fetch(B + path, { method, headers: { 'content-type': 'application/json', 'x-requested-with': 'ssg-web', cookie: this.c }, body: body ? JSON.stringify(body) : undefined, redirect: 'manual' });
+  const sc = r.headers.get('set-cookie'); if (sc) this.c = sc.split(';')[0];
+  let j = null; try { j = await r.json(); } catch { } return { s: r.status, j }; } }
+let fails = 0; const ok = (c, m) => { console.log((c ? 'OK   ' : 'FAIL ') + m); if (!c) fails++; };
+const boss = new Jar(), mod = new Jar(), user = new Jar(), anon = new Jar();
+ok((await anon.req('/api/login', 'POST', { email: 'boss@test.local', password: 'sai' })).s === 401, 'đăng nhập sai bị từ chối');
+ok((await boss.req('/api/login', 'POST', { email: 'boss@test.local', password: 'BossPass#2026' })).s === 200, 'boss đăng nhập');
+ok((await mod.req('/api/login', 'POST', { email: 'mod@test.local', password: 'ModPass#2026' })).s === 200, 'mod đăng nhập');
+ok((await user.req('/api/register', 'POST', { email: 'hs@test.local', name: 'Hoc Sinh', password: 'HocSinh#2026' })).s === 200, 'đăng ký học sinh');
+let us = (await boss.req('/api/admin/users')).j; const hs = us.users.find(u => u.email === 'hs@test.local');
+ok(us.canLogs === true, 'boss thấy cờ canLogs');
+ok((await boss.req('/api/admin/users/' + hs.id, 'POST', { status: 'active', subjects: ['ssg105'] })).s === 200, 'boss duyệt học sinh');
+ok((await user.req('/api/login', 'POST', { email: 'hs@test.local', password: 'HocSinh#2026' })).s === 200, 'học sinh đăng nhập');
+const ev = await user.req('/api/event', 'POST', { subject: 'ssg105', events: [{ type: 'quiz_answer', detail: { id: 5, ok: true, src: 'bank' } }, { type: 'quiz_finish', detail: { title: 'Ôn M2', n: 10, score: 8, fixed: 1, secs: 130 } }, { type: 'hack', detail: {} }] });
+ok(ev.s === 200 && ev.j.n === 2, 'sự kiện trình duyệt: nhận 2, bỏ loại lạ');
+ok((await user.req('/api/event', 'POST', { subject: 'cpv301', events: [{ type: 'search', detail: {} }] })).s === 403, 'không ghi log cho môn chưa được cấp');
+ok((await user.req('/api/admin/logs')).s === 403, 'học sinh KHÔNG xem được nhật ký');
+ok((await mod.req('/api/admin/logs')).s === 403, 'admin chưa được cấp KHÔNG xem được nhật ký');
+ok((await mod.req('/api/admin/logs/summary')).s === 403, 'admin chưa được cấp KHÔNG xem được thống kê');
+ok((await anon.req('/api/admin/logs')).s === 401, 'chưa đăng nhập KHÔNG xem được');
+const modId = us.users.find(u => u.email === 'mod@test.local').id, bossId = us.users.find(u => u.email === 'boss@test.local').id;
+ok((await mod.req('/api/admin/users/' + modId, 'POST', { can_logs: true })).s === 403, 'admin chưa có quyền không tự cấp quyền cho mình');
+ok((await boss.req('/api/admin/users/' + hs.id, 'POST', { can_logs: true })).s === 409, 'không cấp quyền xem log cho người không phải admin');
+let r = await boss.req('/api/admin/logs?limit=100'); ok(r.s === 200 && r.j.rows.length >= 8, 'boss xem được nhật ký (' + (r.j && r.j.rows.length) + ' dòng)');
+const types = new Set(r.j.rows.map(x => x.type)); for (const t of ['login_ok', 'login_fail', 'register', 'quiz_answer', 'quiz_finish', 'admin_user_update']) ok(types.has(t), 'có sự kiện ' + t);
+r = await boss.req('/api/admin/logs?user=' + hs.id); ok(r.j.rows.every(x => x.user_id === hs.id) && r.j.rows.length >= 3, 'lọc theo người dùng');
+r = await boss.req('/api/admin/logs?type=quiz_answer,quiz_finish'); ok(r.j.rows.length === 2, 'lọc theo loại');
+r = await boss.req('/api/admin/logs?q=' + encodeURIComponent('Ôn M2')); ok(r.j.rows.length === 1, 'tìm theo từ khoá');
+r = await boss.req('/api/admin/logs?q=' + encodeURIComponent("%' OR 1=1 --")); ok(r.s === 200 && r.j.rows.length === 0, 'chuỗi tìm kiếm độc hại không phá truy vấn');
+r = await boss.req('/api/admin/logs?limit=10'); ok(r.j.more === true && r.j.next, 'phân trang');
+r = await boss.req('/api/admin/logs/summary'); ok(r.s === 200 && r.j.events24h > 0 && r.j.fails24h >= 1, 'thống kê');
+ok((await boss.req('/api/admin/users/' + modId, 'POST', { can_logs: true })).s === 200, 'boss cấp quyền cho mod');
+ok((await mod.req('/api/admin/logs')).s === 200, 'mod giờ xem được');
+ok((await mod.req('/api/admin/users/' + bossId, 'POST', { can_logs: false })).s === 200, 'mod thu hồi quyền của boss (còn 1 người giữ)');
+ok((await mod.req('/api/admin/users/' + modId, 'POST', { can_logs: false })).s === 409, 'không gỡ quyền của người cuối cùng');
+ok((await boss.req('/api/admin/logs')).s === 403, 'boss mất quyền sau khi bị thu hồi');
+r = await mod.req('/api/admin/logs?type=admin_log_view,admin_user_update'); ok(r.j.rows.some(x => x.type === 'admin_log_view'), 'việc xem nhật ký cũng được ghi lại');
+console.log(fails ? '\n' + fails + ' LỖI' : '\nTất cả đạt');
+process.exit(fails ? 1 : 0);

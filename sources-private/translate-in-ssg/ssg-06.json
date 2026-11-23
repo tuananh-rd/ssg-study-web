@@ -1,0 +1,213 @@
+[
+ {
+  "id": 101,
+  "question": "What is a common risk when a problem is defined too broadly?",
+  "options": [
+   "It misses important information",
+   "It overwhelms the group",
+   "It limits creativity",
+   "It leads to immediate solutions",
+   "It ignores data-driven facts"
+  ]
+ },
+ {
+  "id": 102,
+  "question": "In the Seven-Step process, what happens during the 'Analyze the Problem' stage?",
+  "options": [
+   "The team chooses the best solution",
+   "The team gathers information and considers multiple perspectives",
+   "The team ignores customer feedback",
+   "It forces everyone to communicate in the same way to avoid conflict.",
+   "The team assigns roles like Facilitator and Recorder"
+  ]
+ },
+ {
+  "id": 103,
+  "question": "How is 'Conflict' defined in the context of teamwork?",
+  "options": [
+   "A sign that a relationship is permanently failing",
+   "A struggle associated with perceived opposing goals or needs",
+   "An unnecessary interruption that should always be avoided",
+   "A method used by leaders to punish low-performing members",
+   "A situation where everyone agrees on everything"
+  ]
+ },
+ {
+  "id": 104,
+  "question": "When giving feedback, why should it be 'Goal-directed'?",
+  "options": [
+   "To show that the leader is always right",
+   "To focus on the individual's character flaws",
+   "To connect the feedback to shared objectives and standards",
+   "To make the feedback as personal as possible",
+   "To ensure the person receiving feedback feels punished"
+  ]
+ },
+ {
+  "id": 105,
+  "question": "What is the final step in Dewey's Reflective Thinking process?",
+  "options": [
+   "Implement the chosen solution",
+   "Evaluate solutions",
+   "Disband the team",
+   "Celebrate the success",
+   "Follow up and assess results"
+  ]
+ },
+ {
+  "id": 106,
+  "question": "A team member is upset because you changed their slide. To use 'Collaborative Feedback,' how handle this?",
+  "options": [
+   "\"Yours was ugly\"",
+   "\"I wanted to match style. How do you see the change?\"",
+   "Change it back and say nothing",
+   "Tell them to stop being emotional",
+   "Ask the leader to handle it"
+  ]
+ },
+ {
+  "id": 107,
+  "question": "You wait until after the meeting to give feedback to a friend in private. Which rule?",
+  "options": [
+   "Goal-directed",
+   "Respectful Feedback",
+   "Collaborative",
+   "Conflict mining",
+   "Analysis"
+  ]
+ },
+ {
+  "id": 108,
+  "question": "What is the difference between 'Constructive' and 'Destructive' responses to conflict?",
+  "options": [
+   "Constructive responses focus on the person's character",
+   "Destructive responses encourage open dialogue",
+   "Constructive responses encourage learning and resolution",
+   "Constructive responses are always passive",
+   "Destructive responses protect the dignity of others"
+  ]
+ },
+ {
+  "id": 109,
+  "question": "What is a 'Face-saving' strategy in conflict management?",
+  "options": [
+   "Separate the issue from the individual and protect credibility",
+   "Attacking a person's credibility to lower their power",
+   "Ignoring the person entirely during the meeting",
+   "Using evaluation and judgment to win the debate",
+   "Forcing someone to admit they were wrong in front of the group"
+  ]
+ },
+ {
+  "id": 110,
+  "question": "Why can stress and change create challenges in teamwork?",
+  "options": [
+   "Teams never need to adapt processes",
+   "Collaborative work often requires adjustment and refinement",
+   "Stress automatically improves communication",
+   "Change removes the need for goals"
+  ]
+ },
+ {
+  "id": 111,
+  "question": "Why is emotional intelligence important in teamwork?",
+  "options": [
+   "It reduces all responsibilities",
+   "It improves collaboration and relationships",
+   "It removes deadlines",
+   "It replaces communication"
+  ]
+ },
+ {
+  "id": 112,
+  "question": "Which situation most likely reflects low emotional intelligence in a university team?",
+  "options": [
+   "Constructive disagreement",
+   "High engagement and participation",
+   "Withdrawal, low effort, and missed deadlines",
+   "Shared commitment to goals"
+  ]
+ },
+ {
+  "id": 113,
+  "question": "What is the primary purpose of expressing feelings productively?",
+  "options": [
+   "Releasing frustration immediately",
+   "Protecting team relationships while communicating emotions",
+   "Avoiding all emotional discussions",
+   "Winning disagreements",
+   "All are correct"
+  ]
+ },
+ {
+  "id": 114,
+  "question": "Why does viewing an issue as a challenge improve teamwork?",
+  "options": [
+   "Challenges eliminate stress completely",
+   "Challenges reduce motivation",
+   "Challenges encourage effort and goal-oriented thinking",
+   "Challenges avoid accountability"
+  ]
+ },
+ {
+  "id": 115,
+  "question": "What is the danger of emotionally charged discussions?",
+  "options": [
+   "They eliminate disagreement",
+   "They always improve teamwork",
+   "They reduce participation automatically",
+   "They may interfere with constructive problem-solving"
+  ]
+ },
+ {
+  "id": 116,
+  "question": "Which combination best supports effective teamwork?",
+  "options": [
+   "Aggressive communication and emotional reactions",
+   "Calmness, empathy, and constructive behaviour",
+   "Silence and avoidance",
+   "Competition and blame"
+  ]
+ },
+ {
+  "id": 117,
+  "question": "What is the key purpose of the \"Appreciation Circle\" activity?",
+  "options": [
+   "To compare academic performance",
+   "To strengthen trust and positive interaction",
+   "To identify weak members",
+   "To assign leadership roles"
+  ]
+ },
+ {
+  "id": 118,
+  "question": "Why is respectful communication emphasized in teamwork?",
+  "options": [
+   "It strengthens collaboration and reduces dysfunction",
+   "It removes the need for teamwork",
+   "It guarantees agreement in every discussion",
+   "It increases hierarchical control"
+  ]
+ },
+ {
+  "id": 119,
+  "question": "Which quality helps teams become stronger?",
+  "options": [
+   "Self-awareness",
+   "Avoidance",
+   "Silence",
+   "Competition only"
+  ]
+ },
+ {
+  "id": 120,
+  "question": "What is one major challenge of managing teams?",
+  "options": [
+   "Avoiding communication",
+   "Balancing individual and team needs",
+   "Eliminating all conflict",
+   "Working alone",
+   "None of them."
+  ]
+ }
+]

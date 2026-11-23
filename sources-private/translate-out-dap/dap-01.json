@@ -1,0 +1,182 @@
+{
+  "1": {
+    "q": "Loại biểu đồ nào trong Seaborn được sử dụng để trực quan hoá phân phối (distribution) của một biến liên tục cùng với ước lượng mật độ xác suất (probability density estimate) của nó? (Chọn tất cả các đáp án đúng)",
+    "options": [
+      "Histplot",
+      "KDEplot",
+      "Violinplot",
+      "Boxplot"
+    ]
+  },
+  "2": {
+    "q": "..... là một loại biểu đồ hiển thị các giá trị thường thuộc về hai biến đối chiếu với nhau. Hãy chọn đáp án đúng nhất.",
+    "options": [
+      "biểu đồ hộp (box plot)",
+      "biểu đồ phân tán (scatter plot)",
+      "biểu đồ tần số (Histogram)",
+      "biểu đồ tròn (Pie chart)"
+    ]
+  },
+  "3": {
+    "q": "Dữ liệu được thu thập khi một máy khách (client) gửi một yêu cầu ______ tới máy chủ (server).",
+    "options": [
+      "PORT",
+      "GET",
+      "PUT",
+      "HTTP"
+    ]
+  },
+  "4": {
+    "q": "Facebook Messenger và ...... là các tùy chọn tích hợp bên trong Watson Assistant từ nút Add Integration. Hãy chọn đáp án đúng nhất",
+    "options": [
+      "Slack",
+      "Google Search",
+      "Yahoo messager",
+      "Github"
+    ]
+  },
+  "5": {
+    "q": "Kỹ thuật hồi quy nào đưa vào một số hạng phạt (penalty term) dựa trên giá trị tuyệt đối của các hệ số?",
+    "options": [
+      "Hồi quy Lasso (Lasso regression)",
+      "Hồi quy Ridge (Ridge regression)",
+      "Hồi quy ElasticNet (ElasticNet regression)",
+      "Hồi quy đa thức (Polynomial regression)"
+    ]
+  },
+  "6": {
+    "q": "Kỹ thuật hồi quy nào là phần mở rộng của hồi quy tuyến tính (linear regression) nhưng bao gồm các hàm đa thức bậc cao hơn?",
+    "options": [
+      "Hồi quy Lasso (Lasso regression)",
+      "Hồi quy Ridge (Ridge regression)",
+      "Hồi quy đa thức (Polynomial regression)",
+      "Hồi quy ElasticNet (ElasticNet regression)"
+    ]
+  },
+  "7": {
+    "q": "Trong Dash, thành phần nào được sử dụng để tạo một ô nhập văn bản cho tương tác của người dùng?",
+    "options": [
+      "dcc.Input()",
+      "dcc.Dropdown()",
+      "dcc.Slider()",
+      "dcc.Graph()"
+    ]
+  },
+  "8": {
+    "q": "Trong Dash, thành phần nào được sử dụng để tạo một danh sách thả xuống (dropdown) với các tùy chọn đa lựa chọn?",
+    "options": [
+      "dcc.Input()",
+      "dcc.Dropdown()",
+      "dcc.Checklist()",
+      "dcc.Graph()"
+    ]
+  },
+  "9": {
+    "q": "Trong Dash, thành phần nào cho phép người dùng nhập các giá trị số bằng cách kéo một điểm dọc theo một phạm vi cố định?",
+    "options": [
+      "dcc.Input()",
+      "dcc.Dropdown()",
+      "dcc.Slider()",
+      "dcc.Graph()"
+    ]
+  },
+  "10": {
+    "q": "Hàm Matplotlib nào được sử dụng để tạo một biểu đồ đường (line plot) với nhiều đường trên cùng một hệ trục?",
+    "options": [
+      "plt.plot()",
+      "plt.bar()",
+      "plt.scatter()",
+      "plt.stackplot()"
+    ]
+  },
+  "11": {
+    "q": "Hàm Matplotlib nào được sử dụng để tạo một biểu đồ đường (line plot) với các điểm đánh dấu trên các điểm dữ liệu?",
+    "options": [
+      "plt.plot()",
+      "plt.line()",
+      "plt.scatter()",
+      "plt.lines()"
+    ]
+  },
+  "12": {
+    "q": "Hàm Matplotlib nào được sử dụng để tạo một biểu đồ tròn (pie chart)?",
+    "options": [
+      "plt.plot()",
+      "plt.bar()",
+      "plt.pie()",
+      "plt.scatter()"
+    ]
+  },
+  "13": {
+    "q": "Hàm Matplotlib nào được sử dụng để tạo một biểu đồ miền (area plot)?",
+    "options": [
+      "plt.plot()",
+      "plt.bar()",
+      "plt.area()",
+      "plt.stackplot()"
+    ]
+  },
+  "14": {
+    "q": "Trong Dash, thành phần nào cho phép người dùng nhập văn bản hoặc chuỗi ký tự?",
+    "options": [
+      "dcc.Input()",
+      "dcc.Dropdown()",
+      "dcc.Textarea()",
+      "dcc.Graph()"
+    ]
+  },
+  "15": {
+    "q": "Trong Dash, thành phần nào được sử dụng để tạo một menu thả xuống cho tương tác của người dùng?",
+    "options": [
+      "dcc.Input()",
+      "dcc.Dropdown()",
+      "dcc.Slider()",
+      "dcc.Graph()"
+    ]
+  },
+  "16": {
+    "q": "Loại đồ thị nào có thể được sử dụng hiệu quả trong các bảng điều khiển (Dashboards) để phân tích dữ liệu theo thời gian thực?",
+    "options": [
+      "Biểu đồ cột (Bar charts)",
+      "Biểu đồ tròn (Pie charts)",
+      "Biểu đồ đường (Line charts)",
+      "Tất cả các đáp án trên"
+    ]
+  },
+  "17": {
+    "q": "Loại đồ thị nào phù hợp nhất để hiển thị phân phối của một biến liên tục đơn lẻ?",
+    "options": [
+      "Biểu đồ tròn (Pie chart)",
+      "Biểu đồ cột (Bar chart)",
+      "Biểu đồ tần số (Histogram)",
+      "Biểu đồ đường (Line chart)"
+    ]
+  },
+  "18": {
+    "q": "Loại biểu đồ nào hữu ích để so sánh tỷ lệ giữa các danh mục khác nhau bằng cách sử dụng các hình chữ nhật có chiều cao khác nhau?",
+    "options": [
+      "Biểu đồ tròn (Pie chart)",
+      "Biểu đồ cột (Bar plot)",
+      "Biểu đồ đường (Line plot)",
+      "Biểu đồ phân tán (Scatter plot)"
+    ]
+  },
+  "19": {
+    "q": "Biểu đồ nào phù hợp nhất để thể hiện mối quan hệ giữa hai biến liên tục trong Seaborn?",
+    "options": [
+      "Biểu đồ tròn (Pie chart)",
+      "Biểu đồ phân tán (Scatter plot)",
+      "Biểu đồ cột (Bar plot)",
+      "Biểu đồ miền (Area plot)"
+    ]
+  },
+  "20": {
+    "q": "Hàm Seaborn nào có thể được sử dụng để tạo một biểu đồ phân loại (categorical plot) với các điểm không bị chồng lấp?",
+    "options": [
+      "sns.barplot()",
+      "sns.pointplot()",
+      "sns.scatterplot()",
+      "sns.boxplot()"
+    ]
+  }
+}

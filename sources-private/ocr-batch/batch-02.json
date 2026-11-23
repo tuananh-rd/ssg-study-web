@@ -1,0 +1,344 @@
+[
+  {
+    "slide": 29,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+    "options": [
+      "K-mean clustering model",
+      "SVN model",
+      "Gaussian Mixture Models",
+      "K- nearest model"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 30,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Điền vào chỗ trống",
+    "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+    "options": [
+      "Edge features",
+      "Line features",
+      "Object features",
+      "Point features"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 31,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+    "options": [
+      "Projective transformation",
+      "Euclidean transformation",
+      "Affine transformation",
+      "Similarity transformation"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 32,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+    "options": [
+      "Video Brush system",
+      "Multiple-image stitching",
+      "Panoramic video textures",
+      "Summarize and compress videos"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 33,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Điền vào chỗ trống",
+    "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+    "options": [
+      "Content-based techniques",
+      "Gaussian technique",
+      "Convolution based technique",
+      "Edge detection technique"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 34,
+    "topic": "Nhận dạng & học máy",
+    "section": "Điền vào chỗ trống",
+    "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+    "options": [
+      "Detection, identifying, and locating",
+      "Identifying, and locating",
+      "Detection and locating",
+      "Recognizing, identifying, and locating"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 35,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+    "options": [
+      "Saturation",
+      "Contrast",
+      "Noise",
+      "Brightness"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 36,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Điền vào chỗ trống",
+    "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+    "options": [
+      "MIP Mapping filter",
+      "Gaussian White filter",
+      "Elliptical Weighted Average (EWA) filter",
+      "Multi pass filter"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 37,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+    "options": [
+      "Image transformation",
+      "Heuristic transformation",
+      "Hybrid transformation",
+      "Watershed transformation"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 38,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Điền vào chỗ trống",
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+      "Gradient",
+      "Edge",
+      "Grayscale",
+      "Contour"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 39,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+      "Region combination",
+      "Object combination",
+      "Region splitting",
+      "Object splitting"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 40,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+      "Contrast",
+      "Saturation",
+      "Noise",
+      "Brightness"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 41,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+      "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+      "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+      "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+      "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 42,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "NOT / EXCEPT",
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+      "Identifying document templates",
+      "Generating panorama images",
+      "Comparing multiple scans of tissue taken at different times",
+      "Enhancing scanned or photographed documents"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 44,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "NOT / EXCEPT",
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+      "Affine mapping computation",
+      "Skewed two-dimensional coordinate system",
+      "Inverse covariance matrix for pixel grids",
+      "Circle projection of destination pixels"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 45,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "NOT / EXCEPT",
+    "question": "What is not true about image stitching?",
+    "options": [
+      "It is the process of combining multiple photographic images with overlapping fields of view",
+      "It is used in forensic and investigate science for the reconstruction of torn paper",
+      "It is used to complete mapping of a particular place",
+      "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 46,
+    "topic": "Nhận dạng & học máy",
+    "section": "NOT / EXCEPT",
+    "question": "What is not true object detection?",
+    "options": [
+      "It is the task of detecting instances of objects of a certain class within an image",
+      "It allows to identify and locate objects in a video",
+      "It recognizes with a contour in the image",
+      "It detects instances of semantic objects of a certain class"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 47,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "NOT / EXCEPT",
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+      "It estimates the parameter to deal with a large number of outliers",
+      "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+      "It selects data items randomly and then find how many data items fit the model",
+      "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 48,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Công thức",
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+      "It considers the distributions as the sum of several Gaussian models",
+      "It analyzes the distribution into the product of several Gaussian models",
+      "It considers the intensity of each pixel as the sum of several Gaussian models",
+      "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "Gaussian Mixture Model (GMM)\n mô hình hóa phân phối dữ liệu như tổng (weighted sum)\n của nhiều phân phối Gaussian:",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  }
+]

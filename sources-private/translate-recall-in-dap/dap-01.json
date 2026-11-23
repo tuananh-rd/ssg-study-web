@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m1-001",
+  "q": "Thư viện Python nào chuyên cung cấp cấu trúc dữ liệu DataFrame và Series cùng các công cụ phân tích dữ liệu?",
+  "correct": "Pandas",
+  "wrong": [
+   "NumPy",
+   "SciPy",
+   "Matplotlib"
+  ]
+ },
+ {
+  "id": "r-m1-002",
+  "q": "Trong các thư viện Python cho Khoa học Dữ liệu, thư viện nào thuộc nhóm thuật toán Máy học (Machine Learning)?",
+  "correct": "Scikit-learn",
+  "wrong": [
+   "NumPy",
+   "Seaborn",
+   "Matplotlib"
+  ]
+ },
+ {
+  "id": "r-m1-003",
+  "q": "Thư viện nào được sử dụng để trực quan hóa thống kê nâng cao và vẽ biểu đồ heatmap?",
+  "correct": "Seaborn",
+  "wrong": [
+   "Pandas",
+   "SciPy",
+   "Statsmodels"
+  ]
+ },
+ {
+  "id": "r-m1-004",
+  "q": "Để xuất dữ liệu từ một DataFrame ra file CSV mà không lưu cột chỉ số (index), cú pháp Pandas nào sau đây là đúng?",
+  "correct": "df.to_csv(\"cleaned_data.csv\", index=False)",
+  "wrong": [
+   "df.to_csv(\"cleaned_data.csv\", index=True)",
+   "df.read_csv(\"cleaned_data.csv\", index=False)",
+   "df.export_csv(\"cleaned_data.csv\", index=False)"
+  ]
+ },
+ {
+  "id": "r-m1-005",
+  "q": "Để hiển thị 5 dòng đầu tiên của một DataFrame trong Pandas, phương thức nào được sử dụng?",
+  "correct": "print(df.head())",
+  "wrong": [
+   "print(df.tail())",
+   "print(df.describe())",
+   "print(df.info())"
+  ]
+ },
+ {
+  "id": "r-m1-006",
+  "q": "Cú pháp nào sau đây trong Pandas dùng để loại bỏ các dòng có giá trị bị thiếu (NaN/Null) tại cột 'price' trực tiếp trên DataFrame hiện tại?",
+  "correct": "df.dropna(subset=['price'], axis=0, inplace=True)",
+  "wrong": [
+   "df.fillna(subset=['price'], axis=0, inplace=True)",
+   "df.dropna(subset=['price'], axis=1, inplace=False)",
+   "df.replace(subset=['price'], axis=0, inplace=True)"
+  ]
+ },
+ {
+  "id": "r-m1-007",
+  "q": "Công thức nào sau đây biểu diễn phương pháp Chuẩn hóa Z-score (Chuẩn hóa chuẩn)?",
+  "correct": "df['length'] = (df['length'] - df['length'].mean()) / df['length'].std()",
+  "wrong": [
+   "df['length'] = df['length'] / df['length'].max()",
+   "df['length'] = (df['length'] - df['length'].min()) / (df['length'].max() - df['length'].min())",
+   "df['length'] = (df['length'] - df['length'].mean()) / df['length'].max()"
+  ]
+ },
+ {
+  "id": "r-m1-008",
+  "q": "Đoạn mã `df['length'] = (df['length'] - df['length'].min()) / (df['length'].max() - df['length'].min())` tương ứng với phương pháp chuẩn hóa nào?",
+  "correct": "Min-Max Normalization",
+  "wrong": [
+   "Simple Feature Scaling",
+   "Z-score (Chuẩn hóa chuẩn)",
+   "One-Hot Encoding"
+  ]
+ },
+ {
+  "id": "r-m1-009",
+  "q": "Kỹ thuật chia khoảng (Binning) sử dụng hàm nào trong Pandas để phân nhóm các giá trị liên tục thành các khoảng phân loại (categorical bins)?",
+  "correct": "pd.cut()",
+  "wrong": [
+   "pd.get_dummies()",
+   "pd.concat()",
+   "pd.pivot()"
+  ]
+ },
+ {
+  "id": "r-m1-010",
+  "q": "Trong tiền xử lý dữ liệu, phương pháp One-Hot Encoding được thực hiện bằng hàm nào của Pandas để tạo biến giả (dummy variables)?",
+  "correct": "pd.get_dummies()",
+  "wrong": [
+   "pd.cut()",
+   "pd.dropna()",
+   "pd.concat()"
+  ]
+ },
+ {
+  "id": "r-m1-011",
+  "q": "Để tổng hợp nhanh các thông số thống kê mô tả (Descriptive Statistics) cơ bản như count, mean, std, min, max của các cột số, ta dùng lệnh nào?",
+  "correct": "print(df.describe())",
+  "wrong": [
+   "print(df.value_counts())",
+   "print(df.corr())",
+   "print(df.groupby())"
+  ]
+ },
+ {
+  "id": "r-m1-012",
+  "q": "Trong ma trận tương quan (Correlation Matrix) hiển thị bằng Heatmap, đường chéo (Diagonal Line) thể hiện điều gì?",
+  "correct": "Mọi biến luôn có hệ số tương quan hoàn hảo là 1 với chính nó",
+  "wrong": [
+   "Hệ số tương quan giữa hai biến độc lập bất kỳ luôn bằng 0",
+   "Các biến có tương quan nghịch hoàn toàn với giá trị -1",
+   "Các giá trị ngoại lai (outliers) phân bố tập trung trên đường chéo"
+  ]
+ },
+ {
+  "id": "r-m1-013",
+  "q": "Hiện tượng khi một biến tăng (như kích thước động cơ) kéo theo biến kia tăng (như giá xe) biểu thị mối quan hệ gì?",
+  "correct": "Tương quan dương (Positive Correlation)",
+  "wrong": [
+   "Tương quan âm (Negative Correlation)",
+   "Đa cộng tuyến (Multicollinearity)",
+   "Độc lập tuyến tính (Linear Independence)"
+  ]
+ },
+ {
+  "id": "r-m1-014",
+  "q": "Hàm nào của thư viện Seaborn được sử dụng để vẽ biểu đồ phân tán (Scatter Plot) kết hợp với đường hồi quy?",
+  "correct": "sns.regplot()",
+  "wrong": [
+   "sns.heatmap()",
+   "sns.barplot()",
+   "sns.boxplot()"
+  ]
+ },
+ {
+  "id": "r-m1-015",
+  "q": "Để đếm tần suất xuất hiện của các giá trị phân loại riêng biệt trong một cột của Pandas DataFrame, ta dùng phương thức nào?",
+  "correct": "print(df['drive-wheels'].value_counts())",
+  "wrong": [
+   "print(df['drive-wheels'].count())",
+   "print(df['drive-wheels'].unique_counts())",
+   "print(df['drive-wheels'].sum())"
+  ]
+ },
+ {
+  "id": "r-m1-016",
+  "q": "Khi mô hình hồi quy tuyến tính đơn giản không khớp tốt với dữ liệu (không bắt được các đường cong trong dữ liệu), ta nên sử dụng mô hình nào?",
+  "correct": "Hồi quy đa thức (Polynomial Regression)",
+  "wrong": [
+   "Hồi quy Ridge (Ridge Regression)",
+   "Cây quyết định (Decision Tree)",
+   "K-Nearest Neighbors (KNN)"
+  ]
+ },
+ {
+  "id": "r-m1-017",
+  "q": "Việc sử dụng Pipeline trong thư viện Scikit-learn mang lại lợi ích chính nào?",
+  "correct": "Đơn giản hóa và kết hợp tuần tự quá trình biến đổi dữ liệu và khớp mô hình",
+  "wrong": [
+   "Tự động loại bỏ toàn bộ dữ liệu ngoại lai và thay thế giá trị khuyết",
+   "Tự động quét và tìm kiếm siêu tham số tối ưu thay cho GridSearchCV",
+   "Gia tăng số lượng bản ghi của tập dữ liệu huấn luyện"
+  ]
+ },
+ {
+  "id": "r-m1-018",
+  "q": "Thước đo R-squared (R bình phương) trong đánh giá mô hình hồi quy thể hiện điều gì?",
+  "correct": "Tỷ lệ phần trăm phương sai của biến mục tiêu được giải thích bởi mô hình",
+  "wrong": [
+   "Giá trị trung bình của bình phương các sai số giữa thực tế và dự đoán",
+   "Số lượng đặc trưng độc lập có ý nghĩa thống kê trong mô hình",
+   "Độ lệch chuẩn giữa giá trị dự báo và giá trị trung bình mục tiêu"
+  ]
+ },
+ {
+  "id": "r-m1-019",
+  "q": "Nhận định nào sau đây là đúng về chỉ số Mean Squared Error (MSE)?",
+  "correct": "Là giá trị trung bình của bình phương các sai số, MSE càng nhỏ thì mô hình càng chính xác",
+  "wrong": [
+   "Là giá trị trung bình sai số tuyệt đối, MSE càng lớn chứng tỏ mô hình càng tốt",
+   "Là tỷ lệ phương sai giải thích được, MSE luôn nằm trong khoảng từ 0 đến 1",
+   "Là độ lệch chuẩn của phần dư, MSE càng tiến gần 1 mô hình càng tin cậy"
+  ]
+ },
+ {
+  "id": "r-m1-020",
+  "q": "Hiện tượng quá khớp (Overfitting) trong học máy xảy ra khi nào và dẫn đến hậu quả gì?",
+  "correct": "Mô hình bắt cả nhiễu (noise) của dữ liệu huấn luyện, dẫn đến kết quả kém trên dữ liệu mới",
+  "wrong": [
+   "Mô hình quá đơn giản, không học được cấu trúc ngay trên tập huấn luyện",
+   "Mô hình dự đoán quá nhanh nhưng tiêu tốn nhiều bộ nhớ RAM khi huấn luyện",
+   "Mô hình đạt độ chính xác tương đương nhau trên cả tập train và test"
+  ]
+ },
+ {
+  "id": "r-m1-021",
+  "q": "Mô hình Hồi quy Ridge (Ridge Regression) được sử dụng phù hợp nhất trong hoàn cảnh nào?",
+  "correct": "Khi có hiện tượng đa cộng tuyến hoặc khi mô hình đa thức bị overfitting",
+  "wrong": [
+   "Khi biến mục tiêu là biến phân loại nhị phân (Binary Classification)",
+   "Khi tập dữ liệu có quá nhiều giá trị khuyết không thể điền trung bình",
+   "Khi các biến đầu vào hoàn toàn không có tương quan với nhau"
+  ]
+ },
+ {
+  "id": "r-m1-022",
+  "q": "Trong Hồi quy Ridge, tham số 'alpha' có vai trò gì đối với mô hình?",
+  "correct": "Kiểm soát mức độ phạt (penalty) đối với độ lớn của các hệ số",
+  "wrong": [
+   "Xác định số lượng cụm phân loại trong không gian dữ liệu",
+   "Quy định số lượng nếp gấp K-fold trong quá trình kiểm chứng chéo",
+   "Thiết lập tỷ lệ phần trăm phân chia giữa tập train và tập test"
+  ]
+ },
+ {
+  "id": "r-m1-023",
+  "q": "Mặc định, phương pháp GridSearchCV sử dụng thang đo (scoring) nào để đánh giá và lựa chọn mô hình hồi quy tối ưu?",
+  "correct": "Điểm R-squared",
+  "wrong": [
+   "Mean Squared Error (MSE)",
+   "Accuracy (Độ chính xác)",
+   "F1-score"
+  ]
+ },
+ {
+  "id": "r-m1-024",
+  "q": "Sau khi huấn luyện đối tượng GridSearchCV, thuộc tính nào được sử dụng để trích xuất ra mô hình tối ưu nhất?",
+  "correct": "best_estimator_",
+  "wrong": [
+   "cv_results_",
+   "best_score_",
+   "best_params_"
+  ]
+ },
+ {
+  "id": "r-m2-001",
+  "q": "Mục tiêu cốt lõi của trực quan hóa dữ liệu (Data Visualization) là gì?",
+  "correct": "Chuyển đổi dữ liệu thô thành biểu diễn đồ họa để dễ phát hiện xu hướng, mẫu (patterns) và ngoại lai",
+  "wrong": [
+   "Thay thế hoàn toàn quá trình làm sạch dữ liệu và điền giá trị khuyết thiếu",
+   "Tự động tính toán các siêu tham số tối ưu nhất cho thuật toán máy học",
+   "Chuyển đổi biến số liên tục thành các biến phân loại nhị phân trong cơ sở dữ liệu"
+  ]
+ }
+]

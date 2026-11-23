@@ -1,0 +1,69 @@
+// Dựng HTML thống nhất cho DAP391m / AIL303m / CPV301 từ CÙNG giao diện với SSG105 (src/app.js + ai.js + style.css).
+// Dữ liệu: bài học (data/lessons-*.json), bộ đề (DAP/AIL data.js, CPV OCR), câu hỏi lại lý thuyết (Antigravity viết, thiếu thì sinh tự động).
+// node scripts/build-subjects.mjs  → data/app-<id>.html
+import fs from 'node:fs'; import path from 'node:path'; import { fileURLToPath } from 'node:url';
+import { genRecall } from '../../gen-recall.mjs';
+import { applyFormulas } from './lesson-formulas.mjs';
+const W = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'), ROOT = path.resolve(W, '..');
+const rd = (...p) => fs.readFileSync(path.join(...p), 'utf8');
+const COLORS = ['#3b5bdb', '#7048e8', '#d6336c', '#e8590c', '#0c8599', '#2f9e44', '#c2255c', '#f08c00', '#1971c2', '#6741d9'];
+const loadQ = f => JSON.parse(rd(W, 'data', f).match(/window\.QUESTIONS\s*=\s*([\s\S]*?);\s*$/)[1]);
+
+// ---------- CPV: gộp câu trùng, gắn ảnh slide cho câu có hình ----------
+const cpvRaw = JSON.parse(rd(W, 'data', 'cpv-questions.json')), seen = new Map(), cpv = [];
+for (const q of cpvRaw) {
+  const sig = (q.question + '||' + [...q.options].sort().join('|')).toLowerCase().replace(/\s+/g, ' ');
+  if (seen.has(sig)) { const f = seen.get(sig); if (!f.explanation && q.explanation) f.explanation = q.explanation; continue; }
+  const o = { id: cpv.length + 1, slide: q.slide, topic: q.topic, section: q.section, question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '' };
+  if (q.figure || /hình ảnh|biểu đồ|công thức/i.test(q.section)) { const n = String(q.slide).padStart(3, '0'); if (fs.existsSync(path.join(W, 'data', 'cpv-img', n + '.png'))) o.img = `/api/img/cpv/${n}.png`; }
+  seen.set(sig, o); cpv.push(o);
+}
+
+const SUBJECTS = {
+  dap391m: { file: 'dap', name: 'DAP391m', bank: () => loadQ('dap-data.js'), aiField: 'Data Science / phân tích dữ liệu (DAP391m: Pandas, Matplotlib, Seaborn, Dash, Folium, Watson, scikit-learn)',
+    rename: { m3: 'Watson (đọc để biết)', m4: 'SpaceX · Tổng quan dự án', m5: 'SpaceX · GitHub và Watson Studio', m6: 'SpaceX · Thu thập dữ liệu' },
+    topicMod: { 'Matplotlib & Seaborn': 'm2', 'Biểu đồ & trực quan hoá': 'm2', 'Folium & bản đồ': 'm2', 'Dash & Dashboard': 'm2', 'Watson Assistant & Chatbot': 'm3', 'IBM DB2 & SQL': 'm5', 'Thu thập dữ liệu (API, Web scraping)': 'm6' }, defMod: 'm1' },
+  ail303m: { file: 'ail', name: 'AIL303m', bank: () => loadQ('ail-data.js'), aiField: 'Machine Learning (AIL303m: hồi quy, phân loại, SVM, cây quyết định, ensemble, clustering, đánh giá mô hình)', rename: {},
+    topicMod: { 'Phân loại (Logistic…)': 'm2', 'Đánh giá mô hình (metrics)': 'm2', 'SVM': 'm2', 'KNN & Decision Tree': 'm3', 'Ensemble (RF, Bagging, Boosting)': 'm4', 'Dữ liệu mất cân bằng': 'm4', 'Clustering & khoảng cách': 'm4', 'Giảm chiều (PCA, MDS…)': 'm4' }, defMod: 'm1' },
+  cpv301: { file: 'cpv', name: 'CPV301', bank: () => cpv, aiField: 'Computer Vision / xử lý ảnh (CPV301: histogram, lọc, Fourier, biên, SIFT, phân đoạn, RANSAC, homography, optical flow, nhận dạng)', rename: {},
+    topicMod: { 'Màu sắc & histogram': 'm2', 'Lọc ảnh & tích chập': 'm2', 'Miền tần số & Fourier': 'm2', 'Biên & đặc trưng (edge, corner, SIFT…)': 'm3', 'Phân đoạn & phân cụm': 'm4', 'Biến đổi hình học & ghép ảnh': 'm5', 'Chuyển động & optical flow': 'm6', 'Nhận dạng & học máy': 'm7' }, defMod: 'm1' },
+};
+
+const style = rd(ROOT, 'src', 'style.css'), appJs = rd(ROOT, 'src', 'app.js').replace('/*@AI@*/', () => rd(ROOT, 'src', 'ai.js'));
+const safe = s => s.replace(/<\/script/gi, '<\\/script');
+
+for (const [id, S] of Object.entries(SUBJECTS)) {
+  const L = JSON.parse(rd(W, 'data', `lessons-${S.file}.json`));
+  { const r = applyFormulas(S.file, L.modules); console.log('  công thức ' + S.name + ':', r.n, r.miss.length ? 'LỆCH ' + r.miss.join(', ') : ''); }
+  const bank = S.bank().map((q, i) => ({ id: q.id ?? i + 1, slide: q.slide, topic: q.topic, section: q.section || '', question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '', ...(q.img ? { img: q.img } : {}) }));
+  { const dir = path.join(ROOT, 'sources-private', 'explain-out-' + S.file), ex = {}; let n = 0;
+    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f))) { try { Object.assign(ex, JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
+    for (const q of bank) if (!q.explanation && ex[q.id]) { q.explanation = ex[q.id]; n++; }
+    console.log('  lời giải soạn sẵn ' + S.name + ':', n + '/' + bank.length); }
+  const topicMod = { ...S.topicMod }; for (const q of bank) if (!topicMod[q.topic]) topicMod[q.topic] = S.defMod;
+  const perMod = {}; bank.forEach(q => perMod[topicMod[q.topic]] = (perMod[topicMod[q.topic]] || 0) + 1);
+  const modules = L.modules.map((m, i) => ({ id: m.id, short: 'C' + (i + 1), title: S.rename[m.id] || m.title, color: COLORS[i % COLORS.length], weight: perMod[m.id] || 1, priority: 3, keyPoints: [], sections: m.sections }));
+  // câu hỏi lại lý thuyết: ưu tiên bản Antigravity viết tay, chương nào thiếu thì dùng bộ sinh tự động
+  const recallDir = path.join(ROOT, 'sources-private', `recall-${S.file}`), manual = {};
+  if (fs.existsSync(recallDir)) for (const f of fs.readdirSync(recallDir).filter(f => /^m\d+\.json$/.test(f))) { try { manual[f.replace('.json', '')] = JSON.parse(rd(recallDir, f)); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
+  const auto = genRecall({ modules: modules.map(m => ({ ...m })) });
+  const secOrder = modules.flatMap(m => m.sections.map(s => s.id)), valid = new Set(secOrder), recall = [], seenR = new Set(); let nManual = 0, nAuto = 0;
+  for (const m of modules) {
+    const src = manual[m.id] && manual[m.id].length ? manual[m.id].filter(x => valid.has(x.ref) && x.q && x.correct && Array.isArray(x.wrong) && x.wrong.length === 3 && new Set([x.correct, ...x.wrong]).size === 4).map(x => ({ ...x, kind: 'manual' })) : auto.filter(x => x.module === m.id);
+    for (const s of m.sections) for (const x of src.filter(y => y.ref === s.id)) {
+      const k = (x.q + '|' + x.correct).toLowerCase(); if (seenR.has(k)) continue; seenR.add(k);
+      recall.push({ id: `r-${m.id}-${String(recall.filter(r => r.module === m.id).length + 1).padStart(3, '0')}`, module: m.id, ref: s.id, type: 'recall', kind: x.kind, q: x.q, correct: x.correct, wrong: x.wrong, explain: x.explain || `Theo §${s.id} ${s.t}.`, ...(x.tip ? { tip: x.tip } : {}) });
+      x.kind === 'manual' ? nManual++ : nAuto++;
+    }
+  }
+  const xl = {};
+  { const rdd = (d, fn) => { const dir = path.join(ROOT, 'sources-private', d); if (!fs.existsSync(dir)) return; for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f))) { try { fn(JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } } };
+    rdd('translate-out-' + S.file, o => { for (const [k, v] of Object.entries(o)) xl['b-' + k] = v; });
+    rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
+  const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
+  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl })};`;
+  const html = `<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n<title>${S.name} · Ôn thi cuối kỳ</title>\n<style>\n${style}\n</style></head><body>\n<noscript>App cần bật JavaScript.</noscript>\n<script id="data">\n${safe(data)}\n</script>\n<script id="app">\n${safe(appJs)}\n</script>\n</body></html>`;
+  fs.writeFileSync(path.join(W, 'data', `app-${id}.html`), html);
+  const multi = bank.filter(q => q.answer.length > 1).length;
+  console.log(`${S.name}: ${modules.length} chương/${secOrder.length} mục | bộ đề ${bank.length} câu (${multi} nhiều đáp án) | câu hỏi lại ${recall.length} (Antigravity ${nManual}, tự sinh ${nAuto}) | ${(html.length / 1024).toFixed(0)} KB`);
+}

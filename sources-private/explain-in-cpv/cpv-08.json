@@ -1,0 +1,352 @@
+[
+ {
+  "id": 197,
+  "question": "What do the components of a pixel include?",
+  "options": [
+   "Intensity value and size of the image",
+   "Position address and intensity value",
+   "Position address and size of the image",
+   "All of the others"
+  ],
+  "correct": [
+   "Position address and intensity value"
+  ],
+  "slide_image": "cpv-slides-real/slide-223.png"
+ },
+ {
+  "id": 198,
+  "question": "What characterizes mirror-like reflection?",
+  "options": [
+   "Outgoing light is scattered in multiple directions",
+   "Outgoing light follows a linear projection model",
+   "Outgoing light reflects off the surface in a single direction",
+   "Outgoing light rotates around the surface normal by 90 degrees"
+  ],
+  "correct": [
+   "Outgoing light reflects off the surface in a single direction"
+  ],
+  "slide_image": "cpv-slides-real/slide-224.png"
+ },
+ {
+  "id": 199,
+  "question": "What role does the external energy term play in the Snake Model?",
+  "options": [
+   "It attracts the contour towards object boundaries.",
+   "It enforces smoothness in the contour of the snake.",
+   "It adjusts the intensity of edge pixels of the objects.",
+   "It penalizes deviations from a straight line."
+  ],
+  "correct": [
+   "It attracts the contour towards object boundaries."
+  ],
+  "slide_image": "cpv-slides-real/slide-225.png"
+ },
+ {
+  "id": 200,
+  "question": "Which of the following disadvantages of Snake model?",
+  "options": [
+   "Sensitive to local minima states",
+   "Not works perfectly even for binary images",
+   "dependent",
+   "All of the above"
+  ],
+  "correct": [
+   "All of the above"
+  ],
+  "slide_image": "cpv-slides-real/slide-226.png"
+ },
+ {
+  "id": 201,
+  "question": "Which of the following algorithms is used for feature detection?",
+  "options": [
+   "Scale-Invariant Feature Transform (SIFT)",
+   "Harris Corner Detector",
+   "Features from Accelerated Segment Test (FAST)",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-227.png"
+ },
+ {
+  "id": 202,
+  "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+  "options": [
+   "It sharpens the texture details.",
+   "It blurs the texture details.",
+   "It introduces distortions.",
+   "It has no effect on oblique viewing angles."
+  ],
+  "correct": [
+   "It sharpens the texture details."
+  ],
+  "slide_image": "cpv-slides-real/slide-228.png"
+ },
+ {
+  "id": 203,
+  "question": "How does SIFT handle rotations for keypoint matching?",
+  "options": [
+   "By aligning keypoints based on dominant orientation",
+   "By rotating the entire image to a standard orientation",
+   "By using a fixed orientation for all keypoints",
+   "By discarding keypoints with varying orientations"
+  ],
+  "correct": [
+   "By aligning keypoints based on dominant orientation"
+  ],
+  "slide_image": "cpv-slides-real/slide-229.png"
+ },
+ {
+  "id": 204,
+  "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+  "options": [
+   "By increasing blur for smoother textures",
+   "By eliminating aliasing effects at extreme viewing angles",
+   "By reducing details for better performance",
+   "By enhancing textures only at perpendicular viewing angles"
+  ],
+  "correct": [
+   "By eliminating aliasing effects at extreme viewing angles"
+  ],
+  "slide_image": "cpv-slides-real/slide-230.png"
+ },
+ {
+  "id": 205,
+  "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+  "options": [
+   "A higher sampling rate increases frequency accuracy.",
+   "A lower sampling rate increases frequency accuracy.",
+   "It has no effect on frequency representation.",
+   "A higher sampling rate decreases frequency accuracy."
+  ],
+  "correct": [
+   "A higher sampling rate increases frequency accuracy."
+  ],
+  "slide_image": "cpv-slides-real/slide-231.png"
+ },
+ {
+  "id": 206,
+  "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+  "options": [
+   "It allows features to be detected regardless of their size.",
+   "It reduces the computational complexity of feature matching.",
+   "It enhances the overall image resolution.",
+   "It improves color consistency across images."
+  ],
+  "correct": [
+   "It allows features to be detected regardless of their size."
+  ],
+  "slide_image": "cpv-slides-real/slide-232.png"
+ },
+ {
+  "id": 207,
+  "question": "How does SIFT achieve scale invariance in feature detection?",
+  "options": [
+   "By downscaling the image at different resolutions",
+   "By using an adaptive window size for feature detection",
+   "By applying a Gaussian filter to the entire image",
+   "By normalizing pixel intensities across the image"
+  ],
+  "correct": [
+   "By downscaling the image at different resolutions"
+  ],
+  "slide_image": "cpv-slides-real/slide-233.png"
+ },
+ {
+  "id": 208,
+  "question": "How does feature-based alignment achieve image alignment between two images?",
+  "options": [
+   "By directly comparing pixel values between images",
+   "By detecting and matching a sparse set of features",
+   "By applying random transformations to the images",
+   "By segmenting the images into regions"
+  ],
+  "correct": [
+   "By detecting and matching a sparse set of features"
+  ],
+  "slide_image": "cpv-slides-real/slide-234.png"
+ },
+ {
+  "id": 209,
+  "question": "How can facial landmarks be helpful in face detection and recognition?",
+  "options": [
+   "By providing anchor points for accurate face alignment.",
+   "By directly identifying a person's unique facial features.",
+   "By segmenting the face region from the background.",
+   "By estimating the age and gender of the person in the image."
+  ],
+  "correct": [
+   "By providing anchor points for accurate face alignment."
+  ],
+  "slide_image": "cpv-slides-real/slide-235.png"
+ },
+ {
+  "id": 210,
+  "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+  "options": [
+   "All bins with non-zero votes are considered lines.",
+   "Lines are formed by connecting all edge points that participated in a specific bin.",
+   "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+   "The Hough Transform directly outputs line segments based on the voting process."
+  ],
+  "correct": [
+   "Lines are identified by locating the peaks (highest vote counts) in the parameter space."
+  ],
+  "slide_image": "cpv-slides-real/slide-236.png"
+ },
+ {
+  "id": 211,
+  "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+  "options": [
+   "Downsampling in the both directions",
+   "Applying a non-separable filter kernel",
+   "Adjusting the color space transformation",
+   "Upsampling in the opposite direction"
+  ],
+  "correct": [
+   "Upsampling in the opposite direction"
+  ],
+  "slide_image": "cpv-slides-real/slide-237.png"
+ },
+ {
+  "id": 212,
+  "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+  "options": [
+   "To enhance image resolution",
+   "To reduce the computational cost",
+   "To minimize distortion during texture mapping",
+   "To maintain a consistent resampling rate"
+  ],
+  "correct": [
+   "To minimize distortion during texture mapping"
+  ],
+  "slide_image": "cpv-slides-real/slide-238.png"
+ },
+ {
+  "id": 213,
+  "question": "Edge detection techniques in segmentation aim to identify:",
+  "options": [
+   "Regions with uniform color or intensity.",
+   "Boundaries between distinct image regions.",
+   "Areas with high texture and local variations.",
+   "The presence of specific objects or shapes in the image."
+  ],
+  "correct": [
+   "Boundaries between distinct image regions."
+  ],
+  "slide_image": "cpv-slides-real/slide-239.png"
+ },
+ {
+  "id": 214,
+  "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+  "options": [
+   "What is the exact name of this process?",
+   "Image stitching",
+   "Optical flow",
+   "Object moving"
+  ],
+  "correct": [
+   "Optical flow"
+  ],
+  "slide_image": "cpv-slides-real/slide-240.png"
+ },
+ {
+  "id": 215,
+  "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+  "options": [
+   "A collection of vertices and edges",
+   "A visual distortion effect",
+   "A 2D matrix of pixel intensity",
+   "A type of texture map with 2D dimension"
+  ],
+  "correct": [
+   "A collection of vertices and edges"
+  ],
+  "slide_image": "cpv-slides-real/slide-241.png"
+ },
+ {
+  "id": 216,
+  "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+  "options": [
+   "|R| is small and λ1, λ2 are small",
+   "|R| is large and λ1 ≈ λ2",
+   "|R| < 0 and λ1 >> λ2",
+   "cannot determine |R|"
+  ],
+  "correct": [
+   "|R| is large and λ1 ≈ λ2"
+  ],
+  "slide_image": "cpv-slides-real/slide-242.png"
+ },
+ {
+  "id": 217,
+  "question": "In K-means for Segmentation, what is the meaning of K value?",
+  "options": [
+   "It represents the number of clusters.",
+   "It represents the number of images.",
+   "It represents the step of clusters.",
+   "It represents the color groups."
+  ],
+  "correct": [
+   "It represents the number of clusters."
+  ],
+  "slide_image": "cpv-slides-real/slide-244.png"
+ },
+ {
+  "id": 218,
+  "question": "In image segmentation, which is the limitation of using region growing methods?",
+  "options": [
+   "Difficulty handling objects with disconnected parts.",
+   "Inability to segment images with multiple dominant colors.",
+   "High sensitivity to noise and slight intensity variations.",
+   "Significant computational cost for processing large images."
+  ],
+  "correct": [
+   "High sensitivity to noise and slight intensity variations."
+  ],
+  "slide_image": "cpv-slides-real/slide-245.png"
+ },
+ {
+  "id": 219,
+  "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+  "options": [
+   "Input is an image and output is an image.",
+   "Input is an image and output is the images.",
+   "Input is one or more images and output is the images.",
+   "Input is one or more images and output is an image."
+  ],
+  "correct": [
+   "Input is one or more images and output is an image."
+  ],
+  "slide_image": "cpv-slides-real/slide-246.png"
+ },
+ {
+  "id": 220,
+  "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+  "options": [
+   "By identifying lane boundaries.",
+   "By enhancing image resolution.",
+   "By calculating pixel intensities.",
+   "By applying a median filter to reduce noise."
+  ],
+  "correct": [
+   "By identifying lane boundaries."
+  ],
+  "slide_image": "cpv-slides-real/slide-247.png"
+ },
+ {
+  "id": 221,
+  "question": "Some traditional face recognition systems require user enrollment, which involves:",
+  "options": [
+   "Calibrating the camera for optimal lighting conditions.",
+   "Capturing multiple face images of an individual from different angles.",
+   "Training the recognition algorithm on a large dataset of faces.",
+   "Specifying facial landmarks for each enrolled individual."
+  ],
+  "correct": [
+   "Capturing multiple face images of an individual from different angles."
+  ],
+  "slide_image": "cpv-slides-real/slide-248.png"
+ }
+]

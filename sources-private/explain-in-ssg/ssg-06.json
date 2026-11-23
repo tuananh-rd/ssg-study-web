@@ -1,0 +1,349 @@
+[
+ {
+  "id": 127,
+  "question": "Why do self-managing teams often increase member motivation?",
+  "options": [
+   "Members avoid responsibility.",
+   "Leadership becomes fully absent.",
+   "Team members control more day-to-day activities.",
+   "Goals become less important."
+  ],
+  "correct": [
+   "Team members control more day-to-day activities."
+  ]
+ },
+ {
+  "id": 128,
+  "question": "Why does the \"Leader-as-Coach\" activity forbid giving direct advice?",
+  "options": [
+   "To reduce communication",
+   "To encourage leaders to facilitate others' thinking through questions",
+   "To increase hierarchy in the team",
+   "To test technical expertise only"
+  ],
+  "correct": [
+   "To encourage leaders to facilitate others' thinking through questions"
+  ]
+ },
+ {
+  "id": 129,
+  "question": "A leader changes communication style depending on task difficulty and team experience. Which principle is this demonstrating?",
+  "options": [
+   "Leadership consistency",
+   "Situational leadership flexibility",
+   "Centralized authority",
+   "Individual competition"
+  ],
+  "correct": [
+   "Situational leadership flexibility"
+  ]
+ },
+ {
+  "id": 130,
+  "question": "What is a text message?",
+  "options": [
+   "A text message is a brief written message sent and received using a digital device.",
+   "It is useful for informal, brief, time-sensitive communication.",
+   "A text message is a part of the communication landscape.",
+   "A text message is a form of written communication consisting of brief messages.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "All of them are correct."
+  ]
+ },
+ {
+  "id": 132,
+  "question": "What is best defined about E-mail?",
+  "options": [
+   "Electronic mail, usually called Email, may be used like text and delivered to a cell phone.",
+   "It is a written message to acknowledge communications.",
+   "Maintaining effective communication.",
+   "Convey nonverbal communication.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "Electronic mail, usually called Email, may be used like text and delivered to a cell phone."
+  ]
+ },
+ {
+  "id": 133,
+  "question": "How can an effective business Email be written?",
+  "options": [
+   "Proper salutations and subject lines should be clear and avoid mix-ups in case a message is accidentally sent to the wrong recipient.",
+   "Avoid using all caps and abbreviations.",
+   "Use a good format.",
+   "Reread, revise, and review.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "All of them are correct."
+  ]
+ },
+ {
+  "id": 134,
+  "question": "What is the purpose of the memo?",
+  "options": [
+   "A memo's purpose is often to inform, but it occasionally includes an element of persuasion or a call to action.",
+   "Sharing information with staff members.",
+   "It is normally used for communicating policy and procedures.",
+   "To update the new information in the group.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "All of them are correct."
+  ]
+ },
+ {
+  "id": 135,
+  "question": "Which of the following is best described as a business Letter?",
+  "options": [
+   "Letters are brief messages sent to recipients who are often outside the organization.",
+   "Writing skills to perform specific tasks in communication.",
+   "Create a new idea in communication.",
+   "It can serve to introduce you to a potential employer.",
+   "All of them."
+  ],
+  "correct": [
+   "Letters are brief messages sent to recipients who are often outside the organization."
+  ]
+ },
+ {
+  "id": 136,
+  "question": "Which of the following represents a key principle in writing a business letter?",
+  "options": [
+   "Salutation, introduction, body, and conclusion.",
+   "The date should be placed at the top.",
+   "The subject or purpose of the document.",
+   "Your address where someone could send a reply.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "All of them are correct."
+  ]
+ },
+ {
+  "id": 137,
+  "question": "Which of the following belongs to the common elements of a business proposal?",
+  "options": [
+   "Effective business proposals are built around great ideas or solutions.",
+   "Traditional categories.",
+   "Ethos, pathos, and Logos.",
+   "Be professional in writing.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "All of them are correct."
+  ]
+ },
+ {
+  "id": 138,
+  "question": "Which of the following is NOT recommended when writing a business letter?",
+  "options": [
+   "Being concise and specific.",
+   "The subject or purpose of the document.",
+   "Maintaining credential information.",
+   "Using all caps.",
+   "The date should be placed at the top."
+  ],
+  "correct": [
+   "Using all caps."
+  ]
+ },
+ {
+  "id": 139,
+  "question": "What is the purpose of the subject line in an email?",
+  "options": [
+   "To use as many words as possible.",
+   "To represent your professional information in writing.",
+   "To help the recipient understand the essence of the message.",
+   "To emphasize the main topic.",
+   "All of them are correct."
+  ],
+  "correct": [
+   "To help the recipient understand the essence of the message."
+  ]
+ },
+ {
+  "id": 140,
+  "question": "What does a Team charter include?",
+  "options": [
+   "The goals of the group",
+   "Ensure that each team member's ideas are considered",
+   "Timing and frequency of meetings in the work group",
+   "Set some ground rules in the group",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 141,
+  "question": "Which of the following actions could best help improve trust within your teams?",
+  "options": [
+   "Avoid placing blame, lead by example, provide recognition and discuss trust beforehand",
+   "Share information",
+   "To stay in touch",
+   "Have the ability to make decisions",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 142,
+  "question": "What leadership skills and behaviors can effectively influence team members?",
+  "options": [
+   "Be honest in communicating and follow through on promises",
+   "Be positive in problem-solving",
+   "Maintaining effective communication",
+   "Monitor and support your team members",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 143,
+  "question": "How do Leaders influence and build trust in their Team members?",
+  "options": [
+   "Have the ability of managerial in group work",
+   "Have credibility that you are certain about what you want",
+   "Generate positive energy",
+   "Manage agreement and disagreement",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 144,
+  "question": "What are the key characteristics of effective work teams?",
+  "options": [
+   "Share accountability for achieving specific common goals",
+   "Function interdependently",
+   "Require stability",
+   "Hold authority and decision-making power",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "What are some ways you can help create a psychologically safe environment?",
+  "options": [
+   "Be engaged",
+   "Avoid blaming",
+   "Include all group members in decision-making",
+   "Remain open to feedback",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 146,
+  "question": "Which 3 components make up the numerator of the trust equation?",
+  "options": [
+   "Credibility, intimacy and reliability",
+   "Competency, capable and relevant credentials",
+   "Credibility, intimacy and respect",
+   "Kindness, respect, intelligence",
+   "All of them"
+  ],
+  "correct": [
+   "Credibility, intimacy and reliability"
+  ]
+ },
+ {
+  "id": 148,
+  "question": "When team members feel safe to engage in the learning process, which level of Psychological Safety are they experiencing?",
+  "options": [
+   "Inclusion safety",
+   "Learner safety",
+   "Contributor safety",
+   "Challenger Safety",
+   "All of them"
+  ],
+  "correct": [
+   "Learner safety"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "What makes a great team?",
+  "options": [
+   "Psychological safety",
+   "Dependability",
+   "Structure and clarity",
+   "Meaning and impact",
+   "All of them"
+  ],
+  "correct": [
+   "All of them"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "What is the definition of Team?",
+  "options": [
+   "A team is a group of people working with complementary skills who work together to achieve a specific goal.",
+   "A team is ability to communicate in group work.",
+   "Team is sharing accountability in teamwork.",
+   "Teamwork has the ability to bring technical skill in group.",
+   "All of them."
+  ],
+  "correct": [
+   "A team is a group of people working with complementary skills who work together to achieve a specific goal."
+  ]
+ },
+ {
+  "id": 152,
+  "question": "Why do major organizations rely much on teams to improve operations?",
+  "options": [
+   "Executives have reported that team-based operations were more productive and reduced service errors.",
+   "The team can address a variety of challenges in the world of corporate activity.",
+   "The team has the ability to engage in effective communication.",
+   "The team makes decisions and solves problems properly.",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 153,
+  "question": "What are the key factors that contribute to effective teamwork?",
+  "options": [
+   "Members communicate effectively and rely on each other to get the job done better together than individually.",
+   "Members can contribute valuable resources in group work.",
+   "Members have the ability to share information in the group.",
+   "Members have the task role properly in the project.",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 154,
+  "question": "What are the key factors that contribute to Team Cohesiveness?",
+  "options": [
+   "Size of the Team, similarity, success, exclusiveness, and competition.",
+   "Positive attitudes in group communication.",
+   "Technical skills to perform the project.",
+   "Constructive feedback and proactive listening.",
+   "All of them."
+  ],
+  "correct": [
+   "Size of the Team, similarity, success, exclusiveness, and competition."
+  ]
+ }
+]

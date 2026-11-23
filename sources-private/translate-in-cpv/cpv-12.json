@@ -1,0 +1,202 @@
+[
+ {
+  "id": 221,
+  "question": "Some traditional face recognition systems require user enrollment, which involves:",
+  "options": [
+   "Calibrating the camera for optimal lighting conditions.",
+   "Capturing multiple face images of an individual from different angles.",
+   "Training the recognition algorithm on a large dataset of faces.",
+   "Specifying facial landmarks for each enrolled individual."
+  ]
+ },
+ {
+  "id": 222,
+  "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+  "options": [
+   "It relates to the energy in the time and frequency domain.",
+   "It guarantees that the Fourier transform is reversible.",
+   "It establishes a connection between amplitude and frequency.",
+   "It ensures that the Fourier transform is always real-valued."
+  ]
+ },
+ {
+  "id": 223,
+  "question": "What is not the advantage of Canny Operator?",
+  "options": [
+   "It has good localization.",
+   "It extracts image features without altering the features.",
+   "Less sensitive to noise.",
+   "True zero crossing."
+  ]
+ },
+ {
+  "id": 224,
+  "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+  "options": [
+   "It uses different kernel.",
+   "It uses a 3×3 convolution kernel.",
+   "It is less sensitive to diagonal edges.",
+   "It does not involve convolution with a kernel."
+  ]
+ },
+ {
+  "id": 225,
+  "question": "What is the primary objective of global alignment in image registration?",
+  "options": [
+   "Minimizing the distortion within individual images.",
+   "Minimizing the number of matched features between images.",
+   "Finding a globally consistent set of alignment parameters.",
+   "Focusing on global details within the images."
+  ]
+ },
+ {
+  "id": 226,
+  "question": "How are elements selected for the histogram bins in HOG calculation?",
+  "options": [
+   "Randomly assigned based on pixel values",
+   "Based on the brightness of pixels",
+   "Based on the direction of gradients",
+   "Based on the size of objects in the image"
+  ]
+ },
+ {
+  "id": 227,
+  "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+  "options": [
+   "To sharpen the image and enhance high-frequency details.",
+   "To reduce noise in the image, preventing it from influencing the edge detection process.",
+   "To increase the overall contrast of the image for better edge visualization.",
+   "To remove objects or regions of interest from the image before edge detection."
+  ]
+ },
+ {
+  "id": 228,
+  "question": "What is the mechanism of Laplacian of Gaussian?",
+  "options": [
+   "Gaussian-based operator relies on random level transitions in the image",
+   "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+   "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+   "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+  ]
+ },
+ {
+  "id": 229,
+  "question": "What is true about the global alignment?",
+  "options": [
+   "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+   "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+   "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+   "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+  ]
+ },
+ {
+  "id": 230,
+  "question": "What is computer vision?",
+  "options": [
+   "Computer Vision uses images and videos to understand a real-world scene.",
+   "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+   "It makes a computer understand images, videos.",
+   "All of the answers"
+  ]
+ },
+ {
+  "id": 231,
+  "question": "What is computer vision?",
+  "options": [
+   "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+   "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+   "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+   "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+  ]
+ },
+ {
+  "id": 232,
+  "question": "What is the benefit of using feature-based alignment techniques?",
+  "options": [
+   "It significantly reduces the file size of images.",
+   "It automatically adjusts image brightness and contrast for consistency.",
+   "It enables robust alignment even with image variations like rotation or scale changes.",
+   "It simplifies image editing tasks by automatically cropping unnecessary areas."
+  ]
+ },
+ {
+  "id": 233,
+  "question": "What is image filter? Choose the best answer",
+  "options": [
+   "Filtering is a technique for modifying or enhancing an image.",
+   "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+   "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 234,
+  "question": "What is the difference between Phong model of light sources and the reality?",
+  "options": [
+   "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+   "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+   "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+   "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+  ]
+ },
+ {
+  "id": 235,
+  "question": "What is bundle adjustment primarily used for in image processing?",
+  "options": [
+   "Adding new images to a panorama",
+   "Adjusting the pose parameters for an image to reduce size of an image",
+   "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+   "Aligning images in a sequential manner"
+  ]
+ },
+ {
+  "id": 236,
+  "question": "What is the core concept behind the Hough Transform?",
+  "options": [
+   "It transforms edge points in the image space to a parameter space to identify lines.",
+   "It directly identifies lines in an image based on pixel intensity changes.",
+   "It segments the image into connected regions to form line segments.",
+   "It requires manually specifying the starting and ending points of lines to be detected."
+  ]
+ },
+ {
+  "id": 237,
+  "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+  "options": [
+   "It is significantly faster to compute and requires minimal processing power.",
+   "It is highly sensitive to noise and can easily miss important edges.",
+   "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+   "It can directly identify the specific color of edges in the image."
+  ]
+ },
+ {
+  "id": 238,
+  "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+  "options": [
+   "It relies on a single-pixel computation",
+   "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+   "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+   "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+  ]
+ },
+ {
+  "id": 239,
+  "question": "What is true about image segmentation?",
+  "options": [
+   "An image is broken into many regions using the characteristics of pixels to identify objects",
+   "The representation of an image is changed into something containing more complex information to analyze",
+   "Color is assigned to every pixel of an image",
+   "Not at all"
+  ]
+ },
+ {
+  "id": 240,
+  "question": "What is meant by image segmentation in image processing?",
+  "options": [
+   "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+   "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+   "All of the others",
+   "None of the others"
+  ]
+ }
+]

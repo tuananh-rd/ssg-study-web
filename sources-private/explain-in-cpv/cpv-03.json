@@ -1,0 +1,352 @@
+[
+ {
+  "id": 53,
+  "question": "We are working with OpenCV and we want to draw a straight line on our image. How many points do we need to use?",
+  "options": [
+   "2",
+   "4",
+   "5",
+   "3"
+  ],
+  "correct": [
+   "2"
+  ],
+  "slide_image": "cpv-slides-real/slide-069.png"
+ },
+ {
+  "id": 54,
+  "question": "Choose the best description of the edge in image",
+  "options": [
+   "Edges are significant local changes of intensity in a digital image.",
+   "An edge can be defined as a set of connected pixels that forms a boundary between two conjoined regions.",
+   "Three types of edges include horizontal edges, vertical edges, and circle edges",
+   "All of the others"
+  ],
+  "correct": [
+   "Edges are significant local changes of intensity in a digital image."
+  ],
+  "slide_image": "cpv-slides-real/slide-071.png"
+ },
+ {
+  "id": 66,
+  "question": "Choose the best answer about 2D Lines",
+  "options": [
+   "A line is a straight one-dimensional figure having no thickness and extending infinitely in both directions.",
+   "Lines are an idealization of such objects, which are often described in terms of two points",
+   "Line in the plane is often defined as the set of points whose coordinates satisfy a given linear equation.",
+   "All of others"
+  ],
+  "correct": [
+   "All of others"
+  ],
+  "slide_image": "cpv-slides-real/slide-083.png"
+ },
+ {
+  "id": 67,
+  "question": "Choose the best description of the convolution- Kernel",
+  "options": [
+   "It is an array-representative for transforming images from different spatial domains.",
+   "It is the process of adding each element of the image to its local neighbors, weighted by the intensity value.",
+   "It is a small matrix used to clarify certain features.",
+   "It is used in all filters to increase the brightness of the image."
+  ],
+  "correct": [
+   "It is a small matrix used to clarify certain features."
+  ],
+  "slide_image": "cpv-slides-real/slide-084.png"
+ },
+ {
+  "id": 68,
+  "question": "Choose the best description of the contrast stretching",
+  "options": [
+   "It is used as a filter, removing noise like salt and pepper",
+   "It is also known as Invert-Normalization",
+   "It improves an image by stretching the range of intensity values it contains.",
+   "It is a way of representing histogram in terms of light balance implementation"
+  ],
+  "correct": [
+   "It improves an image by stretching the range of intensity values it contains."
+  ],
+  "slide_image": "cpv-slides-real/slide-085.png"
+ },
+ {
+  "id": 69,
+  "question": "Choose the best description about global alignment in image stitching",
+  "options": [
+   "Global alignment requires the non-linear minimization of an error term, which is defined from point correspondences.",
+   "Global alignment is still needed to obtain a globally coherent mosaic.",
+   "The goal of global alignment is then to find a globally consistent set of alignment parameters that minimize the misregistration between all pairs of images.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-086.png"
+ },
+ {
+  "id": 70,
+  "question": "Choose the best description of the line detection using the convolution based technique",
+  "options": [
+   "A convolution-based technique that produces an image description of the thin lines in an input image",
+   "These kernel masks are tuned for dark lines against a grey background",
+   "A convolution-based technique is the foundation of deep learning models.",
+   "All of the others"
+  ],
+  "correct": [
+   "A convolution-based technique that produces an image description of the thin lines in an input image"
+  ],
+  "slide_image": "cpv-slides-real/slide-087.png"
+ },
+ {
+  "id": 71,
+  "question": "Choose the best description of the Prewitt operator for edge detection",
+  "options": [
+   "It detects the overlap edges of an image.",
+   "It is one of the best ways to detect the color intensity and magnitude of an image",
+   "It is a good performance on detecting vertical and horizontal edges",
+   "It is never a good choice to detect the orientation of an image"
+  ],
+  "correct": [
+   "It is a good performance on detecting vertical and horizontal edges"
+  ],
+  "slide_image": "cpv-slides-real/slide-088.png"
+ },
+ {
+  "id": 72,
+  "question": "Choose the best description of the Hough transform",
+  "options": [
+   "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+   "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+   "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-089.png"
+ },
+ {
+  "id": 73,
+  "question": "Choose the best description of the Fourier Transform",
+  "options": [
+   "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+   "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+   "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-090.png"
+ },
+ {
+  "id": 75,
+  "question": "Choose the best correct answer about parallax removal",
+  "options": [
+   "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+   "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+   "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-092.png"
+ },
+ {
+  "id": 76,
+  "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+  "options": [
+   "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+   "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+   "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+   "All of the others"
+  ],
+  "correct": [
+   "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction."
+  ],
+  "slide_image": "cpv-slides-real/slide-093.png"
+ },
+ {
+  "id": 77,
+  "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+  "options": [
+   "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+   "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+   "It is a key point matching algorithm.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-094.png"
+ },
+ {
+  "id": 78,
+  "question": "Choose the best description of the image feature",
+  "options": [
+   "Feature is a piece of information about the content of an image",
+   "Feature may be specific structures in the image such as points, edges, or objects",
+   "All of the others",
+   "None of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-096.png"
+ },
+ {
+  "id": 79,
+  "question": "Choose the best description of the active contours",
+  "options": [
+   "It is the process of assigning a color to every pixel in an image.",
+   "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+   "Image segmentation is typically used to recognize the color range and their group in images.",
+   "It is described as a multi-model for the process of segmentation."
+  ],
+  "correct": [
+   "It defines a separate boundary or curvature for the regions of the target object for segmentation."
+  ],
+  "slide_image": "cpv-slides-real/slide-098.png"
+ },
+ {
+  "id": 80,
+  "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+  "options": [
+   "Divide by K number and photo scale",
+   "Evenly distribute K in the image",
+   "Central value.",
+   "Randomly"
+  ],
+  "correct": [
+   "Randomly"
+  ],
+  "slide_image": "cpv-slides-real/slide-099.png"
+ },
+ {
+  "id": 81,
+  "question": "Choose the best answer about chromatic aberration:",
+  "options": [
+   "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+   "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+   "Chromatic aberration is different wavelengths focus at slightly same distances.",
+   "All of the others"
+  ],
+  "correct": [
+   "Chromatic aberration is a failure of a lens to focus all colors to the same point."
+  ],
+  "slide_image": "cpv-slides-real/slide-100.png"
+ },
+ {
+  "id": 82,
+  "question": "Choose the best answer about the illumination model:",
+  "options": [
+   "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+   "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+   "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+   "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+  ],
+  "correct": [
+   "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+  ],
+  "slide_image": "cpv-slides-real/slide-101.png"
+ },
+ {
+  "id": 83,
+  "question": "Choose the best answer about image color",
+  "options": [
+   "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+   "Color is white light emitted by a natural source - the sun",
+   "Color is a way of displaying the value of an image and color has seven primary colors.",
+   "All of others"
+  ],
+  "correct": [
+   "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them."
+  ],
+  "slide_image": "cpv-slides-real/slide-102.png"
+ },
+ {
+  "id": 84,
+  "question": "Choose the best description of computer vision",
+  "options": [
+   "Computer vision processes low levels in the image.",
+   "Computer vision works by identifying different components in the image",
+   "Computer vision is only deployed on large and fast processing systems.",
+   "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+  ],
+  "correct": [
+   "Computer vision works by identifying different components in the image"
+  ],
+  "slide_image": "cpv-slides-real/slide-103.png"
+ },
+ {
+  "id": 85,
+  "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+  "options": [
+   "Identifying outliers in the image set",
+   "Recognizing individual panoramas",
+   "Estimating camera poses",
+   "Calculating image overlap angles"
+  ],
+  "correct": [
+   "Recognizing individual panoramas"
+  ],
+  "slide_image": "cpv-slides-real/slide-105.png"
+ },
+ {
+  "id": 86,
+  "question": "What is the primary purpose of calculating the image gradient in image processing?",
+  "options": [
+   "Enhancing image resolution",
+   "Identifying outliers in the data",
+   "Extracting useful information",
+   "Adjusting image brightness"
+  ],
+  "correct": [
+   "Extracting useful information"
+  ],
+  "slide_image": "cpv-slides-real/slide-106.png"
+ },
+ {
+  "id": 87,
+  "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+  "options": [
+   "Sensitivity to noise",
+   "Inability to detect diagonal edges",
+   "Slow computation speed",
+   "Lack of rotational invariance"
+  ],
+  "correct": [
+   "Sensitivity to noise"
+  ],
+  "slide_image": "cpv-slides-real/slide-107.png"
+ },
+ {
+  "id": 88,
+  "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+  "options": [
+   "Modeling specular reflection",
+   "Describing light absorption",
+   "Encoding color information",
+   "Representing texture mapping"
+  ],
+  "correct": [
+   "Modeling specular reflection"
+  ],
+  "slide_image": "cpv-slides-real/slide-108.png"
+ },
+ {
+  "id": 89,
+  "question": "What is a common cause of distortion in camera images?",
+  "options": [
+   "Linear projection model",
+   "Wide-angle lenses",
+   "Off-axis distance",
+   "linear magnification"
+  ],
+  "correct": [
+   "Wide-angle lenses"
+  ],
+  "slide_image": "cpv-slides-real/slide-109.png"
+ }
+]

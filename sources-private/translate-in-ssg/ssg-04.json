@@ -1,0 +1,203 @@
+[
+ {
+  "id": 61,
+  "question": "Which of the following scenarios at FPT University best illustrates the \"Context\" element?",
+  "options": [
+   "A Software Engineering student is trying to study for their Java exam in the library, but a group nearby is practicing Vovinam loudly, making it hard to concentrate.",
+   "A lecturer posts a deadline update on FAP (FPT Academic Portal) expecting students to check the portal daily, but a freshman expects the lecturer to announce it verbally during the next class.",
+   "The president of an FPT student club uses a shared Google Drive link to send the semester's event plan to all club members.",
+   "After a group presentation in an EduNext slot, a student receives a grade and constructive comments from their peers evaluating their teamwork."
+  ]
+ },
+ {
+  "id": 62,
+  "question": "An FPT student structures their Capstone proposal in a specific order: first the problem, then the schedule, and finally the team's responsibilities. Which \"Logos\" strategy are they applying?",
+  "options": [
+   "Reference",
+   "Tone",
+   "Arrangement",
+   "Expectation"
+  ]
+ },
+ {
+  "id": 63,
+  "question": "According to the principle that \"the best style is the one that fits the situation,\" which of the following scenarios at FPT University strictly requires a \"Formal\" style of written communication?",
+  "options": [
+   "Sending a message on a Zalo group chat to remind your Capstone teammates to meet at the 7-Eleven on campus.",
+   "Writing a quick email to a friendly lecturer you've studied with for 4 semesters to ask if they are in their office.",
+   "Drafting an official petition to the Head of the Academic Department to request a waiver for a Capstone prerequisite.",
+   "Texting your roommate to ask what time the Dom A cafeteria closes tonight."
+  ]
+ },
+ {
+  "id": 64,
+  "question": "An FPT student sends the following message via Zalo to a classmate they are paired with for an assignment \"Hi Minh, could you please send me the latest PowerPoint slides before our presentation at 3 PM? Thanks!\" Based on the levels of style, which category does this message best fit?",
+  "options": [
+   "Informal, because it is relaxed and friendly, yet still structured and suitable for academic/business communication.",
+   "Colloquial, because it uses everyday slang and highly regional expressions.",
+   "Casual, because it is written exactly how family members speak to each other at home.",
+   "Formal, because it uses highly professional language, complex sentence structures, and an official tone."
+  ]
+ },
+ {
+  "id": 65,
+  "question": "An FPT University student is emailing the IT Helpdesk because they are unable to submit their assignment online. According to the principle \"writers should choose concrete terms when possible and avoid ambiguity,\" which of the following sentences is the BEST choice to include in the email?",
+  "options": [
+   "EduNext displays an \"Error 404\" message every time I click the \"Submit\" button for my Capstone Phase 1 repository.",
+   "The system is doing something weird with my stuff again.",
+   "There is a really bad error happening when I try to upload my work to the class.",
+   "I am experiencing a suboptimal technological phenomenon when interfacing with the university's submission portal."
+  ]
+ },
+ {
+  "id": 66,
+  "question": "A student club sends this welcome email to new international students: \"Let's get lit at the Dom this weekend!\" Why is this a poor choice for this specific audience?",
+  "options": [
+   "It uses words that are too clear and direct.",
+   "It uses local slang (\"get lit,\" \"the Dom\") that the international students likely won't understand.",
+   "The grammar is completely incorrect.",
+   "It doesn't use big, fancy words to impress them."
+  ]
+ },
+ {
+  "id": 67,
+  "question": "A student club president needs to write their first formal sponsorship proposal to a local company. What is the best strategy to learn how to write this effectively?",
+  "options": [
+   "Write it at the last minute without showing anyone to keep it original.",
+   "Avoid reading past proposals so it doesn't ruin their unique style.",
+   "Wait for a burst of inspiration, since writing is a natural gift.",
+   "Study successful past proposals, write a draft, and get feedback from an advisor."
+  ]
+ },
+ {
+  "id": 68,
+  "question": "An FPT student emails their mentor using texting abbreviations \"plz let me know\", all lowercase letters, and forgets to include their name. Which communication barrier does this represent?",
+  "options": [
+   "Spending too much time on the \"Review, Reflect, and Revise\" step.",
+   "Too much information and poor organization.",
+   "Failing to \"sweat the small stuff\" by ignoring basic grammar and formatting.",
+   "Using the wrong communication channel."
+  ]
+ },
+ {
+  "id": 69,
+  "question": "The FPT Event Club needs to announce a sudden venue change. To avoid confusing the students, what is the BEST strategy?",
+  "options": [
+   "Post a quick, unedited draft immediately to save time.",
+   "Use complex academic jargon to show the seriousness of the change.",
+   "Include the entire history of the event to ensure there isn't too little information.",
+   "Plan the message, adapt the language to the students, and revise it for clarity before posting."
+  ]
+ },
+ {
+  "id": 70,
+  "question": "What is one important benefit of choosing a college major based on your interests?",
+  "options": [
+   "It guarantees a high salary immediately after graduation.",
+   "It helps connect your strengths and enjoyment to possible careers.",
+   "It removes the need to build professional skills.",
+   "It allows you to avoid all difficult courses."
+  ]
+ },
+ {
+  "id": 71,
+  "question": "Which of the following is considered a transferable skill?",
+  "options": [
+   "Communication",
+   "Driving a forklift",
+   "Repairing a specific machine",
+   "Operating one company's software only"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "What is the main purpose of a résumé?",
+  "options": [
+   "To describe your personal hobbies in detail",
+   "To provide entertainment for employers",
+   "To market your qualifications and experiences for a job",
+   "To replace the job interview completely"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "Which résumé format lists the most recent experience first?",
+  "options": [
+   "Functional résumé",
+   "Hybrid résumé",
+   "Video résumé",
+   "Reverse chronological résumé"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "Which item should NOT be included on a professional résumé?",
+  "options": [
+   "Volunteer experience",
+   "Professional email address",
+   "Political affiliation unrelated to the job",
+   "Education and training"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "What should a candidate do before attending a job interview?",
+  "options": [
+   "Research the company and the position",
+   "Memorize every answer word for word",
+   "Wait for the interviewer to explain the company",
+   "Avoid reviewing their résumé"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "What does the \"A\" in the STAR method stand for?",
+  "options": [
+   "Assessment",
+   "Achievement",
+   "Action",
+   "Approach"
+  ]
+ },
+ {
+  "id": 77,
+  "question": "Which behavior is appropriate during an interview?",
+  "options": [
+   "Interrupting the interviewer to show confidence",
+   "Using slang to sound friendly",
+   "Avoiding eye contact to reduce stress",
+   "Listening carefully and speaking clearly"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "Why is career development described as an ongoing process?",
+  "options": [
+   "Because career goals never change",
+   "Because people continuously review and adjust their plans",
+   "Because only managers need career planning",
+   "Because career decisions are completed in college"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "What is a good example of building professional skills outside the classroom?",
+  "options": [
+   "Ignoring networking opportunities",
+   "Avoiding teamwork activities",
+   "Participating in internships or volunteering",
+   "Studying only for exams"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "How does persuasive speaking differ from informative speaking?",
+  "options": [
+   "Persuasive speaking focuses only on explaining complex data",
+   "Informative speaking aims to change what listeners think or do",
+   "Persuasive speaking aims to change what listeners think, feel, or do",
+   "Informative speaking does not require clear organization",
+   "Persuasive speaking should not use accurate information"
+  ]
+ }
+]

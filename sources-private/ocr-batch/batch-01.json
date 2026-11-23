@@ -1,0 +1,362 @@
+[
+  {
+    "slide": 9,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Hình ảnh, biểu đồ",
+    "question": "What is the formula to calculate normalized Laplacian of Gaussian?",
+    "options": [
+      "IV",
+      "I",
+      "III",
+      "II"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 10,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Hình ảnh, biểu đồ",
+    "question": "How is the orientation of the gradient computed? (I: intensity at pixels, x: x coordinate of pixel, y: y coordinate of pixel)",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 11,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Hình ảnh, biểu đồ",
+    "question": "Which of the following kernels is used to detect oblique of +45 degrees in convolution based technique?",
+    "options": [
+      "III",
+      "I",
+      "II",
+      "IV"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 12,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Hình ảnh, biểu đồ",
+    "question": "Given the integral image of an image (Figure 1).\nWhat is the sum of all pixels' intensity in a patch (red rectangle) shown in Figure 2?",
+    "options": [
+      "15",
+      "17",
+      "12",
+      "19"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 13,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Hình ảnh, biểu đồ",
+    "question": "Given an image as follow. What is the filtered image as it is filtered by a mean filter with the size of 3x3?",
+    "options": [
+      "II",
+      "III",
+      "I",
+      "IV"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": true,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 14,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Nhiều đáp án",
+    "question": "What are the factors influencing the evolution of digital image processing? (2 options)",
+    "options": [
+      "Computer development",
+      "mathematical progress",
+      "Social media trends",
+      "Narrow range of a specific application"
+    ],
+    "answer": [0, 1],
+    "multi": true,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 15,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is an idea that replaces each pixel with the mean of the pixels in a range neighborhood and whose value is within a distance d.",
+    "options": [
+      "Mean-shift",
+      "Watershed",
+      "K-mean",
+      "None of these"
+    ],
+    "answer": [],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": true,
+    "review_note": "cpv-slide-text.json ghi 'Dấu ___' (không có chữ cái đáp án). Phán đoán: A (Mean-shift)"
+  },
+  {
+    "slide": 16,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is perform fully automated image stitching is a technique to recognize which images actually go togethering",
+    "options": [
+      "Recognize panoramas",
+      "Object tracking",
+      "Recognize face",
+      "Object Detection"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 17,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is used to identify different classes or clusters in the given data based on how similar the data is.",
+    "options": [
+      "Feature descriptor",
+      "Watershed",
+      "Harris",
+      "K-means"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 18,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama or high-resolution image.",
+    "options": [
+      "Image preprocessing",
+      "Image subtraction",
+      "Image stitching",
+      "Image acquisition"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 19,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+    "options": [
+      "RANSAC",
+      "Mean shift",
+      "K-mean",
+      "Canny edge detection"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 20,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a computationally intensive procedure that focuses on outliers in the regressor variables",
+    "options": [
+      "MM-estimation",
+      "M-estimation",
+      "S-estimation",
+      "All of the above"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 21,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+    "options": [
+      "Image segmentation",
+      "Image analysis",
+      "Object detection",
+      "Object recognition"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 22,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a method of enhancing the image quality of textures on surfaces of computer graphics that are at oblique viewing angles with respect to the camera where the projection of the texture. Choose the best answer",
+    "options": [
+      "MIP Mapping filter",
+      "Elliptical Weighted Average (EWA) filter",
+      "Anisotropic filtering",
+      "Gaussian White filter"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 23,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+      "Peak detector",
+      "Peak descriptor",
+      "Edge detection.",
+      "Edge descriptor"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 24,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+    "options": [
+      "Image segmentation",
+      "Image analysis",
+      "Object detection",
+      "Object recognition"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 25,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+    "options": [
+      "Geometric transformation",
+      "Image transformation",
+      "Geometric computing",
+      "Image computing"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 26,
+    "topic": "Khác",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+    "options": [
+      "Graph transformation",
+      "Image transformation",
+      "Graph computing",
+      "Image computing"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 27,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+    "options": [
+      "Peak detector",
+      "Peak descriptor",
+      "Edge detection.",
+      "Edge descriptor"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 28,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Điền vào chỗ trống",
+    "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+    "options": [
+      "Cylindrical projection",
+      "Cylindrical viewing",
+      "Cylindrical panoramic",
+      "None of the others"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  }
+]

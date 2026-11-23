@@ -1,0 +1,22 @@
+{
+"106":{"q":"Mục tiêu chính của việc sử dụng hồi quy Ridge (Ridge regression) là gì?","options":["Chọn đặc trưng (feature selection)","Xử lý đa cộng tuyến (multicollinearity)","Giảm thiểu phương sai (variance)","Giảm độ chệch (bias)"]},
+"107":{"q":"Mục đích chính của việc sử dụng các hàm kích hoạt (activation functions) trong mạng nơ-ron là gì?","options":["Khởi tạo trọng số","Giảm độ phức tạp của mô hình","Thêm tính phi tuyến vào mô hình","Tính toán gradient"]},
+"108":{"q":"Mục đích của việc sử dụng hàm stackplot() trong Matplotlib là gì?","options":["Hiển thị biểu đồ cột xếp chồng","Trực quan hóa dữ liệu địa lý","Tạo biểu đồ đường","Vẽ biểu đồ waffle (waffle chart)"]},
+"109":{"q":"Mục đích của Dash trong Python là gì?","options":["Tạo các ứng dụng web","Trực quan hóa dữ liệu thống kê","Tạo ra các mô hình học máy","Xây dựng các biểu đồ tương tác"]},
+"110":{"q":"Mối quan hệ giữa độ chính xác (precision) và độ phủ (recall) trong ma trận nhầm lẫn (confusion matrix) là gì?","options":["Chúng tỉ lệ nghịch với nhau","Chúng độc lập với nhau","Chúng tỉ lệ thuận với nhau","Chúng có quan hệ bậc hai"]},
+"111":{"q":"Giả định về mối quan hệ giữa biến độc lập và biến phụ thuộc trong hồi quy tuyến tính (linear regression) là gì?","options":["Phi tuyến","Tuyến tính","Hàm mũ","Ngẫu nhiên"]},
+"112":{"q":"Mục đích của việc tích hợp chatbot với Slack là gì?","options":["Gửi email tự động","Phân tích hành vi người dùng","Cho phép trò chuyện trong các kênh Slack","Tạo các báo cáo trực quan hóa"]},
+"113":{"q":"Các phần tử trên đường chéo của ma trận nhầm lẫn (confusion matrix) biểu diễn điều gì?","options":["Dương tính thật (true positives) và âm tính thật (true negatives)","Dương tính giả (false positives) và âm tính giả (false negatives)","Dương tính thật (true positives) và dương tính giả (false positives)","Âm tính thật (true negatives) và âm tính giả (false negatives)"]},
+"114":{"q":"Chữ dcc trong dcc.Graph của Dash là viết tắt của gì?","options":["Dash Core Components","Dynamic Chart Creator","Data Collection Component","Display Chart Component"]},
+"115":{"q":"Đường ngang bên trong hộp của biểu đồ hộp (boxplot) biểu diễn điều gì?","options":["Trung vị (median)","Trung bình (mean)","Độ lệch chuẩn (standard deviation)","Khoảng tứ phân vị (Interquartile range - IQR)"]},
+"116":{"q":"Việc tăng bậc (degree) trong các mô hình hồi quy đa thức (polynomial regression) dẫn đến điều gì?","options":["Quá khớp (overfitting)","Chưa khớp (underfitting)","Tăng độ chệch (bias)","Giảm phương sai (variance)"]},
+"117":{"q":"plt.xlabel() trong Matplotlib có tác dụng gì?","options":["Thêm nhãn cho trục x","Đặt tiêu đề cho biểu đồ","Thêm văn bản vào biểu đồ","Điều chỉnh các vạch chia (ticks) của trục x"]},
+"118":{"q":"Biểu đồ hộp (box plot) chủ yếu thể hiện điều gì?","options":["Phân phối dữ liệu","Các điểm dữ liệu riêng lẻ","Trung bình và độ lệch chuẩn","Tương quan giữa các biến"]},
+"119":{"q":"Hàm kích hoạt (activation function) nào thường được dùng trong các lớp ẩn của một CNN?","options":["ReLU (Rectified Linear Activation)","Sigmoid","Tanh (Hyperbolic Tangent)","Softmax"]},
+"120":{"q":"Phương trình hồi quy đa thức (polynomial regression) bao gồm thêm số hạng nào so với phương trình hồi quy tuyến tính?","options":["Số hạng hàm mũ","Số hạng bậc hai","Số hạng logarit","Số hạng lượng giác"]},
+"121":{"q":"Thuộc tính hoặc phương thức nào sẽ cho bạn kiểu dữ liệu của từng cột?","options":["dtypes","ftypes","itypes","ntypes"]},
+"122":{"q":"Phương thức HTTP nào thường được dùng để truy xuất dữ liệu từ một REST API?","options":["POSS","GET","PUT","DELETE"]},
+"123":{"q":"Định dạng tệp nào thường được dùng để lưu dữ liệu ranh giới địa lý cho việc vẽ bản đồ choropleth (choropleth mapping) trong Python?","options":["GeoJSON","CSV","Excel","TXT"]},
+"124":{"q":"Loại biểu đồ nào trong Seaborn được dùng để hiển thị phân phối của một biến liên tục và mối quan hệ của nó với dữ liệu phân loại (categorical data)?","options":["Boxplot","Swarmplot","Violinplot","Stripplot"]},
+"125":{"q":"Thư viện Folium chủ yếu giúp bạn tạo ra loại đồ thị nào?","options":["Biểu đồ cột","Biểu đồ phân tán (scatter plot)","Bản đồ","Biểu đồ đường"]}
+}

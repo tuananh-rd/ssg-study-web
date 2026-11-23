@@ -1,0 +1,15 @@
+
+/* ===== Nền động hoa lá ===== */
+#fxcv{position:fixed;inset:0;width:100vw;height:100vh;z-index:-1;pointer-events:none}
+body.fm-3,body.fm-4,body.fm-5{background:transparent!important}
+body.fm-3:before,body.fm-4:before,body.fm-5:before{content:"";position:fixed;inset:0;z-index:-2;background-size:180% 180%;animation:fmdrift 45s ease-in-out infinite alternate}
+body.fm-3:after,body.fm-4:after,body.fm-5:after{opacity:0!important}
+body.fm-3:before{background-image:radial-gradient(55% 50% at 85% 10%,#fff0f5 0,transparent 70%),radial-gradient(60% 60% at 10% 90%,#fbd3e1 0,transparent 70%),radial-gradient(50% 50% at 50% 50%,#fde2ec 0,transparent 75%),linear-gradient(160deg,#fff1f6,#f8d7e4)}
+body.fm-4:before{background-image:linear-gradient(110deg,rgba(255,255,255,.38) 0,transparent 22%,rgba(255,255,255,.22) 38%,transparent 55%),radial-gradient(60% 55% at 15% 15%,#eaf7d9 0,transparent 70%),radial-gradient(60% 60% at 90% 85%,#c4e3c3 0,transparent 70%),linear-gradient(160deg,#e4f3dc,#c8e4c6)}
+body.fm-5:before{background-image:radial-gradient(60% 50% at 20% 100%,#12402e 0,transparent 70%),radial-gradient(50% 60% at 90% 90%,#0e3a3a 0,transparent 70%),radial-gradient(70% 50% at 50% 0%,#0b2236 0,transparent 70%),linear-gradient(180deg,#07121a,#0a1f1a)}
+:root[data-theme=dark] body.fm-3:before{background-image:radial-gradient(55% 50% at 85% 10%,#3a1f2e 0,transparent 70%),radial-gradient(60% 60% at 10% 90%,#2c1a28 0,transparent 70%),linear-gradient(160deg,#1c141b,#261822)}
+:root[data-theme=dark] body.fm-4:before{background-image:radial-gradient(60% 55% at 15% 15%,#1c3524 0,transparent 70%),radial-gradient(60% 60% at 90% 85%,#16301f 0,transparent 70%),linear-gradient(160deg,#0f1c15,#13231a)}
+body.fm-5{--bg:#0b1713;--panel:#122019;--panel2:#18291f;--text:#e6f0e8;--muted:#a3b8aa;--line:#26402f;--primary:#8fd69b;--primary-2:#b4e8bc;--primary-ink:#08140d;--primary-soft:#1b3a28;--ok:#69db7c;--ok-soft:#1d3325;--bad:#ff8787;--bad-soft:#3d2224;--warn:#ffd43b;--warn-soft:#3a3320;--shadow:none;color-scheme:dark;color:var(--text)}
+body.fm-5 h1,body.fm-5 h2,body.fm-5 h3,body.fm-5 .q,body.fm-5 .prose{color:var(--text)}
+body.fm-5 .card,body.fm-5 .opt,body.fm-5 .sec,body.fm-5 .keybox,body.fm-5 .ai-bar,body.fm-5 .ai-chat{background:color-mix(in srgb,var(--panel) 90%,transparent)!important;color:var(--text)}
+@media(prefers-reduced-motion:reduce){body.fm-3:before,body.fm-4:before,body.fm-5:before{animation:none}}

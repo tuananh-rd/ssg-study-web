@@ -1,0 +1,343 @@
+[
+  {
+    "id": "cpv-149",
+    "slide_number": 149,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+      "Feature reduce",
+      "Feature combination",
+      "Feature compression",
+      "Feature matching"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-149.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-150",
+    "slide_number": 150,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+      "Eyes, eyebrows, nose, hair, jaw",
+      "Eyes, eyebrows, nose, neck, mouth",
+      "Eyes, eyebrows, nose, mouth, jaw",
+      "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-150.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-151",
+    "slide_number": 151,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+      "Snakes model",
+      "Scissors model",
+      "Sets model",
+      "All of the others"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-151.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-152",
+    "slide_number": 152,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+      "1000x128",
+      "1200x1000",
+      "128x1200",
+      "128x128"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-152.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-153",
+    "slide_number": 153,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+      "Instance segmentation",
+      "Semantic detection",
+      "Instance detection",
+      "Semantic segmentation"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-153.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-154",
+    "slide_number": 154,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+      "Panoramas creating",
+      "Recognizing panoramas",
+      "Parallax removal",
+      "Bundle Adjustment"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-154.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-155",
+    "slide_number": 155,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+      "Object detection",
+      "Object locating",
+      "Object recognition",
+      "Object tracking"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-155.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-156",
+    "slide_number": 156,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+      "Cylindrical coordinates",
+      "Cartesian coordinates",
+      "Spherical coordinates",
+      "Polar coordinates"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-156.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-157",
+    "slide_number": 157,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+      "Preprocessing",
+      "Feature description",
+      "Feature combination",
+      "Noise remove( filters)"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-157.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-158",
+    "slide_number": 158,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+      "Object edges",
+      "Object centroids",
+      "Valleys in the image",
+      "Image pixels"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-158.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-159",
+    "slide_number": 159,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+      "Display Fourier Transform",
+      "Distribute Fourier Transform",
+      "Discrete Fourier Transform",
+      "Discontinous Fourier Transform"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-159.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-160",
+    "slide_number": 160,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+      "Diffuse reflection",
+      "Specular reflection",
+      "Refraction",
+      "Translucency"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Màu sắc & histogram",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-160.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-161",
+    "slide_number": 161,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+      "Number of clusters",
+      "Number of nearest neighbors",
+      "The kernel size of each cluster",
+      "Kernels in an image"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-161.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-162",
+    "slide_number": 162,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+      "High gradient magnitude",
+      "High pixel intensity",
+      "Low gradient magnitude",
+      "Low pixel intensity"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-162.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-163",
+    "slide_number": 163,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+      "Convolution",
+      "Correlation",
+      "Multiplication",
+      "Sum"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-163.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-164",
+    "slide_number": 164,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+      "Kernel Tracking",
+      "Point Tracking",
+      "Silhouette Tracking",
+      "Template Matching"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-164.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-165",
+    "slide_number": 165,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+      "|R| is small",
+      "|R| is large",
+      "|R| < 0",
+      "cannot determine |R|"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-165.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-166",
+    "slide_number": 166,
+    "question": "In the technique, a sparse set of features are detected in one image and matched with the features in the other image. A transformation is then calculated based on these matched features that warp one image onto the other. What is the exact name of this technique?",
+    "options": [
+      "Feature-Based alignment",
+      "Feature-Based detection",
+      "Feature-Based recognition",
+      "Feature-Based filter"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-166.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-167",
+    "slide_number": 167,
+    "question": "In K-Means segmentation, how are pixels grouped into clusters?",
+    "options": [
+      "Based on pixel intensity",
+      "Based on spatial proximity",
+      "Based on the color histogram",
+      "By gradient magnitude"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-167.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-168",
+    "slide_number": 168,
+    "question": "In digital cameras, what does the ISO setting control?",
+    "options": [
+      "Sensor sensitivity to light",
+      "Shutter speed",
+      "Aperture size",
+      "Autofocus speed",
+      "None of the others"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-168.png",
+    "needs_review": false
+  }
+]

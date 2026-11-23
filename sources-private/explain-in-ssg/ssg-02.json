@@ -1,0 +1,333 @@
+[
+ {
+  "id": 27,
+  "question": "What is the main problem with the following excerpt from the meeting minutes?\n\"Trang presented a wonderful, highly creative idea for the club's Gala dinner. Unsurprisingly, Tuan immediately started whining about the budget and shut down her ideas in a really rude, insensitive tone. He tried to force the team to buy cheap food from a local buffet, which would make our club look incredibly unprofessional to the whole university.\"",
+  "options": [
+   "Introducing editorial bias or emotion.",
+   "Lack of \"next-step\" mechanics.",
+   "Total ambiguity.",
+   "Over-detailing.",
+   "Informal language."
+  ],
+  "correct": [
+   "Introducing editorial bias or emotion."
+  ]
+ },
+ {
+  "id": 28,
+  "question": "According to the \"Five Key Drivers\", how does team size affect group cohesiveness?",
+  "options": [
+   "Bigger teams lead to higher satisfaction.",
+   "Bigger teams lead to lower satisfaction and more conflict.",
+   "Size does not affect cohesiveness.",
+   "Bigger teams make entry harder and increase status."
+  ],
+  "correct": [
+   "Bigger teams lead to lower satisfaction and more conflict."
+  ]
+ },
+ {
+  "id": 29,
+  "question": "Which level of Maslow's hierarchy of needs is referred to in the following statement?\n\"Fostering a collaborative, inclusive culture where team members feel seen and valued as individuals.\"",
+  "options": [
+   "Physiological needs.",
+   "Safety needs.",
+   "Love and belonging.",
+   "Esteem.",
+   "Self-actualization."
+  ],
+  "correct": [
+   "Love and belonging."
+  ]
+ },
+ {
+  "id": 30,
+  "question": "Which organizational pattern is most suitable for explaining the steps in a business process?",
+  "options": [
+   "Compare-contrast",
+   "Chronological order",
+   "Classification",
+   "Problem-solution"
+  ],
+  "correct": [
+   "Chronological order"
+  ]
+ },
+ {
+  "id": 31,
+  "question": "What is the main purpose of using a clear and concise writing style in business communication?",
+  "options": [
+   "To impress readers with complex vocabulary",
+   "To make messages easier for readers to understand",
+   "To increase the length of documents",
+   "To avoid using active voice"
+  ],
+  "correct": [
+   "To make messages easier for readers to understand"
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Which statement best describes plagiarism?",
+  "options": [
+   "Using visuals in a report",
+   "Presenting another person's words or ideas as your own",
+   "Writing a summary in shorter form",
+   "Using headings in a report"
+  ],
+  "correct": [
+   "Presenting another person's words or ideas as your own"
+  ]
+ },
+ {
+  "id": 33,
+  "question": "Why is feedback important in the writing process?",
+  "options": [
+   "It replaces the need for revision",
+   "It helps identify unclear sections and improve communication",
+   "It guarantees that all readers will agree with the writer",
+   "It makes reports longer and more detailed"
+  ],
+  "correct": [
+   "It helps identify unclear sections and improve communication"
+  ]
+ },
+ {
+  "id": 34,
+  "question": "What is the primary purpose of an analytical report?",
+  "options": [
+   "To entertain readers",
+   "To record attendance",
+   "To interpret information and provide recommendations",
+   "To summarize meeting schedules only"
+  ],
+  "correct": [
+   "To interpret information and provide recommendations"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "Which section of a report usually explains the project purpose, background, and scope?",
+  "options": [
+   "Appendix",
+   "Introduction",
+   "Conclusion",
+   "References"
+  ],
+  "correct": [
+   "Introduction"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "What question should a progress report answer?",
+  "options": [
+   "Who won the project competition?",
+   "What were the original objectives and what progress has been made?",
+   "How many employees joined the company?",
+   "Which department has the highest salary?"
+  ],
+  "correct": [
+   "What were the original objectives and what progress has been made?"
+  ]
+ },
+ {
+  "id": 37,
+  "question": "Which of the following is a common pitfall in report writing?",
+  "options": [
+   "Using clear headings",
+   "Providing too much raw data without explanation",
+   "Including next steps and timelines",
+   "Organizing sections logically"
+  ],
+  "correct": [
+   "Providing too much raw data without explanation"
+  ]
+ },
+ {
+  "id": 38,
+  "question": "What should be included in the 'Next Steps' section of a progress report?",
+  "options": [
+   "Only completed tasks",
+   "Personal opinions unrelated to the project",
+   "Clear actions, responsibilities, and timelines",
+   "A list of unrelated company policies"
+  ],
+  "correct": [
+   "Clear actions, responsibilities, and timelines"
+  ]
+ },
+ {
+  "id": 39,
+  "question": "Why should teams report project challenges honestly in a progress report?",
+  "options": [
+   "To hide delays from managers",
+   "To avoid responsibility",
+   "To help managers understand problems and support solutions",
+   "To make the report longer"
+  ],
+  "correct": [
+   "To help managers understand problems and support solutions"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "Which statement best describes the purpose of a team meeting planner?",
+  "options": [
+   "It replaces leadership during meetings",
+   "It structures agendas, decisions, and action items",
+   "It removes the need for follow-up",
+   "It limits participation",
+   "None of them."
+  ],
+  "correct": [
+   "It structures agendas, decisions, and action items"
+  ]
+ },
+ {
+  "id": 41,
+  "question": "Why should agenda items be organized logically with estimated times?",
+  "options": [
+   "To reduce participation",
+   "To increase meeting complexity",
+   "To eliminate discussion entirely",
+   "To help the meeting stay focused and manageable"
+  ],
+  "correct": [
+   "To help the meeting stay focused and manageable"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "What is one risk of inviting unnecessary participants to a meeting?",
+  "options": [
+   "Reduced communication barriers",
+   "Simpler decision-making",
+   "Increased complexity and negative results",
+   "Better time management"
+  ],
+  "correct": [
+   "Increased complexity and negative results"
+  ]
+ },
+ {
+  "id": 43,
+  "question": "Why can circular seating arrangements improve interaction?",
+  "options": [
+   "They reinforce hierarchy strongly",
+   "They encourage more equal participation and visibility",
+   "They reduce eye contact",
+   "They limit discussion opportunities",
+   "None of them."
+  ],
+  "correct": [
+   "They encourage more equal participation and visibility"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "Which participant behavior is recommended in the meeting checklist?",
+  "options": [
+   "Leaving frequently during the discussion",
+   "Ignoring established turn-taking procedures",
+   "Demonstrating professionalism in verbal and nonverbal communication",
+   "Starting side conversations when bored",
+   "None of them."
+  ],
+  "correct": [
+   "Demonstrating professionalism in verbal and nonverbal communication"
+  ]
+ },
+ {
+  "id": 45,
+  "question": "A meeting leader regularly asks quieter members for opinions and summarizes key points. Which meeting skill is being demonstrated?",
+  "options": [
+   "Facilitation and participation management",
+   "Dominating discussion",
+   "Conflict avoidance",
+   "Informal leadership only"
+  ],
+  "correct": [
+   "Facilitation and participation management"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "What is the purpose of agreeing on ground rules at the beginning of a meeting?",
+  "options": [
+   "To encourage interruptions",
+   "To support respectful and organized discussion",
+   "To increase conflict",
+   "To reduce accountability",
+   "None of them"
+  ],
+  "correct": [
+   "To support respectful and organized discussion"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "Why is recording action items with deadlines important?",
+  "options": [
+   "It creates unnecessary documentation",
+   "It avoids future meetings",
+   "It reduces member accountability",
+   "It clarifies responsibility and follow-up expectations"
+  ],
+  "correct": [
+   "It clarifies responsibility and follow-up expectations"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "Why are meeting roles rotated during practice activities?",
+  "options": [
+   "To create confusion among participants",
+   "To ensure all members practise different teamwork skills",
+   "To shorten the activity",
+   "To reduce accountability"
+  ],
+  "correct": [
+   "To ensure all members practise different teamwork skills"
+  ]
+ },
+ {
+  "id": 49,
+  "question": "What should happen after the meeting?",
+  "options": [
+   "Team members should ignore the notes",
+   "The meeting record should be shared",
+   "All plans should change immediately",
+   "No follow-up is necessary"
+  ],
+  "correct": [
+   "The meeting record should be shared"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "An FPT student sits down to write an email requesting an internship at a software company. According to the \"Think, Then Write\" principle, what is the very first thing they should do before putting words on the page?",
+  "options": [
+   "Write a quick first draft and plan to fix the confusion later.",
+   "Clarify their purpose, their audience, and the desired outcome of the email.",
+   "Immediately search for external sources on Google to copy a template.",
+   "Create a working outline without knowing who the primary audience is."
+  ],
+  "correct": [
+   "Clarify their purpose, their audience, and the desired outcome of the email."
+  ]
+ },
+ {
+  "id": 51,
+  "question": "Before starting a Capstone project proposal, which of the following is a crucial question the team must ask themselves to ensure their message is effective?",
+  "options": [
+   "How can I use the most complex vocabulary possible?",
+   "How can I make this document as long as possible?",
+   "What is my main purpose: to inform, persuade, or request action?",
+   "Which formatting style will look the most creative, regardless of the rules?"
+  ],
+  "correct": [
+   "What is my main purpose: to inform, persuade, or request action?"
+  ]
+ }
+]

@@ -1,0 +1,172 @@
+[
+ {
+  "id": 197,
+  "question": "Select the option that best completes the following sentence:\nFor data with many features, principal components analysis",
+  "options": [
+   "identifies which features can be safely discarded",
+   "reduces the number of features without losing any information.",
+   "establishes a minimum number of viable features for use in the analysis.",
+   "generates new features that are linear combinations of the original features."
+  ]
+ },
+ {
+  "id": 198,
+  "question": "Usually the first step to fit a k nearest neighbor classifier using scikit learn is to:",
+  "options": [
+   "import KNN from the sklearn.knearest neighbors module\ne.g. from sklearn.knearestneighbors import KNN",
+   "import KNeighbors Classifier from the sklearn.neighbors module\ne.g. from sklearn.neighbors import KNeighborsClassifier",
+   "import Classifier from the sklearn.nearestneighbors module\ne.g. from sklearn.nearestneighbors import Classifier",
+   "import KNNClassifier from the sklearn.knearestneighbors module\ne.g. from sklearn.knearest neighbors import KNNClassifier"
+  ]
+ },
+ {
+  "id": 199,
+  "question": "Usually the first step to fit a logistic regression model using scikit learn is to:",
+  "options": [
+   "import logistic regression from the sklearn.linear_model module\ne.g. from sklearn.linear_model import LogisticRegression",
+   "import Logistic from the sklearn.regression module\ne.g. from sklearn.regression import Logistic",
+   "import Logistic from the sklearn.linear_regression module\ne.g. from sklearn.linear_regression import Logistic",
+   "import logistic regression from the sklearn.linear classifier module\ne.g. from sklearn.linearclassifier import Logistic Regression"
+  ]
+ },
+ {
+  "id": 200,
+  "question": "What is the purpose of feature engineering in the machine learning workflow?",
+  "options": [
+   "Selecting the most important features in the dataset",
+   "Creating new features or transforming existing ones to improve model performance",
+   "Training the machine learning model",
+   "Evaluating the model's performance on the test set"
+  ]
+ },
+ {
+  "id": 201,
+  "question": "What is the primary purpose of performing Exploratory Data Analysis (EDA) on a dataset?",
+  "options": [
+   "To train and evaluate a predictive machine learning model.",
+   "To remove all errors and missing values from the dataset.",
+   "To gain initial insights into the data, uncover trends, and highlight irregularities.",
+   "To convert the dataset into a different file format (e.g., CSV to Excel)."
+  ]
+ },
+ {
+  "id": 202,
+  "question": "What is the difference between a parametric and a non-parametric method in statistical inference?",
+  "options": [
+   "Parametric methods assume a specific distribution for the data, while non-parametric methods make no assumptions about the underlying distribution",
+   "Parametric methods only apply to large sample sizes, while non-parametric methods are suitable for any sample size",
+   "Parametric methods are used for estimating population parameters, while non-parametric methods focus on summarizing the data",
+   "Parametric methods are computationally less intensive than non-parametric methods"
+  ]
+ },
+ {
+  "id": 203,
+  "question": "A data scientist is comparing three models of increasing complexity on the same dataset. The training error decreases steadily for all models, but the validation error initially decreases and then starts increasing for the most complex model. She decides to apply 10-fold cross-validation to better assess each model. Which statement best explains why cross-validation is especially useful in this case?",
+  "options": [
+   "It allows the data scientist to combine the training and test sets into one large dataset, which guarantees higher training accuracy for all models.",
+   "It provides multiple random splits of the training data, producing more stable estimates of each model's generalization performance and revealing the point at which increasing complexity leads to overfitting.",
+   "It ensures that all models achieve minimal error on the training data by repeatedly adjusting the model parameters using different folds of the same dataset.",
+   "It removes noise and outliers from the dataset automatically, preventing the more complex models from fitting any irregular patterns in the data."
+  ]
+ },
+ {
+  "id": 204,
+  "question": "Which of the following scenarios would most likely benefit from using Logistic Regression instead of KNN?",
+  "options": [
+   "When the goal is interpretability and understanding the contribution of each feature.",
+   "When the data has complex patterns and requires highly flexible decision boundaries.",
+   "When instance-based decision making is crucial for local prediction accuracy.",
+   "When the number of training samples is very small compared to the number of features."
+  ]
+ },
+ {
+  "id": 205,
+  "question": "In SVM, what is the impact of setting a very large value for the regularization parameter C?",
+  "options": [
+   "The model becomes stricter about minimizing misclassification, potentially fitting noise and leading to poor generalization.",
+   "The margin becomes wider, increasing the robustness of the model against noise and improving accuracy.",
+   "The model allows more slack variables, increasing bias and underfitting the training data.",
+   "The kernel becomes more complex, requiring additional tuning of the gamma parameter for optimal performance."
+  ]
+ },
+ {
+  "id": 206,
+  "question": "What is a key characteristic of Support Vector Machines?",
+  "options": [
+   "Support Vector Machine models rarely overfit on training data.",
+   "Support Vector Machine models are non-linear.",
+   "Support Vector Machine models can be used for classification but not for regression.",
+   "Support Vector Machine models can be used for regression but not for classification."
+  ]
+ },
+ {
+  "id": 207,
+  "question": "In ensemble learning, which strategy best describes how stacking operates?",
+  "options": [
+   "It adjusts model weights iteratively to focus on difficult examples and maximize accuracy.",
+   "It trains multiple models on the same data and averages their predictions without additional learning.",
+   "It selects only the best-performing model among all trained models for the final prediction.",
+   "It combines multiple base models and trains a meta-model to learn the optimal way to merge their predictions."
+  ]
+ },
+ {
+  "id": 208,
+  "question": "A data scientist is using Random Forest to handle an imbalanced dataset. What additional technique can improve the model's performance on the minority class?",
+  "options": [
+   "Reducing the number of trees to avoid overfitting to the majority class.",
+   "Selecting only features with low correlation before training the forest.",
+   "Using a smaller bootstrap sample size for each tree to focus more on the minority class.",
+   "Applying class weighting to penalize misclassifications of the minority class more heavily."
+  ]
+ },
+ {
+  "id": 209,
+  "question": "What potential issues might arise when removing samples from the majority class in the case of downsampling?",
+  "options": [
+   "Increased model interpretability",
+   "Improved model convergence",
+   "Loss of valuable information and representation of the majority class",
+   "Reduced overfitting risk"
+  ]
+ },
+ {
+  "id": 210,
+  "question": "Why is it important to scale the features before applying K-Means clustering?",
+  "options": [
+   "Because K-Means relies on Euclidean distance, and features with larger scales can dominate the clustering result.",
+   "Because K-Means automatically normalizes distances internally, and scaling prevents this behavior.",
+   "Because K-Means performs better when categorical variables are encoded as large numerical values.",
+   "Because K-Means uses only feature rankings, and scaling helps preserve the order of features."
+  ]
+ },
+ {
+  "id": 211,
+  "question": "What is the difference between single linkage and complete linkage in hierarchical agglomerative clustering?",
+  "options": [
+   "Single linkage measures the maximum distance between clusters, while complete linkage measures the minimum distance",
+   "Single linkage measures the minimum distance between the closest points in different clusters, while complete linkage measures the maximum distance",
+   "Single linkage takes the average distance between clusters, while complete linkage takes the median distance",
+   "Single linkage computes the centroid of clusters, while complete linkage computes the medoid"
+  ]
+ },
+ {
+  "id": 212,
+  "question": "What is the purpose of the linkage parameter in AgglomerativeClustering?",
+  "options": [
+   "It specifies the number of clusters to form",
+   "It determines the distance metric used to measure the similarity between clusters",
+   "It controls how the distance between clusters is calculated during merging",
+   "It adjusts the tolerance for merging clusters based on their proximity"
+  ]
+ },
+ {
+  "id": 213,
+  "question": "How does PCA handle missing values in the input data?",
+  "options": [
+   "It imputes missing values using the mean of the feature column",
+   "It ignores missing values during the computation of principal components",
+   "It replaces missing values with zeros before computation",
+   "It imputes missing values using linear interpolation"
+  ]
+ }
+]

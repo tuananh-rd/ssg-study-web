@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m5-006",
+  "q": "Ngoài việc xuất bản mã nguồn lên GitHub, Watson Studio còn cho phép thực hiện thao tác tương tác nào với kho lưu trữ GitHub?",
+  "correct": "Thêm (Add) các Notebook mẫu sẵn có từ kho lưu trữ GitHub về lại dự án Watson Studio",
+  "wrong": [
+   "Tự động xóa sạch các commit cũ trên kho lưu trữ từ xa của GitHub",
+   "Chuyển đổi toàn bộ mã nguồn Python trong notebook sang mã C# hoặc Java",
+   "Tự động thuê thêm máy chủ ảo VPS mới từ tài khoản GitHub"
+  ]
+ },
+ {
+  "id": "r-m6-001",
+  "q": "Thư viện Python nào được sử dụng để gửi yêu cầu HTTP GET tới SpaceX REST API nhằm lấy dữ liệu các lần phóng?",
+  "correct": "requests",
+  "wrong": [
+   "urllib3",
+   "beautifulsoup4",
+   "flask"
+  ]
+ },
+ {
+  "id": "r-m6-002",
+  "q": "Điểm cuối (endpoint URL) nào của SpaceX API được sử dụng để truy xuất toàn bộ dữ liệu các đợt phóng tên lửa trong quá khứ?",
+  "correct": "https://api.spacexdata.com/v4/launches/past",
+  "wrong": [
+   "https://api.spacexdata.com/v4/launches/upcoming",
+   "https://api.spacexdata.com/v4/launches/latest",
+   "https://api.spacexdata.com/v4/rockets/falcon9"
+  ]
+ },
+ {
+  "id": "r-m6-003",
+  "q": "Mã trạng thái HTTP (status code) nào trả về từ máy chủ SpaceX API cho biết yêu cầu GET đã thực hiện thành công?",
+  "correct": "200",
+  "wrong": [
+   "201",
+   "404",
+   "500"
+  ]
+ },
+ {
+  "id": "r-m6-004",
+  "q": "Hàm nào của Pandas được sử dụng để chuyển đổi cấu trúc dữ liệu JSON lồng nhau từ phản hồi API thành một DataFrame phẳng?",
+  "correct": "pd.json_normalize()",
+  "wrong": [
+   "pd.read_json()",
+   "pd.DataFrame.from_dict()",
+   "pd.pivot_table()"
+  ]
+ },
+ {
+  "id": "r-m6-005",
+  "q": "Thư viện Python nào được sử dụng để phân tích cú pháp HTML và trích xuất bảng dữ liệu các lần phóng từ trang Wikipedia?",
+  "correct": "BeautifulSoup (từ bs4)",
+  "wrong": [
+   "Scrapy",
+   "Selenium",
+   "Statsmodels"
+  ]
+ },
+ {
+  "id": "r-m6-006",
+  "q": "Để tìm và lấy ra danh sách tất cả các thẻ bảng `<table>` trên trang web bằng BeautifulSoup, phương thức nào được gọi?",
+  "correct": "soup.find_all('table')",
+  "wrong": [
+   "soup.get_elements('table')",
+   "soup.select_all('table')",
+   "soup.filter('table')"
+  ]
+ },
+ {
+  "id": "r-m6-007",
+  "q": "Để lấy nội dung văn bản thuần túy bên trong một thẻ HTML và loại bỏ các khoảng trắng thừa ở hai đầu, ta dùng cú pháp nào?",
+  "correct": "th.text.strip()",
+  "wrong": [
+   "th.get_html().clean()",
+   "th.content.trim()",
+   "th.value.strip()"
+  ]
+ },
+ {
+  "id": "r-m6-008",
+  "q": "Trong câu lệnh `soup = BeautifulSoup(html_data, 'html.parser')`, đối số `'html.parser'` thể hiện điều gì?",
+  "correct": "Bộ phân tích cú pháp HTML dựng sẵn trong Python được sử dụng để duyệt cây DOM",
+  "wrong": [
+   "Hàm mã hóa chuỗi văn bản HTML sang chuẩn UTF-8",
+   "Tham số chỉ định bảng mã màu cho đồ thị hiển thị",
+   "Thuật toán lọc bỏ các thẻ quảng cáo độc hại trên trang"
+  ]
+ },
+ {
+  "id": "r-m6-009",
+  "q": "Trong quy trình thu thập dữ liệu dự án, phương pháp cào dữ liệu (Web Scraping) bằng BeautifulSoup được áp dụng trong tình huống nào?",
+  "correct": "Khi dữ liệu cần thu thập không có sẵn qua hệ thống REST API mà nằm trong các bảng trên trang web",
+  "wrong": [
+   "Khi toàn bộ dữ liệu đã được lưu trữ sẵn trong cơ sở dữ liệu IBM Db2",
+   "Khi cần mã hóa trực tiếp luồng video phát sóng thời gian thực",
+   "Khi cần tự động gửi email báo cáo tiến độ cho các bên liên quan"
+  ]
+ },
+ {
+  "id": "r-m6-010",
+  "q": "Thuộc tính thô nào trong tập dữ liệu SpaceX đóng vai trò là biến nền tảng để tạo ra nhãn mục tiêu hạ cánh thành công?",
+  "correct": "Outcome",
+  "wrong": [
+   "Launch Site",
+   "Block",
+   "Serial"
+  ]
+ },
+ {
+  "id": "r-m6-011",
+  "q": "Các bộ phận cơ khí nào của tầng 1 tên lửa Falcon 9 có vai trò hỗ trợ điều hướng và giữ thăng bằng khi tên lửa tiếp đất?",
+  "correct": "Grid Fins & Legs",
+  "wrong": [
+   "Payload fairing & Solar panels",
+   "Second stage engine & Fuel tank",
+   "Avionics computer & Heat shield"
+  ]
+ },
+ {
+  "id": "r-m6-012",
+  "q": "Hai thuộc tính 'Block' và 'Serial' của tầng 1 tên lửa Falcon 9 thể hiện thông tin kỹ thuật gì?",
+  "correct": "Phiên bản công nghệ của lõi tên lửa (Block 1 đến 5) và mã định danh duy nhất của từng lõi (Serial)",
+  "wrong": [
+   "Vị trí bãi phóng địa lý và thời gian tên lửa bay lên quỹ đạo",
+   "Tổng khối lượng tải trọng hàng hóa và lượng nhiên liệu mang theo",
+   "Số lần kiểm tra bảo trì động cơ và số kỹ sư tham gia chế tạo"
+  ]
+ },
+ {
+  "id": "r-m6-013",
+  "q": "Trong bước dán nhãn nhị phân (Binary Labeling), giá trị của cột mục tiêu 'Class' được thiết lập theo quy tắc nào?",
+  "correct": "Gán 1 nếu hạ cánh thành công (bắt đầu bằng True), gán 0 nếu thất bại hoặc không hạ cánh (False hoặc None)",
+  "wrong": [
+   "Gán 1 cho bãi phóng ven biển, gán 0 cho các bãi phóng trên đất liền",
+   "Gán 1 nếu tải trọng trên 5000 kg, gán 0 nếu tải trọng dưới 5000 kg",
+   "Gán 1 nếu số lần bay lớn hơn 2, gán 0 nếu là chuyến bay đầu tiên"
+  ]
+ },
+ {
+  "id": "r-m6-014",
+  "q": "Cú pháp nào sử dụng NumPy để tạo cột nhị phân 'Class' dựa trên danh sách trạng thái thành công `success_outcomes`?",
+  "correct": "df['Class'] = np.where(df['Outcome'].isin(success_outcomes), 1, 0)",
+  "wrong": [
+   "df['Class'] = np.select(df['Outcome'] == success_outcomes, 1, 0)",
+   "df['Class'] = np.filter(df['Outcome'].isin(success_outcomes))",
+   "df['Class'] = np.choose(df['Outcome'], success_outcomes)"
+  ]
+ },
+ {
+  "id": "r-m6-015",
+  "q": "Công thức toán học nào được sử dụng trong thư viện Python để tính khoảng cách theo đường cong Trái Đất giữa hai tọa độ địa lý?",
+  "correct": "Công thức Haversine",
+  "wrong": [
+   "Khoảng cách Manhattan",
+   "Khoảng cách Minkowski",
+   "Khoảng cách Chebyshev"
+  ]
+ },
+ {
+  "id": "r-m6-016",
+  "q": "Trong hàm tính khoảng cách địa lý Haversine, bán kính Trái Đất R được quy ước xấp xỉ bằng bao nhiêu km?",
+  "correct": "6373.0 km",
+  "wrong": [
+   "12742.0 km",
+   "3844.0 km",
+   "1000.0 km"
+  ]
+ },
+ {
+  "id": "r-m6-017",
+  "q": "Trong ứng dụng SpaceX Dashboard với Plotly Dash, TASK 1 có mục tiêu thiết kế thành phần giao diện nào?",
+  "correct": "Thành phần Dropdown (dcc.Dropdown) cho phép chọn toàn bộ bãi phóng (All Sites) hoặc từng bãi phóng cụ thể",
+  "wrong": [
+   "Bản đồ nhiệt ma trận tương quan giữa tất cả các thuộc tính",
+   "Thanh trượt thời gian hiển thị lịch sử các lần phóng tên lửa",
+   "Hộp thoại nhập khóa API key để đăng nhập vào máy chủ"
+  ]
+ },
+ {
+  "id": "r-m6-018",
+  "q": "Trong TASK 2 của SpaceX Dashboard, hàm callback cập nhật loại biểu đồ nào tương ứng với bãi phóng được chọn từ Dropdown?",
+  "correct": "Biểu đồ tròn (Success Pie Chart) phản ánh tỷ lệ thành công và thất bại",
+  "wrong": [
+   "Biểu đồ hộp (Box Plot) thể hiện phân tán chi phí phóng tên lửa",
+   "Đám mây từ vựng (Word Cloud) hiển thị tên các nhiệm vụ phóng",
+   "Biểu đồ đường (Line Plot) biểu diễn chuỗi thời gian áp suất khí hậu"
+  ]
+ },
+ {
+  "id": "r-m6-019",
+  "q": "Thành phần nào được xây dựng trong TASK 3 để người dùng lọc khoảng khối lượng tải trọng từ 0 đến 10,000 kg?",
+  "correct": "Thanh trượt khoảng (dcc.RangeSlider)",
+  "wrong": [
+   "Ô nhập văn bản (dcc.Input)",
+   "Nút bấm chọn radio (dcc.RadioItems)",
+   "Hộp chọn nhiều mục (dcc.Checklist)"
+  ]
+ },
+ {
+  "id": "r-m6-020",
+  "q": "Trong TASK 4 của Dashboard, biểu đồ phân tán (Scatter Plot) hiển thị mối tương quan giữa những yếu tố nào?",
+  "correct": "Mối quan hệ giữa Payload và nhãn Class, ánh xạ màu sắc theo phiên bản tên lửa (Booster Version)",
+  "wrong": [
+   "Mối quan hệ giữa tọa độ kinh độ và vĩ độ, ánh xạ màu theo ngày phóng",
+   "Mối quan hệ giữa chi phí phóng và năm sản xuất, ánh xạ màu theo khách hàng",
+   "Mối quan hệ giữa tốc độ gió và áp suất khí quyển, ánh xạ màu theo nhiệt độ"
+  ]
+ },
+ {
+  "id": "r-m6-021",
+  "q": "Trong cấu hình `dcc.RangeSlider` ở mã Dash, tham số `step=1000` mang ý nghĩa gì?",
+  "correct": "Khoảng bước nhảy giá trị khi người dùng kéo thanh trượt là 1,000 kg mỗi nấc",
+  "wrong": [
+   "Thời gian trễ tính bằng mili-giây trước khi gọi hàm callback",
+   "Số lượng bản ghi tối đa được lọc trong mỗi lần kéo trượt",
+   "Số vạch mốc đánh dấu nhãn số hiển thị trên giao diện thanh trượt"
+  ]
+ },
+ {
+  "id": "r-m6-022",
+  "q": "Kỹ thuật `StandardScaler` trong Scikit-learn biến đổi các đặc trưng số đầu vào về dạng phân phối nào?",
+  "correct": "Phân phối có giá trị trung bình bằng 0 và độ lệch chuẩn bằng 1",
+  "wrong": [
+   "Phân phối chuẩn hóa đều trong khoảng cố định từ 0 đến 1",
+   "Phân phối xác suất rời rạc có tổng giá trị bằng 1",
+   "Phân phối nhị phân chỉ gồm các giá trị 0 và 1"
+  ]
+ },
+ {
+  "id": "r-m6-023",
+  "q": "Bốn thuật toán phân loại kinh điển được thử nghiệm và quét siêu tham số trong phần Phân tích Dự đoán (Predictive Analysis) là gì?",
+  "correct": "Logistic Regression, Support Vector Machine (SVM), Decision Tree và K-Nearest Neighbors (KNN)",
+  "wrong": [
+   "Linear Regression, Polynomial Regression, Ridge Regression và Lasso Regression",
+   "K-Means Clustering, DBSCAN, PCA và Hierarchical Clustering",
+   "Naive Bayes, Random Forest, AdaBoost và Neural Network MLP"
+  ]
+ },
+ {
+  "id": "r-m6-024",
+  "q": "Mục tiêu tối ưu hóa hình học của thuật toán Support Vector Machine (SVM) là gì?",
+  "correct": "Tìm kiếm siêu phẳng phân tách có biên độ khoảng cách (margin) lớn nhất",
+  "wrong": [
+   "Cắt tỉa các nhánh cây có mức độ hỗn loạn thông tin cao nhất",
+   "Tối ưu hóa hàm hồi quy tuyến tính bằng phương pháp bình phương tối thiểu",
+   "Tìm khoảng cách ngắn nhất tới K điểm láng giềng trong không gian"
+  ]
+ }
+]

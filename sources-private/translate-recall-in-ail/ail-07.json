@@ -1,0 +1,212 @@
+[
+ {
+  "id": "r-m4-052",
+  "q": "Tại sao Khoảng cách Cosine (Cosine Distance) lại đặc biệt hiệu quả trong khai phá dữ liệu văn bản (Text Mining)?",
+  "correct": "Đo góc giữa hai vectơ nên không bị ảnh hưởng bởi độ lớn (độ dài văn bản), chỉ quan tâm đến tần suất và hướng tương đối",
+  "wrong": [
+   "Tính toán khoảng cách theo đường thẳng ngắn nhất giữa các từ khóa xuất hiện",
+   "Tự động chuẩn hóa phân phối từ vựng về phân phối chuẩn có trung bình bằng 0",
+   "Có khả năng kháng hoàn toàn các điểm dữ liệu ngoại lai dựa vào khoảng cách tứ phân vị"
+  ]
+ },
+ {
+  "id": "r-m4-053",
+  "q": "Khoảng cách Jaccard (Jaccard Distance) được tính toán dựa trên nguyên lý nào?",
+  "correct": "Dựa trên tỷ lệ phần tử chung trên tổng số phần tử độc nhất (Intersection over Union)",
+  "wrong": [
+   "Căn bậc hai của tổng bình phương chênh lệch giữa các tọa độ",
+   "Tích vô hướng của hai vectơ chia cho tích độ dài của chúng",
+   "Tổng độ chênh lệch tuyệt đối giữa các biến đặc trưng"
+  ]
+ },
+ {
+  "id": "r-m4-054",
+  "q": "Theo ví dụ tính tay trong tài liệu, với hai vectơ `a = [[1, 2, 3]]` và `b = [[4, 5, 6]]`, khoảng cách Euclidean được tính như thế nào?",
+  "correct": "sqrt((1-4)^2 + (2-5)^2 + (3-6)^2) = sqrt(9 + 9 + 9) = sqrt(27) (xấp xỉ 5.196)",
+  "wrong": [
+   "|1-4| + |2-5| + |3-6| = 3 + 3 + 3 = 9",
+   "(1*4 + 2*5 + 3*6) = 4 + 10 + 18 = 32",
+   "(1-4)^2 + (2-5)^2 + (3-6)^2 = 27"
+  ]
+ },
+ {
+  "id": "r-m4-055",
+  "q": "Thuật toán Phân cụm Phân cấp kết tụ (Hierarchical Agglomerative Clustering - HAC) xây dựng các cụm theo mô hình nào?",
+  "correct": "Mô hình phân cấp từ dưới lên (Bottom-up), ban đầu mỗi điểm là một cụm rồi gộp dần các cụm gần nhất",
+  "wrong": [
+   "Mô hình phân cấp từ trên xuống (Top-down), chia đôi toàn bộ dữ liệu thành các cụm nhỏ",
+   "Chọn ngẫu nhiên K tâm cụm rồi gán các điểm vào tâm gần nhất cho đến khi hội tụ",
+   "Di chuyển tâm của cửa sổ tìm kiếm về phía có mật độ điểm cao nhất"
+  ]
+ },
+ {
+  "id": "r-m4-056",
+  "q": "Phương pháp liên kết Ward Linkage trong phân cụm phân cấp hoạt động theo tiêu chí nào?",
+  "correct": "Kết hợp các cụm sao cho tổng phương sai (Inertia) tăng lên là ít nhất",
+  "wrong": [
+   "Đo khoảng cách nhỏ nhất giữa hai điểm thuộc hai cụm khác nhau",
+   "Đo khoảng cách lớn nhất giữa hai điểm thuộc hai cụm khác nhau",
+   "Tính khoảng cách trung bình của tất cả các cặp điểm giữa hai cụm"
+  ]
+ },
+ {
+  "id": "r-m4-057",
+  "q": "Phương pháp liên kết nào trong HAC dễ bị ảnh hưởng bởi nhiễu do gây ra hiệu ứng 'chuỗi' (chaining)?",
+  "correct": "Single Linkage",
+  "wrong": [
+   "Complete Linkage",
+   "Average Linkage",
+   "Ward Linkage"
+  ]
+ },
+ {
+  "id": "r-m4-058",
+  "q": "Khi quan sát biểu đồ phân nhánh Dendrogram, việc cắt ngang cây phân cấp ở vị trí nào thường mang lại kết quả phân cụm tự nhiên và ổn định nhất?",
+  "correct": "Cắt ngang qua các đường thẳng đứng dài nhất (nơi khoảng cách giữa các lần gộp cụm là lớn nhất)",
+  "wrong": [
+   "Cắt ngang qua các nhánh nằm ngang ở vị trí thấp nhất sát đáy biểu đồ",
+   "Cắt tại điểm có số lượng nhánh con đúng bằng số lượng thuộc tính đầu vào",
+   "Cắt tại điểm mà tất cả các điểm dữ liệu đều trở thành các cụm đơn lẻ"
+  ]
+ },
+ {
+  "id": "r-m4-059",
+  "q": "Tiêu chí đo khoảng cách giữa hai cụm của phương pháp liên kết Complete Linkage là gì?",
+  "correct": "Khoảng cách lớn nhất giữa hai điểm thuộc hai cụm khác nhau",
+  "wrong": [
+   "Khoảng cách nhỏ nhất giữa hai điểm thuộc hai cụm khác nhau",
+   "Khoảng cách trung bình giữa tất cả các cặp điểm của hai cụm",
+   "Khoảng cách giữa hai tâm cụm tính theo phân phối chuẩn"
+  ]
+ },
+ {
+  "id": "r-m4-060",
+  "q": "Hai ưu điểm nổi bật của thuật toán phân cụm DBSCAN là gì?",
+  "correct": "Có thể tìm thấy các cụm có hình dạng bất kỳ và tự động loại bỏ nhiễu (noise)",
+  "wrong": [
+   "Tốc độ tính toán nhanh hơn K-Means trên tập dữ liệu hàng triệu mẫu",
+   "Không yêu cầu bất kỳ tham số đầu vào nào từ phía người sử dụng",
+   "Luôn chia dữ liệu thành các cụm hình cầu đồng đều và hoàn hảo"
+  ]
+ },
+ {
+  "id": "r-m4-061",
+  "q": "Trong DBSCAN, một điểm dữ liệu được xác định là 'Điểm lõi' (Core Point) khi thỏa mãn điều kiện nào?",
+  "correct": "Có nhiều hơn MinPts điểm lân cận nằm trong bán kính Epsilon (eps)",
+  "wrong": [
+   "Nằm trong bán kính eps của điểm khác nhưng bản thân có ít hơn MinPts lân cận",
+   "Hoàn toàn không có bất kỳ điểm lân cận nào nằm trong bán kính eps",
+   "Có tọa độ trùng khớp chính xác với tâm cụm K-Means"
+  ]
+ },
+ {
+  "id": "r-m4-062",
+  "q": "Khái niệm 'Điểm biên' (Density-reachable) trong DBSCAN có đặc trưng gì?",
+  "correct": "Nằm trong vùng bán kính eps của một điểm lõi nhưng bản thân nó không có đủ MinPts lân cận",
+  "wrong": [
+   "Có nhiều hơn MinPts lân cận nhưng nằm ngoài bán kính eps của mọi điểm lõi",
+   "Không thuộc bất kỳ cụm nào và luôn bị gán nhãn -1",
+   "Là điểm có khoảng cách tới tâm cụm nhỏ nhất trong toàn bộ tập dữ liệu"
+  ]
+ },
+ {
+  "id": "r-m4-063",
+  "q": "Trong scikit-learn, thuật toán `DBSCAN` gán nhãn giá trị nào để đại diện cho các điểm dữ liệu nhiễu (Noise)?",
+  "correct": "Nhãn -1",
+  "wrong": [
+   "Nhãn 0",
+   "Nhãn 99",
+   "Nhãn None"
+  ]
+ },
+ {
+  "id": "r-m4-064",
+  "q": "Hai siêu tham số quan trọng nhất cần thiết lập khi khởi tạo `DBSCAN(eps=0.5, min_samples=5)` là gì?",
+  "correct": "Bán kính vùng lân cận `eps` và số lượng điểm tối thiểu trong vùng lân cận `min_samples` (MinPts)",
+  "wrong": [
+   "Số lượng cụm `n_clusters` và phương pháp liên kết `linkage`",
+   "Kích thước cửa sổ `bandwidth` và số lượng thành phần chính `n_components`",
+   "Tham số điều chuẩn `C` và hàm mất mát `loss`"
+  ]
+ },
+ {
+  "id": "r-m4-065",
+  "q": "Thuật toán Mean-Shift Clustering hoạt động dựa trên cơ chế nào?",
+  "correct": "Tìm kiếm các vùng có mật độ dữ liệu cao nhất (mốt - mode) bằng cách di chuyển tâm của một cửa sổ về phía có mật độ cao hơn cho đến khi hội tụ",
+  "wrong": [
+   "Cực tiểu hóa hàm mất mát SSE bằng cách cập nhật các trọng số theo đạo hàm bậc một",
+   "Chia dữ liệu thành các cụm hình cầu dựa trên việc gán điểm vào tâm cụm gần nhất",
+   "Gộp dần các điểm dữ liệu từ dưới lên trên biểu đồ phân cấp Dendrogram"
+  ]
+ },
+ {
+  "id": "r-m4-066",
+  "q": "Ưu điểm nổi bật của thuật toán phân cụm Mean-Shift là gì?",
+  "correct": "Không cần khai báo trước số lượng cụm K và có thể tìm thấy các cụm có kích thước không đều",
+  "wrong": [
+   "Tốc độ xử lý cực kỳ nhanh trên các tập dữ liệu có quy mô hàng triệu mẫu",
+   "Hoàn toàn không phụ thuộc vào bất kỳ siêu tham số kích thước cửa sổ nào",
+   "Có thể hoạt động hiệu quả với mọi độ đo khoảng cách phi tuyến tính"
+  ]
+ },
+ {
+  "id": "r-m4-067",
+  "q": "Nhược điểm lớn của thuật toán Mean-Shift được nêu trong tài liệu là gì?",
+  "correct": "Chạy chậm với dữ liệu lớn và phụ thuộc nhiều vào tham số 'bandwidth' (kích thước cửa sổ)",
+  "wrong": [
+   "Bắt buộc người dùng phải phỏng đoán chính xác số lượng cụm K ban đầu",
+   "Không thể tìm thấy các cụm có kích thước và mật độ khác nhau",
+   "Tự động biến đổi toàn bộ nhãn mục tiêu sang dạng biến liên tục"
+  ]
+ },
+ {
+  "id": "r-m4-068",
+  "q": "Hàm nào trong scikit-learn được dùng để hỗ trợ ước lượng tự động tham số kích thước cửa sổ (bandwidth) cho Mean-Shift?",
+  "correct": "`estimate_bandwidth(X, quantile=0.2)`",
+  "wrong": [
+   "`find_optimal_k(X)`",
+   "`calculate_inertia(X)`",
+   "`get_eps_radius(X)`"
+  ]
+ },
+ {
+  "id": "r-m4-069",
+  "q": "Khi làm việc với tập dữ liệu cực lớn và cần thuật toán phân cụm chạy rất nhanh, phương pháp nào là lựa chọn phù hợp nhất?",
+  "correct": "K-Means",
+  "wrong": [
+   "Hierarchical Clustering",
+   "Mean-Shift",
+   "DBSCAN với nhiều mức mật độ khác nhau"
+  ]
+ },
+ {
+  "id": "r-m4-070",
+  "q": "Nhược điểm về độ phức tạp tính toán của thuật toán Phân cụm Phân cấp (Hierarchical) khi xử lý tập dữ liệu lớn là gì?",
+  "correct": "Chạy chậm với dữ liệu lớn do độ phức tạp tính toán lên tới O(N^2) và phải chọn K để cắt cây",
+  "wrong": [
+   "Chỉ tìm được các cụm có hình dạng ngoằn ngoèo bất kỳ và nhạy cảm với eps",
+   "Không thể biểu diễn trực quan quá trình gom cụm bằng biểu đồ Dendrogram",
+   "Bắt buộc phải khởi tạo tâm cụm bằng kỹ thuật thông minh K-Means++"
+  ]
+ },
+ {
+  "id": "r-m4-071",
+  "q": "Nhược điểm chính của thuật toán DBSCAN trong so sánh tổng quan giữa các thuật toán phân cụm là gì?",
+  "correct": "Nhạy cảm với tham số eps và hoạt động không tốt với các cụm có mật độ khác nhau",
+  "wrong": [
+   "Bắt buộc người dùng phải biết trước và khai báo chính xác số lượng cụm K",
+   "Chỉ có thể phát hiện được các cụm có hình dạng hình cầu đối xứng",
+   "Không có khả năng tự động phát hiện và lọc bỏ các điểm dữ liệu nhiễu"
+  ]
+ },
+ {
+  "id": "r-m4-072",
+  "q": "Đặc điểm hạn chế nào sau đây là của thuật toán Mean-Shift khi so sánh với các thuật toán phân cụm khác?",
+  "correct": "Chạy chậm và chỉ dùng khoảng cách Euclidean",
+  "wrong": [
+   "Chỉ hiệu quả với các cụm hình cầu và bắt buộc phải biết trước số lượng cụm K",
+   "Độ phức tạp tính toán O(N^2) và bắt buộc phải cắt cây phân cấp",
+   "Rất nhạy cảm với tham số eps và không phát hiện được điểm nhiễu"
+  ]
+ }
+]

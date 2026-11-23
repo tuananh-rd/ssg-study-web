@@ -1,0 +1,254 @@
+[
+  {
+    "ref": "3.2",
+    "q": "Trong quy trình làm sạch và biến đổi dữ liệu (Data Wrangling), nếu một bản ghi bị mất giá trị của biến mục tiêu (target variable), giải pháp xử lý chuẩn là gì?",
+    "correct": "Loại bỏ bản ghi đó ra khỏi tập dữ liệu",
+    "wrong": [
+      "Thay thế bằng giá trị trung bình (Mean Imputation)",
+      "Thay thế bằng giá trị xuất hiện nhiều nhất (Mode)",
+      "Điền giá trị 0 hoặc chuỗi ký tự rỗng"
+    ],
+    "explain": "Theo quy trình chuẩn trong bài, dữ liệu thiếu ở biến mục tiêu (target) thì phải loại bỏ, còn thiếu ở biến độc lập mới cân nhắc thay thế bằng Mean/Median/Mode.",
+    "tip": "Mất biến mục tiêu (target) thì không thể học chuẩn được nên phải loại bỏ."
+  },
+  {
+    "ref": "3.2",
+    "q": "Ba bước chuẩn theo thứ tự trong quy trình Làm sạch và biến đổi dữ liệu (Data Wrangling) là gì?",
+    "correct": "Nhận diện -> Loại bỏ (nếu mất target) -> Thay thế (bằng Mean, Median hoặc Mode)",
+    "wrong": [
+      "Thay thế -> Nhận diện -> Loại bỏ",
+      "Chuẩn hóa -> Huấn luyện -> Đánh giá",
+      "Trích xuất -> Tải lên -> Phân tích tương quan"
+    ],
+    "explain": "Quy trình chuẩn được nêu rõ: Nhận diện giá trị khuyết -> Loại bỏ (nếu mất target) -> Thay thế (bằng Mean, Median hoặc Mode).",
+    "tip": "Nhận diện trước, loại bỏ nếu mất nhãn mục tiêu, rồi mới điền thay thế."
+  },
+  {
+    "ref": "3.2",
+    "q": "Để chuyển đổi các ký tự đặc biệt đại diện cho dữ liệu thiếu (như dấu \"?\") thành giá trị NaN của NumPy trong DataFrame, ta dùng cú pháp nào?",
+    "correct": "df.replace(\"?\", np.nan, inplace=True)",
+    "wrong": [
+      "df.fillna(\"?\", np.nan, inplace=True)",
+      "df.dropna(\"?\", inplace=True)",
+      "df.astype(\"?\", np.nan)"
+    ],
+    "explain": "Phương thức df.replace(\"?\", np.nan, inplace=True) tìm kiếm ký tự \"?\" và thay thế bằng hằng số np.nan của NumPy.",
+    "tip": "replace('?', np.nan) để đưa dấu hỏi về chuẩn NaN."
+  },
+  {
+    "ref": "3.2",
+    "q": "Thư viện Python nào chuyên dùng cho việc khám phá dữ liệu và ước lượng mô hình hóa thống kê chuyên sâu?",
+    "correct": "Statsmodels",
+    "wrong": [
+      "NumPy",
+      "Matplotlib",
+      "Scipy"
+    ],
+    "explain": "Statsmodels là thư viện chuyên trách việc khám phá dữ liệu và ước lượng các mô hình thống kê chuyên sâu trong Python.",
+    "tip": "Mô hình hóa thống kê (statistical models) -> Statsmodels."
+  },
+  {
+    "ref": "3.2",
+    "q": "Khi tạo các biến giả (dummy variables) bằng One-Hot Encoding, hàm nào của Pandas được dùng để ghép các cột mới này vào DataFrame ban đầu?",
+    "correct": "df = pd.concat([df, dummy_var], axis=1)",
+    "wrong": [
+      "df = pd.concat([df, dummy_var], axis=0)",
+      "df = pd.merge([df, dummy_var], on='index')",
+      "df = pd.append([df, dummy_var])"
+    ],
+    "explain": "Hàm pd.concat với danh sách các DataFrame và tham số axis=1 thực hiện việc nối/ghép các cột theo chiều ngang.",
+    "tip": "axis=1 là ghép thêm cột (chiều ngang)."
+  },
+  {
+    "ref": "3.3",
+    "q": "Kiến trúc nền tảng của thư viện Matplotlib được tổ chức thành 3 tầng (layers) nào?",
+    "correct": "Backend layer, Artist layer và Scripting layer",
+    "wrong": [
+      "Presentation layer, Business layer và Database layer",
+      "Model layer, View layer và Controller layer",
+      "Client layer, Gateway layer và Server layer"
+    ],
+    "explain": "Matplotlib được thiết kế dựa trên kiến trúc 3 tầng: Backend (vẽ đồ họa nền), Artist (các đối tượng hình vẽ) và Scripting (giao diện thao tác như pyplot).",
+    "tip": "3 tầng của Matplotlib: Backend, Artist, Scripting."
+  },
+  {
+    "ref": "3.3",
+    "q": "Trong Matplotlib và Pandas plot, tham số `figsize` đóng vai trò gì?",
+    "correct": "Thiết lập kích thước của hình vẽ hiển thị (chiều rộng, chiều cao theo inch)",
+    "wrong": [
+      "Quy định số lượng điểm dữ liệu tối đa được hiển thị trên biểu đồ",
+      "Xác định kích cỡ phông chữ của tiêu đề và các nhãn trục tọa độ",
+      "Quy định độ phân giải DPI của file ảnh khi lưu về ổ đĩa"
+    ],
+    "explain": "Tham số figsize=(width, height) thiết lập kích thước chiều rộng và chiều cao của khung hình vẽ biểu đồ.",
+    "tip": "figsize = kích thước figure (rộng, cao)."
+  },
+  {
+    "ref": "3.3",
+    "q": "Trong thư viện Folium, cú pháp nào được dùng để gắn một điểm đánh dấu (Marker) lên đối tượng bản đồ đã tạo?",
+    "correct": "folium.Marker(location=[lat, lon], popup='...').add_to(map_name)",
+    "wrong": [
+      "map_name.insert(folium.Marker(location=[lat, lon]))",
+      "folium.Marker(location=[lat, lon]).render(map_name)",
+      "map_name.append_marker([lat, lon], popup='...')"
+    ],
+    "explain": "Đối tượng folium.Marker cung cấp phương thức .add_to(map_name) để gắn chính nó vào đối tượng bản đồ đích.",
+    "tip": "Marker().add_to(map) để đưa điểm vào bản đồ."
+  },
+  {
+    "ref": "3.3",
+    "q": "Trong ứng dụng xây dựng bằng Dash, thành phần nào giữ vai trò quản lý tính tương tác giữa lựa chọn của người dùng và việc cập nhật biểu đồ?",
+    "correct": "Hàm phản hồi (Callback) với decorator @app.callback",
+    "wrong": [
+      "Phương thức fit() trong mô hình hồi quy tuyến tính",
+      "Cấu trúc bảng Dash HTML Components",
+      "Hàm khởi tạo đối tượng Folium Map"
+    ],
+    "explain": "Decorator @app.callback liên kết dữ liệu đầu vào (Input) từ thao tác người dùng để tự động chạy hàm logic và cập nhật dữ liệu đầu ra (Output) lên biểu đồ.",
+    "tip": "Tương tác trong Dash luôn thông qua Callback."
+  },
+  {
+    "ref": "3.4",
+    "q": "Kiến trúc trợ lý nhận thức (cognitive assistant architecture) trong Watson Assistant gồm 3 thành phần cốt lõi nào?",
+    "correct": "Intents (Ý định), Entities (Thực thể / Từ khóa) và Dialog (Kịch bản hội thoại)",
+    "wrong": [
+      "Input, Hidden Layers và Output",
+      "Model, View và Controller",
+      "Database, API Gateway và Web Client"
+    ],
+    "explain": "Watson Assistant cấu thành từ 3 phần cơ bản: Intents (nhận diện ý định người dùng), Entities (trích xuất thực thể) và Dialog (quản lý luồng hội thoại).",
+    "tip": "Intents, Entities, Dialog là bộ 3 cốt lõi của Watson Assistant."
+  },
+  {
+    "ref": "3.4",
+    "q": "Trong Watson Assistant, thành phần 'Intents' đại diện cho điều gì?",
+    "correct": "Ý định hoặc mục đích của người dùng khi đưa ra câu nói",
+    "wrong": [
+      "Từ khóa hoặc danh từ cụ thể chỉ thực thể trong câu",
+      "Cây sơ đồ logic điều hướng các nhánh rẽ hội thoại",
+      "Khóa bảo mật cá nhân dùng để kết nối với đám mây"
+    ],
+    "explain": "Intents thể hiện mục đích hoặc ý định mà người dùng muốn thực hiện (ví dụ: hỏi giá, đặt câu hỏi chào hỏi).",
+    "tip": "Intent = ý định của người dùng."
+  },
+  {
+    "ref": "3.4",
+    "q": "Dịch vụ nào của IBM Watson giúp chuyển đổi văn bản câu trả lời thành giọng nói âm thanh?",
+    "correct": "Text-to-Speech (TTS)",
+    "wrong": [
+      "Speech-to-Text (STT)",
+      "Language Translator",
+      "Natural Language Understanding"
+    ],
+    "explain": "Dịch vụ Text-to-Speech (TTS) chuyển đổi văn bản (text) thành giọng nói tổng hợp (speech).",
+    "tip": "Text-to-Speech (TTS): Chữ thành Tiếng nói; Speech-to-Text (STT): Tiếng nói thành Chữ."
+  },
+  {
+    "ref": "3.4",
+    "q": "Theo tài liệu, Watson Assistant hỗ trợ triển khai đa kênh (deployment) thông qua những nền tảng nào?",
+    "correct": "Web Chat, WordPress, Slack, Facebook Messenger và Node-RED",
+    "wrong": [
+      "Hệ điều hành Android thuần, iOS Swift, Docker và Kubernetes",
+      "Email SMTP, SMS Gateway truyền thống và Tổng đài Analog",
+      "Chỉ hỗ trợ duy nhất giao diện dòng lệnh CLI trên terminal"
+    ],
+    "explain": "Watson Assistant hỗ trợ tích hợp sẵn với nhiều kênh như Web Chat, WordPress, Slack, Facebook Messenger và luồng Node-RED.",
+    "tip": "Watson triển khai đa kênh: Web Chat, Slack, Messenger, WordPress, Node-RED."
+  },
+  {
+    "ref": "3.4",
+    "q": "Để xác thực quyền truy cập khi tương tác với các dịch vụ Watson API bằng IBM Cloud Python SDK, lớp đối tượng nào được sử dụng?",
+    "correct": "IAMAuthenticator",
+    "wrong": [
+      "BasicAuthSession",
+      "OAuth2BearerToken",
+      "JWTHeaderVerifier"
+    ],
+    "explain": "Lớp IAMAuthenticator từ thư viện ibm_cloud_sdk_core.authenticators được dùng để truyền API Key xác thực danh tính.",
+    "tip": "IAMAuthenticator truyền API Key xác thực với IBM Cloud."
+  },
+  {
+    "ref": "3.5",
+    "q": "IBM Db2 thuộc loại hệ quản trị cơ sở dữ liệu nào?",
+    "correct": "Hệ quản trị cơ sở dữ liệu quan hệ (RDBMS)",
+    "wrong": [
+      "Cơ sở dữ liệu phi quan hệ dạng tài liệu (Document NoSQL)",
+      "Cơ sở dữ liệu đồ thị phân tán (Graph Database)",
+      "Kho lưu trữ khóa - giá trị trong bộ nhớ (Key-Value Store)"
+    ],
+    "explain": "IBM Db2 là hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) thế hệ mới, tối ưu hóa cho phân tích dữ liệu lớn trên nền tảng đám mây.",
+    "tip": "Db2 là hệ RDBMS của IBM."
+  },
+  {
+    "ref": "3.5",
+    "q": "Khi khởi tạo một phiên bản dịch vụ Db2 trên IBM Cloud Console, các thông số cấu hình cơ bản cần thiết lập gồm những gì?",
+    "correct": "Vùng tài nguyên (Region), tên thực thể dịch vụ (Service name) và nhóm tài nguyên (Resource group)",
+    "wrong": [
+      "Số lượng bảng tối đa, kiểu mã hóa SSL và địa chỉ IP tĩnh",
+      "Thuật toán mã hóa mật khẩu, cổng REST API và giao thức HTTP",
+      "Tên người dùng quản trị tối cao, dung lượng RAM và số nhân CPU"
+    ],
+    "explain": "Các thông số cơ bản khi khởi tạo dịch vụ trên IBM Cloud Console là: Region (vùng), Service name (tên thực thể) và Resource group (nhóm tài nguyên).",
+    "tip": "Bộ 3 khởi tạo dịch vụ đám mây: Region, Service name, Resource group."
+  },
+  {
+    "ref": "3.5",
+    "q": "Trong quá trình nạp dữ liệu vào Db2, thành phần nào được sử dụng để phân tách không gian tên giữa các dự án?",
+    "correct": "Lược đồ (Schema)",
+    "wrong": [
+      "Khóa ngoại (Foreign Key)",
+      "Cổng kết nối (Port)",
+      "Chuỗi kết nối (DSN)"
+    ],
+    "explain": "Lược đồ (Schema) trong Db2 được dùng để phân chia và nhóm các đối tượng dữ liệu (bảng, view), tách biệt không gian tên giữa các dự án.",
+    "tip": "Schema phân tách không gian tên giữa các bảng và dự án."
+  },
+  {
+    "ref": "3.5",
+    "q": "Trong mô hình kiến trúc cung cấp REST API cho cơ sở dữ liệu, máy chủ trung gian (như Flask hoặc Express) giữ vai trò gì?",
+    "correct": "Đóng vai trò API Gateway tiếp nhận yêu cầu HTTP, thực thi truy vấn SQL và đóng gói kết quả dạng JSON",
+    "wrong": [
+      "Lưu trữ vĩnh viễn toàn bộ dữ liệu bảng thay thế cơ sở dữ liệu Db2",
+      "Tự động huấn luyện lại các mô hình học máy theo chu kỳ thời gian thực",
+      "Sinh mã HTML tĩnh để hiển thị giao diện báo cáo cho người dùng cuối"
+    ],
+    "explain": "Máy chủ trung gian đóng vai trò API Gateway: nhận yêu cầu HTTP từ client, chạy truy vấn SQL tới Db2, và trả về dữ liệu định dạng JSON tiêu chuẩn.",
+    "tip": "API Gateway: trung gian kết nối HTTP request với truy vấn SQL sang Db2."
+  },
+  {
+    "ref": "3.5",
+    "q": "Thư viện Python nào được sử dụng trực tiếp để kết nối và thực thi truy vấn SQL với cơ sở dữ liệu IBM Db2?",
+    "correct": "ibm_db",
+    "wrong": [
+      "sqlite3",
+      "psycopg2",
+      "mysql-connector"
+    ],
+    "explain": "ibm_db là driver và thư viện chính thức trong Python dùng để kết nối và thực thi các câu lệnh SQL trên IBM Db2.",
+    "tip": "ibm_db là thư viện kết nối Db2 trong Python."
+  },
+  {
+    "ref": "3.5",
+    "q": "Phương thức nào trong thư viện `ibm_db` được sử dụng để lấy từng dòng bản ghi dữ liệu kết quả dưới dạng dictionary liên kết?",
+    "correct": "ibm_db.fetch_assoc()",
+    "wrong": [
+      "ibm_db.fetchall()",
+      "ibm_db.get_row()",
+      "ibm_db.read_record()"
+    ],
+    "explain": "Phương thức ibm_db.fetch_assoc(stmt) duyệt và trả về dòng bản ghi tiếp theo dưới dạng associative array (dictionary trong Python).",
+    "tip": "fetch_assoc() = fetch associative array (dạng dictionary)."
+  },
+  {
+    "ref": "3.5",
+    "q": "Mục đích quan trọng nhất của việc thiết lập Khóa chính (Primary Key) khi tạo bảng trong cơ sở dữ liệu quan hệ Db2 là gì?",
+    "correct": "Đảm bảo tính toàn vẹn và tính duy nhất của dữ liệu trên mỗi dòng bản ghi",
+    "wrong": [
+      "Tự động mã hóa toàn bộ dữ liệu lưu trữ trên các cột số",
+      "Tăng tốc độ truyền tải gói tin qua giao thức mạng HTTP",
+      "Cho phép lưu trữ giá trị rỗng (NULL) không giới hạn trên cột đó"
+    ],
+    "explain": "Khóa chính (Primary Key) là định danh duy nhất cho từng bản ghi trong bảng, đảm bảo tính toàn vẹn dữ liệu và không được trùng lặp hay mang giá trị NULL.",
+    "tip": "Primary Key đảm bảo tính duy nhất và toàn vẹn dữ liệu."
+  }
+]

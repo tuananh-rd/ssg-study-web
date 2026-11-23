@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m5-004",
+  "q": "Ý nào là việc thuộc giai đoạn KẾT THÚC và theo dõi?",
+  "correct": "Chia sẻ minutes / biên bản",
+  "wrong": [
+   "Giao vai trò trong họp",
+   "Xác định kết quả phải đạt",
+   "Gửi agenda"
+  ]
+ },
+ {
+  "id": "r-m5-005",
+  "q": "Ý nào KHÔNG thuộc nội dung agenda?",
+  "correct": "Biên bản cuộc họp trước đó",
+  "wrong": [
+   "Mục đích",
+   "Thời lượng từng mục",
+   "Người tham dự"
+  ]
+ },
+ {
+  "id": "r-m5-006",
+  "q": "Agenda cần chừa khoảng cuối để làm gì?",
+  "correct": "Chốt quyết định và hành động",
+  "wrong": [
+   "Giải lao",
+   "Giới thiệu thành viên",
+   "Đánh giá điểm cá nhân"
+  ]
+ },
+ {
+  "id": "r-m5-007",
+  "q": "Mỗi action item phải có ba yếu tố nào?",
+  "correct": "Who – What – When",
+  "wrong": [
+   "Why – Where – How",
+   "Who – Why – Where",
+   "What – How – Cost"
+  ]
+ },
+ {
+  "id": "r-m5-008",
+  "q": "Người điều phối họp nên làm gì với người nói quá nhiều?",
+  "correct": "Kiểm soát và khuyến khích mọi người tham gia",
+  "wrong": [
+   "Để họ nói hết",
+   "Kết thúc cuộc họp",
+   "Bỏ qua phần của họ trong biên bản"
+  ]
+ },
+ {
+  "id": "r-m5-009",
+  "q": "“Define” nghĩa là gì?",
+  "correct": "Định nghĩa vấn đề cụ thể, có ranh giới",
+  "wrong": [
+   "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn",
+   "Tạo nhiều phương án, chưa đánh giá vội",
+   "Xác định tiêu chí của một giải pháp tốt"
+  ]
+ },
+ {
+  "id": "r-m5-010",
+  "q": "Ý sau mô tả khái niệm nào: “Định nghĩa vấn đề cụ thể, có ranh giới”?",
+  "correct": "Define",
+  "wrong": [
+   "Implement",
+   "Analyze",
+   "Establish criteria"
+  ]
+ },
+ {
+  "id": "r-m5-011",
+  "q": "“Analyze” nghĩa là gì?",
+  "correct": "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn",
+  "wrong": [
+   "Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh",
+   "So sánh theo tiêu chí, chi phí, thời gian, rủi ro và tính khả thi",
+   "Tạo nhiều phương án, chưa đánh giá vội"
+  ]
+ },
+ {
+  "id": "r-m5-012",
+  "q": "Ý sau mô tả khái niệm nào: “Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn”?",
+  "correct": "Analyze",
+  "wrong": [
+   "Define",
+   "Follow up",
+   "Evaluate"
+  ]
+ },
+ {
+  "id": "r-m5-013",
+  "q": "“Establish criteria” nghĩa là gì?",
+  "correct": "Xác định tiêu chí của một giải pháp tốt",
+  "wrong": [
+   "So sánh theo tiêu chí, chi phí, thời gian, rủi ro và tính khả thi",
+   "Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh",
+   "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn"
+  ]
+ },
+ {
+  "id": "r-m5-014",
+  "q": "Ý sau mô tả khái niệm nào: “Xác định tiêu chí của một giải pháp tốt”?",
+  "correct": "Establish criteria",
+  "wrong": [
+   "Follow up",
+   "Implement",
+   "Evaluate"
+  ]
+ },
+ {
+  "id": "r-m5-015",
+  "q": "“Generate solutions” nghĩa là gì?",
+  "correct": "Tạo nhiều phương án, chưa đánh giá vội",
+  "wrong": [
+   "So sánh theo tiêu chí, chi phí, thời gian, rủi ro và tính khả thi",
+   "Định nghĩa vấn đề cụ thể, có ranh giới",
+   "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn"
+  ]
+ },
+ {
+  "id": "r-m5-016",
+  "q": "Ý sau mô tả khái niệm nào: “Tạo nhiều phương án, chưa đánh giá vội”?",
+  "correct": "Generate solutions",
+  "wrong": [
+   "Establish criteria",
+   "Implement",
+   "Evaluate"
+  ]
+ },
+ {
+  "id": "r-m5-017",
+  "q": "“Evaluate” nghĩa là gì?",
+  "correct": "So sánh theo tiêu chí, chi phí, thời gian, rủi ro và tính khả thi",
+  "wrong": [
+   "Tạo nhiều phương án, chưa đánh giá vội",
+   "Chọn phương án, giao người, việc, deadline và nguồn lực",
+   "Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh"
+  ]
+ },
+ {
+  "id": "r-m5-018",
+  "q": "Ý sau mô tả khái niệm nào: “So sánh theo tiêu chí, chi phí, thời gian, rủi ro và tính khả thi”?",
+  "correct": "Evaluate",
+  "wrong": [
+   "Establish criteria",
+   "Implement",
+   "Analyze"
+  ]
+ },
+ {
+  "id": "r-m5-019",
+  "q": "“Implement” nghĩa là gì?",
+  "correct": "Chọn phương án, giao người, việc, deadline và nguồn lực",
+  "wrong": [
+   "Định nghĩa vấn đề cụ thể, có ranh giới",
+   "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn",
+   "Xác định tiêu chí của một giải pháp tốt"
+  ]
+ },
+ {
+  "id": "r-m5-020",
+  "q": "Ý sau mô tả khái niệm nào: “Chọn phương án, giao người, việc, deadline và nguồn lực”?",
+  "correct": "Implement",
+  "wrong": [
+   "Evaluate",
+   "Establish criteria",
+   "Define"
+  ]
+ },
+ {
+  "id": "r-m5-021",
+  "q": "“Follow up” nghĩa là gì?",
+  "correct": "Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh",
+  "wrong": [
+   "Chọn phương án, giao người, việc, deadline và nguồn lực",
+   "Xác định tiêu chí của một giải pháp tốt",
+   "Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn"
+  ]
+ },
+ {
+  "id": "r-m5-022",
+  "q": "Ý sau mô tả khái niệm nào: “Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh”?",
+  "correct": "Follow up",
+  "wrong": [
+   "Establish criteria",
+   "Generate solutions",
+   "Evaluate"
+  ]
+ },
+ {
+  "id": "r-m5-023",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Define",
+  "wrong": [
+   "Follow up",
+   "Generate solutions",
+   "Implement"
+  ]
+ },
+ {
+  "id": "r-m5-024",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Follow up",
+  "wrong": [
+   "Implement",
+   "Analyze",
+   "Generate solutions"
+  ]
+ },
+ {
+  "id": "r-m5-025",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Define” là gì?",
+  "correct": "Analyze",
+  "wrong": [
+   "Generate solutions",
+   "Implement",
+   "Follow up"
+  ]
+ },
+ {
+  "id": "r-m5-026",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Analyze” là gì?",
+  "correct": "Establish criteria",
+  "wrong": [
+   "Generate solutions",
+   "Evaluate",
+   "Follow up"
+  ]
+ },
+ {
+  "id": "r-m5-027",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Establish criteria” là gì?",
+  "correct": "Generate solutions",
+  "wrong": [
+   "Follow up",
+   "Analyze",
+   "Implement"
+  ]
+ },
+ {
+  "id": "r-m5-028",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Generate solutions” là gì?",
+  "correct": "Evaluate",
+  "wrong": [
+   "Establish criteria",
+   "Follow up",
+   "Implement"
+  ]
+ }
+]

@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-265.png",
+  "png_no": 265,
+  "html_no": 267,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-266.png",
+  "png_no": 266,
+  "html_no": 268,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-267.png",
+  "png_no": 267,
+  "html_no": 269,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-268.png",
+  "png_no": 268,
+  "html_no": 270,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-269.png",
+  "png_no": 269,
+  "html_no": 271,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-270.png",
+  "png_no": 270,
+  "html_no": 272,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-271.png",
+  "png_no": 271,
+  "html_no": 273,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 252,
+    "slide": 268,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-272.png",
+  "png_no": 272,
+  "html_no": 274,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 253,
+    "slide": 269,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-273.png",
+  "png_no": 273,
+  "html_no": 275,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 254,
+    "slide": 270,
+    "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+    "options": [
+     "By using spherical panoramas you can effortlessly capture any area in all directions.",
+     "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+     "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+     "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-274.png",
+  "png_no": 274,
+  "html_no": 276,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 255,
+    "slide": 271,
+    "question": "What is translation transformation?",
+    "options": [
+     "We rotate the object at a particular angle θ (theta) from its origin",
+     "It moves an object to a different position on the screen.",
+     "It changes the size of an object.",
+     "It is scaling, skewing, and rotation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-275.png",
+  "png_no": 275,
+  "html_no": 277,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 256,
+    "slide": 272,
+    "question": "What is the main approach of feature-based alignment?",
+    "options": [
+     "Align the 4 corners of two photos",
+     "Finding a way to recover an image's angle through spatial transformations",
+     "Overlap the pictures together and find similarities between them",
+     "Find a few matching features in both images then compute alignment"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-276.png",
+  "png_no": 276,
+  "html_no": 278,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 257,
+    "slide": 273,
+    "question": "What is the basic principle of object detection?",
+    "options": [
+     "Object detection is based on the features that make up the object.",
+     "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+     "Object detection is based on the semantics of the objects in the image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-277.png",
+  "png_no": 277,
+  "html_no": 279,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 258,
+    "slide": 274,
+    "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+    "options": [
+     "Image processing and computer vision are two different concepts.",
+     "The task of computer vision is an analysis of an image.",
+     "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+     "Image processing performs tasks such as analyzing what objects are in the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-278.png",
+  "png_no": 278,
+  "html_no": 280,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 259,
+    "slide": 275,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-279.png",
+  "png_no": 279,
+  "html_no": 281,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 260,
+    "slide": 276,
+    "question": "What is meant by image segmentation in image processing?",
+    "options": [
+     "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+     "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-280.png",
+  "png_no": 280,
+  "html_no": 282,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 261,
+    "slide": 277,
+    "question": "What is the underlying principle behind feature-based alignment?",
+    "options": [
+     "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+     "It relies on manual user input to specify corresponding points between images for alignment.",
+     "It directly matches and aligns entire image regions without any processing.",
+     "It aligns images based on their overall brightness and color distributions."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ }
+]

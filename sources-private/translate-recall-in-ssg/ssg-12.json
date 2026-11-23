@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m8-010",
+  "q": "Appendices và reference list thuộc phần nào?",
+  "correct": "Supplementary section",
+  "wrong": [
+   "Preliminary section",
+   "Body",
+   "Introduction"
+  ]
+ },
+ {
+  "id": "r-m8-011",
+  "q": "Ý nào thuộc preliminary section?",
+  "correct": "List of illustrations",
+  "wrong": [
+   "Findings",
+   "Glossary",
+   "Conclusions"
+  ]
+ },
+ {
+  "id": "r-m8-012",
+  "q": "Progress report – cấu trúc thực hành: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Project information",
+  "wrong": [
+   "Progress and results / data",
+   "Work completed",
+   "Solutions taken"
+  ]
+ },
+ {
+  "id": "r-m8-013",
+  "q": "Progress report – cấu trúc thực hành: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Next steps",
+  "wrong": [
+   "Project overview",
+   "Challenges encountered",
+   "Work completed"
+  ]
+ },
+ {
+  "id": "r-m8-014",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Project information” là gì?",
+  "correct": "Project overview",
+  "wrong": [
+   "Solutions taken",
+   "Next steps",
+   "Progress and results / data"
+  ]
+ },
+ {
+  "id": "r-m8-015",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Project overview” là gì?",
+  "correct": "Work completed",
+  "wrong": [
+   "Solutions taken",
+   "Project information",
+   "Next steps"
+  ]
+ },
+ {
+  "id": "r-m8-016",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Work completed” là gì?",
+  "correct": "Progress and results / data",
+  "wrong": [
+   "Next steps",
+   "Project overview",
+   "Solutions taken"
+  ]
+ },
+ {
+  "id": "r-m8-017",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Progress and results / data” là gì?",
+  "correct": "Challenges encountered",
+  "wrong": [
+   "Work completed",
+   "Next steps",
+   "Project overview"
+  ]
+ },
+ {
+  "id": "r-m8-018",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Challenges encountered” là gì?",
+  "correct": "Solutions taken",
+  "wrong": [
+   "Project information",
+   "Next steps",
+   "Progress and results / data"
+  ]
+ },
+ {
+  "id": "r-m8-019",
+  "q": "Progress report – cấu trúc thực hành: ngay sau “Solutions taken” là gì?",
+  "correct": "Next steps",
+  "wrong": [
+   "Work completed",
+   "Project overview",
+   "Challenges encountered"
+  ]
+ },
+ {
+  "id": "r-m8-020",
+  "q": "Ý nào cần TRÁNH khi viết progress report?",
+  "correct": "Đưa dữ liệu thô mà không giải thích",
+  "wrong": [
+   "Nêu bước tiếp theo",
+   "Chỉ rõ trách nhiệm và deadline",
+   "Nêu vấn đề và cách xử lý"
+  ]
+ },
+ {
+  "id": "r-m8-021",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Xác định chính xác điều muốn biết",
+  "wrong": [
+   "Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình",
+   "Pilot test với nhóm nhỏ",
+   "Trình bày bằng bảng hoặc chart"
+  ]
+ },
+ {
+  "id": "r-m8-022",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Diễn giải ý nghĩa, không chỉ chép số",
+  "wrong": [
+   "Xác định chính xác điều muốn biết",
+   "Kết hợp câu đóng và một số câu mở",
+   "Trình bày bằng bảng hoặc chart"
+  ]
+ },
+ {
+  "id": "r-m8-023",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Xác định chính xác điều muốn biết” là gì?",
+  "correct": "Xác định target population và cách tiếp cận",
+  "wrong": [
+   "Pilot test với nhóm nhỏ",
+   "Diễn giải ý nghĩa, không chỉ chép số",
+   "Dùng từ đơn giản, trung lập; tránh leading question"
+  ]
+ },
+ {
+  "id": "r-m8-024",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Xác định target population và cách tiếp cận” là gì?",
+  "correct": "Giữ survey ngắn, tập trung",
+  "wrong": [
+   "Diễn giải ý nghĩa, không chỉ chép số",
+   "Trình bày bằng bảng hoặc chart",
+   "Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình"
+  ]
+ },
+ {
+  "id": "r-m8-025",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Giữ survey ngắn, tập trung” là gì?",
+  "correct": "Dùng từ đơn giản, trung lập; tránh leading question",
+  "wrong": [
+   "Kết hợp câu đóng và một số câu mở",
+   "Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình",
+   "Trình bày bằng bảng hoặc chart"
+  ]
+ },
+ {
+  "id": "r-m8-026",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Dùng từ đơn giản, trung lập; tránh leading question” là gì?",
+  "correct": "Kết hợp câu đóng và một số câu mở",
+  "wrong": [
+   "Diễn giải ý nghĩa, không chỉ chép số",
+   "Trình bày bằng bảng hoặc chart",
+   "Xác định target population và cách tiếp cận"
+  ]
+ },
+ {
+  "id": "r-m8-027",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Kết hợp câu đóng và một số câu mở” là gì?",
+  "correct": "Pilot test với nhóm nhỏ",
+  "wrong": [
+   "Dùng từ đơn giản, trung lập; tránh leading question",
+   "Xác định target population và cách tiếp cận",
+   "Giữ survey ngắn, tập trung"
+  ]
+ },
+ {
+  "id": "r-m8-028",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Pilot test với nhóm nhỏ” là gì?",
+  "correct": "Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình",
+  "wrong": [
+   "Xác định chính xác điều muốn biết",
+   "Trình bày bằng bảng hoặc chart",
+   "Dùng từ đơn giản, trung lập; tránh leading question"
+  ]
+ },
+ {
+  "id": "r-m8-029",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình” là gì?",
+  "correct": "Trình bày bằng bảng hoặc chart",
+  "wrong": [
+   "Kết hợp câu đóng và một số câu mở",
+   "Xác định target population và cách tiếp cận",
+   "Xác định chính xác điều muốn biết"
+  ]
+ },
+ {
+  "id": "r-m8-030",
+  "q": "Thiết kế khảo sát đánh giá dự án – quy trình survey: ngay sau “Trình bày bằng bảng hoặc chart” là gì?",
+  "correct": "Diễn giải ý nghĩa, không chỉ chép số",
+  "wrong": [
+   "Kết hợp câu đóng và một số câu mở",
+   "Pilot test với nhóm nhỏ",
+   "Thu thập, tally và tính tỷ lệ phần trăm / giá trị trung bình"
+  ]
+ },
+ {
+  "id": "r-m8-031",
+  "q": "Ý nào là nguồn dữ liệu đánh giá dự án?",
+  "correct": "Biên bản họp",
+  "wrong": [
+   "Ý kiến cá nhân của leader",
+   "Tin đồn",
+   "Dự đoán chưa kiểm chứng"
+  ]
+ },
+ {
+  "id": "r-m8-032",
+  "q": "Loại câu hỏi khảo sát nào có trong tài liệu?",
+  "correct": "Likert scale",
+  "wrong": [
+   "True/False có bẫy",
+   "Câu hỏi dẫn dắt",
+   "Câu hỏi kép"
+  ]
+ },
+ {
+  "id": "r-m8-033",
+  "q": "Mỗi câu hỏi khảo sát phải liên kết với điều gì?",
+  "correct": "Một mục tiêu dự án",
+  "wrong": [
+   "Một thành viên nhóm",
+   "Một nhà tài trợ",
+   "Một trang báo cáo"
+  ]
+ },
+ {
+  "id": "r-m8-034",
+  "q": "Survey nên kết hợp những loại câu nào?",
+  "correct": "Câu đóng và một số câu mở",
+  "wrong": [
+   "Chỉ câu mở",
+   "Chỉ câu Yes/No",
+   "Chỉ thang Likert"
+  ]
+ }
+]

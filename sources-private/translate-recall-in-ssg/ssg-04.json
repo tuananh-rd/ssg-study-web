@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m3-022",
+  "q": "“Contributor safety” nghĩa là gì?",
+  "correct": "Dám dùng kỹ năng và đóng góp ý tưởng",
+  "wrong": [
+   "Cảm thấy được chấp nhận và thuộc về nhóm",
+   "Dám hỏi, học và mắc lỗi",
+   "Dám chất vấn cách làm hoặc quyết định hiện tại"
+  ]
+ },
+ {
+  "id": "r-m3-023",
+  "q": "Ý sau mô tả khái niệm nào: “Dám dùng kỹ năng và đóng góp ý tưởng”?",
+  "correct": "Contributor safety",
+  "wrong": [
+   "Learner safety",
+   "Challenger safety",
+   "Inclusion safety"
+  ]
+ },
+ {
+  "id": "r-m3-024",
+  "q": "“Challenger safety” nghĩa là gì?",
+  "correct": "Dám chất vấn cách làm hoặc quyết định hiện tại",
+  "wrong": [
+   "Dám hỏi, học và mắc lỗi",
+   "Dám dùng kỹ năng và đóng góp ý tưởng",
+   "Cảm thấy được chấp nhận và thuộc về nhóm"
+  ]
+ },
+ {
+  "id": "r-m3-025",
+  "q": "Ý sau mô tả khái niệm nào: “Dám chất vấn cách làm hoặc quyết định hiện tại”?",
+  "correct": "Challenger safety",
+  "wrong": [
+   "Inclusion safety",
+   "Learner safety",
+   "Contributor safety"
+  ]
+ },
+ {
+  "id": "r-m3-026",
+  "q": "Psychological safety – bốn tầng: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Inclusion safety",
+  "wrong": [
+   "Contributor safety",
+   "Learner safety",
+   "Challenger safety"
+  ]
+ },
+ {
+  "id": "r-m3-027",
+  "q": "Psychological safety – bốn tầng: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Challenger safety",
+  "wrong": [
+   "Contributor safety",
+   "Learner safety",
+   "Inclusion safety"
+  ]
+ },
+ {
+  "id": "r-m3-028",
+  "q": "Psychological safety là niềm tin của ai?",
+  "correct": "Niềm tin chung của cả team",
+  "wrong": [
+   "Niềm tin của leader vào thành viên",
+   "Niềm tin của một cá nhân vào người khác",
+   "Niềm tin của giảng viên vào nhóm"
+  ]
+ },
+ {
+  "id": "r-m3-029",
+  "q": "Psychological safety giúp thành viên dám làm gì mà không sợ bị chế giễu hay trừng phạt?",
+  "correct": "Nói ý kiến, hỏi, thừa nhận sai và phản biện",
+  "wrong": [
+   "Bỏ họp và trễ deadline",
+   "Tự quyết mọi việc không cần hỏi",
+   "Giữ bí mật thông tin dự án"
+  ]
+ },
+ {
+  "id": "r-m3-030",
+  "q": "Ý nào là cách tạo an toàn tâm lý?",
+  "correct": "Dám nói “tôi chưa biết”",
+  "wrong": [
+   "Tìm người chịu trách nhiệm khi có lỗi",
+   "Mặc định ý xấu trong tin nhắn ngắn",
+   "Chỉ cho người giỏi nhất phát biểu"
+  ]
+ },
+ {
+  "id": "r-m3-031",
+  "q": "Khi team mắc lỗi, tài liệu khuyên nên hỏi câu gì?",
+  "correct": "“Lần sau chúng ta cải thiện thế nào?”",
+  "wrong": [
+   "“Ai làm sai?”",
+   "“Tại sao bạn không làm đúng?”",
+   "“Ai chịu trách nhiệm việc này?”"
+  ]
+ },
+ {
+  "id": "r-m4-001",
+  "q": "Người quản lý mới phải chuyển từ điều gì sang điều gì?",
+  "correct": "Từ tự làm tốt sang giúp người khác làm tốt",
+  "wrong": [
+   "Từ giúp người khác sang tự làm",
+   "Từ lãnh đạo sang chuyên môn",
+   "Từ làm nhóm sang làm cá nhân"
+  ]
+ },
+ {
+  "id": "r-m4-002",
+  "q": "Ngoài cấp dưới, người quản lý mới còn phải quản lý ai?",
+  "correct": "Sếp, đồng nghiệp ngang cấp, người ảnh hưởng nội bộ và bên liên quan",
+  "wrong": [
+   "Chỉ khách hàng bên ngoài",
+   "Chỉ cấp trên trực tiếp",
+   "Đối thủ cạnh tranh"
+  ]
+ },
+ {
+  "id": "r-m4-003",
+  "q": "Ý nào là một cặp người lãnh đạo phải cân bằng?",
+  "correct": "Hỗ trợ và đối đầu mang tính xây dựng",
+  "wrong": [
+   "Lương và thưởng",
+   "Họp trực tiếp và họp online",
+   "Chuyên môn và ngoại ngữ"
+  ]
+ },
+ {
+  "id": "r-m4-004",
+  "q": "Ý nào KHÔNG thuộc những điều người lãnh đạo phải cân bằng?",
+  "correct": "Lợi ích của leader và lợi ích của khách hàng",
+  "wrong": [
+   "Mục tiêu cá nhân và mục tiêu tập thể",
+   "Hiệu suất hiện tại và học tập / phát triển",
+   "Quyền lực lãnh đạo và quyền tự chủ của team"
+  ]
+ },
+ {
+  "id": "r-m4-005",
+  "q": "Người lãnh đạo phải vừa bảo vệ team khỏi nhiễu bên ngoài, vừa làm gì?",
+  "correct": "Đưa thông tin / nguồn lực từ bên ngoài vào",
+  "wrong": [
+   "Cắt toàn bộ liên lạc bên ngoài",
+   "Giao toàn bộ quyết định cho cấp trên",
+   "Tự làm thay thành viên"
+  ]
+ },
+ {
+  "id": "r-m4-006",
+  "q": "“Integrity” nghĩa là gì?",
+  "correct": "Làm điều đã nói và nhất quán với giá trị",
+  "wrong": [
+   "Lạc quan thực tế, ghi nhận tiến bộ",
+   "Biết muốn gì và truyền đạt ổn định",
+   "Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn"
+  ]
+ },
+ {
+  "id": "r-m4-007",
+  "q": "Ý sau mô tả khái niệm nào: “Làm điều đã nói và nhất quán với giá trị”?",
+  "correct": "Integrity",
+  "wrong": [
+   "Rõ ràng, nhất quán",
+   "Năng lượng tích cực",
+   "Self-management"
+  ]
+ },
+ {
+  "id": "r-m4-008",
+  "q": "“Rõ ràng, nhất quán” nghĩa là gì?",
+  "correct": "Biết muốn gì và truyền đạt ổn định",
+  "wrong": [
+   "Lạc quan thực tế, ghi nhận tiến bộ",
+   "Làm điều đã nói và nhất quán với giá trị",
+   "Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ"
+  ]
+ },
+ {
+  "id": "r-m4-009",
+  "q": "Ý sau mô tả khái niệm nào: “Biết muốn gì và truyền đạt ổn định”?",
+  "correct": "Rõ ràng, nhất quán",
+  "wrong": [
+   "Năng lượng tích cực",
+   "Integrity",
+   "Social awareness / empathy"
+  ]
+ },
+ {
+  "id": "r-m4-010",
+  "q": "“Năng lượng tích cực” nghĩa là gì?",
+  "correct": "Lạc quan thực tế, ghi nhận tiến bộ",
+  "wrong": [
+   "Biết muốn gì và truyền đạt ổn định",
+   "Làm điều đã nói và nhất quán với giá trị",
+   "Duy trì động lực"
+  ]
+ },
+ {
+  "id": "r-m4-011",
+  "q": "Ý sau mô tả khái niệm nào: “Lạc quan thực tế, ghi nhận tiến bộ”?",
+  "correct": "Năng lượng tích cực",
+  "wrong": [
+   "Rõ ràng, nhất quán",
+   "Integrity",
+   "Virtual team"
+  ]
+ },
+ {
+  "id": "r-m4-012",
+  "q": "Ý nào KHÔNG thuộc hành vi lãnh đạo cốt lõi?",
+  "correct": "Ra quyết định một mình để tiết kiệm thời gian",
+  "wrong": [
+   "Integrity",
+   "Năng lượng tích cực",
+   "Đặt câu hỏi mở"
+  ]
+ },
+ {
+  "id": "r-m4-013",
+  "q": "“Manager-led team” nghĩa là gì?",
+  "correct": "Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ",
+  "wrong": [
+   "Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn",
+   "Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày; tăng sở hữu và động lực",
+   "Cần tích hợp nhiều chuyên môn"
+  ]
+ },
+ {
+  "id": "r-m4-014",
+  "q": "Ý sau mô tả khái niệm nào: “Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ”?",
+  "correct": "Manager-led team",
+  "wrong": [
+   "Cross-functional team",
+   "Self-managing team",
+   "Virtual team"
+  ]
+ },
+ {
+  "id": "r-m4-015",
+  "q": "“Self-managing team” nghĩa là gì?",
+  "correct": "Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày; tăng sở hữu và động lực",
+  "wrong": [
+   "Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn",
+   "Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ",
+   "Cần tích hợp nhiều chuyên môn"
+  ]
+ }
+]

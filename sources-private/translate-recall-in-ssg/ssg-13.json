@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m8-035",
+  "q": "Theo checklist, báo cáo tốt phải đạt điều gì?",
+  "correct": "Tự đứng vững mà không cần tác giả giải thích miệng",
+  "wrong": [
+   "Càng dài càng tốt",
+   "Không cần định nghĩa thuật ngữ",
+   "Hình, bảng không cần nhãn"
+  ]
+ },
+ {
+  "id": "r-m8-036",
+  "q": "Ý nào thuộc checklist báo cáo tốt?",
+  "correct": "Khuyến nghị hợp lý, có bằng chứng",
+  "wrong": [
+   "Kết quả dài, chi tiết tối đa",
+   "Dùng thuật ngữ không cần giải thích",
+   "Không cần tài liệu chứng minh"
+  ]
+ },
+ {
+  "id": "r-m8-037",
+  "q": "Hình, bảng và chart trong báo cáo cần gì?",
+  "correct": "Có nhãn, rõ và hỗ trợ nội dung",
+  "wrong": [
+   "Càng nhiều càng tốt",
+   "Không cần nhãn",
+   "Đặt hết ở phụ lục"
+  ]
+ },
+ {
+  "id": "r-m9-001",
+  "q": "“Space” nghĩa là gì?",
+  "correct": "Không gian, khoảng cách",
+  "wrong": [
+   "Tone, pitch, volume, speed",
+   "Môi trường",
+   "Đụng chạm"
+  ]
+ },
+ {
+  "id": "r-m9-002",
+  "q": "Ý sau mô tả khái niệm nào: “Không gian, khoảng cách”?",
+  "correct": "Space",
+  "wrong": [
+   "Environment",
+   "Body movements",
+   "Artifacts"
+  ]
+ },
+ {
+  "id": "r-m9-003",
+  "q": "“Time” nghĩa là gì?",
+  "correct": "Thời gian",
+  "wrong": [
+   "Đụng chạm",
+   "Quần áo, phụ kiện, vật dụng",
+   "Không gian, khoảng cách"
+  ]
+ },
+ {
+  "id": "r-m9-004",
+  "q": "Ý sau mô tả khái niệm nào: “Thời gian”?",
+  "correct": "Time",
+  "wrong": [
+   "Body movements",
+   "Space",
+   "Paralanguage"
+  ]
+ },
+ {
+  "id": "r-m9-005",
+  "q": "“Physical characteristics / appearance” nghĩa là gì?",
+  "correct": "Đặc điểm ngoại hình",
+  "wrong": [
+   "Tone, pitch, volume, speed",
+   "Đụng chạm",
+   "Thời gian"
+  ]
+ },
+ {
+  "id": "r-m9-006",
+  "q": "Ý sau mô tả khái niệm nào: “Đặc điểm ngoại hình”?",
+  "correct": "Physical characteristics / appearance",
+  "wrong": [
+   "Environment",
+   "Artifacts",
+   "Body movements"
+  ]
+ },
+ {
+  "id": "r-m9-007",
+  "q": "“Body movements” nghĩa là gì?",
+  "correct": "Cử động cơ thể",
+  "wrong": [
+   "Đặc điểm ngoại hình",
+   "Môi trường",
+   "Tone, pitch, volume, speed"
+  ]
+ },
+ {
+  "id": "r-m9-008",
+  "q": "Ý sau mô tả khái niệm nào: “Cử động cơ thể”?",
+  "correct": "Body movements",
+  "wrong": [
+   "Time",
+   "Space",
+   "Physical characteristics / appearance"
+  ]
+ },
+ {
+  "id": "r-m9-009",
+  "q": "“Touch” nghĩa là gì?",
+  "correct": "Đụng chạm",
+  "wrong": [
+   "Đặc điểm ngoại hình",
+   "Cử động cơ thể",
+   "Môi trường"
+  ]
+ },
+ {
+  "id": "r-m9-010",
+  "q": "Ý sau mô tả khái niệm nào: “Đụng chạm”?",
+  "correct": "Touch",
+  "wrong": [
+   "Paralanguage",
+   "Body movements",
+   "Space"
+  ]
+ },
+ {
+  "id": "r-m9-011",
+  "q": "“Paralanguage” nghĩa là gì?",
+  "correct": "Tone, pitch, volume, speed",
+  "wrong": [
+   "Quần áo, phụ kiện, vật dụng",
+   "Thời gian",
+   "Cử động cơ thể"
+  ]
+ },
+ {
+  "id": "r-m9-012",
+  "q": "Ý sau mô tả khái niệm nào: “Tone, pitch, volume, speed”?",
+  "correct": "Paralanguage",
+  "wrong": [
+   "Body movements",
+   "Space",
+   "Environment"
+  ]
+ },
+ {
+  "id": "r-m9-013",
+  "q": "“Artifacts” nghĩa là gì?",
+  "correct": "Quần áo, phụ kiện, vật dụng",
+  "wrong": [
+   "Thời gian",
+   "Đặc điểm ngoại hình",
+   "Cử động cơ thể"
+  ]
+ },
+ {
+  "id": "r-m9-014",
+  "q": "Ý sau mô tả khái niệm nào: “Quần áo, phụ kiện, vật dụng”?",
+  "correct": "Artifacts",
+  "wrong": [
+   "Physical characteristics / appearance",
+   "Space",
+   "Time"
+  ]
+ },
+ {
+  "id": "r-m9-015",
+  "q": "“Environment” nghĩa là gì?",
+  "correct": "Môi trường",
+  "wrong": [
+   "Thời gian",
+   "Đụng chạm",
+   "Cử động cơ thể"
+  ]
+ },
+ {
+  "id": "r-m9-016",
+  "q": "Ý sau mô tả khái niệm nào: “Môi trường”?",
+  "correct": "Environment",
+  "wrong": [
+   "Body movements",
+   "Space",
+   "Paralanguage"
+  ]
+ },
+ {
+  "id": "r-m9-017",
+  "q": "Có bao nhiêu loại giao tiếp phi ngôn ngữ trong tài liệu?",
+  "correct": "Tám",
+  "wrong": [
+   "Năm",
+   "Sáu",
+   "Mười"
+  ]
+ },
+ {
+  "id": "r-m9-018",
+  "q": "Phi ngôn ngữ có thể có những quan hệ nào với lời nói?",
+  "correct": "Lặp lại, bổ sung, mâu thuẫn hoặc thay thế",
+  "wrong": [
+   "Chỉ lặp lại",
+   "Chỉ thay thế",
+   "Không liên quan"
+  ]
+ },
+ {
+  "id": "r-m9-019",
+  "q": "Phi ngôn ngữ phụ thuộc vào gì?",
+  "correct": "Văn hóa, bối cảnh và quan hệ",
+  "wrong": [
+   "Chỉ ngôn ngữ nói",
+   "Chỉ tuổi tác",
+   "Không phụ thuộc gì"
+  ]
+ },
+ {
+  "id": "r-m9-020",
+  "q": "Ý nào KHÔNG thuộc tám loại phi ngôn ngữ?",
+  "correct": "Written words",
+  "wrong": [
+   "Space",
+   "Time",
+   "Environment"
+  ]
+ },
+ {
+  "id": "r-m9-021",
+  "q": "Ba bước của một cử chỉ theo thứ tự?",
+  "correct": "Anticipation → Implementation → Relaxation",
+  "wrong": [
+   "Implementation → Anticipation → Relaxation",
+   "Relaxation → Anticipation → Implementation",
+   "Approach → Stroke → Return"
+  ]
+ },
+ {
+  "id": "r-m9-022",
+  "q": "Eye contact khi thuyết trình nên như thế nào?",
+  "correct": "Phân bổ tự nhiên giữa các khu vực của khán giả",
+  "wrong": [
+   "Chỉ nhìn giảng viên",
+   "Nhìn slide",
+   "Nhìn một điểm cố định"
+  ]
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "id": 209,
+  "question": "What is the objective of linear regression?",
+  "options": [
+   "Minimize the sum of squared residuals",
+   "Maximize the R-squared value",
+   "Minimize the number of predictors",
+   "Maximize the coefficient of determination"
+  ]
+ },
+ {
+  "id": 210,
+  "question": "What is the purpose of using polynomial regression?",
+  "options": [
+   "To model non-linear relationships between variables",
+   "To reduce overfitting in the model",
+   "To handle missing data effectively",
+   "To improve computational efficiency"
+  ]
+ },
+ {
+  "id": 211,
+  "question": "What is the purpose of Polynomial Regression in machine learning?",
+  "options": [
+   "Handling non-linear relationships between variables",
+   "Reducing model complexity",
+   "Handling missing values in data",
+   "Converting categorical variables into numerical form"
+  ]
+ },
+ {
+  "id": 212,
+  "question": "What is the role of the \"Integrations\" feature in Watson Assistant?",
+  "options": [
+   "To deploy the chatbot to applications",
+   "To manage user authentication",
+   "To define the conversational flow",
+   "To handle user input validation"
+  ]
+ },
+ {
+  "id": 213,
+  "question": "What is the primary goal of using cross-validation in machine learning?",
+  "options": [
+   "To improve model training time",
+   "To make the model fit the training data perfectly",
+   "To estimate the performance of a model on an independent dataset",
+   "To reduce the number of features in the dataset"
+  ]
+ },
+ {
+  "id": 214,
+  "question": "What is the primary use of the model.evaluate() function in TensorFlow?",
+  "options": [
+   "Compiling the model with optimizer",
+   "Training the model on training data",
+   "Initializing the neural network weights",
+   "Evaluating the model performance on test data"
+  ]
+ },
+ {
+  "id": 216,
+  "question": "What is the purpose of grid search in machine learning?",
+  "options": [
+   "To search for the best hyperparameters",
+   "To search for the best features",
+   "To search for the best model",
+   "To search for the best dataset"
+  ]
+ },
+ {
+  "id": 217,
+  "question": "What is the purpose of using sliders in dashboard design?",
+  "options": [
+   "Displaying images",
+   "Enabling user input for selecting values within a range",
+   "Embedding videos",
+   "Showing text data"
+  ]
+ },
+ {
+  "id": 218,
+  "question": "What is the primary purpose of using the requests library in Python for web crawling?",
+  "options": [
+   "Scraping and parsing HTML/XML data",
+   "Data visualization",
+   "Machine learning modeling",
+   "Database management"
+  ]
+ },
+ {
+  "id": 219,
+  "question": "What is the primary purpose of using Watson Natural Language Understanding API?",
+  "options": [
+   "Translating text between languages",
+   "Analyzing sentiment in text data",
+   "Extracting entities from text",
+   "Understanding and processing textual content"
+  ]
+ },
+ {
+  "id": 220,
+  "question": "What do the points in a residual plot represent?",
+  "options": [
+   "Difference between observed and predicted values",
+   "Predicted values from the regression model with given parameters",
+   "Actual observed values",
+   "Outliers in the dataset"
+  ]
+ },
+ {
+  "id": 221,
+  "question": "What does Min-Max Scaling do to the data?",
+  "options": [
+   "Scales data to a fixed range, often between 0 and 1",
+   "Shifts the mean to zero and scales to unit variance",
+   "Normalizes data based on the median and interquartile range",
+   "Transforms data using the natural logarithm"
+  ]
+ },
+ {
+  "id": 222,
+  "question": "What does the method fit_transform() in Sklearn typically do?",
+  "options": [
+   "Fits the model to the training data",
+   "Transforms the training data",
+   "Fits the model and transforms the training data simultaneously",
+   "None of the above"
+  ]
+ },
+ {
+  "id": 223,
+  "question": "What does the order parameter in regplot represent?",
+  "options": [
+   "Control the order of polynomial regression",
+   "Adjusts the size of the markers",
+   "Controls the order of the markers in legend",
+   "Changes the color of the regression line"
+  ]
+ },
+ {
+  "id": 224,
+  "question": "What does the subplot() function in Matplotlib allow you to do?",
+  "options": [
+   "Create multiple plots within a single figure",
+   "Change the background color of the plot",
+   "Adjust the size of the markers in a scatter plot",
+   "Remove ticks from the plot axis"
+  ]
+ },
+ {
+  "id": 225,
+  "question": "What does the folium.Circle() function do in Folium?",
+  "options": [
+   "Creates a scatter plot on the map",
+   "Adds circles with varying radius to the map",
+   "Generates a choropleth map",
+   "Plots line segments on the map"
+  ]
+ },
+ {
+  "id": 226,
+  "question": "What does a choropleth map in Folium represent?",
+  "options": [
+   "Geographical locations with clustered markers",
+   "Geographical areas colored or shaded based on data values",
+   "Density distribution of data points on a map",
+   "Polyline connecting different locations"
+  ]
+ },
+ {
+  "id": 227,
+  "question": "What does the softmax activation function do in the output layer of a multi-class classification model?",
+  "options": [
+   "Calculate the derivative of the activation function",
+   "Converts logits into a probability distribution over multiple classes",
+   "Applies a threshold for binary classification",
+   "Normalizes input features to zero mean and unit variance"
+  ]
+ },
+ {
+  "id": 228,
+  "question": "What does the softmax activation function do in the output layer of a classification model?",
+  "options": [
+   "Applies a threshold for binary classification",
+   "Maps values to probabilities for multiple classes",
+   "Normalizes the output values",
+   "Calculates the derivative of the activation function"
+  ]
+ },
+ {
+  "id": 229,
+  "question": "What does the parameter cv represent in cross-validation techniques?",
+  "options": [
+   "Complexity value",
+   "Cross-validation score",
+   "Number of folds or cross-validation iterations",
+   "Regularization parameter"
+  ]
+ }
+]

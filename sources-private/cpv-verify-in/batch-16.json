@@ -1,0 +1,1810 @@
+[
+ {
+  "png": "cpv-slides-png/slide-249.png",
+  "png_no": 249,
+  "html_no": 251,
+  "hidden": "A\nToán tử Prewitt khác toán tử Sobel trong phát hiện biên như thế nào?\nA. Nó sử dụng kernel (mặt nạ) khác (It uses different kernel).\nCả Prewitt và Sobel đều sử dụng kernel 3×3, nhưng giá trị của các kernel khác nhau. Sobel đặt trọng số lớn hơn ở hàng hoặc cột trung tâm nên nhạy hơn với biên.",
+  "candidates": [
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-250.png",
+  "png_no": 250,
+  "html_no": 252,
+  "hidden": "C\nMục tiêu chính của căn chỉnh toàn cục (global alignment) trong đăng ký ảnh (image registration) là gì?\nC. Tìm một tập tham số căn chỉnh nhất quán trên toàn bộ ảnh (Finding a globally consistent set of alignment parameters).\nGlobal alignment nhằm đảm bảo tất cả các ảnh được căn chỉnh theo một hệ quy chiếu thống nhất, giảm sai lệch tích lũy và cải thiện chất lượng ghép ảnh.",
+  "candidates": [
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-251.png",
+  "png_no": 251,
+  "html_no": 253,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-252.png",
+  "png_no": 252,
+  "html_no": 254,
+  "hidden": "Câu dài",
+  "candidates": [
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-253.png",
+  "png_no": 253,
+  "html_no": 255,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-254.png",
+  "png_no": 254,
+  "html_no": 256,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-255.png",
+  "png_no": 255,
+  "html_no": 257,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 237,
+    "slide": 252,
+    "question": "What is the primary objective of global alignment in image registration?",
+    "options": [
+     "Minimizing the distortion within individual images.",
+     "Minimizing the number of matched features between images.",
+     "Finding a globally consistent set of alignment parameters.",
+     "Focusing on global details within the images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-256.png",
+  "png_no": 256,
+  "html_no": 258,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 238,
+    "slide": 253,
+    "question": "How are elements selected for the histogram bins in HOG calculation?",
+    "options": [
+     "Randomly assigned based on pixel values",
+     "Based on the brightness of pixels",
+     "Based on the direction of gradients",
+     "Based on the size of objects in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-257.png",
+  "png_no": 257,
+  "html_no": 259,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-258.png",
+  "png_no": 258,
+  "html_no": 260,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 239,
+    "slide": 255,
+    "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+    "options": [
+     "To sharpen the image and enhance high-frequency details.",
+     "To reduce noise in the image, preventing it from influencing the edge detection process.",
+     "To increase the overall contrast of the image for better edge visualization.",
+     "To remove objects or regions of interest from the image before edge detection."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-259.png",
+  "png_no": 259,
+  "html_no": 261,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 240,
+    "slide": 256,
+    "question": "What is the mechanism of Laplacian of Gaussian?",
+    "options": [
+     "Gaussian-based operator relies on random level transitions in the image",
+     "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+     "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+     "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-260.png",
+  "png_no": 260,
+  "html_no": 262,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 241,
+    "slide": 257,
+    "question": "What is true about the global alignment?",
+    "options": [
+     "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+     "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+     "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-261.png",
+  "png_no": 261,
+  "html_no": 263,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 242,
+    "slide": 258,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision uses images and videos to understand a real-world scene.",
+     "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+     "It makes a computer understand images, videos.",
+     "All of the answers"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-262.png",
+  "png_no": 262,
+  "html_no": 264,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 243,
+    "slide": 259,
+    "question": "What is computer vision?",
+    "options": [
+     "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+     "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+     "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+     "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-263.png",
+  "png_no": 263,
+  "html_no": 265,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 244,
+    "slide": 260,
+    "question": "What is the benefit of using feature-based alignment techniques?",
+    "options": [
+     "It significantly reduces the file size of images.",
+     "It automatically adjusts image brightness and contrast for consistency.",
+     "It enables robust alignment even with image variations like rotation or scale changes.",
+     "It simplifies image editing tasks by automatically cropping unnecessary areas."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-264.png",
+  "png_no": 264,
+  "html_no": 266,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 245,
+    "slide": 261,
+    "question": "What is image filter? Choose the best answer",
+    "options": [
+     "Filtering is a technique for modifying or enhancing an image.",
+     "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+     "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 246,
+    "slide": 262,
+    "question": "What is the difference between Phong model of light sources and the reality?",
+    "options": [
+     "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+     "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+     "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+     "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 247,
+    "slide": 263,
+    "question": "What is bundle adjustment primarily used for in image processing?",
+    "options": [
+     "Adding new images to a panorama",
+     "Adjusting the pose parameters for an image to reduce size of an image",
+     "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+     "Aligning images in a sequential manner"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 248,
+    "slide": 264,
+    "question": "What is the core concept behind the Hough Transform?",
+    "options": [
+     "It transforms edge points in the image space to a parameter space to identify lines.",
+     "It directly identifies lines in an image based on pixel intensity changes.",
+     "It segments the image into connected regions to form line segments.",
+     "It requires manually specifying the starting and ending points of lines to be detected."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 249,
+    "slide": 265,
+    "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 250,
+    "slide": 266,
+    "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+    "options": [
+     "It relies on a single-pixel computation",
+     "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+     "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+     "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 251,
+    "slide": 267,
+    "question": "What is true about image segmentation?",
+    "options": [
+     "An image is broken into many regions using the characteristics of pixels to identify objects",
+     "The representation of an image is changed into something containing more complex information to analyze",
+     "Color is assigned to every pixel of an image",
+     "Not at all"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m9-023",
+  "q": "Ý nào là nguyên tắc delivery?",
+  "correct": "Dùng tư thế mở, di chuyển có chủ đích",
+  "wrong": [
+   "Đứng yên một chỗ",
+   "Đọc slide cho chính xác",
+   "Nói đều giọng để chuyên nghiệp"
+  ]
+ },
+ {
+  "id": "r-m9-024",
+  "q": "Ý nào KHÔNG nên làm khi trình bày?",
+  "correct": "Nhìn slide, bảng hoặc màn hình thay cho khán giả",
+  "wrong": [
+   "Biểu cảm phù hợp nội dung",
+   "Điều chỉnh tone, tốc độ, volume",
+   "Di chuyển có chủ đích"
+  ]
+ },
+ {
+  "id": "r-m9-025",
+  "q": "Bốn tiêu chí của visual aid?",
+  "correct": "Big – Clear – Simple – Consistent",
+  "wrong": [
+   "Bright – Colorful – Short – Detailed",
+   "Bold – Creative – Small – Varied",
+   "Brief – Complex – Static – Colorful"
+  ]
+ },
+ {
+  "id": "r-m9-026",
+  "q": "“Big” trong tiêu chí visual aid nghĩa là gì?",
+  "correct": "Hàng ghế cuối đọc được",
+  "wrong": [
+   "Slide càng nhiều càng tốt",
+   "Hình ảnh chiếm toàn màn hình",
+   "Chữ in hoa"
+  ]
+ },
+ {
+  "id": "r-m9-027",
+  "q": "“Consistent” trong tiêu chí visual aid nghĩa là gì?",
+  "correct": "Nhất quán phong cách",
+  "wrong": [
+   "Đơn giản hóa khái niệm",
+   "Hiểu ngay",
+   "Đủ to"
+  ]
+ },
+ {
+  "id": "r-m9-028",
+  "q": "Ý nào là lợi ích của visual aid?",
+  "correct": "Truyền thông tin phức tạp nhanh",
+  "wrong": [
+   "Thay thế người nói",
+   "Giảm thời gian chuẩn bị",
+   "Không cần tập dượt"
+  ]
+ },
+ {
+  "id": "r-m9-029",
+  "q": "Ý nào là thực hành tốt với visual aid?",
+  "correct": "Một ý chính mỗi slide",
+  "wrong": [
+   "Nhiều chữ để đủ thông tin",
+   "Dùng mọi hình ảnh đẹp",
+   "Chỉnh sửa slide khi đang nói"
+  ]
+ },
+ {
+  "id": "r-m9-030",
+  "q": "Ý nào KHÔNG thuộc thực hành tốt với visual aid?",
+  "correct": "Nhồi nhiều ý vào một slide",
+  "wrong": [
+   "Font đủ lớn và tương phản cao",
+   "Nói rõ liên hệ giữa lời nói và visual",
+   "Luôn có phương án dự phòng"
+  ]
+ },
+ {
+  "id": "r-m9-031",
+  "q": "Persuasion là gì?",
+  "correct": "Trình bày lập luận để thay đổi điều khán giả nghĩ, cảm nhận hoặc làm",
+  "wrong": [
+   "Ép khán giả đồng ý",
+   "Chỉ cung cấp thông tin trung lập",
+   "Kể chuyện giải trí"
+  ]
+ },
+ {
+  "id": "r-m9-032",
+  "q": "Có bao nhiêu chức năng của thuyết phục trong tài liệu?",
+  "correct": "Năm",
+  "wrong": [
+   "Ba",
+   "Bốn",
+   "Sáu"
+  ]
+ },
+ {
+  "id": "r-m9-033",
+  "q": "Ý nào là chức năng của thuyết phục?",
+  "correct": "Develop tolerance",
+  "wrong": [
+   "Entertain",
+   "Inform only",
+   "Summarize"
+  ]
+ },
+ {
+  "id": "r-m9-034",
+  "q": "Sáu nguyên tắc ảnh hưởng gồm những gì?",
+  "correct": "Reciprocity, Scarcity, Authority, Commitment & consistency, Consensus/social proof, Liking",
+  "wrong": [
+   "Reciprocity, Scarcity, Authority, Credibility, Intimacy, Liking",
+   "Ethos, Pathos, Logos, Authority, Liking, Scarcity",
+   "Reliability, Scarcity, Authority, Consistency, Empathy, Liking"
+  ]
+ },
+ {
+  "id": "r-m9-035",
+  "q": "Ý nào KHÔNG thuộc sáu nguyên tắc ảnh hưởng?",
+  "correct": "Reliability",
+  "wrong": [
+   "Reciprocity",
+   "Authority",
+   "Liking"
+  ]
+ },
+ {
+  "id": "r-m9-036",
+  "q": "Khi thuyết phục cần phân tích những gì về audience?",
+  "correct": "Nhu cầu, giá trị, mối quan tâm và phản đối",
+  "wrong": [
+   "Tuổi, giới tính, quê quán",
+   "Lương và chức vụ",
+   "Số lượng người nghe"
+  ]
+ },
+ {
+  "id": "r-m9-037",
+  "q": "Tài liệu gợi ý liên hệ những nhu cầu nào của audience?",
+  "correct": "An toàn, thuộc về, được công nhận và phát triển",
+  "wrong": [
+   "Ăn, ngủ, nghỉ, chơi",
+   "Tiền, quyền, danh, lợi",
+   "Học, làm, nghỉ, chơi"
+  ]
+ },
+ {
+  "id": "r-m9-038",
+  "q": "Ý nào là hành vi KHÔNG được làm trong thuyết phục?",
+  "correct": "Giả vờ chắc chắn khi chỉ có xác suất",
+  "wrong": [
+   "Trích nguồn bằng chứng",
+   "Nêu rõ tổ chức đại diện",
+   "Thừa nhận giới hạn dữ liệu"
+  ]
+ },
+ {
+  "id": "r-m9-039",
+  "q": "Ý nào vi phạm đạo đức thuyết phục?",
+  "correct": "Biến vấn đề phức tạp thành lựa chọn trắng–đen giả tạo",
+  "wrong": [
+   "Dùng số liệu có nguồn",
+   "Kể câu chuyện có thật",
+   "Trình bày nhiều góc nhìn"
+  ]
+ },
+ {
+  "id": "r-m9-040",
+  "q": "Dùng cảm xúc thế nào thì vi phạm đạo đức thuyết phục?",
+  "correct": "Dùng cảm xúc không có nền tảng lý lẽ",
+  "wrong": [
+   "Dùng cảm xúc kèm bằng chứng",
+   "Kể câu chuyện có thật",
+   "Thể hiện sự đồng cảm"
+  ]
+ },
+ {
+  "id": "r-m9-041",
+  "q": "Ý nào KHÔNG thuộc các điều cấm trong thuyết phục?",
+  "correct": "Kêu gọi hành động cụ thể",
+  "wrong": [
+   "Tự nhận là chuyên gia khi không phải",
+   "Che giấu mục đích hoặc tổ chức đại diện",
+   "Kêu gọi điều mình không tin"
+  ]
+ },
+ {
+  "id": "r-m9-042",
+  "q": "Elevator pitch dài khoảng bao lâu?",
+  "correct": "30–60 giây",
+  "wrong": [
+   "5–10 giây",
+   "2–3 phút",
+   "5 phút"
+  ]
+ },
+ {
+  "id": "r-m9-043",
+  "q": "Phần đầu tiên của elevator pitch?",
+  "correct": "Hook và bạn là ai",
+  "wrong": [
+   "Call to action",
+   "Lợi ích nổi bật",
+   "Audience / target"
+  ]
+ },
+ {
+  "id": "r-m9-044",
+  "q": "Phần cuối cùng của elevator pitch?",
+  "correct": "Yêu cầu / call to action cụ thể",
+  "wrong": [
+   "Hook và bạn là ai",
+   "Bạn cung cấp giá trị gì",
+   "Lợi ích và điểm khác biệt"
+  ]
+ },
+ {
+  "id": "r-m9-045",
+  "q": "Phần ngay sau “Bạn cung cấp giá trị gì” trong elevator pitch?",
+  "correct": "Audience / target là ai",
+  "wrong": [
+   "Lợi ích nổi bật và điểm khác biệt",
+   "Hook và bạn là ai",
+   "Call to action"
+  ]
+ },
+ {
+  "id": "r-m10-001",
+  "q": "“Job” nghĩa là gì?",
+  "correct": "Công việc tương đối ngắn hạn, thường tập trung vào thu nhập",
+  "wrong": [
+   "Chuỗi vai trò theo thời gian; có thể đổi hướng, dừng hoặc tái thiết kế",
+   "Hành trình dài hạn của nhiều công việc và trải nghiệm có liên hệ, hướng đến học hỏi và phát triển",
+   "Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm"
+  ]
+ },
+ {
+  "id": "r-m10-002",
+  "q": "Ý sau mô tả khái niệm nào: “Công việc tương đối ngắn hạn, thường tập trung vào thu nhập”?",
+  "correct": "Job",
+  "wrong": [
+   "Career path",
+   "Career",
+   "Closing"
+  ]
+ }
+]

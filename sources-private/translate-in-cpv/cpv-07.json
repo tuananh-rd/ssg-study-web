@@ -1,0 +1,202 @@
+[
+ {
+  "id": 121,
+  "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+  "options": [
+   "Sampling pitch",
+   "Fill factor",
+   "Shutter speed",
+   "Chip size"
+  ]
+ },
+ {
+  "id": 122,
+  "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+  "options": [
+   "Polar space",
+   "Cartesian space",
+   "Transform space",
+   "Gradient space"
+  ]
+ },
+ {
+  "id": 123,
+  "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+  "options": [
+   "Template Matching",
+   "Multi-view Tracking",
+   "Silhouette Tracking",
+   "Contour Evolution"
+  ]
+ },
+ {
+  "id": 124,
+  "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+  "options": [
+   "CamShift tracking",
+   "Kalman filtering",
+   "Mean Shift tracking",
+   "Optical flow tracking"
+  ]
+ },
+ {
+  "id": 125,
+  "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+  "options": [
+   "Faster R-CNN",
+   "YOLO",
+   "SSD",
+   "Haar Cascade"
+  ]
+ },
+ {
+  "id": 126,
+  "question": "How does a Gaussian Mixture Model represent each cluster?",
+  "options": [
+   "By a parabolic line",
+   "By a decision tree",
+   "By a distribution",
+   "By a random selection"
+  ]
+ },
+ {
+  "id": 127,
+  "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+  "options": [
+   "log(1-P)/log(1-p^k)",
+   "log(1-P)*log(1-p^k)",
+   "log[(1-P)(1-p^k)]",
+   "log[(1-P)/(1-p^k)]"
+  ]
+ },
+ {
+  "id": 128,
+  "question": "When dealing with image classification, what kind of challenges do we face with images?",
+  "options": [
+   "Variations due to scaling",
+   "Variations due to illumination",
+   "Image occlusion",
+   "All the above"
+  ]
+ },
+ {
+  "id": 129,
+  "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+  "options": [
+   "F(w)+H(w)",
+   "F(w)*H(w)",
+   "F(w)H(w)",
+   "F(w)H*(w)"
+  ]
+ },
+ {
+  "id": 130,
+  "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+  "options": [
+   "Feature reduce",
+   "Feature combination",
+   "Feature compression",
+   "Feature matching"
+  ]
+ },
+ {
+  "id": 131,
+  "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+  "options": [
+   "Eyes, eyebrows, nose, hair, jaw",
+   "Eyes, eyebrows, nose, neck, mouth",
+   "Eyes, eyebrows, nose, mouth, jaw",
+   "Eyes, eyebrows, jaw, neck, ear"
+  ]
+ },
+ {
+  "id": 132,
+  "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+  "options": [
+   "Snakes model",
+   "Scissors model",
+   "Sets model",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 133,
+  "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+  "options": [
+   "1000x128",
+   "1200x1000",
+   "128x1200",
+   "128x128"
+  ]
+ },
+ {
+  "id": 134,
+  "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+  "options": [
+   "Instance segmentation",
+   "Semantic detection",
+   "Instance detection",
+   "Semantic segmentation"
+  ]
+ },
+ {
+  "id": 135,
+  "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+  "options": [
+   "Panoramas creating",
+   "Recognizing panoramas",
+   "Parallax removal",
+   "Bundle Adjustment"
+  ]
+ },
+ {
+  "id": 136,
+  "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+  "options": [
+   "Object detection",
+   "Object locating",
+   "Object recognition",
+   "Object tracking"
+  ]
+ },
+ {
+  "id": 137,
+  "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+  "options": [
+   "Cylindrical coordinates",
+   "Cartesian coordinates",
+   "Spherical coordinates",
+   "Polar coordinates"
+  ]
+ },
+ {
+  "id": 138,
+  "question": "In image processing, what is the next step after feature detection?",
+  "options": [
+   "Preprocessing",
+   "Feature description",
+   "Feature combination",
+   "Noise remove( filters)"
+  ]
+ },
+ {
+  "id": 139,
+  "question": "In watershed segmentation, what does a watershed boundary represent?",
+  "options": [
+   "Object edges",
+   "Object centroids",
+   "Valleys in the image",
+   "Image pixels"
+  ]
+ },
+ {
+  "id": 140,
+  "question": "In Fourier transform, what is the abbreviation for DFT?",
+  "options": [
+   "Display Fourier Transform",
+   "Distribute Fourier Transform",
+   "Discrete Fourier Transform",
+   "Discontinous Fourier Transform"
+  ]
+ }
+]

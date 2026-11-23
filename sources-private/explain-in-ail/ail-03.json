@@ -1,0 +1,327 @@
+[
+ {
+  "id": 55,
+  "question": "Which of the following is a common technique for linear dimensionality reduction?",
+  "options": [
+   "Decision Trees",
+   "Principal Component Analysis (PCA)",
+   "K-means Clustering",
+   "Support Vector Machines"
+  ],
+  "correct": [
+   "Principal Component Analysis (PCA)"
+  ]
+ },
+ {
+  "id": 56,
+  "question": "Which of the following is not typically considered an EDA technique?",
+  "options": [
+   "Gradient descent optimization.",
+   "Correlation analysis.",
+   "Distribution analysis (e.g., histograms).",
+   "Boxplots for detecting outliers."
+  ],
+  "correct": [
+   "Gradient descent optimization."
+  ]
+ },
+ {
+  "id": 57,
+  "question": "Which distance metric is useful when we have text documents and we want to group similar topics together?",
+  "options": [
+   "Manhattan Distance",
+   "Euclidean",
+   "Jaccard",
+   "Mahalanobis Distance"
+  ],
+  "correct": [
+   "Jaccard"
+  ]
+ },
+ {
+  "id": 58,
+  "question": "Which problem in machine learning does regularization primarily address?",
+  "options": [
+   "Overfitting",
+   "Underfitting",
+   "Both overfitting and underfitting",
+   "Feature engineering"
+  ],
+  "correct": [
+   "Overfitting"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "Which module in scikit-learn provides the implementation of Kernel PCA?",
+  "options": [
+   "sklearn.decomposition",
+   "sklearn.cluster",
+   "sklearn.preprocessing",
+   "sklearn.model_selection"
+  ],
+  "correct": [
+   "sklearn.decomposition"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Which technique involves duplicating samples from the minority class to balance the class distribution?",
+  "options": [
+   "Upsampling",
+   "Downsampling",
+   "Stratified Sampling",
+   "Class Weighting"
+  ],
+  "correct": [
+   "Upsampling"
+  ]
+ },
+ {
+  "id": 61,
+  "question": "Which type of regression is Polynomial Regression an extension of?",
+  "options": [
+   "Linear Regression",
+   "Logistic Regression",
+   "Ridge Regression",
+   "Poisson Regression"
+  ],
+  "correct": [
+   "Linear Regression"
+  ]
+ },
+ {
+  "id": 62,
+  "question": "Which variable transformation should you use for ordinal data?",
+  "options": [
+   "Standard scaling",
+   "One-hot encoding",
+   "Ordinal encoding",
+   "Min-max scaling"
+  ],
+  "correct": [
+   "Ordinal encoding"
+  ]
+ },
+ {
+  "id": 63,
+  "question": "Which discipline is used to train most models used in computer vision applications?",
+  "options": [
+   "Deep Learning.",
+   "Machine Learning.",
+   "Artificial Intelligence.",
+   "Reinforcement learning."
+  ],
+  "correct": [
+   "Deep Learning."
+  ]
+ },
+ {
+  "id": 64,
+  "question": "How do you instantiate a PCA model in scikit-learn?",
+  "options": [
+   "pca = KMeans()",
+   "pca = PCA()",
+   "pca = DBSCAN()",
+   "pca = LogisticRegression()"
+  ],
+  "correct": [
+   "pca = PCA()"
+  ]
+ },
+ {
+  "id": 65,
+  "question": "Who coined the term \"artificial intelligence\" at the Dartmouth Conference in 1956, marking the official birth of AI as a field of study?",
+  "options": [
+   "Alan Turing",
+   "John McCarthy",
+   "Marvin Minsky",
+   "Herbert Simon"
+  ],
+  "correct": [
+   "John McCarthy"
+  ]
+ },
+ {
+  "id": 66,
+  "question": "When dealing with overfitting in Polynomial Regression, what technique can be employed to prevent it?",
+  "options": [
+   "L1 Regularization",
+   "L2 Regularization",
+   "Feature Scaling",
+   "Cross-validation"
+  ],
+  "correct": [
+   "L2 Regularization"
+  ]
+ },
+ {
+  "id": 67,
+  "question": "Assume you have a data set that summarizes a marketing campaign with information related to prospective customers. The data set contains 100 observations with several columns that summarize information about the prospective customer. It also has a column that flags whether the prospect responded or not.\nIn this context, observation is a synonym of:",
+  "options": [
+   "label",
+   "features",
+   "target",
+   "example"
+  ],
+  "correct": [
+   "example"
+  ]
+ },
+ {
+  "id": 69,
+  "question": "Consider the following statements about Estimation and Inference:\na. In general, the population parameters are unknown.\nb. Parametric models have finite number of parameters.",
+  "options": [
+   "a and b are true",
+   "a and b are false",
+   "a is true and b is false",
+   "a is false and b is true"
+  ],
+  "correct": [
+   "a and b are true"
+  ]
+ },
+ {
+  "id": 70,
+  "question": "Decision Tree algorithm can use for",
+  "options": [
+   "Data Cleaning",
+   "Feature Engineering",
+   "Classification and Regression",
+   "Hyperparameter Tuning"
+  ],
+  "correct": [
+   "Classification and Regression"
+  ]
+ },
+ {
+  "id": 71,
+  "question": "In 2016, which AI technology achieved a significant milestone by defeating the world champion Go player, Lee Sedol?",
+  "options": [
+   "IBM's Watson",
+   "Google's DeepMind AlphaGo",
+   "Amazon Alexa",
+   "Microsoft's Cortana"
+  ],
+  "correct": [
+   "Google's DeepMind AlphaGo"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "Order these tree ensembles in order of most randomness to least randomness:",
+  "options": [
+   "Random Forest, Random Trees, Bagging",
+   "Bagging, Random Forest, Random Trees",
+   "Random Trees, Random Forest, Bagging",
+   "Random Forest, Bagging, Random Trees"
+  ],
+  "correct": [
+   "Random Trees, Random Forest, Bagging"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "In supervised learning, what are the two main components of the training dataset?",
+  "options": [
+   "Features and Predictions",
+   "Labels and Predictions",
+   "Features and Labels",
+   "Inputs and Outputs"
+  ],
+  "correct": [
+   "Features and Labels"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "This is the syntax you need to predict new data after you have trained a linear regression called LR:",
+  "options": [
+   "LR=predict(X_test)",
+   "LR.predict(X_test)",
+   "LR.predict(LR, X_test)",
+   "predict(LR, X_test)"
+  ],
+  "correct": [
+   "LR.predict(X_test)"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "The main purpose of splitting your data into a training and testing sets is:",
+  "options": [
+   "To improve accuracy",
+   "To avoid overfitting",
+   "To improve regularization",
+   "To improve crossvalidation and overfitting"
+  ],
+  "correct": [
+   "To avoid overfitting"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "The autocorrect on your phone is an example of:",
+  "options": [
+   "Unsupervised learning",
+   "Supervised learning",
+   "Semi-supervised learning",
+   "Reinforcement learning"
+  ],
+  "correct": [
+   "Supervised learning"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "The most common way of estimating parameters in a parametric model is:",
+  "options": [
+   "using the maximum likelihood estimation",
+   "using the central limit theorem",
+   "extrapolating a non-parametric model",
+   "extrapolating Bayesian statistics"
+  ],
+  "correct": [
+   "using the maximum likelihood estimation"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "This is an ensemble model that does not use bootstrapped samples to fit the base trees, takes residuals into account, and fits the base trees iteratively:",
+  "options": [
+   "Random Trees",
+   "Boosting",
+   "Bagging",
+   "Random Forest"
+  ],
+  "correct": [
+   "Boosting"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "This is the type of Machine Learning that uses both data with labeled outcomes and data without labeled outcomes:",
+  "options": [
+   "Supervised Machine Learning",
+   "Unsupervised Machine Learning",
+   "Mixed Machine Learning",
+   "Semi-Supervised Machine Learning"
+  ],
+  "correct": [
+   "Semi-Supervised Machine Learning"
+  ]
+ },
+ {
+  "id": 81,
+  "question": "Selecting the right error measurement is essential for training and evaluating machine learning models effectively because it allows to",
+  "options": [
+   "Handle Class Imbalance",
+   "Be robust to Outliers",
+   "Be more interpretable",
+   "Get high accuracy"
+  ],
+  "correct": [
+   "Handle Class Imbalance"
+  ]
+ }
+]

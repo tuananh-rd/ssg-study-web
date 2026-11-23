@@ -1,0 +1,202 @@
+[
+ {
+  "id": 65,
+  "question": "Who coined the term \"artificial intelligence\" at the Dartmouth Conference in 1956, marking the official birth of AI as a field of study?",
+  "options": [
+   "Alan Turing",
+   "John McCarthy",
+   "Marvin Minsky",
+   "Herbert Simon"
+  ]
+ },
+ {
+  "id": 66,
+  "question": "When dealing with overfitting in Polynomial Regression, what technique can be employed to prevent it?",
+  "options": [
+   "L1 Regularization",
+   "L2 Regularization",
+   "Feature Scaling",
+   "Cross-validation"
+  ]
+ },
+ {
+  "id": 67,
+  "question": "Assume you have a data set that summarizes a marketing campaign with information related to prospective customers. The data set contains 100 observations with several columns that summarize information about the prospective customer. It also has a column that flags whether the prospect responded or not.\nIn this context, observation is a synonym of:",
+  "options": [
+   "label",
+   "features",
+   "target",
+   "example"
+  ]
+ },
+ {
+  "id": 68,
+  "question": "Assume you have a data set that summarizes a marketing campaign with information related to prospective customers. The data set contains 100 observations with several columns that summarize information about the prospective customer. It also has a column that flags whether the prospect responded or not.\nA machine learning model that predicts response, is using the column Responded as:",
+  "options": [
+   "sample",
+   "features",
+   "target",
+   "example"
+  ]
+ },
+ {
+  "id": 69,
+  "question": "Consider the following statements about Estimation and Inference:\na. In general, the population parameters are unknown.\nb. Parametric models have finite number of parameters.",
+  "options": [
+   "a and b are true",
+   "a and b are false",
+   "a is true and b is false",
+   "a is false and b is true"
+  ]
+ },
+ {
+  "id": 70,
+  "question": "Decision Tree algorithm can use for",
+  "options": [
+   "Data Cleaning",
+   "Feature Engineering",
+   "Classification and Regression",
+   "Hyperparameter Tuning"
+  ]
+ },
+ {
+  "id": 71,
+  "question": "In 2016, which AI technology achieved a significant milestone by defeating the world champion Go player, Lee Sedol?",
+  "options": [
+   "IBM's Watson",
+   "Google's DeepMind AlphaGo",
+   "Amazon Alexa",
+   "Microsoft's Cortana"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "Order these tree ensembles in order of most randomness to least randomness:",
+  "options": [
+   "Random Forest, Random Trees, Bagging",
+   "Bagging, Random Forest, Random Trees",
+   "Random Trees, Random Forest, Bagging",
+   "Random Forest, Bagging, Random Trees"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "In supervised learning, what are the two main components of the training dataset?",
+  "options": [
+   "Features and Predictions",
+   "Labels and Predictions",
+   "Features and Labels",
+   "Inputs and Outputs"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "This is the syntax you need to predict new data after you have trained a linear regression called LR:",
+  "options": [
+   "LR=predict(X_test)",
+   "LR.predict(X_test)",
+   "LR.predict(LR, X_test)",
+   "predict(LR, X_test)"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "The main purpose of splitting your data into a training and testing sets is:",
+  "options": [
+   "To improve accuracy",
+   "To avoid overfitting",
+   "To improve regularization",
+   "To improve crossvalidation and overfitting"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "The autocorrect on your phone is an example of:",
+  "options": [
+   "Unsupervised learning",
+   "Supervised learning",
+   "Semi-supervised learning",
+   "Reinforcement learning"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "The most common way of estimating parameters in a parametric model is:",
+  "options": [
+   "using the maximum likelihood estimation",
+   "using the central limit theorem",
+   "extrapolating a non-parametric model",
+   "extrapolating Bayesian statistics"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "This is an ensemble model that does not use bootstrapped samples to fit the base trees, takes residuals into account, and fits the base trees iteratively:",
+  "options": [
+   "Random Trees",
+   "Boosting",
+   "Bagging",
+   "Random Forest"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "This is the type of Machine Learning that uses both data with labeled outcomes and data without labeled outcomes:",
+  "options": [
+   "Supervised Machine Learning",
+   "Unsupervised Machine Learning",
+   "Mixed Machine Learning",
+   "Semi-Supervised Machine Learning"
+  ]
+ },
+ {
+  "id": 81,
+  "question": "Selecting the right error measurement is essential for training and evaluating machine learning models effectively because it allows to",
+  "options": [
+   "Handle Class Imbalance",
+   "Be robust to Outliers",
+   "Be more interpretable",
+   "Get high accuracy"
+  ]
+ },
+ {
+  "id": 82,
+  "question": "You are working with a dataset containing two numerical variables. The data includes noise and some extreme values. You want to examine whether these two variables are related, even if the relationship might be non-linear. Which type of visualization would be the most appropriate?",
+  "options": [
+   "Histogram",
+   "Boxplot",
+   "Scatter plot",
+   "Bar chart"
+  ]
+ },
+ {
+  "id": 83,
+  "question": "In the 1980s, what term was commonly used to describe AI systems that could simulate human decision-making based on predefined rules and knowledge?",
+  "options": [
+   "Neural Networks",
+   "Expert Systems",
+   "Genetic Algorithms",
+   "Reinforcement Learning"
+  ]
+ },
+ {
+  "id": 84,
+  "question": "What is the purpose of a confusion matrix in classification?",
+  "options": [
+   "Evaluate model performance",
+   "Visualize feature importance",
+   "Select optimal hyperparameters",
+   "Reduce dimensionality"
+  ]
+ },
+ {
+  "id": 85,
+  "question": "What is polynomial feature expansion?",
+  "options": [
+   "Creating new features by combining existing features",
+   "Transforming categorical variables into numeric representations",
+   "Generating higher-degree terms for numeric features",
+   "Providing degree terms for numeric features"
+  ]
+ }
+]

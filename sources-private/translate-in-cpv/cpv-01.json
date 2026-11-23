@@ -1,0 +1,202 @@
+[
+ {
+  "id": 1,
+  "question": "What is the formula to calculate normalized Laplacian of Gaussian?",
+  "options": [
+   "IV",
+   "I",
+   "III",
+   "II"
+  ]
+ },
+ {
+  "id": 2,
+  "question": "How is the orientation of the gradient computed? (I: intensity at pixels, x: x coordinate of pixel, y: y coordinate of pixel)",
+  "options": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ]
+ },
+ {
+  "id": 3,
+  "question": "Which of the following kernels is used to detect oblique of +45 degrees in convolution based technique?",
+  "options": [
+   "III",
+   "I",
+   "II",
+   "IV"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Given the integral image of an image (Figure 1).\nWhat is the sum of all pixels' intensity in a patch (red rectangle) shown in Figure 2?",
+  "options": [
+   "15",
+   "17",
+   "12",
+   "19"
+  ]
+ },
+ {
+  "id": 5,
+  "question": "Given an image as follow. What is the filtered image as it is filtered by a mean filter with the size of 3x3?",
+  "options": [
+   "II",
+   "III",
+   "I",
+   "IV"
+  ]
+ },
+ {
+  "id": 6,
+  "question": "What are the factors influencing the evolution of digital image processing? (2 options)",
+  "options": [
+   "Computer development",
+   "mathematical progress",
+   "Social media trends",
+   "Narrow range of a specific application"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "______ is an idea that replaces each pixel with the mean of the pixels in a range neighborhood and whose value is within a distance d.",
+  "options": [
+   "Mean-shift",
+   "Watershed",
+   "K-mean",
+   "None of these"
+  ]
+ },
+ {
+  "id": 8,
+  "question": "______ is perform fully automated image stitching is a technique to recognize which images actually go togethering",
+  "options": [
+   "Recognize panoramas",
+   "Object tracking",
+   "Recognize face",
+   "Object Detection"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "______ is used to identify different classes or clusters in the given data based on how similar the data is.",
+  "options": [
+   "Feature descriptor",
+   "Watershed",
+   "Harris",
+   "K-means"
+  ]
+ },
+ {
+  "id": 10,
+  "question": "______ is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama or high-resolution image.",
+  "options": [
+   "Image preprocessing",
+   "Image subtraction",
+   "Image stitching",
+   "Image acquisition"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "______ is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+  "options": [
+   "RANSAC",
+   "Mean shift",
+   "K-mean",
+   "Canny edge detection"
+  ]
+ },
+ {
+  "id": 12,
+  "question": "______ is a computationally intensive procedure that focuses on outliers in the regressor variables",
+  "options": [
+   "MM-estimation",
+   "M-estimation",
+   "S-estimation",
+   "All of the above"
+  ]
+ },
+ {
+  "id": 13,
+  "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+  "options": [
+   "Image segmentation",
+   "Image analysis",
+   "Object detection",
+   "Object recognition"
+  ]
+ },
+ {
+  "id": 14,
+  "question": "______ is a method of enhancing the image quality of textures on surfaces of computer graphics that are at oblique viewing angles with respect to the camera where the projection of the texture. Choose the best answer",
+  "options": [
+   "MIP Mapping filter",
+   "Elliptical Weighted Average (EWA) filter",
+   "Anisotropic filtering",
+   "Gaussian White filter"
+  ]
+ },
+ {
+  "id": 15,
+  "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+  "options": [
+   "Peak detector",
+   "Peak descriptor",
+   "Edge detection.",
+   "Edge descriptor"
+  ]
+ },
+ {
+  "id": 16,
+  "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+  "options": [
+   "Geometric transformation",
+   "Image transformation",
+   "Geometric computing",
+   "Image computing"
+  ]
+ },
+ {
+  "id": 17,
+  "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+  "options": [
+   "Graph transformation",
+   "Image transformation",
+   "Graph computing",
+   "Image computing"
+  ]
+ },
+ {
+  "id": 18,
+  "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+  "options": [
+   "Cylindrical projection",
+   "Cylindrical viewing",
+   "Cylindrical panoramic",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 19,
+  "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+  "options": [
+   "K-mean clustering model",
+   "SVN model",
+   "Gaussian Mixture Models",
+   "K- nearest model"
+  ]
+ },
+ {
+  "id": 20,
+  "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+  "options": [
+   "Edge features",
+   "Line features",
+   "Object features",
+   "Point features"
+  ]
+ }
+]

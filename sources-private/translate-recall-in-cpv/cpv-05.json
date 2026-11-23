@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m6-004",
+  "q": "Trong nén và truyền tải video, mô hình chuyển động cho phép trích xuất thành phần nào để giảm thiểu tối đa dung lượng dữ liệu truyền qua mạng?",
+  "correct": "Ảnh phông nền duy nhất (Background Sprite) kết hợp tái tạo cho từng khung hình",
+  "wrong": [
+   "Toàn bộ ma trận đạo hàm bậc hai LoG của mọi khung hình",
+   "Lược đồ phân phối tần số DCT của tất cả các kênh màu",
+   "Tập hợp các điểm ảnh biên mỏng sau khi phân ngưỡng kép Canny"
+  ]
+ },
+ {
+  "id": "r-m6-005",
+  "q": "Phương trình biểu diễn một điểm trên bề mặt hình trụ trong hệ tọa độ trụ có mối liên hệ tỷ lệ như thế nào với tọa độ ảnh (x, y) và tiêu cự f?",
+  "correct": "(sin θ, h, cos θ) ∝ (x, y, f)",
+  "wrong": [
+   "(cos θ, sin θ, 1) ∝ (x, y, f)",
+   "(θ, h, r) ∝ (x^2, y^2, f^2)",
+   "(tan θ, h, 0) ∝ (x, y, 1/f)"
+  ]
+ },
+ {
+  "id": "r-m6-006",
+  "q": "Hạn chế lớn nhất của việc ghép nối lần lượt từng bức ảnh một cách tuần tự vào ảnh toàn cảnh Panorama là gì?",
+  "correct": "Dễ gây ra hiện tượng tích lũy sai số (accumulated error) dẫn đến sai lệch lớn ở các khung hình sau",
+  "wrong": [
+   "Làm suy giảm độ sâu màu của ảnh từ 24-bit xuống chuẩn nhị phân 8-bit",
+   "Không thể áp dụng thuật toán SIFT để tìm kiếm các điểm đặc trưng",
+   "Gây tràn bộ nhớ đệm do các ma trận xoay 2D không có tính trực giao"
+  ]
+ },
+ {
+  "id": "r-m6-007",
+  "q": "Kỹ thuật Điều chỉnh chùm tia (Bundle Adjustment) giải quyết vấn đề tích lũy sai số bằng cơ chế nào?",
+  "correct": "Tối ưu hóa đồng thời các tham số tư thế (pose parameters) của toàn bộ các bức ảnh chồng lấp",
+  "wrong": [
+   "Cắt bỏ tất cả các bức ảnh có tỷ lệ vùng chồng lấn thấp hơn 70%",
+   "Chỉ giữ lại bức ảnh trung tâm và bỏ qua tất cả các bức ảnh ngoại vi",
+   "Áp dụng bộ lọc trung vị để làm nhòe toàn bộ các điểm đặc trưng bị khớp sai"
+  ]
+ },
+ {
+  "id": "r-m6-008",
+  "q": "Trong bài toán nhận diện Panorama tự động, thách thức nào sau đây dễ dẫn đến các kết quả khớp sai (false matches) nhất?",
+  "correct": "Cảnh chụp có các cấu trúc lặp đi lặp lại như các ô cửa sổ giống hệt nhau trên tòa nhà",
+  "wrong": [
+   "Cảnh chụp có quá nhiều vùng bầu trời phẳng hoặc bề mặt tường trơn mịn",
+   "Camera sử dụng cảm biến CMOS thay vì cảm biến quang học CCD",
+   "Các bức ảnh được lưu dưới định dạng nén không tổn thất TIFF"
+  ]
+ },
+ {
+  "id": "r-m6-009",
+  "q": "Để xác thực xem hai bức ảnh đã căn chỉnh có thực sự thuộc về cùng một cảnh hay không, phương pháp so sánh pixel trực tiếp sẽ gặp thất bại trong tình huống nào?",
+  "correct": "Khi trong cảnh chụp xuất hiện các vật thể chuyển động",
+  "wrong": [
+   "Khi camera được giữ hoàn toàn cố định trên chân máy",
+   "Khi các bức ảnh được chụp dưới cùng một nguồn sáng khuếch tán Lambertian",
+   "Khi số lượng điểm đặc trưng SIFT vượt quá 1.000 điểm"
+  ]
+ },
+ {
+  "id": "r-m6-010",
+  "q": "Trong công thức ánh xạ x_ij ~ K_j * R_j * x_i của Bundle Adjustment, các ma trận R_j và K_j lần lượt đại diện cho thành phần nào?",
+  "correct": "R_j là ma trận quay tư thế camera, K_j là ma trận hiệu chuẩn camera",
+  "wrong": [
+   "R_j là ma trận phản xạ ánh sáng, K_j là ma trận độ tương phản toàn cục",
+   "R_j là ma trận lọc nhiễu Gaussian, K_j là ma trận tọa độ cực trong không gian Hough",
+   "R_j là hệ số co giãn đa bước, K_j là độ dài tiêu cự của thấu kính mỏng"
+  ]
+ },
+ {
+  "id": "r-m6-011",
+  "q": "Trong lớp Stitcher tích hợp sẵn của OpenCV (cv2.Stitcher_create()), quy trình tự động đã bao gồm những bước kỹ thuật cốt lõi nào?",
+  "correct": "Trích xuất đặc trưng, ước lượng mô hình chuyển động và Điều chỉnh chùm tia (Bundle Adjustment)",
+  "wrong": [
+   "Phân đoạn tế bào ung thư, phân tích suy biến SVD và cân bằng lược đồ xám CDF",
+   "Biến đổi Fourier miền tần số, lọc bất đẳng hướng và nén tổn hao JPEG",
+   "Vẽ hộp bao Viola-Jones, theo dõi đối tượng CSRT và phân ngưỡng nhị phân Otsu"
+  ]
+ },
+ {
+  "id": "r-m6-012",
+  "q": "Khi sử dụng công cụ ghép ảnh trong OpenCV, điều kiện tiên quyết về khung nhìn giữa hai bức ảnh kề nhau để ghép thành công là gì?",
+  "correct": "Bắt buộc phải có vùng trường nhìn chồng lấn (overlapping field of view) giữa các bức ảnh",
+  "wrong": [
+   "Hai bức ảnh phải được cắt đôi chính xác 50% bên trái và 50% bên phải không có phần chung",
+   "Hai bức ảnh phải có dải phổ tần số Fourier hoàn toàn trực giao với nhau",
+   "Hai bức ảnh bắt buộc phải chụp cùng một thời điểm với hai cảm biến CCD khác nhau"
+  ]
+ },
+ {
+  "id": "r-m6-013",
+  "q": "Khi hàm stitcher.stitch() trong OpenCV trả về mã lỗi thất bại, nguyên nhân phổ biến nhất trong thực tế là gì?",
+  "correct": "Không tìm đủ số lượng đặc trưng trùng khớp do diện tích vùng chồng lấn giữa các ảnh quá nhỏ",
+  "wrong": [
+   "Bức ảnh có kích thước tệp vượt quá giới hạn 8-bit của cảm biến CMOS",
+   "Hệ số tương quan Pearson giữa hai bức ảnh đạt giá trị tuyệt đối bằng 1.0",
+   "Ma trận xoay của camera không chứa thành phần tịnh tiến theo trục z"
+  ]
+ },
+ {
+  "id": "r-m7-001",
+  "q": "Điểm khác biệt cơ bản giữa tác vụ Phát hiện đối tượng (Object Detection) và Phân loại ảnh (Image Classification) là gì?",
+  "correct": "Phát hiện đối tượng trả về vị trí chính xác của đối tượng thông qua hộp giới hạn (Bounding Box)",
+  "wrong": [
+   "Phân loại ảnh có khả năng xác định tọa độ pixel của từng cá thể đối tượng độc lập",
+   "Phát hiện đối tượng chỉ áp dụng được trên video mà không áp dụng được trên ảnh tĩnh",
+   "Phân loại ảnh bắt buộc phải sử dụng bộ mô tả biểu đồ dốc hướng HOG"
+  ]
+ },
+ {
+  "id": "r-m7-002",
+  "q": "Thuật toán phát hiện khuôn mặt truyền thống Viola-Jones sử dụng loại đặc trưng nào làm nền tảng trích xuất?",
+  "correct": "Đặc trưng Haar (Haar features / Haar Cascade)",
+  "wrong": [
+   "Bộ mô tả nhị phân BRIEF",
+   "Phân tích suy biến ma trận SVD",
+   "Biến đổi Cosine rời rạc DCT"
+  ]
+ },
+ {
+  "id": "r-m7-003",
+  "q": "Trong các hướng tiếp cận bằng mạng nơ-ron sâu cho phát hiện đối tượng, nhóm mô hình One-stage Detectors (như YOLO, SSD) có ưu thế nổi bật nào so với họ Two-stage (R-CNN)?",
+  "correct": "Tốc độ xử lý cực nhanh đạt mức thời gian thực (real-time) do dự đoán trực tiếp tọa độ hộp và nhãn trong 1 bước",
+  "wrong": [
+   "Hoàn toàn không bao giờ bị ảnh hưởng bởi hiện tượng vật thể bị che khuất (occlusion)",
+   "Độ chính xác phân loại luôn cao hơn Faster R-CNN trong mọi bài toán y tế",
+   "Không cần dữ liệu huấn luyện có gán nhãn mà tự động học không giám sát"
+  ]
+ },
+ {
+  "id": "r-m7-004",
+  "q": "Trong các thách thức của bài toán Phát hiện đối tượng, hiện tượng \"Occlusion\" được hiểu là gì?",
+  "correct": "Đối tượng bị che khuất một phần hoặc hoàn toàn bởi các vật cản khác trong khung cảnh",
+  "wrong": [
+   "Đối tượng thay đổi góc nhìn làm hình dáng trông khác hẳn so với lúc ban đầu",
+   "Phông nền xung quanh có kết cấu hoặc màu sắc bị lẫn vào chính đối tượng",
+   "Độ sáng của khung cảnh bị thay đổi đột ngột từ quá sáng sang quá tối"
+  ]
+ },
+ {
+  "id": "r-m7-005",
+  "q": "Phương pháp phát hiện đối tượng truyền thống kết hợp bộ mô tả nào sau đây với bộ phân loại SVM để nhận diện người đi bộ?",
+  "correct": "Biểu đồ dốc hướng (Histogram of Oriented Gradients - HOG)",
+  "wrong": [
+   "Cây tứ phân Quadtree",
+   "Phân đoạn lưu vực Watershed",
+   "Bộ lọc song phương Bilateral Filter"
+  ]
+ },
+ {
+  "id": "r-m7-006",
+  "q": "Trong hàm face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30)) của OpenCV, ảnh đầu vào gray được xử lý ở định dạng nào?",
+  "correct": "Ảnh xám (Grayscale Image)",
+  "wrong": [
+   "Ảnh màu ba kênh BGR nguyên bản",
+   "Ảnh nhị phân sau khi phân ngưỡng nhị phân Otsu",
+   "Ảnh miền tần số sau khi biến đổi Fourier 2D"
+  ]
+ },
+ {
+  "id": "r-m7-007",
+  "q": "Sự khác biệt cốt lõi giữa Phát hiện (Detection) và Nhận dạng (Recognition) trong thị giác máy tính là gì?",
+  "correct": "Detection trả lời câu hỏi đối tượng ở đâu, còn Recognition định danh đối tượng đó là ai hoặc thuộc thực thể cụ thể nào",
+  "wrong": [
+   "Detection chỉ dùng cho video thời gian thực, còn Recognition chỉ dùng cho các tệp hình ảnh tĩnh",
+   "Detection sử dụng mạng nơ-ron sâu, còn Recognition hoàn toàn không dùng bất kỳ thuật toán máy học nào",
+   "Detection chỉ tìm thấy đối tượng đơn lẻ, còn Recognition dùng để đếm số lượng người trong đám đông"
+  ]
+ },
+ {
+  "id": "r-m7-008",
+  "q": "Thứ tự 4 bước chuẩn trong quy trình nhận dạng đối tượng (Object Recognition) là gì?",
+  "correct": "Trích xuất đặc trưng → Khớp đặc trưng với mô hình → Hình thành giả thuyết → Xác thực đối tượng",
+  "wrong": [
+   "Hình thành giả thuyết → Xác thực đối tượng → Trích xuất đặc trưng → Khớp đặc trưng với mô hình",
+   "Khớp đặc trưng với mô hình → Trích xuất đặc trưng → Lọc nhiễu Gaussian → Phân ngưỡng Otsu",
+   "Phân ngưỡng Canny → Tạo hộp bao Bounding Box → Khớp đặc trưng → Nhận dạng thực thể"
+  ]
+ },
+ {
+  "id": "r-m7-009",
+  "q": "Phương pháp Eigenfaces kinh điển trong nhận dạng khuôn mặt toàn cục (Holistic Matching) được xây dựng dựa trên kỹ thuật toán học nào?",
+  "correct": "Phân tích thành phần chính (Principal Component Analysis - PCA)",
+  "wrong": [
+   "Biến đổi Cosine rời rạc (DCT)",
+   "Biến đổi Hough tọa độ cực",
+   "Thuật toán tái lấy mẫu ngẫu nhiên RANSAC"
+  ]
+ },
+ {
+  "id": "r-m7-010",
+  "q": "Trong phương pháp Eigenfaces, một khuôn mặt mới đưa vào hệ thống được biểu diễn toán học như thế nào?",
+  "correct": "Dưới dạng một tổ hợp tuyến tính của các vector khuôn mặt cơ sở (Eigenfaces)",
+  "wrong": [
+   "Dưới dạng một chuỗi các hàm sóng điều hòa sin và cosin trong không gian Fourier",
+   "Dưới dạng một đồ thị phân cấp Quadtree với 4 vùng con độc lập",
+   "Dưới dạng một vector nhị phân BRIEF trích xuất từ các điểm góc Harris"
+  ]
+ },
+ {
+  "id": "r-m7-011",
+  "q": "Hướng tiếp cận Nhận dạng lai (Hybrid Methods) kết hợp những yếu tố nào để nâng cao độ chính xác nhận dạng khuôn mặt?",
+  "correct": "Kết hợp cả đặc điểm toàn cục (Holistic) và các đặc trưng hình học cục bộ",
+  "wrong": [
+   "Kết hợp bộ lọc thông thấp với bộ lọc thông cao trong miền tần số",
+   "Kết hợp cảm biến CCD với cảm biến CMOS trên cùng một thiết bị phần cứng",
+   "Kết hợp thuật toán nén JPEG có tổn thất với định dạng lưu trữ BMP không tổn thất"
+  ]
+ },
+ {
+  "id": "r-m7-012",
+  "q": "Trong thị giác máy tính, nhiệm vụ cốt lõi của bài toán Theo dõi đối tượng (Object Tracking) trong video là gì?",
+  "correct": "Duy trì một ID duy nhất và liên tục cập nhật tọa độ hộp giới hạn của đối tượng qua các khung hình liên tiếp",
+  "wrong": [
+   "Phân loại lại toàn bộ các đối tượng trong từng khung hình bằng cách gán nhãn ngẫu nhiên mới",
+   "Căn chỉnh các khung hình video bằng cách tính ma trận Homography toàn cục",
+   "Chuyển đổi toàn bộ video sang miền tần số Fourier để khử bỏ hiện tượng rung lắc"
+  ]
+ },
+ {
+  "id": "r-m7-013",
+  "q": "Điểm khác biệt chính giữa kỹ thuật Theo dõi điểm (Point Tracking) và Theo dõi vùng (Kernel Tracking) là gì?",
+  "correct": "Point Tracking theo dõi các điểm đặc trưng rời rạc, còn Kernel Tracking theo dõi một vùng hình học cơ bản mang thông tin màu sắc hoặc kết cấu",
+  "wrong": [
+   "Point Tracking chỉ dùng cho ảnh tĩnh, còn Kernel Tracking chỉ dùng cho ảnh nén JPEG",
+   "Point Tracking tự động tạo ID mới ở mỗi khung hình, còn Kernel Tracking không duy trì ID",
+   "Point Tracking chỉ theo dõi được khuôn mặt, còn Kernel Tracking chỉ theo dõi được người đi bộ"
+  ]
+ },
+ {
+  "id": "r-m7-014",
+  "q": "Thách thức \"Occlusion\" trong bài toán Theo dõi đối tượng (Object Tracking) có thể dẫn tới hậu quả nghiêm trọng nào sau đây?",
+  "correct": "Mất dấu đối tượng hoặc chuyển nhầm ID sang đối tượng che khuất",
+  "wrong": [
+   "Làm tăng độ phân giải hình ảnh lên gấp đôi gây tràn bộ nhớ đệm",
+   "Biến đổi hệ màu RGB của khung hình thành không gian màu HSV",
+   "Làm cho camera tự động đóng khẩu độ và giảm thời gian phơi sáng"
+  ]
+ },
+ {
+  "id": "r-m7-015",
+  "q": "Trong mã nguồn OpenCV để theo dõi đối tượng, bộ theo dõi CSRT (cv2.TrackerCSRT_create()) được khởi tạo ở khung hình đầu tiên bằng phương thức nào?",
+  "correct": "tracker.init(frame, bbox)",
+  "wrong": [
+   "tracker.update(frame)",
+   "tracker.detect(frame, bbox)",
+   "tracker.train(frame)"
+  ]
+ }
+]

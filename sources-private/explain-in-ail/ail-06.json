@@ -1,0 +1,327 @@
+[
+ {
+  "id": 141,
+  "question": "What is feature engineering?",
+  "options": [
+   "A process of building machine learning models",
+   "A process of transforming raw data into features that better represent the underlying problem",
+   "A process of evaluating model performance",
+   "None of these"
+  ],
+  "correct": [
+   "A process of transforming raw data into features that better represent the underlying problem"
+  ]
+ },
+ {
+  "id": 142,
+  "question": "What is the most important factor to consider when evaluating a Machine Learning model?",
+  "options": [
+   "Model estimation involves choosing parameters that minimize the cost function.",
+   "Model selection involves choosing a model that minimizes the cost function.",
+   "Model estimation involves choosing a cost function that can be compared across models.",
+   "Model selection involves choosing modeling parameters that minimize in-sample validation error."
+  ],
+  "correct": [
+   "Model estimation involves choosing parameters that minimize the cost function."
+  ]
+ },
+ {
+  "id": 143,
+  "question": "What is the goal of machine learning?",
+  "options": [
+   "The goal of machine learning is to achieve high accuracy in prediction for future examples, not for the training ones.",
+   "The goal of machine learning is to achieve high accuracy in prediction for future examples, and for the training ones.",
+   "The goal of machine learning is to achieve low accuracy in prediction for future examples, high accuracy for the training phase.",
+   "The goal of machine learning is to achieve low accuracy in prediction for future examples, and low accuracy for the training phase."
+  ],
+  "correct": [
+   "The goal of machine learning is to achieve high accuracy in prediction for future examples, not for the training ones."
+  ]
+ },
+ {
+  "id": 144,
+  "question": "What is p-value in statistical hypothesis testing?",
+  "options": [
+   "The probability of making a Type I error",
+   "The probability of rejecting a true null hypothesis",
+   "The probability of accepting a false null hypothesis",
+   "The probability of observing the data given that the null hypothesis is true"
+  ],
+  "correct": [
+   "The probability of observing the data given that the null hypothesis is true"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "What is the main goal of adding polynomial features to a linear regression?",
+  "options": [
+   "Remove the linearity of the regression and turn it into a polynomial model.",
+   "Capture the relation of the outcome with features of higher order.",
+   "Increase the interpretability of a black box model.",
+   "Ensure similar results across all folds when using K-fold cross validation."
+  ],
+  "correct": [
+   "Capture the relation of the outcome with features of higher order."
+  ]
+ },
+ {
+  "id": 146,
+  "question": "What is the key feature for the Cosine Distance?",
+  "options": [
+   "The size of the curve.",
+   "The Cosine Distance, which takes into account the angle between 2 points.",
+   "It is sensitive to the size of the data set.",
+   "It is not sensitive to the size of the data set."
+  ],
+  "correct": [
+   "The Cosine Distance, which takes into account the angle between 2 points."
+  ]
+ },
+ {
+  "id": 147,
+  "question": "What is the primary objective of using K-Means clustering in unsupervised learning tasks?",
+  "options": [
+   "To partition the dataset into k clusters where each observation belongs to the cluster with the nearest mean, minimizing within-cluster variance.",
+   "To build a supervised classification model based on labeled examples for future prediction tasks.",
+   "To assign each point to multiple clusters simultaneously and maximize between-cluster distances.",
+   "To predict continuous target values using linear combinations of features in the dataset."
+  ],
+  "correct": [
+   "To partition the dataset into k clusters where each observation belongs to the cluster with the nearest mean, minimizing within-cluster variance."
+  ]
+ },
+ {
+  "id": 148,
+  "question": "What is a potential downside of using a single train-test split instead of cross-validation?",
+  "options": [
+   "It takes significantly more computation time",
+   "It may lead to underfitting",
+   "It prevents hyperparameter tuning",
+   "The evaluation may be highly sensitive to how the data is split"
+  ],
+  "correct": [
+   "The evaluation may be highly sensitive to how the data is split"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "What are confidence intervals in statistical inference?",
+  "options": [
+   "Confidence intervals provide a range of values within which the true population parameter is likely to fall",
+   "Confidence intervals are used to measure the strength of association between two variables.",
+   "Confidence intervals represent the probability that a hypothesis is true",
+   "Confidence intervals are only applicable to large sample sizes"
+  ],
+  "correct": [
+   "Confidence intervals provide a range of values within which the true population parameter is likely to fall"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "What are the eigenvalues in PCA?",
+  "options": [
+   "Eigenvalues represent the mean values of each feature",
+   "Eigenvalues indicate the importance of each principal component in capturing variance",
+   "Eigenvalues are the coefficients of the linear regression model in PCA",
+   "Eigenvalues are not relevant in PCA"
+  ],
+  "correct": [
+   "Eigenvalues indicate the importance of each principal component in capturing variance"
+  ]
+ },
+ {
+  "id": 151,
+  "question": "What are the potential consequences of using a high-complexity model in linear regression?",
+  "options": [
+   "A high variance of parameter estimates across cross-validation sub-samples indicates likely overfitting.",
+   "Cross-validation with a small k will reduce or eliminate overfitting.",
+   "A low variance of parameter estimates across cross-validation subsamples indicates likely overfitting.",
+   "Cross-validation with a large k will reduce or eliminate overfitting."
+  ],
+  "correct": [
+   "A high variance of parameter estimates across cross-validation sub-samples indicates likely overfitting."
+  ]
+ },
+ {
+  "id": 152,
+  "question": "What does NoSQL stand for and what does it represent?",
+  "options": [
+   "NoSQL stands for Not-only SQL, and it represents a set of databases that are relational, therefore, they have fixed structure.",
+   "NoSQL stands for Non-Structured Query Language, and it represents a set of relational databases with fixed schemas.",
+   "NoSQL stands for Non-Structured Query Language, and it represents a set of non-relational databases with varied schemas.",
+   "NoSQL stands for Not-only SQL, and it represents a set of databases that are not relational, therefore, they vary in structure."
+  ],
+  "correct": [
+   "NoSQL stands for Not-only SQL, and it represents a set of databases that are not relational, therefore, they vary in structure."
+  ]
+ },
+ {
+  "id": 153,
+  "question": "What does synthetic oversampling technique in handling imbalanced datasets do?",
+  "options": [
+   "It involves creating entirely new features for the minority class",
+   "It generates synthetic samples for the minority class to balance the dataset",
+   "It randomly removes samples from both classes",
+   "It focuses on increasing the size of the majority class"
+  ],
+  "correct": [
+   "It generates synthetic samples for the minority class to balance the dataset"
+  ]
+ },
+ {
+  "id": 155,
+  "question": "What problem occurs when the classes in a dataset are highly unbalanced?",
+  "options": [
+   "The model may focus equally on all classes, leading to balanced accuracy and fair predictions.",
+   "The model will ignore rare classes and achieve perfect predictions for minority classes.",
+   "The model tends to be biased toward the majority class, making poor predictions for the minority class.",
+   "The model will automatically adjust weights and handle all classes without error."
+  ],
+  "correct": [
+   "The model tends to be biased toward the majority class, making poor predictions for the minority class."
+  ]
+ },
+ {
+  "id": 156,
+  "question": "What role does feature engineering play in the machine learning process?",
+  "options": [
+   "It involves optimizing model hyperparameters",
+   "It refers to the creation of complex algorithms for model training.",
+   "It focuses on selecting and transforming input variables to enhance model performance",
+   "It is irrelevant in the context of machine learning."
+  ],
+  "correct": [
+   "It focuses on selecting and transforming input variables to enhance model performance"
+  ]
+ },
+ {
+  "id": 157,
+  "question": "What happen with our second cluster centroid when we use the probability formula?",
+  "options": [
+   "When we use the probability formula, we put less weight on the points that are far away. So, our second cluster centroid is likely going to be closer.",
+   "When we use the probability formula, we put more weight on the points that are far away. So, our second cluster centroid is likely going to be more distant.",
+   "When we use the probability formula, we put more weight on the lighter centroids, because it will take more computational power to draw our clusters. So, the second cluster centroid is likely going to be less distant.",
+   "When we use the probability formula, we put less weight on the points that are far away. So, our second cluster centroid is likely going to be more distant."
+  ],
+  "correct": [
+   "When we use the probability formula, we put more weight on the points that are far away. So, our second cluster centroid is likely going to be more distant."
+  ]
+ },
+ {
+  "id": 158,
+  "question": "Which of the following statements is true about downsampling in imbalanced datasets?",
+  "options": [
+   "Downsampling always leads to better model performance",
+   "Downsampling involves removing samples from the majority class",
+   "Downsampling is primarily used to increase the size of the dataset",
+   "Downsampling has no impact on the distribution of classes"
+  ],
+  "correct": [
+   "Downsampling involves removing samples from the majority class"
+  ]
+ },
+ {
+  "id": 159,
+  "question": "Which of the following statements is true regarding Random and Synthetic Over Sampling in the context of imbalanced datasets?",
+  "options": [
+   "Random Over Sampling duplicates random instances of the minority class to balance the dataset, while Synthetic Over Sampling generates new synthetic instances.",
+   "Random Over Sampling generates new synthetic instances of the minority class, while Synthetic Over Sampling duplicates random instances.",
+   "Random Over Sampling and Synthetic Over Sampling both involve duplicating random instances of the minority class.",
+   "Random Over Sampling and Synthetic Over Sampling are identical techniques with different names."
+  ],
+  "correct": [
+   "Random Over Sampling duplicates random instances of the minority class to balance the dataset, while Synthetic Over Sampling generates new synthetic instances."
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Which of the following statements correctly defines the strengths of the DBSCAN algorithm?",
+  "options": [
+   "No need to specify the number of clusters (cf. K-means), allows for noise, and can handle arbitrary-shaped clusters.",
+   "Do well with different density, works with just one parameter, the n_clu defines itself.",
+   "The algorithm will find the outliers first, draw regular shapes, works faster than other algorithms.",
+   "The algorithm is computationally intensive, it is sensitive to outliers, and it requires few hyperparameters to be tuned."
+  ],
+  "correct": [
+   "No need to specify the number of clusters (cf. K-means), allows for noise, and can handle arbitrary-shaped clusters."
+  ]
+ },
+ {
+  "id": 161,
+  "question": "Which of the following statements correctly defines the weaknesses of the DBSCAN algorithm?",
+  "options": [
+   "The clusters it find might not be trustworthy, it needs noisy data to work, and it can't handle subgroups.",
+   "It needs two parameters as input, finding appropriate values of ε and n_clu can be difficult, and it does not do well with clusters of different density.",
+   "The algorithm will find the outliers first, it draws regular shapes, and it works faster than other algorithms.",
+   "The algorithm is computationally intensive, it is sensitive to outliers, and it requires too many hyperparameters to be tuned."
+  ],
+  "correct": [
+   "It needs two parameters as input, finding appropriate values of ε and n_clu can be difficult, and it does not do well with clusters of different density."
+  ]
+ },
+ {
+  "id": 162,
+  "question": "Which of the following statements is a characteristic of the Mean Shift algorithm?",
+  "options": [
+   "Not require us to set the number of clusters, the number of clusters will be determined for us.",
+   "Bad with non-spherical cluster shapes.",
+   "You need to decide the number of clusters on your own, choosing the numbers directly or the minimum distance threshold.",
+   "Good with non-spherical cluster shapes."
+  ],
+  "correct": [
+   "Not require us to set the number of clusters, the number of clusters will be determined for us."
+  ]
+ },
+ {
+  "id": 163,
+  "question": "Which of the following statements is a characteristic of the K-means algorithm?",
+  "options": [
+   "It is limited to use the Euclidean distance within his formulation.",
+   "To determine the number of clusters we use the elbow method.",
+   "Can be slow to calculate as the number of observations increases.",
+   "It's limited to use the Ward distance within his formulation."
+  ],
+  "correct": [
+   "To determine the number of clusters we use the elbow method."
+  ]
+ },
+ {
+  "id": 164,
+  "question": "Which of the following statements best describes the iterative part of the K-means algorithm?",
+  "options": [
+   "The k-means algorithm assigns a number of clusters at random.",
+   "The k-means algorithm adjusts the centroids to the new mean of each cluster, and then it keeps repeating this process until no example is assigned to another cluster.",
+   "The k-means algorithm iteratively deletes outliers.",
+   "The k-means algorithm iteratively calculates the distance from each point to the centroid of each cluster."
+  ],
+  "correct": [
+   "The k-means algorithm adjusts the centroids to the new mean of each cluster, and then it keeps repeating this process until no example is assigned to another cluster."
+  ]
+ },
+ {
+  "id": 165,
+  "question": "Which of the following statements is a business case for the use of the Manhattan distance (L1)?",
+  "options": [
+   "We use it in business cases where there is very high dimensionality.",
+   "We use it in business cases where there is low dimensionality.",
+   "We use it in business cases where the dimensionality is unknown.",
+   "We use it in business cases with outliers."
+  ],
+  "correct": [
+   "We use it in business cases where there is very high dimensionality."
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Which statement describes better \"The Smarter initialization of K-mean clusters\"?",
+  "options": [
+   "\"Draw a line between the data points to create 2 big clusters.\"",
+   "\"After we find our centroids, we calculate the distance between all our data points.\"",
+   "\"Pick one point random as initial point and for the second pick instead of doing it randomly we prioritize by assigning the probability of the distance.\"",
+   "\"We start by having two centroids as far as possible between each other.\""
+  ],
+  "correct": [
+   "\"Pick one point random as initial point and for the second pick instead of doing it randomly we prioritize by assigning the probability of the distance.\""
+  ]
+ }
+]

@@ -1,0 +1,22 @@
+{
+"146":{"q":"Thư viện nào thường được sử dụng trong Python để thao tác và phân tích dữ liệu?","options":["Numpy","Pandas","Scikit-learn","Matplotlib"]},
+"148":{"q":"Thước đo thống kê (statistical measure) nào thường được dùng để điền các dữ liệu số bị thiếu (missing data) trong Pandas?","options":["Trung bình (Mean)","Yếu vị (Mode)","Trung vị (Median)","Độ lệch chuẩn (Standard Deviation)"]},
+"149":{"q":"Lớp (class) nào của Scikit-learn được dùng để tạo các pipeline?","options":["Pipeline","PipelineModel","Pipe","ModelPipeline"]},
+"150":{"q":"Thư viện Python nào chủ yếu được dùng để trực quan hóa dữ liệu (data visualization)?","options":["Pandas","NumPy","Matplotlib","Requests"]},
+"151":{"q":"Thư viện Python nào thường cài đặt tìm kiếm lưới (grid search) để tinh chỉnh siêu tham số (hyperparameter tuning)?","options":["Pandas","NumPy","Scikit-learn","TensorFlow"]},
+"152":{"q":"Thư viện Python nào phù hợp nhất để tạo các trực quan hóa dữ liệu tương tác và bảng điều khiển (dashboard)?","options":["Matplotlib","Seaborn","Plotly","Folium"]},
+"153":{"q":"Thư viện Python nào được dùng để thực hiện các yêu cầu HTTP (HTTP requests) nhằm truy cập các trang web và API?","options":["BeautifulSoup","Scrapy","Requests","Selenium"]},
+"154":{"q":"Thư viện Python nào thường được dùng để thu thập dữ liệu web (web scraping) và phân tích cú pháp nội dung HTML?","options":["BeautifulSoup","Pandas","Requests","Scrapy"]},
+"155":{"q":"Thư viện Python nào được thiết kế riêng để xây dựng các ứng dụng phân tích dựa trên web?","options":["Matplotlib","Seaborn","Folium","Dash"]},
+"157":{"q":"Công cụ nào được dùng để định nghĩa luồng hội thoại và các phản hồi trong Watson Assistant?","options":["Dialog Node Editor","Intent Generator","Entity Extractor","Fallback Intent Creator"]},
+"158":{"q":"Tham số nào trong plt.plot() đặt độ rộng của đường?","options":["linewidth","line_width","width","line"]},
+"159":{"q":"Kỹ thuật hồi quy (regression) nào được dùng để xử lý các mối quan hệ tuyến tính giữa các biến?","options":["Hồi quy logistic (Logistic regression)","Hồi quy đa thức (Polynomial regression)","Hồi quy Ridge (Ridge regression)","Hồi quy tuyến tính (Linear regression)"]},
+"160":{"q":"Nhà phân tích dữ liệu so sánh trạng thái nào với trạng thái lý tưởng để xác định cần thu thập những dữ liệu nào?","options":["Tương đối (Relative)","Ốm yếu (Sick)","Hiện tại (Current)","Tuyệt đối (Absolute)"]},
+"161":{"q":"Khi tích hợp chatbot Watson Assistant với Facebook Messenger, cần có gì để thiết lập?","options":["Khóa API dành cho nhà phát triển (Developer API key)","Facebook Graph API","Mã thông báo OAuth (OAuth token)","Mã thông báo truy cập (Access token)"]},
+"162":{"q":"Kích thước của từ trong đám mây từ (word cloud) thường được xác định như thế nào?","options":["Dựa trên số lần xuất hiện của từ","Dựa trên độ dài của từ","Theo thứ tự bảng chữ cái","Kích thước được gán ngẫu nhiên"]},
+"163":{"q":"Độ chính xác (precision) được tính như thế nào từ các giá trị trong ma trận nhầm lẫn (confusion matrix)?","options":["TP / (TP + FP)","TP / (TP + TN)","TP / (TP + FN)","TP / (FP + FN)"]},
+"164":{"q":"Watson Assistant quản lý luồng hội thoại với người dùng như thế nào?","options":["Thông qua các thực thể (entities)","Qua các biến ngữ cảnh (context variables)","Sử dụng các nút hội thoại (dialog nodes)","Bằng các lệnh gọi API"]},
+"165":{"q":"Biểu đồ phân tán (scatter plot) là một sơ đồ toán học sử dụng tọa độ Descartes để hiển thị giá trị của thường là hai biến cho một tập dữ liệu. Hai biến có mối quan hệ như thế nào trong trường hợp xu hướng tăng?","options":["Quan hệ tuyến tính độc lập","Quan hệ chéo phụ thuộc","Quan hệ đa tuyến tính mang tính quyết định","Quan hệ tuyến tính dương"]},
+"166":{"q":"Một nhà phát triển muốn mở một tệp để thêm dữ liệu mới vào dữ liệu hiện có trong tệp bằng lệnh with open(\"users/Animals/Dogs/doNames.txt\") as dogName. Đoạn mã này còn thiếu gì?","options":["Chế độ \"n\"","Chế độ \"a\"","Chế độ \"x\"","Chế độ \"w\""]},
+"167":{"q":"Xét phương trình sau, tham số x là gì? Y = b0 + b1x","options":["biến dự báo (predictor)","biến mục tiêu (target)","hệ số chặn (intercept)","độ dốc (slope)"]}
+}

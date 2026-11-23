@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m10-003",
+  "q": "“Career” nghĩa là gì?",
+  "correct": "Hành trình dài hạn của nhiều công việc và trải nghiệm có liên hệ, hướng đến học hỏi và phát triển",
+  "wrong": [
+   "Chuỗi vai trò theo thời gian; có thể đổi hướng, dừng hoặc tái thiết kế",
+   "Công việc tương đối ngắn hạn, thường tập trung vào thu nhập",
+   "Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên"
+  ]
+ },
+ {
+  "id": "r-m10-004",
+  "q": "Ý sau mô tả khái niệm nào: “Hành trình dài hạn của nhiều công việc và trải nghiệm có liên hệ, hướng đến học hỏi và phát triển”?",
+  "correct": "Career",
+  "wrong": [
+   "Career path",
+   "Job",
+   "Middle"
+  ]
+ },
+ {
+  "id": "r-m10-005",
+  "q": "“Career path” nghĩa là gì?",
+  "correct": "Chuỗi vai trò theo thời gian; có thể đổi hướng, dừng hoặc tái thiết kế",
+  "wrong": [
+   "Công việc tương đối ngắn hạn, thường tập trung vào thu nhập",
+   "Hành trình dài hạn của nhiều công việc và trải nghiệm có liên hệ, hướng đến học hỏi và phát triển",
+   "Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi"
+  ]
+ },
+ {
+  "id": "r-m10-006",
+  "q": "Ý sau mô tả khái niệm nào: “Chuỗi vai trò theo thời gian; có thể đổi hướng, dừng hoặc tái thiết kế”?",
+  "correct": "Career path",
+  "wrong": [
+   "Job",
+   "Career",
+   "Middle"
+  ]
+ },
+ {
+  "id": "r-m10-007",
+  "q": "Thứ tự các giai đoạn nghề nghiệp?",
+  "correct": "Growth → Exploration → Establishing → Maintaining/Reinventing",
+  "wrong": [
+   "Exploration → Growth → Establishing → Maintaining",
+   "Growth → Establishing → Exploration → Reinventing",
+   "Establishing → Growth → Exploration → Maintaining"
+  ]
+ },
+ {
+  "id": "r-m10-008",
+  "q": "Khám phá nghề nghiệp bao gồm cả điều gì?",
+  "correct": "Học điều mình không muốn",
+  "wrong": [
+   "Chỉ tìm việc lương cao",
+   "Chọn nghề theo bạn bè",
+   "Tránh thực tập"
+  ]
+ },
+ {
+  "id": "r-m10-009",
+  "q": "Ý nào là công cụ khám phá nghề nghiệp?",
+  "correct": "Informational interview",
+  "wrong": [
+   "Thi IQ",
+   "Mạng xã hội giải trí",
+   "Bói toán"
+  ]
+ },
+ {
+  "id": "r-m10-010",
+  "q": "Ý nào KHÔNG thuộc công cụ khám phá nghề nghiệp?",
+  "correct": "Thi lấy bằng lái xe",
+  "wrong": [
+   "Mentor",
+   "Job shadow",
+   "Internship"
+  ]
+ },
+ {
+  "id": "r-m10-011",
+  "q": "Khi chọn major, cần cân bằng những yếu tố nào?",
+  "correct": "Sở thích, năng lực, giá trị, tính cách/lối sống, yêu cầu chương trình, cơ hội việc làm",
+  "wrong": [
+   "Chỉ lương và cơ hội việc làm",
+   "Lựa chọn của bạn bè và gia đình",
+   "Độ khó và học phí"
+  ]
+ },
+ {
+  "id": "r-m10-012",
+  "q": "Hard skills là gì?",
+  "correct": "Kỹ thuật / chuyên môn",
+  "wrong": [
+   "Giao tiếp, teamwork",
+   "Quản lý thời gian",
+   "Lãnh đạo"
+  ]
+ },
+ {
+  "id": "r-m10-013",
+  "q": "Ý nào là soft / transferable skill?",
+  "correct": "Quản lý thời gian",
+  "wrong": [
+   "Lập trình Python",
+   "Kế toán",
+   "Thiết kế mạch điện"
+  ]
+ },
+ {
+  "id": "r-m10-014",
+  "q": "Thứ tự chu kỳ career development?",
+  "correct": "Set goals → Take actions → Review progress → Adjust",
+  "wrong": [
+   "Take actions → Set goals → Adjust → Review",
+   "Review progress → Set goals → Take actions → Adjust",
+   "Set goals → Review progress → Take actions → Adjust"
+  ]
+ },
+ {
+  "id": "r-m10-015",
+  "q": "Kỹ năng được xây dựng qua những hoạt động nào?",
+  "correct": "Môn học, dự án, CLB, tình nguyện, việc bán thời gian, internship, khóa học, chứng chỉ",
+  "wrong": [
+   "Chỉ qua môn học chính khóa",
+   "Chỉ qua công việc toàn thời gian",
+   "Chỉ qua chứng chỉ quốc tế"
+  ]
+ },
+ {
+  "id": "r-m10-016",
+  "q": "Résumé là gì theo tài liệu?",
+  "correct": "Tài liệu marketing bản thân",
+  "wrong": [
+   "Bản sao bảng điểm",
+   "Thư xin việc",
+   "Hợp đồng lao động"
+  ]
+ },
+ {
+  "id": "r-m10-017",
+  "q": "Các dạng résumé trong tài liệu?",
+  "correct": "Reverse chronological, functional, hybrid; video/infographic/website khi phù hợp",
+  "wrong": [
+   "Short, medium, long",
+   "Formal, informal, casual",
+   "Academic, business, creative"
+  ]
+ },
+ {
+  "id": "r-m10-018",
+  "q": "Résumé thường dài bao nhiêu?",
+  "correct": "1–2 trang; sinh viên ưu tiên một trang nếu đủ",
+  "wrong": [
+   "3–4 trang",
+   "Nửa trang",
+   "Không giới hạn"
+  ]
+ },
+ {
+  "id": "r-m10-019",
+  "q": "Thông tin trong résumé sắp xếp thế nào?",
+  "correct": "Mới nhất trước",
+  "wrong": [
+   "Cũ nhất trước",
+   "Theo chữ cái",
+   "Ngẫu nhiên"
+  ]
+ },
+ {
+  "id": "r-m10-020",
+  "q": "Ý nào là nguyên tắc viết résumé?",
+  "correct": "Dùng action verbs và keyword của vị trí",
+  "wrong": [
+   "Dùng đại từ ngôi thứ nhất",
+   "Dùng một bản cho mọi công việc",
+   "Ghi kỳ vọng lương"
+  ]
+ },
+ {
+  "id": "r-m10-021",
+  "q": "Ý nào KHÔNG nên đưa vào résumé?",
+  "correct": "Vấn đề sức khỏe",
+  "wrong": [
+   "Volunteer experience",
+   "Skills",
+   "Projects, internship, achievement"
+  ]
+ },
+ {
+  "id": "r-m10-022",
+  "q": "Ý nào KHÔNG nên đưa vào résumé?",
+  "correct": "Tuổi, giới, chiều cao, cân nặng",
+  "wrong": [
+   "Contact information",
+   "Education và training",
+   "Work experience"
+  ]
+ },
+ {
+  "id": "r-m10-023",
+  "q": "“Header và greeting” nghĩa là gì?",
+  "correct": "Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên",
+  "wrong": [
+   "Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm",
+   "2–3 trải nghiệm phù hợp; dùng STAR và liên hệ trực tiếp job description",
+   "Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi"
+  ]
+ },
+ {
+  "id": "r-m10-024",
+  "q": "Ý sau mô tả khái niệm nào: “Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên”?",
+  "correct": "Header và greeting",
+  "wrong": [
+   "Middle",
+   "Opening",
+   "Closing"
+  ]
+ },
+ {
+  "id": "r-m10-025",
+  "q": "“Opening” nghĩa là gì?",
+  "correct": "Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm",
+  "wrong": [
+   "Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi",
+   "2–3 trải nghiệm phù hợp; dùng STAR và liên hệ trực tiếp job description",
+   "Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên"
+  ]
+ },
+ {
+  "id": "r-m10-026",
+  "q": "Ý sau mô tả khái niệm nào: “Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm”?",
+  "correct": "Opening",
+  "wrong": [
+   "Middle",
+   "Header và greeting",
+   "Closing"
+  ]
+ },
+ {
+  "id": "r-m10-027",
+  "q": "“Middle” nghĩa là gì?",
+  "correct": "2–3 trải nghiệm phù hợp; dùng STAR và liên hệ trực tiếp job description",
+  "wrong": [
+   "Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm",
+   "Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi",
+   "Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên"
+  ]
+ }
+]

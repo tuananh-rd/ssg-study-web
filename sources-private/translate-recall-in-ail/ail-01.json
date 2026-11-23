@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m1-001",
+  "q": "Điểm khác biệt cốt lõi giúp Học sâu (Deep Learning) giải quyết các hạn chế của Học máy (Machine Learning) cổ điển là gì?",
+  "correct": "Tự xác định và trích xuất các đặc trưng (features) tốt nhất từ dữ liệu gốc thông qua mạng thần kinh đa lớp",
+  "wrong": [
+   "Bắt buộc chuyên gia phải tự thiết kế và trích xuất đặc trưng thủ công từ dữ liệu thô",
+   "Chỉ xử lý tốt các tập dữ liệu nhỏ dạng bảng với số lượng thuộc tính hạn chế",
+   "Dựa hoàn toàn vào các tập luật if-then cố định do con người thiết lập sẵn"
+  ]
+ },
+ {
+  "id": "r-m1-002",
+  "q": "Sự kiện nào đánh dấu Trí tuệ nhân tạo (AI) chính thức được công nhận là một lĩnh vực nghiên cứu khoa học?",
+  "correct": "Hội nghị Dartmouth (1956)",
+  "wrong": [
+   "Alan Turing phát triển bài kiểm tra Turing Test (1950)",
+   "Thuật toán Perceptron ra đời (1957)",
+   "Thuật toán lan truyền ngược Backpropagation ra đời (1986)"
+  ]
+ },
+ {
+  "id": "r-m1-003",
+  "q": "Nguyên nhân chính dẫn đến Mùa đông AI lần thứ nhất (AI Winter 1) trong thập niên 1960 - 1970 là gì?",
+  "correct": "Cắt giảm ngân sách do các báo cáo về sự thất bại của dịch thuật máy móc (ALPAC) và hạn chế của Perceptron",
+  "wrong": [
+   "Chi phí duy trì Hệ chuyên gia (Expert Systems) quá tốn kém và khó mở rộng quy mô",
+   "Sự thất bại của siêu máy tính Deep Blue trước đại kiện tướng cờ vua Garry Kasparov",
+   "Mạng thần kinh nhân tạo không thể mở rộng để giải quyết các bài toán lớn trong doanh nghiệp"
+  ]
+ },
+ {
+  "id": "r-m1-004",
+  "q": "Thuật toán lan truyền ngược (Backpropagation) ra đời vào giai đoạn nào trong lịch sử phát triển AI?",
+  "correct": "Năm 1986, trong giai đoạn bùng nổ của Hệ chuyên gia (1980s)",
+  "wrong": [
+   "Năm 1957, cùng thời điểm với thuật toán Perceptron",
+   "Năm 1950, cùng thời điểm Alan Turing công bố Turing Test",
+   "Năm 2012, cùng thời điểm bùng nổ của mạng AlexNet"
+  ]
+ },
+ {
+  "id": "r-m1-005",
+  "q": "Khái niệm Học máy (Machine Learning) được định nghĩa chuẩn xác như thế nào?",
+  "correct": "Nghiên cứu về các chương trình không được lập trình rõ ràng nhưng học các mẫu từ dữ liệu theo thời gian",
+  "wrong": [
+   "Nhánh khoa học mô phỏng hành vi thông minh ở máy tính để bắt chước nhận thức của con người",
+   "Mô hình mạng thần kinh đa lớp chuyên dùng để xử lý dữ liệu phi tuyến tính quy mô lớn",
+   "Hệ thống dựa trên các luật chuyên gia cố định nhằm đưa ra suy luận tự động"
+  ]
+ },
+ {
+  "id": "r-m1-006",
+  "q": "Trong quy trình làm việc (Workflow) của Machine Learning, bước nào diễn ra ngay sau bước 'Thu thập dữ liệu (Data Collection)'?",
+  "correct": "Khám phá & Tiền xử lý (Data Exploration & Preprocessing)",
+  "wrong": [
+   "Xây dựng mô hình (Modeling)",
+   "Đánh giá mô hình (Validation)",
+   "Triển khai (Deployment)"
+  ]
+ },
+ {
+  "id": "r-m1-007",
+  "q": "Trong các thuật ngữ cơ bản của học máy, 'Target' được định nghĩa là gì?",
+  "correct": "Danh mục hoặc giá trị mà chúng ta đang cố gắng dự đoán",
+  "wrong": [
+   "Các thuộc tính của dữ liệu được sử dụng làm biến giải thích để dự đoán",
+   "Một điểm dữ liệu duy nhất tương ứng với một hàng trong bảng dữ liệu",
+   "Giá trị mục tiêu cụ thể đã được gán nhãn cho từng quan sát"
+  ]
+ },
+ {
+  "id": "r-m1-008",
+  "q": "Thuật ngữ 'Features' trong mô hình Machine Learning dùng để chỉ thành phần nào?",
+  "correct": "Các thuộc tính của dữ liệu được sử dụng để dự đoán (biến giải thích)",
+  "wrong": [
+   "Giá trị nhãn mục tiêu mà mô hình cần xuất ra ở đầu ra",
+   "Một quan sát duy nhất trong tập dữ liệu kiểm tra",
+   "Sai số phần dư giữa kết quả dự đoán và kết quả thực tế"
+  ]
+ },
+ {
+  "id": "r-m1-009",
+  "q": "Một điểm dữ liệu duy nhất trong bảng dữ liệu (thường tương ứng với một hàng) được gọi là gì?",
+  "correct": "Observation hoặc Example",
+  "wrong": [
+   "Feature",
+   "Target",
+   "Label"
+  ]
+ },
+ {
+  "id": "r-m1-010",
+  "q": "Việc dữ liệu bị trùng lặp (Duplicate Data) trong tập huấn luyện gây ra tác hại gì cho mô hình?",
+  "correct": "Gây sai lệch trọng số khi huấn luyện",
+  "wrong": [
+   "Làm mô hình luôn bị hiện tượng Underfitting do thiếu dữ liệu",
+   "Khiến các biến danh mục không thể chuyển đổi bằng One-hot encoding",
+   "Tự động xóa các quan sát ngoại lai trong tập kiểm tra"
+  ]
+ },
+ {
+  "id": "r-m1-011",
+  "q": "Phương pháp Điền khuyết (Imputation) khi xử lý dữ liệu thiếu thường sử dụng những giá trị nào để thay thế?",
+  "correct": "Giá trị trung bình, trung vị hoặc giá trị phổ biến nhất",
+  "wrong": [
+   "Giá trị 0 cố định hoặc giá trị ngoại lai lớn nhất của thuộc tính",
+   "Giá trị ngẫu nhiên từ phân phối chuẩn bất kỳ không liên quan đến tập dữ liệu",
+   "Khoảng cách Euclidean giữa hai quan sát xa nhau nhất"
+  ]
+ },
+ {
+  "id": "r-m1-012",
+  "q": "Kỹ thuật Gán nhãn (Masking) trong xử lý dữ liệu thiếu được hiểu là phương pháp nào?",
+  "correct": "Tạo một danh mục riêng biệt dành cho các giá trị thiếu",
+  "wrong": [
+   "Xóa hoàn toàn các hàng hoặc các cột có chứa giá trị thiếu",
+   "Nội suy toán học dựa trên các điểm dữ liệu láng giềng gần nhất",
+   "Chuẩn hóa dữ liệu về khoảng [0, 1] trước khi huấn luyện"
+  ]
+ },
+ {
+  "id": "r-m1-013",
+  "q": "Biểu đồ trực quan hóa nào được nêu trong tài liệu nhằm giúp phát hiện dữ liệu ngoại lai (Outliers)?",
+  "correct": "Box plot",
+  "wrong": [
+   "Histogram",
+   "Scatter plot",
+   "Pair plot"
+  ]
+ },
+ {
+  "id": "r-m1-014",
+  "q": "Mục đích chính của việc tiến hành Phân tích Dữ liệu Khám phá (EDA) trước khi xây dựng mô hình là gì?",
+  "correct": "Hiểu sơ bộ về dữ liệu, xác định các mẫu và xu hướng trước khi mô hình hóa",
+  "wrong": [
+   "Tối ưu hóa các siêu tham số của thuật toán phân loại",
+   "Cắt tỉa các nhánh cây quyết định nhằm giảm phương sai",
+   "Tạo thêm các mẫu nhân tạo cho lớp thiểu số bị mất cân bằng"
+  ]
+ },
+ {
+  "id": "r-m1-015",
+  "q": "Trong các kỹ thuật trực quan hóa của EDA, biểu đồ Scatter plot chủ yếu được sử dụng nhằm mục đích gì?",
+  "correct": "Quan sát mối quan hệ giữa hai biến định lượng",
+  "wrong": [
+   "Quan sát hình dạng phân phối tần suất của một biến đơn lẻ",
+   "Hiển thị ma trận tương quan đa biến của tất cả các biến cùng lúc",
+   "Phát hiện các điểm lỗi nhãn phân loại sai trên tập kiểm tra"
+  ]
+ },
+ {
+  "id": "r-m1-016",
+  "q": "Để khảo sát mối tương quan đa biến giữa nhiều cặp thuộc tính cùng một lúc trong EDA, biểu đồ nào được ưu tiên lựa chọn?",
+  "correct": "Pair plot",
+  "wrong": [
+   "Histogram",
+   "Box plot",
+   "Scatter plot đơn lẻ"
+  ]
+ },
+ {
+  "id": "r-m1-017",
+  "q": "Tác dụng chủ yếu của phép biến đổi Log (Log Transformation) trong kỹ thuật đặc trưng là gì?",
+  "correct": "Giúp dữ liệu bị lệch (skewed) trở nên giống phân phối chuẩn hơn, hữu ích cho Hồi quy Tuyến tính",
+  "wrong": [
+   "Chuyển đổi dữ liệu danh mục thành các biến nhị phân 0 hoặc 1",
+   "Tăng số chiều của không gian đặc trưng bằng các bậc lũy thừa 2 và 3",
+   "Tạo ra các điểm dữ liệu mới nhằm cân bằng tỷ lệ các lớp phân loại"
+  ]
+ },
+ {
+  "id": "r-m1-018",
+  "q": "Phương pháp mã hóa One-hot encoding phù hợp nhất cho loại biến danh mục nào?",
+  "correct": "Nominal (danh mục không có thứ tự)",
+  "wrong": [
+   "Ordinal (danh mục có thứ tự phân cấp)",
+   "Continuous (biến số liên tục có giá trị âm)",
+   "Discrete (biến số nguyên đếm được)"
+  ]
+ },
+ {
+  "id": "r-m1-019",
+  "q": "Trong trường hợp nào ta nên áp dụng Ordinal encoding thay vì One-hot encoding?",
+  "correct": "Khi biến danh mục có thứ tự rõ ràng (Ordinal), gán giá trị số theo thứ tự 1, 2, 3...",
+  "wrong": [
+   "Khi biến danh mục hoàn toàn không có thứ bậc ưu tiên nào (Nominal)",
+   "Khi dữ liệu chứa nhiều ngoại lai cần kháng nhiễu",
+   "Khi muốn biến đổi dữ liệu bị lệch về phân phối chuẩn"
+  ]
+ },
+ {
+  "id": "r-m1-020",
+  "q": "Phương pháp chuẩn hóa nào sử dụng khoảng cách tứ phân vị và có khả năng kháng ngoại lai (outliers) tốt hơn?",
+  "correct": "Robust Scaling",
+  "wrong": [
+   "Min-Max Scaling",
+   "Standard Scaling",
+   "One-hot Encoding"
+  ]
+ },
+ {
+  "id": "r-m1-021",
+  "q": "Phương pháp Standard Scaling biến đổi dữ liệu về dạng phân phối chuẩn với các tham số trung bình (mean) và độ lệch chuẩn (std) là bao nhiêu?",
+  "correct": "mean = 0, std = 1",
+  "wrong": [
+   "mean = 0, std = 0",
+   "mean = 1, std = 1",
+   "mean = 0.5, std = 0.5"
+  ]
+ },
+ {
+  "id": "r-m1-022",
+  "q": "Sự khác biệt cốt lõi giữa Ước lượng (Estimation) và Suy diễn (Inference) trong thống kê là gì?",
+  "correct": "Ước lượng áp dụng thuật toán để tính toán giá trị, còn suy diễn xác định độ chính xác của ước lượng đó",
+  "wrong": [
+   "Ước lượng dùng cho mô hình phi tham số, còn suy diễn dùng cho mô hình tham số",
+   "Ước lượng tính toán trên tập kiểm tra, còn suy diễn chỉ thực hiện trên tập huấn luyện",
+   "Ước lượng cập nhật phân phối hậu nghiệm, còn suy diễn chỉ lặp lại các thử nghiệm độc lập"
+  ]
+ },
+ {
+  "id": "r-m1-023",
+  "q": "Đặc trưng chính của mô hình tham số (Parametric model) là gì?",
+  "correct": "Giả định dữ liệu thuộc một phân phối cụ thể (ví dụ: Phân phối chuẩn)",
+  "wrong": [
+   "Hoàn toàn không đưa ra giả định nào về phân phối xác suất của dữ liệu",
+   "Chỉ lưu trữ toàn bộ dữ liệu huấn luyện và trì hoãn tính toán đến khi dự đoán",
+   "Luôn sử dụng số lượng tham số tăng tỷ lệ thuận với số mẫu dữ liệu"
+  ]
+ },
+ {
+  "id": "r-m1-024",
+  "q": "Ví dụ nào sau đây được nêu trong tài liệu đại diện cho phương pháp phi tham số (Non-parametric)?",
+  "correct": "Biểu đồ phân phối tần suất (Histogram)",
+  "wrong": [
+   "Phân phối chuẩn (Normal distribution)",
+   "Hồi quy Tuyến tính cổ điển",
+   "Phân phối nhị thức Bernoulli"
+  ]
+ },
+ {
+  "id": "r-m1-025",
+  "q": "Quan điểm suy luận thống kê Bayes (Bayesian) khác với trường phái Frequentist ở điểm nào?",
+  "correct": "Mô tả tham số qua các phân phối xác suất và cập nhật niềm tin từ tiên nghiệm (prior) sang hậu nghiệm (posterior) khi thấy dữ liệu",
+  "wrong": [
+   "Chỉ tập trung vào tần suất xuất hiện thông qua các lần lặp lại thử nghiệm vô hạn",
+   "Coi tham số luôn là một giá trị hằng số cố định duy nhất và không thể có phân phối",
+   "Tuyệt đối không sử dụng thông tin xác suất tiên nghiệm trong quá trình suy luận"
+  ]
+ }
+]

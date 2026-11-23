@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-233.png",
+  "png_no": 233,
+  "html_no": 235,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-234.png",
+  "png_no": 234,
+  "html_no": 236,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-235.png",
+  "png_no": 235,
+  "html_no": 237,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-236.png",
+  "png_no": 236,
+  "html_no": 238,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-237.png",
+  "png_no": 237,
+  "html_no": 239,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-238.png",
+  "png_no": 238,
+  "html_no": 240,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-239.png",
+  "png_no": 239,
+  "html_no": 241,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 221,
+    "slide": 236,
+    "question": "When detecting lines using Hough Transform, after voting, how are the lines detected in the image?",
+    "options": [
+     "All bins with non-zero votes are considered lines.",
+     "Lines are formed by connecting all edge points that participated in a specific bin.",
+     "Lines are identified by locating the peaks (highest vote counts) in the parameter space.",
+     "The Hough Transform directly outputs line segments based on the voting process."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-240.png",
+  "png_no": 240,
+  "html_no": 242,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 222,
+    "slide": 237,
+    "question": "When preventing aliasing, what additional step may be required before applying a shearing transformation in image processing?",
+    "options": [
+     "Downsampling in the both directions",
+     "Applying a non-separable filter kernel",
+     "Adjusting the color space transformation",
+     "Upsampling in the opposite direction"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-241.png",
+  "png_no": 241,
+  "html_no": 243,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 223,
+    "slide": 238,
+    "question": "Why is pre-filtering necessary to prevent aliasing in computer graphics?",
+    "options": [
+     "To enhance image resolution",
+     "To reduce the computational cost",
+     "To minimize distortion during texture mapping",
+     "To maintain a consistent resampling rate"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-242.png",
+  "png_no": 242,
+  "html_no": 244,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 224,
+    "slide": 239,
+    "question": "Edge detection techniques in segmentation aim to identify:",
+    "options": [
+     "Regions with uniform color or intensity.",
+     "Boundaries between distinct image regions.",
+     "Areas with high texture and local variations.",
+     "The presence of specific objects or shapes in the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-243.png",
+  "png_no": 243,
+  "html_no": 245,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 225,
+    "slide": 240,
+    "question": "It is the motion of objects between consecutive frames of the sequence, caused by the relative movement between the object and camera. What is the exact name of this process?",
+    "options": [
+     "What is the exact name of this process?",
+     "Image stitching",
+     "Optical flow",
+     "Object moving"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-244.png",
+  "png_no": 244,
+  "html_no": 246,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 226,
+    "slide": 241,
+    "question": "In the context of mesh-based warping, what is a \"mesh\"?",
+    "options": [
+     "A collection of vertices and edges",
+     "A visual distortion effect",
+     "A 2D matrix of pixel intensity",
+     "A type of texture map with 2D dimension"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-245.png",
+  "png_no": 245,
+  "html_no": 247,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 227,
+    "slide": 242,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When does the window contain a corner?",
+    "options": [
+     "|R| is small and λ1, λ2 are small",
+     "|R| is large and λ1 ≈ λ2",
+     "|R| < 0 and λ1 >> λ2",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-246.png",
+  "png_no": 246,
+  "html_no": 248,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 228,
+    "slide": 243,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-247.png",
+  "png_no": 247,
+  "html_no": 249,
+  "hidden": "A\nĐịnh lý Parseval (Parseval's theorem) trong ngữ cảnh của phép biến đổi Fourier có hệ quả gì?\nA. Nó liên hệ năng lượng trong miền thời gian và miền tần số (It relates to the energy in the time and frequency domain).\nĐịnh lý Parseval phát biểu rằng tổng năng lượng của tín hiệu trong miền thời gian bằng tổng năng lượng của tín hiệu trong miền tần số, giúp phân tích và xử lý tín hiệu hiệu quả.",
+  "candidates": [
+   {
+    "id": 229,
+    "slide": 244,
+    "question": "In K-means for Segmentation, what is the meaning of K value?",
+    "options": [
+     "It represents the number of clusters.",
+     "It represents the number of images.",
+     "It represents the step of clusters.",
+     "It represents the color groups."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-248.png",
+  "png_no": 248,
+  "html_no": 250,
+  "hidden": "D\nĐiều nào sau đây KHÔNG phải là ưu điểm của toán tử Canny (Canny Operator)?\nD. True zero crossing.\nCanny có các ưu điểm như định vị biên tốt (good localization), ít nhạy với nhiễu (less sensitive to noise) và phát hiện biên chính xác. True zero crossing là đặc trưng của các phương pháp phát hiện biên dựa trên Laplacian of Gaussian (LoG), không phải ưu điểm của Canny.",
+  "candidates": [
+   {
+    "id": 230,
+    "slide": 245,
+    "question": "In image segmentation, which is the limitation of using region growing methods?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 231,
+    "slide": 246,
+    "question": "Pixel operator is a function is used to process pixel forest. What are the input and output of pixel operators? Choose the best correct answer.",
+    "options": [
+     "Input is an image and output is an image.",
+     "Input is an image and output is the images.",
+     "Input is one or more images and output is the images.",
+     "Input is one or more images and output is an image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 232,
+    "slide": 247,
+    "question": "How does convolution-based line detection contribute to the field of autonomous vehicles and robotics?",
+    "options": [
+     "By identifying lane boundaries.",
+     "By enhancing image resolution.",
+     "By calculating pixel intensities.",
+     "By applying a median filter to reduce noise."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 233,
+    "slide": 248,
+    "question": "Some traditional face recognition systems require user enrollment, which involves:",
+    "options": [
+     "Calibrating the camera for optimal lighting conditions.",
+     "Capturing multiple face images of an individual from different angles.",
+     "Training the recognition algorithm on a large dataset of faces.",
+     "Specifying facial landmarks for each enrolled individual."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 234,
+    "slide": 249,
+    "question": "What is the consequence of the Parseval's theorem in the context of the Fourier transform?",
+    "options": [
+     "It relates to the energy in the time and frequency domain.",
+     "It guarantees that the Fourier transform is reversible.",
+     "It establishes a connection between amplitude and frequency.",
+     "It ensures that the Fourier transform is always real-valued."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 235,
+    "slide": 250,
+    "question": "What is not the advantage of Canny Operator?",
+    "options": [
+     "It has good localization.",
+     "It extracts image features without altering the features.",
+     "Less sensitive to noise.",
+     "True zero crossing."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 236,
+    "slide": 251,
+    "question": "How does the Prewitt operator differ from the Sobel operator in edge detection?",
+    "options": [
+     "It uses different kernel.",
+     "It uses a 3×3 convolution kernel.",
+     "It is less sensitive to diagonal edges.",
+     "It does not involve convolution with a kernel."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ }
+]

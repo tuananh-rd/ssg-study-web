@@ -1,0 +1,22 @@
+{
+"66":{"q":"Phương thức nào sau đây sẽ điền các ngày bị thiếu bằng ngày khả dụng kế tiếp?","options":["df['DeliveryDate'] = df['DeliveryDate'].bfill()","df['DeliveryDate'] = df['DeliveryDate'].ffill()","df['DeliveryDate'] = df['DeliveryDate'].fillna(method=\"ffill\")","df['DeliveryDate'] = df['DeliveryDate'].interpolate(method='time')"]},
+"67":{"q":"Phương thức nào trong Pandas được dùng để xác định dữ liệu bị thiếu trong một DataFrame?","options":["find_missing()","isnull()","missing_data()","NaN_check()"]},
+"68":{"q":"Hàm Python nào được dùng để hiển thị biểu đồ ngay trong dòng (inline) trong Jupyter Notebook?","options":["%inline plot","%matplotlib inline","plt.show()","plt.inline()"]},
+"69":{"q":"Hàm Matplotlib nào được dùng để tạo biểu đồ xếp chồng (stack plot)?","options":["plt.plot()","plt.bar()","plt.stack()","plt.stackplot()"]},
+"70":{"q":"Thành phần (component) Dash nào được dùng để hiển thị đồ thị và các hình ảnh trực quan hóa?","options":["dcc.Input()","dcc.Dropdown()","dcc.Graph()","dcc.Slider()"]},
+"71":{"q":"Hàm Seaborn nào được dùng để tạo biểu đồ hộp (box plot) nhằm trực quan hóa phân phối của một biến số?","options":["sns.barplot()","sns.boxplot()","sns.violinplot()","sns.countplot()"]},
+"72":{"q":"Phương thức Pandas nào được dùng để loại bỏ các dòng có bất kỳ giá trị bị thiếu nào trong một DataFrame?","options":["remove_missing()","dropna()","clean_data()","remove_nulls()"]},
+"73":{"q":"Hàm nào được dùng để tạo các thống kê mô tả (descriptive statistics) cơ bản trong Pandas?","options":["df.describe()","df.head()","df.plot()","df.count()"]},
+"74":{"q":"Phương thức Pandas nào được dùng để hiển thị các thống kê cơ bản của các cột số trong một DataFrame?","options":["describe()","summary()","stats()","statistics()"]},
+"75":{"q":"Phần tử lớn nhất có thể có trong kết quả của phép toán df.corr() là gì?","options":["1","0","+vô cùng","giá trị trung bình"]},
+"76":{"q":"Khoảng giá trị của hệ số tương quan (correlation coefficient) là gì?","options":["[-1, 1]","[0, 1]","[-INF, INF]","[0, INF]"]},
+"77":{"q":"Giá trị p-value nào biểu thị tương quan mạnh? Chọn đáp án đúng nhất","options":["lớn hơn 0.1","nhỏ hơn 0.1","nhỏ hơn 0.05","nhỏ hơn 0.001"]},
+"78":{"q":"Giá trị R2 (hệ số xác định - coefficient of determination) nào cho thấy mô hình của bạn hoạt động tốt nhất?","options":["-1","0","1","Vô cùng"]},
+"79":{"q":"Râu trên (upper whisker) của biểu đồ hộp (box plot) biểu diễn khoảng phân vị nào?","options":["Từ phân vị thứ 75 đến thứ 100","Từ phân vị thứ 50 đến thứ 75","Từ phân vị thứ 25 đến thứ 50","Từ phân vị thứ 0 đến thứ 25"]},
+"80":{"q":"Xét đoạn mã sau:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nMã nào nhiều khả năng nhất sẽ được in ra màn hình nếu máy chủ gặp lỗi nội bộ (internal error)?","options":["500","200","300","400"]},
+"81":{"q":"Xét đoạn mã sau:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nMã nào nhiều khả năng nhất sẽ được in ra màn hình nếu tài nguyên bạn yêu cầu chỉ dành cho vai trò quản trị viên (admin)?","options":["401","500","303","200"]},
+"82":{"q":"Xét đoạn mã sau:\nimport pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n# Sample DataFrame\ndata = {'Feature1': [10, 20, 30, 40, 50]}\ndf = pd.DataFrame(data)\n# Standardizing the 'Feature1' column\nscaler = MinMaxScaler()\ndf['Standardized_Feature1'] = scaler.fit_transform(df[['Feature1']])\nprint(df.loc[2, 'Standardized_Feature1'])\nKết quả đầu ra là gì?","options":["0.5","0","1","0.7"]},
+"83":{"q":"Xét Series sau:\n0 NaN\n1 15.0\n2 NaN\n3 25.0\n4 30.0\ndtype: float64\nNếu điền các giá trị bị thiếu trong Series bằng trung vị (median) của Series, giá trị nào sẽ thay thế NaN ở chỉ số 0?","options":["25.0","30.0","15.0","23.33"]},
+"84":{"q":"Cho một DataFrame df có giá trị bị thiếu ở nhiều cột:\nimport pandas as pd\ndf = pd.DataFrame({ 'Region': [np.nan, 'South', np.nan, 'East', np.nan, 'West'], 'Sales': [100, np.nan, 150, np.nan, 200, np.nan] })\nCòn lại bao nhiêu giá trị bị thiếu sau khi điền df bằng câu lệnh sau:\ndf.fillna(inplace=True)","options":["1","0","4","6"]},
+"85":{"q":"Cho một DataFrame pandas df có các cột 'Category' và 'Value', nếu muốn tìm trung vị (median) của các giá trị trong mỗi nhóm, thì trung vị của nhóm 'Category' = 'B' là bao nhiêu?\ndf = pd.DataFrame({'Category': ['A', 'B', 'A', 'B', 'B'], 'Value': [10, 20, 30, 40, 50]})","options":["40","52","10","50"]}
+}

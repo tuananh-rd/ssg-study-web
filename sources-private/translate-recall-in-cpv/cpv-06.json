@@ -1,0 +1,242 @@
+[
+ {
+  "id": "r-m7-016",
+  "q": "Phép bẻ xiên (Shearing) trong biến đổi hình học ảnh gây ra tác động trực quan nào lên một hình chữ nhật ban đầu?",
+  "correct": "Kéo lệch hình ảnh dọc theo trục X hoặc trục Y, làm biến dạng hình chữ nhật thành hình bình hành",
+  "wrong": [
+   "Thu nhỏ kích thước hình chữ nhật về gốc tọa độ theo một tỷ lệ đồng dạng không đổi",
+   "Xoay hình chữ nhật một góc 90 độ quanh tâm mà không làm thay đổi các góc vuông",
+   "Phản chiếu hình chữ nhật qua mặt phẳng gương tạo ảnh đối xứng trục"
+  ]
+ },
+ {
+  "id": "r-m7-017",
+  "q": "Điểm khác biệt căn bản giữa phép Tương quan (Correlation) và phép Tích chập (Convolution) về mặt ứng dụng thực tế là gì?",
+  "correct": "Phép tương quan không lật ngược mặt nạ kernel và thường được sử dụng nhiều nhất để đối chiếu mẫu (template matching)",
+  "wrong": [
+   "Phép tương quan lật ngược kernel 180 độ và chỉ dùng để phát hiện đường thẳng bằng biến đổi Hough",
+   "Phép tương quan chỉ áp dụng được trên ảnh đa phổ có độ sâu màu 16-bit",
+   "Phép tương quan tính giá trị trung vị của cửa sổ lân cận để khử nhiễu hạt tiêu"
+  ]
+ },
+ {
+  "id": "r-m7-018",
+  "q": "Bộ lọc Tái mẫu Trung bình Trọng số Elip (Elliptical Weighted Average - EWA) có công dụng đặc trưng nào trong xử lý ảnh?",
+  "correct": "Chống lại hiện tượng răng cưa cực kỳ hiệu quả khi thực hiện làm biến dạng (warping) ảnh",
+  "wrong": [
+   "Phân đoạn tế bào ung thư bằng cách mô phỏng bản đồ địa hình ngập nước",
+   "Tìm ma trận quay tối ưu trong không gian 3 chiều bằng phân tích suy biến SVD",
+   "Nhận diện khuôn mặt sinh trắc học dựa trên phân tích thành phần chính PCA"
+  ]
+ },
+ {
+  "id": "r-m7-019",
+  "q": "Hiện tượng Thị sai (Parallax) trong quá trình ghép ảnh Panorama được hiểu là gì và vì sao cần phải loại bỏ?",
+  "correct": "Là sự dịch chuyển tương đối của các vật thể ở khoảng cách khác nhau khi đổi góc nhìn, cần loại bỏ để tránh tạo ra bóng ma (ghosting)",
+  "wrong": [
+   "Là hiện tượng tràn sáng chói trên cảm biến CCD làm cho bức ảnh toàn cảnh bị cháy sáng hoàn toàn",
+   "Là sự sai lệch màu sắc do chiết suất thủy tinh thay đổi theo các bước sóng ánh sáng khác nhau",
+   "Là sự chênh lệch tần số giữa bộ lọc thông thấp và bộ lọc thông cao khi thực hiện nén ảnh JPEG"
+  ]
+ },
+ {
+  "id": "r-m7-020",
+  "q": "Trong công thức tính điểm Harris Corner Score: R = det(M) - k * (Tr(M))^2, giá trị det(M) và Tr(M) được tính qua hai giá trị riêng λ1 và λ2 của ma trận cấu trúc M như thế nào?",
+  "correct": "det(M) = λ1 * λ2 và Tr(M) = λ1 + λ2",
+  "wrong": [
+   "det(M) = λ1 + λ2 và Tr(M) = λ1 * λ2",
+   "det(M) = λ1^2 + λ2^2 và Tr(M) = sqrt(λ1 * λ2)",
+   "det(M) = λ1 / λ2 và Tr(M) = λ1 - λ2"
+  ]
+ },
+ {
+  "id": "r-m7-021",
+  "q": "Ma trận biến đổi quay 2D trong không gian tọa độ đồng nhất [x, y, 1]^T với góc xoay θ ngược chiều kim đồng hồ có dạng biểu diễn nào?",
+  "correct": "[cosθ -sinθ 0 ; sinθ cosθ 0 ; 0 0 1]",
+  "wrong": [
+   "[cosθ sinθ 0 ; -sinθ cosθ 0 ; 0 0 1]",
+   "[1 0 cosθ ; 0 1 sinθ ; 0 0 1]",
+   "[cosθ 0 -sinθ ; 0 1 0 ; sinθ 0 cosθ]"
+  ]
+ },
+ {
+  "id": "r-m7-022",
+  "q": "Khái niệm Vết của ma trận (Trace - Tr(A)) trong các công thức đại số của thị giác máy tính được định nghĩa là gì?",
+  "correct": "Tổng của tất cả các phần tử nằm trên đường chéo chính của ma trận",
+  "wrong": [
+   "Căn bậc hai của tổng bình phương tất cả các phần tử trong ma trận",
+   "Hiệu số giữa phần tử lớn nhất và phần tử nhỏ nhất của ma trận",
+   "Tích của tất cả các phần tử nằm ở cột ngoài cùng bên phải"
+  ]
+ },
+ {
+  "id": "r-m7-023",
+  "q": "Chuẩn Frobenius (Frobenius Norm) của một ma trận số thực A được tính bằng công thức toán học nào?",
+  "correct": "Căn bậc hai của tổng bình phương tất cả các phần tử trong ma trận (sqrt[ Σ |A_ij|^2 ])",
+  "wrong": [
+   "Tổng giá trị tuyệt đối của các phần tử nằm trên đường chéo phụ của ma trận",
+   "Giá trị lớn nhất trong số các tổng theo từng hàng của ma trận",
+   "Tích của các định thức con cấp một của ma trận"
+  ]
+ },
+ {
+  "id": "r-m7-024",
+  "q": "Cho hai vector x = [2, 6, 6]^T và y = [1, 0, 1]^T, giá trị tích vô hướng (Dot Product) x · y bằng bao nhiêu?",
+  "correct": "8",
+  "wrong": [
+   "14",
+   "2",
+   "0"
+  ]
+ },
+ {
+  "id": "r-m7-025",
+  "q": "Cho hai ma trận A và B thỏa mãn mối quan hệ tuyến tính B_ij = A_ij + 100 đối với mọi phần tử, hệ số tương quan Pearson giữa A và B bằng bao nhiêu?",
+  "correct": "1.0",
+  "wrong": [
+   "0.0",
+   "0.5",
+   "-1.0"
+  ]
+ },
+ {
+  "id": "r-m7-026",
+  "q": "Ma trận A = [10, 20, 30; 40, 50, 60; 70, 80, 90] có định thức det(A) = 0. Kết luận nào sau đây là chính xác về ma trận A?",
+  "correct": "Ma trận A là ma trận suy biến (Singular matrix) và không khả nghịch (Non-invertible)",
+  "wrong": [
+   "Ma trận A là ma trận trực giao và có ma trận nghịch đảo bằng chính chuyển vị của nó",
+   "Ma trận A là ma trận đối xứng và có tất cả các giá trị riêng đều mang dấu âm",
+   "Ma trận A có hạng ma trận cực đại bằng 3 và có vô số nghiệm phân biệt"
+  ]
+ },
+ {
+  "id": "r-m7-027",
+  "q": "Vết ma trận (Trace) của ma trận A = [10, 20, 30; 40, 50, 60; 70, 80, 90] có giá trị bằng bao nhiêu?",
+  "correct": "150",
+  "wrong": [
+   "450",
+   "50",
+   "300"
+  ]
+ },
+ {
+  "id": "r-m7-028",
+  "q": "Khi thực hiện phép quay một điểm ảnh theo chiều kim đồng hồ một góc 60 độ quanh gốc tọa độ, góc quay θ trong ma trận xoay được quy ước giá trị bằng bao nhiêu?",
+  "correct": "θ = -60°",
+  "wrong": [
+   "θ = +60°",
+   "θ = +120°",
+   "θ = -30°"
+  ]
+ },
+ {
+  "id": "r-m7-029",
+  "q": "Cho điểm ảnh có tọa độ ban đầu A(10, -10). Sau khi áp dụng phép thu phóng (Scaling) ảnh với hệ số tỉ lệ đồng dạng là 2, tọa độ mới A' là bao nhiêu?",
+  "correct": "A'(20, -20)",
+  "wrong": [
+   "A'(12, -8)",
+   "A'(5, -5)",
+   "A'(20, 10)"
+  ]
+ },
+ {
+  "id": "r-m7-030",
+  "q": "Cho mảng mức xám 1D gồm các giá trị [1, 3, 4, 5, 7, 8, 7, 12]. Giá trị trung vị (Median) của dãy số này bằng bao nhiêu?",
+  "correct": "6.0",
+  "wrong": [
+   "5.875",
+   "7.0",
+   "5.0"
+  ]
+ },
+ {
+  "id": "r-m7-031",
+  "q": "Cho mảng mức xám [1, 3, 4, 5, 7, 8, 7, 12]. Giá trị yếu vị (Mode) của tập dữ liệu này là giá trị nào?",
+  "correct": "7",
+  "wrong": [
+   "1",
+   "5",
+   "12"
+  ]
+ },
+ {
+  "id": "r-m7-032",
+  "q": "Trong kỹ thuật Cân bằng lược đồ xám (Histogram Equalization) cho ảnh 8-bit, mức xám mới của một điểm ảnh có xác suất tích lũy CDF = 0.500 được chuẩn hóa thành giá trị nào?",
+  "correct": "128",
+  "wrong": [
+   "64",
+   "191",
+   "255"
+  ]
+ },
+ {
+  "id": "r-m7-033",
+  "q": "Cho dãy pixel A = [1, 3, 4, 5, 7, 8, 7, 12] với phần đệm zero padding ở hai đầu là [0, 1, 3, 4, 5, 7, 8, 7, 12, 0]. Khi áp dụng bộ lọc trung vị (Median Filter) kích thước cửa sổ 3x1 tại vị trí index 0 (cửa sổ gồm 0, 1, 3), giá trị đầu ra nhận được là bao nhiêu?",
+  "correct": "1",
+  "wrong": [
+   "0",
+   "3",
+   "2"
+  ]
+ },
+ {
+  "id": "r-m7-034",
+  "q": "Khi thực hiện phép tích chập (Convolution) giữa tín hiệu 1D với kernel sai phân K = [-1, 0, 1], nếu thiết lập bước nhảy Stride = 2 thì kết quả đầu ra có đặc điểm gì so với Stride = 1?",
+  "correct": "Kích thước mảng kết quả giảm đi một nửa do chỉ lấy giá trị ở các bước nhảy cách một phần tử",
+  "wrong": [
+   "Tất cả các giá trị kết quả được nhân đôi biên độ cường độ sáng",
+   "Mảng kết quả bị đảo ngược thứ tự từ phải qua trái",
+   "Toàn bộ các giá trị âm được tự động gán bằng 0"
+  ]
+ },
+ {
+  "id": "r-m7-035",
+  "q": "Trong việc xấp xỉ đạo hàm bậc 1 của hàm số rời rạc, mặt nạ kernel nào sau đây đại diện cho phép tính sai phân trung tâm (Central Difference) f(x+1) - f(x-1)?",
+  "correct": "Kernel [-1, 0, 1]",
+  "wrong": [
+   "Kernel [0, -1, 1]",
+   "Kernel [-1, 1, 0]",
+   "Kernel [1, -2, 1]"
+  ]
+ },
+ {
+  "id": "r-m7-036",
+  "q": "Mặt nạ kernel tích chập [0, -1, 1] thực hiện phép tính toán đạo hàm rời rạc nào theo định nghĩa giải tích?",
+  "correct": "Phép sai phân tiến (Forward Difference) f(x+1) - f(x)",
+  "wrong": [
+   "Phép sai phân lùi (Backward Difference) f(x) - f(x-1)",
+   "Phép sai phân trung tâm (Central Difference) f(x+1) - f(x-1)",
+   "Phép tính đạo hàm bậc hai Laplacian f(x+1) - 2f(x) + f(x-1)"
+  ]
+ },
+ {
+  "id": "r-m7-037",
+  "q": "Khi áp dụng bộ lọc sai phân trung tâm lên một dòng pixel, vị trí đường biên sắc nét nhất của đối tượng được xác định tại đâu?",
+  "correct": "Tại vị trí có giá trị thay đổi cường độ đạo hàm đạt đỉnh cực đại",
+  "wrong": [
+   "Tại vị trí có cường độ sáng đạt giá trị bằng không hoàn toàn",
+   "Tại vị trí có giá trị phương sai của cửa sổ lân cận nhỏ nhất",
+   "Tại vị trí có tần suất xuất hiện yếu vị Mode lớn nhất"
+  ]
+ },
+ {
+  "id": "r-m7-038",
+  "q": "Trong công thức tính góc hướng gradient θ = arctan(I_y / I_x), hai đại lượng I_x và I_y biểu diễn thành phần nào?",
+  "correct": "Đạo hàm (gradient) cường độ sáng của ảnh theo trục X và trục Y",
+  "wrong": [
+   "Tọa độ gốc của hai tâm cụm trong thuật toán phân cụm K-Means",
+   "Hai giá trị riêng của ma trận nghịch đảo affine",
+   "Bán kính và góc quét của đường tròn trong không gian Hough"
+  ]
+ },
+ {
+  "id": "r-m7-039",
+  "q": "Trong thuật toán Harris Corner Detector, khi giá trị điểm R nhận kết quả là một số âm đáng kể, điểm ảnh đó được phân loại là gì?",
+  "correct": "Biên (Edge)",
+  "wrong": [
+   "Góc (Corner)",
+   "Vùng phẳng (Flat)",
+   "Điểm nhiễu cô lập (Outlier)"
+  ]
+ }
+]

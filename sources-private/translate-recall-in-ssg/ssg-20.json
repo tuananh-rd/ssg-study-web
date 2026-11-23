@@ -1,0 +1,252 @@
+[
+ {
+  "id": "k-070",
+  "q": "Unsolicited proposal cần đặc biệt chú trọng điều gì?",
+  "correct": "Chứng minh rõ nhu cầu, giá trị và mức liên quan",
+  "wrong": [
+   "Bám chặt mẫu của RFP",
+   "Bỏ qua phần chi phí",
+   "Nộp đúng deadline do bên mời thầu đặt"
+  ]
+ },
+ {
+  "id": "k-071",
+  "q": "Phần nào của proposal tóm tắt toàn bộ đề xuất cho người đọc bận rộn?",
+  "correct": "Executive summary",
+  "wrong": [
+   "Background",
+   "Conclusion",
+   "Market analysis"
+  ]
+ },
+ {
+  "id": "k-072",
+  "q": "Nội dung nào thường KHÔNG thuộc các phần của một business proposal?",
+  "correct": "Bảng chấm công hằng ngày của nhóm",
+  "wrong": [
+   "Timeline với milestone và ngày cụ thể",
+   "Marketing / communication plan",
+   "Benefits ngắn hạn và dài hạn"
+  ]
+ },
+ {
+  "id": "k-073",
+  "q": "Nhóm đưa số liệu khảo sát 200 sinh viên để chứng minh vấn đề có thật. Đây là yếu tố thuyết phục nào?",
+  "correct": "Logos",
+  "wrong": [
+   "Ethos",
+   "Pathos",
+   "Kairos"
+  ]
+ },
+ {
+  "id": "k-074",
+  "q": "Nhóm kể câu chuyện cảm động về một em nhỏ không được đến trường. Đây là yếu tố nào?",
+  "correct": "Pathos",
+  "wrong": [
+   "Ethos",
+   "Logos",
+   "Kairos"
+  ]
+ },
+ {
+  "id": "k-075",
+  "q": "Nhóm nêu 3 năm kinh nghiệm làm tình nguyện để người nghe tin vào năng lực của mình. Đây là yếu tố nào?",
+  "correct": "Ethos",
+  "wrong": [
+   "Pathos",
+   "Logos",
+   "Kairos"
+  ]
+ },
+ {
+  "id": "k-076",
+  "q": "Thông tin nào đúng về dự án nhóm Creating Social Solutions?",
+  "correct": "5–7 thành viên, chiếm 30%, 3 giai đoạn, liên hệ một UN SDG",
+  "wrong": [
+   "3–5 thành viên, chiếm 30%, 2 giai đoạn, liên hệ một UN SDG",
+   "5–7 thành viên, chiếm 40%, 3 giai đoạn, liên hệ một UN SDG",
+   "5–7 thành viên, chiếm 30%, 4 giai đoạn, không cần SDG"
+  ]
+ },
+ {
+  "id": "k-077",
+  "q": "Báo cáo diễn giải dữ liệu và đưa ra khuyến nghị gọi là gì?",
+  "correct": "Analytical report",
+  "wrong": [
+   "Informational report",
+   "Routine report",
+   "Lateral report"
+  ]
+ },
+ {
+  "id": "k-078",
+  "q": "Executive summary nằm ở phần nào của báo cáo chính thức?",
+  "correct": "Preliminary section",
+  "wrong": [
+   "Body",
+   "Supplementary section",
+   "Appendices"
+  ]
+ },
+ {
+  "id": "k-079",
+  "q": "Glossary, appendices và reference list thuộc phần nào?",
+  "correct": "Supplementary section",
+  "wrong": [
+   "Preliminary section",
+   "Body",
+   "Executive summary"
+  ]
+ },
+ {
+  "id": "k-080",
+  "q": "Phần Body của báo cáo gồm những gì?",
+  "correct": "Introduction, methodology, findings, conclusions, recommendations",
+  "wrong": [
+   "Title page, table of contents, executive summary",
+   "Glossary, appendices, reference list",
+   "Cover, title fly, list of illustrations"
+  ]
+ },
+ {
+  "id": "k-081",
+  "q": "Cấu trúc 7 phần của progress report theo đúng thứ tự là gì?",
+  "correct": "Project information → Overview → Work completed → Progress & results → Challenges → Solutions → Next steps",
+  "wrong": [
+   "Overview → Project information → Challenges → Work completed → Solutions → Progress & results → Next steps",
+   "Project information → Overview → Challenges → Solutions → Work completed → Progress & results → Next steps",
+   "Project information → Work completed → Overview → Progress & results → Solutions → Challenges → Next steps"
+  ]
+ },
+ {
+  "id": "k-082",
+  "q": "Điều nào cần TRÁNH khi viết progress report?",
+  "correct": "Che giấu vấn đề bằng sự lạc quan quá mức",
+  "wrong": [
+   "Nêu rõ người phụ trách bước tiếp theo",
+   "Giải thích ý nghĩa của dữ liệu",
+   "Báo cáo thách thức và cách đã xử lý"
+  ]
+ },
+ {
+  "id": "k-083",
+  "q": "Câu hỏi khảo sát nào trung lập, không phải leading question?",
+  "correct": "Bạn đánh giá buổi workshop thế nào? (thang 1–5)",
+  "wrong": [
+   "Bạn thấy buổi workshop tuyệt vời đến mức nào?",
+   "Bạn đồng ý rằng workshop rất hữu ích chứ?",
+   "Vì sao buổi workshop thành công như vậy?"
+  ]
+ },
+ {
+  "id": "k-084",
+  "q": "Pilot test trong khảo sát là gì?",
+  "correct": "Thử khảo sát với một nhóm nhỏ trước khi phát rộng",
+  "wrong": [
+   "Phát khảo sát cho toàn bộ đối tượng ngay",
+   "Trình bày kết quả bằng bảng hoặc chart",
+   "Chỉ dùng toàn câu hỏi mở"
+  ]
+ },
+ {
+  "id": "k-085",
+  "q": "Một báo cáo tốt phải “tự đứng vững” nghĩa là gì?",
+  "correct": "Người đọc hiểu được mà không cần tác giả giải thích thêm",
+  "wrong": [
+   "Báo cáo phải dài trên 20 trang để thể hiện đủ công sức",
+   "Báo cáo không cần trích nguồn vì là ý kiến của cả nhóm",
+   "Báo cáo chỉ cần đúng định dạng mẫu của tổ chức là đạt"
+  ]
+ },
+ {
+  "id": "k-086",
+  "q": "Phát biểu nào ĐÚNG về giao tiếp phi ngôn ngữ?",
+  "correct": "Luôn xảy ra — kể cả im lặng cũng gửi thông điệp",
+  "wrong": [
+   "Có ý nghĩa giống nhau ở mọi nền văn hóa",
+   "Chỉ đi qua một kênh tại một thời điểm",
+   "Không bao giờ mâu thuẫn với lời nói"
+  ]
+ },
+ {
+  "id": "k-087",
+  "q": "Paralanguage gồm những yếu tố nào?",
+  "correct": "Tone, pitch, volume, speed của giọng nói",
+  "wrong": [
+   "Quần áo, phụ kiện, vật dụng",
+   "Khoảng cách giữa người nói và người nghe",
+   "Cử chỉ tay và tư thế"
+  ]
+ },
+ {
+  "id": "k-088",
+  "q": "Quần áo, phụ kiện, vật dụng mang theo thuộc loại phi ngôn ngữ nào?",
+  "correct": "Artifacts",
+  "wrong": [
+   "Physical characteristics / appearance",
+   "Environment",
+   "Paralanguage"
+  ]
+ },
+ {
+  "id": "k-089",
+  "q": "Đến phỏng vấn muộn 15 phút gửi thông điệp qua kênh phi ngôn ngữ nào?",
+  "correct": "Time",
+  "wrong": [
+   "Space",
+   "Touch",
+   "Environment"
+  ]
+ },
+ {
+  "id": "k-090",
+  "q": "Ba bước của một cử chỉ khi thuyết trình theo thứ tự là gì?",
+  "correct": "Anticipation → Implementation → Relaxation",
+  "wrong": [
+   "Implementation → Anticipation → Relaxation",
+   "Relaxation → Anticipation → Implementation",
+   "Anticipation → Relaxation → Implementation"
+  ]
+ },
+ {
+  "id": "k-091",
+  "q": "Bốn tiêu chí của visual aid là gì?",
+  "correct": "Big – Clear – Simple – Consistent",
+  "wrong": [
+   "Bright – Colorful – Short – Creative",
+   "Big – Complex – Smart – Colorful",
+   "Brief – Clear – Stylish – Creative"
+  ]
+ },
+ {
+  "id": "k-092",
+  "q": "“Chỉ còn 10 suất ưu đãi trong hôm nay!” dùng nguyên tắc ảnh hưởng nào?",
+  "correct": "Scarcity",
+  "wrong": [
+   "Reciprocity",
+   "Authority",
+   "Liking"
+  ]
+ },
+ {
+  "id": "k-093",
+  "q": "“Hơn 2.000 sinh viên đã đăng ký khóa học này” dùng nguyên tắc nào?",
+  "correct": "Consensus / social proof",
+  "wrong": [
+   "Authority",
+   "Scarcity",
+   "Commitment and consistency"
+  ]
+ },
+ {
+  "id": "k-094",
+  "q": "Tặng một món quà nhỏ trước khi mời người khác đăng ký là nguyên tắc nào?",
+  "correct": "Reciprocity",
+  "wrong": [
+   "Liking",
+   "Scarcity",
+   "Consensus / social proof"
+  ]
+ }
+]

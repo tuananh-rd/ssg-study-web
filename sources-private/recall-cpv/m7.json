@@ -1,0 +1,470 @@
+[
+  {
+    "ref": "7.2",
+    "q": "Điểm khác biệt cơ bản giữa tác vụ Phát hiện đối tượng (Object Detection) và Phân loại ảnh (Image Classification) là gì?",
+    "correct": "Phát hiện đối tượng trả về vị trí chính xác của đối tượng thông qua hộp giới hạn (Bounding Box)",
+    "wrong": [
+      "Phân loại ảnh có khả năng xác định tọa độ pixel của từng cá thể đối tượng độc lập",
+      "Phát hiện đối tượng chỉ áp dụng được trên video mà không áp dụng được trên ảnh tĩnh",
+      "Phân loại ảnh bắt buộc phải sử dụng bộ mô tả biểu đồ dốc hướng HOG"
+    ],
+    "explain": "Không giống như phân loại ảnh (chỉ cho biết trong ảnh có gì), phát hiện đối tượng trả về vị trí chính xác của đối tượng thông qua hộp giới hạn (Bounding Box).",
+    "tip": "Classification = có gì trong ảnh; Object Detection = có gì và ở đâu (Bounding Box)."
+  },
+  {
+    "ref": "7.2",
+    "q": "Thuật toán phát hiện khuôn mặt truyền thống Viola-Jones sử dụng loại đặc trưng nào làm nền tảng trích xuất?",
+    "correct": "Đặc trưng Haar (Haar features / Haar Cascade)",
+    "wrong": [
+      "Bộ mô tả nhị phân BRIEF",
+      "Phân tích suy biến ma trận SVD",
+      "Biến đổi Cosine rời rạc DCT"
+    ],
+    "explain": "Viola-Jones là thuật toán kinh điển dùng đặc trưng Haar (Haar Cascade), rất nổi tiếng trong phát hiện khuôn mặt truyền thống.",
+    "tip": "Viola-Jones gắn liền với đặc trưng Haar."
+  },
+  {
+    "ref": "7.2",
+    "q": "Trong các hướng tiếp cận bằng mạng nơ-ron sâu cho phát hiện đối tượng, nhóm mô hình One-stage Detectors (như YOLO, SSD) có ưu thế nổi bật nào so với họ Two-stage (R-CNN)?",
+    "correct": "Tốc độ xử lý cực nhanh đạt mức thời gian thực (real-time) do dự đoán trực tiếp tọa độ hộp và nhãn trong 1 bước",
+    "wrong": [
+      "Hoàn toàn không bao giờ bị ảnh hưởng bởi hiện tượng vật thể bị che khuất (occlusion)",
+      "Độ chính xác phân loại luôn cao hơn Faster R-CNN trong mọi bài toán y tế",
+      "Không cần dữ liệu huấn luyện có gán nhãn mà tự động học không giám sát"
+    ],
+    "explain": "One-stage Detectors (SSD, YOLO) chạy 1 bước duy nhất dự đoán trực tiếp tọa độ hộp và nhãn, mang lại tốc độ cực nhanh (real-time).",
+    "tip": "One-stage (YOLO, SSD) = 1 bước dự đoán trực tiếp, tốc độ real-time."
+  },
+  {
+    "ref": "7.2",
+    "q": "Trong các thách thức của bài toán Phát hiện đối tượng, hiện tượng \"Occlusion\" được hiểu là gì?",
+    "correct": "Đối tượng bị che khuất một phần hoặc hoàn toàn bởi các vật cản khác trong khung cảnh",
+    "wrong": [
+      "Đối tượng thay đổi góc nhìn làm hình dáng trông khác hẳn so với lúc ban đầu",
+      "Phông nền xung quanh có kết cấu hoặc màu sắc bị lẫn vào chính đối tượng",
+      "Độ sáng của khung cảnh bị thay đổi đột ngột từ quá sáng sang quá tối"
+    ],
+    "explain": "Occlusion là hiện tượng đối tượng bị che khuất bởi vật cản trong khung cảnh.",
+    "tip": "Occlusion = bị che khuất bởi vật cản."
+  },
+  {
+    "ref": "7.2",
+    "q": "Phương pháp phát hiện đối tượng truyền thống kết hợp bộ mô tả nào sau đây với bộ phân loại SVM để nhận diện người đi bộ?",
+    "correct": "Biểu đồ dốc hướng (Histogram of Oriented Gradients - HOG)",
+    "wrong": [
+      "Cây tứ phân Quadtree",
+      "Phân đoạn lưu vực Watershed",
+      "Bộ lọc song phương Bilateral Filter"
+    ],
+    "explain": "Phương pháp truyền thống sử dụng biểu đồ dốc hướng (HOG) kết hợp với bộ phân loại SVM, đặc biệt thành công trong bài toán phát hiện người đi bộ.",
+    "tip": "HOG + SVM là cặp đôi kinh điển để phát hiện người đi bộ."
+  },
+  {
+    "ref": "7.2",
+    "q": "Trong hàm face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30)) của OpenCV, ảnh đầu vào gray được xử lý ở định dạng nào?",
+    "correct": "Ảnh xám (Grayscale Image)",
+    "wrong": [
+      "Ảnh màu ba kênh BGR nguyên bản",
+      "Ảnh nhị phân sau khi phân ngưỡng nhị phân Otsu",
+      "Ảnh miền tần số sau khi biến đổi Fourier 2D"
+    ],
+    "explain": "Bộ phân loại Haar Cascade của OpenCV nhận đầu vào là ảnh xám (grayscale) để phát hiện khuôn mặt.",
+    "tip": "Haar Cascade trong OpenCV nhận đầu vào là ảnh xám (Grayscale)."
+  },
+  {
+    "ref": "7.3",
+    "q": "Sự khác biệt cốt lõi giữa Phát hiện (Detection) và Nhận dạng (Recognition) trong thị giác máy tính là gì?",
+    "correct": "Detection trả lời câu hỏi đối tượng ở đâu, còn Recognition định danh đối tượng đó là ai hoặc thuộc thực thể cụ thể nào",
+    "wrong": [
+      "Detection chỉ dùng cho video thời gian thực, còn Recognition chỉ dùng cho các tệp hình ảnh tĩnh",
+      "Detection sử dụng mạng nơ-ron sâu, còn Recognition hoàn toàn không dùng bất kỳ thuật toán máy học nào",
+      "Detection chỉ tìm thấy đối tượng đơn lẻ, còn Recognition dùng để đếm số lượng người trong đám đông"
+    ],
+    "explain": "Detection trả lời câu hỏi \"Ở đây có đối tượng không và nằm ở đâu?\", trong khi Recognition nhận biết, định danh thuộc tính ngữ nghĩa \"Khuôn mặt/đối tượng này là của ai?\".",
+    "tip": "Detection: tìm vị trí (ở đâu); Recognition: nhận danh tính (là ai)."
+  },
+  {
+    "ref": "7.3",
+    "q": "Thứ tự 4 bước chuẩn trong quy trình nhận dạng đối tượng (Object Recognition) là gì?",
+    "correct": "Trích xuất đặc trưng → Khớp đặc trưng với mô hình → Hình thành giả thuyết → Xác thực đối tượng",
+    "wrong": [
+      "Hình thành giả thuyết → Xác thực đối tượng → Trích xuất đặc trưng → Khớp đặc trưng với mô hình",
+      "Khớp đặc trưng với mô hình → Trích xuất đặc trưng → Lọc nhiễu Gaussian → Phân ngưỡng Otsu",
+      "Phân ngưỡng Canny → Tạo hộp bao Bounding Box → Khớp đặc trưng → Nhận dạng thực thể"
+    ],
+    "explain": "4 bước nhận dạng đối tượng gồm: (1) Feature extraction → (2) Feature-model matching → (3) Hypotheses formation → (4) Object verification.",
+    "tip": "Quy trình nhận dạng: Trích xuất -> So khớp -> Giả thuyết -> Xác thực."
+  },
+  {
+    "ref": "7.3",
+    "q": "Phương pháp Eigenfaces kinh điển trong nhận dạng khuôn mặt toàn cục (Holistic Matching) được xây dựng dựa trên kỹ thuật toán học nào?",
+    "correct": "Phân tích thành phần chính (Principal Component Analysis - PCA)",
+    "wrong": [
+      "Biến đổi Cosine rời rạc (DCT)",
+      "Biến đổi Hough tọa độ cực",
+      "Thuật toán tái lấy mẫu ngẫu nhiên RANSAC"
+    ],
+    "explain": "Phương pháp Eigenfaces sử dụng phân tích thành phần chính (PCA) để tính toán tập hợp các khuôn mặt cơ sở.",
+    "tip": "Eigenfaces = phương pháp nhận dạng khuôn mặt dựa trên PCA."
+  },
+  {
+    "ref": "7.3",
+    "q": "Trong phương pháp Eigenfaces, một khuôn mặt mới đưa vào hệ thống được biểu diễn toán học như thế nào?",
+    "correct": "Dưới dạng một tổ hợp tuyến tính của các vector khuôn mặt cơ sở (Eigenfaces)",
+    "wrong": [
+      "Dưới dạng một chuỗi các hàm sóng điều hòa sin và cosin trong không gian Fourier",
+      "Dưới dạng một đồ thị phân cấp Quadtree với 4 vùng con độc lập",
+      "Dưới dạng một vector nhị phân BRIEF trích xuất từ các điểm góc Harris"
+    ],
+    "explain": "Một khuôn mặt mới đưa vào sẽ được biểu diễn dưới dạng tổ hợp tuyến tính của các Eigenfaces trong cơ sở dữ liệu để so sánh khoảng cách định danh.",
+    "tip": "Eigenfaces: biểu diễn ảnh mặt mới thành tổ hợp tuyến tính của các Eigenfaces."
+  },
+  {
+    "ref": "7.3",
+    "q": "Hướng tiếp cận Nhận dạng lai (Hybrid Methods) kết hợp những yếu tố nào để nâng cao độ chính xác nhận dạng khuôn mặt?",
+    "correct": "Kết hợp cả đặc điểm toàn cục (Holistic) và các đặc trưng hình học cục bộ",
+    "wrong": [
+      "Kết hợp bộ lọc thông thấp với bộ lọc thông cao trong miền tần số",
+      "Kết hợp cảm biến CCD với cảm biến CMOS trên cùng một thiết bị phần cứng",
+      "Kết hợp thuật toán nén JPEG có tổn thất với định dạng lưu trữ BMP không tổn thất"
+    ],
+    "explain": "Phương pháp Lai (Hybrid Methods) kết hợp cả đặc điểm toàn cục (Holistic) và đặc trưng cục bộ để tăng độ chính xác nhận dạng.",
+    "tip": "Hybrid face recognition = Holistic (toàn cục) + Feature-based (cục bộ)."
+  },
+  {
+    "ref": "7.4",
+    "q": "Trong thị giác máy tính, nhiệm vụ cốt lõi của bài toán Theo dõi đối tượng (Object Tracking) trong video là gì?",
+    "correct": "Duy trì một ID duy nhất và liên tục cập nhật tọa độ hộp giới hạn của đối tượng qua các khung hình liên tiếp",
+    "wrong": [
+      "Phân loại lại toàn bộ các đối tượng trong từng khung hình bằng cách gán nhãn ngẫu nhiên mới",
+      "Căn chỉnh các khung hình video bằng cách tính ma trận Homography toàn cục",
+      "Chuyển đổi toàn bộ video sang miền tần số Fourier để khử bỏ hiện tượng rung lắc"
+    ],
+    "explain": "Object Tracking lấy đầu vào là kết quả phát hiện ở frame đầu tiên, gán ID duy nhất và tiếp tục theo dõi tọa độ hộp giới hạn qua các frame tiếp theo trong khi vẫn duy trì đúng ID.",
+    "tip": "Object Tracking = bám sát tọa độ Bounding Box và duy trì đúng ID qua các frame."
+  },
+  {
+    "ref": "7.4",
+    "q": "Điểm khác biệt chính giữa kỹ thuật Theo dõi điểm (Point Tracking) và Theo dõi vùng (Kernel Tracking) là gì?",
+    "correct": "Point Tracking theo dõi các điểm đặc trưng rời rạc, còn Kernel Tracking theo dõi một vùng hình học cơ bản mang thông tin màu sắc hoặc kết cấu",
+    "wrong": [
+      "Point Tracking chỉ dùng cho ảnh tĩnh, còn Kernel Tracking chỉ dùng cho ảnh nén JPEG",
+      "Point Tracking tự động tạo ID mới ở mỗi khung hình, còn Kernel Tracking không duy trì ID",
+      "Point Tracking chỉ theo dõi được khuôn mặt, còn Kernel Tracking chỉ theo dõi được người đi bộ"
+    ],
+    "explain": "Point Tracking biểu diễn đối tượng bằng các điểm đặc trưng liên tiếp; Kernel Tracking đại diện đối tượng bằng vùng hình học cơ bản (template/kernel) mang thông tin màu sắc, kết cấu.",
+    "tip": "Point Tracking: theo dõi các điểm; Kernel Tracking: theo dõi vùng hình học."
+  },
+  {
+    "ref": "7.4",
+    "q": "Thách thức \"Occlusion\" trong bài toán Theo dõi đối tượng (Object Tracking) có thể dẫn tới hậu quả nghiêm trọng nào sau đây?",
+    "correct": "Mất dấu đối tượng hoặc chuyển nhầm ID sang đối tượng che khuất",
+    "wrong": [
+      "Làm tăng độ phân giải hình ảnh lên gấp đôi gây tràn bộ nhớ đệm",
+      "Biến đổi hệ màu RGB của khung hình thành không gian màu HSV",
+      "Làm cho camera tự động đóng khẩu độ và giảm thời gian phơi sáng"
+    ],
+    "explain": "Occlusion xảy ra khi đối tượng bị che mất hoàn toàn hoặc một phần bởi vật thể khác trong chốc lát, khiến ID bị mất hoặc chuyển nhầm sang đối tượng che khuất.",
+    "tip": "Occlusion trong tracking dễ làm mất dấu (lost) hoặc nhảy nhầm ID."
+  },
+  {
+    "ref": "7.4",
+    "q": "Trong mã nguồn OpenCV để theo dõi đối tượng, bộ theo dõi CSRT (cv2.TrackerCSRT_create()) được khởi tạo ở khung hình đầu tiên bằng phương thức nào?",
+    "correct": "tracker.init(frame, bbox)",
+    "wrong": [
+      "tracker.update(frame)",
+      "tracker.detect(frame, bbox)",
+      "tracker.train(frame)"
+    ],
+    "explain": "Sau khi chọn ROI, ta gọi `tracker.init(frame, bbox)` để khởi tạo ở khung hình đầu, sau đó trong vòng lặp dùng `tracker.update(frame)` để cập nhật.",
+    "tip": "Tracker: init(frame, bbox) để khởi tạo, update(frame) để cập nhật."
+  },
+  {
+    "ref": "7.4",
+    "q": "Phép bẻ xiên (Shearing) trong biến đổi hình học ảnh gây ra tác động trực quan nào lên một hình chữ nhật ban đầu?",
+    "correct": "Kéo lệch hình ảnh dọc theo trục X hoặc trục Y, làm biến dạng hình chữ nhật thành hình bình hành",
+    "wrong": [
+      "Thu nhỏ kích thước hình chữ nhật về gốc tọa độ theo một tỷ lệ đồng dạng không đổi",
+      "Xoay hình chữ nhật một góc 90 độ quanh tâm mà không làm thay đổi các góc vuông",
+      "Phản chiếu hình chữ nhật qua mặt phẳng gương tạo ảnh đối xứng trục"
+    ],
+    "explain": "Phép bẻ xiên (Shearing) là thao tác kéo lệch hình ảnh dọc theo trục X hoặc trục Y, làm biến dạng một hình chữ nhật ban đầu thành hình bình hành.",
+    "tip": "Shearing: kéo lệch theo trục X/Y, biến hình chữ nhật thành hình bình hành."
+  },
+  {
+    "ref": "7.4",
+    "q": "Điểm khác biệt căn bản giữa phép Tương quan (Correlation) và phép Tích chập (Convolution) về mặt ứng dụng thực tế là gì?",
+    "correct": "Phép tương quan không lật ngược mặt nạ kernel và thường được sử dụng nhiều nhất để đối chiếu mẫu (template matching)",
+    "wrong": [
+      "Phép tương quan lật ngược kernel 180 độ và chỉ dùng để phát hiện đường thẳng bằng biến đổi Hough",
+      "Phép tương quan chỉ áp dụng được trên ảnh đa phổ có độ sâu màu 16-bit",
+      "Phép tương quan tính giá trị trung vị của cửa sổ lân cận để khử nhiễu hạt tiêu"
+    ],
+    "explain": "Phép tương quan có cơ chế toán học giống hệt tích chập nhưng mặt nạ kernel không bị lật ngược, thường được sử dụng nhiều nhất để đối chiếu, tìm kiếm một mẫu nhỏ trong ảnh lớn (template matching).",
+    "tip": "Correlation: không lật kernel, ứng dụng chính là template matching."
+  },
+  {
+    "ref": "7.4",
+    "q": "Bộ lọc Tái mẫu Trung bình Trọng số Elip (Elliptical Weighted Average - EWA) có công dụng đặc trưng nào trong xử lý ảnh?",
+    "correct": "Chống lại hiện tượng răng cưa cực kỳ hiệu quả khi thực hiện làm biến dạng (warping) ảnh",
+    "wrong": [
+      "Phân đoạn tế bào ung thư bằng cách mô phỏng bản đồ địa hình ngập nước",
+      "Tìm ma trận quay tối ưu trong không gian 3 chiều bằng phân tích suy biến SVD",
+      "Nhận diện khuôn mặt sinh trắc học dựa trên phân tích thành phần chính PCA"
+    ],
+    "explain": "EWA là một bộ lọc tái mẫu không gian (resampling) tiên tiến giúp chống lại hiện tượng răng cưa cực kỳ hiệu quả khi làm biến dạng (warping) ảnh.",
+    "tip": "EWA (Elliptical weighted average) = chống răng cưa khi warping ảnh."
+  },
+  {
+    "ref": "7.4",
+    "q": "Hiện tượng Thị sai (Parallax) trong quá trình ghép ảnh Panorama được hiểu là gì và vì sao cần phải loại bỏ?",
+    "correct": "Là sự dịch chuyển tương đối của các vật thể ở khoảng cách khác nhau khi đổi góc nhìn, cần loại bỏ để tránh tạo ra bóng ma (ghosting)",
+    "wrong": [
+      "Là hiện tượng tràn sáng chói trên cảm biến CCD làm cho bức ảnh toàn cảnh bị cháy sáng hoàn toàn",
+      "Là sự sai lệch màu sắc do chiết suất thủy tinh thay đổi theo các bước sóng ánh sáng khác nhau",
+      "Là sự chênh lệch tần số giữa bộ lọc thông thấp và bộ lọc thông cao khi thực hiện nén ảnh JPEG"
+    ],
+    "explain": "Thị sai (Parallax) là hiện tượng dịch chuyển tương đối của các vật thể ở khoảng cách khác nhau khi camera đổi góc nhìn; bắt buộc phải loại bỏ hiện tượng này để tránh tạo ra các bóng ma (ghosting) khi ghép ảnh panorama.",
+    "tip": "Parallax (thị sai) gây ra bóng ma (ghosting) khi ghép ảnh panorama."
+  },
+  {
+    "ref": "7.5",
+    "q": "Trong công thức tính điểm Harris Corner Score: R = det(M) - k * (Tr(M))^2, giá trị det(M) và Tr(M) được tính qua hai giá trị riêng λ1 và λ2 của ma trận cấu trúc M như thế nào?",
+    "correct": "det(M) = λ1 * λ2 và Tr(M) = λ1 + λ2",
+    "wrong": [
+      "det(M) = λ1 + λ2 và Tr(M) = λ1 * λ2",
+      "det(M) = λ1^2 + λ2^2 và Tr(M) = sqrt(λ1 * λ2)",
+      "det(M) = λ1 / λ2 và Tr(M) = λ1 - λ2"
+    ],
+    "explain": "Định thức của ma trận cấu trúc M là det(M) = λ1 * λ2 và vết của ma trận là Tr(M) = λ1 + λ2, với tham số k thường chọn là 0.04.",
+    "tip": "Harris Corner: det(M) = λ1*λ2 và Tr(M) = λ1+λ2."
+  },
+  {
+    "ref": "7.5",
+    "q": "Ma trận biến đổi quay 2D trong không gian tọa độ đồng nhất [x, y, 1]^T với góc xoay θ ngược chiều kim đồng hồ có dạng biểu diễn nào?",
+    "correct": "[cosθ -sinθ 0 ; sinθ cosθ 0 ; 0 0 1]",
+    "wrong": [
+      "[cosθ sinθ 0 ; -sinθ cosθ 0 ; 0 0 1]",
+      "[1 0 cosθ ; 0 1 sinθ ; 0 0 1]",
+      "[cosθ 0 -sinθ ; 0 1 0 ; sinθ 0 cosθ]"
+    ],
+    "explain": "Ma trận quay 2D ngược chiều kim đồng hồ trong hệ tọa độ đồng nhất là: hàng 1: [cosθ, -sinθ, 0]; hàng 2: [sinθ, cosθ, 0]; hàng 3: [0, 0, 1].",
+    "tip": "Ma trận quay 2D: [cosθ -sinθ 0; sinθ cosθ 0; 0 0 1]."
+  },
+  {
+    "ref": "7.5",
+    "q": "Khái niệm Vết của ma trận (Trace - Tr(A)) trong các công thức đại số của thị giác máy tính được định nghĩa là gì?",
+    "correct": "Tổng của tất cả các phần tử nằm trên đường chéo chính của ma trận",
+    "wrong": [
+      "Căn bậc hai của tổng bình phương tất cả các phần tử trong ma trận",
+      "Hiệu số giữa phần tử lớn nhất và phần tử nhỏ nhất của ma trận",
+      "Tích của tất cả các phần tử nằm ở cột ngoài cùng bên phải"
+    ],
+    "explain": "Vết ma trận (Trace): Tr(A) = Σ A_ii, chính là tổng các phần tử nằm trên đường chéo chính.",
+    "tip": "Trace = tổng các phần tử trên đường chéo chính."
+  },
+  {
+    "ref": "7.5",
+    "q": "Chuẩn Frobenius (Frobenius Norm) của một ma trận số thực A được tính bằng công thức toán học nào?",
+    "correct": "Căn bậc hai của tổng bình phương tất cả các phần tử trong ma trận (sqrt[ Σ |A_ij|^2 ])",
+    "wrong": [
+      "Tổng giá trị tuyệt đối của các phần tử nằm trên đường chéo phụ của ma trận",
+      "Giá trị lớn nhất trong số các tổng theo từng hàng của ma trận",
+      "Tích của các định thức con cấp một của ma trận"
+    ],
+    "explain": "Chuẩn Frobenius được tính bằng căn bậc hai của tổng bình phương tất cả các phần tử: ||A||_F = √[ Σ |A_ij|² ].",
+    "tip": "Frobenius norm = căn bậc hai tổng bình phương các phần tử."
+  },
+  {
+    "ref": "7.6",
+    "q": "Cho hai vector x = [2, 6, 6]^T và y = [1, 0, 1]^T, giá trị tích vô hướng (Dot Product) x · y bằng bao nhiêu?",
+    "correct": "8",
+    "wrong": [
+      "14",
+      "2",
+      "0"
+    ],
+    "explain": "Tích vô hướng tính bằng tổng tích các phần tử tương ứng: x · y = (2 * 1) + (6 * 0) + (6 * 1) = 2 + 0 + 6 = 8.",
+    "tip": "Dot product: 2*1 + 6*0 + 6*1 = 8."
+  },
+  {
+    "ref": "7.6",
+    "q": "Cho hai ma trận A và B thỏa mãn mối quan hệ tuyến tính B_ij = A_ij + 100 đối với mọi phần tử, hệ số tương quan Pearson giữa A và B bằng bao nhiêu?",
+    "correct": "1.0",
+    "wrong": [
+      "0.0",
+      "0.5",
+      "-1.0"
+    ],
+    "explain": "Vì B_ij = A_ij + 100 là một mối quan hệ tuyến tính hoàn hảo đồng biến, hệ số tương quan Pearson giữa hai ma trận đạt giá trị tối đa là 1.0.",
+    "tip": "Quan hệ tuyến tính hoàn hảo đồng biến -> hệ số tương quan Pearson = 1.0."
+  },
+  {
+    "ref": "7.6",
+    "q": "Ma trận A = [10, 20, 30; 40, 50, 60; 70, 80, 90] có định thức det(A) = 0. Kết luận nào sau đây là chính xác về ma trận A?",
+    "correct": "Ma trận A là ma trận suy biến (Singular matrix) và không khả nghịch (Non-invertible)",
+    "wrong": [
+      "Ma trận A là ma trận trực giao và có ma trận nghịch đảo bằng chính chuyển vị của nó",
+      "Ma trận A là ma trận đối xứng và có tất cả các giá trị riêng đều mang dấu âm",
+      "Ma trận A có hạng ma trận cực đại bằng 3 và có vô số nghiệm phân biệt"
+    ],
+    "explain": "Vì định thức det(A) = 0 do các hàng phụ thuộc tuyến tính (cấp số cộng), ma trận A là ma trận suy biến và không thể khả nghịch (Non-invertible / Singular matrix).",
+    "tip": "det = 0 -> ma trận suy biến (singular), không khả nghịch (non-invertible)."
+  },
+  {
+    "ref": "7.6",
+    "q": "Vết ma trận (Trace) của ma trận A = [10, 20, 30; 40, 50, 60; 70, 80, 90] có giá trị bằng bao nhiêu?",
+    "correct": "150",
+    "wrong": [
+      "450",
+      "50",
+      "300"
+    ],
+    "explain": "Trace của ma trận A là tổng các phần tử trên đường chéo chính: 10 + 50 + 90 = 150.",
+    "tip": "Trace(A) = 10 + 50 + 90 = 150."
+  },
+  {
+    "ref": "7.6",
+    "q": "Khi thực hiện phép quay một điểm ảnh theo chiều kim đồng hồ một góc 60 độ quanh gốc tọa độ, góc quay θ trong ma trận xoay được quy ước giá trị bằng bao nhiêu?",
+    "correct": "θ = -60°",
+    "wrong": [
+      "θ = +60°",
+      "θ = +120°",
+      "θ = -30°"
+    ],
+    "explain": "Quy ước chuẩn trong toán học và đồ họa: xoay ngược chiều kim đồng hồ là góc dương, do đó xoay cùng chiều kim đồng hồ tương ứng góc âm θ = -60°.",
+    "tip": "Xoay cùng chiều kim đồng hồ mang dấu âm: θ = -60°."
+  },
+  {
+    "ref": "7.6",
+    "q": "Cho điểm ảnh có tọa độ ban đầu A(10, -10). Sau khi áp dụng phép thu phóng (Scaling) ảnh với hệ số tỉ lệ đồng dạng là 2, tọa độ mới A' là bao nhiêu?",
+    "correct": "A'(20, -20)",
+    "wrong": [
+      "A'(12, -8)",
+      "A'(5, -5)",
+      "A'(20, 10)"
+    ],
+    "explain": "Công thức thu phóng: x' = s_x * x và y' = s_y * y. Với s = 2, ta có x' = 2 * 10 = 20 và y' = 2 * (-10) = -20.",
+    "tip": "Scaling 2 lần: (10 * 2, -10 * 2) = (20, -20)."
+  },
+  {
+    "ref": "7.7",
+    "q": "Cho mảng mức xám 1D gồm các giá trị [1, 3, 4, 5, 7, 8, 7, 12]. Giá trị trung vị (Median) của dãy số này bằng bao nhiêu?",
+    "correct": "6.0",
+    "wrong": [
+      "5.875",
+      "7.0",
+      "5.0"
+    ],
+    "explain": "Sắp xếp dãy số tăng dần: [1, 3, 4, 5, 7, 7, 8, 12]. Vì có 8 phần tử (số chẵn), giá trị trung vị là trung bình cộng của 2 số ở giữa: (5 + 7) / 2 = 6.0.",
+    "tip": "Dãy sắp xếp: [1, 3, 4, 5, 7, 7, 8, 12] -> median = (5+7)/2 = 6.0."
+  },
+  {
+    "ref": "7.7",
+    "q": "Cho mảng mức xám [1, 3, 4, 5, 7, 8, 7, 12]. Giá trị yếu vị (Mode) của tập dữ liệu này là giá trị nào?",
+    "correct": "7",
+    "wrong": [
+      "1",
+      "5",
+      "12"
+    ],
+    "explain": "Yếu vị (Mode) là giá trị xuất hiện nhiều lần nhất trong tập dữ liệu. Số 7 xuất hiện 2 lần (nhiều nhất), các số khác chỉ xuất hiện 1 lần.",
+    "tip": "Mode = giá trị xuất hiện nhiều nhất (ở đây là 7)."
+  },
+  {
+    "ref": "7.7",
+    "q": "Trong kỹ thuật Cân bằng lược đồ xám (Histogram Equalization) cho ảnh 8-bit, mức xám mới của một điểm ảnh có xác suất tích lũy CDF = 0.500 được chuẩn hóa thành giá trị nào?",
+    "correct": "128",
+    "wrong": [
+      "64",
+      "191",
+      "255"
+    ],
+    "explain": "Công thức tính mức xám mới trong cân bằng histogram 8-bit là round(CDF * 255). Với CDF = 0.500, ta có 0.500 * 255 = 127.5 ≈ 128.",
+    "tip": "Mức xám mới = CDF * 255. 0.5 * 255 ≈ 128."
+  },
+  {
+    "ref": "7.7",
+    "q": "Cho dãy pixel A = [1, 3, 4, 5, 7, 8, 7, 12] với phần đệm zero padding ở hai đầu là [0, 1, 3, 4, 5, 7, 8, 7, 12, 0]. Khi áp dụng bộ lọc trung vị (Median Filter) kích thước cửa sổ 3x1 tại vị trí index 0 (cửa sổ gồm 0, 1, 3), giá trị đầu ra nhận được là bao nhiêu?",
+    "correct": "1",
+    "wrong": [
+      "0",
+      "3",
+      "2"
+    ],
+    "explain": "Cửa sổ 3 phần tử tại index 0 là [0, 1, 3]. Dãy đã sắp xếp là 0, 1, 3 nên giá trị trung vị ở giữa là 1.",
+    "tip": "Cửa sổ [0, 1, 3] có trung vị là 1."
+  },
+  {
+    "ref": "7.7",
+    "q": "Khi thực hiện phép tích chập (Convolution) giữa tín hiệu 1D với kernel sai phân K = [-1, 0, 1], nếu thiết lập bước nhảy Stride = 2 thì kết quả đầu ra có đặc điểm gì so với Stride = 1?",
+    "correct": "Kích thước mảng kết quả giảm đi một nửa do chỉ lấy giá trị ở các bước nhảy cách một phần tử",
+    "wrong": [
+      "Tất cả các giá trị kết quả được nhân đôi biên độ cường độ sáng",
+      "Mảng kết quả bị đảo ngược thứ tự từ phải qua trái",
+      "Toàn bộ các giá trị âm được tự động gán bằng 0"
+    ],
+    "explain": "Khi Stride = 2, phép toán chỉ lấy kết quả tại các bước nhảy cách 1 phần tử, làm giảm số lượng phần tử đầu ra đi khoảng một nửa.",
+    "tip": "Stride = 2 lấy cách 1 bước, làm giảm kích thước đầu ra một nửa."
+  },
+  {
+    "ref": "7.8",
+    "q": "Trong việc xấp xỉ đạo hàm bậc 1 của hàm số rời rạc, mặt nạ kernel nào sau đây đại diện cho phép tính sai phân trung tâm (Central Difference) f(x+1) - f(x-1)?",
+    "correct": "Kernel [-1, 0, 1]",
+    "wrong": [
+      "Kernel [0, -1, 1]",
+      "Kernel [-1, 1, 0]",
+      "Kernel [1, -2, 1]"
+    ],
+    "explain": "Kernel [-1, 0, 1] trả về công thức f(x+1) - f(x-1), đại diện cho độ dốc qua điểm trung tâm (sai phân trung tâm).",
+    "tip": "Sai phân trung tâm (Central): [-1, 0, 1]."
+  },
+  {
+    "ref": "7.8",
+    "q": "Mặt nạ kernel tích chập [0, -1, 1] thực hiện phép tính toán đạo hàm rời rạc nào theo định nghĩa giải tích?",
+    "correct": "Phép sai phân tiến (Forward Difference) f(x+1) - f(x)",
+    "wrong": [
+      "Phép sai phân lùi (Backward Difference) f(x) - f(x-1)",
+      "Phép sai phân trung tâm (Central Difference) f(x+1) - f(x-1)",
+      "Phép tính đạo hàm bậc hai Laplacian f(x+1) - 2f(x) + f(x-1)"
+    ],
+    "explain": "Tích chập với kernel [0, -1, 1] lật ngược lại trả về công thức f(x+1) - f(x), chính là sai phân tiến (Forward Difference).",
+    "tip": "Forward difference: kernel [0, -1, 1]."
+  },
+  {
+    "ref": "7.8",
+    "q": "Khi áp dụng bộ lọc sai phân trung tâm lên một dòng pixel, vị trí đường biên sắc nét nhất của đối tượng được xác định tại đâu?",
+    "correct": "Tại vị trí có giá trị thay đổi cường độ đạo hàm đạt đỉnh cực đại",
+    "wrong": [
+      "Tại vị trí có cường độ sáng đạt giá trị bằng không hoàn toàn",
+      "Tại vị trí có giá trị phương sai của cửa sổ lân cận nhỏ nhất",
+      "Tại vị trí có tần suất xuất hiện yếu vị Mode lớn nhất"
+    ],
+    "explain": "Biên (Edge) nằm ở vị trí có giá trị thay đổi cường độ đột ngột và mạnh nhất, tương ứng với đỉnh đạo hàm cực đại.",
+    "tip": "Đỉnh cực đại của đạo hàm chính là vị trí biên sắc nét nhất."
+  },
+  {
+    "ref": "7.8",
+    "q": "Trong công thức tính góc hướng gradient θ = arctan(I_y / I_x), hai đại lượng I_x và I_y biểu diễn thành phần nào?",
+    "correct": "Đạo hàm (gradient) cường độ sáng của ảnh theo trục X và trục Y",
+    "wrong": [
+      "Tọa độ gốc của hai tâm cụm trong thuật toán phân cụm K-Means",
+      "Hai giá trị riêng của ma trận nghịch đảo affine",
+      "Bán kính và góc quét của đường tròn trong không gian Hough"
+    ],
+    "explain": "I_x và I_y là đạo hàm riêng của cường độ sáng ảnh theo hai trục X và Y thu được từ các bộ lọc đạo hàm.",
+    "tip": "θ = arctan(I_y / I_x) là góc hướng gradient tạo bởi gradient trục Y và trục X."
+  },
+  {
+    "ref": "7.8",
+    "q": "Trong thuật toán Harris Corner Detector, khi giá trị điểm R nhận kết quả là một số âm đáng kể, điểm ảnh đó được phân loại là gì?",
+    "correct": "Biên (Edge)",
+    "wrong": [
+      "Góc (Corner)",
+      "Vùng phẳng (Flat)",
+      "Điểm nhiễu cô lập (Outlier)"
+    ],
+    "explain": "Trong Harris Corner Detector: khi R âm (một giá trị riêng rất lớn so với giá trị kia), điểm đó thuộc về đường Biên (Edge); khi R dương lớn là Góc (Corner); khi R nhỏ là Vùng phẳng (Flat).",
+    "tip": "Harris Corner: R dương lớn -> Góc (Corner); R âm -> Biên (Edge); R nhỏ -> Vùng phẳng (Flat)."
+  }
+]

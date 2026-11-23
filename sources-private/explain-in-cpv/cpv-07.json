@@ -1,0 +1,353 @@
+[
+ {
+  "id": 172,
+  "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+  "options": [
+   "To blur the image and reduce noise",
+   "To enhance the contrast of the image",
+   "To calculate the gradient of the image",
+   "To perform non-maximum suppression."
+  ],
+  "correct": [
+   "To blur the image and reduce noise"
+  ],
+  "slide_image": "cpv-slides-real/slide-196.png"
+ },
+ {
+  "id": 173,
+  "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+  "options": [
+   "Random sampling of the pixels in a range",
+   "Gradient descent of the pixels in a clustering",
+   "Mean of the pixels in a clustering",
+   "Mean of the pixels in a range"
+  ],
+  "correct": [
+   "Mean of the pixels in a range"
+  ],
+  "slide_image": "cpv-slides-real/slide-197.png"
+ },
+ {
+  "id": 174,
+  "question": "What is image processing generally focused on achieving?",
+  "options": [
+   "Generating textual information from images",
+   "Extracting useful information and enhancing images",
+   "Converting images into audio signals",
+   "Creating three-dimensional representations of images"
+  ],
+  "correct": [
+   "Extracting useful information and enhancing images"
+  ],
+  "slide_image": "cpv-slides-real/slide-198.png"
+ },
+ {
+  "id": 175,
+  "question": "What is a limitation of using region growing algorithms for image segmentation?",
+  "options": [
+   "Difficulty handling objects with disconnected parts.",
+   "Inability to segment images with multiple dominant colors.",
+   "High sensitivity to noise and slight intensity variations.",
+   "Significant computational cost for processing large images."
+  ],
+  "correct": [
+   "High sensitivity to noise and slight intensity variations."
+  ],
+  "slide_image": "cpv-slides-real/slide-199.png"
+ },
+ {
+  "id": 176,
+  "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+  "options": [
+   "Generating high-resolution images",
+   "Conducting pixel-level segmentation",
+   "Performing voting procedure for shape recognition",
+   "Enhancing color saturation in the image"
+  ],
+  "correct": [
+   "Performing voting procedure for shape recognition"
+  ],
+  "slide_image": "cpv-slides-real/slide-200.png"
+ },
+ {
+  "id": 177,
+  "question": "What is the primary goal of object detection in image and video processing?",
+  "options": [
+   "Recognizing objects without specifying their location",
+   "Identifying and locating instances of objects in an image or video",
+   "Describing the content of an image",
+   "Classifying images based on their visual features"
+  ],
+  "correct": [
+   "Identifying and locating instances of objects in an image or video"
+  ],
+  "slide_image": "cpv-slides-real/slide-201.png"
+ },
+ {
+  "id": 178,
+  "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+  "options": [
+   "It minimizes the sum of squared distances between points.",
+   "It maximizes the entropy between points.",
+   "It maximizes the sum of squared differences between points.",
+   "It minimizes the entropy of the aligned image."
+  ],
+  "correct": [
+   "It minimizes the sum of squared distances between points."
+  ],
+  "slide_image": "cpv-slides-real/slide-202.png"
+ },
+ {
+  "id": 179,
+  "question": "What is the primary purpose of global bundle adjustment in image processing?",
+  "options": [
+   "Estimating the location of 3D points",
+   "Correcting parallax in images",
+   "Optimizing camera poses",
+   "Aligning two images"
+  ],
+  "correct": [
+   "Optimizing camera poses"
+  ],
+  "slide_image": "cpv-slides-real/slide-203.png"
+ },
+ {
+  "id": 180,
+  "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+  "options": [
+   "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+   "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+   "Translate 2 along x axis, translate 1 along y axis",
+   "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+  ],
+  "correct": [
+   "Scale 2 and translate 1 along x axis, translate 2 along y axis"
+  ],
+  "slide_image": "cpv-slides-real/slide-205.png"
+ },
+ {
+  "id": 181,
+  "question": "What is the Nyquist frequency in the context of Fourier transform?",
+  "options": [
+   "Half of the sampling frequency",
+   "The highest frequency in the signal",
+   "The frequency at which the signal becomes periodic",
+   "The frequency corresponding to the imaginary part of the spectrum"
+  ],
+  "correct": [
+   "Half of the sampling frequency"
+  ],
+  "slide_image": "cpv-slides-real/slide-206.png"
+ },
+ {
+  "id": 182,
+  "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+  "options": [
+   "The phase spectrum is shifted.",
+   "The magnitude spectrum is scaled.",
+   "The frequency components are attenuated.",
+   "The Nyquist frequency is altered."
+  ],
+  "correct": [
+   "The phase spectrum is shifted."
+  ],
+  "slide_image": "cpv-slides-real/slide-207.png"
+ },
+ {
+  "id": 183,
+  "question": "What is the primary goal of feature-based alignment in image processing?",
+  "options": [
+   "Enhancing image resolution of an image patch",
+   "Removing noise from images",
+   "Estimating the motion between sets of matched points",
+   "Adjusting image brightness"
+  ],
+  "correct": [
+   "Estimating the motion between sets of matched points"
+  ],
+  "slide_image": "cpv-slides-real/slide-208.png"
+ },
+ {
+  "id": 184,
+  "question": "What is the purpose of the internal energy term in the Snake Model?",
+  "options": [
+   "To penalize large deformations of the contour",
+   "To attract the contour towards object boundaries",
+   "To perform non-maximum suppression",
+   "To adjust the intensity of edge pixels"
+  ],
+  "correct": [
+   "To penalize large deformations of the contour"
+  ],
+  "slide_image": "cpv-slides-real/slide-210.png"
+ },
+ {
+  "id": 185,
+  "question": "What is parallax in the context of imaging?",
+  "options": [
+   "Shift in the position of objects with a change in viewpoint",
+   "Image distortion due to lens imperfections",
+   "Chromatic aberration in images",
+   "The blurring effect caused by motion during image capture"
+  ],
+  "correct": [
+   "Shift in the position of objects with a change in viewpoint"
+  ],
+  "slide_image": "cpv-slides-real/slide-211.png"
+ },
+ {
+  "id": 186,
+  "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+  "options": [
+   "Iteratively estimating a model from a subset of inliers",
+   "Minimizing the sum of squared differences",
+   "Maximizing mutual information between images",
+   "Employing kernel density estimation for feature matching"
+  ],
+  "correct": [
+   "Iteratively estimating a model from a subset of inliers"
+  ],
+  "slide_image": "cpv-slides-real/slide-212.png"
+ },
+ {
+  "id": 187,
+  "question": "What is the use of the geometric transformations in real life?",
+  "options": [
+   "Align multiple images that were clicked at different times.",
+   "Correct images for avoiding lens distortion.",
+   "Images according to camera orientation.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-213.png"
+ },
+ {
+  "id": 188,
+  "question": "What is the main drawback of using a mean filter for noise reduction?",
+  "options": [
+   "It tends to blur edges and fine details.",
+   "It is computationally expensive.",
+   "It only works well with grayscale images.",
+   "It amplifies noise in the image."
+  ],
+  "correct": [
+   "It tends to blur edges and fine details."
+  ],
+  "slide_image": "cpv-slides-real/slide-214.png"
+ },
+ {
+  "id": 189,
+  "question": "What is the key characteristic of a band-pass filter?",
+  "options": [
+   "It allows a specific range of frequencies to pass through.",
+   "It allows only low frequencies to pass through.",
+   "It allows all frequencies to pass through.",
+   "It completely blocks all frequencies."
+  ],
+  "correct": [
+   "It allows a specific range of frequencies to pass through."
+  ],
+  "slide_image": "cpv-slides-real/slide-215.png"
+ },
+ {
+  "id": 190,
+  "question": "What is the purpose of the aperture in a digital camera lens?",
+  "options": [
+   "Control the amount of light entering the camera",
+   "Enhance the depth of field",
+   "Adjust the sharpness of the image",
+   "Determine the color temperature",
+   "None of the others"
+  ],
+  "correct": [
+   "Control the amount of light entering the camera"
+  ],
+  "slide_image": "cpv-slides-real/slide-216.png"
+ },
+ {
+  "id": 191,
+  "question": "What is the first step in resampling an image from MIP-image?",
+  "options": [
+   "Applying a high-quality filter",
+   "Computing the base 2 logarithm of the image",
+   "Estimating the scalar value of the resampling rate",
+   "Using a fractional pyramid level"
+  ],
+  "correct": [
+   "Estimating the scalar value of the resampling rate"
+  ],
+  "slide_image": "cpv-slides-real/slide-217.png"
+ },
+ {
+  "id": 192,
+  "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+  "options": [
+   "Saturation level and brightness similarity",
+   "Edge detection and contrast similarity",
+   "Gray-level similarity and texture similarity",
+   "Hue difference and pattern recognition"
+  ],
+  "correct": [
+   "Gray-level similarity and texture similarity"
+  ],
+  "slide_image": "cpv-slides-real/slide-218.png"
+ },
+ {
+  "id": 193,
+  "question": "What are the input and output of image processing?",
+  "options": [
+   "signal and image",
+   "signal only",
+   "image only",
+   "depends on input"
+  ],
+  "correct": [
+   "image only"
+  ],
+  "slide_image": "cpv-slides-real/slide-219.png"
+ },
+ {
+  "id": 194,
+  "question": "What are the fields related to computer vision?",
+  "options": [
+   "Image processing, graphics algorithms, Cognitive sciences.",
+   "Robotics, Neurobiology, Information retrieval",
+   "All of the others",
+   "Not of others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-220.png"
+ },
+ {
+  "id": 195,
+  "question": "What does RANSAC stand for in the context of computer vision?",
+  "options": [
+   "Random Sample Consensus",
+   "Random Assignment for Numerical Stability in Alignment and Classification",
+   "Robust Analysis for Noisy and Scattered Alignment of Components",
+   "Recursive Alignment and Sampling for Numerical Convergence"
+  ],
+  "correct": [
+   "Random Sample Consensus"
+  ],
+  "slide_image": "cpv-slides-real/slide-221.png"
+ },
+ {
+  "id": 196,
+  "question": "What does \"consensus\" in RANSAC refer to?",
+  "options": [
+   "The majority of inliers in the data set",
+   "The average value of the data points",
+   "The deviation of the model from the data",
+   "The total number of iterations performed"
+  ],
+  "correct": [
+   "The majority of inliers in the data set"
+  ],
+  "slide_image": "cpv-slides-real/slide-222.png"
+ }
+]

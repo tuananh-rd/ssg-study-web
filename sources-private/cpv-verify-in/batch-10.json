@@ -1,0 +1,1924 @@
+[
+ {
+  "png": "cpv-slides-png/slide-153.png",
+  "png_no": 153,
+  "html_no": 155,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-154.png",
+  "png_no": 154,
+  "html_no": 156,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-155.png",
+  "png_no": 155,
+  "html_no": 157,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-156.png",
+  "png_no": 156,
+  "html_no": 158,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-157.png",
+  "png_no": 157,
+  "html_no": 159,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-158.png",
+  "png_no": 158,
+  "html_no": 160,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-159.png",
+  "png_no": 159,
+  "html_no": 161,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 142,
+    "slide": 156,
+    "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+    "options": [
+     "Panoramas creating",
+     "Recognizing panoramas",
+     "Parallax removal",
+     "Bundle Adjustment"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-160.png",
+  "png_no": 160,
+  "html_no": 162,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 143,
+    "slide": 157,
+    "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+    "options": [
+     "Object detection",
+     "Object locating",
+     "Object recognition",
+     "Object tracking"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-161.png",
+  "png_no": 161,
+  "html_no": 163,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 144,
+    "slide": 158,
+    "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+    "options": [
+     "Cylindrical coordinates",
+     "Cartesian coordinates",
+     "Spherical coordinates",
+     "Polar coordinates"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-162.png",
+  "png_no": 162,
+  "html_no": 164,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 145,
+    "slide": 159,
+    "question": "In image processing, what is the next step after feature detection?",
+    "options": [
+     "Preprocessing",
+     "Feature description",
+     "Feature combination",
+     "Noise remove( filters)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-163.png",
+  "png_no": 163,
+  "html_no": 165,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 146,
+    "slide": 160,
+    "question": "In watershed segmentation, what does a watershed boundary represent?",
+    "options": [
+     "Object edges",
+     "Object centroids",
+     "Valleys in the image",
+     "Image pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-164.png",
+  "png_no": 164,
+  "html_no": 166,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 147,
+    "slide": 161,
+    "question": "In Fourier transform, what is the abbreviation for DFT?",
+    "options": [
+     "Display Fourier Transform",
+     "Distribute Fourier Transform",
+     "Discrete Fourier Transform",
+     "Discontinous Fourier Transform"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 153,
+    "slide": 167,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+     "|R| is small",
+     "|R| is large",
+     "|R| < 0",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-165.png",
+  "png_no": 165,
+  "html_no": 167,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 148,
+    "slide": 162,
+    "question": "In the context of photometric image formation, what is the Lambertian reflectance model used to describe?",
+    "options": [
+     "Diffuse reflection",
+     "Specular reflection",
+     "Refraction",
+     "Translucency"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 153,
+    "slide": 167,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+     "|R| is small",
+     "|R| is large",
+     "|R| < 0",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 154,
+    "slide": 168,
+    "question": "In the technique, a sparse set of features are detected in one image and matched with the features in the other image. A transformation is then calculated based on these matched features that warp one image onto the other. What is the exact name of this technique?",
+    "options": [
+     "Feature-Based alignment",
+     "Feature-Based detection",
+     "Feature-Based recognition",
+     "Feature-Based filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-166.png",
+  "png_no": 166,
+  "html_no": 168,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 149,
+    "slide": 163,
+    "question": "In K mean segmentation, what does \"K\" represent?",
+    "options": [
+     "Number of clusters",
+     "Number of nearest neighbors",
+     "The kernel size of each cluster",
+     "Kernels in an image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 153,
+    "slide": 167,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+     "|R| is small",
+     "|R| is large",
+     "|R| < 0",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 154,
+    "slide": 168,
+    "question": "In the technique, a sparse set of features are detected in one image and matched with the features in the other image. A transformation is then calculated based on these matched features that warp one image onto the other. What is the exact name of this technique?",
+    "options": [
+     "Feature-Based alignment",
+     "Feature-Based detection",
+     "Feature-Based recognition",
+     "Feature-Based filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 155,
+    "slide": 169,
+    "question": "In K-Means segmentation, how are pixels grouped into clusters?",
+    "options": [
+     "Based on pixel intensity",
+     "Based on spatial proximity",
+     "Based on the color histogram",
+     "By gradient magnitude"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-167.png",
+  "png_no": 167,
+  "html_no": 169,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 150,
+    "slide": 164,
+    "question": "In the Harris Corner Detector, what property of corners is exploited for detection?",
+    "options": [
+     "High gradient magnitude",
+     "High pixel intensity",
+     "Low gradient magnitude",
+     "Low pixel intensity"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 153,
+    "slide": 167,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+     "|R| is small",
+     "|R| is large",
+     "|R| < 0",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 154,
+    "slide": 168,
+    "question": "In the technique, a sparse set of features are detected in one image and matched with the features in the other image. A transformation is then calculated based on these matched features that warp one image onto the other. What is the exact name of this technique?",
+    "options": [
+     "Feature-Based alignment",
+     "Feature-Based detection",
+     "Feature-Based recognition",
+     "Feature-Based filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 155,
+    "slide": 169,
+    "question": "In K-Means segmentation, how are pixels grouped into clusters?",
+    "options": [
+     "Based on pixel intensity",
+     "Based on spatial proximity",
+     "Based on the color histogram",
+     "By gradient magnitude"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 156,
+    "slide": 170,
+    "question": "In digital cameras, what does the ISO setting control?",
+    "options": [
+     "Sensor sensitivity to light",
+     "Shutter speed",
+     "Aperture size",
+     "Autofocus speed",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-168.png",
+  "png_no": 168,
+  "html_no": 170,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 151,
+    "slide": 165,
+    "question": "In Fourier transform, which of the following operators in signal domain will become the product operator of individual transformed functions in transformed signal domain?",
+    "options": [
+     "Convolution",
+     "Correlation",
+     "Multiplication",
+     "Sum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 152,
+    "slide": 166,
+    "question": "In which type of object tracking method is the moving object represented by an embryonic object region, with emphasis on object shape and appearance?",
+    "options": [
+     "Kernel Tracking",
+     "Point Tracking",
+     "Silhouette Tracking",
+     "Template Matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 153,
+    "slide": 167,
+    "question": "In Harris corner detector, after computing score R which determine if a window can contain a corner or not. When is the window flat?",
+    "options": [
+     "|R| is small",
+     "|R| is large",
+     "|R| < 0",
+     "cannot determine |R|"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 154,
+    "slide": 168,
+    "question": "In the technique, a sparse set of features are detected in one image and matched with the features in the other image. A transformation is then calculated based on these matched features that warp one image onto the other. What is the exact name of this technique?",
+    "options": [
+     "Feature-Based alignment",
+     "Feature-Based detection",
+     "Feature-Based recognition",
+     "Feature-Based filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 155,
+    "slide": 169,
+    "question": "In K-Means segmentation, how are pixels grouped into clusters?",
+    "options": [
+     "Based on pixel intensity",
+     "Based on spatial proximity",
+     "Based on the color histogram",
+     "By gradient magnitude"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 156,
+    "slide": 170,
+    "question": "In digital cameras, what does the ISO setting control?",
+    "options": [
+     "Sensor sensitivity to light",
+     "Shutter speed",
+     "Aperture size",
+     "Autofocus speed",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 157,
+    "slide": 171,
+    "question": "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: multi-view based, template-based. It refers to the object's shape and appearance. What is the exact name of this approach for object tracking? Choose the best correct answer",
+    "options": [
+     "Kernel Tracking",
+     "Point tracking",
+     "Contour tracking",
+     "Features tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ }
+]

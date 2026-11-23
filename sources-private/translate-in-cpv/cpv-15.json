@@ -1,0 +1,152 @@
+[
+ {
+  "id": 281,
+  "question": "Object tracking takes an approach that uses point tracking techniques. So how is the approach to using point tracking understood? Choose the best answer",
+  "options": [
+   "Objects detected in consecutive frames are represented by object deterministic, probabilistic methods, and the association of the object is based on the previous object state which can include object position and motion.",
+   "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: a multi- view based, template-based.",
+   "It refers to the object's shape and appearance.",
+   "This approach requires an external mechanism to detect the object in every frame."
+  ]
+ },
+ {
+  "id": 282,
+  "question": "The most difficult part of getting a fully automated stitching algorithm to work is deciding which pairs of images actually correspond to the same parts of the scene. What is the best solution to solve these issues? Choose the best correct answer",
+  "options": [
+   "Using a feature-based approach to remove objects from image frames. Then we get a completed panoramas image.",
+   "Using a direct pixel-based comparison between the registered images to determine if they actually are different views of the same scene.",
+   "To find the similarity of adjacent images, we determine whether the properties match or not, using the image combination method.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 283,
+  "question": "The object tracking level can be divided into two basic types. The first type is Single Object Tracking (SOT). Choose the best description of Single Object Tracking (SOT)",
+  "options": [
+   "It creates bounding boxes that are given to the tracker based on the first frame of the input image.",
+   "Single Object Tracking is also sometimes known as Visual Object Tracking.",
+   "SOT implies that one singular object is tracked, even in environments involving other objects.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 284,
+  "question": "There are many applications for image alignment, such as tracking objects on video, motion analysis, and many other tasks of computer vision. How do you understand image alignment?",
+  "options": [
+   "It is the image that has been created using elements from a variety of different pictures.",
+   "Image alignment is the process of matching one image called a template with another image.",
+   "The images are more paired together as a collection of stand-alone images that may follow a theme or story.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 285,
+  "question": "Suppose we have two images at two different times: I(x,y,t) and I(x,y,t+1). How to estimate pixel motion from image I(x,y,t) to I(x,y,t+1)?",
+  "options": [
+   "Put two images on top of each other and calculate the closest distance of I(x,y,t) and I(x,y,t+1)",
+   "Given a pixel in I(x,y,t), look for nearby pixels of the same color in I(x,y,t+1)",
+   "Use the interpolation method to estimate the next positions of I(x,y,t).",
+   "Based on the color of each pixel at the position I(x,y,t) relative to the overall image at time t+1"
+  ]
+ },
+ {
+  "id": 286,
+  "question": "The optical flow problem for estimating pixel motion is",
+  "options": [
+   "To find the closed pixels at time t+1 which have the same color at time t",
+   "To find the faraway pixels at time t which have the same color at time t+1",
+   "To find the faraway pixels at time t+1 which have the same color at time t",
+   "To find the closed pixels at time t which have the same color at time t+1"
+  ]
+ },
+ {
+  "id": 287,
+  "question": "Translation is:",
+  "options": [
+   "Shrinking or expanding the image in a horizontal and/or vertical direction",
+   "Shifting the image",
+   "Rotating the images",
+   "None of the above"
+  ]
+ },
+ {
+  "id": 288,
+  "question": "The input of computer vision is an image. So what is the output of computer vision?",
+  "options": [
+   "The output is the interpretation of an image.",
+   "The output is a processed image.",
+   "The output is the image that has been recovered with the parts that have been noisy.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 289,
+  "question": "With feature-based alignment, how do we determine corresponding features between images?",
+  "options": [
+   "By comparing feature descriptors, which capture the local structure around each feature.",
+   "By directly comparing pixel intensities in local neighborhoods around each feature.",
+   "By manually selecting matching features based on visual similarity.",
+   "By prioritizing features closest to the image center for alignment."
+  ]
+ },
+ {
+  "id": 290,
+  "question": "We are using the correlation; how can the convolution be computed?",
+  "options": [
+   "No difference exists, convolution and correlation produce the same results.",
+   "By rotating the kernel 180 degree around its center before performing the correlation operation.",
+   "We can directly use the correlation result without any modifications.",
+   "By dividing the results of correlation by a constant factor."
+  ]
+ },
+ {
+  "id": 291,
+  "question": "With Hough Transform, which situation gains the most from using line detection?",
+  "options": [
+   "Segmenting and analyzing individual characters in handwritten text.",
+   "Identifying and classifying different types of flowers based on color and texture.",
+   "Detecting lane markings on a road in an image for autonomous driving applications.",
+   "Blur detection and image sharpening techniques that rely on accurate edge information."
+  ]
+ },
+ {
+  "id": 292,
+  "question": "Which of the following statements best describes the relationship between convolution and Fourier transform in image processing?",
+  "options": [
+   "Convolution in the time domain corresponds to multiplication in the frequency domain.",
+   "Convolution in the time domain corresponds to addition in the frequency domain.",
+   "Fourier transform in the time domain corresponds to convolution in the frequency domain.",
+   "They do not have any relationship."
+  ]
+ },
+ {
+  "id": 293,
+  "question": "In image processing, which of the following statements most accurately explains the relationship between convolution and the Fourier transform?",
+  "options": [
+   "Convolution in the time domain corresponds to multiplication in the frequency domain.",
+   "Convolution in the time domain corresponds to addition in the frequency domain.",
+   "Fourier transform in the time domain corresponds to convolution in the frequency domain.",
+   "They do not have any relationship."
+  ]
+ },
+ {
+  "id": 294,
+  "question": "Why is Difference of Gaussian (DoG) used instead of Normalized Laplacian of Gaussian (NLoG)?",
+  "options": [
+   "DoG approximates NLoG but more efficient calculation.",
+   "DoG is better than NLoG and more efficient calculation.",
+   "DoG is better than NLoG although having not efficient calculation.",
+   "DoG approximates NLoG even though having the same calculation requirement."
+  ]
+ },
+ {
+  "id": 295,
+  "question": "The watershed algorithm in segmentation is analogous to:",
+  "options": [
+   "Filling a landscape with water, where catchment basins represent objects.",
+   "Merging adjacent regions with similar intensity values.",
+   "Identifying edges based on the gradient magnitude in the image.",
+   "Splitting an image into a predefined number of segments."
+  ]
+ }
+]

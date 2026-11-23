@@ -1,0 +1,327 @@
+[
+ {
+  "id": 332,
+  "question": "People usually compare themselves with friends or co-workers rather than comparing to industry or national averages. What is this comparison called in situational factors?",
+  "options": [
+   "Number",
+   "Local",
+   "Proximity to a standard",
+   "Self-relevant"
+  ],
+  "correct": [
+   "Local"
+  ]
+ },
+ {
+  "id": 333,
+  "question": "People can claim that they can live independently and separately but they actually have",
+  "options": [
+   "A need to belong",
+   "A need to be included",
+   "A need to talk to someone",
+   "None of these correct"
+  ],
+  "correct": [
+   "A need to belong"
+  ]
+ },
+ {
+  "id": 334,
+  "question": "Pay raises, promotions, desirable job assignments, more responsibility, new equipment are example of:",
+  "options": [
+   "Reward power",
+   "Legitimate",
+   "Expert power",
+   "Coercive power"
+  ],
+  "correct": [
+   "Reward power"
+  ]
+ },
+ {
+  "id": 335,
+  "question": "Regarding professional element, which format for electronic documents is mostly suggested using to preserve content location and avoid any inadvertent changes when it is displayed?",
+  "options": [
+   "Excel",
+   "Word",
+   "Power Point",
+   "PDF"
+  ],
+  "correct": [
+   "PDF"
+  ]
+ },
+ {
+  "id": 336,
+  "question": "Signs of stress include ...",
+  "options": [
+   "Heart pounding",
+   "Shortness of breath",
+   "Upset stomach",
+   "All are correct"
+  ],
+  "correct": [
+   "All are correct"
+  ]
+ },
+ {
+  "id": 337,
+  "question": "Strategy (ies) to develop yourself as a critical thinker",
+  "options": [
+   "Redefine the way you see things",
+   "Reflect and practice",
+   "Express yourself",
+   "All are correct"
+  ],
+  "correct": [
+   "All are correct"
+  ]
+ },
+ {
+  "id": 338,
+  "question": "Specific revision requires attention to the following: format, facts, names, spelling, punctuation, and",
+  "options": [
+   "Content",
+   "Grammar",
+   "Organization",
+   "Style"
+  ],
+  "correct": [
+   "Grammar"
+  ]
+ },
+ {
+  "id": 339,
+  "question": "Susan is a new staff of IT team 3 in FPT Software company. Her senior told her to prepare a report to instruct their Japanese customer how the new app works.\nWhich type of report is that?",
+  "options": [
+   "Technical",
+   "Financial",
+   "Feasibility",
+   "Needs assessment"
+  ],
+  "correct": [
+   "Technical"
+  ]
+ },
+ {
+  "id": 340,
+  "question": "Some people consider social norms and the opinions of others to help justify their own positions in life, some others consider ____ to perform better.",
+  "options": [
+   "opinions and similarity",
+   "performance and abilities",
+   "opinions and values",
+   "similarity and friendliness"
+  ],
+  "correct": [
+   "performance and abilities"
+  ]
+ },
+ {
+  "id": 341,
+  "question": "To use THIS power: Punish in private, Inform subordinates of rules and penalties or THIS power can be used without jeopardizing personal integrity.",
+  "options": [
+   "Reward power",
+   "Legitimate power",
+   "Evaluation criteria",
+   "Coercive power"
+  ],
+  "correct": [
+   "Coercive power"
+  ]
+ },
+ {
+  "id": 342,
+  "question": "To produce a good opening in a persuasive message, you should keep it",
+  "options": [
+   "Neutral",
+   "Negative and impersonal",
+   "Impersonal",
+   "Positive and personal"
+  ],
+  "correct": [
+   "Positive and personal"
+  ]
+ },
+ {
+  "id": 343,
+  "question": "Thought and thinking can be understood as _____ within the mind.",
+  "options": [
+   "Patterns - Systems and Schemes",
+   "Order and Structure",
+   "Act and Control",
+   "Analyze and Evaluate"
+  ],
+  "correct": [
+   "Patterns - Systems and Schemes"
+  ]
+ },
+ {
+  "id": 344,
+  "question": "The study of body movements is key to understanding nonverbal communication, called",
+  "options": [
+   "Kinesics",
+   "Chronemics",
+   "Proxemics",
+   "Haptics"
+  ],
+  "correct": [
+   "Kinesics"
+  ]
+ },
+ {
+  "id": 345,
+  "question": "The person in charge of conducting a meeting is the.........",
+  "options": [
+   "Group leader",
+   "Dominator",
+   "Chairperson",
+   "Recorder"
+  ],
+  "correct": [
+   "Chairperson"
+  ]
+ },
+ {
+  "id": 346,
+  "question": "The most important section of a proposal is the",
+  "options": [
+   "Cost",
+   "Solution",
+   "Purpose statement",
+   "Background"
+  ],
+  "correct": [
+   "Solution"
+  ]
+ },
+ {
+  "id": 347,
+  "question": "The written record of a group's discussion and activities is _____",
+  "options": [
+   "a meeting minute",
+   "a report",
+   "an agenda",
+   "a note"
+  ],
+  "correct": [
+   "a meeting minute"
+  ]
+ },
+ {
+  "id": 348,
+  "question": "The purpose of a business proposal is to ....",
+  "options": [
+   "raise a problem",
+   "reflect on work",
+   "narrate what you have done",
+   "make a persuasive appeal"
+  ],
+  "correct": [
+   "make a persuasive appeal"
+  ]
+ },
+ {
+  "id": 349,
+  "question": "Team characteristics should include one of following factors",
+  "options": [
+   "Interaction",
+   "Short-term relation",
+   "Act independently",
+   "Unreacted members"
+  ],
+  "correct": [
+   "Interaction"
+  ]
+ },
+ {
+  "id": 350,
+  "question": "The need for self-evaluation experiment has shown that people come to know about themselves by",
+  "options": [
+   "having positive attitude in life",
+   "comparing with others",
+   "seeking happiness",
+   "feeling complete"
+  ],
+  "correct": [
+   "comparing with others"
+  ]
+ },
+ {
+  "id": 351,
+  "question": "These conflicts, which relate to questions about what choices to make in a given situation, rest on differing views of the facts",
+  "options": [
+   "Conflicts of substance",
+   "Conflicts of process",
+   "Conflicts of misperceived differences",
+   "None of these"
+  ],
+  "correct": [
+   "Conflicts of substance"
+  ]
+ },
+ {
+  "id": 352,
+  "question": "\"The power of a strong individual in a group of equals, the power not to command, but to suggest and be listened to, to begin something and see it happen\" can be used to describe which type of power?",
+  "options": [
+   "Power-from-within",
+   "Power-with",
+   "Power-over",
+   "None of these answers"
+  ],
+  "correct": [
+   "Power-with"
+  ]
+ },
+ {
+  "id": 353,
+  "question": "The most important part of an application letter is the:",
+  "options": [
+   "action-promoting close",
+   "attention-getting opening",
+   "logical explanation",
+   "summary of qualifications"
+  ],
+  "correct": [
+   "attention-getting opening"
+  ]
+ },
+ {
+  "id": 354,
+  "question": "The \"Psychomotor Domain\" of learning skills means",
+  "options": [
+   "What you should know",
+   "What you should care about",
+   "What you should be able to do",
+   "None of these is correct"
+  ],
+  "correct": [
+   "What you should be able to do"
+  ]
+ },
+ {
+  "id": 355,
+  "question": "The word \"power\" literally means:",
+  "options": [
+   "\"To be able to\"",
+   "\"The influence\"",
+   "\"The strength\"",
+   "None of these answers"
+  ],
+  "correct": [
+   "\"To be able to\""
+  ]
+ },
+ {
+  "id": 356,
+  "question": "Your cover letter should be addressed to:",
+  "options": [
+   "The company's name",
+   "A specific person",
+   "The company's president",
+   "Any manager related to the company"
+  ],
+  "correct": [
+   "A specific person"
+  ]
+ }
+]

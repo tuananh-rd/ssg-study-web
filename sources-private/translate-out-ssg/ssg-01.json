@@ -1,0 +1,190 @@
+{
+  "1": {
+    "q": "Phát biểu nào sau đây thể hiện trí tuệ cảm xúc (emotional intelligence) cao?",
+    "options": [
+      "\"Họ đang thiếu tôn trọng tôi.\"",
+      "\"Tại sao mình lại kém cỏi trong việc này như vậy?\"",
+      "\"Tôi cảm thấy không được lắng nghe khi bị ngắt lời trong các cuộc họp.\"",
+      "\"Bạn luôn phớt lờ ý kiến của tôi\"",
+      "\"Tôi ổn\""
+    ]
+  },
+  "2": {
+    "q": "Trong một dự án nhóm không có trưởng nhóm rõ ràng, ai là người chịu trách nhiệm thiết lập sự an toàn tâm lý (psychological safety)?",
+    "options": [
+      "Giảng viên của khóa học.",
+      "Mọi thành viên trong nhóm.",
+      "Thành viên có nhiều kỹ năng chuyên môn kỹ thuật nhất trong nhóm.",
+      "Người đã tạo bản điều lệ nhóm (team charter)."
+    ]
+  },
+  "3": {
+    "q": "Điều gì là không phù hợp khi thuyết trình khóa luận tốt nghiệp?",
+    "options": [
+      "Mặc một bộ suit vừa vặn hoặc kết hợp váy và áo blazer trang trọng với gam màu trung tính",
+      "Đứng ngay trước các slide và đọc nội dung văn bản từ màn hình",
+      "Đứng ở một góc hơi nghiêng giữa màn hình thuyết trình và bàn hội đồng",
+      "Cầm nhẹ bút trình chiếu (slide clicker) trong một tay, thả xuôi theo người khi không sử dụng"
+    ]
+  },
+  "4": {
+    "q": "Trong trường hợp sau, hành động nào thể hiện giai đoạn thiết lập tiêu chí (establishing criteria) trong quy trình giải quyết vấn đề?\n\"Một nhóm sinh viên đang làm bài thuyết trình tiếp thị (marketing) chiếm 30% điểm tổng kết. Hùng đã hoàn toàn im lặng trong 4 ngày và chưa làm 3 slide được phân công.\"",
+    "options": [
+      "Nhóm tìm hiểu lý do tại sao vấn đề này lại xảy ra.",
+      "Nhóm xác định chính xác vấn đề.",
+      "Nhóm quyết định một giải pháp \"tốt\" cần phải như thế nào.",
+      "Các thành viên trong nhóm cùng động não (brainstorm) tìm ra một số hướng đi khác nhau.",
+      "Nhóm kiểm tra xem liệu giải pháp có thực sự hiệu quả hay không."
+    ]
+  },
+  "5": {
+    "q": "Mục đích chính của giai đoạn \"suy ngẫm\" (reflection) khi vượt qua các rào cản trong giao tiếp bằng văn bản là gì?",
+    "options": [
+      "Thay đổi ngay lập tức các từ bằng từ đồng nghĩa để đảm bảo số lượng từ tổng thể cao hơn.",
+      "Tự xem xét lại các điểm mấu chốt trong tâm trí và đảm bảo từng chi tiết cụ thể đều phục vụ đúng mục đích.",
+      "Phân phát bản thảo sơ bộ cho số đông người đọc để nhận phản hồi trực tiếp bằng lời nói ngay lập tức.",
+      "Đảm bảo rằng tài liệu hoàn thiện sử dụng số lượng câu phức tối đa."
+    ]
+  },
+  "6": {
+    "q": "Điều gì là phù hợp khi gửi email cho giảng viên để thông báo về việc vắng mặt trong buổi học?",
+    "options": [
+      "Thông báo rõ ràng về ngày vắng mặt và đưa ra lý do ngắn gọn, lịch sự",
+      "Sử dụng tiếng lóng (slang)",
+      "Gửi thông báo sau buổi vắng mặt mà không có lý do chính đáng",
+      "Xin được điểm danh là \"Có mặt\"",
+      "Chia sẻ các thông tin quá mang tính cá nhân"
+    ]
+  },
+  "7": {
+    "q": "Bạn cần viết một đề xuất yêu cầu ban điều hành công ty phê duyệt ngân sách để chuyển đổi đội ngũ hỗ trợ khách hàng sang hệ thống chatbot vận hành bằng AI. Câu hỏi nào là không bắt buộc (tùy chọn) khi xác định mục đích tài liệu của bạn?",
+    "options": [
+      "\"Điều này diễn ra khi nào?\"",
+      "\"Thông điệp cốt lõi và lời kêu gọi hành động (call to action) là gì?\"",
+      "\"Tại sao điều này lại cấp thiết ngay lúc này?\"",
+      "\"Tài liệu này sẽ được lưu trữ và hoạt động ở đâu?\"",
+      "\"Giọng văn và cấu trúc nên được định dạng như thế nào?\""
+    ]
+  },
+  "8": {
+    "q": "Một trưởng nhóm cần thông báo với nhóm của mình rằng họ đã không xin được kinh phí cho dự án. Nét mặt nào là không phù hợp khi thông báo tin tức này?",
+    "options": [
+      "Ánh nhìn tập trung và kiên định",
+      "Mỉm cười hoặc cười khúc khích lo lắng",
+      "Gật đầu điềm tĩnh tiếp nhận",
+      "Giao tiếp bằng mắt nghiêm túc và thấu cảm",
+      "Lông mày thả lỏng"
+    ]
+  },
+  "9": {
+    "q": "Khi một diễn giả điều hướng các sự thật, ý tưởng hoặc quan điểm nhằm cố ý đánh vào những nỗi bất an hoặc sợ hãi vốn có của khán giả vì lợi ích riêng của mình, họ đang thực hiện hành vi phi đạo đức nào?",
+    "options": [
+      "Ép buộc (Coercion)",
+      "Lừa dối (Deception)",
+      "Thao túng (Manipulation)",
+      "Hối lộ (Bribery)"
+    ]
+  },
+  "10": {
+    "q": "Điều gì KHÔNG làm cho một đề xuất dự án xã hội trở nên thuyết phục hơn?",
+    "options": [
+      "Bằng chứng",
+      "Sự minh bạch về tài chính",
+      "Kế hoạch thực tế",
+      "Đánh giá cẩn thận các rủi ro",
+      "Các mục tiêu to lớn thái quá"
+    ]
+  },
+  "11": {
+    "q": "\"Kỹ năng cứng\" (hard skills) khác biệt như thế nào so với \"kỹ năng mềm\" (soft skills)?",
+    "options": [
+      "Kỹ năng cứng rất khó học, trong khi kỹ năng mềm có thể thành thạo chỉ trong một buổi hội thảo kéo dài một buổi chiều.",
+      "Kỹ năng cứng chỉ áp dụng cho sản xuất vật chất, trong khi kỹ năng mềm chỉ áp dụng riêng cho các vị trí văn phòng.",
+      "Kỹ năng cứng là các năng lực chuyên môn hoặc kỹ thuật, trong khi kỹ năng mềm là các phẩm chất chung, có thể chuyển giao được như làm việc nhóm.",
+      "Kỹ năng cứng biến mất theo thời gian, trong khi kỹ năng mềm vẫn cố định vĩnh viễn mà không cần luyện tập."
+    ]
+  },
+  "12": {
+    "q": "Những phương pháp chính giúp học được cách viết hiệu quả trong kinh doanh (business writing) là gì?",
+    "options": [
+      "Thông qua việc xem các bài thuyết trình bằng lời nói và quan sát cử chỉ hình thể của các diễn giả giàu kinh nghiệm.",
+      "Thông qua việc ghi nhớ danh sách từ vựng phong phú và áp dụng các khuôn khổ lý thuyết phức tạp.",
+      "Thông qua việc tránh mọi chỉnh sửa và hoàn toàn tập trung vào việc tạo ra bản nháp đầu tiên hoàn hảo ngay lập tức.",
+      "Thông qua việc luyện tập liên tục, đọc các tài liệu chuyên nghiệp và tiếp nhận phản hồi mang tính xây dựng."
+    ]
+  },
+  "13": {
+    "q": "Bạn đang bảo vệ cho chính sách làm việc từ xa (remote-work). Bạn nêu rõ luận điểm của mình, nhưng ban giám đốc rất hoài nghi về năng suất làm việc của nhân viên tại nhà. Bạn nên xây dựng lập luận của mình như thế nào để xử lý việc này một cách hiệu quả?",
+    "options": [
+      "Bỏ qua sự hoài nghi của họ để duy trì giọng điệu tự tin và chỉ tập trung vào các lợi ích của làm việc từ xa.",
+      "Tóm gọn toàn bộ lập luận thành một bản tóm tắt ngắn để ban giám đốc không có thời gian tìm ra sơ hở.",
+      "Nêu rõ luận đề, giải quyết các mối lo ngại của ban giám đốc như những phản biện, và cung cấp bằng chứng về cách bạn sẽ quản lý các rủi ro về năng suất.",
+      "Diễn đạt lại các thất bại trong quản lý trước đây của ban giám đốc bằng lời lẽ của bạn để chứng minh rằng sự hoài nghi hiện tại của họ là không hợp lý."
+    ]
+  },
+  "14": {
+    "q": "Điều gì KHÔNG phải là kết quả của trí tuệ cảm xúc (emotional intelligence) cao?",
+    "options": [
+      "Khả năng đưa ra những quyết định đúng đắn",
+      "Các mối quan hệ tốt đẹp hơn",
+      "Sự hợp tác chặt chẽ hơn",
+      "Không có cảm xúc tiêu cực",
+      "Mức độ thấu cảm cao"
+    ]
+  },
+  "15": {
+    "q": "Bạn đã diễn đạt lại mô hình kinh doanh của một bài báo nghiên cứu bằng lời văn của mình và có độ dài tương đương bản gốc. Để tránh đạo văn (plagiarism), bước thiết yếu tiếp theo của bạn là gì?",
+    "options": [
+      "Cô đọng văn bản hơn nữa thành một bản tóm tắt.",
+      "Ghi nhận nguồn gốc một cách phù hợp.",
+      "Thay đổi toàn bộ thiết kế tài liệu và các tiêu đề.",
+      "Giải quyết các lập luận phản bác về mô hình kinh doanh."
+    ]
+  },
+  "16": {
+    "q": "Mục đích chính của một bài thuyết trình mang tính thuyết phục (persuasive presentation) là gì?",
+    "options": [
+      "Tạo ra một cuộc trò chuyện hấp dẫn thu hút khán giả đồng thời khơi dậy sự tò mò.",
+      "Tác động đến niềm tin, thái độ hoặc hành động của khán giả thông qua các lập luận và lời kêu gọi được cấu trúc cẩn thận.",
+      "Cung cấp thông tin gây tranh cãi và để khán giả tự rút ra kết luận độc lập.",
+      "Kể một câu chuyện cá nhân hấp dẫn chạm đến cảm xúc của khán giả mà không nhất thiết đòi hỏi hành động."
+    ]
+  },
+  "17": {
+    "q": "Đạo văn (plagiarism) xảy ra khi nào?",
+    "options": [
+      "Khi bạn diễn đạt lại ý tưởng của một tác giả khác bằng lời văn của mình và có cung cấp trích dẫn.",
+      "Khi bạn cô đọng một bài viết dài thành một bản tóm tắt ngắn có ghi nhận nguồn thích hợp.",
+      "Khi bạn sắp xếp các ý chính trước khi bắt đầu viết bản nháp.",
+      "Khi bạn sử dụng từ ngữ hoặc ý tưởng của người khác như của chính mình."
+    ]
+  },
+  "18": {
+    "q": "Điều gì KHÔNG thể hiện đạo đức kinh doanh cần giữ vững trong văn phong chuyên nghiệp?",
+    "options": [
+      "Sự minh bạch tuyệt đối",
+      "Bóp méo dữ liệu",
+      "Phân biệt rõ ràng giữa sự thật và quan điểm",
+      "Thể chủ động và ngôn ngữ rõ ràng",
+      "Thể hiện sự tôn trọng đối với độc giả"
+    ]
+  },
+  "19": {
+    "q": "Khi xây dựng một Kế hoạch Hành động Nghề nghiệp (Career Action Plan) toàn diện, phương pháp hiệu quả nhất để cấu trúc các mục tiêu và hành động là gì?",
+    "options": [
+      "Chỉ tập trung hoàn toàn vào các mục tiêu dài hạn 20 năm trong khi bỏ qua các đầu việc cần hành động ngay lập tức.",
+      "Liệt kê càng nhiều mục tiêu không thể đo lường càng tốt mà không ấn định ngày hoàn thành thực tế hay thông số thực thi nào.",
+      "Sao chép chính xác kế hoạch hành động của một chuyên gia cấp cao để đảm bảo các chỉ số theo dõi đồng nhất.",
+      "Thiết lập các mục tiêu ngắn hạn song song với các mục tiêu trung hạn, tất cả đều được hỗ trợ bởi các bước hành động cụ thể, khả thi."
+    ]
+  },
+  "20": {
+    "q": "Tỷ lệ phần trăm các công ty trong nhóm Fortune 1000 sử dụng các nhóm tự quản (self-managing teams) là bao nhiêu?",
+    "options": [
+      "9%.",
+      "60%.",
+      "79%.",
+      "91%."
+    ]
+  }
+}

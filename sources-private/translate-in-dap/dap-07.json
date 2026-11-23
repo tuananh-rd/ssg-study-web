@@ -1,0 +1,202 @@
+[
+ {
+  "id": 126,
+  "question": "What type of graph is best suited for displaying the relationship between two continuous variables along with their individual distributions?",
+  "options": [
+   "Scatter plot",
+   "Heatmap",
+   "Line plot",
+   "Waffle chart"
+  ]
+ },
+ {
+  "id": 127,
+  "question": "What type of plot in Matplotlib is best for displaying the proportion of different categories in a dataset?",
+  "options": [
+   "Line plot",
+   "Bar plot",
+   "Scatter plot",
+   "Waffle chart"
+  ]
+ },
+ {
+  "id": 128,
+  "question": "What type of algorithm is K-nearest neighbors (KNN)?",
+  "options": [
+   "Supervised learning",
+   "Unsupervised learning",
+   "Semi-supervised learning",
+   "Reinforcement learning"
+  ]
+ },
+ {
+  "id": 129,
+  "question": "What should be investigated to assist with remediation when a process change error occurs?",
+  "options": [
+   "source cause",
+   "stakeholders involved",
+   "purpose",
+   "original intent"
+  ]
+ },
+ {
+  "id": 130,
+  "question": "What would be added to the command highest_gpa = grades to produce the highest number in an array of student GPAs?",
+  "options": [
+   ".max",
+   "(high)",
+   ".max()",
+   ".high"
+  ]
+ },
+ {
+  "id": 131,
+  "question": "Which of the following is a supervised machine learning algorithm?",
+  "options": [
+   "K-Means",
+   "Linear Regression",
+   "Apriori",
+   "PCA"
+  ]
+ },
+ {
+  "id": 132,
+  "question": "Which evaluation metric is commonly used to assess the performance of a regression model in TensorFlow?",
+  "options": [
+   "Accuracy",
+   "Mean Squared Error (MSE)",
+   "R-squared (R^2)",
+   "F1 Score"
+  ]
+ },
+ {
+  "id": 133,
+  "question": "Which visualization is suitable to examine the distribution of a single numerical variable?",
+  "options": [
+   "Box plot",
+   "Line chart",
+   "Scatter plot",
+   "Heatmap"
+  ]
+ },
+ {
+  "id": 134,
+  "question": "Which callback decorator is used to update the contents of a component based on user input?",
+  "options": [
+   "@app.callback",
+   "@dash_callback",
+   "@app.route",
+   "@update_content"
+  ]
+ },
+ {
+  "id": 135,
+  "question": "Which method is used to assess the performance of a regression model?",
+  "options": [
+   "Confusion matrix",
+   "R-squared score",
+   "F1 score",
+   "Classification report"
+  ]
+ },
+ {
+  "id": 136,
+  "question": "Which metric is commonly used to evaluate classification models in TensorFlow?",
+  "options": [
+   "Mean Squared Error (MSE)",
+   "Accuracy",
+   "R-squared",
+   "Mean Absolute Error (MAE)"
+  ]
+ },
+ {
+  "id": 137,
+  "question": "What platform is commonly used to build conversational agents or chatbots using Watson's AI capabilities?",
+  "options": [
+   "Watson Assistant",
+   "Watson Discovery",
+   "Watson Studio",
+   "Watson Analytics"
+  ]
+ },
+ {
+  "id": 138,
+  "question": "Which normalization technique transforms data to have a mean of zero and a standard deviation of one?",
+  "options": [
+   "Z-score Normalization",
+   "Min-Max Scaling",
+   "Log Transformation",
+   "Robust Scaling"
+  ]
+ },
+ {
+  "id": 139,
+  "question": "Which method combines Ridge and Lasso regression penalties?",
+  "options": [
+   "ElasticNet regression",
+   "Polynomial regression",
+   "Stepwise regression",
+   "Gradient Boosting"
+  ]
+ },
+ {
+  "id": 140,
+  "question": "Which Watson AI service API can be used for natural language understanding, sentiment analysis, and language translation?",
+  "options": [
+   "Watson Assistant API",
+   "Watson Language Translator API",
+   "Watson Discovery API",
+   "Watson Natural Language Understanding API"
+  ]
+ },
+ {
+  "id": 141,
+  "question": "Which IBM DB2 utility is commonly used for loading data from external files into a table?",
+  "options": [
+   "LOAD DATA",
+   "IMPORT DATA",
+   "INSERT DATA",
+   "EXPORT DATA"
+  ]
+ },
+ {
+  "id": 142,
+  "question": "Which layer in a CNN is responsible for reducing spatial dimensions and controlling overfitting?",
+  "options": [
+   "Convolutional layer",
+   "MaxPooling layer",
+   "Dense layer",
+   "Flatten layer"
+  ]
+ },
+ {
+  "id": 143,
+  "question": "Which parameter in the folium.Choropleth() function is used to specify the data to be visualized on the map?",
+  "options": [
+   "data",
+   "value",
+   "key",
+   "color"
+  ]
+ },
+ {
+  "id": 144,
+  "question": "Which library is commonly used for creating static, interactive, and publication-quality visualizations in Python?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Folium",
+   "Dash"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "Which library is commonly used to design advanced interactive dashboards in Python?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Plotly Dash",
+   "Bokeh"
+  ]
+ }
+]

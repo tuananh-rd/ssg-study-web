@@ -1,0 +1,349 @@
+[
+ {
+  "id": 77,
+  "question": "Which behavior is appropriate during an interview?",
+  "options": [
+   "Interrupting the interviewer to show confidence",
+   "Using slang to sound friendly",
+   "Avoiding eye contact to reduce stress",
+   "Listening carefully and speaking clearly"
+  ],
+  "correct": [
+   "Listening carefully and speaking clearly"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "Why is career development described as an ongoing process?",
+  "options": [
+   "Because career goals never change",
+   "Because people continuously review and adjust their plans",
+   "Because only managers need career planning",
+   "Because career decisions are completed in college"
+  ],
+  "correct": [
+   "Because people continuously review and adjust their plans"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "What is a good example of building professional skills outside the classroom?",
+  "options": [
+   "Ignoring networking opportunities",
+   "Avoiding teamwork activities",
+   "Participating in internships or volunteering",
+   "Studying only for exams"
+  ],
+  "correct": [
+   "Participating in internships or volunteering"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "How does persuasive speaking differ from informative speaking?",
+  "options": [
+   "Persuasive speaking focuses only on explaining complex data",
+   "Informative speaking aims to change what listeners think or do",
+   "Persuasive speaking aims to change what listeners think, feel, or do",
+   "Informative speaking does not require clear organization",
+   "Persuasive speaking should not use accurate information"
+  ],
+  "correct": [
+   "Persuasive speaking aims to change what listeners think, feel, or do"
+  ]
+ },
+ {
+  "id": 81,
+  "question": "What is 'Pathos' in the context of persuasive presentations?",
+  "options": [
+   "The logical structure of the speech",
+   "The use of emotional appeal to move an audience",
+   "The speaker's academic degrees and titles",
+   "The ethical guidelines followed by the speaker",
+   "The physical distance between the speaker and the audience"
+  ],
+  "correct": [
+   "The use of emotional appeal to move an audience"
+  ]
+ },
+ {
+  "id": 82,
+  "question": "According to Maslow's Hierarchy of Needs, which needs must generally be met before moving to higher levels?",
+  "options": [
+   "Self-actualization needs",
+   "Esteem needs",
+   "Social needs",
+   "Basic physiological and safety needs",
+   "Intellectual needs"
+  ],
+  "correct": [
+   "Basic physiological and safety needs"
+  ]
+ },
+ {
+  "id": 83,
+  "question": "What should ethical persuasive speaking avoid?",
+  "options": [
+   "It proves the speaker has memorized the script",
+   "Manipulation, coercion, and false logic",
+   "Addressing audience needs",
+   "Using emotional stories",
+   "Organizing the speech into sections"
+  ],
+  "correct": [
+   "Manipulation, coercion, and false logic"
+  ]
+ },
+ {
+  "id": 84,
+  "question": "What is an 'Elevator Speech'?",
+  "options": [
+   "A 20-minute presentation given in an elevator",
+   "A technical report about elevator safety",
+   "A prepared, brief introduction or pitch for unexpected opportunities",
+   "A speech given only to high-level executives",
+   "A purely informative speech without a goal"
+  ],
+  "correct": [
+   "A prepared, brief introduction or pitch for unexpected opportunities"
+  ]
+ },
+ {
+  "id": 85,
+  "question": "In Maslow's Hierarchy, which level is at the very peak (the highest level)?",
+  "options": [
+   "Physiological",
+   "Safety",
+   "Social",
+   "Esteem",
+   "Self-actualization"
+  ],
+  "correct": [
+   "Self-actualization"
+  ]
+ },
+ {
+  "id": 86,
+  "question": "Which function of a persuasive presentation aims to get the audience to take a specific action?",
+  "options": [
+   "To stimulate",
+   "To convince",
+   "To call to action",
+   "To inform",
+   "To confuse"
+  ],
+  "correct": [
+   "To call to action"
+  ]
+ },
+ {
+  "id": 87,
+  "question": "In the context of Maslow's Hierarchy, 'Safety' needs include:",
+  "options": [
+   "Food, water, and sleep",
+   "Security, stability, and protection",
+   "Friendship and belonging",
+   "Reaching full potential",
+   "Status and reputation"
+  ],
+  "correct": [
+   "Security, stability, and protection"
+  ]
+ },
+ {
+  "id": 88,
+  "question": "An insurance commercial says 'Buy our plan so you can rest easy knowing your house is protected from fire.' Which need is this targeting?",
+  "options": [
+   "Physiological needs",
+   "Cognitive needs",
+   "Self-actualization",
+   "Safety needs",
+   "Esteem needs"
+  ],
+  "correct": [
+   "Safety needs"
+  ]
+ },
+ {
+  "id": 89,
+  "question": "You meet a potential investor in a lobby and have only 60 seconds to explain your startup. You should use your:",
+  "options": [
+   "Elevator speech",
+   "Detailed analytical report",
+   "PowerPoint presentation",
+   "Logical fallacy",
+   "Informative summary of history"
+  ],
+  "correct": [
+   "Elevator speech"
+  ]
+ },
+ {
+  "id": 90,
+  "question": "According to the principles of nonverbal communication, why is it said that 'Nonverbal is Inevitable'?",
+  "options": [
+   "Because nonverbal communication cannot be avoided; people send nonverbal messages even when they are silent",
+   "Because nonverbal communication is only present in spoken speeches",
+   "Because nonverbal cues are always interpreted correctly",
+   "Because words are less reliable than body movement",
+   "Because nonverbal messages are always more important than words"
+  ],
+  "correct": [
+   "Because nonverbal communication cannot be avoided; people send nonverbal messages even when they are silent"
+  ]
+ },
+ {
+  "id": 91,
+  "question": "What does the principle 'Nonverbal is Multi-Channel' mean for a speaker?",
+  "options": [
+   "It means nonverbal communication uses several channels at once",
+   "It means the speaker should only focus on one channel",
+   "It means nonverbal communication only happens on TV",
+   "It means verbal and nonverbal channels never contradict",
+   "It means you need special equipment to send messages"
+  ],
+  "correct": [
+   "It means nonverbal communication uses several channels at once"
+  ]
+ },
+ {
+  "id": 92,
+  "question": "In the context of 'Movement in Your Speech,' what is the primary purpose of the 'Speaker's Triangle'?",
+  "options": [
+   "To keep the speaker standing still in one spot",
+   "To hide the speaker's nervousness",
+   "To indicate transitions between main points of the speech",
+   "To make the speaker look like an athlete",
+   "To ensure the speaker always faces the visual aid"
+  ],
+  "correct": [
+   "To indicate transitions between main points of the speech"
+  ]
+ },
+ {
+  "id": 93,
+  "question": "Why is 'Eye Contact' crucial for success with your audience?",
+  "options": [
+   "It proves the speaker has memorized the script",
+   "It helps build credibility and connection with an audience",
+   "It prevents the audience from falling asleep",
+   "It allows the speaker to see if people use phones",
+   "It is required by law in business settings"
+  ],
+  "correct": [
+   "It helps build credibility and connection with an audience"
+  ]
+ },
+ {
+  "id": 94,
+  "question": "Which of the following is an example of an 'Artifact' in nonverbal communication?",
+  "options": [
+   "A speaker's tone of voice",
+   "A speaker's clothing or jewelry",
+   "A speaker's hand gesture",
+   "A speaker's silence",
+   "Words written on a slide"
+  ],
+  "correct": [
+   "A speaker's clothing or jewelry"
+  ]
+ },
+ {
+  "id": 95,
+  "question": "What is 'Paralanguage'?",
+  "options": [
+   "The use of sign language",
+   "The specific words chosen for a speech",
+   "A language used only by pilots",
+   "The study of how clothes communicate status",
+   "Nonverbal aspects of the voice like pitch, volume, and rate"
+  ],
+  "correct": [
+   "Nonverbal aspects of the voice like pitch, volume, and rate"
+  ]
+ },
+ {
+  "id": 96,
+  "question": "Which strategy helps a speaker 'build credibility and connection' nonverbally?",
+  "options": [
+   "Avoiding eye contact",
+   "Apply nonverbal strategies to build credibility and connection",
+   "Speaking in a monotone voice",
+   "Standing behind a large podium",
+   "Using many technical terms"
+  ],
+  "correct": [
+   "Apply nonverbal strategies to build credibility and connection"
+  ]
+ },
+ {
+  "id": 97,
+  "question": "You give a 'thumbs up' in a foreign country and people look offended. This illustrates:",
+  "options": [
+   "Nonverbal Is Inevitable",
+   "Nonverbal meanings depend on culture, situation, and relationship",
+   "Nonverbal Is Multi-Channel",
+   "Visual Aids reinforce points",
+   "Nonverbal is always influential"
+  ],
+  "correct": [
+   "Nonverbal meanings depend on culture, situation, and relationship"
+  ]
+ },
+ {
+  "id": 98,
+  "question": "An audience member notices a speaker's hands are shaking. The speaker says they are confident, but the audience believes they are nervous. Why?",
+  "options": [
+   "Verbal messages are more influential",
+   "The audience is being rude",
+   "The speaker's voice was too low",
+   "Nonverbal behaviour is often more influential than verbal messages",
+   "Too many artifacts"
+  ],
+  "correct": [
+   "Nonverbal behaviour is often more influential than verbal messages"
+  ]
+ },
+ {
+  "id": 99,
+  "question": "A student presents with a very high-pitched, fast-paced voice. Which type is this?",
+  "options": [
+   "Paralanguage",
+   "Body movements",
+   "Artifacts",
+   "Space",
+   "Physical Characteristics"
+  ],
+  "correct": [
+   "Paralanguage"
+  ]
+ },
+ {
+  "id": 100,
+  "question": "According to John Dewey's Reflective Thinking process, what is the very first step in group problem solving?",
+  "options": [
+   "Analyze the problem",
+   "Generate possible solutions",
+   "Define the problem",
+   "Evaluate solutions",
+   "Establish criteria for solutions"
+  ],
+  "correct": [
+   "Define the problem"
+  ]
+ },
+ {
+  "id": 101,
+  "question": "What is a common risk when a problem is defined too broadly?",
+  "options": [
+   "It misses important information",
+   "It overwhelms the group",
+   "It limits creativity",
+   "It leads to immediate solutions",
+   "It ignores data-driven facts"
+  ],
+  "correct": [
+   "It overwhelms the group"
+  ]
+ }
+]

@@ -1,0 +1,1925 @@
+[
+ {
+  "png": "cpv-slides-png/slide-217.png",
+  "png_no": 217,
+  "html_no": 219,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-218.png",
+  "png_no": 218,
+  "html_no": 220,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-219.png",
+  "png_no": 219,
+  "html_no": 221,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-220.png",
+  "png_no": 220,
+  "html_no": 222,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-221.png",
+  "png_no": 221,
+  "html_no": 223,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-222.png",
+  "png_no": 222,
+  "html_no": 224,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-223.png",
+  "png_no": 223,
+  "html_no": 225,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 205,
+    "slide": 220,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+     "Image processing, graphics algorithms, Cognitive sciences.",
+     "Robotics, Neurobiology, Information retrieval",
+     "All of the others",
+     "Not of others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-224.png",
+  "png_no": 224,
+  "html_no": 226,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 206,
+    "slide": 221,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+     "Random Sample Consensus",
+     "Random Assignment for Numerical Stability in Alignment and Classification",
+     "Robust Analysis for Noisy and Scattered Alignment of Components",
+     "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-225.png",
+  "png_no": 225,
+  "html_no": 227,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 207,
+    "slide": 222,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+     "The majority of inliers in the data set",
+     "The average value of the data points",
+     "The deviation of the model from the data",
+     "The total number of iterations performed"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-226.png",
+  "png_no": 226,
+  "html_no": 228,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 208,
+    "slide": 223,
+    "question": "What do the components of a pixel include?",
+    "options": [
+     "Intensity value and size of the image",
+     "Position address and intensity value",
+     "Position address and size of the image",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-227.png",
+  "png_no": 227,
+  "html_no": 229,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 209,
+    "slide": 224,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+     "Outgoing light is scattered in multiple directions",
+     "Outgoing light follows a linear projection model",
+     "Outgoing light reflects off the surface in a single direction",
+     "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-228.png",
+  "png_no": 228,
+  "html_no": 230,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 210,
+    "slide": 225,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+     "It attracts the contour towards object boundaries.",
+     "It enforces smoothness in the contour of the snake.",
+     "It adjusts the intensity of edge pixels of the objects.",
+     "It penalizes deviations from a straight line."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-229.png",
+  "png_no": 229,
+  "html_no": 231,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 211,
+    "slide": 226,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+     "Sensitive to local minima states",
+     "Not works perfectly even for binary images",
+     "dependent",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-230.png",
+  "png_no": 230,
+  "html_no": 232,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 212,
+    "slide": 227,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+     "Scale-Invariant Feature Transform (SIFT)",
+     "Harris Corner Detector",
+     "Features from Accelerated Segment Test (FAST)",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-231.png",
+  "png_no": 231,
+  "html_no": 233,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 213,
+    "slide": 228,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+     "It sharpens the texture details.",
+     "It blurs the texture details.",
+     "It introduces distortions.",
+     "It has no effect on oblique viewing angles."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-232.png",
+  "png_no": 232,
+  "html_no": 234,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 214,
+    "slide": 229,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+     "By aligning keypoints based on dominant orientation",
+     "By rotating the entire image to a standard orientation",
+     "By using a fixed orientation for all keypoints",
+     "By discarding keypoints with varying orientations"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 215,
+    "slide": 230,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+     "By increasing blur for smoother textures",
+     "By eliminating aliasing effects at extreme viewing angles",
+     "By reducing details for better performance",
+     "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 216,
+    "slide": 231,
+    "question": "How does the sampling rate affect the representation of frequencies in the Fourier transform of a signal?",
+    "options": [
+     "A higher sampling rate increases frequency accuracy.",
+     "A lower sampling rate increases frequency accuracy.",
+     "It has no effect on frequency representation.",
+     "A higher sampling rate decreases frequency accuracy."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 217,
+    "slide": 232,
+    "question": "How does the scale-invariance property benefit feature detection and matching algorithms?",
+    "options": [
+     "It allows features to be detected regardless of their size.",
+     "It reduces the computational complexity of feature matching.",
+     "It enhances the overall image resolution.",
+     "It improves color consistency across images."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 218,
+    "slide": 233,
+    "question": "How does SIFT achieve scale invariance in feature detection?",
+    "options": [
+     "By downscaling the image at different resolutions",
+     "By using an adaptive window size for feature detection",
+     "By applying a Gaussian filter to the entire image",
+     "By normalizing pixel intensities across the image"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 219,
+    "slide": 234,
+    "question": "How does feature-based alignment achieve image alignment between two images?",
+    "options": [
+     "By directly comparing pixel values between images",
+     "By detecting and matching a sparse set of features",
+     "By applying random transformations to the images",
+     "By segmenting the images into regions"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 220,
+    "slide": 235,
+    "question": "How can facial landmarks be helpful in face detection and recognition?",
+    "options": [
+     "By providing anchor points for accurate face alignment.",
+     "By directly identifying a person's unique facial features.",
+     "By segmenting the face region from the background.",
+     "By estimating the age and gender of the person in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ }
+]

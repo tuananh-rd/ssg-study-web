@@ -1,0 +1,352 @@
+[
+ {
+  "id": 226,
+  "question": "How are elements selected for the histogram bins in HOG calculation?",
+  "options": [
+   "Randomly assigned based on pixel values",
+   "Based on the brightness of pixels",
+   "Based on the direction of gradients",
+   "Based on the size of objects in the image"
+  ],
+  "correct": [
+   "Based on the direction of gradients"
+  ],
+  "slide_image": "cpv-slides-real/slide-253.png"
+ },
+ {
+  "id": 227,
+  "question": "What is the primary purpose of applying Gaussian filter in Canny edge detection algorithm?",
+  "options": [
+   "To sharpen the image and enhance high-frequency details.",
+   "To reduce noise in the image, preventing it from influencing the edge detection process.",
+   "To increase the overall contrast of the image for better edge visualization.",
+   "To remove objects or regions of interest from the image before edge detection."
+  ],
+  "correct": [
+   "To reduce noise in the image, preventing it from influencing the edge detection process."
+  ],
+  "slide_image": "cpv-slides-real/slide-255.png"
+ },
+ {
+  "id": 228,
+  "question": "What is the mechanism of Laplacian of Gaussian?",
+  "options": [
+   "Gaussian-based operator relies on random level transitions in the image",
+   "Gaussian-based operator employs the Laplacian to compute the first derivative of an image",
+   "Gaussian-based operator uses the zero-crossing method based on the first-order derivative",
+   "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+  ],
+  "correct": [
+   "Gaussian-based operator employs the Laplacian to calculate the second derivative of an image, detecting edges at zero crossings"
+  ],
+  "slide_image": "cpv-slides-real/slide-256.png"
+ },
+ {
+  "id": 229,
+  "question": "What is true about the global alignment?",
+  "options": [
+   "It finds the image registration parameters that best comply with the constraints introduced by the image matching",
+   "It finds a globally inconsistent set of alignment parameters that minimize the mis-registration between all pairs of images",
+   "It finds the image registration parameters that suitably comply with the constraints introduced by the image matching",
+   "It finds a globally inconsistent set of alignment parameters that maximize the mis-registration between all pairs of images"
+  ],
+  "correct": [
+   "It finds the image registration parameters that best comply with the constraints introduced by the image matching"
+  ],
+  "slide_image": "cpv-slides-real/slide-257.png"
+ },
+ {
+  "id": 230,
+  "question": "What is computer vision?",
+  "options": [
+   "Computer Vision uses images and videos to understand a real-world scene.",
+   "Just like Humans use eyes for capturing light, receptors in the brain for accessing it, and the visual cortex for processing it.",
+   "It makes a computer understand images, videos.",
+   "All of the answers"
+  ],
+  "correct": [
+   "All of the answers"
+  ],
+  "slide_image": "cpv-slides-real/slide-258.png"
+ },
+ {
+  "id": 231,
+  "question": "What is computer vision?",
+  "options": [
+   "Computer Vision is a field of computer science that enables the computer to understand just like a human.",
+   "Computer Vision is the analysis and manipulation of a digitized image, especially in order to improve its quality.",
+   "Computer Vision is the study of computers and computational systems like electrical and computer engineers.",
+   "Computer Vision is a task defined as the technical analysis of an image by using complex algorithms."
+  ],
+  "correct": [
+   "Computer Vision is a field of computer science that enables the computer to understand just like a human."
+  ],
+  "slide_image": "cpv-slides-real/slide-259.png"
+ },
+ {
+  "id": 232,
+  "question": "What is the benefit of using feature-based alignment techniques?",
+  "options": [
+   "It significantly reduces the file size of images.",
+   "It automatically adjusts image brightness and contrast for consistency.",
+   "It enables robust alignment even with image variations like rotation or scale changes.",
+   "It simplifies image editing tasks by automatically cropping unnecessary areas."
+  ],
+  "correct": [
+   "It enables robust alignment even with image variations like rotation or scale changes."
+  ],
+  "slide_image": "cpv-slides-real/slide-260.png"
+ },
+ {
+  "id": 233,
+  "question": "What is image filter? Choose the best answer",
+  "options": [
+   "Filtering is a technique for modifying or enhancing an image.",
+   "Filters are just systems that form a new, and preferably enhanced, image from a combination of the original image's pixel values.",
+   "Filtering is a neighborhood operation, in which the value of any given pixel in the output image is determined by applying some algorithm to the values of the pixels in the neighborhood of the corresponding input pixel.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-261.png"
+ },
+ {
+  "id": 234,
+  "question": "What is the difference between Phong model of light sources and the reality?",
+  "options": [
+   "Phong assumes infinite light sources, while in reality, shadows and inter-reflections occur",
+   "Phong assumes diffuse light only, while in reality, discrete light sources create shadows",
+   "Phong assumes continuous light sources, while in reality, inter-reflections are negligible",
+   "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+  ],
+  "correct": [
+   "Phong assumes direct light paths, while in reality, sources may be shadowed, and inter-reflections occur"
+  ],
+  "slide_image": "cpv-slides-real/slide-262.png"
+ },
+ {
+  "id": 235,
+  "question": "What is bundle adjustment primarily used for in image processing?",
+  "options": [
+   "Adding new images to a panorama",
+   "Adjusting the pose parameters for an image to reduce size of an image",
+   "Simultaneously adjusting pose parameters for a large collection of overlapping images",
+   "Aligning images in a sequential manner"
+  ],
+  "correct": [
+   "Simultaneously adjusting pose parameters for a large collection of overlapping images"
+  ],
+  "slide_image": "cpv-slides-real/slide-263.png"
+ },
+ {
+  "id": 236,
+  "question": "What is the core concept behind the Hough Transform?",
+  "options": [
+   "It transforms edge points in the image space to a parameter space to identify lines.",
+   "It directly identifies lines in an image based on pixel intensity changes.",
+   "It segments the image into connected regions to form line segments.",
+   "It requires manually specifying the starting and ending points of lines to be detected."
+  ],
+  "correct": [
+   "It transforms edge points in the image space to a parameter space to identify lines."
+  ],
+  "slide_image": "cpv-slides-real/slide-264.png"
+ },
+ {
+  "id": 237,
+  "question": "What is a key advantage of the Canny algorithm compared to simpler edge detection methods?",
+  "options": [
+   "It is significantly faster to compute and requires minimal processing power.",
+   "It is highly sensitive to noise and can easily miss important edges.",
+   "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+   "It can directly identify the specific color of edges in the image."
+  ],
+  "correct": [
+   "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression."
+  ],
+  "slide_image": "cpv-slides-real/slide-265.png"
+ },
+ {
+  "id": 238,
+  "question": "What is true about the Elliptical Weighted Average (EWA) filter?",
+  "options": [
+   "It relies on a single-pixel computation",
+   "Affine mapping introduces a skewed two-dimensional coordinate system in the distance of each source pixel x",
+   "Ellipsoidal projection of a small pixel grid in source pixel onto destination pixel is computed",
+   "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+  ],
+  "correct": [
+   "Gaussian filtering whose inverse covariance matrix is this ellipsoid is used"
+  ],
+  "slide_image": "cpv-slides-real/slide-266.png"
+ },
+ {
+  "id": 239,
+  "question": "What is true about image segmentation?",
+  "options": [
+   "An image is broken into many regions using the characteristics of pixels to identify objects",
+   "The representation of an image is changed into something containing more complex information to analyze",
+   "Color is assigned to every pixel of an image",
+   "Not at all"
+  ],
+  "correct": [
+   "An image is broken into many regions using the characteristics of pixels to identify objects"
+  ],
+  "slide_image": "cpv-slides-real/slide-267.png"
+ },
+ {
+  "id": 240,
+  "question": "What is meant by image segmentation in image processing?",
+  "options": [
+   "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+   "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position.",
+   "All of the others",
+   "None of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-268.png"
+ },
+ {
+  "id": 241,
+  "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+  "options": [
+   "By using spherical panoramas you can effortlessly capture any area in all directions.",
+   "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+   "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+   "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+  ],
+  "correct": [
+   "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view."
+  ],
+  "slide_image": "cpv-slides-real/slide-270.png"
+ },
+ {
+  "id": 242,
+  "question": "What is translation transformation?",
+  "options": [
+   "We rotate the object at a particular angle θ (theta) from its origin",
+   "It moves an object to a different position on the screen.",
+   "It changes the size of an object.",
+   "It is scaling, skewing, and rotation."
+  ],
+  "correct": [
+   "It moves an object to a different position on the screen."
+  ],
+  "slide_image": "cpv-slides-real/slide-271.png"
+ },
+ {
+  "id": 243,
+  "question": "What is the main approach of feature-based alignment?",
+  "options": [
+   "Align the 4 corners of two photos",
+   "Finding a way to recover an image's angle through spatial transformations",
+   "Overlap the pictures together and find similarities between them",
+   "Find a few matching features in both images then compute alignment"
+  ],
+  "correct": [
+   "Find a few matching features in both images then compute alignment"
+  ],
+  "slide_image": "cpv-slides-real/slide-272.png"
+ },
+ {
+  "id": 244,
+  "question": "What is the basic principle of object detection?",
+  "options": [
+   "Object detection is based on the features that make up the object.",
+   "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+   "Object detection is based on the semantics of the objects in the image.",
+   "All of the others"
+  ],
+  "correct": [
+   "Object detection is based on the features that make up the object."
+  ],
+  "slide_image": "cpv-slides-real/slide-273.png"
+ },
+ {
+  "id": 245,
+  "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+  "options": [
+   "Image processing and computer vision are two different concepts.",
+   "The task of computer vision is an analysis of an image.",
+   "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+   "Image processing performs tasks such as analyzing what objects are in the image"
+  ],
+  "correct": [
+   "The task of computer vision is an analysis of an image."
+  ],
+  "slide_image": "cpv-slides-real/slide-274.png"
+ },
+ {
+  "id": 246,
+  "question": "What is meant by image segmentation in image processing?",
+  "options": [
+   "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+   "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+   "All of the others",
+   "None of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-276.png"
+ },
+ {
+  "id": 247,
+  "question": "What is the underlying principle behind feature-based alignment?",
+  "options": [
+   "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+   "It relies on manual user input to specify corresponding points between images for alignment.",
+   "It directly matches and aligns entire image regions without any processing.",
+   "It aligns images based on their overall brightness and color distributions."
+  ],
+  "correct": [
+   "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment."
+  ],
+  "slide_image": "cpv-slides-real/slide-277.png"
+ },
+ {
+  "id": 248,
+  "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+  "options": [
+   "Ray tracing for matte surfaces and radiosity for specular surfaces",
+   "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+   "Radiosity for both matte and specular surfaces",
+   "Ray tracing for both matte and specular surfaces"
+  ],
+  "correct": [
+   "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces"
+  ],
+  "slide_image": "cpv-slides-real/slide-278.png"
+ },
+ {
+  "id": 249,
+  "question": "What are the differences between correlation and convolution?",
+  "options": [
+   "Convolution is measurement of total noise of one image on the other image.",
+   "The mathematical calculation of Correlation is difference as convolution in time domain",
+   "If the filter is asymmetrical then the output of both the expression would be same.",
+   "Correlation is measurement of the similarity between two image."
+  ],
+  "correct": [
+   "Correlation is measurement of the similarity between two image."
+  ],
+  "slide_image": "cpv-slides-real/slide-279.png"
+ },
+ {
+  "id": 251,
+  "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+  "options": [
+   "It reveals the spatial distribution of brightness in the image.",
+   "It decomposes an image into its constituent sinusoidal frequency components.",
+   "It increases the resolution of the image.",
+   "It directly removes noise pixels from the image"
+  ],
+  "correct": [
+   "It decomposes an image into its constituent sinusoidal frequency components."
+  ],
+  "slide_image": "cpv-slides-real/slide-281.png"
+ }
+]

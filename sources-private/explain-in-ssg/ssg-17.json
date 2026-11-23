@@ -1,0 +1,327 @@
+[
+ {
+  "id": 410,
+  "question": "Which questions below that a job applicant should prepare to ask during an interview?",
+  "options": [
+   "Please describe the normal routine of this position in a typical day?",
+   "How can I gain promotion?",
+   "When do you expect to make a hiring decision as it is said in the recruitment advertisement that this position is in urgent need?",
+   "How much is the salary?"
+  ],
+  "correct": [
+   "Please describe the normal routine of this position in a typical day?"
+  ]
+ },
+ {
+  "id": 411,
+  "question": "Which situation below is considered social loafing?",
+  "options": [
+   "A single student works alone on a paper",
+   "A student does all the group homework",
+   "Three students work on homework together",
+   "The whole group equally work hard on group assignment"
+  ],
+  "correct": [
+   "A student does all the group homework"
+  ]
+ },
+ {
+  "id": 412,
+  "question": "Which traits are taking on increasing importance in the business world today?",
+  "options": [
+   "Multiculturalism and cultural intelligence",
+   "Verbal and nonverbal communication",
+   "Cultural intelligence and language",
+   "Style, pace, language and nonverbal communication"
+  ],
+  "correct": [
+   "Multiculturalism and cultural intelligence"
+  ]
+ },
+ {
+  "id": 413,
+  "question": "Which implication does Self-Evaluation Maintenance (SEM) Model suggest?",
+  "options": [
+   "People are more likely to compare with friends or co-workers than they are to industry or national averages.",
+   "Average students have a higher academic self-concept when attending a below-average school.",
+   "Managers may prefer sub-optimal candidates who aren't likely to challenge their standing in the organization.",
+   "Unskilled people often think they are on par or superior to their peers in tasks such as test-taking abilities."
+  ],
+  "correct": [
+   "Managers may prefer sub-optimal candidates who aren't likely to challenge their standing in the organization."
+  ]
+ },
+ {
+  "id": 414,
+  "question": "Which strategy of evaluating information with critical thinking requires you to ask and answer such logic questions as \"What question are we trying to answer?\", \"What point of view is being expressed?\" and \"What are the implications?\"?",
+  "options": [
+   "Read for understanding by using text coding",
+   "Examine arguments",
+   "Clarify thinking",
+   "Cultivate \"habits of mind\""
+  ],
+  "correct": [
+   "Clarify thinking"
+  ]
+ },
+ {
+  "id": 415,
+  "question": "When developing an application letter, which of the following should not be added in the opening of the letter?",
+  "options": [
+   "The name of your referee who introduced this job to you",
+   "Your knowledge about the position or the company",
+   "Reasons why you find this position interesting",
+   "Your most significant accomplishments"
+  ],
+  "correct": [
+   "Your most significant accomplishments"
+  ]
+ },
+ {
+  "id": 416,
+  "question": "When evaluating your career plan, what should you do first?",
+  "options": [
+   "Looking for a career",
+   "Perform a self-assessment",
+   "Always review and revise your plan",
+   "Focus on developing goals"
+  ],
+  "correct": [
+   "Perform a self-assessment"
+  ]
+ },
+ {
+  "id": 417,
+  "question": "When should we build teams?",
+  "options": [
+   "A broad range of competences and different skills are required.",
+   "Minimum discretion is required.",
+   "Members' interests are different or in conflict.",
+   "An organization credits individuals for operational outputs."
+  ],
+  "correct": [
+   "A broad range of competences and different skills are required."
+  ]
+ },
+ {
+  "id": 418,
+  "question": "When conducting a meeting, you should",
+  "options": [
+   "Be bold and honest, not afraid to hurt people's feeling",
+   "Get every team member to voice out their feeling and opinions",
+   "Make it as short as possible because time is gold",
+   "Favor relationships"
+  ],
+  "correct": [
+   "Get every team member to voice out their feeling and opinions"
+  ]
+ },
+ {
+  "id": 419,
+  "question": "When writing your cover letter, you should:",
+  "options": [
+   "Simply copy and paste the same letter over and over.",
+   "Create an original letter for each job application.",
+   "Copy and paste the first and last paragraphs, but tailor the rest to the employer.",
+   "Establish a candidate's qualifications for a position in order to eliminate the competition."
+  ],
+  "correct": [
+   "Create an original letter for each job application."
+  ]
+ },
+ {
+  "id": 420,
+  "question": "When analyzing your qualifications and job preferences, you will look into your most positive including",
+  "options": [
+   "your achievements, background, soft skills, professional referees",
+   "your strengths, weaknesses, interests, skills",
+   "your accomplishments, education, experience, and personal traits",
+   "your awards, education, qualifications, hobbies"
+  ],
+  "correct": [
+   "your accomplishments, education, experience, and personal traits"
+  ]
+ },
+ {
+  "id": 421,
+  "question": "When analyzing job preferences, which of the following questions is not necessary to consider?",
+  "options": [
+   "Do you like working indoors, outside an office environment, or in varied work environments?",
+   "Do you want to work in a large company with a structured work environment, or do you prefer a small or less-structured company?",
+   "Do you want to work alone, working with other people or being in charge?",
+   "Do you want to work in a comfortable and open environment with people who share the same hobbies and personal life with you?"
+  ],
+  "correct": [
+   "Do you want to work in a comfortable and open environment with people who share the same hobbies and personal life with you?"
+  ]
+ },
+ {
+  "id": 422,
+  "question": "When do the conflicts of misperceived differences arise?",
+  "options": [
+   "Reinforcing or weakening each other's impact",
+   "Interpret each other's actions or emotions erroneously",
+   "Differ over how to reach goals or pursue values",
+   "Hold totally different values or rank the same values in a significantly different order"
+  ],
+  "correct": [
+   "Interpret each other's actions or emotions erroneously"
+  ]
+ },
+ {
+  "id": 423,
+  "question": "When does a person obtain the expert power?",
+  "options": [
+   "Person A has higher status than person B",
+   "Person A has more expertise knowledge than person B",
+   "Person A group is bigger than person B",
+   "Person A has more friend than person B"
+  ],
+  "correct": [
+   "Person A has more expertise knowledge than person B"
+  ]
+ },
+ {
+  "id": 424,
+  "question": "How do critical thinking and creative thinking complement each other in a university team project?",
+  "options": [
+   "They compete for dominance, hindering the team's progress.",
+   "Critical thinking accompanying creative thinking fosters fresh perspectives to look at problems and situations.",
+   "Creative thinking solely focuses on intuition, while critical thinking emphasizes logical analysis.",
+   "Critical and creative thinking are separate and don't contribute to each other in a team context."
+  ],
+  "correct": [
+   "Critical thinking accompanying creative thinking fosters fresh perspectives to look at problems and situations."
+  ]
+ },
+ {
+  "id": 425,
+  "question": "How can develop your creative thinking skill through \"Drawing\"?",
+  "options": [
+   "Develop ideas and expand their possibilities",
+   "Use mind-mapping to capture ideas",
+   "Explain how your ideas move beyond the status quo and contribute to a discussion",
+   "Take notes"
+  ],
+  "correct": [
+   "Use mind-mapping to capture ideas"
+  ]
+ },
+ {
+  "id": 426,
+  "question": "How does a leader effectively demonstrate inspirational influence within a team?",
+  "options": [
+   "By strictly enforcing rules and regulations.",
+   "By using social or interpersonal influence.",
+   "By micromanaging team members to ensure task completion.",
+   "By relying solely on positional authority to make decisions."
+  ],
+  "correct": [
+   "By using social or interpersonal influence."
+  ]
+ },
+ {
+  "id": 427,
+  "question": "How should you respond when someone \"invades\" your personal space during a conversation? The question has more than one answer",
+  "options": [
+   "Step back to re-establish your personal boundary",
+   "Cross your arms to block them out",
+   "Ignore the situation completely",
+   "Keep silence"
+  ],
+  "correct": [
+   "Step back to re-establish your personal boundary"
+  ]
+ },
+ {
+  "id": 428,
+  "question": "Why is it important to use a good format for effective business e-mails, particularly in a professional setting?",
+  "options": [
+   "Create competent impression.",
+   "Support for communicating effectively.",
+   "Reflect professionalism and follow the rules of netiquette.",
+   "All above."
+  ],
+  "correct": [
+   "All above."
+  ]
+ },
+ {
+  "id": 429,
+  "question": "Why being socially connected is an important way of dealing with stress?",
+  "options": [
+   "Because it's easy to isolate yourself when you feel stressed",
+   "Because it helps you to maintain a normal routine",
+   "Because other people can give you good advices about your problems",
+   "Because it can help distract you from your problems for a while"
+  ],
+  "correct": [
+   "Because other people can give you good advices about your problems"
+  ]
+ },
+ {
+  "id": 430,
+  "question": "Why is putting yourself in nerve-racking situations can sometimes stimulate your creative thinking?",
+  "options": [
+   "Certain amounts of pressure are important to keep a creative task moving forward.",
+   "When we feel stressed, it enhance our mental capacity.",
+   "Fear and frustration can trigger a sense of responsibility.",
+   "Time constraints make the task more exciting."
+  ],
+  "correct": [
+   "Certain amounts of pressure are important to keep a creative task moving forward."
+  ]
+ },
+ {
+  "id": 431,
+  "question": "A person with individualistic orientation tends to ...",
+  "options": [
+   "bring about positive outcomes to others",
+   "show their preferences when dividing resources between themselves and others",
+   "find opportunities to undermine others to get ahead",
+   "show less concerns about the outcomes of others"
+  ],
+  "correct": [
+   "show less concerns about the outcomes of others"
+  ]
+ },
+ {
+  "id": 432,
+  "question": "A team is called contract team if",
+  "options": [
+   "Team members have other duties to perform in their normal functional units",
+   "Team retains their responsibility for both their daily work and project work",
+   "Team members report to different managers",
+   "Team is brought in from outside in order to do project work"
+  ],
+  "correct": [
+   "Team is brought in from outside in order to do project work"
+  ]
+ },
+ {
+  "id": 433,
+  "question": "Among the tips for creative thinking, what does \"Sensing\" mean?",
+  "options": [
+   "Be a good observer of people, nature, and events around you",
+   "Be empathetic with other people",
+   "Have more fun learning",
+   "Be open to insight as ideas pop into your mind"
+  ],
+  "correct": [
+   "Be a good observer of people, nature, and events around you"
+  ]
+ },
+ {
+  "id": 434,
+  "question": "An interviewer may intentionally challenge you by asking difficult questions to ...",
+  "options": [
+   "see how you handle different situations",
+   "see you panic",
+   "show you the working environment can be stressful",
+   "avoid being friendly"
+  ],
+  "correct": [
+   "see how you handle different situations"
+  ]
+ }
+]

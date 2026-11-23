@@ -1,0 +1,1810 @@
+[
+ {
+  "png": "cpv-slides-png/slide-185.png",
+  "png_no": 185,
+  "html_no": 187,
+  "hidden": "A\nLoại bộ lọc nào thường được sử dụng để làm mịn ảnh và giảm nhiễu?\nA. Bộ lọc thông thấp (Low-pass filter).\nLow-pass filter làm giảm các thành phần tần số cao (thường là nhiễu), giúp ảnh trở nên mượt hơn.",
+  "candidates": [
+   {
+    "id": 168,
+    "slide": 182,
+    "question": "The basic idea consisted of placing a water source in each regional minimum in the relief, to flood the entire relief from sources, and build barriers when different water sources meet. What is the exact name of this process?",
+    "options": [
+     "Watershed segmentation",
+     "Waterfall segmentation",
+     "Interconnected water bottles",
+     "Flowing water"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 169,
+    "slide": 183,
+    "question": "We have opened an image with OpenCV. We want to flip it on both Vertical and Horizontal axis. Which is correct the code?",
+    "options": [
+     "cv2.flip(img, -1)",
+     "cv2.flip(img, 1)",
+     "cv2.flip(img, 0)",
+     "cv2.flip(img, 2)"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 170,
+    "slide": 184,
+    "question": "Which type of digital camera sensor is commonly found in smartphones and compact cameras?",
+    "options": [
+     "CMOS sensor",
+     "Full-frame sensor",
+     "APS-C sensor",
+     "Micro Four Thirds sensor"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 171,
+    "slide": 185,
+    "question": "What geometric primitive is typically used to represent a point in a 2D image in computer vision?",
+    "options": [
+     "Pixel",
+     "Line",
+     "Circle",
+     "Triangle"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 172,
+    "slide": 186,
+    "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+    "options": [
+     "Affine transformation",
+     "Translation",
+     "Rotation",
+     "Perspective transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-186.png",
+  "png_no": 186,
+  "html_no": 188,
+  "hidden": "A\nTrong mô hình tô bóng Phong (Phong Shading), thành phần nào chịu trách nhiệm mô phỏng sự phản xạ ánh sáng theo nhiều hướng trên bề mặt?\nA. Phản xạ khuếch tán (Diffuse reflection).\nDiffuse reflection mô phỏng ánh sáng phản xạ đều theo nhiều hướng từ bề mặt nhám. Trong khi đó, Specular reflection mô phỏng các điểm sáng bóng (highlight).",
+  "candidates": [
+   {
+    "id": 169,
+    "slide": 183,
+    "question": "We have opened an image with OpenCV. We want to flip it on both Vertical and Horizontal axis. Which is correct the code?",
+    "options": [
+     "cv2.flip(img, -1)",
+     "cv2.flip(img, 1)",
+     "cv2.flip(img, 0)",
+     "cv2.flip(img, 2)"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 170,
+    "slide": 184,
+    "question": "Which type of digital camera sensor is commonly found in smartphones and compact cameras?",
+    "options": [
+     "CMOS sensor",
+     "Full-frame sensor",
+     "APS-C sensor",
+     "Micro Four Thirds sensor"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 171,
+    "slide": 185,
+    "question": "What geometric primitive is typically used to represent a point in a 2D image in computer vision?",
+    "options": [
+     "Pixel",
+     "Line",
+     "Circle",
+     "Triangle"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 172,
+    "slide": 186,
+    "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+    "options": [
+     "Affine transformation",
+     "Translation",
+     "Rotation",
+     "Perspective transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-187.png",
+  "png_no": 187,
+  "html_no": 189,
+  "hidden": "A\nMục đích chính của phép biến đổi Fourier (Fourier Transform) trong xử lý tín hiệu và phân tích ảnh là gì?\nA. Phân tích tần số (Frequency analysis).\nFourier Transform chuyển tín hiệu hoặc ảnh từ miền không gian sang miền tần số để phân tích, lọc và xử lý tín hiệu.",
+  "candidates": [
+   {
+    "id": 170,
+    "slide": 184,
+    "question": "Which type of digital camera sensor is commonly found in smartphones and compact cameras?",
+    "options": [
+     "CMOS sensor",
+     "Full-frame sensor",
+     "APS-C sensor",
+     "Micro Four Thirds sensor"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 171,
+    "slide": 185,
+    "question": "What geometric primitive is typically used to represent a point in a 2D image in computer vision?",
+    "options": [
+     "Pixel",
+     "Line",
+     "Circle",
+     "Triangle"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 172,
+    "slide": 186,
+    "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+    "options": [
+     "Affine transformation",
+     "Translation",
+     "Rotation",
+     "Perspective transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-188.png",
+  "png_no": 188,
+  "html_no": 190,
+  "hidden": "B\nQuá trình nào được sử dụng để hiệu chỉnh sai lệch thị sai (parallax) trong quá trình ghép ảnh khi chuyển động tương đối nhỏ?\nB. Căn chỉnh cục bộ (Local alignment).\nLocal alignment điều chỉnh từng vùng ảnh riêng biệt để giảm ảnh hưởng của thị sai, đặc biệt khi sự khác biệt giữa các ảnh không lớn.",
+  "candidates": [
+   {
+    "id": 171,
+    "slide": 185,
+    "question": "What geometric primitive is typically used to represent a point in a 2D image in computer vision?",
+    "options": [
+     "Pixel",
+     "Line",
+     "Circle",
+     "Triangle"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 172,
+    "slide": 186,
+    "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+    "options": [
+     "Affine transformation",
+     "Translation",
+     "Rotation",
+     "Perspective transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-189.png",
+  "png_no": 189,
+  "html_no": 191,
+  "hidden": "C\nTrong lĩnh vực nào kỹ thuật ghép ảnh (image stitching) được sử dụng để tái tạo các mảnh giấy bị xé?\nC. Khoa học pháp y và điều tra (Forensic and investigative science).\nImage stitching được ứng dụng trong pháp y để ghép các tài liệu bị xé, hỗ trợ điều tra và phục hồi chứng cứ.",
+  "candidates": [
+   {
+    "id": 172,
+    "slide": 186,
+    "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+    "options": [
+     "Affine transformation",
+     "Translation",
+     "Rotation",
+     "Perspective transformation"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-190.png",
+  "png_no": 190,
+  "html_no": 192,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 173,
+    "slide": 187,
+    "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+    "options": [
+     "Low-pass filter",
+     "High-pass filter",
+     "Band-pass filter",
+     "Adaptive filter"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-191.png",
+  "png_no": 191,
+  "html_no": 193,
+  "hidden": "Câu trung bình",
+  "candidates": [
+   {
+    "id": 174,
+    "slide": 188,
+    "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+    "options": [
+     "Diffuse reflection",
+     "Ambient reflection",
+     "Emissive reflection",
+     "Specular reflection"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-192.png",
+  "png_no": 192,
+  "html_no": 194,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 175,
+    "slide": 189,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-193.png",
+  "png_no": 193,
+  "html_no": 195,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 176,
+    "slide": 190,
+    "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+    "options": [
+     "Global bundle adjustment.",
+     "Local alignment.",
+     "General 2D motion estimation.",
+     "Back-projection averaging."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-194.png",
+  "png_no": 194,
+  "html_no": 196,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 177,
+    "slide": 191,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+     "Art restoration.",
+     "Medical imaging.",
+     "Forensic and investigative science.",
+     "Archaeology."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-195.png",
+  "png_no": 195,
+  "html_no": 197,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 178,
+    "slide": 192,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+     "Feature-based Methods",
+     "Holistic Matching Methods",
+     "Structural Classifier Methods",
+     "Neural network based method"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-196.png",
+  "png_no": 196,
+  "html_no": 198,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-197.png",
+  "png_no": 197,
+  "html_no": 199,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 179,
+    "slide": 194,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+     "Moving pixels towards the average color",
+     "Minimizing mean intensity gradients of regions",
+     "Maximizing color contrast of objects",
+     "Applying morphological operations median images"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-198.png",
+  "png_no": 198,
+  "html_no": 200,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 180,
+    "slide": 195,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+     "To compress the range of intensity values in an image",
+     "To reduce the overall brightness of an image",
+     "To stretch the range of intensity values for optimal utilization",
+     "To convert color images into grayscale"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-199.png",
+  "png_no": 199,
+  "html_no": 201,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 181,
+    "slide": 196,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+     "To blur the image and reduce noise",
+     "To enhance the contrast of the image",
+     "To calculate the gradient of the image",
+     "To perform non-maximum suppression."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-200.png",
+  "png_no": 200,
+  "html_no": 202,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 182,
+    "slide": 197,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+     "Random sampling of the pixels in a range",
+     "Gradient descent of the pixels in a clustering",
+     "Mean of the pixels in a clustering",
+     "Mean of the pixels in a range"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "id": 110,
+  "question": "Which of the following statements is a characteristic of the DBSCAN algorithm?",
+  "options": [
+   "Can handle tons of data and weird shapes.",
+   "Finds uneven cluster sizes (one is big, some are tiny).",
+   "It will do a great performance finding many clusters.",
+   "It will do a great performance finding few clusters."
+  ]
+ },
+ {
+  "id": 113,
+  "question": "When is it most likely that an observation contains an outlier for one of its features?",
+  "options": [
+   "One feature has an internally studentized residual value above 3.",
+   "One feature has a deleted residual value above 3.",
+   "The observation consists of the maximum target value.",
+   "The observation is missing values for several of the features."
+  ]
+ },
+ {
+  "id": 114,
+  "question": "When using DBSCAN, how does the algorithm determine that a cluster is complete and is time to move to a different point of the data set and potentially start a new cluster?",
+  "options": [
+   "When the algorithm requires you to change the input.",
+   "When the algorithm forms a new cluster using the outliers.",
+   "When no point is left unvisited by the chain reaction.",
+   "When the solution converges to a single cluster."
+  ]
+ },
+ {
+  "id": 115,
+  "question": "Why is feature engineering important in machine learning?",
+  "options": [
+   "It improves model training time",
+   "It helps in reducing the dimensionality of data",
+   "It enhances the performance of machine learning models",
+   "It helps to get insight about data"
+  ]
+ },
+ {
+  "id": 116,
+  "question": "How is the test data used in the model-building process?",
+  "options": [
+   "measure error and performance of the model.",
+   "measure the parameters and hyperparameters of the model.",
+   "tweak the model hyperparameters.",
+   "tweak the model parameters."
+  ]
+ },
+ {
+  "id": 117,
+  "question": "How does increasing the regularization strength (lambda) in Lasso regularization affect the sparsity of the solution?",
+  "options": [
+   "Higher lambda encourages sparser solutions",
+   "Lower lambda encourages sparser solutions",
+   "Lambda has no effect on sparsity",
+   "Lambda encourages equalization of coefficients"
+  ]
+ },
+ {
+  "id": 118,
+  "question": "How can we create polynomial features in scikit-learn?",
+  "options": [
+   "polyFeat.fit and polyFeat.transform",
+   "polyFeat.add and polyFeat.transform",
+   "polyFeat.add and polyFeat.fit",
+   "polyFeat.transform"
+  ]
+ },
+ {
+  "id": 119,
+  "question": "Complete the following sentence: The training data is used to fit the model, while the test data is used to:",
+  "options": [
+   "measure the parameters and hyperparameters of the model",
+   "tweak the model hyperparameters",
+   "tweak the model parameters",
+   "measure error and performance of the model"
+  ]
+ },
+ {
+  "id": 120,
+  "question": "Compared with Lasso regression (assuming similar implementation), Ridge regression is:",
+  "options": [
+   "less likely to overfit to training data.",
+   "more likely to overfit to training data.",
+   "less likely to set feature coefficients to zero.",
+   "more likely to set feature coefficients to zero."
+  ]
+ },
+ {
+  "id": 121,
+  "question": "Decision trees used as classifiers compute the value assigned to a leaf by calculating the ratio: number of observations of one class divided by the number of observations in that leaf.\nE.g. number of customers that are younger than 50 years old divided by the total number of customers.\nHow are leaf values calculated for regression decision trees?",
+  "options": [
+   "average value of the predicted variable",
+   "median value of the predicted variable",
+   "mode value of the predicted variable",
+   "weighted average value of the predicted variable"
+  ]
+ },
+ {
+  "id": 122,
+  "question": "From the options listed below, select the option that is NOT a valid exploratory data approach to visually confirm whether your data is ready for modeling or if it needs further cleaning or data processing:",
+  "options": [
+   "Create a panel plot that shows distributions for the dependent variable and scatter plots for all independent variables",
+   "Train a model and identify the observations with the largest residuals",
+   "Create visualizations for scatter plots, histograms, box plots, and hexbin plots",
+   "Create a correlation heatmap to confirm the sign and magnitude of correlation across your features."
+  ]
+ },
+ {
+  "id": 123,
+  "question": "If a low-complexity model is underfitting during estimation, which of the following is MOST LIKELY true (holding the model constant)?",
+  "options": [
+   "K-fold cross-validation will still lead to underfitting, for any k.",
+   "K-cross-validation with a small k will reduce or eliminate underfitting.",
+   "K-fold cross-validation with a large k will reduce or eliminate underfitting.",
+   "None of the above."
+  ]
+ },
+ {
+  "id": 124,
+  "question": "In statistical hypothesis testing, what is a Type II error?",
+  "options": [
+   "Rejecting a true null hypothesis",
+   "Accepting a false null hypothesis",
+   "Failing to reject a false null hypothesis",
+   "Failing to reject a true null hypothesis"
+  ]
+ },
+ {
+  "id": 125,
+  "question": "In PCA, what are principal components?",
+  "options": [
+   "Data points in the dataset",
+   "The features with the highest importance",
+   "The eigenvectors of the covariance matrix",
+   "The mean values of each feature"
+  ]
+ },
+ {
+  "id": 126,
+  "question": "In the K-means algorithm, how are cluster centroids initially chosen?",
+  "options": [
+   "Randomly from the dataset",
+   "Based on the mean of the entire dataset",
+   "Using hierarchical clustering",
+   "By selecting the data point farthest from the center"
+  ]
+ },
+ {
+  "id": 127,
+  "question": "In the context of linear regression, what is the purpose of regularization techniques such as Lasso and Ridge?",
+  "options": [
+   "To increase the complexity of the model",
+   "To add noise to the dataset",
+   "To reduce overfitting and stabilize coefficient estimates",
+   "To introduce non-linearity in the regression relationship"
+  ]
+ },
+ {
+  "id": 128,
+  "question": "In HAC, what does the term \"agglomerative\" refer to?",
+  "options": [
+   "Merging data points into clusters",
+   "Splitting clusters into individual points",
+   "Assigning data points to the nearest centroid",
+   "Calculating the within-cluster variance"
+  ]
+ },
+ {
+  "id": 129,
+  "question": "In online shopping application, how is machine learning commonly used?",
+  "options": [
+   "To predict the weather",
+   "To recommend products based on user preferences",
+   "To play music playlists",
+   "To book flight tickets"
+  ]
+ },
+ {
+  "id": 130,
+  "question": "The purpose of the K-means algorithm is",
+  "options": [
+   "To find the optimal number of clusters",
+   "To minimize the within-cluster variance",
+   "To maximize the between-cluster variance",
+   "To assign cluster labels based on proximity"
+  ]
+ },
+ {
+  "id": 132,
+  "question": "While analyzing correlations between continuous variables, you observe that some pairs have near-zero Pearson correlation, but their scatter plots show clear curved patterns. What could explain this?",
+  "options": [
+   "Strong multicollinearity",
+   "Missing data",
+   "Non-linear relationship between variables",
+   "Incorrect encoding of data"
+  ]
+ }
+]

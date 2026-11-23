@@ -1,0 +1,202 @@
+[
+ {
+  "id": 230,
+  "question": "What does the bins parameter in pandas.hist() control?",
+  "options": [
+   "Number of bins in the histogram",
+   "Width of each bar in the histogram",
+   "Number of rows in the histogram",
+   "Size of the figure for the histogram"
+  ]
+ },
+ {
+  "id": 231,
+  "question": "What does the requests.get() function in Python's requests library do?",
+  "options": [
+   "Sends a POST request",
+   "Sends a GET request to a specified URL",
+   "Retrieves data from a database",
+   "Parses HTML content"
+  ]
+ },
+ {
+  "id": 233,
+  "question": "What does the PolynomialFeatures class in Scikit-learn do?",
+  "options": [
+   "Computes polynomial transformations of features",
+   "Performs feature selection",
+   "Generates new features based on interaction terms",
+   "Scales the features in the dataset"
+  ]
+ },
+ {
+  "id": 234,
+  "question": "What does the Choropleth function in Folium enable users to do?",
+  "options": [
+   "Create color-coded geographical maps",
+   "Generate regions on the map with different percentages.",
+   "Add multiple markers to a map based on data values",
+   "Draw circles of varying sizes on the map"
+  ]
+ },
+ {
+  "id": 235,
+  "question": "What type of map can be generated using Folium's CircleMarker() function?",
+  "options": [
+   "Heatmap",
+   "Scatter plot",
+   "Choropleth map",
+   "Markers with specified radius on the map"
+  ]
+ },
+ {
+  "id": 236,
+  "question": "What task does the method value_counts perform?",
+  "options": [
+   "get total of data except nan value",
+   "get number row of data",
+   "return counts of unique values",
+   "return total of numeric"
+  ]
+ },
+ {
+  "id": 237,
+  "question": "When would you choose polynomial regression over linear regression?",
+  "options": [
+   "When the relationship between variables is non-linear",
+   "When the relationship between variables is linear",
+   "When there are only two variables",
+   "When there is no correlation between variables"
+  ]
+ },
+ {
+  "id": 238,
+  "question": "When using Watson Assistant, what is the purpose of defining intents?",
+  "options": [
+   "Identifying specific entities in user input",
+   "Generating small talk responses",
+   "Understanding the purpose or goal of user input",
+   "Authenticating user access"
+  ]
+ },
+ {
+  "id": 239,
+  "question": "How is the Watson Speech-to-Text API typically used in a real-time scenario?",
+  "options": [
+   "By transcribing streaming audio in real-time",
+   "By converting text into speech in real-time",
+   "By analyzing text data for sentiment",
+   "By processing pre-recorded audio files"
+  ]
+ },
+ {
+  "id": 240,
+  "question": "How is a skewed distribution represented in a box plot?",
+  "options": [
+   "Asymmetrical lengths of whiskers",
+   "Equal lengths of whiskers",
+   "Symmetrical lengths of whiskers",
+   "The box and whiskers have the same width"
+  ]
+ },
+ {
+  "id": 241,
+  "question": "How is a basic map created in Folium?",
+  "options": [
+   "By calling the Map() function",
+   "There's no direct method to create a basic map",
+   "Using the BaseMap() function",
+   "Utilizing the create_map() method"
+  ]
+ },
+ {
+  "id": 242,
+  "question": "How does TensorFlow help in optimizing model training?",
+  "options": [
+   "By automatically adjusting learning rates",
+   "By providing pre-trained models",
+   "By implementing various optimization algorithms",
+   "By reducing the number of layers in the model"
+  ]
+ },
+ {
+  "id": 243,
+  "question": "How is the webhook typically configured in Watson Assistant to connect to a DB2 database?",
+  "options": [
+   "By providing the webhook endpoint URL in the webhook settings",
+   "By specifying the SQL queries directly in the webhook settings",
+   "By embedding the database credentials in the chatbot responses",
+   "By creating a separate webhook for each database query"
+  ]
+ },
+ {
+  "id": 244,
+  "question": "How does GridSearchCV in Scikit-learn determine the best hyperparameters for a model?",
+  "options": [
+   "By trying all possible combinations of hyperparameters",
+   "By randomly selecting hyperparameters",
+   "By using gradient descent optimization",
+   "By relying on default hyperparameters"
+  ]
+ },
+ {
+  "id": 245,
+  "question": "How can you add a legend to the pie chart created using plot(kind='pie')?",
+  "options": [
+   "Legends are added automatically",
+   "legend=True",
+   "add_legend()",
+   "Legends cannot be added to pie charts"
+  ]
+ },
+ {
+  "id": 246,
+  "question": "A teacher has the students' grades stored in an array. The teacher is evaluating the mean of each student's grade and dropping the lowest grade for the year. The array is: grades = np.array([100, 30, 77, 20, 99, 100]). What code will produce the mean grade and the lowest grade from the array?",
+  "options": [
+   "grades = grades.mean(), min()",
+   "grades = mean(), min()",
+   "grades = grades.mean() and lowest_grade = grades.low()",
+   "grades = grades.mean() and lowest_grade = grades.min()"
+  ]
+ },
+ {
+  "id": 247,
+  "question": "An analyst on your team is forgetful about closing a file after they read the data. What can the analyst do to access the files needed without worrying about leaving a file unintentionally open?",
+  "options": [
+   "Use a WITH statement in place of the open command",
+   "Use a WITH statement with the open command",
+   "Use the CLOSE statement prior to the open command",
+   "Use the CLOSE statement in place of the open command"
+  ]
+ },
+ {
+  "id": 248,
+  "question": "A researcher fits a polynomial regression model to predict the price of a house based on its size. If the equation of the regression line obtained is:\nPrice = 100000 + 5000 × Size − 100 × Size²\nWhat does the coefficient of Size² (-100) indicate?",
+  "options": [
+   "The effect of size on price is negative.",
+   "The effect of size on price is positive.",
+   "The effect of size on price is linear.",
+   "The effect of size on price is non-linear."
+  ]
+ },
+ {
+  "id": 249,
+  "question": "A junior analyst collects data on the effects of a recent process change. The effects are mostly unfavorable. Where should the focus on rectifying these effects lie?",
+  "options": [
+   "The individual effects",
+   "The source of the effects - the problem itself",
+   "The stakeholders involved with the process change",
+   "The original project manager of the process change"
+  ]
+ },
+ {
+  "id": 250,
+  "question": "A development project has missed several deadlines and appears they will be missing the next one. A new project leader has been brought in. What would be the first step to get the project on track?",
+  "options": [
+   "Perform a root cause analysis",
+   "Assess individual performance by performing interviews",
+   "Evaluate the efficiency of the platforms being used",
+   "Make a pie chart to identify a new timeline"
+  ]
+ }
+]

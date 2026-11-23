@@ -1,0 +1,202 @@
+[
+ {
+  "id": 188,
+  "question": "What is the primary objective of using the folium.Map() function in Folium?",
+  "options": [
+   "Plotting scatter plots",
+   "Generating choropleth maps",
+   "Creating interactive maps",
+   "Displaying bar plots"
+  ]
+ },
+ {
+  "id": 189,
+  "question": "Which Watson service API is primarily used for document indexing and search?",
+  "options": [
+   "Watson Assistant API",
+   "Watson Language Translator API",
+   "Watson Discovery API",
+   "Watson Natural Language Understanding API"
+  ]
+ },
+ {
+  "id": 190,
+  "question": "Which evaluation metric is most suitable for imbalanced classification problems in Data Science Projects?",
+  "options": [
+   "Accuracy",
+   "Precision",
+   "Recall",
+   "F1-Score"
+  ]
+ },
+ {
+  "id": 191,
+  "question": "Which method is commonly used to authenticate and access Watson AI services APIs?",
+  "options": [
+   "OAuth authentication",
+   "API token",
+   "Access key",
+   "API key"
+  ]
+ },
+ {
+  "id": 192,
+  "question": "In the Data Science lifecycle, what is the initial step before diving into data analysis?",
+  "options": [
+   "Data Visualization",
+   "Feature Engineering",
+   "Data Collection and Understanding",
+   "Model Building"
+  ]
+ },
+ {
+  "id": 193,
+  "question": "Which of the following metrics is best for regression model evaluation?",
+  "options": [
+   "Accuracy",
+   "RMSE",
+   "Precision",
+   "Recall"
+  ]
+ },
+ {
+  "id": 194,
+  "question": "Which library is commonly used with Dash for creating interactive and dynamic visualizations?",
+  "options": [
+   "Plotly",
+   "Matplotlib",
+   "Seaborn",
+   "Pandas"
+  ]
+ },
+ {
+  "id": 195,
+  "question": "When encountering a dataset with a high dimensionality, what technique is commonly used for dimensionality reduction?",
+  "options": [
+   "Feature scaling",
+   "Principal Component Analysis (PCA)",
+   "Recursive Feature Elimination (RFE)",
+   "One-Hot Encoding"
+  ]
+ },
+ {
+  "id": 196,
+  "question": "What is the primary role of the Fully Connected (Dense) layers in a CNN?",
+  "options": [
+   "Extracting features from images",
+   "Reducing the number of parameters in the model",
+   "Handling temporal data",
+   "Making predictions based on extracted features"
+  ]
+ },
+ {
+  "id": 197,
+  "question": "What is the key advantage of integrating a chatbot with multiple platforms (e.g., Facebook, Slack)?",
+  "options": [
+   "Enhanced data security",
+   "Centralized conversation history",
+   "Improved user engagement across different channels",
+   "Streamlined API authentication"
+  ]
+ },
+ {
+  "id": 198,
+  "question": "What is the purpose of the options property in the dcc.Dropdown component?",
+  "options": [
+   "It defines the available options that the user can select.",
+   "It sets the initial selected value of the dropdown.",
+   "It specifies the layout style of the dropdown.",
+   "It controls the visibility of the dropdown menu."
+  ]
+ },
+ {
+  "id": 199,
+  "question": "What is the primary purpose of using the choropleth() function in Folium?",
+  "options": [
+   "Creating line plots",
+   "Displaying geographical data with colors on maps",
+   "Generating pie charts",
+   "Creating scatter plots"
+  ]
+ },
+ {
+  "id": 200,
+  "question": "What is the purpose of the dropout layer in a CNN?",
+  "options": [
+   "Reducing the learning rate",
+   "Preventing overfitting by randomly dropping neurons during training",
+   "Increasing the number of parameters in the model",
+   "Enhancing model accuracy"
+  ]
+ },
+ {
+  "id": 201,
+  "question": "What is the purpose of entities in the context of chatbot development with Watson Assistant?",
+  "options": [
+   "To extract specific information from user input",
+   "To represent different users in a conversation",
+   "To define the overall flow of the conversation",
+   "To store user profiles"
+  ]
+ },
+ {
+  "id": 202,
+  "question": "What is the primary function of Beautiful Soup in web scraping?",
+  "options": [
+   "Sending HTTP requests",
+   "Parsing and navigating HTML/XML documents",
+   "Storing scraped data in databases",
+   "Visualizing scraped data"
+  ]
+ },
+ {
+  "id": 204,
+  "question": "What is the primary purpose of logistic regression?",
+  "options": [
+   "Classifying data into two or more categories",
+   "Predicting continuous outcomes",
+   "Clustering data points",
+   "Identifying outliers in a dataset"
+  ]
+ },
+ {
+  "id": 205,
+  "question": "What is the primary use of the Folium library in Python?",
+  "options": [
+   "Creating interactive dashboards",
+   "Generating static visualizations",
+   "Plotting 3D graphs",
+   "Visualizing geographic data on interactive maps"
+  ]
+ },
+ {
+  "id": 206,
+  "question": "What is the purpose of the model.fit() function in TensorFlow?",
+  "options": [
+   "Compiling the model with loss functions",
+   "Initializing the neural network weights",
+   "Training the model on training data",
+   "Evaluating the model performance"
+  ]
+ },
+ {
+  "id": 207,
+  "question": "What is the primary use case for the Watson Text-to-Speech API?",
+  "options": [
+   "Converting written text into spoken words",
+   "Analyzing sentiment in text data",
+   "Transcribing spoken language into written text",
+   "Extracting entities from unstructured text"
+  ]
+ },
+ {
+  "id": 208,
+  "question": "What is the purpose of the \"Try it out\" feature in the Watson Assistant tooling?",
+  "options": [
+   "To debug chatbot",
+   "To deploy the chatbot to a live environment",
+   "To generate training data automatically",
+   "To import existing chatbot configurations"
+  ]
+ }
+]

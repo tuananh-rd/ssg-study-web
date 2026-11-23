@@ -1,0 +1,22 @@
+{
+"126":{"q":"Loại đồ thị nào phù hợp nhất để hiển thị mối quan hệ giữa hai biến liên tục cùng với phân phối riêng của từng biến?","options":["Biểu đồ phân tán (scatter plot)","Bản đồ nhiệt (heatmap)","Biểu đồ đường (line plot)","Biểu đồ waffle (waffle chart)"]},
+"127":{"q":"Loại biểu đồ nào trong Matplotlib phù hợp nhất để hiển thị tỷ lệ của các nhóm khác nhau trong một tập dữ liệu?","options":["Biểu đồ đường (line plot)","Biểu đồ cột (bar plot)","Biểu đồ phân tán (scatter plot)","Biểu đồ waffle (waffle chart)"]},
+"128":{"q":"K-nearest neighbors (KNN) là loại thuật toán nào?","options":["Học có giám sát (supervised learning)","Học không giám sát (unsupervised learning)","Học bán giám sát (semi-supervised learning)","Học tăng cường (reinforcement learning)"]},
+"129":{"q":"Cần điều tra điều gì để hỗ trợ khắc phục khi xảy ra lỗi do thay đổi quy trình (process change error)?","options":["nguyên nhân gốc","các bên liên quan","mục đích","ý định ban đầu"]},
+"130":{"q":"Cần thêm gì vào câu lệnh highest_gpa = grades để có được số lớn nhất trong một mảng điểm GPA của sinh viên?","options":[".max","(high)",".max()",".high"]},
+"131":{"q":"Thuật toán học máy có giám sát (supervised machine learning) nào sau đây?","options":["K-Means","Linear Regression","Apriori","PCA"]},
+"132":{"q":"Thước đo đánh giá (evaluation metric) nào thường được dùng để đánh giá hiệu suất của một mô hình hồi quy trong TensorFlow?","options":["Accuracy (Độ chính xác)","Mean Squared Error (MSE - Sai số bình phương trung bình)","R-squared (R^2)","F1 Score"]},
+"133":{"q":"Hình thức trực quan hóa nào phù hợp để khảo sát phân phối của một biến số đơn?","options":["Biểu đồ hộp (box plot)","Biểu đồ đường (line chart)","Biểu đồ phân tán (scatter plot)","Bản đồ nhiệt (heatmap)"]},
+"134":{"q":"Decorator callback nào được dùng để cập nhật nội dung của một thành phần dựa trên dữ liệu đầu vào của người dùng?","options":["@app.callback","@dash_callback","@app.route","@update_content"]},
+"135":{"q":"Phương pháp nào được dùng để đánh giá hiệu suất của một mô hình hồi quy?","options":["Ma trận nhầm lẫn (confusion matrix)","Điểm R-squared (R-squared score)","Điểm F1 (F1 score)","Báo cáo phân loại (classification report)"]},
+"136":{"q":"Thước đo (metric) nào thường được dùng để đánh giá các mô hình phân loại trong TensorFlow?","options":["Mean Squared Error (MSE)","Accuracy (Độ chính xác)","R-squared","Mean Absolute Error (MAE)"]},
+"137":{"q":"Nền tảng nào thường được dùng để xây dựng các tác tử hội thoại (conversational agents) hoặc chatbot bằng năng lực AI của Watson?","options":["Watson Assistant","Watson Discovery","Watson Studio","Watson Analytics"]},
+"138":{"q":"Kỹ thuật chuẩn hóa (normalization) nào biến đổi dữ liệu để có trung bình bằng không và độ lệch chuẩn bằng một?","options":["Chuẩn hóa Z-score (Z-score Normalization)","Co giãn Min-Max (Min-Max Scaling)","Biến đổi logarit (Log Transformation)","Co giãn bền vững (Robust Scaling)"]},
+"139":{"q":"Phương pháp nào kết hợp các hình phạt (penalty) của hồi quy Ridge và Lasso?","options":["Hồi quy ElasticNet (ElasticNet regression)","Hồi quy đa thức (Polynomial regression)","Hồi quy từng bước (Stepwise regression)","Gradient Boosting"]},
+"140":{"q":"API dịch vụ Watson AI nào có thể được dùng cho hiểu ngôn ngữ tự nhiên (natural language understanding), phân tích cảm xúc (sentiment analysis) và dịch ngôn ngữ?","options":["Watson Assistant API","Watson Language Translator API","Watson Discovery API","Watson Natural Language Understanding API"]},
+"141":{"q":"Tiện ích IBM DB2 nào thường được dùng để nạp dữ liệu từ các tệp bên ngoài vào một bảng?","options":["LOAD DATA","IMPORT DATA","INSERT DATA","EXPORT DATA"]},
+"142":{"q":"Lớp nào trong một CNN chịu trách nhiệm giảm kích thước không gian và kiểm soát hiện tượng quá khớp (overfitting)?","options":["Lớp tích chập (Convolutional layer)","Lớp MaxPooling (MaxPooling layer)","Lớp Dense (Dense layer)","Lớp Flatten (Flatten layer)"]},
+"143":{"q":"Tham số nào trong hàm folium.Choropleth() được dùng để chỉ định dữ liệu cần trực quan hóa trên bản đồ?","options":["data","value","key","color"]},
+"144":{"q":"Thư viện nào thường được dùng để tạo các hình ảnh trực quan hóa tĩnh, tương tác và đạt chất lượng xuất bản trong Python?","options":["Matplotlib","Seaborn","Folium","Dash"]},
+"145":{"q":"Thư viện nào thường được dùng để thiết kế các bảng điều khiển (dashboard) tương tác nâng cao trong Python?","options":["Matplotlib","Seaborn","Plotly Dash","Bokeh"]}
+}

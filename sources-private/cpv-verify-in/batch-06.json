@@ -1,0 +1,1858 @@
+[
+ {
+  "png": "cpv-slides-png/slide-089.png",
+  "png_no": 89,
+  "html_no": 91,
+  "hidden": "C Gaussian smoothing = làm mờ mịn (smooth blur)\nGiống như nhìn ảnh qua một lớp kính mờ (translucent screen)\n Đây là mô tả trực quan đúng nhất",
+  "candidates": [
+   {
+    "id": 73,
+    "slide": 86,
+    "question": "Choose the best description about global alignment in image stitching",
+    "options": [
+     "Global alignment requires the non-linear minimization of an error term, which is defined from point correspondences.",
+     "Global alignment is still needed to obtain a globally coherent mosaic.",
+     "The goal of global alignment is then to find a globally consistent set of alignment parameters that minimize the misregistration between all pairs of images.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 74,
+    "slide": 87,
+    "question": "Choose the best description of the line detection using the convolution based technique",
+    "options": [
+     "A convolution-based technique that produces an image description of the thin lines in an input image",
+     "These kernel masks are tuned for dark lines against a grey background",
+     "A convolution-based technique is the foundation of deep learning models.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 75,
+    "slide": 88,
+    "question": "Choose the best description of the Prewitt operator for edge detection",
+    "options": [
+     "It detects the overlap edges of an image.",
+     "It is one of the best ways to detect the color intensity and magnitude of an image",
+     "It is a good performance on detecting vertical and horizontal edges",
+     "It is never a good choice to detect the orientation of an image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 76,
+    "slide": 89,
+    "question": "Choose the best description of the Hough transform",
+    "options": [
+     "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+     "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+     "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 77,
+    "slide": 90,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+     "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+     "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-090.png",
+  "png_no": 90,
+  "html_no": 92,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 74,
+    "slide": 87,
+    "question": "Choose the best description of the line detection using the convolution based technique",
+    "options": [
+     "A convolution-based technique that produces an image description of the thin lines in an input image",
+     "These kernel masks are tuned for dark lines against a grey background",
+     "A convolution-based technique is the foundation of deep learning models.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 75,
+    "slide": 88,
+    "question": "Choose the best description of the Prewitt operator for edge detection",
+    "options": [
+     "It detects the overlap edges of an image.",
+     "It is one of the best ways to detect the color intensity and magnitude of an image",
+     "It is a good performance on detecting vertical and horizontal edges",
+     "It is never a good choice to detect the orientation of an image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 76,
+    "slide": 89,
+    "question": "Choose the best description of the Hough transform",
+    "options": [
+     "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+     "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+     "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 77,
+    "slide": 90,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+     "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+     "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-091.png",
+  "png_no": 91,
+  "html_no": 93,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 75,
+    "slide": 88,
+    "question": "Choose the best description of the Prewitt operator for edge detection",
+    "options": [
+     "It detects the overlap edges of an image.",
+     "It is one of the best ways to detect the color intensity and magnitude of an image",
+     "It is a good performance on detecting vertical and horizontal edges",
+     "It is never a good choice to detect the orientation of an image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 76,
+    "slide": 89,
+    "question": "Choose the best description of the Hough transform",
+    "options": [
+     "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+     "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+     "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 77,
+    "slide": 90,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+     "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+     "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-092.png",
+  "png_no": 92,
+  "html_no": 94,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 76,
+    "slide": 89,
+    "question": "Choose the best description of the Hough transform",
+    "options": [
+     "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+     "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+     "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 77,
+    "slide": 90,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+     "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+     "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-093.png",
+  "png_no": 93,
+  "html_no": 95,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 77,
+    "slide": 90,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+     "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+     "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-094.png",
+  "png_no": 94,
+  "html_no": 96,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 78,
+    "slide": 91,
+    "question": "Choose the best description of the gaussian smoothing",
+    "options": [
+     "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+     "It enhance image structures at different scales.",
+     "Smooth blur resembling that of replace the image through a translucent screen",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-095.png",
+  "png_no": 95,
+  "html_no": 97,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 79,
+    "slide": 92,
+    "question": "Choose the best correct answer about parallax removal",
+    "options": [
+     "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+     "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+     "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-096.png",
+  "png_no": 96,
+  "html_no": 98,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 80,
+    "slide": 93,
+    "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+    "options": [
+     "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+     "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+     "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-097.png",
+  "png_no": 97,
+  "html_no": 99,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 81,
+    "slide": 94,
+    "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+    "options": [
+     "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+     "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+     "It is a key point matching algorithm.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-098.png",
+  "png_no": 98,
+  "html_no": 100,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 82,
+    "slide": 95,
+    "question": "Choose the best answer about digital image",
+    "options": [
+     "The digital image is a two-dimensional array of color",
+     "The digital image is a matrix of pixels.",
+     "The digital images are composed of a combination of colors.",
+     "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-099.png",
+  "png_no": 99,
+  "html_no": 101,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 83,
+    "slide": 96,
+    "question": "Choose the best description of the image feature",
+    "options": [
+     "Feature is a piece of information about the content of an image",
+     "Feature may be specific structures in the image such as points, edges, or objects",
+     "All of the others",
+     "None of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Choose the best",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-100.png",
+  "png_no": 100,
+  "html_no": 102,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 84,
+    "slide": 97,
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+     "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+     "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+     "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-101.png",
+  "png_no": 101,
+  "html_no": 103,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 85,
+    "slide": 98,
+    "question": "Choose the best description of the active contours",
+    "options": [
+     "It is the process of assigning a color to every pixel in an image.",
+     "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+     "Image segmentation is typically used to recognize the color range and their group in images.",
+     "It is described as a multi-model for the process of segmentation."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-102.png",
+  "png_no": 102,
+  "html_no": 104,
+  "hidden": "Câu ngắn",
+  "candidates": [
+   {
+    "id": 86,
+    "slide": 99,
+    "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+    "options": [
+     "Divide by K number and photo scale",
+     "Evenly distribute K in the image",
+     "Central value.",
+     "Randomly"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-103.png",
+  "png_no": 103,
+  "html_no": 105,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 87,
+    "slide": 100,
+    "question": "Choose the best answer about chromatic aberration:",
+    "options": [
+     "Chromatic aberration is a failure of a lens to focus all colors to the same point.",
+     "Chromatic aberration the index of refraction of glass varies slightly as a function frequency.",
+     "Chromatic aberration is different wavelengths focus at slightly same distances.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-104.png",
+  "png_no": 104,
+  "html_no": 106,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 88,
+    "slide": 101,
+    "question": "Choose the best answer about the illumination model:",
+    "options": [
+     "The illumination model describes the process of absorbing light from an artificial source and is represented in 2D space.",
+     "The illumination model is a spatial transformation, used to describe the transformation of 3D space to 2D space.",
+     "The illumination model used to calculate the intensity of light emitted from natural light sources (Sun, moon)",
+     "The illumination model describes inputs, assumptions, and outputs used to calculate the brightness of surface elements"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ }
+]

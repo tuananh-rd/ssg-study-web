@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m4-016",
+  "q": "Ý sau mô tả khái niệm nào: “Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày; tăng sở hữu và động lực”?",
+  "correct": "Self-managing team",
+  "wrong": [
+   "Virtual team",
+   "Manager-led team",
+   "Cross-functional team"
+  ]
+ },
+ {
+  "id": "r-m4-017",
+  "q": "“Cross-functional team” nghĩa là gì?",
+  "correct": "Cần tích hợp nhiều chuyên môn",
+  "wrong": [
+   "Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn",
+   "Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ",
+   "Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày; tăng sở hữu và động lực"
+  ]
+ },
+ {
+  "id": "r-m4-018",
+  "q": "Ý sau mô tả khái niệm nào: “Cần tích hợp nhiều chuyên môn”?",
+  "correct": "Cross-functional team",
+  "wrong": [
+   "Virtual team",
+   "Manager-led team",
+   "Self-managing team"
+  ]
+ },
+ {
+  "id": "r-m4-019",
+  "q": "“Virtual team” nghĩa là gì?",
+  "correct": "Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn",
+  "wrong": [
+   "Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ",
+   "Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày; tăng sở hữu và động lực",
+   "Cần tích hợp nhiều chuyên môn"
+  ]
+ },
+ {
+  "id": "r-m4-020",
+  "q": "Ý sau mô tả khái niệm nào: “Cần giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn”?",
+  "correct": "Virtual team",
+  "wrong": [
+   "Manager-led team",
+   "Cross-functional team",
+   "Self-managing team"
+  ]
+ },
+ {
+  "id": "r-m4-021",
+  "q": "Tài liệu nêu bao nhiêu mô hình team?",
+  "correct": "Bốn: manager-led, self-managing, cross-functional, virtual",
+  "wrong": [
+   "Hai: manager-led và self-managing",
+   "Ba: manager-led, self-managing, virtual",
+   "Năm: thêm self-designing"
+  ]
+ },
+ {
+  "id": "r-m4-022",
+  "q": "Lãnh đạo hiệu quả điều chỉnh phong cách theo những yếu tố nào?",
+  "correct": "Nhiệm vụ, năng lực, độ trưởng thành và nhu cầu của team",
+  "wrong": [
+   "Tuổi, giới tính và quê quán",
+   "Lương, chức vụ và thâm niên",
+   "Số lượng thành viên và ngân sách"
+  ]
+ },
+ {
+  "id": "r-m4-023",
+  "q": "“Self-awareness” nghĩa là gì?",
+  "correct": "Nhận biết cảm xúc của mình",
+  "wrong": [
+   "Hiểu cảm xúc người khác",
+   "Kiểm soát phản ứng",
+   "Duy trì động lực"
+  ]
+ },
+ {
+  "id": "r-m4-024",
+  "q": "Ý sau mô tả khái niệm nào: “Nhận biết cảm xúc của mình”?",
+  "correct": "Self-awareness",
+  "wrong": [
+   "Self-motivation",
+   "Self-management",
+   "Social awareness / empathy"
+  ]
+ },
+ {
+  "id": "r-m4-025",
+  "q": "“Self-management” nghĩa là gì?",
+  "correct": "Kiểm soát phản ứng",
+  "wrong": [
+   "Hiểu cảm xúc người khác",
+   "Duy trì động lực",
+   "Nhận biết cảm xúc của mình"
+  ]
+ },
+ {
+  "id": "r-m4-026",
+  "q": "Ý sau mô tả khái niệm nào: “Kiểm soát phản ứng”?",
+  "correct": "Self-management",
+  "wrong": [
+   "Social awareness / empathy",
+   "Self-awareness",
+   "Self-motivation"
+  ]
+ },
+ {
+  "id": "r-m4-027",
+  "q": "“Self-motivation” nghĩa là gì?",
+  "correct": "Duy trì động lực",
+  "wrong": [
+   "Hiểu cảm xúc người khác",
+   "Kiểm soát phản ứng",
+   "Nhận biết cảm xúc của mình"
+  ]
+ },
+ {
+  "id": "r-m4-028",
+  "q": "Ý sau mô tả khái niệm nào: “Duy trì động lực”?",
+  "correct": "Self-motivation",
+  "wrong": [
+   "Self-management",
+   "Social awareness / empathy",
+   "Self-awareness"
+  ]
+ },
+ {
+  "id": "r-m4-029",
+  "q": "“Social awareness / empathy” nghĩa là gì?",
+  "correct": "Hiểu cảm xúc người khác",
+  "wrong": [
+   "Nhận biết cảm xúc của mình",
+   "Duy trì động lực",
+   "Kiểm soát phản ứng"
+  ]
+ },
+ {
+  "id": "r-m4-030",
+  "q": "Ý sau mô tả khái niệm nào: “Hiểu cảm xúc người khác”?",
+  "correct": "Social awareness / empathy",
+  "wrong": [
+   "Self-management",
+   "Self-awareness",
+   "Self-motivation"
+  ]
+ },
+ {
+  "id": "r-m4-031",
+  "q": "Ý nào là biểu hiện của EI thấp?",
+  "correct": "Rút khỏi nhóm",
+  "wrong": [
+   "Chủ động hỏi thăm đồng đội",
+   "Kiểm soát phản ứng tốt",
+   "Duy trì động lực"
+  ]
+ },
+ {
+  "id": "r-m4-032",
+  "q": "Ý nào KHÔNG thuộc biểu hiện của EI thấp?",
+  "correct": "Ứng phó tốt với căng thẳng",
+  "wrong": [
+   "Chậm deadline",
+   "Nỗ lực thấp, chất lượng kém",
+   "Suy giảm tinh thần"
+  ]
+ },
+ {
+  "id": "r-m4-033",
+  "q": "Mẫu I-statement trong tài liệu là gì?",
+  "correct": "“Tôi cảm thấy … khi … vì điều đó ảnh hưởng đến … Tôi mong chúng ta có thể …”",
+  "wrong": [
+   "“Bạn luôn … nên bạn phải …”",
+   "“Khi … xảy ra, ai chịu trách nhiệm …”",
+   "“Tôi nghĩ bạn sai vì … ”"
+  ]
+ },
+ {
+  "id": "r-m4-034",
+  "q": "Khi thể hiện cảm xúc, tài liệu khuyên dùng gì thay cho công kích bằng “you”?",
+  "correct": "I-statement",
+  "wrong": [
+   "Face-detracting",
+   "Avoidance",
+   "Leading question"
+  ]
+ },
+ {
+  "id": "r-m4-035",
+  "q": "Theo tài liệu, nên xem vấn đề như thế nào?",
+  "correct": "Như challenge có thể xử lý, không chỉ là threat",
+  "wrong": [
+   "Như threat cần né tránh",
+   "Như lỗi của người khác",
+   "Như việc không thể thay đổi"
+  ]
+ },
+ {
+  "id": "r-m4-036",
+  "q": "Nếu cuộc trao đổi căng thẳng, tài liệu khuyên gì?",
+  "correct": "Giữ giọng bình tĩnh; tạm dừng và nói lại khi cả hai sẵn sàng",
+  "wrong": [
+   "Nói to hơn để kết thúc nhanh",
+   "Gửi email phê bình ngay",
+   "Rời nhóm"
+  ]
+ },
+ {
+  "id": "r-m4-037",
+  "q": "“Tư duy lãnh đạo” khi thể hiện cảm xúc nghĩa là gì?",
+  "correct": "Cân nhắc ảnh hưởng của lời nói đến team",
+  "wrong": [
+   "Luôn nói điều mình nghĩ ngay lập tức",
+   "Chỉ leader mới được thể hiện cảm xúc",
+   "Che giấu mọi cảm xúc"
+  ]
+ },
+ {
+  "id": "r-m5-001",
+  "q": "Trước cuộc họp, cần giao những vai trò nào?",
+  "correct": "Facilitator/leader, timekeeper, note-taker, presenter",
+  "wrong": [
+   "Leader, sponsor, auditor, guest",
+   "Chair, critic, devil’s advocate, observer",
+   "Manager, client, reviewer, secretary"
+  ]
+ },
+ {
+  "id": "r-m5-002",
+  "q": "Ý nào là việc cần làm TRƯỚC cuộc họp?",
+  "correct": "Gửi agenda và tài liệu trước",
+  "wrong": [
+   "Chia sẻ minutes",
+   "Theo dõi deadline",
+   "Tóm tắt để tiến đến quyết định"
+  ]
+ },
+ {
+  "id": "r-m5-003",
+  "q": "Ý nào là việc cần làm TRONG cuộc họp?",
+  "correct": "Bắt đầu đúng giờ, nhắc mục tiêu và agenda",
+  "wrong": [
+   "Chọn không gian / kênh phù hợp",
+   "Chỉ mời người thực sự cần thiết",
+   "Chia sẻ minutes"
+  ]
+ }
+]

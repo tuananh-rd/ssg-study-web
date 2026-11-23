@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lý thuyết</title>
+<style>
+:root{--bg:#f4f6fb;--panel:#fff;--panel2:#f1f4f9;--text:#18212f;--muted:#5f6b7d;--line:#e2e7ef;--ac:#3b5bdb;--soft:#edf1ff;--ok:#2b8a3e}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1420;--panel:#171d2b;--panel2:#1e2536;--text:#e8ecf4;--muted:#9aa6bd;--line:#2a3347;--soft:#1c2540;--ok:#51cf66}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:20;background:var(--panel);border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;padding:10px 16px}
+header .t{font-weight:800}header .sub{color:var(--muted);font-size:.9em}header .sp{flex:1}
+a{color:var(--ac)}.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:8px 14px;border-radius:10px;font:600 14px system-ui;cursor:pointer;text-decoration:none}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#fff}.btn:hover{filter:brightness(.97)}
+#menu{display:none}
+.wrap{display:grid;grid-template-columns:320px minmax(0,1fr);max-width:1280px;margin:0 auto;gap:0}
+aside{position:sticky;top:57px;align-self:start;height:calc(100vh - 57px);overflow:auto;padding:14px 12px;border-right:1px solid var(--line)}
+aside input{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--text);font:inherit;margin-bottom:10px}
+.mod{margin:10px 0 2px;font-weight:700;font-size:.9em;color:var(--muted);text-transform:uppercase;letter-spacing:.03em}
+aside a.s{display:flex;gap:8px;align-items:baseline;padding:7px 10px;border-radius:9px;color:var(--text);text-decoration:none;font-size:.94em;line-height:1.4}
+aside a.s:hover{background:var(--panel2)}aside a.s.on{background:var(--soft);color:var(--ac);font-weight:700}
+aside a.s .n{color:var(--muted);font-size:.85em;min-width:2.4em}aside a.s .d{margin-left:auto;color:var(--ok);font-weight:800}
+main{padding:22px 28px 90px;min-width:0}
+main h1{margin:.1em 0 .2em;font-size:1.7em;line-height:1.25}main .crumb{color:var(--muted);font-size:.9em}
+.body{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:6px 24px 18px;margin:14px 0}
+.body h4{margin:1.3em 0 .3em;font-size:1.05em}.body p{margin:.7em 0}.body ul,.body ol{padding-left:1.4em}.body li{margin:.25em 0}
+.body table{border-collapse:collapse;width:100%;margin:12px 0;display:block;overflow-x:auto}.body th,.body td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.body th{background:var(--panel2)}
+.body code{background:var(--panel2);border-radius:5px;padding:1px 5px;font-family:ui-monospace,Consolas,monospace;font-size:.92em}
+.body pre{background:var(--panel2);border-radius:10px;padding:12px;overflow:auto}.body pre code{background:none;padding:0}
+.img-ph{display:inline-block;background:var(--panel2);color:var(--muted);border:1px dashed var(--line);border-radius:8px;padding:2px 8px;font-size:.85em}
+.nav{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+mark{background:#ffe066;color:#222;border-radius:3px;padding:0 2px}
+@media (max-width:860px){.wrap{display:block}#menu{display:inline-flex}
+ aside{position:fixed;inset:57px 0 0 0;height:auto;background:var(--panel);z-index:15;transform:translateX(-100%);transition:transform .2s;border:0}aside.open{transform:none}
+ main{padding:16px 14px 90px}.body{padding:4px 14px 14px}}
+</style></head><body>
+<header><button class="btn" id="menu">☰ Mục lục</button><span class="t" id="ttl"></span><span class="sub" id="sub"></span><span class="sp"></span><a class="btn" href="/">← Trang chủ</a><a class="btn p" id="quiz" href="#">Luyện đề →</a></header>
+<div class="wrap"><aside id="toc"><input id="q" type="search" placeholder="Tìm trong bài học…" autocomplete="off"><div id="list"></div></aside><main id="main"></main></div>
+<script>
+var SUBJ=/*@SUBJECT@*/, L=/*@LESSONS@*/;
+(function(){
+var secs=[];L.modules.forEach(function(m){m.sections.forEach(function(s){secs.push({id:s.id,t:s.t,h:s.h,mod:m.title,mid:m.id});});});
+var KEY=SUBJ.key,st={read:{},last:null};try{st=Object.assign(st,JSON.parse(localStorage.getItem(KEY)||'{}'));}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function plain(h){return h.replace(/<[^>]+>/g,' ').replace(/&nbsp;/g,' ').replace(/\s+/g,' ');}
+function fold(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/đ/g,'d');}
+secs.forEach(function(s){s.f=fold(s.t+' '+plain(s.h));});
+document.title='Lý thuyết '+SUBJ.name;document.getElementById('ttl').textContent=SUBJ.name;document.getElementById('sub').textContent=SUBJ.full;document.getElementById('quiz').href='/app/'+SUBJ.id;
+var cur=null,term='';
+function renderList(){var h='',lastM='',q=fold(term.trim());
+  secs.forEach(function(s){if(q&&s.f.indexOf(q)<0)return;if(s.mid!==lastM){lastM=s.mid;h+='<div class="mod">'+esc(s.mid.slice(1)+'. '+s.mod)+'</div>';}
+    h+='<a class="s'+(cur&&cur.id===s.id?' on':'')+'" href="#'+s.id+'" data-id="'+s.id+'"><span class="n">'+s.id+'</span><span>'+esc(s.t)+'</span>'+(st.read[s.id]?'<span class="d">✓</span>':'')+'</a>';});
+  document.getElementById('list').innerHTML=h||'<p style="color:var(--muted)">Không có mục nào khớp.</p>';}
+function hl(html,q){if(!q)return html;var re=new RegExp('('+q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');return html.replace(/(>)([^<]+)(<)/g,function(m,a,t,b){return a+t.replace(re,'<mark>$1</mark>')+b;});}
+function show(id,noScroll){var i=secs.findIndex(function(s){return s.id===id;});if(i<0)i=0;cur=secs[i];st.last=cur.id;save();
+  var p=secs[i-1],n=secs[i+1],done=!!st.read[cur.id];
+  document.getElementById('main').innerHTML='<div class="crumb">'+esc(cur.mid.slice(1)+'. '+cur.mod)+'</div><h1>'+esc(cur.id+' · '+cur.t)+'</h1><div class="body">'+hl(cur.h,term.trim().length>1?term.trim():'')+'</div>'+
+   '<div class="nav"><span>'+(p?'<a class="btn" href="#'+p.id+'">← '+esc(p.t.slice(0,32))+'</a>':'')+'</span><button class="btn" id="done">'+(done?'✓ Đã đọc (bỏ)':'Đánh dấu đã đọc')+'</button><span>'+(n?'<a class="btn p" href="#'+n.id+'">'+esc(n.t.slice(0,32))+' →</a>':'<a class="btn p" href="/app/'+SUBJ.id+'">Luyện đề →</a>')+'</span></div>';
+  document.getElementById('done').onclick=function(){if(st.read[cur.id])delete st.read[cur.id];else st.read[cur.id]=1;save();show(cur.id,true);};
+  renderList();document.getElementById('toc').classList.remove('open');if(!noScroll)window.scrollTo(0,0);}
+window.addEventListener('hashchange',function(){show(location.hash.slice(1));});
+document.getElementById('q').addEventListener('input',function(){term=this.value;renderList();if(cur&&term.trim().length>1)show(cur.id,true);});
+document.getElementById('menu').onclick=function(){document.getElementById('toc').classList.toggle('open');};
+document.getElementById('list').addEventListener('click',function(e){var a=e.target.closest('a.s');if(a)document.getElementById('toc').classList.remove('open');});
+show(location.hash.slice(1)||st.last||secs[0].id);
+})();
+</script></body></html>

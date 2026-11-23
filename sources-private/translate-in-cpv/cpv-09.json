@@ -1,0 +1,202 @@
+[
+ {
+  "id": 161,
+  "question": "We have opened an image with OpenCV. We want to flip it on both Vertical and Horizontal axis. Which is correct the code?",
+  "options": [
+   "cv2.flip(img, -1)",
+   "cv2.flip(img, 1)",
+   "cv2.flip(img, 0)",
+   "cv2.flip(img, 2)"
+  ]
+ },
+ {
+  "id": 162,
+  "question": "Which type of digital camera sensor is commonly found in smartphones and compact cameras?",
+  "options": [
+   "CMOS sensor",
+   "Full-frame sensor",
+   "APS-C sensor",
+   "Micro Four Thirds sensor"
+  ]
+ },
+ {
+  "id": 163,
+  "question": "What geometric primitive is typically used to represent a point in a 2D image in computer vision?",
+  "options": [
+   "Pixel",
+   "Line",
+   "Circle",
+   "Triangle"
+  ]
+ },
+ {
+  "id": 164,
+  "question": "Which transformation only preserves collinearity and ratios of distances between points on a line?",
+  "options": [
+   "Affine transformation",
+   "Translation",
+   "Rotation",
+   "Perspective transformation"
+  ]
+ },
+ {
+  "id": 165,
+  "question": "Which type of filter is commonly used for smoothing an image and reducing noise?",
+  "options": [
+   "Low-pass filter",
+   "High-pass filter",
+   "Band-pass filter",
+   "Adaptive filter"
+  ]
+ },
+ {
+  "id": 166,
+  "question": "Which Phong Shading model component is responsible for simulating the reflection of light off a surface in multiple directions?",
+  "options": [
+   "Diffuse reflection",
+   "Ambient reflection",
+   "Emissive reflection",
+   "Specular reflection"
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Which process is employed for correcting parallax in image blending when the motion is relatively small?",
+  "options": [
+   "Global bundle adjustment.",
+   "Local alignment.",
+   "General 2D motion estimation.",
+   "Back-projection averaging."
+  ]
+ },
+ {
+  "id": 168,
+  "question": "In what field is image stitching utilized to reconstruct torn paper?",
+  "options": [
+   "Art restoration.",
+   "Medical imaging.",
+   "Forensic and investigative science.",
+   "Archaeology."
+  ]
+ },
+ {
+  "id": 169,
+  "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+  "options": [
+   "Feature-based Methods",
+   "Holistic Matching Methods",
+   "Structural Classifier Methods",
+   "Neural network based method"
+  ]
+ },
+ {
+  "id": 170,
+  "question": "What is the underlying principle of Mean Shift segmentation?",
+  "options": [
+   "Moving pixels towards the average color",
+   "Minimizing mean intensity gradients of regions",
+   "Maximizing color contrast of objects",
+   "Applying morphological operations median images"
+  ]
+ },
+ {
+  "id": 171,
+  "question": "What is the contrast stretching technique in image processing?",
+  "options": [
+   "To compress the range of intensity values in an image",
+   "To reduce the overall brightness of an image",
+   "To stretch the range of intensity values for optimal utilization",
+   "To convert color images into grayscale"
+  ]
+ },
+ {
+  "id": 172,
+  "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+  "options": [
+   "To blur the image and reduce noise",
+   "To enhance the contrast of the image",
+   "To calculate the gradient of the image",
+   "To perform non-maximum suppression."
+  ]
+ },
+ {
+  "id": 173,
+  "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+  "options": [
+   "Random sampling of the pixels in a range",
+   "Gradient descent of the pixels in a clustering",
+   "Mean of the pixels in a clustering",
+   "Mean of the pixels in a range"
+  ]
+ },
+ {
+  "id": 174,
+  "question": "What is image processing generally focused on achieving?",
+  "options": [
+   "Generating textual information from images",
+   "Extracting useful information and enhancing images",
+   "Converting images into audio signals",
+   "Creating three-dimensional representations of images"
+  ]
+ },
+ {
+  "id": 175,
+  "question": "What is a limitation of using region growing algorithms for image segmentation?",
+  "options": [
+   "Difficulty handling objects with disconnected parts.",
+   "Inability to segment images with multiple dominant colors.",
+   "High sensitivity to noise and slight intensity variations.",
+   "Significant computational cost for processing large images."
+  ]
+ },
+ {
+  "id": 176,
+  "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+  "options": [
+   "Generating high-resolution images",
+   "Conducting pixel-level segmentation",
+   "Performing voting procedure for shape recognition",
+   "Enhancing color saturation in the image"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "What is the primary goal of object detection in image and video processing?",
+  "options": [
+   "Recognizing objects without specifying their location",
+   "Identifying and locating instances of objects in an image or video",
+   "Describing the content of an image",
+   "Classifying images based on their visual features"
+  ]
+ },
+ {
+  "id": 178,
+  "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+  "options": [
+   "It minimizes the sum of squared distances between points.",
+   "It maximizes the entropy between points.",
+   "It maximizes the sum of squared differences between points.",
+   "It minimizes the entropy of the aligned image."
+  ]
+ },
+ {
+  "id": 179,
+  "question": "What is the primary purpose of global bundle adjustment in image processing?",
+  "options": [
+   "Estimating the location of 3D points",
+   "Correcting parallax in images",
+   "Optimizing camera poses",
+   "Aligning two images"
+  ]
+ },
+ {
+  "id": 180,
+  "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+  "options": [
+   "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+   "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+   "Translate 2 along x axis, translate 1 along y axis",
+   "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+  ]
+ }
+]

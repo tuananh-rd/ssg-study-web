@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m5-029",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Evaluate” là gì?",
+  "correct": "Implement",
+  "wrong": [
+   "Follow up",
+   "Generate solutions",
+   "Establish criteria"
+  ]
+ },
+ {
+  "id": "r-m5-030",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey: ngay sau “Implement” là gì?",
+  "correct": "Follow up",
+  "wrong": [
+   "Generate solutions",
+   "Establish criteria",
+   "Analyze"
+  ]
+ },
+ {
+  "id": "r-m5-031",
+  "q": "Ý nào là nguyên tắc giải quyết vấn đề theo tài liệu?",
+  "correct": "Tiêu chí nên được thống nhất trước khi đánh giá ý tưởng",
+  "wrong": [
+   "Chọn giải pháp ngay khi thấy vấn đề",
+   "Vừa tạo ý tưởng vừa phê bình",
+   "Vấn đề càng chung chung càng tốt"
+  ]
+ },
+ {
+  "id": "r-m5-032",
+  "q": "Giải quyết vấn đề được tài liệu mô tả là gì?",
+  "correct": "Một chu kỳ liên tục",
+  "wrong": [
+   "Việc làm một lần duy nhất",
+   "Nhiệm vụ riêng của leader",
+   "Bước cuối của dự án"
+  ]
+ },
+ {
+  "id": "r-m5-033",
+  "q": "Theo tài liệu, xung đột là gì?",
+  "correct": "Sự đấu tranh thể chất hoặc tâm lý do nhận thức về mục tiêu, mong muốn hay nhu cầu đối lập",
+  "wrong": [
+   "Dấu hiệu quan hệ đã thất bại",
+   "Việc hai người không nói chuyện với nhau",
+   "Hành vi blocking trong nhóm"
+  ]
+ },
+ {
+  "id": "r-m5-034",
+  "q": "Xung đột có đồng nghĩa với quan hệ thất bại không?",
+  "correct": "Không, xung đột là phổ biến",
+  "wrong": [
+   "Có, luôn luôn",
+   "Có, nếu kéo dài hơn một tuần",
+   "Chỉ khi có leader"
+  ]
+ },
+ {
+  "id": "r-m5-035",
+  "q": "Ý nào là nguồn xung đột thường gặp?",
+  "correct": "Nguồn lực khan hiếm",
+  "wrong": [
+   "Mục tiêu được mọi người thống nhất",
+   "Vai trò rõ ràng",
+   "Có team charter"
+  ]
+ },
+ {
+  "id": "r-m5-036",
+  "q": "Ý nào KHÔNG thuộc nguồn xung đột thường gặp?",
+  "correct": "Giao tiếp rõ ràng",
+  "wrong": [
+   "Mục tiêu không tương thích",
+   "Vai trò hoặc ưu tiên không rõ",
+   "Khác biệt giá trị, kỳ vọng, phong cách giao tiếp"
+  ]
+ },
+ {
+  "id": "r-m5-037",
+  "q": "Phản ứng với xung đột được chia theo hai cặp nào?",
+  "correct": "Chủ động – thụ động; xây dựng – phá hoại",
+  "wrong": [
+   "Đúng – sai; nhanh – chậm",
+   "Nội bộ – bên ngoài; trực tiếp – gián tiếp",
+   "Cá nhân – tập thể; cảm xúc – lý trí"
+  ]
+ },
+ {
+  "id": "r-m5-038",
+  "q": "Avoidance (né tránh) có tác dụng gì?",
+  "correct": "Cho thời gian bình tĩnh nhưng thường không giải quyết gốc vấn đề",
+  "wrong": [
+   "Luôn giải quyết triệt để",
+   "Không bao giờ có ích",
+   "Tăng niềm tin ngay lập tức"
+  ]
+ },
+ {
+  "id": "r-m5-039",
+  "q": "Mức độ trực tiếp phù hợp khi xử lý xung đột phụ thuộc vào gì?",
+  "correct": "Văn hóa",
+  "wrong": [
+   "Tuổi tác",
+   "Lương",
+   "Số thành viên"
+  ]
+ },
+ {
+  "id": "r-m5-040",
+  "q": "Khi giao tiếp trong xung đột nên tập trung vào điều gì?",
+  "correct": "Vấn đề và hành vi, không phán xét tính cách",
+  "wrong": [
+   "Tính cách của đối phương",
+   "Lỗi trong quá khứ",
+   "Người đúng người sai"
+  ]
+ },
+ {
+  "id": "r-m5-041",
+  "q": "Ngôn ngữ giữ thể diện và uy tín cho đối phương gọi là gì?",
+  "correct": "Face-saving",
+  "wrong": [
+   "Face-detracting",
+   "I-statement",
+   "Avoidance"
+  ]
+ },
+ {
+  "id": "r-m5-042",
+  "q": "Thông điệp công kích danh dự, năng lực hoặc tính chính trực gọi là gì?",
+  "correct": "Face-detracting",
+  "wrong": [
+   "Face-saving",
+   "Goal-directed",
+   "Constructive feedback"
+  ]
+ },
+ {
+  "id": "r-m5-043",
+  "q": "Ý nào là cách giao tiếp trong xung đột theo tài liệu?",
+  "correct": "Dựa vào mục tiêu chung để tìm giải pháp",
+  "wrong": [
+   "Nhắc lại lỗi cũ của đối phương",
+   "Để leader quyết thay",
+   "Né tránh đến khi tự hết"
+  ]
+ },
+ {
+  "id": "r-m5-044",
+  "q": "Ý nào KHÔNG thuộc cách giao tiếp trong xung đột?",
+  "correct": "Dùng “you” để chỉ ra lỗi",
+  "wrong": [
+   "Dùng I-statement, giọng bình tĩnh",
+   "Lắng nghe chủ động",
+   "Mời hai bên giải thích giới hạn và nhu cầu"
+  ]
+ },
+ {
+  "id": "r-m5-045",
+  "q": "“Specific / descriptive” nghĩa là gì?",
+  "correct": "Cụ thể, mô tả hành vi và kết quả",
+  "wrong": [
+   "Tạo đối thoại và cùng thiết kế bước tiếp theo",
+   "Gắn với mục tiêu, deadline và tiêu chuẩn chung",
+   "Ghi nhận điều đang làm tốt"
+  ]
+ },
+ {
+  "id": "r-m5-046",
+  "q": "Ý sau mô tả khái niệm nào: “Cụ thể, mô tả hành vi và kết quả”?",
+  "correct": "Specific / descriptive",
+  "wrong": [
+   "Timely and necessary",
+   "Positive and encouraging",
+   "Respectful"
+  ]
+ },
+ {
+  "id": "r-m5-047",
+  "q": "“Respectful” nghĩa là gì?",
+  "correct": "Đúng thời điểm, đúng nơi, giữ phẩm giá",
+  "wrong": [
+   "Cụ thể, mô tả hành vi và kết quả",
+   "Kịp thời và thực sự cần thiết",
+   "Ghi nhận điều đang làm tốt"
+  ]
+ },
+ {
+  "id": "r-m5-048",
+  "q": "Ý sau mô tả khái niệm nào: “Đúng thời điểm, đúng nơi, giữ phẩm giá”?",
+  "correct": "Respectful",
+  "wrong": [
+   "Positive and encouraging",
+   "Goal-directed",
+   "Specific / descriptive"
+  ]
+ },
+ {
+  "id": "r-m5-049",
+  "q": "“Positive and encouraging” nghĩa là gì?",
+  "correct": "Ghi nhận điều đang làm tốt",
+  "wrong": [
+   "Gắn với mục tiêu, deadline và tiêu chuẩn chung",
+   "Kịp thời và thực sự cần thiết",
+   "Cụ thể, mô tả hành vi và kết quả"
+  ]
+ },
+ {
+  "id": "r-m5-050",
+  "q": "Ý sau mô tả khái niệm nào: “Ghi nhận điều đang làm tốt”?",
+  "correct": "Positive and encouraging",
+  "wrong": [
+   "Collaborative",
+   "Respectful",
+   "Timely and necessary"
+  ]
+ },
+ {
+  "id": "r-m5-051",
+  "q": "“Goal-directed” nghĩa là gì?",
+  "correct": "Gắn với mục tiêu, deadline và tiêu chuẩn chung",
+  "wrong": [
+   "Ghi nhận điều đang làm tốt",
+   "Kịp thời và thực sự cần thiết",
+   "Tạo đối thoại và cùng thiết kế bước tiếp theo"
+  ]
+ },
+ {
+  "id": "r-m5-052",
+  "q": "Ý sau mô tả khái niệm nào: “Gắn với mục tiêu, deadline và tiêu chuẩn chung”?",
+  "correct": "Goal-directed",
+  "wrong": [
+   "Collaborative",
+   "Specific / descriptive",
+   "Respectful"
+  ]
+ },
+ {
+  "id": "r-m5-053",
+  "q": "“Collaborative” nghĩa là gì?",
+  "correct": "Tạo đối thoại và cùng thiết kế bước tiếp theo",
+  "wrong": [
+   "Gắn với mục tiêu, deadline và tiêu chuẩn chung",
+   "Ghi nhận điều đang làm tốt",
+   "Đúng thời điểm, đúng nơi, giữ phẩm giá"
+  ]
+ }
+]

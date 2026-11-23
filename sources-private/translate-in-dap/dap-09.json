@@ -1,0 +1,202 @@
+[
+ {
+  "id": 168,
+  "question": "In the dcc.Slider component of Dash, what does the marks property allow you to do?",
+  "options": [
+   "It defines the range of values for the slider.",
+   "It specifies the color of the slider.",
+   "It sets the initial value of the slider.",
+   "It labels specific values on the slider."
+  ]
+ },
+ {
+  "id": 169,
+  "question": "In a simple linear regression equation (y = mx + c), what does 'm' represent?",
+  "options": [
+   "Intercept",
+   "Slope",
+   "Residuals",
+   "Dependent variable"
+  ]
+ },
+ {
+  "id": 170,
+  "question": "In polynomial regression, what degree does the relationship between variables have?",
+  "options": [
+   "Linear",
+   "Quadratic",
+   "Cubic",
+   "All of the above"
+  ]
+ },
+ {
+  "id": 171,
+  "question": "In Sklearn, which regression model is suitable for reducing model complexity and preventing overfitting by adding a regularization term?",
+  "options": [
+   "Linear Regression",
+   "Polynomial Regression",
+   "Ridge Regression",
+   "Lasted Regression"
+  ]
+ },
+ {
+  "id": 172,
+  "question": "In RESTful API design, what does the acronym \"URI\" stand for?",
+  "options": [
+   "Universal Resource Identifier",
+   "Uniform Resource Identifier",
+   "Unique Resource Identifier",
+   "Unrestricted Resource Identifier"
+  ]
+ },
+ {
+  "id": 173,
+  "question": "In the context of training a neural network using TensorFlow, what does \"fitting the model\" refer to?",
+  "options": [
+   "Evaluating the model's performance",
+   "Adjusting hyper-parameters",
+   "Training the model on a dataset",
+   "Predicting on new data"
+  ]
+ },
+ {
+  "id": 174,
+  "question": "In a confusion matrix, what does the term \"false positive\" (FP) represent?",
+  "options": [
+   "Instances incorrectly predicted as positive",
+   "Instances correctly predicted as positive",
+   "Instances correctly predicted as negative",
+   "Instances incorrectly predicted as negative"
+  ]
+ },
+ {
+  "id": 175,
+  "question": "In web scraping, what does the requests library in Python primarily facilitate?",
+  "options": [
+   "Handling HTTP requests and responses",
+   "Parsing HTML content",
+   "Data analysis",
+   "Visualization"
+  ]
+ },
+ {
+  "id": 176,
+  "question": "In TensorFlow, what does CNN stand for in the context of neural networks?",
+  "options": [
+   "Convolutional Natural Network",
+   "Centralized Neural Network",
+   "Convolutional Neural Network",
+   "Connected Neuron Network"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "If the predicted function is y = b0 + b1x1 + b2x2 + b3x3 + b4x4. The method is?",
+  "options": [
+   "Multiple linear regression",
+   "None linear regression",
+   "Linear regression",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 178,
+  "question": "If we group a pandas DataFrame df by column 'Region', and then calculate the count of values for each group, what will be the group with the highest figure in the grouped data?\ndf = pd.DataFrame({'Region': ['Asia', 'Asia', 'Europe', 'Europe', 'Asia'], 'Country': ['Japan', 'Japan', 'Japan', 'USA', 'Japan'], Value: [10, 20, 30, 40, 50]})",
+  "options": [
+   "Asia",
+   "Japan",
+   "['Asia', 'Japan']",
+   "Europe"
+  ]
+ },
+ {
+  "id": 179,
+  "question": "The following code is an example of (df['len'] - df['len'].mean()) / df['len'].std()?",
+  "options": [
+   "z-score",
+   "t-score",
+   "m-score",
+   "r-score"
+  ]
+ },
+ {
+  "id": 180,
+  "question": "You are training an SVC classifier on a dataset with numerical features and a binary target variable. You want to tune the C hyperparameter of the SVC model to improve its performance. Which method allows you to calculate the best C value using cross-validation?",
+  "options": [
+   "Grid Search",
+   "Random Search",
+   "Sequential Feature Selection",
+   "Recursive Feature Elimination"
+  ]
+ },
+ {
+  "id": 181,
+  "question": "You have a dataset customer_data containing information about customers, including their age, income, and whether they purchased a product (binary classification). You want to train a Support Vector Classifier (SVC) with a linear kernel to predict whether a new customer will purchase the product based on their age and income. You want to evaluate the performance of the trained SVC model. Which evaluation metric would be most appropriate for this binary classification problem?",
+  "options": [
+   "F1 Score",
+   "Mean Absolute Error (MAE)",
+   "R-squared",
+   "Mean Squared Error (MSE)"
+  ]
+ },
+ {
+  "id": 182,
+  "question": "You have trained a Decision Tree classifier with a min_samples_split parameter set to 20. After evaluation, you notice that increasing the min_samples_split parameter leads to a simpler decision tree. What could be the reason for this behavior?",
+  "options": [
+   "Underfitting",
+   "Overfitting",
+   "High bias",
+   "High variance"
+  ]
+ },
+ {
+  "id": 183,
+  "question": "What does the width of a box in a boxplot depict?",
+  "options": [
+   "Interquartile range (IQR)",
+   "Range of the dataset",
+   "Variance of the dataset",
+   "Standard deviation"
+  ]
+ },
+ {
+  "id": 184,
+  "question": "How does increasing the alpha value impact the model's coefficients in Lasso regression?",
+  "options": [
+   "Coefficients are shrunk towards zero.",
+   "Coefficients are increased by the alpha.",
+   "Coefficients remain unchanged.",
+   "Intercepts increase in magnitude as alpha increases."
+  ]
+ },
+ {
+  "id": 185,
+  "question": "Which method is used for handling missing data in a dataset?",
+  "options": [
+   "Deleting rows with missing values",
+   "Imputation",
+   "Ignoring missing values during analysis",
+   "All of the above"
+  ]
+ },
+ {
+  "id": 186,
+  "question": "What does the autopct parameter in plot(kind='pie') allow you to do?",
+  "options": [
+   "Automatically formats the labels",
+   "Sets the pie chart's aspect ratio",
+   "Adjusts the percentage of each slice",
+   "Autoplots additional pie charts"
+  ]
+ },
+ {
+  "id": 187,
+  "question": "Which of the following is not a common step in data preprocessing?",
+  "options": [
+   "Handling missing values",
+   "Feature scaling",
+   "Model deployment",
+   "Encoding categorical variables"
+  ]
+ }
+]

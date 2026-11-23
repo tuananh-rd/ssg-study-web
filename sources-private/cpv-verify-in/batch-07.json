@@ -1,0 +1,1881 @@
+[
+ {
+  "png": "cpv-slides-png/slide-105.png",
+  "png_no": 105,
+  "html_no": 107,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 89,
+    "slide": 102,
+    "question": "Choose the best answer about image color",
+    "options": [
+     "Color is the aspect of things that is caused by differing qualities of light being reflected or emitted by them.",
+     "Color is white light emitted by a natural source - the sun",
+     "Color is a way of displaying the value of an image and color has seven primary colors.",
+     "All of others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Choose the best",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-106.png",
+  "png_no": 106,
+  "html_no": 108,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 90,
+    "slide": 103,
+    "question": "Choose the best description of computer vision",
+    "options": [
+     "Computer vision processes low levels in the image.",
+     "Computer vision works by identifying different components in the image",
+     "Computer vision is only deployed on large and fast processing systems.",
+     "Computer vision is applied in medical image processing, but not as expected in other fields such as agriculture."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Choose the best",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-107.png",
+  "png_no": 107,
+  "html_no": 109,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-108.png",
+  "png_no": 108,
+  "html_no": 110,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 91,
+    "slide": 105,
+    "question": "What is the primary purpose of finding connected components in the overlap graph during panorama recognition?",
+    "options": [
+     "Identifying outliers in the image set",
+     "Recognizing individual panoramas",
+     "Estimating camera poses",
+     "Calculating image overlap angles"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-109.png",
+  "png_no": 109,
+  "html_no": 111,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 92,
+    "slide": 106,
+    "question": "What is the primary purpose of calculating the image gradient in image processing?",
+    "options": [
+     "Enhancing image resolution",
+     "Identifying outliers in the data",
+     "Extracting useful information",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-110.png",
+  "png_no": 110,
+  "html_no": 112,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 93,
+    "slide": 107,
+    "question": "What is the main drawback of the basic Sobel operator in edge detection?",
+    "options": [
+     "Sensitivity to noise",
+     "Inability to detect diagonal edges",
+     "Slow computation speed",
+     "Lack of rotational invariance"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-111.png",
+  "png_no": 111,
+  "html_no": 113,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 94,
+    "slide": 108,
+    "question": "What is the purpose of the Bidirectional Reflectance Distribution Function (BRDF) in photometric image formation?",
+    "options": [
+     "Modeling specular reflection",
+     "Describing light absorption",
+     "Encoding color information",
+     "Representing texture mapping"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-112.png",
+  "png_no": 112,
+  "html_no": 114,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 95,
+    "slide": 109,
+    "question": "What is a common cause of distortion in camera images?",
+    "options": [
+     "Linear projection model",
+     "Wide-angle lenses",
+     "Off-axis distance",
+     "linear magnification"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Camera, stereo & 3D"
+   },
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-113.png",
+  "png_no": 113,
+  "html_no": 115,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 96,
+    "slide": 110,
+    "question": "What is the input for computer vision?",
+    "options": [
+     "Text",
+     "Audio",
+     "Video",
+     "Image"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-114.png",
+  "png_no": 114,
+  "html_no": 116,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 97,
+    "slide": 111,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-115.png",
+  "png_no": 115,
+  "html_no": 117,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 98,
+    "slide": 112,
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+     "Frequency analysis",
+     "Noise reduction",
+     "Edge detection",
+     "Color correction"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-116.png",
+  "png_no": 116,
+  "html_no": 118,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 99,
+    "slide": 113,
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+     "Object classification",
+     "Trajectory prediction",
+     "Instance segmentation",
+     "ID assignment maintenance"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-117.png",
+  "png_no": 117,
+  "html_no": 119,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 100,
+    "slide": 114,
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+     "Dispersion of light",
+     "Lens curvature",
+     "Lens thickness",
+     "Lens material",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-118.png",
+  "png_no": 118,
+  "html_no": 120,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 101,
+    "slide": 115,
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+     "Improved color accuracy",
+     "Enhanced detail preservation",
+     "Increased computational efficiency",
+     "Reduced memory requirements"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-119.png",
+  "png_no": 119,
+  "html_no": 121,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 102,
+    "slide": 116,
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+     "Number of dimensions",
+     "Number of data points",
+     "Number of clusters",
+     "Number of iterations"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-120.png",
+  "png_no": 120,
+  "html_no": 122,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 103,
+    "slide": 117,
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+     "Principal Component Analysis (PCA)",
+     "Histogram of Oriented Gradients (HOG)",
+     "Scale Invariant Feature Transform (SIFT)",
+     "Convolutional Neural Networks (CNN)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ }
+]

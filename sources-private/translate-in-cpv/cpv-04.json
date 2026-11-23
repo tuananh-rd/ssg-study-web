@@ -1,0 +1,202 @@
+[
+ {
+  "id": 61,
+  "question": "Choose the best description of the K- Mean for segmentation",
+  "options": [
+   "The k-means clustering algorithm attempts to fill in the missing data intervals to create new clusters.",
+   "It is used to identify data labels based on a given labeled dataset.",
+   "K Means is a classifying algorithm.",
+   "In the K-Mean algorithm, in the same data group, the closer to the central data point, the larger the difference in data will be."
+  ]
+ },
+ {
+  "id": 62,
+  "question": "Choose the best answer about color space",
+  "options": [
+   "Color space is the term for a system that uses a specific image model to translate color into numbers.",
+   "A color space is a specific organization of colors.",
+   "System that turns image into numbers.",
+   "Color spaces are mathematical models describing the way image can be represented."
+  ]
+ },
+ {
+  "id": 63,
+  "question": "Choose the best answer about digital image",
+  "options": [
+   "The digital image is a two-dimensional array of color",
+   "The digital image is a matrix of pixels.",
+   "The digital images are composed of a combination of colors.",
+   "The digital images are created from digital cameras through a mechanical system."
+  ]
+ },
+ {
+  "id": 64,
+  "question": "Choose the best description of the Fourier Transform",
+  "options": [
+   "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+   "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+   "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 65,
+  "question": "Choose the best answer about Photometry:",
+  "options": [
+   "Photometry is proportional to the amount of light directed by the surface patch which projects onto the computer.",
+   "Photometry is the science of the measurement of light, in terms of its perceived brightness to the human eye",
+   "Photometry is the phenomenon of light being absorbed when it reaches the surface of the matter.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 66,
+  "question": "Choose the best answer about 2D Lines",
+  "options": [
+   "A line is a straight one-dimensional figure having no thickness and extending infinitely in both directions.",
+   "Lines are an idealization of such objects, which are often described in terms of two points",
+   "Line in the plane is often defined as the set of points whose coordinates satisfy a given linear equation.",
+   "All of others"
+  ]
+ },
+ {
+  "id": 67,
+  "question": "Choose the best description of the convolution- Kernel",
+  "options": [
+   "It is an array-representative for transforming images from different spatial domains.",
+   "It is the process of adding each element of the image to its local neighbors, weighted by the intensity value.",
+   "It is a small matrix used to clarify certain features.",
+   "It is used in all filters to increase the brightness of the image."
+  ]
+ },
+ {
+  "id": 68,
+  "question": "Choose the best description of the contrast stretching",
+  "options": [
+   "It is used as a filter, removing noise like salt and pepper",
+   "It is also known as Invert-Normalization",
+   "It improves an image by stretching the range of intensity values it contains.",
+   "It is a way of representing histogram in terms of light balance implementation"
+  ]
+ },
+ {
+  "id": 69,
+  "question": "Choose the best description about global alignment in image stitching",
+  "options": [
+   "Global alignment requires the non-linear minimization of an error term, which is defined from point correspondences.",
+   "Global alignment is still needed to obtain a globally coherent mosaic.",
+   "The goal of global alignment is then to find a globally consistent set of alignment parameters that minimize the misregistration between all pairs of images.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 70,
+  "question": "Choose the best description of the line detection using the convolution based technique",
+  "options": [
+   "A convolution-based technique that produces an image description of the thin lines in an input image",
+   "These kernel masks are tuned for dark lines against a grey background",
+   "A convolution-based technique is the foundation of deep learning models.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 71,
+  "question": "Choose the best description of the Prewitt operator for edge detection",
+  "options": [
+   "It detects the overlap edges of an image.",
+   "It is one of the best ways to detect the color intensity and magnitude of an image",
+   "It is a good performance on detecting vertical and horizontal edges",
+   "It is never a good choice to detect the orientation of an image"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "Choose the best description of the Hough transform",
+  "options": [
+   "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+   "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+   "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "Choose the best description of the Fourier Transform",
+  "options": [
+   "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+   "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+   "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "Choose the best description of the gaussian smoothing",
+  "options": [
+   "Gaussian smoothing is the result of blurring an image by a Laplace function.",
+   "It enhance image structures at different scales.",
+   "Smooth blur resembling that of replace the image through a translucent screen",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "Choose the best correct answer about parallax removal",
+  "options": [
+   "Parallax is a key challenge that leads to inaccurate registration and ghosting effect of objects in the result. So it needs to remove.",
+   "It is used to optimize the camera poses. Once these have been estimated, the desired location of a 3D point x can be estimated as the average of the back-projected 3D locations.",
+   "It is a displacement or difference in the apparent position of an object viewed along two different lines of sight, and is measured by the angle or semi-angle of inclination between those two lines.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "Choose the best answer about the bidirectional reflectance distribution function:",
+  "options": [
+   "It describes the light that reaches the surface of matter in low light and how the color spectrum in the corresponding frequency range can be calculated.",
+   "It is reciprocal- can calculate by a total of the incident and reflected intensity.",
+   "It describes the proportion of light coming from each incident direction that is redirected to each reflected direction.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 77,
+  "question": "Choose the best description of the RANdom SAmple Consensus- RANSAC",
+  "options": [
+   "RANSAC is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+   "RANSAC is a resampling technique that generates candidate solutions by using the minimum number of data points required to estimate the underlying model parameters.",
+   "It is a key point matching algorithm.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "Choose the best description of the image feature",
+  "options": [
+   "Feature is a piece of information about the content of an image",
+   "Feature may be specific structures in the image such as points, edges, or objects",
+   "All of the others",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "Choose the best description of the active contours",
+  "options": [
+   "It is the process of assigning a color to every pixel in an image.",
+   "It defines a separate boundary or curvature for the regions of the target object for segmentation.",
+   "Image segmentation is typically used to recognize the color range and their group in images.",
+   "It is described as a multi-model for the process of segmentation."
+  ]
+ },
+ {
+  "id": 80,
+  "question": "Choosing the position of K centroids positions is very important. How is the initial value of K centroids positions calculated? Choose the best answer",
+  "options": [
+   "Divide by K number and photo scale",
+   "Evenly distribute K in the image",
+   "Central value.",
+   "Randomly"
+  ]
+ }
+]

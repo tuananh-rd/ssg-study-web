@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m5-054",
+  "q": "Ý sau mô tả khái niệm nào: “Tạo đối thoại và cùng thiết kế bước tiếp theo”?",
+  "correct": "Collaborative",
+  "wrong": [
+   "Goal-directed",
+   "Positive and encouraging",
+   "Timely and necessary"
+  ]
+ },
+ {
+  "id": "r-m5-055",
+  "q": "“Timely and necessary” nghĩa là gì?",
+  "correct": "Kịp thời và thực sự cần thiết",
+  "wrong": [
+   "Cụ thể, mô tả hành vi và kết quả",
+   "Tạo đối thoại và cùng thiết kế bước tiếp theo",
+   "Gắn với mục tiêu, deadline và tiêu chuẩn chung"
+  ]
+ },
+ {
+  "id": "r-m5-056",
+  "q": "Ý sau mô tả khái niệm nào: “Kịp thời và thực sự cần thiết”?",
+  "correct": "Timely and necessary",
+  "wrong": [
+   "Goal-directed",
+   "Collaborative",
+   "Respectful"
+  ]
+ },
+ {
+  "id": "r-m5-057",
+  "q": "Có bao nhiêu đặc điểm của phản hồi tốt theo tài liệu?",
+  "correct": "Sáu",
+  "wrong": [
+   "Bốn",
+   "Năm",
+   "Bảy"
+  ]
+ },
+ {
+  "id": "r-m5-058",
+  "q": "Mẫu phản hồi trong tài liệu bắt đầu bằng gì?",
+  "correct": "“Khi [hành vi cụ thể] xảy ra, nó ảnh hưởng đến [mục tiêu/kết quả]…”",
+  "wrong": [
+   "“Bạn luôn…”",
+   "“Tôi nghĩ bạn nên…”",
+   "“Theo quy định…”"
+  ]
+ },
+ {
+  "id": "r-m5-059",
+  "q": "Ý nào là việc nên làm khi NHẬN phản hồi?",
+  "correct": "Cảm ơn người góp ý, dù chưa hoàn toàn đồng ý",
+  "wrong": [
+   "Giải thích ngay lý do mình đúng",
+   "Ngắt lời để làm rõ",
+   "Phản hồi lại lỗi của người góp ý"
+  ]
+ },
+ {
+  "id": "r-m5-060",
+  "q": "Ý nào KHÔNG thuộc cách nhận phản hồi?",
+  "correct": "Ngắt lời để bảo vệ quan điểm",
+  "wrong": [
+   "Kiểm soát phản ứng phòng thủ",
+   "Hỏi để làm rõ",
+   "Tìm thông tin hữu ích"
+  ]
+ },
+ {
+  "id": "r-m6-001",
+  "q": "Texting KHÔNG phù hợp với loại nội dung nào?",
+  "correct": "Dài, phức tạp hoặc nhạy cảm",
+  "wrong": [
+   "Ngắn",
+   "Không chính thức",
+   "Cần phản hồi nhanh"
+  ]
+ },
+ {
+  "id": "r-m6-002",
+  "q": "Subject email cần như thế nào?",
+  "correct": "Ngắn, rõ, cụ thể",
+  "wrong": [
+   "Dài, đầy đủ mọi ý",
+   "Viết in hoa",
+   "Có thể bỏ trống"
+  ]
+ },
+ {
+  "id": "r-m6-003",
+  "q": "Email nên được phản hồi trong khoảng bao lâu?",
+  "correct": "Thường trong 24 giờ",
+  "wrong": [
+   "Trong 1 giờ",
+   "Trong 3 ngày",
+   "Trong 1 tuần"
+  ]
+ },
+ {
+  "id": "r-m6-004",
+  "q": "Với nội dung đơn giản, email thường không quá bao nhiêu đoạn?",
+  "correct": "Ba đoạn ngắn",
+  "wrong": [
+   "Một đoạn",
+   "Năm đoạn",
+   "Bảy đoạn"
+  ]
+ },
+ {
+  "id": "r-m6-005",
+  "q": "Ý nào là quy tắc email chuyên nghiệp?",
+  "correct": "Chỉ Reply All khi tất cả thực sự cần biết",
+  "wrong": [
+   "Viết ALL CAPS cho rõ",
+   "Dùng nhiều viết tắt cho nhanh",
+   "Không cần chữ ký"
+  ]
+ },
+ {
+  "id": "r-m6-006",
+  "q": "Tài liệu nêu bao nhiêu nguyên tắc netiquette?",
+  "correct": "Mười",
+  "wrong": [
+   "Năm",
+   "Bảy",
+   "Mười hai"
+  ]
+ },
+ {
+  "id": "r-m6-007",
+  "q": "Ý nào là nguyên tắc netiquette?",
+  "correct": "Nhớ rằng phía bên kia là con người",
+  "wrong": [
+   "Trả lời mọi tin nhắn ngay lập tức",
+   "Dùng emoji trong mọi tin nhắn",
+   "Luôn Reply All"
+  ]
+ },
+ {
+  "id": "r-m6-008",
+  "q": "Ý nào KHÔNG thuộc nguyên tắc netiquette?",
+  "correct": "Dùng quyền hạn để yêu cầu phản hồi nhanh",
+  "wrong": [
+   "Tôn trọng thời gian và băng thông",
+   "Kiểm soát “flame war”",
+   "Bao dung với lỗi của người khác"
+  ]
+ },
+ {
+  "id": "r-m6-009",
+  "q": "Khi viết trực tuyến, luôn giả định điều gì?",
+  "correct": "Thông điệp có thể bị chuyển tiếp hoặc đọc công khai",
+  "wrong": [
+   "Chỉ người nhận đọc được",
+   "Tin nhắn sẽ tự xoá",
+   "Không ai đọc kỹ"
+  ]
+ },
+ {
+  "id": "r-m6-010",
+  "q": "Memo chủ yếu dùng cho đối tượng nào?",
+  "correct": "Nội bộ",
+  "wrong": [
+   "Khách hàng bên ngoài",
+   "Nhà tuyển dụng",
+   "Đối tác nước ngoài"
+  ]
+ },
+ {
+  "id": "r-m6-011",
+  "q": "Header của memo gồm gì?",
+  "correct": "To – From – Date – Subject",
+  "wrong": [
+   "Heading – Introduction – Body",
+   "Dear – Body – Sincerely",
+   "Who – What – When"
+  ]
+ },
+ {
+  "id": "r-m6-012",
+  "q": "Cấu trúc nội dung memo là gì?",
+  "correct": "Mở đầu tuyên bố mục đích – thảo luận – kết luận / tóm tắt",
+  "wrong": [
+   "Lời chào – thân bài – chữ ký",
+   "Vấn đề – giải pháp – ngân sách",
+   "Bối cảnh – phương pháp – kết quả"
+  ]
+ },
+ {
+  "id": "r-m6-013",
+  "q": "“Direct format” trong memo nghĩa là gì?",
+  "correct": "Mục đích rõ ngay trong subject và câu đầu",
+  "wrong": [
+   "Gửi trực tiếp không qua email",
+   "Nêu mục đích ở cuối",
+   "Không cần subject"
+  ]
+ },
+ {
+  "id": "r-m6-014",
+  "q": "Giọng văn của memo cần như thế nào?",
+  "correct": "Khách quan, chính thức, ngắn và dễ quét",
+  "wrong": [
+   "Thân mật, dài, nhiều cảm xúc",
+   "Thuyết phục, nhiều hình ảnh",
+   "Hài hước, ngắn gọn"
+  ]
+ },
+ {
+  "id": "r-m6-015",
+  "q": "Business letter thường gửi cho ai?",
+  "correct": "Ra ngoài tổ chức",
+  "wrong": [
+   "Đồng nghiệp cùng phòng",
+   "Chỉ cấp trên",
+   "Chính mình"
+  ]
+ },
+ {
+  "id": "r-m6-016",
+  "q": "Business letter có bao nhiêu khu vực chính?",
+  "correct": "Năm",
+  "wrong": [
+   "Ba",
+   "Bốn",
+   "Sáu"
+  ]
+ },
+ {
+  "id": "r-m6-017",
+  "q": "Thứ tự năm khu vực chính của business letter?",
+  "correct": "Heading → Introduction → Body → Conclusion/CTA → Signature",
+  "wrong": [
+   "Introduction → Heading → Body → Signature → Conclusion",
+   "Heading → Body → Introduction → Conclusion → Signature",
+   "To → From → Date → Subject → Body"
+  ]
+ },
+ {
+  "id": "r-m6-018",
+  "q": "Business letter dùng để làm gì?",
+  "correct": "Thông tin, thuyết phục, trả lời yêu cầu hoặc ghi nhận quyết định",
+  "wrong": [
+   "Chỉ để mời họp",
+   "Chỉ để xin việc",
+   "Chỉ để báo giá"
+  ]
+ }
+]

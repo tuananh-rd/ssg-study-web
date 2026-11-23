@@ -1,0 +1,289 @@
+[
+  {
+    "ref": "1.1",
+    "q": "Mục tiêu cốt lõi của lĩnh vực Thị giác máy tính (Computer Vision) là gì?",
+    "correct": "Cho phép máy móc \"nhìn\" và hiểu thế giới trực quan giống như con người",
+    "wrong": [
+      "Tối ưu hóa tốc độ truyền tải các tệp tin hình ảnh dung lượng lớn qua mạng Internet",
+      "Tự động hóa việc nén dung lượng các video mà không cần qua giải mã dữ liệu",
+      "Thiết kế các phần cứng chuyên dụng để lưu trữ ma trận điểm ảnh độc lập"
+    ],
+    "explain": "Thị giác máy tính là lĩnh vực khoa học máy tính cho phép máy móc \"nhìn\" và hiểu thế giới trực quan giống như con người.",
+    "tip": "Mục tiêu của Computer Vision là giúp máy móc hiểu hình ảnh như con người."
+  },
+  {
+    "ref": "1.1",
+    "q": "Trong chuẩn biểu diễn ảnh số 8-bit, giá trị điểm ảnh (pixel value) của ảnh xám (Grayscale Image) có ý nghĩa như thế nào?",
+    "correct": "Đại diện cho cường độ sáng với dải giá trị từ 0 (đen hoàn toàn) đến 255 (trắng hoàn toàn)",
+    "wrong": [
+      "Đại diện cho bước sóng ánh sáng với dải giá trị từ 0 (tia hồng ngoại) đến 255 (tia tử ngoại)",
+      "Biểu thị tần số quét của màn hình hiển thị trong phạm vi từ 0 Hz đến 255 Hz",
+      "Xác định tọa độ không gian 2D của điểm ảnh trong ma trận dữ liệu"
+    ],
+    "explain": "Ảnh xám 8-bit chỉ mang 1 giá trị duy nhất từ 0 đến 255 đại diện cho cường độ sáng, trong đó 0 là màu đen hoàn toàn và 255 là màu trắng hoàn toàn.",
+    "tip": "Ảnh xám: 0 = đen, 255 = trắng, nằm giữa là các mức xám."
+  },
+  {
+    "ref": "1.1",
+    "q": "Trong không gian màu RGB, điểm ảnh mang cụm giá trị [255, 255, 0] sẽ hiển thị màu sắc nào?",
+    "correct": "Màu vàng",
+    "wrong": [
+      "Màu cánh sen (Magenta)",
+      "Màu xanh lơ (Cyan)",
+      "Màu trắng"
+    ],
+    "explain": "Trong mô hình RGB, khi trộn tối đa kênh Đỏ (255) và kênh Xanh lá (255) trong khi kênh Xanh dương bằng 0, màu tạo thành là màu vàng.",
+    "tip": "Đỏ + Xanh lá = Vàng (Red + Green = Yellow)."
+  },
+  {
+    "ref": "1.1",
+    "q": "Điểm khác biệt cơ bản giữa cách thu nhận hình ảnh của máy tính so với mắt người là gì?",
+    "correct": "Máy tính nhìn hình ảnh dưới dạng cấu trúc ma trận gồm các con số đại diện cho cường độ sáng",
+    "wrong": [
+      "Máy tính tự nhiên diễn dịch câu chuyện và ngữ cảnh cảm xúc tốt hơn mắt người",
+      "Máy tính chỉ có thể tiếp nhận ánh sáng đơn sắc mà không xử lý được các kênh màu",
+      "Máy tính giải mã hình ảnh trực tiếp thông qua sóng âm thanh từ cảm biến môi trường"
+    ],
+    "explain": "Máy tính không nhìn thấy hình ảnh nguyên bản như mắt người mà chỉ thấy cấu trúc ma trận số chứa các giá trị pixel đại diện cho cường độ sáng.",
+    "tip": "Mắt người cảm nhận ngữ cảnh, máy tính chỉ thấy ma trận số."
+  },
+  {
+    "ref": "1.1",
+    "q": "Trong thư viện OpenCV bằng ngôn ngữ Python, hàm nào được dùng để hiển thị hình ảnh trong một cửa sổ giao diện?",
+    "correct": "cv2.imshow()",
+    "wrong": [
+      "cv2.imread()",
+      "cv2.imwrite()",
+      "cv2.display()"
+    ],
+    "explain": "`cv2.imshow()` được sử dụng để hiển thị ảnh trong một cửa sổ, trong khi `cv2.imread()` dùng để đọc ảnh từ file.",
+    "tip": "imread = đọc ảnh, imshow = hiển thị ảnh lên cửa sổ."
+  },
+  {
+    "ref": "1.2",
+    "q": "Trong không gian tọa độ đồng nhất (Homogeneous coordinates), điểm 2D được biểu diễn dưới dạng vector (x, y, w) khi w = 0 đại diện cho vị trí nào?",
+    "correct": "Điểm tại vô cực",
+    "wrong": [
+      "Điểm gốc tọa độ (0, 0)",
+      "Điểm trung tâm của ma trận ảnh",
+      "Điểm không xác định do lỗi tràn số"
+    ],
+    "explain": "Tọa độ thực tế là (x/w, y/w), do đó khi w = 0, điểm đó đại diện cho một điểm nằm tại vô cực.",
+    "tip": "Trong tọa độ đồng nhất, w = 0 tương ứng với điểm ở vô cực."
+  },
+  {
+    "ref": "1.2",
+    "q": "Phép biến đổi hình học (Geometric Transformation) có đặc điểm cốt lõi nào sau đây?",
+    "correct": "Làm thay đổi cấu trúc không gian của bức ảnh mà không làm thay đổi giá trị điểm ảnh",
+    "wrong": [
+      "Làm thay đổi cường độ sáng và màu sắc của điểm ảnh nhưng giữ nguyên tọa độ không gian",
+      "Chuyển đổi bức ảnh thành ma trận nhị phân để giảm dung lượng lưu trữ",
+      "Tự động khử bỏ toàn bộ quang sai màu của hệ thống thấu kính quang học"
+    ],
+    "explain": "Phép biến đổi hình học làm thay đổi cấu trúc không gian của bức ảnh mà không làm thay đổi giá trị điểm ảnh (cường độ sáng/màu sắc).",
+    "tip": "Biến đổi hình học thay đổi tọa độ không gian (domain), không đổi giá trị pixel (range)."
+  },
+  {
+    "ref": "1.2",
+    "q": "Phép biến đổi Affine luôn bảo toàn (preserves) đặc tính hình học nào của các đối tượng trong ảnh?",
+    "correct": "Tính song song của các đường thẳng",
+    "wrong": [
+      "Góc vuông giữa các đường thẳng cắt nhau",
+      "Khoảng cách tuyệt đối Euclid giữa hai điểm bất kỳ",
+      "Tỷ lệ diện tích của các hình khối phức tạp"
+    ],
+    "explain": "Phép biến đổi Affine bao gồm co giãn, xoay và làm xiên (skew), và luôn giữ nguyên tính song song của các đường thẳng.",
+    "tip": "Affine giữ tính song song; Projective chỉ giữ độ thẳng."
+  },
+  {
+    "ref": "1.2",
+    "q": "Phép biến đổi phối cảnh (Projective Transformation) bảo toàn đặc tính nào của các đường trong ảnh?",
+    "correct": "Giữ nguyên độ thẳng của các đường thẳng",
+    "wrong": [
+      "Giữ nguyên tính song song của các đường thẳng",
+      "Giữ nguyên góc giữa các đường thẳng giao nhau",
+      "Giữ nguyên diện tích và chu vi của đối tượng"
+    ],
+    "explain": "Phép biến đổi Projective mô phỏng phối cảnh khi thay đổi điểm nhìn, các đường thẳng song song có thể hội tụ tại điểm ảo nhưng vẫn giữ nguyên độ thẳng của các đường.",
+    "tip": "Phối cảnh làm các đường song song hội tụ tại điểm ảo, nhưng đường thẳng vẫn là đường thẳng."
+  },
+  {
+    "ref": "1.2",
+    "q": "Bậc tự do (Degrees of Freedom - DoF) của một phép biến đổi hình học được định nghĩa là gì?",
+    "correct": "Số lượng các tham số độc lập tối thiểu cần thiết để xác định hoàn toàn phép biến đổi đó",
+    "wrong": [
+      "Số lượng điểm ảnh tối đa có thể dịch chuyển trong một bước biến đổi",
+      "Tổng số chiều không gian của ma trận tọa độ đồng nhất cộng thêm một",
+      "Số bước lặp cần thiết để thuật toán biến đổi hình học đạt trạng thái hội tụ"
+    ],
+    "explain": "DOF là số lượng các tham số độc lập tối thiểu cần thiết để xác định hoàn toàn một phép biến đổi.",
+    "tip": "DoF = số tham số độc lập tối thiểu để xác định biến đổi (ví dụ Translation 2D có DoF = 2)."
+  },
+  {
+    "ref": "1.2",
+    "q": "Điểm khác biệt chính giữa phép chiếu trực giao (Orthography) và phép chiếu phối cảnh (Perspective) từ không gian 3D sang 2D là gì?",
+    "correct": "Phép chiếu trực giao bỏ qua hiệu ứng độ sâu bằng cách loại bỏ trục z mà không cần phép chia",
+    "wrong": [
+      "Phép chiếu trực giao bảo tồn tỷ lệ vật thể ở xa trông nhỏ hơn vật thể ở gần",
+      "Phép chiếu trực giao yêu cầu tính toán điểm hội tụ ảo trên mặt phẳng hình ảnh",
+      "Phép chiếu trực giao chỉ có thể áp dụng với các camera có ống kính góc siêu rộng"
+    ],
+    "explain": "Phép chiếu trực giao đơn giản loại bỏ trục z để lấy tọa độ (x, y) và bỏ qua hiệu ứng độ sâu (không cần phép chia), trong khi phép chiếu phối cảnh mô hình camera thực tế với vật ở xa nhỏ hơn.",
+    "tip": "Trực giao (Orthography) = bỏ trục z, không cần chia, không có chiều sâu."
+  },
+  {
+    "ref": "1.2",
+    "q": "Trong OpenCV, hàm nào được sử dụng để tính ma trận biến đổi quay 2D quanh một tâm với góc quay và tỷ lệ xác định?",
+    "correct": "cv2.getRotationMatrix2D()",
+    "wrong": [
+      "cv2.warpAffine()",
+      "cv2.findHomography()",
+      "cv2.rotateMatrix()"
+    ],
+    "explain": "`cv2.getRotationMatrix2D((center), angle, scale)` dùng để tính ma trận quay 2x3, sau đó áp dụng biến đổi bằng `cv2.warpAffine()`."
+  },
+  {
+    "ref": "1.3",
+    "q": "Theo Định luật Cosine Lambert, cường độ ánh sáng phản xạ khuếch tán (Diffuse Reflection) từ một bề mặt nhám phụ thuộc vào yếu tố nào?",
+    "correct": "Góc giữa tia sáng tới và vector pháp tuyến của bề mặt",
+    "wrong": [
+      "Khoảng cách giữa mắt người quan sát và cảm biến camera",
+      "Tỷ lệ chiết suất của thủy tinh làm ống kính đối với ánh sáng trắng",
+      "Độ mở khẩu độ và thời gian phơi sáng của màn trập máy ảnh"
+    ],
+    "explain": "Phản xạ khuếch tán tán xạ đều ra mọi hướng; lượng ánh sáng phản xạ phụ thuộc vào góc giữa tia sáng tới và pháp tuyến của bề mặt theo Định luật Cosine Lambert.",
+    "tip": "Lambert: phản xạ khuếch tán tỷ lệ với cosin góc tới so với pháp tuyến."
+  },
+  {
+    "ref": "1.3",
+    "q": "Mô hình chiếu sáng Phong (Phong Shading) kết hợp những thành phần ánh sáng nào để mô phỏng chiếu sáng hoàn chỉnh?",
+    "correct": "Ánh sáng môi trường (Ambient) + Phản xạ khuếch tán (Diffuse) + Phản xạ gương (Specular)",
+    "wrong": [
+      "Phản xạ khuếch tán (Diffuse) + Khúc xạ ánh sáng (Refraction) + Tán xạ Rayleigh",
+      "Ánh sáng môi trường (Ambient) + Bức xạ nhiệt (Radiosity) + Tán xạ quang sai",
+      "Phản xạ gương (Specular) + Chiết suất thấu kính + Dò tia (Ray tracing)"
+    ],
+    "explain": "Phong Shading là mô hình kết hợp Ambient (môi trường) + Diffuse (khuếch tán) + Specular (gương) để tạo ra mô phỏng chiếu sáng hoàn chỉnh.",
+    "tip": "Phong Shading = Ambient + Diffuse + Specular."
+  },
+  {
+    "ref": "1.3",
+    "q": "Kỹ thuật Dò tia (Ray Tracing) và Radiosity phù hợp nhất với những loại bề mặt tương tác ánh sáng nào?",
+    "correct": "Ray tracing phù hợp bề mặt gương/phản xạ mạnh, còn Radiosity dùng cho các bề mặt nhám",
+    "wrong": [
+      "Ray tracing phù hợp bề mặt nhám hoàn toàn, còn Radiosity chỉ dùng cho gương cầu lồi",
+      "Cả hai kỹ thuật đều chỉ áp dụng cho bề mặt chất lỏng có độ trong suốt tuyệt đối",
+      "Ray tracing dùng cho nguồn sáng diện tích, còn Radiosity dùng cho nguồn sáng điểm"
+    ],
+    "explain": "Ray tracing truy vết tia sáng từ camera ngược về nguồn sáng qua nhiều lần nảy, phù hợp với bề mặt gương/phản xạ mạnh. Radiosity giải quyết bài toán tương tác ánh sáng giữa các mặt phẳng nhám.",
+    "tip": "Ray tracing = bề mặt gương; Radiosity = bề mặt nhám."
+  },
+  {
+    "ref": "1.3",
+    "q": "Hiện tượng quang sai màu (Chromatic aberration) trong hệ thống quang học bắt nguồn từ nguyên nhân vật lý nào?",
+    "correct": "Chiết suất của thủy tinh thay đổi nhẹ theo các bước sóng ánh sáng khác nhau",
+    "wrong": [
+      "Cường độ nguồn sáng điểm không đồng đều khi chiếu qua khẩu độ ống kính",
+      "Hiện tượng tràn điện tích giữa các tế bào cảm biến lân cận trên mảng cảm biến",
+      "Màn trập camera đóng mở quá nhanh làm sai lệch thời gian phơi sáng"
+    ],
+    "explain": "Quang sai màu xảy ra do chiết suất của thủy tinh thay đổi nhẹ theo các bước sóng ánh sáng khác nhau, đòi hỏi ống kính phức hợp để khắc phục.",
+    "tip": "Quang sai màu là do chiết suất thấu kính thay đổi theo bước sóng màu."
+  },
+  {
+    "ref": "1.3",
+    "q": "Đặc tính quan trọng nào của hàm phân phối phản xạ hai chiều BRDF (Bidirectional Reflectance Distribution Function) được nêu trong tài liệu?",
+    "correct": "Hàm BRDF có tính thuận nghịch",
+    "wrong": [
+      "Hàm BRDF luôn có giá trị bằng hằng số đối với mọi bước sóng ánh sáng",
+      "Hàm BRDF chỉ phụ thuộc vào góc quan sát mà không phụ thuộc vào góc tới",
+      "Hàm BRDF chỉ áp dụng được cho nguồn sáng diện tích vô hạn"
+    ],
+    "explain": "Hàm BRDF mô tả tỷ lệ ánh sáng phản xạ tới các hướng dựa trên góc tới của ánh sáng và hàm này có tính thuận nghịch.",
+    "tip": "BRDF có tính chất đối xứng thuận nghịch (reciprocity)."
+  },
+  {
+    "ref": "1.4",
+    "q": "So với cảm biến CCD, cảm biến CMOS có ưu điểm đặc trưng nào trong cơ chế đọc dữ liệu tín hiệu?",
+    "correct": "Có thể đọc dữ liệu từ từng pixel riêng biệt một cách độc lập",
+    "wrong": [
+      "Có độ nhạy sáng cao hơn và hoàn toàn không bị ảnh hưởng bởi nhiễu nhiệt",
+      "Không bao giờ bị hiện tượng tràn sáng chói (blooming) ở mọi điều kiện chiếu sáng",
+      "Tiêu thụ năng lượng cao hơn giúp tăng tốc độ chuyển đổi tín hiệu ADC"
+    ],
+    "explain": "Cảm biến CMOS có thể đọc dữ liệu từ từng pixel riêng biệt một cách độc lập và rẻ hơn, trong khi CCD không thể đọc từng pixel độc lập.",
+    "tip": "CMOS: đọc từng pixel độc lập, tiết kiệm điện hơn; CCD: nhạy sáng cao hơn nhưng dễ bị blooming."
+  },
+  {
+    "ref": "1.4",
+    "q": "Hiện tượng tràn sáng chói (blooming) là hạn chế thường dễ gặp nhất ở loại cảm biến nào?",
+    "correct": "Cảm biến CCD (Charge-Coupled Device)",
+    "wrong": [
+      "Cảm biến CMOS",
+      "Cảm biến nhiệt hồng ngoại",
+      "Cảm biến mảng lọc màu CFA"
+    ],
+    "explain": "Cảm biến CCD có độ nhạy sáng cao nhưng dễ bị hiện tượng \"blooming\" (tràn sáng chói).",
+    "tip": "Blooming (tràn sáng chói) đặc trưng của cảm biến CCD."
+  },
+  {
+    "ref": "1.4",
+    "q": "Trong không gian màu HSV, thành phần Hue (sắc độ) biểu diễn giá trị góc 120 độ tương ứng với màu nào?",
+    "correct": "Màu xanh lá (Green)",
+    "wrong": [
+      "Màu đỏ (Red)",
+      "Màu xanh dương (Blue)",
+      "Màu vàng (Yellow)"
+    ],
+    "explain": "Trong HSV, Hue là góc từ 0 đến 360 độ: 0 độ là đỏ, 120 độ là xanh lá, 240 độ là xanh dương.",
+    "tip": "HSV Hue: 0° Đỏ, 120° Xanh lá, 240° Xanh dương."
+  },
+  {
+    "ref": "1.4",
+    "q": "Trong không gian màu YCbCr được ứng dụng rộng rãi cho nén ảnh JPEG và video, kênh Y đại diện cho thành phần nào?",
+    "correct": "Kênh độ sáng (Luma)",
+    "wrong": [
+      "Kênh màu xanh dương (Blue Chroma)",
+      "Kênh màu đỏ (Red Chroma)",
+      "Kênh độ bão hòa màu sắc (Saturation)"
+    ],
+    "explain": "Không gian YCbCr phân tách kênh độ sáng (Luma - Y) và kênh màu (Chroma - Cb, Cr).",
+    "tip": "Y = Luma (độ sáng), Cb và Cr = Chroma (thông tin màu sắc)."
+  },
+  {
+    "ref": "1.4",
+    "q": "Chỉ số nào thường được sử dụng phổ biến nhất để đánh giá chất lượng của bức ảnh sau khi nén?",
+    "correct": "PSNR (Peak Signal-to-Noise Ratio)",
+    "wrong": [
+      "BRDF (Bidirectional Reflectance Distribution Function)",
+      "DoF (Degrees of Freedom)",
+      "AGC (Automatic Gain Control)"
+    ],
+    "explain": "Chất lượng nén ảnh thường được đánh giá bằng chỉ số PSNR (Peak Signal-to-Noise Ratio).",
+    "tip": "PSNR: Tỷ số tín hiệu cực đại trên nhiễu dùng để đo chất lượng ảnh nén."
+  },
+  {
+    "ref": "1.4",
+    "q": "Thuật toán nén ảnh JPEG tận dụng đặc tính thị giác nào của mắt người để thực hiện lấy mẫu phụ (subsample) kênh màu?",
+    "correct": "Mắt người kém nhạy bén với sự thay đổi màu sắc hơn là chi tiết không gian",
+    "wrong": [
+      "Mắt người chỉ cảm nhận được dải phổ ánh sáng xanh lá và đỏ",
+      "Mắt người nhạy cảm với kênh Chroma hơn kênh Luma trong điều kiện thiếu sáng",
+      "Mắt người tự động cân bằng trắng đối với mọi loại ánh sáng đơn sắc"
+    ],
+    "explain": "Thuật toán JPEG lấy mẫu phụ kênh màu dựa trên việc mắt người kém nhạy với màu sắc hơn là chi tiết không gian, kết hợp biến đổi DCT để nén.",
+    "tip": "JPEG subsample kênh màu vì mắt người nhạy với độ sáng (chi tiết) hơn màu sắc."
+  },
+  {
+    "ref": "1.4",
+    "q": "Nhóm định dạng tệp hình ảnh nào sau đây hoàn toàn thuộc nhóm nén không mất dữ liệu (Lossless)?",
+    "correct": "BMP, GIF, TIFF",
+    "wrong": [
+      "JPEG, MP4, WebP tổn thất",
+      "MPEG, H.264, JPEG",
+      "AVI, WMV, FLV"
+    ],
+    "explain": "Các định dạng tiêu biểu của nhóm nén không mất dữ liệu (Lossless / Non-lossy) gồm BMP, GIF, TIFF, pbm/pgm/ppm/pnm. Trong khi JPEG là định dạng nén mất dữ liệu (Lossy).",
+    "tip": "Lossless: BMP, GIF, TIFF; Lossy: JPEG."
+  }
+]

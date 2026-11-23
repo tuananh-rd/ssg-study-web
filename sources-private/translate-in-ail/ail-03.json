@@ -1,0 +1,202 @@
+[
+ {
+  "id": 45,
+  "question": "What is the main disadvantage of using a high-degree polynomial in Polynomial Regression?",
+  "options": [
+   "It is computationally expensive",
+   "It may lead to overfitting",
+   "It always results in underfitting",
+   "It converges slowly"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "What is the impact of increasing the number of trees in a Random Forest on its performance?",
+  "options": [
+   "Improved model interpretability",
+   "Increased risk of overfitting",
+   "Decreased computational efficiency",
+   "Enhanced model generalization"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "What is an ensemble model that needs you to look at out of bag error?",
+  "options": [
+   "Logistic Regression.",
+   "Out of Bag Regression",
+   "Random Forest",
+   "Stacking"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "What is the other name we can give to the L2 distance?",
+  "options": [
+   "Hamming Distance",
+   "Euclidean Distance",
+   "Manhattan Distance",
+   "Mahalanobis Distance"
+  ]
+ },
+ {
+  "id": 49,
+  "question": "What is another name for L1 regularization?",
+  "options": [
+   "Ridge regularization",
+   "Lasso regularization",
+   "Elastic Net regularization",
+   "Overfitting regularization"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "What are the first two steps of a typical machine learning workflow?",
+  "options": [
+   "Problem statement and data cleaning.",
+   "Problem statement and data collection.",
+   "Data collection and data transformation.",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 51,
+  "question": "What parameter in the SVC function specifies the choice of kernel?",
+  "options": [
+   "neighbors",
+   "kernel",
+   "max_depth",
+   "n_estimators"
+  ]
+ },
+ {
+  "id": 52,
+  "question": "What parameter in the MDS function specifies the number of dimensions in the lower-dimensional space?",
+  "options": [
+   "n_components",
+   "n_features",
+   "n_dim",
+   "n_neighbors"
+  ]
+ },
+ {
+  "id": 53,
+  "question": "Which of the following is an example of a file type that uses Javascript Object Notation (JSON) formatting?",
+  "options": [
+   "Python (py files)",
+   "Javascript (js files)",
+   "SQL Database (sql files)",
+   "Jupyter/Python (ipynb files)"
+  ]
+ },
+ {
+  "id": 54,
+  "question": "Which of the following is a common metric used to evaluate models in the presence of imbalanced classes?",
+  "options": [
+   "Accuracy",
+   "Mean Squared Error",
+   "R-squared",
+   "F1 Score"
+  ]
+ },
+ {
+  "id": 55,
+  "question": "Which of the following is a common technique for linear dimensionality reduction?",
+  "options": [
+   "Decision Trees",
+   "Principal Component Analysis (PCA)",
+   "K-means Clustering",
+   "Support Vector Machines"
+  ]
+ },
+ {
+  "id": 56,
+  "question": "Which of the following is not typically considered an EDA technique?",
+  "options": [
+   "Gradient descent optimization.",
+   "Correlation analysis.",
+   "Distribution analysis (e.g., histograms).",
+   "Boxplots for detecting outliers."
+  ]
+ },
+ {
+  "id": 57,
+  "question": "Which distance metric is useful when we have text documents and we want to group similar topics together?",
+  "options": [
+   "Manhattan Distance",
+   "Euclidean",
+   "Jaccard",
+   "Mahalanobis Distance"
+  ]
+ },
+ {
+  "id": 58,
+  "question": "Which problem in machine learning does regularization primarily address?",
+  "options": [
+   "Overfitting",
+   "Underfitting",
+   "Both overfitting and underfitting",
+   "Feature engineering"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "Which module in scikit-learn provides the implementation of Kernel PCA?",
+  "options": [
+   "sklearn.decomposition",
+   "sklearn.cluster",
+   "sklearn.preprocessing",
+   "sklearn.model_selection"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Which technique involves duplicating samples from the minority class to balance the class distribution?",
+  "options": [
+   "Upsampling",
+   "Downsampling",
+   "Stratified Sampling",
+   "Class Weighting"
+  ]
+ },
+ {
+  "id": 61,
+  "question": "Which type of regression is Polynomial Regression an extension of?",
+  "options": [
+   "Linear Regression",
+   "Logistic Regression",
+   "Ridge Regression",
+   "Poisson Regression"
+  ]
+ },
+ {
+  "id": 62,
+  "question": "Which variable transformation should you use for ordinal data?",
+  "options": [
+   "Standard scaling",
+   "One-hot encoding",
+   "Ordinal encoding",
+   "Min-max scaling"
+  ]
+ },
+ {
+  "id": 63,
+  "question": "Which discipline is used to train most models used in computer vision applications?",
+  "options": [
+   "Deep Learning.",
+   "Machine Learning.",
+   "Artificial Intelligence.",
+   "Reinforcement learning."
+  ]
+ },
+ {
+  "id": 64,
+  "question": "How do you instantiate a PCA model in scikit-learn?",
+  "options": [
+   "pca = KMeans()",
+   "pca = PCA()",
+   "pca = DBSCAN()",
+   "pca = LogisticRegression()"
+  ]
+ }
+]

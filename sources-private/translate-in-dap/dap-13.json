@@ -1,0 +1,203 @@
+[
+ {
+  "id": 251,
+  "question": "In Plotly Dash, what is the primary function of a callback?",
+  "options": [
+   "Managing user authentication",
+   "Handling HTTP requests",
+   "Updating components based on user interaction",
+   "Sending emails"
+  ]
+ },
+ {
+  "id": 252,
+  "question": "In grid search, what does the 'grid' refer to?",
+  "options": [
+   "A set of potential model parameters",
+   "A set of potential input features",
+   "A set of potential output predictions",
+   "A set of potential model evaluation metrics"
+  ]
+ },
+ {
+  "id": 253,
+  "question": "In which scenario is Log Transformation often applied for normalization?",
+  "options": [
+   "When data has a skewed distribution",
+   "When data has a linear distribution",
+   "When data has a normal distribution",
+   "When data has missing values"
+  ]
+ },
+ {
+  "id": 254,
+  "question": "In Watson Assistant, what are entities used for?",
+  "options": [
+   "Handling user authentication",
+   "Identifying and extracting specific information from user input",
+   "Redirecting users to external websites",
+   "Generating small talk responses"
+  ]
+ },
+ {
+  "id": 255,
+  "question": "In Dash, what is the function of a callback function?",
+  "options": [
+   "Displaying data",
+   "Filtering data",
+   "Modifying data",
+   "Linking components and updating the layout"
+  ]
+ },
+ {
+  "id": 256,
+  "question": "In a heatmap, what does the color intensity signify?",
+  "options": [
+   "Strength of correlations",
+   "Frequency of occurrence",
+   "Magnitude of a single variable",
+   "Range of values in the dataset"
+  ]
+ },
+ {
+  "id": 257,
+  "question": "In Watson Assistant, what is a dialog node used for?",
+  "options": [
+   "Controlling the flow of the conversation",
+   "Representing user messages",
+   "Defining intents",
+   "Storing user data"
+  ]
+ },
+ {
+  "id": 258,
+  "question": "In a Chi-Square test, what does a p-value less than 0.05 suggest?",
+  "options": [
+   "Reject the null hypothesis",
+   "Fail to reject the null hypothesis",
+   "Insufficient evidence to conclude",
+   "No correlation exists"
+  ]
+ },
+ {
+  "id": 260,
+  "question": "In Watson Assistant, what is the purpose of the \"Slots\" feature in dialog nodes?",
+  "options": [
+   "To capture information from the user's input",
+   "To represent empty spaces in the conversation",
+   "To reserve memory space for storing user data",
+   "To define the color scheme of the chatbot interface"
+  ]
+ },
+ {
+  "id": 261,
+  "question": "You are training a Decision Tree classifier on a dataset X_train containing numerical features and y_train containing corresponding binary target labels. You decide to set the min_samples_split parameter to 10. What does this parameter control in the construction of the decision tree?",
+  "options": [
+   "One node can split only at least 10 samples.",
+   "The minimum depth of the tree is set to 10.",
+   "There must be more than 10 nodes in each depth of tree",
+   "Total number of nodes in tree must be greater than 10"
+  ]
+ },
+ {
+  "id": 262,
+  "question": "You are training an SVC classifier on a dataset with 1000 samples and 20 features. You decide to use grid search to find the best C value for the SVC classifier. You specify a range of C values to search over, including [0.1, 1, 10, 100, 1000]. You perform grid search with 5-fold cross-validation to find the best C value. After grid search, you find that the best C value is 10. What does this indicate about the regularization strength of the SVC classifier?",
+  "options": [
+   "Low regularization strength",
+   "High regularization strength",
+   "No regularization applied",
+   "No conclusion can be drawn from the best C value"
+  ]
+ },
+ {
+  "id": 263,
+  "question": "You are performing grid search to find the best C value for an SVC classifier. You specify the parameter grid as follows: param_grid = {'C': [0.01, 0.1, 1, 10, 100]}. After performing grid search, you find that the best C value is 0.01. What does this suggest about the dataset and the model's complexity?",
+  "options": [
+   "Because the dataset is highly complex, a lower C value is preferred.",
+   "Because the dataset is simple, a lower C value is preferred.",
+   "Because the dataset is simple, a higher C value is preferred.",
+   "The choice of C value does not affect the model's complexity."
+  ]
+ },
+ {
+  "id": 264,
+  "question": "What is the primary purpose of using the add_trace() function in Dash?",
+  "options": [
+   "Adding annotations to graphs",
+   "Adding multiple traces to a single plot",
+   "Creating dropdown menus",
+   "Generating choropleth maps"
+  ]
+ },
+ {
+  "id": 265,
+  "question": "In the context of web scraping, what does the term \"HTML parsing\" refer to?",
+  "options": [
+   "Identifying and extracting specific elements from a webpage",
+   "Converting HTML documents into plain text",
+   "Analyzing the structure of a website's database",
+   "Scraping data from API endpoints"
+  ]
+ },
+ {
+  "id": 266,
+  "question": "Which statement about exploratory data analysis (EDA) is correct?",
+  "options": [
+   "EDA is performed only after model training",
+   "EDA focuses on understanding dataset structure and patterns",
+   "EDA is optional and usually skipped",
+   "EDA is the same as feature engineering"
+  ]
+ },
+ {
+  "id": 267,
+  "question": "What is the meaning of Mean Squared Error (MSE)?",
+  "options": [
+   "find the difference between the actual values and the predicted values then square it.",
+   "find the difference between the predictor values and the predicted values then square it.",
+   "find the difference between the intercept values and the predicted values then square it.",
+   "find the difference between the slope values and the predicted values then square it."
+  ]
+ },
+ {
+  "id": 269,
+  "question": "What is the primary purpose of Ridge Regression in machine learning?",
+  "options": [
+   "To reduce overfitting by adding a penalty term to the regression equation",
+   "To increase model complexity by introducing additional features",
+   "To maximize the coefficient of determination (R-squared)",
+   "To perform feature selection automatically"
+  ]
+ },
+ {
+  "id": 270,
+  "question": "What is the primary difference between setting a high alpha in Ridge and in Lasso?",
+  "options": [
+   "In Ridge, high alpha reduces coefficients uniformly, while in Lasso, high alpha can set some coefficients to zero.",
+   "High alpha in Ridge increases coefficients, while in Lasso, it decreases them.",
+   "Both methods treat alpha similarly, making it impossible to distinguish their effects.",
+   "High alpha in Ridge makes the model prone to underfitting, while in Lasso, it increases overfitting.",
+   "None of the others."
+  ]
+ },
+ {
+  "id": 271,
+  "question": "What role do intents and entities play in the context of Watson Assistant?",
+  "options": [
+   "Entities handle user authentication, while intents identify user goals.",
+   "Intents handle context variables, while entities extract specific information from user input.",
+   "Entities understand the purpose of user input, while intents extract specific information.",
+   "Intents identify user goals, while entities extract specific information from user input."
+  ]
+ },
+ {
+  "id": 272,
+  "question": "What task does the following line of code perform? df['price'].replace(np.nan, 100, inplace=True)",
+  "options": [
+   "replace the not a number values with 100 in the column 'price'",
+   "replace the not a text values with 100 in the column 'price'",
+   "add the not a number values with 100 in the column 'price'",
+   "add the not a null values with 100 in the column 'price'"
+  ]
+ }
+]

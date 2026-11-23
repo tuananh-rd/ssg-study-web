@@ -1,0 +1,343 @@
+[
+  {
+    "id": "cpv-209",
+    "slide_number": 209,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+      "Shift in the position of objects with a change in viewpoint",
+      "Image distortion due to lens imperfections",
+      "Chromatic aberration in images",
+      "The blurring effect caused by motion during image capture"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-209.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-210",
+    "slide_number": 210,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+      "Iteratively estimating a model from a subset of inliers",
+      "Minimizing the sum of squared differences",
+      "Maximizing mutual information between images",
+      "Employing kernel density estimation for feature matching"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-210.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-211",
+    "slide_number": 211,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+      "Align multiple images that were clicked at different times.",
+      "Correct images for avoiding lens distortion.",
+      "Images according to camera orientation.",
+      "All of the others"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-211.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-212",
+    "slide_number": 212,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+      "It tends to blur edges and fine details.",
+      "It is computationally expensive.",
+      "It only works well with grayscale images.",
+      "It amplifies noise in the image."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-212.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-213",
+    "slide_number": 213,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+      "It allows a specific range of frequencies to pass through.",
+      "It allows only low frequencies to pass through.",
+      "It allows all frequencies to pass through.",
+      "It completely blocks all frequencies."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-213.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-214",
+    "slide_number": 214,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+      "Control the amount of light entering the camera",
+      "Enhance the depth of field",
+      "Adjust the sharpness of the image",
+      "Determine the color temperature",
+      "None of the others"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-214.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-215",
+    "slide_number": 215,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+      "Applying a high-quality filter",
+      "Computing the base 2 logarithm of the image",
+      "Estimating the scalar value of the resampling rate",
+      "Using a fractional pyramid level"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-215.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-216",
+    "slide_number": 216,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+      "Saturation level and brightness similarity",
+      "Edge detection and contrast similarity",
+      "Gray-level similarity and texture similarity",
+      "Hue difference and pattern recognition"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-216.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-217",
+    "slide_number": 217,
+    "question": "What are the input and output of image processing?",
+    "options": [
+      "signal and image",
+      "signal only",
+      "image only",
+      "depends on input"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Tổng quan & toán cơ bản",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-217.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-218",
+    "slide_number": 218,
+    "question": "What are the fields related to computer vision?",
+    "options": [
+      "Image processing, graphics algorithms, Cognitive sciences.",
+      "Robotics, Neurobiology, Information retrieval",
+      "All of the others",
+      "Not of others"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Tổng quan & toán cơ bản",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-218.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-219",
+    "slide_number": 219,
+    "question": "What does RANSAC stand for in the context of computer vision?",
+    "options": [
+      "Random Sample Consensus",
+      "Random Assignment for Numerical Stability in Alignment and Classification",
+      "Robust Analysis for Noisy and Scattered Alignment of Components",
+      "Recursive Alignment and Sampling for Numerical Convergence"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-219.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-220",
+    "slide_number": 220,
+    "question": "What does \"consensus\" in RANSAC refer to?",
+    "options": [
+      "The majority of inliers in the data set",
+      "The average value of the data points",
+      "The deviation of the model from the data",
+      "The total number of iterations performed"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-220.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-221",
+    "slide_number": 221,
+    "question": "What do the components of a pixel include?",
+    "options": [
+      "Intensity value and size of the image",
+      "Position address and intensity value",
+      "Position address and size of the image",
+      "All of the others"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-221.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-222",
+    "slide_number": 222,
+    "question": "What characterizes mirror-like reflection?",
+    "options": [
+      "Outgoing light is scattered in multiple directions",
+      "Outgoing light follows a linear projection model",
+      "Outgoing light reflects off the surface in a single direction",
+      "Outgoing light rotates around the surface normal by 90 degrees"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Màu sắc & histogram",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-222.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-223",
+    "slide_number": 223,
+    "question": "What role does the external energy term play in the Snake Model?",
+    "options": [
+      "It attracts the contour towards object boundaries.",
+      "It enforces smoothness in the contour of the snake.",
+      "It adjusts the intensity of edge pixels of the objects.",
+      "It penalizes deviations from a straight line."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-223.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-224",
+    "slide_number": 224,
+    "question": "Which of the following disadvantages of Snake model?",
+    "options": [
+      "Sensitive to local minima states",
+      "Not works perfectly even for binary images",
+      "dependent",
+      "All of the above"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-224.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-225",
+    "slide_number": 225,
+    "question": "Which of the following algorithms is used for feature detection?",
+    "options": [
+      "Scale-Invariant Feature Transform (SIFT)",
+      "Harris Corner Detector",
+      "Features from Accelerated Segment Test (FAST)",
+      "All of the others"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-225.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-226",
+    "slide_number": 226,
+    "question": "How does anisotropic filtering affect textures viewed at oblique angles?",
+    "options": [
+      "It sharpens the texture details.",
+      "It blurs the texture details.",
+      "It introduces distortions.",
+      "It has no effect on oblique viewing angles."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-226.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-227",
+    "slide_number": 227,
+    "question": "How does SIFT handle rotations for keypoint matching?",
+    "options": [
+      "By aligning keypoints based on dominant orientation",
+      "By rotating the entire image to a standard orientation",
+      "By using a fixed orientation for all keypoints",
+      "By discarding keypoints with varying orientations"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-227.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-228",
+    "slide_number": 228,
+    "question": "How does anisotropic filtering improve the image quality of textures on surfaces of computer graphics?",
+    "options": [
+      "By increasing blur for smoother textures",
+      "By eliminating aliasing effects at extreme viewing angles",
+      "By reducing details for better performance",
+      "By enhancing textures only at perpendicular viewing angles"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-228.png",
+    "needs_review": false
+  }
+]

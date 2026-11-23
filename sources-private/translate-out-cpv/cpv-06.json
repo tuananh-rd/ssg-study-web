@@ -1,0 +1,22 @@
+{
+"101":{"q":"Khía cạnh nào trong hoạt động của camera chịu trách nhiệm điều chỉnh độ khuếch đại và mức đen (black level) để khớp công suất ánh sáng tới với dải động (dynamic range) của ảnh?","options":["Nhiễu cảm biến (Sensor noise)","Độ phân giải ADC","Điều khiển độ lợi tự động (Automatic Gain Control - AGC)","Cân bằng trắng (White balance)"]},
+"102":{"q":"Đồng thuận mẫu ngẫu nhiên (RANdom SAmple Consensus - RANSAC) chủ yếu được thiết kế để giải quyết vấn đề nào trong ước lượng tham số?","options":["Quá khớp (Overfitting)","Các điểm ngoại lai (outlier) trong dữ liệu đầu vào","Dưới khớp (Underfitting)","Độ phức tạp tính toán"]},
+"103":{"q":"Máy ảnh kỹ thuật số dùng hệ thống nào để thực hiện việc số hóa ảnh?","options":["Hệ thống cảm biến","Hệ thống số","Hệ thống logic","Hệ thống quang học"]},
+"104":{"q":"Vấn đề nào thường gặp khi dùng thuật toán phân thủy (watershed) trên các ảnh có nền kết cấu (textured)?","options":["Phân đoạn quá mức (Over-segmentation)","Tốc độ xử lý cao","Hạn chế về thời gian","Mất thông tin màu"]},
+"105":{"q":"Điều nào sau đây là một ứng dụng của thị giác máy tính (computer vision)?","options":["An ninh","Robot học","Y học","Tất cả các đáp án trên"]},
+"106":{"q":"Phương pháp nào sau đây thuộc các phương pháp phát hiện truyền thống?","options":["YOLO","RCNN","Bộ phát hiện Hog (Hog detector)","Retina Net"]},
+"107":{"q":"Thuật toán nào sau đây sẽ phân bố cường độ của ảnh trên toàn bộ dải cường độ?","options":["White patch","Gray world","Ground truth","Cân bằng histogram (Histogram equalization)"]},
+"108":{"q":"Màu nào sau đây có tần số lớn nhất trong phổ khả kiến (visible spectrum)?","options":["Đỏ","Lam","Tím","Lục"]},
+"109":{"q":"Phương pháp nào sau đây dùng các lực năng lượng và ràng buộc để tách các điểm ảnh quan tâm khỏi ảnh?","options":["Đường viền chủ động (Active contours)","Phân thủy (Watershed)","Phân đoạn dựa trên đồ thị (Graph-based segmentation)","Tách vùng (Region splitting)"]},
+"110":{"q":"Phương pháp nào sau đây xác định biên trong ảnh bằng kỹ thuật cắt không (zero-crossing)?","options":["Đạo hàm bậc nhất","Đạo hàm bậc hai","Toán tử Prewitt","Toán tử Robert"]},
+"111":{"q":"Điều nào sau đây là các ứng dụng của thuật toán RANSAC?","options":["Xử lý tài liệu","Các ứng dụng y tế","Tạo ảnh toàn cảnh (panorama)","Tất cả các đáp án trên"]},
+"112":{"q":"Phương pháp nào sau đây sẽ phân đoạn ảnh dựa trên sự tương đồng mức xám và sự tương đồng kết cấu?","options":["Tách vùng (Region splitting)","Phân thủy (Watershed)","Phân đoạn dựa trên đồ thị (Graph-based segmentation)","Tập hợp xác suất (Probabilistic aggregation)"]},
+"113":{"q":"Toán tử nào sau đây sử dụng Laplacian của Gauss (Laplacian of Gaussian)?","options":["Toán tử Prewitt","Toán tử Canny","Sobel (3x3)","Sobel (5x5)"]},
+"114":{"q":"Điều nào sau đây KHÔNG phải là bộ lọc ảnh được dùng trong OpenCV?","options":["Box Filter","Bilateral Filter","Blue Blur","Build Pyramid"]},
+"115":{"q":"Lĩnh vực nào sau đây nghiên cứu các kỹ thuật khác nhau để phân loại các mẫu (pattern)?","options":["Xử lý ảnh (Image Processing)","Đo ảnh (Photogrammetry)","Nhận dạng ảnh (Image Recognition)","Nhận dạng mẫu (Pattern Recognition)"]},
+"116":{"q":"Điều nào sau đây thuộc phương pháp theo dõi dựa trên nhân (kernel tracking) trong các thuật toán theo dõi đối tượng?","options":["Phương pháp dựa trên đa góc nhìn (Multi-view based)","Phương pháp tất định (Deterministic)","Phương pháp xác suất (Probabilistic)","Đối sánh hình dạng (Shape matching)"]},
+"117":{"q":"Thuật toán nào sau đây được dùng để phát hiện vị trí của một blob trong ảnh?","options":["Đạo hàm bậc nhất","Đạo hàm bậc hai","Laplacian của Gauss (Laplacian of Gaussian)","Laplacian của Gauss chuẩn hóa (Normalized Laplacian of Gaussian)"]},
+"118":{"q":"Phương pháp nào được dùng để trải rộng dải cường độ nhằm tận dụng đầy đủ các giá trị có thể?","options":["Kéo giãn độ tương phản (Contrast stretching)","Gray world","Ground truth","Cân bằng histogram (Histogram equalization)"]},
+"119":{"q":"Kỹ thuật nào thường được dùng để phát hiện các điểm khóa (keypoint) và bộ mô tả (descriptor) trong ảnh cho nhận dạng ảnh toàn cảnh (panorama recognition)?","options":["SIFT","Cân bằng histogram (Histogram equalization)","Biến đổi Fourier (Fourier transform)","PCA"]},
+"120":{"q":"Hàm OpenCV nào thường được dùng để vẽ một đường thẳng lên ảnh?","options":["line()","drawLine()","lineSegment()","draw.line()"]}
+}

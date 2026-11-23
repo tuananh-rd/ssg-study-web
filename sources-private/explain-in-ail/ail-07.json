@@ -1,0 +1,327 @@
+[
+ {
+  "id": 168,
+  "question": "Which scenario would most likely benefit from applying SMOTE (Synthetic Minority Over-sampling Technique)?",
+  "options": [
+   "When the training data has too many outliers affecting majority class predictions.",
+   "When the classes are balanced but have different feature scales that need normalization.",
+   "When the training data is linearly separable but suffers from high variance.",
+   "When a classification dataset has a severely imbalanced distribution between classes, leading to poor minority class recall."
+  ],
+  "correct": [
+   "When a classification dataset has a severely imbalanced distribution between classes, leading to poor minority class recall."
+  ]
+ },
+ {
+  "id": 169,
+  "question": "Which statement is a common use of Dimension Reduction in the real world?",
+  "options": [
+   "Image tracking",
+   "Explaining the relation between the amount of alcohol consumption and diabetes.",
+   "Deep Learning",
+   "Predicting whether a customer will return to a store to make a major purchase."
+  ],
+  "correct": [
+   "Image tracking"
+  ]
+ },
+ {
+  "id": 170,
+  "question": "How does the choice of splitting criterion affect the decision tree model?",
+  "options": [
+   "The choice of splitting criterion has no impact on the decision tree model.",
+   "Different splitting criteria may result in different decision boundaries and model performance.",
+   "The splitting criterion determines the maximum depth of the tree.",
+   "The splitting criterion adjusts the regularization strength of the model."
+  ],
+  "correct": [
+   "Different splitting criteria may result in different decision boundaries and model performance."
+  ]
+ },
+ {
+  "id": 171,
+  "question": "How to explain the concept of learning rate in the Boosting algorithms?",
+  "options": [
+   "It is the speed at which the algorithm learns from the data",
+   "It controls the contribution of each weak learner to the final prediction",
+   "It measures the accuracy of the model",
+   "It determines the number of boosting rounds"
+  ],
+  "correct": [
+   "It controls the contribution of each weak learner to the final prediction"
+  ]
+ },
+ {
+  "id": 172,
+  "question": "When applying K-means clustering, what is the role of the hyperparameter K, and how does it impact the results?",
+  "options": [
+   "K controls the learning rate and convergence speed",
+   "K determines the number of clusters, influencing the final grouping of data points",
+   "K represents the dimensionality of the feature space",
+   "K is unrelated to clustering; it refers to the number of iterations"
+  ],
+  "correct": [
+   "K determines the number of clusters, influencing the final grouping of data points"
+  ]
+ },
+ {
+  "id": 173,
+  "question": "When using bagging methods like Random Forest, what is the role of feature randomness during the training of individual trees?",
+  "options": [
+   "It forces each tree to overfit to its subset, improving accuracy on the training data.",
+   "It reduces training time by eliminating the need to evaluate multiple features at each split.",
+   "It ensures that only the most important features are selected across all trees.",
+   "It decorrelates the trees, making the ensemble stronger and reducing the variance without increasing bias significantly."
+  ],
+  "correct": [
+   "It decorrelates the trees, making the ensemble stronger and reducing the variance without increasing bias significantly."
+  ]
+ },
+ {
+  "id": 174,
+  "question": "When would hierarchical agglomerative clustering (HAC) be preferred over K-Means?",
+  "options": [
+   "When you want a dendrogram showing nested clusters without specifying the number of clusters beforehand",
+   "When you need to cluster millions of data points quickly in a scalable and memory-efficient manner.",
+   "When your data has perfectly spherical and equally-sized clusters, making K-Means more natural.",
+   "When you are performing feature selection and need an algorithm with built-in regularization."
+  ],
+  "correct": [
+   "When you want a dendrogram showing nested clusters without specifying the number of clusters beforehand"
+  ]
+ },
+ {
+  "id": 175,
+  "question": "Why we need a stopping criterion when we are using the HAC?",
+  "options": [
+   "The algorithm will turn our data into small clusters.",
+   "The algorithm will turn our data into just one cluster.",
+   "The algorithm will not start working if we don't assign a number of clusters.",
+   "The stopping criterion ensures centroids are calculated correctly."
+  ],
+  "correct": [
+   "The algorithm will turn our data into just one cluster."
+  ]
+ },
+ {
+  "id": 176,
+  "question": "A p-value is:",
+  "options": [
+   "the smallest significance level at which the null hypothesis would be rejected",
+   "the probability of the null hypothesis being true",
+   "the probability of the null hypothesis being false",
+   "the smallest significance level at which the null hypothesis is accepted"
+  ],
+  "correct": [
+   "the smallest significance level at which the null hypothesis would be rejected"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "A machine learning model shows continuously decreasing training error but starts to have increasing error on the test set as its complexity grows. Which explanation best describes this situation?",
+  "options": [
+   "The model is too simple and fails to capture the underlying patterns in the data, leading to underfitting.",
+   "The dataset is too large for the model to learn anything meaningful, causing instability in both training and testing error.",
+   "The model is too complex, capturing noise and specific patterns in the training data, which reduces its ability to generalize to new data, resulting in overfitting.",
+   "The model features were not properly normalized or standardized, which causes differences in scale to dominate the learning process."
+  ],
+  "correct": [
+   "The model is too complex, capturing noise and specific patterns in the training data, which reduces its ability to generalize to new data, resulting in overfitting."
+  ]
+ },
+ {
+  "id": 178,
+  "question": "Among the types of Machine Learning, which method works by providing the model with a labeled dataset (with both inputs and correct outputs), so that the model can learn to make predictions for new data?",
+  "options": [
+   "Reinforcement Learning - learning through trial, error, and rewards.",
+   "Supervised Learning - learning with labeled data.",
+   "Unsupervised Learning - learning from unlabeled data.",
+   "Deep Learning - a special branch of Machine Learning based on multi-layer neural networks."
+  ],
+  "correct": [
+   "Supervised Learning - learning with labeled data."
+  ]
+ },
+ {
+  "id": 179,
+  "question": "According to the DBSCAN required inputs, which statement describes the n_clu input?",
+  "options": [
+   "Function to calculate distance.",
+   "Radius of local neighborhood.",
+   "Determines density threshold (for fixed ε) (The minimum amount of points for a particular point to be consider a core point of a cluster).",
+   "The maximum amount of observations for a particular point to be consider a core point of a cluster."
+  ],
+  "correct": [
+   "Determines density threshold (for fixed ε) (The minimum amount of points for a particular point to be consider a core point of a cluster)."
+  ]
+ },
+ {
+  "id": 180,
+  "question": "BOTH Ridge regression and Lasso regression",
+  "options": [
+   "do not adjust the cost function used to estimate a model.",
+   "add a term to the loss function proportional to a regularization parameter.",
+   "add a term to the loss function proportional to the square of parameter coefficients.",
+   "add a term to the loss function proportional to the absolute value of parameter coefficients."
+  ],
+  "correct": [
+   "add a term to the loss function proportional to a regularization parameter."
+  ]
+ },
+ {
+  "id": 182,
+  "question": "If a single decision tree model overfits the data, how can an ensemble method like Random Forest help?",
+  "options": [
+   "By building multiple trees on bootstrapped datasets and averaging their predictions.",
+   "By pruning the original tree and applying logistic regression to the residuals.",
+   "By combining several kernel methods to generate a more flexible decision boundary.",
+   "By forcing each tree to only use support vectors as input during training."
+  ],
+  "correct": [
+   "By building multiple trees on bootstrapped datasets and averaging their predictions."
+  ]
+ },
+ {
+  "id": 183,
+  "question": "In PCA, how does the explained variance ratio of each principal component help in determining the optimal number of components?",
+  "options": [
+   "By selecting components with the highest explained variance ratio",
+   "By selecting components with the lowest explained variance ratio",
+   "By ignoring the explained variance ratio and always using all components",
+   "By using the cumulative explained variance ratio to find an elbow point in the scree plot"
+  ],
+  "correct": [
+   "By using the cumulative explained variance ratio to find an elbow point in the scree plot"
+  ]
+ },
+ {
+  "id": 184,
+  "question": "In k-fold cross-validation, how will increase of k affect the variance (across subsamples) of estimated model parameters?",
+  "options": [
+   "Increasing of k will not affect the variance of estimated parameters.",
+   "Increasing of k will usually reduce the variance of estimated parameters.",
+   "Increasing of k will usually increase the variance of estimated parameters.",
+   "Increasing of k will increase the variance of estimated parameters if models are underfit, but reduce it if models are overfit."
+  ],
+  "correct": [
+   "Increasing of k will usually reduce the variance of estimated parameters."
+  ]
+ },
+ {
+  "id": 185,
+  "question": "In SVM, what is the purpose of support vectors?",
+  "options": [
+   "They are used to define the margin between classes.",
+   "They are outliers that are ignored during training.",
+   "They are the data points that lie closest to the decision boundary.",
+   "They are the weights assigned to features in the input data."
+  ],
+  "correct": [
+   "They are the data points that lie closest to the decision boundary."
+  ]
+ },
+ {
+  "id": 186,
+  "question": "In Frequentist statistics, a 95% confidence interval for the mean of a dataset means:",
+  "options": [
+   "There is a 95% probability that the true mean lies inside this specific interval.",
+   "If the same experiment is repeated many times, about 95% of the calculated intervals would contain the true mean.",
+   "The mean will change 95% of the time depending on the sample size.",
+   "The confidence interval always contains exactly 95% of the data points."
+  ],
+  "correct": [
+   "If the same experiment is repeated many times, about 95% of the calculated intervals would contain the true mean."
+  ]
+ },
+ {
+  "id": 187,
+  "question": "In an SVM model, what is the primary purpose of the regularization parameter C in the cost function?",
+  "options": [
+   "C scales all input features so that each feature contributes equally to distance calculations in the model.",
+   "C determines which kernel function will be automatically selected by the algorithm for classification.",
+   "C controls the balance between maximizing the margin and minimizing misclassification, allowing the model to tolerate some errors while reducing overfitting.",
+   "C limits the number of support vectors that can be included in defining the decision boundary of the model."
+  ],
+  "correct": [
+   "C controls the balance between maximizing the margin and minimizing misclassification, allowing the model to tolerate some errors while reducing overfitting."
+  ]
+ },
+ {
+  "id": 188,
+  "question": "These are two main advantages of decision trees:",
+  "options": [
+   "They do not tend to overfit and are not sensitive to changes in data",
+   "They are very visual and easy to interpret",
+   "They are resistant to outliers and output scaled features",
+   "They output both parameters and significance levels"
+  ],
+  "correct": [
+   "They are very visual and easy to interpret"
+  ]
+ },
+ {
+  "id": 189,
+  "question": "This is the best way to choose the number of trees to build on a Bagging ensemble.",
+  "options": [
+   "Choose a large number of trees, typically above 100",
+   "Prioritize training error metrics over out of bag sample",
+   "Tune number of trees as a hyperparameter that needs to be optimized",
+   "Choose a number of trees past the point of diminishing returns"
+  ],
+  "correct": [
+   "Tune number of trees as a hyperparameter that needs to be optimized"
+  ]
+ },
+ {
+  "id": 190,
+  "question": "This option describes a way of turning a regression problem for a classification problem:",
+  "options": [
+   "Create a new variable that flags 1 for above a certain value and 0 otherwise",
+   "Use outlier treatment",
+   "Use missing value handling",
+   "Create a new variable that uses autoencoding to transform a continuous outcome into categorical"
+  ],
+  "correct": [
+   "Create a new variable that flags 1 for above a certain value and 0 otherwise"
+  ]
+ },
+ {
+  "id": 192,
+  "question": "The stratified sampling technique in machine learning is used ?",
+  "options": [
+   "To create a balanced dataset",
+   "To reduce the number of features",
+   "To ensure that each class is represented proportionally in training and testing sets",
+   "To increase the size of the dataset"
+  ],
+  "correct": [
+   "To ensure that each class is represented proportionally in training and testing sets"
+  ]
+ },
+ {
+  "id": 193,
+  "question": "The difference between Euclidean distance and Manhattan distance is",
+  "options": [
+   "Euclidean distance considers only horizontal or vertical movements, while Manhattan distance allows diagonal movements.",
+   "Euclidean distance is the sum of absolute differences, while Manhattan distance is the sum of squared differences.",
+   "Euclidean distance measures the straight-line distance, while Manhattan distance measures the sum of absolute differences along each dimension",
+   "Euclidean distance is only applicable to numerical data, while Manhattan distance is used for categorical data"
+  ],
+  "correct": [
+   "Euclidean distance measures the straight-line distance, while Manhattan distance measures the sum of absolute differences along each dimension"
+  ]
+ },
+ {
+  "id": 194,
+  "question": "The following statement is an example of a business case where we can use the Cosine Distance?",
+  "options": [
+   "Cosine is useful for coordinate based measurements.",
+   "Cosine is better for data such as text where location of occurrence is less important.",
+   "Cosine distance is more sensitive to the curse of dimensionality",
+   "Cosine distance is less sensitive to the curse of dimensionality"
+  ],
+  "correct": [
+   "Cosine is better for data such as text where location of occurrence is less important."
+  ]
+ }
+]

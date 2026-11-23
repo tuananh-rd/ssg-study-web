@@ -1,0 +1,202 @@
+[
+ {
+  "id": 43,
+  "question": "Which code sample will produce the first five lines of a .csv file named \"dogs.csv\"?",
+  "options": [
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf.head()",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = [1-5]",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = [0 - 4]",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = x5"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "When loading data from an HTML table using Pandas, which function is used?",
+  "options": [
+   "read_html()",
+   "read_html_table()",
+   "parse_html()",
+   "import_html()"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "How can you set the center of the map using Folium?",
+  "options": [
+   "location",
+   "change_center()",
+   "center()",
+   "set_center"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "How would you access the column \"price\" from the dataframe df?",
+  "options": [
+   "df[\"price\"]",
+   "df.\"price\"",
+   "df.[price]",
+   "df.column[\"price\"]"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "How would you rename the column \"point\" to \"location\"?",
+  "options": [
+   "df.rename(columns={\"point\": \"location\"}, inplace=True)",
+   "df.change(columns={\"location\": \" point \"}, inplace=True)",
+   "df.rename(columns={\"location\": \"point\"}, inplace=True)",
+   "df.Change(columns={\"point\": \"location\"}, inplace=True)"
+  ]
+ },
+ {
+  "id": 49,
+  "question": "A developer runs a ls command and sees the following files in their cwd: /user/Animals/Dogs/dogBreeds.txt, /user/Animals/Dogs/dogNames.txt, /user/Animals/Dogs/Fido.png. They realize they have accidentally duplicated dogBreeds as dogNames. How would the developer replace the dogNames file to be correct?",
+  "options": [
+   "with open (\"/users/Animals/Dogs/dogNames.txt\") as dogNames",
+   "with open (\"/users/Animals/Dogs/dogNames.txt\", \"r\") as dogNames",
+   "with open(\"/users/Animals/Dogs/dogNames.txt\", \"w\") as dogNames",
+   "with open (\"/users/Animals/Dogs/dogNames.txt\", w) as dogNames"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "A teacher has grades stored in an array. The array is: grades = np.array([100, 30, 77, 20, 99, 100]). What code will produce the lowest grade from the array, and assign it to a variable that will accurately describe the value assigned to it?",
+  "options": [
+   "grades = grades.min()",
+   "grades.min() = lowest_grade",
+   "lowest_grade = grades.min()",
+   "grades.min() = grades"
+  ]
+ },
+ {
+  "id": 51,
+  "question": "In Seaborn, which function is used to create a heatmap to visualize the correlation matrix of a dataset?",
+  "options": [
+   "sns.heatmap()",
+   "sns.pairplot()",
+   "sns.jointplot()",
+   "sns.scatterplot()"
+  ]
+ },
+ {
+  "id": 52,
+  "question": "In Sklearn, which method is used for cross-validation to assess how the model performs on new data?",
+  "options": [
+   "evaluate()",
+   "validate()",
+   "cross_val_score()",
+   "model_performance()"
+  ]
+ },
+ {
+  "id": 53,
+  "question": "In Matplotlib, which function is used to add labels to a pie chart?",
+  "options": [
+   "plt.pie()",
+   "plt.labels()",
+   "plt.add_labels()",
+   "plt.annotate()"
+  ]
+ },
+ {
+  "id": 54,
+  "question": "In Dash, which component is used to create a range slider for selecting values within a specified range?",
+  "options": [
+   "dcc.RangeSlider()",
+   "dcc.Slider()",
+   "dcc.Input()",
+   "dcc.Dropdown()"
+  ]
+ },
+ {
+  "id": 57,
+  "question": "In Folium, what function is used to create a Marker on a map at a specified latitude and longitude?",
+  "options": [
+   "folium.Marker()",
+   "folium.Map()",
+   "folium.CircleMarker()",
+   "folium.PolyLine()"
+  ]
+ },
+ {
+  "id": 58,
+  "question": "import pandas as pd\n# Example of removing punctuation from text column\ndata = {'Text': ['DAP391m is a great subject, I love it so much, really']}\ndf = pd.DataFrame(data)\ndf['Cleaned_Text'] = df['Text'].str.replace(r'[^\\w\\s]', '')\nWhat is the purpose of last line of the given code above?",
+  "options": [
+   "Remove all commas in df variable",
+   "Remove all 'w' and 's' in df variable",
+   "Remove all spaces in df variable",
+   "Do nothing"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "You have the following DataFrame df:\ndf = pd.DataFrame({\n'Gender': ['Male', 'Female', 'Female', 'Male', 'Female', 'Female']\n})\nWhich code snippet applies frequency encoding to the Gender column, so each category is replaced by its frequency?",
+  "options": [
+   "df['Gender_encoded'] = df['Gender'].map(df['Gender'].value_counts())",
+   "df['Gender_encoded'] = df['Gender'].map(lambda x: df['Gender'].value_counts()[x])",
+   "df['Gender_encoded'] = df['Gender'].map({'Male': 3, 'Female': 3})",
+   "df['Gender_encoded'] = df['Gender'].map(df['Gender'].value_counts(normalize=True))"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Given the following DataFrame df:\ndf = pd.DataFrame({\n'Fruit': ['Apple', 'Banana', 'Apple', 'Orange', 'Banana', 'Orange']\n})\nWhich code snippet correctly converts the Fruit column into one-hot encoded columns and drops the original Fruit column?",
+  "options": [
+   "df = pd.get_dummies(df, columns=['Fruit'], drop_first=True)",
+   "df = pd.get_dummies(df, columns=['Fruit'], drop_first=False)",
+   "df = pd.get_dummies(df['Fruit'], drop_first=True)\ndf.drop('Fruit', axis=1, inplace=True)",
+   "df = pd.get_dummies(df['Fruit'], drop_first=False)\ndf.drop('Fruit', axis=0, inplace=True)"
+  ]
+ },
+ {
+  "id": 61,
+  "question": "You have a dataset customer_data containing information about customers, including their age, income, and whether they purchased a product (binary classification). You want to train a Support Vector Classifier (SVC) with a linear kernel to predict whether a new customer will purchase the product based on their age and income. Which code snippet correctly preprocesses the data, trains the SVC, and makes predictions?\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.svm import SVC\n# Load the dataset\ncustomer_data = pd.read_csv('customer_data.csv')\n# Preprocess the data\nX = choose your appropriate preprocess step here\ny = customer_data['purchased']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Create an SVC with linear kernel\nsvc_classifier = SVC(kernel='linear')\n# Fit the classifier to the training data\nsvc_classifier.fit(X_train, y_train)\n# Make predictions on the test data\npredictions = svc_classifier.predict(X_test)",
+  "options": [
+   "X = customer_data[['age', 'income']]",
+   "X = customer_data[['age', 'income', 'purchased']]",
+   "X = customer_data[['age', 'purchased']].to_numpy()",
+   "X = customer_data[['age', 'income']].reshape(-1, 2)"
+  ]
+ },
+ {
+  "id": 62,
+  "question": "You have the following DataFrame df:\nimport pandas as pd\ndf = pd.DataFrame({\n'Color': ['Red', 'Blue', 'Green', 'Red', 'Blue', 'Green', 'Red']\n})\nWhich code snippet correctly applies label encoding to the Color column, resulting in the unique values {'Green': 2, 'Red': 0, 'Blue': 1, }?",
+  "options": [
+   "df['Color_encoded'] = df['Color'].map({'Red': 0, 'Blue': 1, 'Green': 2})",
+   "from sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\ndf['Color_encoded'] = le.fit_transform(df['Color'])",
+   "df['Color_encoded'] = df['Color'].apply(lambda x: {'Red': 2, 'Blue': 0, 'Green': 1}[x])",
+   "df['Color_encoded'] = df['Color'].astype('category').cat.codes"
+  ]
+ },
+ {
+  "id": 63,
+  "question": "You're scraping an e-commerce website to extract product information. Each product is listed in a <div> with the class \"product-item\". Inside each product <div>, the product name is contained within a <h3> tag with the class \"product-name\", and the price is contained within a <span> tag with the class \"product-price\". Write a code snippet using BeautifulSoup to extract the last prices of last product on the page.\nfrom bs4 import BeautifulSoup\n# Sample HTML content\nhtml_content = \"\"\"\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product 1</h3>\n<span class=\"product-price\">$19.99</span>\n</div>\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product 2</h3>\n<span class=\"product-price\">$29.99</span>\n</div>\n<!-- More product items -->\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product N</h3>\n<span class=\"product-price\">$49.99</span>\n</div>\n\"\"\"\n# Parse the HTML content\nsoup = BeautifulSoup(html_content, 'html.parser')\n# Extract the last product's price\nlast_product_price = choose appropriate code here\nprint(\"Last product's price:\", last_product_price)",
+  "options": [
+   "soup.find_all('div', class_='product-item')[-1].find('span', class_='product-price').text",
+   "soup.find_all('div', class_='product-item')[-1].find('h3', class_='product-name').text",
+   "soup.find_all('div', class_='product-price')[-1].text",
+   "soup.find_all('div', class_='product-name')[3].find('span', class_='product-price').text"
+  ]
+ },
+ {
+  "id": 64,
+  "question": "Which method in pandas is used to fill missing values in a DataFrame using backward fill?",
+  "options": [
+   "bfill()",
+   "backward_fill()",
+   "fillna()",
+   "backfill()"
+  ]
+ },
+ {
+  "id": 65,
+  "question": "Which function in Pandas is used to read CSV files?",
+  "options": [
+   "pd.load_csv()",
+   "pd.read_csv()",
+   "pd.open_csv()",
+   "pd.csv_read()"
+  ]
+ }
+]

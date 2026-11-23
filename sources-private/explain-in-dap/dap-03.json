@@ -1,0 +1,325 @@
+[
+ {
+  "id": 57,
+  "question": "In Folium, what function is used to create a Marker on a map at a specified latitude and longitude?",
+  "options": [
+   "folium.Marker()",
+   "folium.Map()",
+   "folium.CircleMarker()",
+   "folium.PolyLine()"
+  ],
+  "correct": [
+   "folium.Marker()"
+  ]
+ },
+ {
+  "id": 58,
+  "question": "import pandas as pd\n# Example of removing punctuation from text column\ndata = {'Text': ['DAP391m is a great subject, I love it so much, really']}\ndf = pd.DataFrame(data)\ndf['Cleaned_Text'] = df['Text'].str.replace(r'[^\\w\\s]', '')\nWhat is the purpose of last line of the given code above?",
+  "options": [
+   "Remove all commas in df variable",
+   "Remove all 'w' and 's' in df variable",
+   "Remove all spaces in df variable",
+   "Do nothing"
+  ],
+  "correct": [
+   "Remove all commas in df variable"
+  ]
+ },
+ {
+  "id": 59,
+  "question": "You have the following DataFrame df:\ndf = pd.DataFrame({\n'Gender': ['Male', 'Female', 'Female', 'Male', 'Female', 'Female']\n})\nWhich code snippet applies frequency encoding to the Gender column, so each category is replaced by its frequency?",
+  "options": [
+   "df['Gender_encoded'] = df['Gender'].map(df['Gender'].value_counts())",
+   "df['Gender_encoded'] = df['Gender'].map(lambda x: df['Gender'].value_counts()[x])",
+   "df['Gender_encoded'] = df['Gender'].map({'Male': 3, 'Female': 3})",
+   "df['Gender_encoded'] = df['Gender'].map(df['Gender'].value_counts(normalize=True))"
+  ],
+  "correct": [
+   "df['Gender_encoded'] = df['Gender'].map(df['Gender'].value_counts())"
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Given the following DataFrame df:\ndf = pd.DataFrame({\n'Fruit': ['Apple', 'Banana', 'Apple', 'Orange', 'Banana', 'Orange']\n})\nWhich code snippet correctly converts the Fruit column into one-hot encoded columns and drops the original Fruit column?",
+  "options": [
+   "df = pd.get_dummies(df, columns=['Fruit'], drop_first=True)",
+   "df = pd.get_dummies(df, columns=['Fruit'], drop_first=False)",
+   "df = pd.get_dummies(df['Fruit'], drop_first=True)\ndf.drop('Fruit', axis=1, inplace=True)",
+   "df = pd.get_dummies(df['Fruit'], drop_first=False)\ndf.drop('Fruit', axis=0, inplace=True)"
+  ],
+  "correct": [
+   "df = pd.get_dummies(df, columns=['Fruit'], drop_first=True)"
+  ]
+ },
+ {
+  "id": 61,
+  "question": "You have a dataset customer_data containing information about customers, including their age, income, and whether they purchased a product (binary classification). You want to train a Support Vector Classifier (SVC) with a linear kernel to predict whether a new customer will purchase the product based on their age and income. Which code snippet correctly preprocesses the data, trains the SVC, and makes predictions?\nimport pandas as pd\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.svm import SVC\n# Load the dataset\ncustomer_data = pd.read_csv('customer_data.csv')\n# Preprocess the data\nX = choose your appropriate preprocess step here\ny = customer_data['purchased']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n# Create an SVC with linear kernel\nsvc_classifier = SVC(kernel='linear')\n# Fit the classifier to the training data\nsvc_classifier.fit(X_train, y_train)\n# Make predictions on the test data\npredictions = svc_classifier.predict(X_test)",
+  "options": [
+   "X = customer_data[['age', 'income']]",
+   "X = customer_data[['age', 'income', 'purchased']]",
+   "X = customer_data[['age', 'purchased']].to_numpy()",
+   "X = customer_data[['age', 'income']].reshape(-1, 2)"
+  ],
+  "correct": [
+   "X = customer_data[['age', 'income']]"
+  ]
+ },
+ {
+  "id": 62,
+  "question": "You have the following DataFrame df:\nimport pandas as pd\ndf = pd.DataFrame({\n'Color': ['Red', 'Blue', 'Green', 'Red', 'Blue', 'Green', 'Red']\n})\nWhich code snippet correctly applies label encoding to the Color column, resulting in the unique values {'Green': 2, 'Red': 0, 'Blue': 1, }?",
+  "options": [
+   "df['Color_encoded'] = df['Color'].map({'Red': 0, 'Blue': 1, 'Green': 2})",
+   "from sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\ndf['Color_encoded'] = le.fit_transform(df['Color'])",
+   "df['Color_encoded'] = df['Color'].apply(lambda x: {'Red': 2, 'Blue': 0, 'Green': 1}[x])",
+   "df['Color_encoded'] = df['Color'].astype('category').cat.codes"
+  ],
+  "correct": [
+   "df['Color_encoded'] = df['Color'].map({'Red': 0, 'Blue': 1, 'Green': 2})"
+  ]
+ },
+ {
+  "id": 63,
+  "question": "You're scraping an e-commerce website to extract product information. Each product is listed in a <div> with the class \"product-item\". Inside each product <div>, the product name is contained within a <h3> tag with the class \"product-name\", and the price is contained within a <span> tag with the class \"product-price\". Write a code snippet using BeautifulSoup to extract the last prices of last product on the page.\nfrom bs4 import BeautifulSoup\n# Sample HTML content\nhtml_content = \"\"\"\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product 1</h3>\n<span class=\"product-price\">$19.99</span>\n</div>\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product 2</h3>\n<span class=\"product-price\">$29.99</span>\n</div>\n<!-- More product items -->\n<div class=\"product-item\">\n<h3 class=\"product-name\">Product N</h3>\n<span class=\"product-price\">$49.99</span>\n</div>\n\"\"\"\n# Parse the HTML content\nsoup = BeautifulSoup(html_content, 'html.parser')\n# Extract the last product's price\nlast_product_price = choose appropriate code here\nprint(\"Last product's price:\", last_product_price)",
+  "options": [
+   "soup.find_all('div', class_='product-item')[-1].find('span', class_='product-price').text",
+   "soup.find_all('div', class_='product-item')[-1].find('h3', class_='product-name').text",
+   "soup.find_all('div', class_='product-price')[-1].text",
+   "soup.find_all('div', class_='product-name')[3].find('span', class_='product-price').text"
+  ],
+  "correct": [
+   "soup.find_all('div', class_='product-item')[-1].find('span', class_='product-price').text"
+  ]
+ },
+ {
+  "id": 71,
+  "question": "Which Seaborn function is used to create a box plot to visualize the distribution of a numerical variable?",
+  "options": [
+   "sns.barplot()",
+   "sns.boxplot()",
+   "sns.violinplot()",
+   "sns.countplot()"
+  ],
+  "correct": [
+   "sns.boxplot()"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "Which Pandas method is used to drop rows with any missing values in a DataFrame?",
+  "options": [
+   "remove_missing()",
+   "dropna()",
+   "clean_data()",
+   "remove_nulls()"
+  ],
+  "correct": [
+   "dropna()"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "Which function is used to generate basic descriptive statistics in Pandas?",
+  "options": [
+   "df.describe()",
+   "df.head()",
+   "df.plot()",
+   "df.count()"
+  ],
+  "correct": [
+   "df.describe()"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "Which Pandas method is used to display the basic statistics of the numerical columns in a DataFrame?",
+  "options": [
+   "describe()",
+   "summary()",
+   "stats()",
+   "statistics()"
+  ],
+  "correct": [
+   "describe()"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "What is the largest possible element resulting in the operation df.corr()?",
+  "options": [
+   "1",
+   "0",
+   "+infinity",
+   "mean value"
+  ],
+  "correct": [
+   "1"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "What is the range of values for a correlation coefficient?",
+  "options": [
+   "[-1, 1]",
+   "[0, 1]",
+   "[-INF, INF]",
+   "[0, INF]"
+  ],
+  "correct": [
+   "[-1, 1]"
+  ]
+ },
+ {
+  "id": 77,
+  "question": "What is the value of p-value to represent strong correlation? Select the best answer",
+  "options": [
+   "great than 0.1",
+   "less than 0.1",
+   "less than 0.05",
+   "less than 0.001"
+  ],
+  "correct": [
+   "less than 0.001"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "What value of R2 (coefficient of determination) indicates your model performs best?",
+  "options": [
+   "-1",
+   "0",
+   "1",
+   "Infinity"
+  ],
+  "correct": [
+   "1"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "Which quartile range does the upper whisker of a box plot represent?",
+  "options": [
+   "75th to 100th percentile",
+   "50th to 75th percentile",
+   "25th to 50th percentile",
+   "0th to 25th percentile"
+  ],
+  "correct": [
+   "75th to 100th percentile"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "Consider the following code snippet:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nwhat will be the most likely printed code on the screen if the server got internal error?",
+  "options": [
+   "500",
+   "200",
+   "300",
+   "400"
+  ],
+  "correct": [
+   "500"
+  ]
+ },
+ {
+  "id": 81,
+  "question": "Consider the following code snippet:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nwhat will be the most likely printed code on the screen if the resource you request available only for admin role?",
+  "options": [
+   "401",
+   "500",
+   "303",
+   "200"
+  ],
+  "correct": []
+ },
+ {
+  "id": 82,
+  "question": "Consider the following code:\nimport pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n# Sample DataFrame\ndata = {'Feature1': [10, 20, 30, 40, 50]}\ndf = pd.DataFrame(data)\n# Standardizing the 'Feature1' column\nscaler = MinMaxScaler()\ndf['Standardized_Feature1'] = scaler.fit_transform(df[['Feature1']])\nprint(df.loc[2, 'Standardized_Feature1'])\nWhat is the output?",
+  "options": [
+   "0.5",
+   "0",
+   "1",
+   "0.7"
+  ],
+  "correct": [
+   "0.5"
+  ]
+ },
+ {
+  "id": 83,
+  "question": "Consider the following Series:\n0 NaN\n1 15.0\n2 NaN\n3 25.0\n4 30.0\ndtype: float64\nIf we fill missing values in the Series with the median of the Series, what value will replace the NaN in index 0?",
+  "options": [
+   "25.0",
+   "30.0",
+   "15.0",
+   "23.33"
+  ],
+  "correct": [
+   "25.0"
+  ]
+ },
+ {
+  "id": 84,
+  "question": "Given a DataFrame df with missing values in multiple columns:\nimport pandas as pd\ndf = pd.DataFrame({ 'Region': [np.nan, 'South', np.nan, 'East', np.nan, 'West'], 'Sales': [100, np.nan, 150, np.nan, 200, np.nan] })\nHow many missing values after filling df with this statement:\ndf.fillna(inplace=True)",
+  "options": [
+   "1",
+   "0",
+   "4",
+   "6"
+  ],
+  "correct": [
+   "6"
+  ]
+ },
+ {
+  "id": 85,
+  "question": "Given a pandas DataFrame df with columns 'Category' and 'Value', if we want to find the median of values in each category, what will be the median value in the 'Category' = 'B' group?\ndf = pd.DataFrame({'Category': ['A', 'B', 'A', 'B', 'B'], 'Value': [10, 20, 30, 40, 50]})",
+  "options": [
+   "40",
+   "52",
+   "10",
+   "50"
+  ],
+  "correct": [
+   "40"
+  ]
+ },
+ {
+  "id": 86,
+  "question": "If a pandas DataFrame df has a column 'Temperature' with values [20, 25, 30, 35, 40], what is the variance of temperatures?",
+  "options": [
+   "50",
+   "100",
+   "75",
+   "25"
+  ],
+  "correct": [
+   "50"
+  ]
+ },
+ {
+  "id": 87,
+  "question": "In a dataset, the Maximum of a box plot is set to 100, and the first quartile (Q1) is 20. Calculate the Q3 and the Minimum of the boxplot.",
+  "options": [
+   "Q3 = 52, Minimum = -28",
+   "Q3 = 80, Minimum = 0",
+   "Q3 = 50, Minimum = 25",
+   "Q3 = 68, Minimum = -22"
+  ],
+  "correct": [
+   "Q3 = 52, Minimum = -28"
+  ]
+ },
+ {
+  "id": 88,
+  "question": "You have a DataFrame temperature_data containing temperature readings at different timestamps. Some readings are missing due to sensor errors. After filling these missing values by linear interpolation between existing values, what is the temperature value interpolated for the timestamp '2022-01-02'?\ntemperature_data = pd.DataFrame({\n'Temperature': [20, None, 25, None, 30],\n'Timestamp': pd.date_range(start='2022-01-01', periods=5, freq='D')\n})",
+  "options": [
+   "22.5",
+   "23.0",
+   "27.5",
+   "26.0"
+  ],
+  "correct": [
+   "22.5"
+  ]
+ }
+]

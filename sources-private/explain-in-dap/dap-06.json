@@ -1,0 +1,327 @@
+[
+ {
+  "id": 139,
+  "question": "Which method combines Ridge and Lasso regression penalties?",
+  "options": [
+   "ElasticNet regression",
+   "Polynomial regression",
+   "Stepwise regression",
+   "Gradient Boosting"
+  ],
+  "correct": [
+   "ElasticNet regression"
+  ]
+ },
+ {
+  "id": 140,
+  "question": "Which Watson AI service API can be used for natural language understanding, sentiment analysis, and language translation?",
+  "options": [
+   "Watson Assistant API",
+   "Watson Language Translator API",
+   "Watson Discovery API",
+   "Watson Natural Language Understanding API"
+  ],
+  "correct": [
+   "Watson Natural Language Understanding API"
+  ]
+ },
+ {
+  "id": 141,
+  "question": "Which IBM DB2 utility is commonly used for loading data from external files into a table?",
+  "options": [
+   "LOAD DATA",
+   "IMPORT DATA",
+   "INSERT DATA",
+   "EXPORT DATA"
+  ],
+  "correct": [
+   "LOAD DATA"
+  ]
+ },
+ {
+  "id": 142,
+  "question": "Which layer in a CNN is responsible for reducing spatial dimensions and controlling overfitting?",
+  "options": [
+   "Convolutional layer",
+   "MaxPooling layer",
+   "Dense layer",
+   "Flatten layer"
+  ],
+  "correct": [
+   "MaxPooling layer"
+  ]
+ },
+ {
+  "id": 143,
+  "question": "Which parameter in the folium.Choropleth() function is used to specify the data to be visualized on the map?",
+  "options": [
+   "data",
+   "value",
+   "key",
+   "color"
+  ],
+  "correct": [
+   "value"
+  ]
+ },
+ {
+  "id": 144,
+  "question": "Which library is commonly used for creating static, interactive, and publication-quality visualizations in Python?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Folium",
+   "Dash"
+  ],
+  "correct": [
+   "Matplotlib"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "Which library is commonly used to design advanced interactive dashboards in Python?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Plotly Dash",
+   "Bokeh"
+  ],
+  "correct": [
+   "Plotly Dash"
+  ]
+ },
+ {
+  "id": 146,
+  "question": "What library is commonly used in Python for data manipulation and analysis?",
+  "options": [
+   "Numpy",
+   "Pandas",
+   "Scikit-learn",
+   "Matplotlib"
+  ],
+  "correct": [
+   "Pandas"
+  ]
+ },
+ {
+  "id": 148,
+  "question": "Which statistical measure is commonly used to fill in missing numerical data in Pandas?",
+  "options": [
+   "Mean",
+   "Mode",
+   "Median",
+   "Standard Deviation"
+  ],
+  "correct": [
+   "Mean"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "Which Scikit-learn class is used to create pipelines?",
+  "options": [
+   "Pipeline",
+   "PipelineModel",
+   "Pipe",
+   "ModelPipeline"
+  ],
+  "correct": [
+   "Pipeline"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "Which Python library is mainly used for data visualization?",
+  "options": [
+   "Pandas",
+   "NumPy",
+   "Matplotlib",
+   "Requests"
+  ],
+  "correct": [
+   "Matplotlib"
+  ]
+ },
+ {
+  "id": 151,
+  "question": "Which Python library commonly implements grid search for hyperparameter tuning?",
+  "options": [
+   "Pandas",
+   "NumPy",
+   "Scikit-learn",
+   "TensorFlow"
+  ],
+  "correct": [
+   "Scikit-learn"
+  ]
+ },
+ {
+  "id": 152,
+  "question": "Which Python library is best suited for creating interactive data visualizations and dashboards?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Plotly",
+   "Folium"
+  ],
+  "correct": [
+   "Plotly"
+  ]
+ },
+ {
+  "id": 153,
+  "question": "Which Python library is used to make HTTP requests for accessing web pages and APIs?",
+  "options": [
+   "BeautifulSoup",
+   "Scrapy",
+   "Requests",
+   "Selenium"
+  ],
+  "correct": [
+   "Requests"
+  ]
+ },
+ {
+  "id": 154,
+  "question": "Which Python library is commonly used for web scraping and parsing HTML content?",
+  "options": [
+   "BeautifulSoup",
+   "Pandas",
+   "Requests",
+   "Scrapy"
+  ],
+  "correct": [
+   "BeautifulSoup"
+  ]
+ },
+ {
+  "id": 155,
+  "question": "Which Python library is specifically designed for building web-based analytic applications?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Folium",
+   "Dash"
+  ],
+  "correct": [
+   "Dash"
+  ]
+ },
+ {
+  "id": 157,
+  "question": "Which tool is used to define the conversational flow and responses in Watson Assistant?",
+  "options": [
+   "Dialog Node Editor",
+   "Intent Generator",
+   "Entity Extractor",
+   "Fallback Intent Creator"
+  ],
+  "correct": [
+   "Dialog Node Editor"
+  ]
+ },
+ {
+  "id": 158,
+  "question": "Which parameter in plt.plot() sets the width of the line?",
+  "options": [
+   "linewidth",
+   "line_width",
+   "width",
+   "line"
+  ],
+  "correct": [
+   "linewidth"
+  ]
+ },
+ {
+  "id": 159,
+  "question": "Which regression technique is used to handle linear relationships between variables?",
+  "options": [
+   "Logistic regression",
+   "Polynomial regression",
+   "Ridge regression",
+   "Linear regression"
+  ],
+  "correct": [
+   "Linear regression"
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Which state does a data analyst compare with the ideal state to determine what data needs to be captured?",
+  "options": [
+   "Relative",
+   "Sick",
+   "Current",
+   "Absolute"
+  ],
+  "correct": [
+   "Current"
+  ]
+ },
+ {
+  "id": 161,
+  "question": "When integrating a Watson Assistant chatbot with Facebook Messenger, what is required for the setup?",
+  "options": [
+   "Developer API key",
+   "Facebook Graph API",
+   "OAuth token",
+   "Access token"
+  ],
+  "correct": [
+   "Access token"
+  ]
+ },
+ {
+  "id": 162,
+  "question": "How is word size typically determined in a word cloud?",
+  "options": [
+   "Based on word count",
+   "Based on word length",
+   "By alphabetical order",
+   "Randomly assigned sizes"
+  ],
+  "correct": [
+   "Based on word count"
+  ]
+ },
+ {
+  "id": 163,
+  "question": "How is precision calculated using values from a confusion matrix?",
+  "options": [
+   "TP / (TP + FP)",
+   "TP / (TP + TN)",
+   "TP / (TP + FN)",
+   "TP / (FP + FN)"
+  ],
+  "correct": [
+   "TP / (TP + FP)"
+  ]
+ },
+ {
+  "id": 164,
+  "question": "How does Watson Assistant manage the flow of conversation with users?",
+  "options": [
+   "Through entities",
+   "Via context variables",
+   "Using dialog nodes",
+   "With API calls"
+  ],
+  "correct": [
+   "Using dialog nodes"
+  ]
+ },
+ {
+  "id": 165,
+  "question": "A scatter plot is a mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. What kind of relationship do the two variables have, in case of increasing trend.",
+  "options": [
+   "Independent linear relationship",
+   "Dependent cross relationship",
+   "Dispositive multi-linear relationship",
+   "Positive linear relationship"
+  ],
+  "correct": [
+   "Positive linear relationship"
+  ]
+ }
+]

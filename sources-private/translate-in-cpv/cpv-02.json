@@ -1,0 +1,198 @@
+[
+ {
+  "id": 21,
+  "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+  "options": [
+   "Projective transformation",
+   "Euclidean transformation",
+   "Affine transformation",
+   "Similarity transformation"
+  ]
+ },
+ {
+  "id": 22,
+  "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+  "options": [
+   "Video Brush system",
+   "Multiple-image stitching",
+   "Panoramic video textures",
+   "Summarize and compress videos"
+  ]
+ },
+ {
+  "id": 23,
+  "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+  "options": [
+   "Content-based techniques",
+   "Gaussian technique",
+   "Convolution based technique",
+   "Edge detection technique"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+  "options": [
+   "Detection, identifying, and locating",
+   "Identifying, and locating",
+   "Detection and locating",
+   "Recognizing, identifying, and locating"
+  ]
+ },
+ {
+  "id": 25,
+  "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+  "options": [
+   "Saturation",
+   "Contrast",
+   "Noise",
+   "Brightness"
+  ]
+ },
+ {
+  "id": 26,
+  "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+  "options": [
+   "MIP Mapping filter",
+   "Gaussian White filter",
+   "Elliptical Weighted Average (EWA) filter",
+   "Multi pass filter"
+  ]
+ },
+ {
+  "id": 27,
+  "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+  "options": [
+   "Image transformation",
+   "Heuristic transformation",
+   "Hybrid transformation",
+   "Watershed transformation"
+  ]
+ },
+ {
+  "id": 28,
+  "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+  "options": [
+   "Gradient",
+   "Edge",
+   "Grayscale",
+   "Contour"
+  ]
+ },
+ {
+  "id": 29,
+  "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+  "options": [
+   "Region combination",
+   "Object combination",
+   "Region splitting",
+   "Object splitting"
+  ]
+ },
+ {
+  "id": 30,
+  "question": "The lower limit of the dynamic range ratio can be determined by ____",
+  "options": [
+   "Contrast",
+   "Saturation",
+   "Noise",
+   "Brightness"
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Which of the following statement is TRUE?",
+  "options": [
+   "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+   "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+   "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+   "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Which of the following is NOT an application of image alignment?",
+  "options": [
+   "Identifying document templates",
+   "Generating panorama images",
+   "Comparing multiple scans of tissue taken at different times",
+   "Enhancing scanned or photographed documents"
+  ]
+ },
+ {
+  "id": 33,
+  "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+  "options": [
+   "Affine mapping computation",
+   "Skewed two-dimensional coordinate system",
+   "Inverse covariance matrix for pixel grids",
+   "Circle projection of destination pixels"
+  ]
+ },
+ {
+  "id": 34,
+  "question": "What is not true about image stitching?",
+  "options": [
+   "It is the process of combining multiple photographic images with overlapping fields of view",
+   "It is used in forensic and investigate science for the reconstruction of torn paper",
+   "It is used to complete mapping of a particular place",
+   "It maps two pixels that have similar intensity from two adjacent images"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "What is not true object detection?",
+  "options": [
+   "It is the task of detecting instances of objects of a certain class within an image",
+   "It allows to identify and locate objects in a video",
+   "It recognizes with a contour in the image",
+   "It detects instances of semantic objects of a certain class"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "What is not true about RANSAC algorithm?",
+  "options": [
+   "It estimates the parameter to deal with a large number of outliers",
+   "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+   "It selects data items randomly and then find how many data items fit the model",
+   "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+  ]
+ },
+ {
+  "id": 37,
+  "question": "What is true about Gaussian mixture models?",
+  "options": [
+   "It considers the distributions as the sum of several Gaussian models",
+   "It analyzes the distribution into the product of several Gaussian models",
+   "It considers the intensity of each pixel as the sum of several Gaussian models",
+   "It analyzes the intensity of each pixel into the product of several Gaussian models"
+  ]
+ },
+ {
+  "id": 38,
+  "question": "Which type of information does Optical Flow NOT provide?",
+  "options": [
+   "Acceleration of objects",
+   "Velocity of pixel motion",
+   "Direction of pixel motion",
+   "Location of keypoints"
+  ]
+ },
+ {
+  "id": 39,
+  "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+  "options": [
+   "True",
+   "False"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+  "options": [
+   "True",
+   "False"
+  ]
+ }
+]

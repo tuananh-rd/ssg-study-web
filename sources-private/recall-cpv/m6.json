@@ -1,0 +1,158 @@
+[
+  {
+    "ref": "6.2",
+    "q": "Trong bài toán ước lượng chuyển động và luồng quang học (Optical Flow), giả định cốt lõi của Ràng buộc hằng số độ sáng (Brightness Constancy Constraint) là gì?",
+    "correct": "Độ sáng của một điểm ảnh không thay đổi khi nó di chuyển từ khung hình này sang khung hình khác",
+    "wrong": [
+      "Cường độ sáng của toàn bộ bức ảnh luôn bằng giá trị trung bình 128 qua mọi thời điểm",
+      "Nguồn sáng môi trường bắt buộc phải là nguồn sáng điểm đặt tại vô cực",
+      "Mọi điểm ảnh trên cùng một hàng đều có cùng một vector vận tốc chuyển động"
+    ],
+    "explain": "Ràng buộc hằng số độ sáng (Brightness Constancy Constraint) giả định rằng độ sáng của một điểm ảnh không thay đổi khi nó di chuyển từ khung hình này sang khung hình tiếp theo.",
+    "tip": "Brightness Constancy: độ sáng điểm ảnh không đổi khi dịch chuyển giữa các frame."
+  },
+  {
+    "ref": "6.2",
+    "q": "Khi đưa các bức ảnh về Hệ tọa độ Trụ (Cylindrical Coordinates) để ghép toàn cảnh Panorama, mô hình chuyển động cần ước lượng được đơn giản hóa thành phép toán nào?",
+    "correct": "Phép tịnh tiến thuần túy (Pure Translation)",
+    "wrong": [
+      "Phép biến đổi Affine đầy đủ 6 bậc tự do",
+      "Phép biến đổi phối cảnh Projective với ma trận 3x3",
+      "Phép quay không gian quanh ba trục Euler"
+    ],
+    "explain": "Khi warp ảnh vào một mặt trụ hoặc mặt cầu, ta chỉ cần sử dụng mô hình tịnh tiến thuần túy để căn chỉnh thay vì phải dùng ma trận Homography phức tạp.",
+    "tip": "Hệ tọa độ trụ (Cylindrical): chỉ cần ước lượng phép tịnh tiến thuần túy."
+  },
+  {
+    "ref": "6.2",
+    "q": "Phương pháp ghép toàn cảnh hình trụ (Cylindrical Panorama) chỉ phát huy hiệu quả cao trong điều kiện chụp ảnh nào của camera?",
+    "correct": "Camera được đặt ngang và chỉ thực hiện chuyển động xoay quanh trục dọc của nó",
+    "wrong": [
+      "Camera di chuyển tịnh tiến tự do theo cả ba trục không gian x, y, z",
+      "Camera liên tục thay đổi tiêu cự ống kính khi xoay tròn quanh vật thể",
+      "Camera chụp các vật thể chuyển động với tốc độ cao hơn chu kỳ màn trập"
+    ],
+    "explain": "Cylindrical Panorama được sử dụng khi camera đặt ngang và chỉ có chuyển động xoay quanh trục dọc của nó.",
+    "tip": "Cylindrical Panorama: camera đặt ngang và chỉ xoay quanh trục dọc."
+  },
+  {
+    "ref": "6.2",
+    "q": "Trong nén và truyền tải video, mô hình chuyển động cho phép trích xuất thành phần nào để giảm thiểu tối đa dung lượng dữ liệu truyền qua mạng?",
+    "correct": "Ảnh phông nền duy nhất (Background Sprite) kết hợp tái tạo cho từng khung hình",
+    "wrong": [
+      "Toàn bộ ma trận đạo hàm bậc hai LoG của mọi khung hình",
+      "Lược đồ phân phối tần số DCT của tất cả các kênh màu",
+      "Tập hợp các điểm ảnh biên mỏng sau khi phân ngưỡng kép Canny"
+    ],
+    "explain": "Mô hình chuyển động cho phép ghép các cảnh nền trong video thành một ảnh background sprite duy nhất, giúp nén video cực kỳ hiệu quả bằng cách chỉ truyền ảnh sprite này thay vì cả video.",
+    "tip": "Sprite background: truyền ảnh nền duy nhất để tái tạo các frame video."
+  },
+  {
+    "ref": "6.2",
+    "q": "Phương trình biểu diễn một điểm trên bề mặt hình trụ trong hệ tọa độ trụ có mối liên hệ tỷ lệ như thế nào với tọa độ ảnh (x, y) và tiêu cự f?",
+    "correct": "(sin θ, h, cos θ) ∝ (x, y, f)",
+    "wrong": [
+      "(cos θ, sin θ, 1) ∝ (x, y, f)",
+      "(θ, h, r) ∝ (x^2, y^2, f^2)",
+      "(tan θ, h, 0) ∝ (x, y, 1/f)"
+    ],
+    "explain": "Phương trình tọa độ trụ biểu diễn điểm trên bề mặt trụ bằng góc θ và chiều cao h theo quan hệ tỷ lệ: (sin θ, h, cos θ) ∝ (x, y, f).",
+    "tip": "Tọa độ trụ: (sin θ, h, cos θ) tỷ lệ với (x, y, f)."
+  },
+  {
+    "ref": "6.3",
+    "q": "Hạn chế lớn nhất của việc ghép nối lần lượt từng bức ảnh một cách tuần tự vào ảnh toàn cảnh Panorama là gì?",
+    "correct": "Dễ gây ra hiện tượng tích lũy sai số (accumulated error) dẫn đến sai lệch lớn ở các khung hình sau",
+    "wrong": [
+      "Làm suy giảm độ sâu màu của ảnh từ 24-bit xuống chuẩn nhị phân 8-bit",
+      "Không thể áp dụng thuật toán SIFT để tìm kiếm các điểm đặc trưng",
+      "Gây tràn bộ nhớ đệm do các ma trận xoay 2D không có tính trực giao"
+    ],
+    "explain": "Ghép từng ảnh một tuần tự vào panorama dễ gây tích lũy sai số (accumulated error), khiến các bức ảnh cuối cùng bị lệch khớp nghiêm trọng.",
+    "tip": "Ghép tuần tự dễ gây tích lũy sai số; cần dùng Bundle Adjustment để tối ưu đồng thời."
+  },
+  {
+    "ref": "6.3",
+    "q": "Kỹ thuật Điều chỉnh chùm tia (Bundle Adjustment) giải quyết vấn đề tích lũy sai số bằng cơ chế nào?",
+    "correct": "Tối ưu hóa đồng thời các tham số tư thế (pose parameters) của toàn bộ các bức ảnh chồng lấp",
+    "wrong": [
+      "Cắt bỏ tất cả các bức ảnh có tỷ lệ vùng chồng lấn thấp hơn 70%",
+      "Chỉ giữ lại bức ảnh trung tâm và bỏ qua tất cả các bức ảnh ngoại vi",
+      "Áp dụng bộ lọc trung vị để làm nhòe toàn bộ các điểm đặc trưng bị khớp sai"
+    ],
+    "explain": "Bundle Adjustment là quá trình điều chỉnh đồng thời (simultaneously) các tham số tư thế (pose parameters) cho một bộ sưu tập lớn các bức ảnh chồng lấp lên nhau.",
+    "tip": "Bundle Adjustment tối ưu đồng thời (simultaneously) pose parameters của tất cả ảnh."
+  },
+  {
+    "ref": "6.3",
+    "q": "Trong bài toán nhận diện Panorama tự động, thách thức nào sau đây dễ dẫn đến các kết quả khớp sai (false matches) nhất?",
+    "correct": "Cảnh chụp có các cấu trúc lặp đi lặp lại như các ô cửa sổ giống hệt nhau trên tòa nhà",
+    "wrong": [
+      "Cảnh chụp có quá nhiều vùng bầu trời phẳng hoặc bề mặt tường trơn mịn",
+      "Camera sử dụng cảm biến CMOS thay vì cảm biến quang học CCD",
+      "Các bức ảnh được lưu dưới định dạng nén không tổn thất TIFF"
+    ],
+    "explain": "Các cấu trúc lặp đi lặp lại trong cảnh (ví dụ các ô cửa sổ giống nhau trên tòa nhà) là thách thức lớn vì có thể dẫn đến việc khớp sai (false matches).",
+    "tip": "Cấu trúc lặp lại (repetitive structures) dễ gây false matches khi ghép panorama."
+  },
+  {
+    "ref": "6.3",
+    "q": "Để xác thực xem hai bức ảnh đã căn chỉnh có thực sự thuộc về cùng một cảnh hay không, phương pháp so sánh pixel trực tiếp sẽ gặp thất bại trong tình huống nào?",
+    "correct": "Khi trong cảnh chụp xuất hiện các vật thể chuyển động",
+    "wrong": [
+      "Khi camera được giữ hoàn toàn cố định trên chân máy",
+      "Khi các bức ảnh được chụp dưới cùng một nguồn sáng khuếch tán Lambertian",
+      "Khi số lượng điểm đặc trưng SIFT vượt quá 1.000 điểm"
+    ],
+    "explain": "So sánh pixel trực tiếp (direct pixel-based comparison) sẽ thất bại nếu trong cảnh có vật thể chuyển động, khi đó cần ứng dụng Học máy (Machine Learning) để xác thực.",
+    "tip": "So sánh pixel trực tiếp thất bại khi có vật thể chuyển động (moving objects)."
+  },
+  {
+    "ref": "6.3",
+    "q": "Trong công thức ánh xạ x_ij ~ K_j * R_j * x_i của Bundle Adjustment, các ma trận R_j và K_j lần lượt đại diện cho thành phần nào?",
+    "correct": "R_j là ma trận quay tư thế camera, K_j là ma trận hiệu chuẩn camera",
+    "wrong": [
+      "R_j là ma trận phản xạ ánh sáng, K_j là ma trận độ tương phản toàn cục",
+      "R_j là ma trận lọc nhiễu Gaussian, K_j là ma trận tọa độ cực trong không gian Hough",
+      "R_j là hệ số co giãn đa bước, K_j là độ dài tiêu cự của thấu kính mỏng"
+    ],
+    "explain": "Trong phương trình ánh xạ, R_j là ma trận quay (pose parameters), còn K_j là ma trận hiệu chuẩn camera (camera calibration matrix).",
+    "tip": "R_j = ma trận quay tư thế (pose), K_j = ma trận hiệu chuẩn camera (calibration)."
+  },
+  {
+    "ref": "6.4",
+    "q": "Trong lớp Stitcher tích hợp sẵn của OpenCV (cv2.Stitcher_create()), quy trình tự động đã bao gồm những bước kỹ thuật cốt lõi nào?",
+    "correct": "Trích xuất đặc trưng, ước lượng mô hình chuyển động và Điều chỉnh chùm tia (Bundle Adjustment)",
+    "wrong": [
+      "Phân đoạn tế bào ung thư, phân tích suy biến SVD và cân bằng lược đồ xám CDF",
+      "Biến đổi Fourier miền tần số, lọc bất đẳng hướng và nén tổn hao JPEG",
+      "Vẽ hộp bao Viola-Jones, theo dõi đối tượng CSRT và phân ngưỡng nhị phân Otsu"
+    ],
+    "explain": "`cv2.Stitcher_create()` tích hợp sẵn: trích xuất đặc trưng (SIFT/ORB), ước lượng mô hình chuyển động và Bundle Adjustment (Căn chỉnh toàn cục).",
+    "tip": "OpenCV Stitcher bao gồm trích xuất đặc trưng, mô hình chuyển động và Bundle Adjustment."
+  },
+  {
+    "ref": "6.4",
+    "q": "Khi sử dụng công cụ ghép ảnh trong OpenCV, điều kiện tiên quyết về khung nhìn giữa hai bức ảnh kề nhau để ghép thành công là gì?",
+    "correct": "Bắt buộc phải có vùng trường nhìn chồng lấn (overlapping field of view) giữa các bức ảnh",
+    "wrong": [
+      "Hai bức ảnh phải được cắt đôi chính xác 50% bên trái và 50% bên phải không có phần chung",
+      "Hai bức ảnh phải có dải phổ tần số Fourier hoàn toàn trực giao với nhau",
+      "Hai bức ảnh bắt buộc phải chụp cùng một thời điểm với hai cảm biến CCD khác nhau"
+    ],
+    "explain": "Các bức ảnh đầu vào cần có trường nhìn chồng lấp (overlapping fields of view), nếu không có vùng chồng lấn thì thuật toán không thể tìm được đặc trưng khớp để ghép ảnh.",
+    "tip": "Ghép ảnh bắt buộc phải có vùng trường nhìn chồng lấn (overlap)."
+  },
+  {
+    "ref": "6.4",
+    "q": "Khi hàm stitcher.stitch() trong OpenCV trả về mã lỗi thất bại, nguyên nhân phổ biến nhất trong thực tế là gì?",
+    "correct": "Không tìm đủ số lượng đặc trưng trùng khớp do diện tích vùng chồng lấn giữa các ảnh quá nhỏ",
+    "wrong": [
+      "Bức ảnh có kích thước tệp vượt quá giới hạn 8-bit của cảm biến CMOS",
+      "Hệ số tương quan Pearson giữa hai bức ảnh đạt giá trị tuyệt đối bằng 1.0",
+      "Ma trận xoay của camera không chứa thành phần tịnh tiến theo trục z"
+    ],
+    "explain": "Lỗi ghép ảnh trong OpenCV thường xảy ra do không đủ đặc trưng khớp (không đủ vùng chồng lấp giữa các ảnh).",
+    "tip": "Lỗi ghép ảnh chủ yếu do thiếu đặc trưng khớp vì vùng chồng lấn không đủ."
+  }
+]

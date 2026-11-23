@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m2-002",
+  "q": "Thư viện Matplotlib cung cấp hai cách tiếp cận chính nào để xây dựng biểu đồ?",
+  "correct": "Scripting layer (pyplot) và Artist layer (Object-oriented)",
+  "wrong": [
+   "Backend layer và Network layer",
+   "Functional layer và Procedural layer",
+   "Declarative layer và Imperative layer"
+  ]
+ },
+ {
+  "id": "r-m2-003",
+  "q": "Biểu đồ đường (Line Plots) thường được ưu tiên sử dụng phù hợp nhất cho loại dữ liệu nào?",
+  "correct": "Dữ liệu chuỗi thời gian (time-series)",
+  "wrong": [
+   "Dữ liệu danh mục phân loại không có thứ tự thời gian",
+   "Dữ liệu phân bố tần suất của một biến rời rạc",
+   "Dữ liệu không gian địa lý dựa trên tọa độ kinh độ và vĩ độ"
+  ]
+ },
+ {
+  "id": "r-m2-004",
+  "q": "Để vẽ biểu đồ đường trong Pandas từ một Series hoặc DataFrame, tham số `kind` trong phương thức `.plot()` được gán giá trị gì?",
+  "correct": "kind='line'",
+  "wrong": [
+   "kind='bar'",
+   "kind='scatter'",
+   "kind='area'"
+  ]
+ },
+ {
+  "id": "r-m2-005",
+  "q": "Loại biểu đồ nào dựa trên biểu đồ đường nhưng tô màu phần diện tích bên dưới, thích hợp xem xét các thành phần cộng dồn theo thời gian?",
+  "correct": "Biểu đồ diện tích (Area Plot)",
+  "wrong": [
+   "Biểu đồ phân tán (Scatter Plot)",
+   "Biểu đồ hộp (Box Plot)",
+   "Biểu đồ tần suất (Histogram)"
+  ]
+ },
+ {
+  "id": "r-m2-006",
+  "q": "Biểu đồ nào được dùng để biểu diễn phân phối tần suất của một tập hợp các số liệu liên tục?",
+  "correct": "Biểu đồ tần suất (Histogram)",
+  "wrong": [
+   "Biểu đồ cột (Bar Chart)",
+   "Biểu đồ tròn (Pie Chart)",
+   "Biểu đồ phân tán (Scatter Plot)"
+  ]
+ },
+ {
+  "id": "r-m2-007",
+  "q": "Biểu đồ hộp (Box Plots) giúp người phân tích khảo sát sự phân tán và ngoại lai của dữ liệu thông qua những mốc thống kê nào?",
+  "correct": "Min, Q1, Median (trung vị), Q3, Max và Outliers",
+  "wrong": [
+   "Mean, Standard Deviation, Variance, Mode và Z-score",
+   "R-squared, Mean Squared Error, Absolute Error và Residuals",
+   "Count, Unique values, Top category và Frequency"
+  ]
+ },
+ {
+  "id": "r-m2-008",
+  "q": "Khi cần thể hiện tỷ lệ phần trăm của các thành phần con cấu thành trong một tổng thể trọn vẹn, loại biểu đồ nào thích hợp nhất?",
+  "correct": "Biểu đồ tròn (Pie Chart)",
+  "wrong": [
+   "Biểu đồ phân tán (Scatter Plot)",
+   "Biểu đồ hộp (Box Plot)",
+   "Biểu đồ đường (Line Plot)"
+  ]
+ },
+ {
+  "id": "r-m2-009",
+  "q": "Để xem xét mối tương quan tuyến tính hoặc phi tuyến giữa hai biến số liên tục với nhau, ta sử dụng biểu đồ nào?",
+  "correct": "Biểu đồ phân tán (Scatter Plot)",
+  "wrong": [
+   "Biểu đồ cột (Bar Chart)",
+   "Biểu đồ tròn (Pie Chart)",
+   "Biểu đồ hộp (Box Plot)"
+  ]
+ },
+ {
+  "id": "r-m2-010",
+  "q": "Biểu đồ Waffle Chart có đặc điểm thiết kế và mục đích sử dụng chính là gì?",
+  "correct": "Biểu đồ dạng ô vuông (lưới) trực quan dùng để thay thế Pie Chart, thể hiện tỷ lệ của các danh mục",
+  "wrong": [
+   "Biểu đồ dạng đám mây chữ dùng để phân loại văn bản tự động",
+   "Biểu đồ đa giác tô màu theo ranh giới hành chính của quốc gia",
+   "Biểu đồ đường uốn lượn thể hiện chuỗi thời gian liên tục"
+  ]
+ },
+ {
+  "id": "r-m2-011",
+  "q": "Trong biểu đồ đám mây từ vựng (Word Cloud), kích thước hiển thị của một từ phản ánh điều gì?",
+  "correct": "Tần suất xuất hiện của từ ngữ trong văn bản (kích thước tỷ lệ thuận với tần suất)",
+  "wrong": [
+   "Độ dài ký tự của từ ngữ đó trong câu",
+   "Mức độ quan trọng ngữ pháp của từ theo thứ tự bảng chữ cái",
+   "Hệ số tương quan Pearson giữa từ đó với các từ xung quanh"
+  ]
+ },
+ {
+  "id": "r-m2-012",
+  "q": "Thư viện Folium trong Python được xây dựng nhằm mục đích kết nối sức mạnh của Python với thư viện bản đồ JavaScript nào?",
+  "correct": "Leaflet.js",
+  "wrong": [
+   "D3.js",
+   "Chart.js",
+   "Three.js"
+  ]
+ },
+ {
+  "id": "r-m2-013",
+  "q": "Để tô màu các vùng địa lý khác nhau trên bản đồ Folium theo phân bố mật độ dữ liệu số, loại biểu đồ nào được sử dụng?",
+  "correct": "Biểu đồ Choropleth (Choropleth Map)",
+  "wrong": [
+   "Biểu đồ Waffle Chart",
+   "Biểu đồ Word Cloud",
+   "Biểu đồ Box Plot"
+  ]
+ },
+ {
+  "id": "r-m2-014",
+  "q": "Để đánh dấu một địa điểm có tọa độ xác định kèm thông tin dạng popup hiển thị khi nhấp chuột trên bản đồ Folium, ta dùng cú pháp nào?",
+  "correct": "folium.Marker([lat, lon], popup='...').add_to(map)",
+  "wrong": [
+   "folium.Choropleth([lat, lon], title='...').add_to(map)",
+   "folium.Point([lat, lon], label='...').show()",
+   "folium.Pin([lat, lon], text='...').render()"
+  ]
+ },
+ {
+  "id": "r-m2-015",
+  "q": "Thư viện Dash trong Python có vai trò và ưu điểm chính là gì?",
+  "correct": "Xây dựng các ứng dụng web phân tích dữ liệu (Dashboards) tương tác mà không cần viết JavaScript hay HTML thuần",
+  "wrong": [
+   "Cung cấp các thuật toán huấn luyện mạng nơ-ron học sâu tối ưu trên GPU",
+   "Quản trị và tối ưu hóa câu lệnh truy vấn trong hệ cơ sở dữ liệu quan hệ",
+   "Tự động trích xuất bảng biểu dữ liệu từ các website tin tức trực tuyến"
+  ]
+ },
+ {
+  "id": "r-m2-016",
+  "q": "Gói thư viện con `dash.html` (Dash HTML Components) đảm nhận nhiệm vụ gì trong ứng dụng Dash?",
+  "correct": "Cung cấp các thẻ HTML để xây dựng cấu trúc giao diện (Div, H1, P,...)",
+  "wrong": [
+   "Cung cấp các biểu đồ động tương tác như thanh trượt Slider và Dropdown",
+   "Quản lý luồng dữ liệu phản hồi giữa các hàm callback trong server",
+   "Lưu trữ dữ liệu vào bảng cơ sở dữ liệu quan hệ Db2"
+  ]
+ },
+ {
+  "id": "r-m2-017",
+  "q": "Các thành phần điều khiển giao diện tương tác như Dropdown, Slider và đối tượng hiển thị biểu đồ Graph thuộc về gói thư viện nào trong Dash?",
+  "correct": "Dash Core Components (dash.dcc)",
+  "wrong": [
+   "Dash HTML Components (dash.html)",
+   "Dash Dependencies (dash.dependencies)",
+   "Dash Bootstrap Components (dash.dbc)"
+  ]
+ },
+ {
+  "id": "r-m2-018",
+  "q": "Cơ chế nào trong Dash chịu trách nhiệm liên kết hành động của người dùng trên giao diện với việc cập nhật nội dung biểu đồ tự động?",
+  "correct": "Hàm phản hồi Callback thông qua decorator @app.callback",
+  "wrong": [
+   "Phương thức fit_transform() trong bộ chuẩn hóa StandardScaler",
+   "Hàm khởi tạo layout trong dash.html.Div",
+   "Cơ chế Grid Search lặp qua các nếp gấp K-fold"
+  ]
+ },
+ {
+  "id": "r-m2-019",
+  "q": "Trong decorator `@app.callback`, thành phần `Input` đại diện cho điều gì?",
+  "correct": "Thao tác lựa chọn hoặc dữ liệu người dùng thay đổi trên thành phần giao diện",
+  "wrong": [
+   "Biểu đồ hoặc văn bản giao diện đích cần được vẽ lại sau khi tính toán",
+   "Dữ liệu huấn luyện đầu vào của mô hình máy học scikit-learn",
+   "Khóa truy cập cá nhân dùng để kết nối với cơ sở dữ liệu ngoài"
+  ]
+ },
+ {
+  "id": "r-m3-001",
+  "q": "Trong quy trình làm sạch và biến đổi dữ liệu (Data Wrangling), nếu một bản ghi bị mất giá trị của biến mục tiêu (target variable), giải pháp xử lý chuẩn là gì?",
+  "correct": "Loại bỏ bản ghi đó ra khỏi tập dữ liệu",
+  "wrong": [
+   "Thay thế bằng giá trị trung bình (Mean Imputation)",
+   "Thay thế bằng giá trị xuất hiện nhiều nhất (Mode)",
+   "Điền giá trị 0 hoặc chuỗi ký tự rỗng"
+  ]
+ },
+ {
+  "id": "r-m3-002",
+  "q": "Ba bước chuẩn theo thứ tự trong quy trình Làm sạch và biến đổi dữ liệu (Data Wrangling) là gì?",
+  "correct": "Nhận diện -> Loại bỏ (nếu mất target) -> Thay thế (bằng Mean, Median hoặc Mode)",
+  "wrong": [
+   "Thay thế -> Nhận diện -> Loại bỏ",
+   "Chuẩn hóa -> Huấn luyện -> Đánh giá",
+   "Trích xuất -> Tải lên -> Phân tích tương quan"
+  ]
+ },
+ {
+  "id": "r-m3-003",
+  "q": "Để chuyển đổi các ký tự đặc biệt đại diện cho dữ liệu thiếu (như dấu \"?\") thành giá trị NaN của NumPy trong DataFrame, ta dùng cú pháp nào?",
+  "correct": "df.replace(\"?\", np.nan, inplace=True)",
+  "wrong": [
+   "df.fillna(\"?\", np.nan, inplace=True)",
+   "df.dropna(\"?\", inplace=True)",
+   "df.astype(\"?\", np.nan)"
+  ]
+ },
+ {
+  "id": "r-m3-004",
+  "q": "Thư viện Python nào chuyên dùng cho việc khám phá dữ liệu và ước lượng mô hình hóa thống kê chuyên sâu?",
+  "correct": "Statsmodels",
+  "wrong": [
+   "NumPy",
+   "Matplotlib",
+   "Scipy"
+  ]
+ },
+ {
+  "id": "r-m3-005",
+  "q": "Khi tạo các biến giả (dummy variables) bằng One-Hot Encoding, hàm nào của Pandas được dùng để ghép các cột mới này vào DataFrame ban đầu?",
+  "correct": "df = pd.concat([df, dummy_var], axis=1)",
+  "wrong": [
+   "df = pd.concat([df, dummy_var], axis=0)",
+   "df = pd.merge([df, dummy_var], on='index')",
+   "df = pd.append([df, dummy_var])"
+  ]
+ },
+ {
+  "id": "r-m3-006",
+  "q": "Kiến trúc nền tảng của thư viện Matplotlib được tổ chức thành 3 tầng (layers) nào?",
+  "correct": "Backend layer, Artist layer và Scripting layer",
+  "wrong": [
+   "Presentation layer, Business layer và Database layer",
+   "Model layer, View layer và Controller layer",
+   "Client layer, Gateway layer và Server layer"
+  ]
+ },
+ {
+  "id": "r-m3-007",
+  "q": "Trong Matplotlib và Pandas plot, tham số `figsize` đóng vai trò gì?",
+  "correct": "Thiết lập kích thước của hình vẽ hiển thị (chiều rộng, chiều cao theo inch)",
+  "wrong": [
+   "Quy định số lượng điểm dữ liệu tối đa được hiển thị trên biểu đồ",
+   "Xác định kích cỡ phông chữ của tiêu đề và các nhãn trục tọa độ",
+   "Quy định độ phân giải DPI của file ảnh khi lưu về ổ đĩa"
+  ]
+ }
+]

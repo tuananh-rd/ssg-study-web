@@ -1,0 +1,545 @@
+[
+  {
+    "ref": "1.2",
+    "q": "Điểm khác biệt cốt lõi giúp Học sâu (Deep Learning) giải quyết các hạn chế của Học máy (Machine Learning) cổ điển là gì?",
+    "correct": "Tự xác định và trích xuất các đặc trưng (features) tốt nhất từ dữ liệu gốc thông qua mạng thần kinh đa lớp",
+    "wrong": [
+      "Bắt buộc chuyên gia phải tự thiết kế và trích xuất đặc trưng thủ công từ dữ liệu thô",
+      "Chỉ xử lý tốt các tập dữ liệu nhỏ dạng bảng với số lượng thuộc tính hạn chế",
+      "Dựa hoàn toàn vào các tập luật if-then cố định do con người thiết lập sẵn"
+    ],
+    "explain": "Deep Learning sử dụng mạng thần kinh đa lớp để học từ lượng dữ liệu khổng lồ và có khả năng tự động xác định các đặc trưng tốt nhất từ dữ liệu gốc.",
+    "tip": "DL = Deep Learning = tự động trích xuất feature từ raw data."
+  },
+  {
+    "ref": "1.2",
+    "q": "Sự kiện nào đánh dấu Trí tuệ nhân tạo (AI) chính thức được công nhận là một lĩnh vực nghiên cứu khoa học?",
+    "correct": "Hội nghị Dartmouth (1956)",
+    "wrong": [
+      "Alan Turing phát triển bài kiểm tra Turing Test (1950)",
+      "Thuật toán Perceptron ra đời (1957)",
+      "Thuật toán lan truyền ngược Backpropagation ra đời (1986)"
+    ],
+    "explain": "Hội nghị Dartmouth năm 1956 là cột mốc chính thức chấp nhận AI là một lĩnh vực nghiên cứu khoa học.",
+    "tip": "Dartmouth 1956 khai sinh thuật ngữ AI."
+  },
+  {
+    "ref": "1.2",
+    "q": "Nguyên nhân chính dẫn đến Mùa đông AI lần thứ nhất (AI Winter 1) trong thập niên 1960 - 1970 là gì?",
+    "correct": "Cắt giảm ngân sách do các báo cáo về sự thất bại của dịch thuật máy móc (ALPAC) và hạn chế của Perceptron",
+    "wrong": [
+      "Chi phí duy trì Hệ chuyên gia (Expert Systems) quá tốn kém và khó mở rộng quy mô",
+      "Sự thất bại của siêu máy tính Deep Blue trước đại kiện tướng cờ vua Garry Kasparov",
+      "Mạng thần kinh nhân tạo không thể mở rộng để giải quyết các bài toán lớn trong doanh nghiệp"
+    ],
+    "explain": "Mùa đông AI lần 1 xuất phát từ báo cáo ALPAC chỉ ra thất bại của dịch máy cùng với việc Perceptron bộc lộ nhiều hạn chế, dẫn đến việc bị cắt giảm ngân sách.",
+    "tip": "Mùa đông 1 do ALPAC & Perceptron; Mùa đông 2 do Hệ chuyên gia tốn kém."
+  },
+  {
+    "ref": "1.2",
+    "q": "Thuật toán lan truyền ngược (Backpropagation) ra đời vào giai đoạn nào trong lịch sử phát triển AI?",
+    "correct": "Năm 1986, trong giai đoạn bùng nổ của Hệ chuyên gia (1980s)",
+    "wrong": [
+      "Năm 1957, cùng thời điểm với thuật toán Perceptron",
+      "Năm 1950, cùng thời điểm Alan Turing công bố Turing Test",
+      "Năm 2012, cùng thời điểm bùng nổ của mạng AlexNet"
+    ],
+    "explain": "Thuật toán lan truyền ngược (Backpropagation) ra đời năm 1986 thuộc giai đoạn bùng nổ Hệ chuyên gia (1980s).",
+    "tip": "Backpropagation xuất hiện năm 1986."
+  },
+  {
+    "ref": "1.2",
+    "q": "Khái niệm Học máy (Machine Learning) được định nghĩa chuẩn xác như thế nào?",
+    "correct": "Nghiên cứu về các chương trình không được lập trình rõ ràng nhưng học các mẫu từ dữ liệu theo thời gian",
+    "wrong": [
+      "Nhánh khoa học mô phỏng hành vi thông minh ở máy tính để bắt chước nhận thức của con người",
+      "Mô hình mạng thần kinh đa lớp chuyên dùng để xử lý dữ liệu phi tuyến tính quy mô lớn",
+      "Hệ thống dựa trên các luật chuyên gia cố định nhằm đưa ra suy luận tự động"
+    ],
+    "explain": "Machine Learning (ML) là nghiên cứu về các chương trình không cần lập trình rõ ràng mà tự học các mẫu (patterns) từ dữ liệu theo thời gian."
+  },
+  {
+    "ref": "1.3",
+    "q": "Trong quy trình làm việc (Workflow) của Machine Learning, bước nào diễn ra ngay sau bước 'Thu thập dữ liệu (Data Collection)'?",
+    "correct": "Khám phá & Tiền xử lý (Data Exploration & Preprocessing)",
+    "wrong": [
+      "Xây dựng mô hình (Modeling)",
+      "Đánh giá mô hình (Validation)",
+      "Triển khai (Deployment)"
+    ],
+    "explain": "Quy trình ML: 1. Problem Statement -> 2. Data Collection -> 3. Data Exploration & Preprocessing -> 4. Modeling -> 5. Validation -> 6. Deployment."
+  },
+  {
+    "ref": "1.3",
+    "q": "Trong các thuật ngữ cơ bản của học máy, 'Target' được định nghĩa là gì?",
+    "correct": "Danh mục hoặc giá trị mà chúng ta đang cố gắng dự đoán",
+    "wrong": [
+      "Các thuộc tính của dữ liệu được sử dụng làm biến giải thích để dự đoán",
+      "Một điểm dữ liệu duy nhất tương ứng với một hàng trong bảng dữ liệu",
+      "Giá trị mục tiêu cụ thể đã được gán nhãn cho từng quan sát"
+    ],
+    "explain": "Target là danh mục (phân loại) hoặc giá trị (hồi quy) mà mô hình đang tìm cách dự đoán."
+  },
+  {
+    "ref": "1.3",
+    "q": "Thuật ngữ 'Features' trong mô hình Machine Learning dùng để chỉ thành phần nào?",
+    "correct": "Các thuộc tính của dữ liệu được sử dụng để dự đoán (biến giải thích)",
+    "wrong": [
+      "Giá trị nhãn mục tiêu mà mô hình cần xuất ra ở đầu ra",
+      "Một quan sát duy nhất trong tập dữ liệu kiểm tra",
+      "Sai số phần dư giữa kết quả dự đoán và kết quả thực tế"
+    ],
+    "explain": "Features là các thuộc tính của dữ liệu được sử dụng làm biến giải thích để dự đoán giá trị mục tiêu (Target)."
+  },
+  {
+    "ref": "1.3",
+    "q": "Một điểm dữ liệu duy nhất trong bảng dữ liệu (thường tương ứng với một hàng) được gọi là gì?",
+    "correct": "Observation hoặc Example",
+    "wrong": [
+      "Feature",
+      "Target",
+      "Label"
+    ],
+    "explain": "Một điểm dữ liệu duy nhất trong bộ dữ liệu được gọi là Observation hoặc Example."
+  },
+  {
+    "ref": "1.4",
+    "q": "Việc dữ liệu bị trùng lặp (Duplicate Data) trong tập huấn luyện gây ra tác hại gì cho mô hình?",
+    "correct": "Gây sai lệch trọng số khi huấn luyện",
+    "wrong": [
+      "Làm mô hình luôn bị hiện tượng Underfitting do thiếu dữ liệu",
+      "Khiến các biến danh mục không thể chuyển đổi bằng One-hot encoding",
+      "Tự động xóa các quan sát ngoại lai trong tập kiểm tra"
+    ],
+    "explain": "Dữ liệu trùng lặp làm phân bổ dữ liệu bị thiên lệch, dẫn đến việc gây sai lệch trọng số trong quá trình huấn luyện."
+  },
+  {
+    "ref": "1.4",
+    "q": "Phương pháp Điền khuyết (Imputation) khi xử lý dữ liệu thiếu thường sử dụng những giá trị nào để thay thế?",
+    "correct": "Giá trị trung bình, trung vị hoặc giá trị phổ biến nhất",
+    "wrong": [
+      "Giá trị 0 cố định hoặc giá trị ngoại lai lớn nhất của thuộc tính",
+      "Giá trị ngẫu nhiên từ phân phối chuẩn bất kỳ không liên quan đến tập dữ liệu",
+      "Khoảng cách Euclidean giữa hai quan sát xa nhau nhất"
+    ],
+    "explain": "Điền khuyết (Imputation) thay thế ô bị thiếu bằng giá trị trung bình (mean), trung vị (median) hoặc giá trị xuất hiện nhiều nhất (mode)."
+  },
+  {
+    "ref": "1.4",
+    "q": "Kỹ thuật Gán nhãn (Masking) trong xử lý dữ liệu thiếu được hiểu là phương pháp nào?",
+    "correct": "Tạo một danh mục riêng biệt dành cho các giá trị thiếu",
+    "wrong": [
+      "Xóa hoàn toàn các hàng hoặc các cột có chứa giá trị thiếu",
+      "Nội suy toán học dựa trên các điểm dữ liệu láng giềng gần nhất",
+      "Chuẩn hóa dữ liệu về khoảng [0, 1] trước khi huấn luyện"
+    ],
+    "explain": "Gán nhãn (Masking) giải quyết dữ liệu khuyết bằng cách tạo thêm một danh mục riêng đại diện cho giá trị bị thiếu."
+  },
+  {
+    "ref": "1.4",
+    "q": "Biểu đồ trực quan hóa nào được nêu trong tài liệu nhằm giúp phát hiện dữ liệu ngoại lai (Outliers)?",
+    "correct": "Box plot",
+    "wrong": [
+      "Histogram",
+      "Scatter plot",
+      "Pair plot"
+    ],
+    "explain": "Dữ liệu ngoại lai (Outliers) có thể được nhận diện trực quan thông qua biểu đồ hộp (Box plot) hoặc qua các chỉ số thống kê."
+  },
+  {
+    "ref": "1.5",
+    "q": "Mục đích chính của việc tiến hành Phân tích Dữ liệu Khám phá (EDA) trước khi xây dựng mô hình là gì?",
+    "correct": "Hiểu sơ bộ về dữ liệu, xác định các mẫu và xu hướng trước khi mô hình hóa",
+    "wrong": [
+      "Tối ưu hóa các siêu tham số của thuật toán phân loại",
+      "Cắt tỉa các nhánh cây quyết định nhằm giảm phương sai",
+      "Tạo thêm các mẫu nhân tạo cho lớp thiểu số bị mất cân bằng"
+    ],
+    "explain": "EDA giúp khám phá cấu trúc dữ liệu, hiểu sơ bộ các đặc trưng và tìm ra các quy luật, xu hướng trước khi mô hình hóa."
+  },
+  {
+    "ref": "1.5",
+    "q": "Trong các kỹ thuật trực quan hóa của EDA, biểu đồ Scatter plot chủ yếu được sử dụng nhằm mục đích gì?",
+    "correct": "Quan sát mối quan hệ giữa hai biến định lượng",
+    "wrong": [
+      "Quan sát hình dạng phân phối tần suất của một biến đơn lẻ",
+      "Hiển thị ma trận tương quan đa biến của tất cả các biến cùng lúc",
+      "Phát hiện các điểm lỗi nhãn phân loại sai trên tập kiểm tra"
+    ],
+    "explain": "Scatter plot (biểu đồ phân tán) dùng để trực quan hóa mối quan hệ giữa các biến; phân phối đơn biến dùng Histogram và tương quan đa biến dùng Pair plot."
+  },
+  {
+    "ref": "1.5",
+    "q": "Để khảo sát mối tương quan đa biến giữa nhiều cặp thuộc tính cùng một lúc trong EDA, biểu đồ nào được ưu tiên lựa chọn?",
+    "correct": "Pair plot",
+    "wrong": [
+      "Histogram",
+      "Box plot",
+      "Scatter plot đơn lẻ"
+    ],
+    "explain": "Pair plot hiển thị các biểu đồ phân tán kết hợp cho từng cặp biến, giúp nhận diện tương quan đa biến hiệu quả."
+  },
+  {
+    "ref": "1.6",
+    "q": "Tác dụng chủ yếu của phép biến đổi Log (Log Transformation) trong kỹ thuật đặc trưng là gì?",
+    "correct": "Giúp dữ liệu bị lệch (skewed) trở nên giống phân phối chuẩn hơn, hữu ích cho Hồi quy Tuyến tính",
+    "wrong": [
+      "Chuyển đổi dữ liệu danh mục thành các biến nhị phân 0 hoặc 1",
+      "Tăng số chiều của không gian đặc trưng bằng các bậc lũy thừa 2 và 3",
+      "Tạo ra các điểm dữ liệu mới nhằm cân bằng tỷ lệ các lớp phân loại"
+    ],
+    "explain": "Log Transformation giúp đưa phân phối dữ liệu bị lệch (skewed) về gần phân phối chuẩn hơn, cải thiện hiệu quả của Linear Regression."
+  },
+  {
+    "ref": "1.6",
+    "q": "Phương pháp mã hóa One-hot encoding phù hợp nhất cho loại biến danh mục nào?",
+    "correct": "Nominal (danh mục không có thứ tự)",
+    "wrong": [
+      "Ordinal (danh mục có thứ tự phân cấp)",
+      "Continuous (biến số liên tục có giá trị âm)",
+      "Discrete (biến số nguyên đếm được)"
+    ],
+    "explain": "One-hot encoding chuyển mỗi giá trị của biến danh mục không có thứ tự (Nominal) thành một biến nhị phân 0/1."
+  },
+  {
+    "ref": "1.6",
+    "q": "Trong trường hợp nào ta nên áp dụng Ordinal encoding thay vì One-hot encoding?",
+    "correct": "Khi biến danh mục có thứ tự rõ ràng (Ordinal), gán giá trị số theo thứ tự 1, 2, 3...",
+    "wrong": [
+      "Khi biến danh mục hoàn toàn không có thứ bậc ưu tiên nào (Nominal)",
+      "Khi dữ liệu chứa nhiều ngoại lai cần kháng nhiễu",
+      "Khi muốn biến đổi dữ liệu bị lệch về phân phối chuẩn"
+    ],
+    "explain": "Ordinal encoding được áp dụng khi các giá trị danh mục có mối quan hệ thứ tự rõ ràng (như mức độ hài lòng, cấp bậc)."
+  },
+  {
+    "ref": "1.6",
+    "q": "Phương pháp chuẩn hóa nào sử dụng khoảng cách tứ phân vị và có khả năng kháng ngoại lai (outliers) tốt hơn?",
+    "correct": "Robust Scaling",
+    "wrong": [
+      "Min-Max Scaling",
+      "Standard Scaling",
+      "One-hot Encoding"
+    ],
+    "explain": "Robust Scaling dựa trên khoảng cách tứ phân vị (IQR), nhờ đó không bị chi phối mạnh bởi các điểm ngoại lai như Min-Max Scaling hay Standard Scaling."
+  },
+  {
+    "ref": "1.6",
+    "q": "Phương pháp Standard Scaling biến đổi dữ liệu về dạng phân phối chuẩn với các tham số trung bình (mean) và độ lệch chuẩn (std) là bao nhiêu?",
+    "correct": "mean = 0, std = 1",
+    "wrong": [
+      "mean = 0, std = 0",
+      "mean = 1, std = 1",
+      "mean = 0.5, std = 0.5"
+    ],
+    "explain": "Standard Scaling biến đổi đặc trưng sao cho trung bình bằng 0 và độ lệch chuẩn bằng 1."
+  },
+  {
+    "ref": "1.7",
+    "q": "Sự khác biệt cốt lõi giữa Ước lượng (Estimation) và Suy diễn (Inference) trong thống kê là gì?",
+    "correct": "Ước lượng áp dụng thuật toán để tính toán giá trị, còn suy diễn xác định độ chính xác của ước lượng đó",
+    "wrong": [
+      "Ước lượng dùng cho mô hình phi tham số, còn suy diễn dùng cho mô hình tham số",
+      "Ước lượng tính toán trên tập kiểm tra, còn suy diễn chỉ thực hiện trên tập huấn luyện",
+      "Ước lượng cập nhật phân phối hậu nghiệm, còn suy diễn chỉ lặp lại các thử nghiệm độc lập"
+    ],
+    "explain": "Ước lượng (Estimation) là việc tính ra một giá trị đại diện (ví dụ tính trung bình), còn Suy diễn (Inference) là xác định độ chính xác của ước lượng đó (ví dụ sai số chuẩn)."
+  },
+  {
+    "ref": "1.7",
+    "q": "Đặc trưng chính của mô hình tham số (Parametric model) là gì?",
+    "correct": "Giả định dữ liệu thuộc một phân phối cụ thể (ví dụ: Phân phối chuẩn)",
+    "wrong": [
+      "Hoàn toàn không đưa ra giả định nào về phân phối xác suất của dữ liệu",
+      "Chỉ lưu trữ toàn bộ dữ liệu huấn luyện và trì hoãn tính toán đến khi dự đoán",
+      "Luôn sử dụng số lượng tham số tăng tỷ lệ thuận với số mẫu dữ liệu"
+    ],
+    "explain": "Mô hình tham số (Parametric) đưa ra các giả định cụ thể về dạng phân phối của dữ liệu, chẳng hạn như giả định phân phối chuẩn."
+  },
+  {
+    "ref": "1.7",
+    "q": "Ví dụ nào sau đây được nêu trong tài liệu đại diện cho phương pháp phi tham số (Non-parametric)?",
+    "correct": "Biểu đồ phân phối tần suất (Histogram)",
+    "wrong": [
+      "Phân phối chuẩn (Normal distribution)",
+      "Hồi quy Tuyến tính cổ điển",
+      "Phân phối nhị thức Bernoulli"
+    ],
+    "explain": "Mô hình phi tham số có ít giả định hơn và không giả định phân phối cố định, tài liệu nêu ví dụ Histogram."
+  },
+  {
+    "ref": "1.7",
+    "q": "Quan điểm suy luận thống kê Bayes (Bayesian) khác với trường phái Frequentist ở điểm nào?",
+    "correct": "Mô tả tham số qua các phân phối xác suất và cập nhật niềm tin từ tiên nghiệm (prior) sang hậu nghiệm (posterior) khi thấy dữ liệu",
+    "wrong": [
+      "Chỉ tập trung vào tần suất xuất hiện thông qua các lần lặp lại thử nghiệm vô hạn",
+      "Coi tham số luôn là một giá trị hằng số cố định duy nhất và không thể có phân phối",
+      "Tuyệt đối không sử dụng thông tin xác suất tiên nghiệm trong quá trình suy luận"
+    ],
+    "explain": "Trường phái Frequentist tập trung vào các lần lặp lại thử nghiệm, còn Bayesian mô tả tham số qua phân phối xác suất và cập nhật niềm tin (prior -> posterior)."
+  },
+  {
+    "ref": "1.8",
+    "q": "Trong kiểm định giả thuyết thống kê, Giả thuyết không (H0) thường biểu thị điều gì?",
+    "correct": "Giả định không có hiệu ứng hoặc không có sự khác biệt",
+    "wrong": [
+      "Giả định chắc chắn tồn tại một hiệu ứng hoặc sự khác biệt rõ rệt",
+      "Mức ý nghĩa tối đa cho phép chấp nhận sai số dương tính giả",
+      "Xác suất dữ liệu rơi vào miền bác bỏ của phân phối chuẩn"
+    ],
+    "explain": "Giả thuyết không (H0) luôn đặt giả định là không có hiệu ứng hay không có sự khác biệt giữa các nhóm/biến."
+  },
+  {
+    "ref": "1.8",
+    "q": "Quy tắc ra quyết định trong kiểm định giả thuyết khi so sánh giá trị p (p-value) với mức ý nghĩa alpha (thường là 0.05) là gì?",
+    "correct": "Nếu p-value < alpha thì bác bỏ H0",
+    "wrong": [
+      "Nếu p-value < alpha thì bắt buộc chấp nhận H0",
+      "Nếu p-value > alpha thì bác bỏ H0",
+      "Nếu p-value = 1 thì bác bỏ hoàn toàn giả thuyết đối H1"
+    ],
+    "explain": "p-value là mức ý nghĩa nhỏ nhất để bác bỏ H0; nếu p-value < alpha (thường là 0.05) thì ta đủ cơ sở bác bỏ H0."
+  },
+  {
+    "ref": "1.8",
+    "q": "Sai lầm loại I (Type I Error) trong kiểm định giả thuyết xảy ra khi nào?",
+    "correct": "Bác bỏ H0 khi H0 đúng (Dương tính giả)",
+    "wrong": [
+      "Chấp nhận H0 khi H1 đúng (Âm tính giả)",
+      "Chấp nhận H0 khi H0 đúng",
+      "Bác bỏ H0 khi H1 đúng"
+    ],
+    "explain": "Sai lầm loại I là bác bỏ giả thuyết H0 dù trên thực tế H0 là đúng (Dương tính giả)."
+  },
+  {
+    "ref": "1.8",
+    "q": "Phát biểu nào sau đây đúng về mối liên hệ giữa Tương quan (Correlation) và Nhân quả (Causation)?",
+    "correct": "Tương quan giúp dự đoán nhưng không ngụ ý nhân quả do có thể có biến gây nhiễu hoặc tương quan ảo",
+    "wrong": [
+      "Nếu hai biến có hệ số tương quan cao thì chắc chắn tồn tại mối quan hệ nhân quả trực tiếp",
+      "Tương quan không thể dùng để dự đoán nếu không chứng minh được quan hệ nhân quả",
+      "Biến gây nhiễu (Confounding variables) chỉ tồn tại khi hai biến hoàn toàn độc lập"
+    ],
+    "explain": "Tương quan giúp dự đoán nhưng không ngụ ý quan hệ nhân quả; cần lưu ý hiện tượng tương quan ảo hoặc ảnh hưởng của các biến gây nhiễu."
+  },
+  {
+    "ref": "1.9",
+    "q": "Đặc điểm bắt buộc của dữ liệu đưa vào huấn luyện trong Học có giám sát (Supervised Learning) là gì?",
+    "correct": "Dữ liệu đưa vào huấn luyện phải được gán nhãn (labeled)",
+    "wrong": [
+      "Dữ liệu huấn luyện hoàn toàn không được có nhãn đi kèm",
+      "Dữ liệu chỉ bao gồm một biến đặc trưng duy nhất dạng chuỗi ký tự",
+      "Tất cả các nhãn bắt buộc phải là biến số liên tục lớn hơn 0"
+    ],
+    "explain": "Trong Supervised Learning, tập dữ liệu huấn luyện bắt buộc phải có sẵn nhãn (label) để mô hình học ánh xạ từ đặc trưng sang nhãn."
+  },
+  {
+    "ref": "1.9",
+    "q": "Hai từ khóa quan trọng cốt lõi (Keywords) của Học tăng cường (Reinforcement Learning) là gì?",
+    "correct": "Policy và Action",
+    "wrong": [
+      "Target và Feature",
+      "Entropy và Information Gain",
+      "Centroid và Inertia"
+    ],
+    "explain": "Tài liệu nhấn mạnh từ khóa cốt lõi của Reinforcement Learning là Policy (chính sách) và Action (hành động)."
+  },
+  {
+    "ref": "1.9",
+    "q": "Điểm khác biệt chính giữa bài toán Hồi quy (Regression) và Phân loại (Classification) trong Học có giám sát là gì?",
+    "correct": "Biến mục tiêu của Hồi quy là dạng số liên tục, còn Phân loại là dạng danh mục rời rạc",
+    "wrong": [
+      "Hồi quy không cần nhãn mục tiêu, còn phân loại bắt buộc phải có nhãn",
+      "Hồi quy sử dụng hàm mất mát Hinge Loss, còn phân loại luôn dùng hàm mất mát SSE",
+      "Hồi quy chỉ áp dụng cho dữ liệu văn bản, còn phân loại chỉ áp dụng cho dữ liệu âm thanh"
+    ],
+    "explain": "Regression dự đoán giá trị liên tục (dạng số như giá nhà, doanh thu), còn Classification dự đoán danh mục rời rạc (nhãn như Spam/Not Spam)."
+  },
+  {
+    "ref": "1.9",
+    "q": "Trong scikit-learn, phương thức nào được gọi trên đối tượng mô hình để thực hiện huấn luyện với tập dữ liệu?",
+    "correct": "`model.fit(X_train, y_train)`",
+    "wrong": [
+      "`model.predict(X_train, y_train)`",
+      "`model.transform(X_train, y_train)`",
+      "`model.evaluate(X_train, y_train)`"
+    ],
+    "explain": "Cú pháp chuẩn để huấn luyện mô hình học có giám sát trong scikit-learn là gọi phương thức `fit()` với dữ liệu đầu vào và nhãn tương ứng."
+  },
+  {
+    "ref": "1.10",
+    "q": "Trong quy trình chia dữ liệu, tập kiểm định (Validation Set) được sử dụng nhằm mục đích gì?",
+    "correct": "Tối ưu hóa các siêu tham số (hyperparameters) của mô hình",
+    "wrong": [
+      "Huấn luyện trực tiếp các trọng số cơ sở của mô hình",
+      "Đánh giá hiệu suất tổng thể cuối cùng của mô hình trước khi triển khai",
+      "Kiểm tra tính đúng đắn của việc mã hóa One-hot encoding"
+    ],
+    "explain": "Training Set dùng để huấn luyện mô hình, Validation Set dùng để tối ưu hóa siêu tham số, còn Test Set dùng để đánh giá hiệu suất cuối cùng."
+  },
+  {
+    "ref": "1.10",
+    "q": "Mục đích cơ bản của việc phân chia dữ liệu thành tập huấn luyện (Train) và tập kiểm tra (Test) là gì?",
+    "correct": "Kiểm tra khả năng tổng quát hóa (generalization) trên dữ liệu mới và tránh quá khớp (overfitting)",
+    "wrong": [
+      "Đảm bảo kích thước dữ liệu giảm xuống để thuật toán hội tụ nhanh hơn",
+      "Chuyển đổi dữ liệu từ dạng phi tuyến tính sang dạng tuyến tính",
+      "Tự động điền các giá trị thiếu trong toàn bộ tập dữ liệu"
+    ],
+    "explain": "Mục đích chia dữ liệu là đánh giá khả năng tổng quát hóa của mô hình trên dữ liệu độc lập chưa từng thấy và phòng ngừa quá khớp."
+  },
+  {
+    "ref": "1.10",
+    "q": "Phương pháp Kiểm chéo K-lần (K-fold Cross Validation) hoạt động như thế nào?",
+    "correct": "Chia dữ liệu thành K phần, mỗi phần lần lượt làm tập kiểm tra trong khi các phần còn lại làm tập huấn luyện",
+    "wrong": [
+      "Chia dữ liệu thành K phần độc lập và huấn luyện K mô hình khác nhau không liên quan",
+      "Lặp lại việc huấn luyện K lần trên toàn bộ tập dữ liệu gốc mà không phân chia",
+      "Chọn ngẫu nhiên K điểm dữ liệu làm các tâm phân cụm đại diện"
+    ],
+    "explain": "K-fold Cross Validation chia dữ liệu làm K phần (folds), luân phiên lấy 1 phần làm tập kiểm tra và K-1 phần còn lại làm tập huấn luyện."
+  },
+  {
+    "ref": "1.10",
+    "q": "Trong đoạn mã `cross_val_score(lr, X, y, cv=5)`, tham số `cv=5` biểu thị điều gì?",
+    "correct": "Số phần chia (folds) trong quy trình kiểm chéo là 5",
+    "wrong": [
+      "Tỷ lệ dữ liệu của tập kiểm tra là 5%",
+      "Số lượng đặc trưng đầu vào được lựa chọn là 5",
+      "Số vòng lặp tối đa của mô hình hồi quy là 5"
+    ],
+    "explain": "Tham số `cv=5` chỉ định thực hiện kiểm chéo với 5 folds (K-fold cross validation với k=5)."
+  },
+  {
+    "ref": "1.11",
+    "q": "Trong Hồi quy Tuyến tính, khái niệm 'Phần dư (Residual)' được hiểu là gì?",
+    "correct": "Khoảng cách giữa giá trị thực tế và giá trị dự đoán của mô hình",
+    "wrong": [
+      "Tổng bình phương của tất cả các sai số trên tập huấn luyện",
+      "Khoảng cách giữa các quan sát và giá trị trung bình của biến độc lập",
+      "Tỷ lệ phương sai của biến mục tiêu được giải thích bởi mô hình"
+    ],
+    "explain": "Phần dư (Residual) là độ lệch hay khoảng cách giữa giá trị thực tế quan sát được và giá trị do mô hình dự đoán ra."
+  },
+  {
+    "ref": "1.11",
+    "q": "Hàm mất mát (Cost Function) thường được sử dụng trong Hồi quy Tuyến tính để tìm đường khớp tối ưu là gì?",
+    "correct": "SSE (Sum of Squared Errors) nhằm cực tiểu hóa tổng bình phương phần dư",
+    "wrong": [
+      "Hinge Loss nhằm phạt các lỗi phân loại sai trên biên",
+      "Deviance (binomial log-likelihood) nhằm tối đa hóa độ hợp lý",
+      "Exponential Loss nhằm gán trọng số lũy thừa cho các mẫu sai"
+    ],
+    "explain": "Hồi quy tuyến tính sử dụng SSE (Sum of Squared Errors) để cực tiểu hóa tổng bình phương của các phần dư."
+  },
+  {
+    "ref": "1.11",
+    "q": "Ý nghĩa của Hệ số xác định (R-squared / Coefficient of Determination) trong đánh giá mô hình hồi quy là gì?",
+    "correct": "Tỷ lệ phương sai của biến mục tiêu được giải thích bởi mô hình; giá trị càng gần 1 mô hình càng tốt",
+    "wrong": [
+      "Tổng độ lớn các phần dư tuyệt đối; giá trị càng lớn mô hình càng chính xác",
+      "Tỷ lệ giữa số mẫu phân loại đúng và tổng số mẫu trong ma trận nhầm lẫn",
+      "Độ dốc của siêu phẳng phân tách trong không gian đặc trưng nhiều chiều"
+    ],
+    "explain": "R-squared biểu thị tỷ lệ phương sai của biến phụ thuộc được giải thích bởi các biến độc lập trong mô hình; càng gần 1 chứng tỏ mô hình khớp càng tốt."
+  },
+  {
+    "ref": "1.11",
+    "q": "Khi gọi lệnh `model.score(X_test, y_test)` với `model` là một đối tượng `LinearRegression`, kết quả nhận được là chỉ số nào?",
+    "correct": "Hệ số xác định R-squared (R^2)",
+    "wrong": [
+      "Tổng bình phương sai số SSE",
+      "Sai số tuyệt đối trung bình MAE",
+      "Độ chính xác phân loại Accuracy"
+    ],
+    "explain": "Đối với mô hình `LinearRegression` trong scikit-learn, phương thức `.score()` tính và trả về chỉ số R-squared trên tập dữ liệu truyền vào."
+  },
+  {
+    "ref": "1.12",
+    "q": "Hồi quy Đa thức (Polynomial Regression) được sử dụng nhằm mục đích chính nào?",
+    "correct": "Nắm bắt các mối quan hệ phi tuyến tính bằng cách thêm các bậc cao của biến đặc trưng",
+    "wrong": [
+      "Ép các hệ số hồi quy không quan trọng về bằng 0 để chọn đặc trưng",
+      "Chuyển đổi bài toán hồi quy liên tục thành bài toán phân loại danh mục",
+      "Tạo thêm các mẫu giả lập cho lớp dữ liệu thiểu số"
+    ],
+    "explain": "Polynomial Regression mở rộng hồi quy tuyến tính bằng cách đưa thêm các bậc lũy thừa cao hơn của đặc trưng để biểu diễn quan hệ phi tuyến."
+  },
+  {
+    "ref": "1.12",
+    "q": "Rủi ro chính khi tăng bậc đa thức (degree) lên quá cao trong Hồi quy Đa thức là gì?",
+    "correct": "Mô hình rất dễ dẫn đến hiện tượng quá khớp (Overfitting)",
+    "wrong": [
+      "Mô hình bị dưới khớp (Underfitting) do giả định quá đơn giản",
+      "Phương sai của mô hình giảm mạnh về mức bằng 0",
+      "Dữ liệu huấn luyện tự động bị chuẩn hóa về khoảng [0, 1]"
+    ],
+    "explain": "Bậc càng cao mô hình càng uốn lượn để khớp sát tập huấn luyện, làm tăng phương sai và rất dễ dẫn đến Overfitting."
+  },
+  {
+    "ref": "1.12",
+    "q": "Trong scikit-learn, lớp nào được sử dụng để tạo ra các đặc trưng bậc cao cho mô hình Hồi quy Đa thức?",
+    "correct": "`PolynomialFeatures` từ thư viện `sklearn.preprocessing`",
+    "wrong": [
+      "`StandardScaler` từ thư viện `sklearn.preprocessing`",
+      "`LinearRegression` từ thư viện `sklearn.linear_model`",
+      "`DecisionTreeRegressor` từ thư viện `sklearn.tree`"
+    ],
+    "explain": "Để tạo ra các đặc trưng bậc 2, bậc 3..., ta sử dụng `PolynomialFeatures(degree=...)` trong `sklearn.preprocessing`."
+  },
+  {
+    "ref": "1.13",
+    "q": "Mục đích cơ bản của kỹ thuật Điều chuẩn (Regularization) trong học máy là gì?",
+    "correct": "Giúp giảm phương sai (Variance) bằng cách phạt các hệ số hồi quy lớn, ép chúng nhỏ lại hoặc bằng 0",
+    "wrong": [
+      "Giúp giảm độ chệch (Bias) bằng cách tăng vô hạn số lượng đặc trưng đa thức",
+      "Tự động loại bỏ tất cả các hàng dữ liệu có chứa giá trị ngoại lai",
+      "Tối ưu hóa tốc độ huấn luyện mô hình bằng cách song song hóa các luồng xử lý"
+    ],
+    "explain": "Regularization phạt các hệ số lớn trong hàm mất mát, giúp kiềm chế độ phức tạp của mô hình để giảm Variance và hạn chế Overfitting."
+  },
+  {
+    "ref": "1.13",
+    "q": "Phương pháp điều chuẩn LASSO (L1) có đặc điểm nổi bật nào so với Ridge (L2)?",
+    "correct": "Phạt tổng trị tuyệt đối hệ số và có khả năng triệt tiêu hệ số về 0, hỗ trợ lựa chọn đặc trưng (Feature Selection)",
+    "wrong": [
+      "Phạt tổng bình phương hệ số và không bao giờ triệt tiêu hệ số về 0",
+      "Luôn kết hợp cả hai hình thức phạt L1 và L2 cùng lúc",
+      "Không yêu cầu chuẩn hóa thang đo dữ liệu trước khi huấn luyện"
+    ],
+    "explain": "LASSO (L1) sử dụng hình thức phạt theo tổng trị tuyệt đối các hệ số, có khả năng ép các hệ số không quan trọng về đúng bằng 0 (hỗ trợ Feature Selection)."
+  },
+  {
+    "ref": "1.13",
+    "q": "Đặc điểm chính của phương pháp hồi quy Ridge (L2) là gì?",
+    "correct": "Phạt theo tổng bình phương hệ số, giúp giảm kích thước hệ số nhưng không triệt tiêu về 0",
+    "wrong": [
+      "Phạt theo tổng trị tuyệt đối hệ số, giúp triệt tiêu hoàn toàn hệ số về 0",
+      "Tự động gán nhãn cho các điểm dữ liệu thiếu trước khi huấn luyện",
+      "Chỉ sử dụng được khi các biến đặc trưng hoàn toàn không có tương quan"
+    ],
+    "explain": "Ridge (L2) phạt tổng bình phương hệ số, làm co nhỏ các hệ số lại để giảm Overfitting nhưng không đưa hệ số về 0 tuyệt đối."
+  },
+  {
+    "ref": "1.13",
+    "q": "Phương pháp điều chuẩn Elastic Net được khuyến nghị sử dụng trong trường hợp nào?",
+    "correct": "Khi tập dữ liệu có nhiều biến đặc trưng tương quan mạnh với nhau",
+    "wrong": [
+      "Khi tất cả các biến đặc trưng đều hoàn toàn độc lập và không tương quan",
+      "Khi tập dữ liệu chỉ có một biến giải thích duy nhất và không có nhiễu",
+      "Khi bài toán yêu cầu chuyển đổi dữ liệu thành các cụm phân cấp"
+    ],
+    "explain": "Elastic Net kết hợp hình phạt L1 và L2, rất hữu ích khi dữ liệu có nhiều đặc trưng tương quan (collinear) với nhau."
+  },
+  {
+    "ref": "1.13",
+    "q": "Tại sao luôn cần thực hiện Scaling (ví dụ StandardScaler) trước khi áp dụng kỹ thuật Regularization?",
+    "correct": "Để các hệ số có cùng đơn vị đo, đảm bảo hình phạt được áp dụng công bằng lên mọi đặc trưng",
+    "wrong": [
+      "Để biến đổi toàn bộ nhãn mục tiêu về phân phối chuẩn có trung bình bằng 0",
+      "Để biến đổi các bài toán hồi quy phi tuyến tính thành bài toán phân loại",
+      "Để loại bỏ hoàn toàn hiện tượng đa cộng tuyến giữa các biến độc lập"
+    ],
+    "explain": "Nếu không Scaling, các đặc trưng có thang đo lớn sẽ có hệ số nhỏ và ít bị phạt hơn, trong khi đặc trưng có thang đo nhỏ sẽ bị phạt nặng bất hợp lý."
+  }
+]

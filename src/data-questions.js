@@ -1,0 +1,264 @@
+// ===== QUESTION BANK — đối chiếu "SSG105 – Tổng hợp kiến thức môn học" =====
+// Q(module, type, question, correct, [3 wrong], explain, ref)  type: c=concept s=scenario o=order e=except
+DATA.questions = [];
+(function(){
+const T={c:'concept',s:'scenario',o:'order',e:'except'}, cnt={};
+function Q(m,t,q,c,w,x,r){cnt[m]=(cnt[m]||0)+1;DATA.questions.push({id:'q-'+m+'-'+String(cnt[m]).padStart(3,'0'),module:m,type:T[t],q:q,correct:c,wrong:w,explain:x,ref:r});}
+
+
+// ---------- M2 (28) ----------
+Q('m2','c','Theo tài liệu, team là gì?','Tập hợp người có kỹ năng bổ sung, cùng làm việc vì một mục tiêu cụ thể và cùng chịu trách nhiệm về kết quả',['Tập hợp người cùng phòng ban, mỗi người theo mục tiêu riêng','Nhóm người chỉ trao đổi thông tin với nhau','Nhóm người do một quản lý kiểm soát hoàn toàn'],'Định nghĩa team ở §2.1.','2.1');
+Q('m2','c','Đặc điểm nào là của group, không phải team?','Thường được đánh giá cá nhân',['Có mục tiêu chung cụ thể','Thành viên phụ thuộc lẫn nhau','Có quyền ra quyết định'],'Group: mục tiêu riêng, phụ thuộc thấp, đánh giá cá nhân, có thể chỉ trao đổi thông tin.','2.1');
+Q('m2','c','Về quyền ra quyết định, team khác group thế nào?','Team có quyền ra quyết định; group có thể chỉ trao đổi thông tin',['Group có quyền quyết định, team thì không','Cả hai đều không có quyền quyết định','Chỉ leader của group được quyết định'],'Bảng team vs group §2.1.','2.1');
+Q('m2','e','Điều nào KHÔNG thuộc năm đặc trưng của team?','Mỗi thành viên theo đuổi mục tiêu riêng',['Các thành viên phụ thuộc lẫn nhau','Có sự ổn định trong một khoảng thời gian','Hoạt động trong một bối cảnh xã hội / tổ chức'],'Mục tiêu riêng là đặc điểm của group.','2.1');
+Q('m2','c','Đặc trưng nào sau đây thuộc năm đặc trưng của team?','Có quyền hạn và khả năng ra quyết định',['Có quy mô trên 10 người','Mỗi người được đánh giá riêng','Không cần ổn định theo thời gian'],'5 đặc trưng: trách nhiệm chung, phụ thuộc lẫn nhau, ổn định, quyền quyết định, bối cảnh xã hội/tổ chức.','2.1');
+Q('m2','c','Synergy là gì?','Kết quả chung lớn hơn tổng kết quả riêng lẻ',['Kết quả chung bằng tổng kết quả riêng','Mọi người cùng làm một việc giống nhau','Cả nhóm luôn đồng ý với nhau'],'Synergy – một dấu hiệu team hoạt động tốt.','2.3');
+Q('m2','e','Điều nào KHÔNG phải dấu hiệu team hoạt động tốt?','Lãnh đạo cố định một người, không bao giờ luân chuyển',['Giao tiếp rõ ràng','Có niềm tin','Thành viên phụ thuộc tích cực vào nhau'],'Team tốt: lãnh đạo có thể luân chuyển theo nhiệm vụ.','2.3');
+Q('m2','c','Group cohesiveness được định nghĩa là gì?','Mức độ hấp dẫn của nhóm đối với thành viên, thể hiện ở sự hài lòng và mong muốn ở lại',['Áp lực buộc thành viên đồng ý với số đông','Số lượng thành viên trong nhóm','Mức độ xung đột trong nhóm'],'Định nghĩa §2.4.','2.4');
+Q('m2','e','Yếu tố nào KHÔNG thuộc năm yếu tố ảnh hưởng đến cohesiveness?','Ngân sách của dự án',['Quy mô','Tương đồng','Cạnh tranh bên ngoài'],'5 yếu tố: quy mô, tương đồng, thành công, tính chọn lọc/địa vị, cạnh tranh bên ngoài.','2.4');
+Q('m2','c','Theo tài liệu, quy mô nhóm ảnh hưởng đến cohesiveness thế nào?','Nhóm càng lớn càng dễ giảm hài lòng và tăng xung đột',['Nhóm càng lớn càng gắn kết','Quy mô không ảnh hưởng','Nhóm nhỏ luôn có nhiều xung đột hơn'],'Yếu tố quy mô §2.4.','2.4');
+Q('m2','s','Một CLB rất khó gia nhập và có vị thế cao trong trường nên thành viên rất muốn ở lại. Yếu tố cohesiveness nào?','Tính chọn lọc / địa vị',['Quy mô','Cạnh tranh bên ngoài','Tương đồng'],'Nhóm khó gia nhập hoặc có vị thế cao thường hấp dẫn hơn.','2.4');
+Q('m2','s','Hai đội thi cùng một cuộc thi khiến mỗi đội đoàn kết hơn hẳn. Yếu tố cohesiveness nào?','Cạnh tranh bên ngoài',['Tính chọn lọc / địa vị','Quy mô','Tương đồng'],'Cạnh tranh bên ngoài có thể tăng động lực nội bộ.','2.4');
+Q('m2','s','Sau khi đạt giải ở vòng đầu, các thành viên gắn bó với nhóm hơn. Yếu tố nào?','Thành công',['Tương đồng','Quy mô','Tính chọn lọc / địa vị'],'Thành công làm tăng sự gắn kết.','2.4');
+Q('m2','c','Groupthink là gì?','Khuynh hướng tuân theo áp lực nhóm, làm giảm tư duy phản biện và bỏ qua ý kiến trái chiều',['Mức độ hấp dẫn của nhóm với thành viên','Kết quả chung lớn hơn tổng kết quả riêng','Quá trình brainstorm nhiều ý tưởng'],'Định nghĩa §2.4.','2.4');
+Q('m2','e','Cách nào KHÔNG giúp phòng tránh groupthink?','Để người lãnh đạo chốt kết luận ngay từ đầu',['Chủ động mời phản biện','Yêu cầu bằng chứng','Để người có ý kiến thiểu số được trình bày'],'Không để lãnh đạo áp đặt kết luận quá sớm.','2.4');
+Q('m2','c','Cách nào được tài liệu nêu để phòng tránh groupthink?','Tách giai đoạn tạo ý tưởng khỏi đánh giá',['Biểu quyết thật nhanh để tiết kiệm thời gian','Hạn chế người có ý kiến khác phát biểu','Giữ không khí đồng thuận bằng mọi giá'],'Tách tạo ý tưởng và đánh giá.','2.4');
+Q('m2','s','Cả nhóm vui vẻ đồng ý ngay kế hoạch của trưởng nhóm; Minh thấy rủi ro nhưng im lặng vì sợ “phá không khí”. Hiện tượng gì?','Groupthink',['Synergy','Cohesiveness thấp','Self-managing team'],'Áp lực nhóm làm bỏ qua ý kiến trái chiều.','2.4');
+Q('m2','e','Điều nào KHÔNG phải yếu tố làm giảm hiệu quả team?','Vai trò rõ ràng, phân công công bằng',['Thiếu nguồn lực và hỗ trợ quản lý','Quản lý kiểm soát quá mức, không trao quyền','Hành vi độc chiếm thảo luận'],'Vai trò không rõ, phân công không công bằng mới là yếu tố tiêu cực.','2.5');
+Q('m2','s','Quản lý duyệt từng việc nhỏ, không cho team tự quyết điều gì. Đây là yếu tố gì?','Quản lý kiểm soát quá mức, không trao quyền — làm giảm hiệu quả',['Lãnh đạo luân chuyển theo nhiệm vụ','Synergy','Tính chọn lọc của nhóm'],'Một yếu tố làm giảm hiệu quả §2.5.','2.5');
+Q('m2','c','Bốn nhóm kỹ năng của thành viên team gồm những gì?','Giao tiếp; chuyên môn/kỹ thuật; ra quyết định & giải quyết vấn đề; quan hệ liên cá nhân',['Giao tiếp; thuyết trình; viết; ngoại ngữ','Lãnh đạo; quản lý; tài chính; marketing','Chuyên môn; tin học; ngoại ngữ; thể chất'],'§2.6.','2.6');
+Q('m2','s','Hà xác định đúng vấn đề, đánh giá các lựa chọn và quyết định phương án. Đây là nhóm kỹ năng nào?','Ra quyết định và giải quyết vấn đề',['Giao tiếp','Chuyên môn / kỹ thuật','Quan hệ liên cá nhân'],'§2.6.','2.6');
+Q('m2','s','Khoa giỏi lắng nghe, phản hồi, xử lý xung đột và kết nối với người ngoài nhóm. Nhóm kỹ năng nào?','Quan hệ liên cá nhân',['Chuyên môn / kỹ thuật','Ra quyết định và giải quyết vấn đề','Kỹ năng tài chính'],'§2.6.','2.6');
+Q('m2','c','Vai trò task-facilitating làm gì?','Cung cấp/yêu cầu thông tin, theo dõi tiến độ, thúc đẩy quyết định và hoàn thành nhiệm vụ',['Tạo động lực, đồng cảm, duy trì gắn kết','Làm chậm tiến độ, giảm tinh thần nhóm','Đại diện nhóm làm việc với giảng viên'],'§2.7.','2.7');
+Q('m2','s','Lan thường động viên, đồng cảm với bạn đang gặp khó và hòa giải khi có mâu thuẫn. Lan đóng vai trò gì?','Relationship-building',['Task-facilitating','Blocking','Self-managing'],'Tạo động lực, đồng cảm, xử lý mâu thuẫn.','2.7');
+Q('m2','s','Tuấn liên tục theo dõi tiến độ và nhắc nhóm chốt quyết định đúng hạn. Vai trò nào?','Task-facilitating',['Relationship-building','Blocking','Groupthink'],'Theo dõi tiến độ, thúc đẩy quyết định.','2.7');
+Q('m2','s','Nam hay chê bai ý người khác, làm cả nhóm nản và ngại đóng góp. Đây là loại vai trò nào?','Blocking',['Task-facilitating','Relationship-building','Challenger'],'Blocking: làm giảm tinh thần, niềm tin, đóng góp của người khác.','2.7');
+Q('m2','c','Điều gì xảy ra khi team quá thiên về đồng thuận?','Có thể làm chậm quyết định',['Gây căng thẳng vì áp lực công việc','Luôn tạo synergy','Tăng tốc độ ra quyết định'],'Quá thiên về nhiệm vụ gây căng thẳng; quá thiên về đồng thuận làm chậm quyết định.','2.7');
+Q('m2','e','Lợi ích nào KHÔNG được tài liệu nêu khi tổ chức dùng team?','Team luôn tự động hiệu quả',['Kết hợp nhiều góc nhìn và chuyên môn','Xử lý vấn đề phức tạp tốt hơn cá nhân','Giảm sai sót và tỷ lệ nghỉ việc'],'Team không tự động hiệu quả — phụ thuộc thiết kế, quản lý, kỹ năng, quan hệ.','2.2');
+
+// ---------- M3 (26) ----------
+Q('m3','c','Team charter / team contract là gì?','Thỏa thuận về cách team làm việc',['Báo cáo tiến độ gửi giảng viên','Danh sách điểm của từng thành viên','Hợp đồng với nhà tài trợ'],'§3.1.','3.1');
+Q('m3','e','Nội dung nào KHÔNG cần có trong team charter?','Điểm GPA của từng thành viên',['Vai trò, trách nhiệm từng thành viên','Lịch họp và kênh giao tiếp','Cách xử lý chậm tiến độ và vi phạm cam kết'],'Charter: mục tiêu, vai trò, lịch họp, quy tắc, cách quyết định, xử lý bất đồng/vi phạm.','3.1');
+Q('m3','c','Khi nào nên thiết kế quy trình xử lý xung đột cho team?','Trước khi xung đột xảy ra',['Ngay khi xung đột lên đến đỉnh điểm','Sau khi dự án kết thúc','Chỉ khi giảng viên yêu cầu'],'Thói quen quan trọng §3.1.','3.1');
+Q('m3','e','Đâu KHÔNG phải thói quen tốt khi khởi động dự án?','Một người ôm toàn bộ công việc cho chắc',['Luôn tham dự họp và giữ deadline','Chia sẻ ý tưởng dù chưa chắc được dùng','Tận dụng điểm mạnh của từng người'],'Không ôm toàn bộ công việc.','3.1');
+Q('m3','c','Theo Trust Equation, thành phần nào khi tăng làm GIẢM trustworthiness?','Self-orientation',['Credibility','Reliability','Intimacy'],'Trustworthiness giảm khi self-orientation tăng.','3.2');
+Q('m3','c','Credibility trong Trust Equation liên quan đến điều gì?','Bạn nói gì, biết gì; mức chính xác và chuyên môn',['Bạn có giữ cam kết đúng hạn không','Người khác có an toàn khi chia sẻ với bạn không','Bạn lo lợi ích riêng hay của team'],'§3.2.','3.2');
+Q('m3','c','Reliability trong Trust Equation là gì?','Thực hiện cam kết ổn định, đúng hạn',['Mức chính xác và chuyên môn','Cảm giác an toàn khi chia sẻ','Mức tập trung vào lợi ích riêng'],'§3.2.','3.2');
+Q('m3','c','Intimacy trong Trust Equation là gì?','Người khác cảm thấy an toàn khi chia sẻ với bạn',['Mức độ thân thiết ngoài giờ học','Chuyên môn của bạn','Việc giữ đúng deadline'],'§3.2.','3.2');
+Q('m3','s','Bạn luôn nộp phần việc đúng hạn như đã hứa. Thành phần trust nào tăng?','Reliability',['Credibility','Intimacy','Self-orientation'],'Thực hiện cam kết đúng hạn.','3.2');
+Q('m3','s','Bạn trình bày chính xác, đúng chuyên môn và có nguồn. Thành phần nào tăng?','Credibility',['Reliability','Intimacy','Self-orientation'],'Mức chính xác và chuyên môn.','3.2');
+Q('m3','s','Bạn bè yên tâm kể khó khăn riêng với bạn vì biết bạn giữ bí mật. Thành phần nào?','Intimacy',['Credibility','Reliability','Self-orientation'],'An toàn khi chia sẻ.','3.2');
+Q('m3','s','Một thành viên chỉ chọn phần việc có lợi cho điểm cá nhân, bỏ mặc team. Trust thay đổi thế nào?','Giảm, vì self-orientation cao',['Tăng, vì reliability cao','Không đổi','Tăng, vì credibility cao'],'Self-orientation tăng làm trust giảm.','3.2');
+Q('m3','e','Hành động nào KHÔNG giúp xây dựng niềm tin?','Xuyên tạc đóng góp của người khác',['Chuẩn bị trước khi họp','Đặt câu hỏi có chất lượng','Giữ bí mật cho người khác'],'Không đạo văn hay xuyên tạc đóng góp.','3.2');
+Q('m3','e','Điều nào KHÔNG phải lợi ích của niềm tin cao?','Thành viên ít đặt câu hỏi hơn',['Phản hồi cởi mở hơn','Phát hiện vấn đề sớm','Giảm hiểu lầm và làm lại'],'Niềm tin cao giúp thành viên đặt NHIỀU câu hỏi hơn.','3.2');
+Q('m3','c','Psychological safety là gì?','Niềm tin chung rằng team an toàn cho việc chấp nhận rủi ro liên cá nhân',['Niềm tin của một cá nhân vào leader','Sự an toàn về thể chất nơi làm việc','Quy định bảo mật dữ liệu của nhóm'],'Nói ý kiến, hỏi, nhận sai, phản biện mà không sợ bị chế giễu hay trừng phạt.','3.3');
+Q('m3','o','Tầng thấp nhất của psychological safety là gì?','Inclusion safety',['Learner safety','Contributor safety','Challenger safety'],'Inclusion → Learner → Contributor → Challenger.','3.3');
+Q('m3','o','Tầng cao nhất của psychological safety là gì?','Challenger safety',['Contributor safety','Learner safety','Inclusion safety'],'Dám chất vấn cách làm hoặc quyết định hiện tại.','3.3');
+Q('m3','o','Tầng nào đứng ngay sau Learner safety?','Contributor safety',['Challenger safety','Inclusion safety','Reliability'],'Inclusion → Learner → Contributor → Challenger.','3.3');
+Q('m3','o','Thứ tự đúng của bốn tầng psychological safety?','Inclusion → Learner → Contributor → Challenger',['Learner → Inclusion → Challenger → Contributor','Inclusion → Contributor → Learner → Challenger','Challenger → Contributor → Learner → Inclusion'],'§3.3.','3.3');
+Q('m3','s','Trong họp, Lan hỏi “Mình chưa hiểu phần này, ai giải thích lại được không?” mà không sợ bị chê. Tầng nào?','Learner safety',['Inclusion safety','Contributor safety','Challenger safety'],'Dám hỏi, học và mắc lỗi.','3.3');
+Q('m3','s','Thành viên mới cảm thấy được chấp nhận và thuộc về nhóm ngay buổi đầu. Tầng nào?','Inclusion safety',['Learner safety','Contributor safety','Challenger safety'],'§3.3.','3.3');
+Q('m3','s','Hạnh tự tin dùng kỹ năng thiết kế để đóng góp ý tưởng cho poster. Tầng nào?','Contributor safety',['Inclusion safety','Learner safety','Challenger safety'],'Dám dùng kỹ năng và đóng góp ý tưởng.','3.3');
+Q('m3','s','Khoa chất vấn quyết định hiện tại của nhóm và đề xuất cách làm khác; nhóm lắng nghe. Tầng nào?','Challenger safety',['Contributor safety','Learner safety','Inclusion safety'],'§3.3.','3.3');
+Q('m3','s','Sau một lỗi của nhóm, trưởng nhóm hỏi “Lần sau chúng ta cải thiện thế nào?” thay vì tìm người để trách. Hành vi này giúp gì?','Tạo an toàn tâm lý',['Tăng self-orientation','Gây groupthink','Giảm credibility của leader'],'Không đổ lỗi là một cách tạo an toàn tâm lý.','3.3');
+Q('m3','e','Hành vi nào KHÔNG giúp tạo an toàn tâm lý?','Mặc định tin nhắn ngắn của đồng đội là có ý xấu',['Mời thành viên ít nói chia sẻ','Dám nói “tôi chưa biết”','Cởi mở với phản hồi'],'Tìm cách làm rõ thay vì mặc định ý xấu trong tin nhắn.','3.3');
+Q('m3','c','Trustworthiness thay đổi thế nào khi credibility, reliability và intimacy cùng tăng?','Tăng',['Giảm','Không đổi','Chỉ tăng khi self-orientation cũng tăng'],'§3.2.','3.2');
+
+// ---------- M4 (18) ----------
+Q('m4','c','Thách thức lớn nhất của người quản lý mới theo tài liệu là gì?','Chuyển từ tự làm tốt sang giúp người khác làm tốt',['Học thêm chuyên môn kỹ thuật','Giảm giao tiếp với cấp dưới','Tự làm toàn bộ việc khó'],'§4.1.','4.1');
+Q('m4','e','Người quản lý mới KHÔNG chỉ quản lý cấp dưới mà còn quản lý ai — đáp án nào SAI?','Đối thủ cạnh tranh bên ngoài',['Sếp và cấp trên của sếp','Đồng nghiệp ngang cấp','Khách hàng nội bộ và bên liên quan'],'Danh sách §4.1.','4.1');
+Q('m4','e','Điều nào KHÔNG thuộc các điều người lãnh đạo phải cân bằng?','Lợi ích cá nhân của leader và điểm số của leader',['Mục tiêu cá nhân và mục tiêu tập thể','Hiệu suất hiện tại và học tập/phát triển','Quyền lực lãnh đạo và quyền tự chủ của team'],'§4.1.','4.1');
+Q('m4','c','Hành vi lãnh đạo “integrity” là gì?','Làm điều đã nói và nhất quán với giá trị',['Luôn đồng ý với cấp trên','Giữ thông tin cho riêng mình','Ra quyết định một mình cho nhanh'],'§4.2.','4.2');
+Q('m4','s','Leader hỏi “Theo bạn, chúng ta có thể xử lý việc này thế nào?” thay vì đưa đáp án. Hành vi lãnh đạo nào?','Đặt câu hỏi mở để người khác tự tìm giải pháp',['Quản lý kiểm soát quá mức','Áp đặt kết luận sớm','Né tránh trách nhiệm'],'§4.2.','4.2');
+Q('m4','c','Lãnh đạo nên quản lý đồng thuận và bất đồng dựa trên điều gì?','Bằng chứng',['Cảm tính của leader','Ý kiến của người nói nhiều nhất','Số năm kinh nghiệm'],'§4.2.','4.2');
+Q('m4','c','Đặc điểm của manager-led team là gì?','Lãnh đạo đặt mục tiêu và hoạt động; rõ ràng nhưng dễ hạn chế tự chủ',['Team tự điều hành hằng ngày','Cần tích hợp nhiều chuyên môn','Làm việc hoàn toàn trực tuyến'],'§4.3.','4.3');
+Q('m4','c','Self-managing team khác manager-led team ở điểm nào?','Lãnh đạo đặt định hướng lớn, team tự điều hành hằng ngày',['Lãnh đạo đặt cả mục tiêu và hoạt động hằng ngày','Không có định hướng nào','Chỉ gồm thành viên làm từ xa'],'Self-managing tăng sở hữu và động lực.','4.3');
+Q('m4','c','Virtual team cần điều gì mạnh hơn?','Giao tiếp, phối hợp và xây dựng niềm tin',['Kiểm soát chặt từng thành viên','Ít giao tiếp hơn để tiết kiệm thời gian','Một người lãnh đạo cố định'],'§4.3.','4.3');
+Q('m4','s','Một team gồm người marketing, kỹ thuật và tài chính cùng làm sản phẩm mới. Đây là loại team gì?','Cross-functional team',['Virtual team','Manager-led team','Group'],'Cần tích hợp nhiều chuyên môn.','4.3');
+Q('m4','c','Theo tài liệu, có phong cách lãnh đạo nào tốt cho mọi tình huống không?','Không; cần điều chỉnh theo nhiệm vụ, năng lực, độ trưởng thành và nhu cầu team',['Có, đó là manager-led','Có, đó là self-managing','Có, đó là virtual leadership'],'§4.3.','4.3');
+Q('m4','c','Thành phần EI nào là nhận biết cảm xúc của chính mình?','Self-awareness',['Self-management','Self-motivation','Social awareness'],'§4.4.','4.4');
+Q('m4','s','Bị chỉ trích trước nhóm, Quân hít thở sâu và trả lời bình tĩnh. Thành phần EI nào?','Self-management',['Self-awareness','Self-motivation','Social awareness / empathy'],'Self-management: kiểm soát phản ứng.','4.4');
+Q('m4','s','Ngọc nhận ra bạn cùng nhóm đang lo lắng dù bạn ấy không nói. Thành phần EI nào?','Social awareness / empathy',['Self-management','Self-motivation','Self-awareness'],'Hiểu cảm xúc người khác.','4.4');
+Q('m4','e','Điều nào KHÔNG phải biểu hiện của EI thấp?','Chủ động hỏi thăm khi đồng đội gặp khó',['Chậm deadline','Rút khỏi nhóm','Suy giảm tinh thần'],'EI thấp: chậm deadline, nỗ lực thấp, chất lượng kém, rút khỏi nhóm, suy giảm tinh thần.','4.4');
+Q('m4','c','Câu nào đúng mẫu I-statement trong tài liệu?','“Tôi cảm thấy lo khi bản nháp chưa có vì điều đó ảnh hưởng đến deadline. Tôi mong chúng ta có thể chốt lại lịch.”',['“Bạn lúc nào cũng trễ.”','“Tại bạn mà nhóm bị điểm thấp.”','“Bạn phải làm xong ngay tối nay.”'],'Mẫu: Tôi cảm thấy… khi… vì điều đó ảnh hưởng đến… Tôi mong chúng ta có thể…','4.5');
+Q('m4','c','Khi thể hiện cảm xúc, tài liệu khuyên nên nhìn vấn đề thế nào?','Như challenge có thể xử lý, không chỉ là threat',['Như threat cần né tránh','Như lỗi của người khác','Như việc không liên quan đến mình'],'§4.5.','4.5');
+Q('m4','s','Cuộc trao đổi đang căng thẳng, cả hai đều nóng giận. Theo tài liệu nên làm gì?','Tạm dừng và nói lại khi cả hai bên sẵn sàng',['Nói to hơn để áp đảo','Dùng “you” để chỉ ra lỗi của đối phương','Rời nhóm ngay lập tức'],'Giữ giọng bình tĩnh; nếu cần, tạm dừng.','4.5');
+
+// ---------- M5 (32) ----------
+Q('m5','c','Trước cuộc họp, mục tiêu cần xác định thế nào?','Kết quả cụ thể phải đạt, không mơ hồ như “bàn về dự án”',['Càng chung chung càng linh hoạt','Không cần mục tiêu, chỉ cần agenda','Do người đến muộn nhất quyết định'],'§5.1.','5.1');
+Q('m5','e','Vai trò nào KHÔNG thuộc các vai trò cần giao trước cuộc họp theo tài liệu?','Devil’s advocate',['Facilitator / leader','Timekeeper','Note-taker'],'Vai trò: facilitator/leader, timekeeper, note-taker, presenter.','5.1');
+Q('m5','s','Trong họp, Vy theo dõi đồng hồ và nhắc khi một mục đã hết thời lượng. Vai trò của Vy?','Timekeeper',['Note-taker','Presenter','Facilitator'],'§5.1.','5.1');
+Q('m5','e','Nội dung nào KHÔNG cần có trong agenda?','Điểm đánh giá cá nhân của từng người',['Mục đích','Thời lượng từng mục','Khoảng cuối để chốt quyết định và hành động'],'Agenda: mục đích, nội dung theo thứ tự, thông tin nền, người tham dự, ngày giờ địa điểm, thời lượng, khoảng chốt quyết định.','5.1');
+Q('m5','c','Agenda và tài liệu nên được gửi khi nào?','Trước cuộc họp',['Trong cuộc họp','Sau cuộc họp','Chỉ khi có người hỏi'],'§5.1.','5.1');
+Q('m5','c','Mỗi action item sau họp phải có những gì?','Who – What – When',['Why – How – Where','Situation – Task – Action – Result','To – From – Date – Subject'],'§5.1.','5.1');
+Q('m5','c','Người điều phối họp nên ứng xử thế nào?','Hướng dẫn thay vì độc đoán',['Quyết định mọi thứ một mình','Để mọi người nói tự do không cần agenda','Chỉ cho người giỏi nhất phát biểu'],'§5.1.','5.1');
+Q('m5','e','Việc nào KHÔNG thuộc giai đoạn kết thúc và theo dõi cuộc họp?','Gửi agenda cho cuộc họp vừa xong',['Ghi quyết định','Chia sẻ minutes / biên bản','Theo dõi deadline'],'Agenda gửi TRƯỚC họp.','5.1');
+Q('m5','s','Trong họp, Phúc nói quá nhiều, lấn át người khác. Người điều phối nên làm gì?','Kiểm soát người nói quá nhiều, khuyến khích mọi người tham gia',['Để Phúc nói hết cho xong','Kết thúc cuộc họp sớm','Cho Phúc làm note-taker để im lặng'],'§5.1.','5.1');
+Q('m5','o','Bước đầu tiên trong quy trình Dewey là gì?','Define',['Analyze','Generate solutions','Establish criteria'],'Define → Analyze → Establish criteria → Generate → Evaluate → Implement → Follow up.','5.2');
+Q('m5','o','Bước ngay sau Analyze trong quy trình Dewey?','Establish criteria',['Generate solutions','Define','Evaluate'],'§5.2.','5.2');
+Q('m5','o','Bước thứ tư của quy trình Dewey?','Generate solutions',['Evaluate','Establish criteria','Implement'],'§5.2.','5.2');
+Q('m5','o','Bước cuối cùng của quy trình Dewey?','Follow up',['Implement','Evaluate','Define'],'§5.2.','5.2');
+Q('m5','o','Trong quy trình Dewey, bước nào đứng ngay trước Implement?','Evaluate',['Generate solutions','Follow up','Analyze'],'§5.2.','5.2');
+Q('m5','c','Trong Dewey, bước Implement gồm việc gì?','Chọn phương án, giao người, việc, deadline và nguồn lực',['Thu thập dữ liệu, tìm nguyên nhân','Tạo nhiều phương án, chưa đánh giá','Đo kết quả và điều chỉnh'],'§5.2.','5.2');
+Q('m5','c','Bước Analyze của Dewey làm gì?','Thu thập dữ liệu, tìm nguyên nhân và nhiều góc nhìn',['Định nghĩa vấn đề có ranh giới','So sánh phương án theo tiêu chí','Giao người và deadline'],'§5.2.','5.2');
+Q('m5','s','Nhóm thống nhất “giải pháp tốt phải dưới 2 triệu và xong trong 3 tuần”. Đang ở bước nào?','Establish criteria',['Analyze','Implement','Follow up'],'Xác định tiêu chí của giải pháp tốt.','5.2');
+Q('m5','s','Nhóm liệt kê thật nhiều ý tưởng, chưa đánh giá cái nào. Bước nào?','Generate solutions',['Evaluate','Define','Follow up'],'Tạo nhiều phương án, chưa đánh giá vội.','5.2');
+Q('m5','s','Nhóm so sánh các phương án theo chi phí, thời gian, rủi ro và tính khả thi. Bước nào?','Evaluate',['Generate solutions','Establish criteria','Analyze'],'§5.2.','5.2');
+Q('m5','s','Sau một tháng triển khai, nhóm đo kết quả xem điều gì hiệu quả, điều gì cần chỉnh. Bước nào?','Follow up',['Analyze','Implement','Define'],'§5.2.','5.2');
+Q('m5','e','Nguyên tắc nào KHÔNG đúng khi giải quyết vấn đề theo Dewey?','Đánh giá ý tưởng trước, đặt tiêu chí sau',['Không nhảy ngay sang giải pháp','Vấn đề phải cụ thể và dựa trên dữ liệu','Tách tạo ý tưởng và phê bình ý tưởng'],'Tiêu chí nên được thống nhất trước khi đánh giá.','5.2');
+Q('m5','c','Theo tài liệu, xung đột là gì?','Sự đấu tranh thể chất hoặc tâm lý do nhận thức về mục tiêu, mong muốn hay nhu cầu không tương thích',['Dấu hiệu quan hệ đã thất bại','Việc hai người có cùng ý kiến','Một vai trò blocking trong nhóm'],'Xung đột phổ biến và không đồng nghĩa quan hệ thất bại.','5.3');
+Q('m5','e','Điều nào KHÔNG phải nguồn xung đột thường gặp?','Mục tiêu chung được mọi người thống nhất',['Nguồn lực khan hiếm','Vai trò hoặc ưu tiên không rõ','Khác biệt giá trị, kỳ vọng, phong cách giao tiếp'],'§5.3.','5.3');
+Q('m5','c','Avoidance (né tránh) trong xung đột có đặc điểm gì?','Cho thời gian bình tĩnh nhưng thường không giải quyết gốc vấn đề',['Luôn là cách tốt nhất','Giải quyết triệt để mọi xung đột','Không bao giờ nên dùng'],'§5.3.','5.3');
+Q('m5','c','Phản ứng với xung đột có thể được phân loại thế nào?','Chủ động hoặc thụ động; xây dựng hoặc phá hoại',['Đúng hoặc sai','Nội bộ hoặc đối ngoại','Ngắn hạn hoặc dài hạn'],'§5.3.','5.3');
+Q('m5','c','Face-saving language là gì?','Ngôn ngữ giữ thể diện và uy tín cho đối phương',['Thông điệp công kích năng lực đối phương','Cách né tránh không nói chuyện','Lời tự khen bản thân'],'§5.4.','5.4');
+Q('m5','s','“Bạn làm kiểu này mà cũng dám nộp à?” là loại thông điệp gì?','Face-detracting',['Face-saving','I-statement','Phản hồi goal-directed'],'Công kích danh dự, năng lực.','5.4');
+Q('m5','e','Cách nào KHÔNG phù hợp khi giao tiếp trong xung đột?','Phán xét tính cách đối phương',['Tập trung vào vấn đề và hành vi','Mời hai bên giải thích giới hạn và nhu cầu','Dựa vào mục tiêu chung để tìm giải pháp'],'§5.4.','5.4');
+Q('m5','c','Phản hồi “goal-directed” nghĩa là gì?','Gắn với mục tiêu, deadline và tiêu chuẩn chung',['Chỉ nói điều tích cực','Nói ngay lập tức dù không cần thiết','Tập trung vào tính cách người nhận'],'§5.5.','5.5');
+Q('m5','s','Trưởng nhóm góp ý cho một bạn ngay trước mặt cả lớp, giọng mỉa mai. Phản hồi thiếu đặc điểm nào nhất?','Respectful',['Goal-directed','Specific / descriptive','Collaborative'],'Respectful: đúng thời điểm, đúng nơi, giữ phẩm giá.','5.5');
+Q('m5','e','Khi NHẬN phản hồi, điều nào KHÔNG nên làm?','Ngắt lời để giải thích ngay',['Hỏi để làm rõ','Kiểm soát phản ứng phòng thủ','Cảm ơn người góp ý'],'Không ngắt lời.','5.5');
+Q('m5','c','Phản hồi “collaborative” thể hiện ở điều gì?','Tạo đối thoại và cùng thiết kế bước tiếp theo',['Người góp ý quyết định mọi thứ','Chỉ gửi qua email','Khen ngợi chung chung'],'§5.5.','5.5');
+
+// ---------- M6 (30) ----------
+Q('m6','c','Texting phù hợp với loại nội dung nào?','Ngắn, không chính thức, cần phản hồi nhanh',['Dài và phức tạp','Nhạy cảm','Hợp đồng chính thức'],'§6.1.','6.1');
+Q('m6','s','Nhóm cần thông báo đánh giá tiêu cực về một thành viên. Kênh nào KHÔNG phù hợp?','Tin nhắn text',['Gặp trực tiếp riêng','Cuộc gọi riêng','Buổi trao đổi 1–1 có chuẩn bị'],'Text không phù hợp với nội dung nhạy cảm.','6.1');
+Q('m6','c','Subject email chuyên nghiệp cần thế nào?','Ngắn, rõ, cụ thể',['Càng dài càng đủ ý','Để trống','Viết IN HOA để gây chú ý'],'§6.1.','6.1');
+Q('m6','c','Email nên được phản hồi trong khoảng thời gian nào?','Thường trong 24 giờ',['Trong 1 tuần','Khi nào rảnh','Không cần phản hồi'],'§6.1.','6.1');
+Q('m6','c','Với nội dung đơn giản, email thường không nên quá bao nhiêu đoạn?','Ba đoạn ngắn',['Một đoạn dài','Mười đoạn','Không giới hạn'],'§6.1.','6.1');
+Q('m6','c','Khi nào nên dùng Reply All?','Chỉ khi tất cả người nhận thực sự cần biết',['Luôn luôn','Khi muốn được chú ý','Khi email có file đính kèm'],'§6.1.','6.1');
+Q('m6','e','Điều nào KHÔNG phải nguyên tắc email chuyên nghiệp?','Viết ALL CAPS cho nội dung quan trọng',['Nêu mục đích sớm','Có chữ ký và thông tin liên hệ','Báo trước nếu tệp lớn'],'Không viết ALL CAPS.','6.1');
+Q('m6','e','Điều nào KHÔNG thuộc các nguyên tắc netiquette?','Dùng quyền hạn để ép người khác trả lời',['Nhớ rằng phía bên kia là con người','Tôn trọng quyền riêng tư','Bao dung với lỗi của người khác'],'Không lạm dụng quyền lực.','6.1');
+Q('m6','c','Khi viết trực tuyến, nên giả định điều gì?','Thông điệp có thể bị chuyển tiếp hoặc đọc công khai',['Chỉ người nhận đọc được','Tin nhắn sẽ tự xóa','Không ai lưu lại tin nhắn'],'§6.1.','6.1');
+Q('m6','c','Memo chủ yếu dùng cho mục đích nào?','Giao tiếp nội bộ',['Gửi khách hàng bên ngoài','Ứng tuyển việc làm','Mời thầu'],'Memo chủ yếu nội bộ.','6.2');
+Q('m6','c','Header của memo gồm những gì?','To – From – Date – Subject',['Heading – Introduction – Body','Who – What – When','Dear – Body – Sincerely'],'§6.2.','6.2');
+Q('m6','c','Memo dùng “direct format” nghĩa là gì?','Mục đích rõ ngay trong subject và câu đầu',['Đi vòng rồi mới nêu mục đích ở cuối','Gửi trực tiếp không qua email','Không có subject'],'§6.2.','6.2');
+Q('m6','c','Cấu trúc nội dung của memo là gì?','Mở đầu tuyên bố mục đích – thảo luận – kết luận/tóm tắt',['Lời chào – thân bài – chữ ký','Situation – Task – Action – Result','Preliminary – Body – Supplementary'],'§6.2.','6.2');
+Q('m6','s','Phòng nhân sự thông báo lịch nghỉ lễ cho toàn công ty. Nên dùng?','Memo',['Business letter','Proposal','Cover letter'],'Nội bộ → memo.','6.2');
+Q('m6','s','Công ty trả lời yêu cầu của một đối tác bên ngoài. Nên dùng?','Business letter',['Memo','Agenda','Minutes'],'Business letter thường gửi ra ngoài tổ chức.','6.2');
+Q('m6','o','Năm khu vực chính của business letter theo thứ tự?','Heading → Introduction → Body → Conclusion/call to action → Signature',['Introduction → Heading → Body → Signature → Conclusion','To → From → Date → Subject → Body','Heading → Body → Introduction → Signature → Conclusion'],'§6.2.','6.2');
+Q('m6','o','Khu vực cuối cùng của business letter là gì?','Signature',['Conclusion / call to action','Body','Heading'],'§6.2.','6.2');
+Q('m6','c','“Complete” trong business writing nghĩa là gì?','Đủ who, what, when, where, how và khi cần là why',['Viết thật dài','Có nhiều hình ảnh','Không có lỗi chính tả'],'§6.3.','6.3');
+Q('m6','c','“Concise” trong business writing là gì?','Bỏ lặp và từ không cần thiết',['Đúng ngữ pháp, chính tả','Lịch sự, tôn trọng','Phù hợp người đọc'],'§6.3.','6.3');
+Q('m6','e','Tiêu chí nào KHÔNG thuộc nguyên tắc viết tốt trong tài liệu?','Colorful',['Clear','Correct','Courteous'],'Clear, concise, complete, correct, courteous, audience-focused.','6.3');
+Q('m6','c','Phong cách viết phụ thuộc vào những yếu tố nào?','Audience, purpose và context',['Độ dài văn bản','Font chữ','Số người nhận'],'Các phong cách: colloquial, casual, informal, formal.','6.3');
+Q('m6','c','Business writing thường ưu tiên điều gì?','Active voice, từ cụ thể, động từ mạnh, câu tương đối ngắn',['Passive voice và câu dài','Nhiều thuật ngữ khó','Giọng công kích để thuyết phục'],'§6.3.','6.3');
+Q('m6','o','Quy trình viết theo tài liệu là gì?','Think → Research → Organize → Draft → Revise → Edit → Present',['Think → Research → Organize → Draft → Edit → Revise → Present','Research → Think → Draft → Organize → Revise → Edit → Present','Think → Organize → Research → Draft → Revise → Edit → Publish'],'§6.4.','6.4');
+Q('m6','o','Bước cuối cùng của quy trình viết là gì?','Present',['Publish','Edit','Revise'],'Think → … → Edit → Present.','6.4');
+Q('m6','o','Trong quy trình viết, bước nào đứng ngay sau Draft?','Revise',['Edit','Organize','Present'],'§6.4.','6.4');
+Q('m6','e','Cách nào KHÔNG thuộc các cách tổ chức nội dung trong tài liệu?','Alphabetical by author',['Problem–solution','Cause–effect','Compare–contrast'],'Theo thời gian, problem–solution, cause–effect, compare–contrast, classification.','6.4');
+Q('m6','c','Khi nghiên cứu, nên dừng thu thập thông tin lúc nào?','Khi thông tin bổ sung không còn tạo nhiều giá trị',['Khi đã có đúng 10 nguồn','Không bao giờ dừng','Ngay sau nguồn đầu tiên'],'§6.4.','6.4');
+Q('m6','c','Paraphrase khác summary thế nào?','Paraphrase giữ ý và độ dài tương đương; summary rút gọn ý chính',['Paraphrase ngắn hơn summary','Summary không cần ghi nguồn','Hai khái niệm giống nhau'],'Cả hai đều cần ghi nguồn.','6.5');
+Q('m6','s','Bạn sắp xếp lại các phần và làm rõ lập luận của bài. Đây là?','Revision',['Editing','Summary','Present'],'Revision: nội dung, tổ chức, độ rõ ở cấp độ lớn.','6.5');
+Q('m6','s','Bạn sửa lỗi dấu câu, chính tả và định dạng bảng. Đây là?','Editing',['Revision','Research','Organize'],'Editing: ngữ pháp, dấu câu, từ, định dạng.','6.5');
+
+// ---------- M7 (18) ----------
+Q('m7','c','Business proposal là gì?','Đề nghị bằng văn bản nhằm giải quyết vấn đề/đáp ứng nhu cầu, thuyết phục đối tượng cụ thể chấp nhận kế hoạch',['Báo cáo tiến độ dự án','Thư cảm ơn sau phỏng vấn','Biên bản họp nhóm'],'§7.1.','7.1');
+Q('m7','c','Solicited proposal là gì?','Proposal được yêu cầu qua RFP/RFQ/IFB',['Proposal tự đề xuất','Proposal nội bộ không cần duyệt','Proposal không có ngân sách'],'§7.1.','7.1');
+Q('m7','c','Khi viết solicited proposal, điều gì quan trọng nhất?','Bám chặt định dạng, tiêu chí và deadline',['Tự do sáng tạo định dạng','Chứng minh nhu cầu vì bên kia chưa biết','Không cần deadline'],'§7.1.','7.1');
+Q('m7','s','Nhóm tự gửi đề xuất cải tạo khu tự học cho nhà trường dù trường chưa yêu cầu. Đây là?','Unsolicited proposal',['Solicited proposal','Progress report','Memo'],'Tự đề xuất.','7.1');
+Q('m7','c','Unsolicited proposal phải chú ý điều gì?','Chứng minh rõ nhu cầu, giá trị và mức liên quan',['Bám chặt RFP','Chỉ cần báo giá thấp','Không cần background'],'Linh hoạt hơn nhưng phải chứng minh nhu cầu.','7.1');
+Q('m7','o','Phần đầu tiên của proposal theo tài liệu?','Cover page',['Executive summary','Background','Conclusion'],'Cover → summary → background → idea → analysis → benefits → timeline → marketing → finance → conclusion.','7.2');
+Q('m7','o','Phần nào đứng ngay sau Executive summary trong proposal?','Background',['Cover page','Benefits','Timeline'],'§7.2.','7.2');
+Q('m7','c','Phần “Proposal/idea” cần trả lời những câu hỏi nào?','Who, What, When, Where, Why, How',['Situation, Task, Action, Result','To, From, Date, Subject','Define, Analyze, Criteria'],'§7.2.','7.2');
+Q('m7','c','Phần Finance của proposal gồm gì?','Chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có',['Danh sách thành viên','Kết quả khảo sát','Lời cảm ơn nhà tài trợ'],'§7.2.','7.2');
+Q('m7','e','Phần nào KHÔNG thuộc các phần thường gặp của proposal?','Letter of transmittal',['Market / current-situation analysis','Marketing / communication plan','Timeline'],'Danh sách 10 phần ở §7.2.','7.2');
+Q('m7','e','Điều nào KHÔNG đúng với proposal chuyên nghiệp?','Phóng đại lợi ích để thuyết phục hơn',['Ngắn gọn, chính xác, có trích nguồn','Làm rõ điểm độc đáo và giá trị','Trình bày định dạng ổn định, thường là PDF'],'Không phóng đại.','7.2');
+Q('m7','c','Ethos là gì?','Độ tin cậy, năng lực, tư cách và thiện chí',['Cảm xúc, đam mê, đồng cảm','Logic, lý do, bằng chứng','Sự khan hiếm'],'§7.3.','7.3');
+Q('m7','s','“Theo khảo sát 300 sinh viên, 72% bỏ bữa sáng.” Yếu tố thuyết phục nào?','Logos',['Ethos','Pathos','Liking'],'Logic, bằng chứng.','7.3');
+Q('m7','s','Nhóm kể câu chuyện cảm động về một em nhỏ vượt khó để kêu gọi ủng hộ. Yếu tố nào?','Pathos',['Logos','Ethos','Authority'],'Cảm xúc, đồng cảm.','7.3');
+Q('m7','c','Theo tài liệu, pathos có thể thay thế bằng chứng không?','Không; cần cân bằng cả ba yếu tố',['Có, nếu câu chuyện đủ cảm động','Có, với khán giả trẻ','Có, khi thiếu thời gian'],'§7.3.','7.3');
+Q('m7','c','Dự án Creating Social Solutions có quy mô gợi ý bao nhiêu thành viên?','5–7',['2–3','8–10','Cá nhân'],'§7.4.','7.4');
+Q('m7','o','Ba giai đoạn của dự án nhóm theo thứ tự?','Thành lập team & proposal → Triển khai, theo dõi, đánh giá → Báo cáo cuối kỳ & thuyết trình',['Triển khai → Proposal → Báo cáo','Báo cáo → Thuyết trình → Proposal','Proposal → Báo cáo → Triển khai'],'§7.4.','7.4');
+Q('m7','e','Loại dự án nào KHÔNG thuộc các loại gợi ý?','Kinh doanh bất động sản thu lợi nhuận',['Sáng kiến giáo dục','Sáng kiến công nghệ số','Gắn kết cộng đồng'],'Gợi ý: giáo dục, công nghệ số, gắn kết cộng đồng, thiện nguyện bền vững.','7.4');
+
+// ---------- M8 (22) ----------
+Q('m8','c','Report là gì theo tài liệu?','Tài liệu ghi nhận và truyền đạt thông tin cho một audience, mục tiêu hoặc chức năng cụ thể',['Đề nghị thuyết phục chấp nhận kế hoạch','Thư xin việc','Biên bản họp'],'§8.1.','8.1');
+Q('m8','c','Informational report khác analytical report thế nào?','Informational trình bày dữ kiện; analytical diễn giải và khuyến nghị',['Informational luôn dài hơn','Analytical không có dữ liệu','Hai loại giống nhau'],'§8.1.','8.1');
+Q('m8','s','Báo cáo so sánh 3 phương án tổ chức sự kiện và khuyến nghị chọn phương án B. Loại nào?','Analytical report',['Informational report','Memo','Agenda'],'Có diễn giải và khuyến nghị.','8.1');
+Q('m8','s','Báo cáo chỉ liệt kê số người tham dự mỗi buổi, không nhận định. Loại nào?','Informational report',['Analytical report','Proposal','Cover letter'],'Trình bày dữ kiện.','8.1');
+Q('m8','e','Cặp phân loại nào KHÔNG có trong tài liệu?','Solicited vs. unsolicited report',['Short vs. long/formal','Routine vs. special','Vertical vs. lateral'],'Solicited/unsolicited là phân loại proposal.','8.1');
+Q('m8','o','Ba phần lớn của báo cáo chính thức theo thứ tự?','Preliminary → Body → Supplementary',['Body → Preliminary → Supplementary','Introduction → Body → Conclusion','Supplementary → Body → Preliminary'],'§8.2.','8.2');
+Q('m8','c','Executive summary/abstract thuộc phần nào?','Preliminary section',['Body','Supplementary section','Appendices'],'§8.2.','8.2');
+Q('m8','c','Recommendations thuộc phần nào của report?','Body',['Preliminary section','Supplementary section','Title page'],'§8.2.','8.2');
+Q('m8','c','Appendices và reference list thuộc phần nào?','Supplementary section',['Preliminary section','Body','Executive summary'],'§8.2.','8.2');
+Q('m8','e','Mục nào KHÔNG thuộc preliminary section?','Methodology',['Title page','Table of contents','List of illustrations'],'Methodology thuộc body.','8.2');
+Q('m8','o','Phần đầu tiên trong cấu trúc thực hành của progress report?','Project information',['Work completed','Next steps','Challenges encountered'],'Project information → overview → work completed → progress & results → challenges → solutions → next steps.','8.3');
+Q('m8','o','Phần cuối cùng của progress report?','Next steps',['Solutions taken','Work completed','Project overview'],'§8.3.','8.3');
+Q('m8','o','Trong progress report, phần nào đứng ngay sau “Challenges encountered”?','Solutions taken',['Next steps','Work completed','Project overview'],'§8.3.','8.3');
+Q('m8','e','Điều nào nên TRÁNH khi viết progress report?','Che giấu vấn đề bằng sự lạc quan quá mức',['Nêu rõ trách nhiệm và deadline','Giải thích dữ liệu','Nêu bước tiếp theo'],'§8.3.','8.3');
+Q('m8','o','Bước đầu tiên của quy trình survey?','Xác định chính xác điều muốn biết',['Pilot test','Thu thập và tally','Viết câu hỏi'],'§8.4.','8.4');
+Q('m8','o','Bước cuối cùng của quy trình survey?','Diễn giải ý nghĩa, không chỉ chép số',['Trình bày bằng bảng hoặc chart','Pilot test','Thu thập dữ liệu'],'§8.4.','8.4');
+Q('m8','o','Pilot test đứng ngay trước bước nào?','Thu thập, tally và tính tỷ lệ/giá trị trung bình',['Xác định target population','Giữ survey ngắn, tập trung','Diễn giải ý nghĩa'],'§8.4.','8.4');
+Q('m8','c','Pilot test là gì?','Thử survey với nhóm nhỏ trước khi thu thập chính thức',['Phân tích dữ liệu sau khảo sát','Chọn đối tượng khảo sát','Trình bày kết quả bằng chart'],'§8.4.','8.4');
+Q('m8','s','“Bạn có đồng ý rằng sự kiện của nhóm rất tuyệt vời không?” Câu hỏi mắc lỗi gì?','Leading question',['Câu hỏi Likert hợp lệ','Câu hỏi mở','Không có lỗi'],'Phải dùng từ trung lập, tránh leading question.','8.4');
+Q('m8','e','Loại câu hỏi nào KHÔNG được tài liệu liệt kê?','True/False có bẫy',['Likert scale','Multiple choice','Open-ended'],'Likert, multiple choice, Yes/No/Maybe, open-ended.','8.4');
+Q('m8','c','Mỗi câu hỏi khảo sát phải liên kết với điều gì?','Một mục tiêu dự án',['Một thành viên nhóm','Một trang trong báo cáo','Một nhà tài trợ'],'§8.4.','8.4');
+Q('m8','c','Theo checklist báo cáo tốt, báo cáo cần đạt điều gì?','Tự đứng vững mà không cần tác giả giải thích miệng',['Càng dài càng tốt','Không cần định nghĩa thuật ngữ','Hình và bảng không cần nhãn'],'§8.5.','8.5');
+
+// ---------- M9 (28) ----------
+Q('m9','c','Nhận định nào đúng về giao tiếp phi ngôn ngữ?','Luôn xảy ra; cả im lặng cũng gửi thông điệp',['Chỉ xảy ra khi có cử chỉ','Giống nhau ở mọi nền văn hóa','Chỉ đi qua một kênh tại một thời điểm'],'§9.1.','9.1');
+Q('m9','e','Điều nào KHÔNG đúng về giao tiếp phi ngôn ngữ?','Luôn có nghĩa giống nhau ở mọi văn hóa',['Diễn ra qua nhiều kênh cùng lúc','Có thể mâu thuẫn với lời nói','Điều tiết lượt nói'],'Phụ thuộc văn hóa, bối cảnh và quan hệ.','9.1');
+Q('m9','c','Phi ngôn ngữ có thể có quan hệ nào với lời nói?','Lặp lại, bổ sung, mâu thuẫn hoặc thay thế',['Chỉ lặp lại','Chỉ mâu thuẫn','Không liên quan'],'§9.1.','9.1');
+Q('m9','c','Paralanguage gồm những gì?','Tone, pitch, volume, speed',['Quần áo, phụ kiện, vật dụng','Khoảng cách giữa người nói','Cử động cơ thể'],'§9.1.','9.1');
+Q('m9','c','Artifacts trong phi ngôn ngữ là gì?','Quần áo, phụ kiện, vật dụng',['Giọng nói','Đụng chạm','Thời gian'],'§9.1.','9.1');
+Q('m9','e','Loại nào KHÔNG thuộc tám loại phi ngôn ngữ trong tài liệu?','Written words',['Space','Environment','Touch'],'8 loại: space, time, appearance, body movements, touch, paralanguage, artifacts, environment.','9.1');
+Q('m9','s','Diễn giả nói quá nhanh, giọng đều đều, âm lượng nhỏ. Vấn đề thuộc loại nào?','Paralanguage',['Artifacts','Space','Environment'],'Tone, pitch, volume, speed.','9.1');
+Q('m9','s','Ứng viên mặc vest và mang cặp hồ sơ gọn gàng. Loại phi ngôn ngữ nào?','Artifacts',['Paralanguage','Time','Touch'],'Quần áo, phụ kiện, vật dụng.','9.1');
+Q('m9','s','Người nói đứng quá sát khiến người nghe lùi lại. Loại nào?','Space',['Touch','Time','Environment'],'Không gian, khoảng cách.','9.1');
+Q('m9','s','Đến phỏng vấn sớm 10 phút thể hiện sự tôn trọng. Loại nào?','Time',['Space','Artifacts','Body movements'],'§9.1.','9.1');
+Q('m9','o','Ba bước của một cử chỉ khi thuyết trình theo thứ tự?','Anticipation → Implementation → Relaxation',['Implementation → Anticipation → Relaxation','Relaxation → Implementation → Anticipation','Anticipation → Relaxation → Implementation'],'§9.2.','9.2');
+Q('m9','o','Bước cuối của một cử chỉ là gì?','Relaxation',['Anticipation','Implementation','Return'],'§9.2.','9.2');
+Q('m9','e','Điều nào KHÔNG nên làm khi trình bày (delivery)?','Nhìn slide thay cho nhìn khán giả',['Tư thế mở, di chuyển có chủ đích','Eye contact phân bổ đều','Điều chỉnh tone, tốc độ, volume'],'Không nhìn slide, bảng hoặc màn hình thay cho khán giả.','9.2');
+Q('m9','c','Tiêu chí của visual aid là gì?','Big – Clear – Simple – Consistent',['Bright – Colorful – Long – Detailed','Bold – Creative – Small – Varied','Brief – Complex – Static – Colorful'],'§9.3.','9.3');
+Q('m9','s','Hàng ghế cuối không đọc được chữ trên slide. Vi phạm tiêu chí nào?','Big',['Consistent','Simple','Clear'],'Big: hàng ghế cuối đọc được.','9.3');
+Q('m9','s','Mỗi slide dùng một font và bảng màu khác nhau. Vi phạm tiêu chí nào?','Consistent',['Big','Simple','Clear'],'Nhất quán phong cách.','9.3');
+Q('m9','e','Điều nào KHÔNG phải thực hành tốt với visual aid?','Nhồi nhiều ý vào một slide',['Một ý chính mỗi slide','Font đủ lớn, tương phản cao','Luôn có phương án dự phòng'],'§9.3.','9.3');
+Q('m9','c','Persuasion là gì?','Trình bày lập luận để thay đổi điều khán giả nghĩ, cảm nhận hoặc làm',['Ép khán giả đồng ý bằng mọi giá','Chỉ cung cấp thông tin trung lập','Kể chuyện giải trí'],'§9.4.','9.4');
+Q('m9','e','Chức năng nào KHÔNG thuộc chức năng của thuyết phục trong tài liệu?','Entertain only',['Stimulate','Convince','Develop tolerance'],'Stimulate, convince, call to action, increase consideration, develop tolerance.','9.4');
+Q('m9','s','“Ưu đãi chỉ còn hôm nay!” dựa vào nguyên tắc ảnh hưởng nào?','Scarcity',['Reciprocity','Liking','Authority'],'§9.4.','9.4');
+Q('m9','s','“Đã có 10.000 sinh viên đăng ký.” Nguyên tắc nào?','Consensus / social proof',['Authority','Scarcity','Commitment and consistency'],'§9.4.','9.4');
+Q('m9','s','Cửa hàng tặng mẫu thử, khách thấy ngại nên mua. Nguyên tắc nào?','Reciprocity',['Liking','Scarcity','Authority'],'§9.4.','9.4');
+Q('m9','s','Bạn đã ký ủng hộ dự án, sau đó dễ đồng ý tham gia tình nguyện hơn. Nguyên tắc nào?','Commitment and consistency',['Scarcity','Authority','Liking'],'§9.4.','9.4');
+Q('m9','e','Điều nào KHÔNG thuộc sáu nguyên tắc ảnh hưởng?','Intimacy',['Authority','Liking','Reciprocity'],'Intimacy thuộc Trust Equation.','9.4');
+Q('m9','e','Hành vi nào vi phạm đạo đức thuyết phục?','Giả vờ chắc chắn khi chỉ có xác suất',['Trích nguồn bằng chứng','Nêu rõ tổ chức mình đại diện','Thừa nhận giới hạn dữ liệu'],'§9.5.','9.5');
+Q('m9','s','Diễn giả nói “chỉ có hai lựa chọn: ủng hộ dự án hoặc chống lại sinh viên”. Lỗi đạo đức nào?','Biến vấn đề phức tạp thành lựa chọn trắng–đen giả tạo',['Tự nhận là chuyên gia','Che giấu mục đích','Dùng bằng chứng không liên quan'],'§9.5.','9.5');
+Q('m9','c','Elevator pitch dài khoảng bao lâu?','30–60 giây',['5–10 phút','3–5 giây','15 phút'],'§9.6.','9.6');
+Q('m9','o','Phần đầu tiên của elevator pitch là gì?','Hook và bạn là ai',['Call to action','Lợi ích nổi bật','Audience / target'],'Hook & bạn là ai → giá trị → audience → lợi ích & khác biệt → CTA.','9.6');
+
+// ---------- M10 (26) ----------
+Q('m10','c','Job khác career thế nào?','Job tương đối ngắn hạn, tập trung thu nhập; career là hành trình dài hạn hướng đến học hỏi và phát triển',['Job dài hạn hơn career','Hai khái niệm giống nhau','Career chỉ là việc bán thời gian'],'§10.1.','10.1');
+Q('m10','c','Career path là gì?','Chuỗi vai trò theo thời gian, có thể đổi hướng, dừng hoặc tái thiết kế',['Một công việc thời vụ','Bản CV','Một buổi phỏng vấn'],'§10.1.','10.1');
+Q('m10','o','Các giai đoạn nghề nghiệp theo thứ tự?','Growth → Exploration → Establishing → Maintaining/Reinventing',['Exploration → Growth → Maintaining → Establishing','Establishing → Exploration → Growth → Reinventing','Growth → Establishing → Exploration → Maintaining'],'§10.1.','10.1');
+Q('m10','o','Giai đoạn nào đứng ngay sau Exploration?','Establishing',['Growth','Maintaining / Reinventing','Adjust'],'§10.1.','10.1');
+Q('m10','c','Theo tài liệu, khám phá nghề nghiệp bao gồm cả điều gì?','Học điều mình không muốn',['Chỉ tìm việc lương cao','Chọn ngành theo bạn bè','Tránh thực tập'],'§10.1.','10.1');
+Q('m10','e','Công cụ nào KHÔNG được nêu là công cụ khám phá nghề nghiệp?','Thi trắc nghiệm IQ',['Mentor','Job shadow','Informational interview'],'Mentor, career course/counselor, job shadow, informational interview, internship.','10.1');
+Q('m10','c','Hard skills là gì?','Kỹ năng kỹ thuật / chuyên môn',['Giao tiếp, teamwork','Quản lý thời gian','Lãnh đạo'],'§10.2.','10.2');
+Q('m10','s','Giao tiếp, giải quyết vấn đề và quản lý thời gian thuộc loại kỹ năng nào?','Soft / transferable skills',['Hard skills','Technical skills','Chứng chỉ chuyên ngành'],'§10.2.','10.2');
+Q('m10','o','Chu kỳ career development theo thứ tự?','Set goals → Take actions → Review progress → Adjust',['Take actions → Set goals → Adjust → Review progress','Review progress → Set goals → Take actions → Adjust','Set goals → Review progress → Take actions → Adjust'],'§10.2.','10.2');
+Q('m10','e','Khi chọn major, điều nào KHÔNG thuộc các yếu tố cần cân bằng?','Lựa chọn của đa số bạn bè',['Sở thích','Giá trị cá nhân','Cơ hội việc làm thực tế'],'§10.2.','10.2');
+Q('m10','c','Theo tài liệu, résumé là gì?','Tài liệu marketing bản thân',['Bản sao bảng điểm','Thư cảm ơn','Hợp đồng lao động'],'§10.3.','10.3');
+Q('m10','e','Điều nào KHÔNG nên đưa vào résumé?','Kỳ vọng lương',['Skills','Volunteer experience','Projects và achievement'],'§10.3.','10.3');
+Q('m10','e','Thông tin nào KHÔNG nên có trong CV?','Tuổi, giới, chiều cao, cân nặng',['Contact information','Education và training','Work experience'],'§10.3.','10.3');
+Q('m10','c','Résumé của sinh viên nên dài bao nhiêu?','Ưu tiên một trang nếu đủ (thường 1–2 trang)',['5–6 trang','Càng dài càng tốt','Nửa trang không cần chi tiết'],'§10.3.','10.3');
+Q('m10','e','Dạng nào KHÔNG phải dạng résumé trong tài liệu?','Random',['Reverse chronological','Functional','Hybrid'],'§10.3.','10.3');
+Q('m10','c','Résumé nên sắp xếp thông tin thế nào?','Thông tin mới nhất trước',['Thông tin cũ nhất trước','Theo thứ tự chữ cái','Ngẫu nhiên'],'§10.3.','10.3');
+Q('m10','c','Cover letter trả lời hai câu hỏi nào?','Why this job/company? và Why you?',['How much? và When?','Where? và Who?','What? và How long?'],'§10.4.','10.4');
+Q('m10','o','Phần đầu tiên của cover letter là gì?','Header và greeting',['Opening','Middle','Closing'],'Header & greeting → Opening → Middle → Closing.','10.4');
+Q('m10','c','Phần Middle của cover letter nên có gì?','2–3 trải nghiệm phù hợp, dùng STAR, liên hệ job description',['Kỳ vọng lương','Lặp lại toàn bộ résumé','Lời cảm ơn và chữ ký'],'§10.4.','10.4');
+Q('m10','s','Không biết tên người tuyển dụng, nên mở đầu cover letter thế nào?','Dear Hiring Manager',['Hey bạn','Gửi ai đó','Bỏ trống lời chào'],'§10.4.','10.4');
+Q('m10','e','Lỗi nào cần TRÁNH khi viết cover letter?','Lặp lại nguyên văn résumé',['Liên hệ job description','Cảm ơn và đề nghị phỏng vấn','Nêu vị trí và nguồn tin'],'Tránh thư quá chung, lặp résumé, sai tên, giọng quá thân mật hoặc kiêu ngạo.','10.4');
+Q('m10','c','STAR là viết tắt của gì?','Situation – Task – Action – Result',['Skill – Talent – Ability – Result','Situation – Target – Answer – Review','Strategy – Task – Achievement – Reward'],'§10.5.','10.5');
+Q('m10','o','Trong STAR, bước nào đứng ngay trước Result?','Action',['Task','Situation','Review'],'§10.5.','10.5');
+Q('m10','c','Nên gửi thank-you email sau phỏng vấn khi nào?','Trong 24 giờ',['Sau 1 tuần','Khi có kết quả','Không cần gửi'],'§10.5.','10.5');
+Q('m10','e','Loại phỏng vấn nào KHÔNG có trong tài liệu?','Written essay interview',['Panel','Group','Phone / video'],'Phone/video, one-on-one, panel, group.','10.5');
+Q('m10','c','Sau Mini Career Fair, nên chọn bao nhiêu mục tiêu cải thiện trong ba tháng?','2–3',['1','5–7','10'],'§10.6.','10.6');
+
+// ---------- M11 (8) ----------
+Q('m11','c','Một bài thuyết trình từ báo cáo cuối kỳ nên có bao nhiêu core message?','Một',['Ba','Năm','Càng nhiều càng tốt'],'§11.1.','11.1');
+Q('m11','c','Nên chọn bao nhiêu ý hỗ trợ cho core message?','3–4 ý',['1 ý','8–10 ý','Toàn bộ nội dung báo cáo'],'Problem, solution, results, recommendations.','11.1');
+Q('m11','c','Bảng dữ liệu chi tiết của báo cáo nên đặt ở đâu?','Backup slides',['Slide mở đầu','Slide kết luận','Đọc to từng dòng'],'§11.1.','11.1');
+Q('m11','c','Cách dùng report khi thuyết trình?','Dùng làm nguồn, không đọc report như script',['Đọc nguyên văn report','Chiếu toàn bộ report lên slide','Bỏ qua report'],'§11.1.','11.1');
+Q('m11','e','Ý hỗ trợ nào KHÔNG thuộc 4 ý gợi ý?','Danh sách thành viên',['Problem','Solution','Recommendations'],'Problem, solution, results, recommendations.','11.1');
+Q('m11','c','Slide trong bài thuyết trình nên đóng vai trò gì?','Nhấn mạnh, không chép lời nói',['Chứa toàn bộ lời thoại','Thay thế người nói','Chỉ để trang trí'],'§11.1.','11.1');
+Q('m11','s','Nhóm 5 người chuẩn bị thuyết trình cuối kỳ. Cách phân vai đúng?','Chia vai và thời gian nói cân bằng, thiết kế transition giữa người nói',['Một người nói hết cho chắc','Ai thích thì nói, không cần chia','Mỗi người đọc một chương báo cáo'],'§11.1.','11.1');
+Q('m11','c','Q&A nên được chuẩn bị thế nào?','Dự đoán câu hỏi, phân người trả lời theo chuyên môn',['Không cần chuẩn bị','Một người trả lời mọi câu','Từ chối trả lời câu khó'],'§11.1.','11.1');
+})();

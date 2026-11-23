@@ -1,0 +1,202 @@
+[
+ {
+  "id": 175,
+  "question": "Why we need a stopping criterion when we are using the HAC?",
+  "options": [
+   "The algorithm will turn our data into small clusters.",
+   "The algorithm will turn our data into just one cluster.",
+   "The algorithm will not start working if we don't assign a number of clusters.",
+   "The stopping criterion ensures centroids are calculated correctly."
+  ]
+ },
+ {
+  "id": 176,
+  "question": "A p-value is:",
+  "options": [
+   "the smallest significance level at which the null hypothesis would be rejected",
+   "the probability of the null hypothesis being true",
+   "the probability of the null hypothesis being false",
+   "the smallest significance level at which the null hypothesis is accepted"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "A machine learning model shows continuously decreasing training error but starts to have increasing error on the test set as its complexity grows. Which explanation best describes this situation?",
+  "options": [
+   "The model is too simple and fails to capture the underlying patterns in the data, leading to underfitting.",
+   "The dataset is too large for the model to learn anything meaningful, causing instability in both training and testing error.",
+   "The model is too complex, capturing noise and specific patterns in the training data, which reduces its ability to generalize to new data, resulting in overfitting.",
+   "The model features were not properly normalized or standardized, which causes differences in scale to dominate the learning process."
+  ]
+ },
+ {
+  "id": 178,
+  "question": "Among the types of Machine Learning, which method works by providing the model with a labeled dataset (with both inputs and correct outputs), so that the model can learn to make predictions for new data?",
+  "options": [
+   "Reinforcement Learning - learning through trial, error, and rewards.",
+   "Supervised Learning - learning with labeled data.",
+   "Unsupervised Learning - learning from unlabeled data.",
+   "Deep Learning - a special branch of Machine Learning based on multi-layer neural networks."
+  ]
+ },
+ {
+  "id": 179,
+  "question": "According to the DBSCAN required inputs, which statement describes the n_clu input?",
+  "options": [
+   "Function to calculate distance.",
+   "Radius of local neighborhood.",
+   "Determines density threshold (for fixed ε) (The minimum amount of points for a particular point to be consider a core point of a cluster).",
+   "The maximum amount of observations for a particular point to be consider a core point of a cluster."
+  ]
+ },
+ {
+  "id": 180,
+  "question": "BOTH Ridge regression and Lasso regression",
+  "options": [
+   "do not adjust the cost function used to estimate a model.",
+   "add a term to the loss function proportional to a regularization parameter.",
+   "add a term to the loss function proportional to the square of parameter coefficients.",
+   "add a term to the loss function proportional to the absolute value of parameter coefficients."
+  ]
+ },
+ {
+  "id": 182,
+  "question": "If a single decision tree model overfits the data, how can an ensemble method like Random Forest help?",
+  "options": [
+   "By building multiple trees on bootstrapped datasets and averaging their predictions.",
+   "By pruning the original tree and applying logistic regression to the residuals.",
+   "By combining several kernel methods to generate a more flexible decision boundary.",
+   "By forcing each tree to only use support vectors as input during training."
+  ]
+ },
+ {
+  "id": 183,
+  "question": "In PCA, how does the explained variance ratio of each principal component help in determining the optimal number of components?",
+  "options": [
+   "By selecting components with the highest explained variance ratio",
+   "By selecting components with the lowest explained variance ratio",
+   "By ignoring the explained variance ratio and always using all components",
+   "By using the cumulative explained variance ratio to find an elbow point in the scree plot"
+  ]
+ },
+ {
+  "id": 184,
+  "question": "In k-fold cross-validation, how will increase of k affect the variance (across subsamples) of estimated model parameters?",
+  "options": [
+   "Increasing of k will not affect the variance of estimated parameters.",
+   "Increasing of k will usually reduce the variance of estimated parameters.",
+   "Increasing of k will usually increase the variance of estimated parameters.",
+   "Increasing of k will increase the variance of estimated parameters if models are underfit, but reduce it if models are overfit."
+  ]
+ },
+ {
+  "id": 185,
+  "question": "In SVM, what is the purpose of support vectors?",
+  "options": [
+   "They are used to define the margin between classes.",
+   "They are outliers that are ignored during training.",
+   "They are the data points that lie closest to the decision boundary.",
+   "They are the weights assigned to features in the input data."
+  ]
+ },
+ {
+  "id": 186,
+  "question": "In Frequentist statistics, a 95% confidence interval for the mean of a dataset means:",
+  "options": [
+   "There is a 95% probability that the true mean lies inside this specific interval.",
+   "If the same experiment is repeated many times, about 95% of the calculated intervals would contain the true mean.",
+   "The mean will change 95% of the time depending on the sample size.",
+   "The confidence interval always contains exactly 95% of the data points."
+  ]
+ },
+ {
+  "id": 187,
+  "question": "In an SVM model, what is the primary purpose of the regularization parameter C in the cost function?",
+  "options": [
+   "C scales all input features so that each feature contributes equally to distance calculations in the model.",
+   "C determines which kernel function will be automatically selected by the algorithm for classification.",
+   "C controls the balance between maximizing the margin and minimizing misclassification, allowing the model to tolerate some errors while reducing overfitting.",
+   "C limits the number of support vectors that can be included in defining the decision boundary of the model."
+  ]
+ },
+ {
+  "id": 188,
+  "question": "These are two main advantages of decision trees:",
+  "options": [
+   "They do not tend to overfit and are not sensitive to changes in data",
+   "They are very visual and easy to interpret",
+   "They are resistant to outliers and output scaled features",
+   "They output both parameters and significance levels"
+  ]
+ },
+ {
+  "id": 189,
+  "question": "This is the best way to choose the number of trees to build on a Bagging ensemble.",
+  "options": [
+   "Choose a large number of trees, typically above 100",
+   "Prioritize training error metrics over out of bag sample",
+   "Tune number of trees as a hyperparameter that needs to be optimized",
+   "Choose a number of trees past the point of diminishing returns"
+  ]
+ },
+ {
+  "id": 190,
+  "question": "This option describes a way of turning a regression problem for a classification problem:",
+  "options": [
+   "Create a new variable that flags 1 for above a certain value and 0 otherwise",
+   "Use outlier treatment",
+   "Use missing value handling",
+   "Create a new variable that uses autoencoding to transform a continuous outcome into categorical"
+  ]
+ },
+ {
+  "id": 192,
+  "question": "The stratified sampling technique in machine learning is used ?",
+  "options": [
+   "To create a balanced dataset",
+   "To reduce the number of features",
+   "To ensure that each class is represented proportionally in training and testing sets",
+   "To increase the size of the dataset"
+  ]
+ },
+ {
+  "id": 193,
+  "question": "The difference between Euclidean distance and Manhattan distance is",
+  "options": [
+   "Euclidean distance considers only horizontal or vertical movements, while Manhattan distance allows diagonal movements.",
+   "Euclidean distance is the sum of absolute differences, while Manhattan distance is the sum of squared differences.",
+   "Euclidean distance measures the straight-line distance, while Manhattan distance measures the sum of absolute differences along each dimension",
+   "Euclidean distance is only applicable to numerical data, while Manhattan distance is used for categorical data"
+  ]
+ },
+ {
+  "id": 194,
+  "question": "The following statement is an example of a business case where we can use the Cosine Distance?",
+  "options": [
+   "Cosine is useful for coordinate based measurements.",
+   "Cosine is better for data such as text where location of occurrence is less important.",
+   "Cosine distance is more sensitive to the curse of dimensionality",
+   "Cosine distance is less sensitive to the curse of dimensionality"
+  ]
+ },
+ {
+  "id": 195,
+  "question": "The main purpose of scaling features before fitting a k nearest neighbor model is to:",
+  "options": [
+   "Help find the appropriate value of k",
+   "Ensure decision boundaries have roughly the same size for all classes",
+   "Ensure that features have similar influence on the distance calculation",
+   "Break ties in case there is the same number of neighbors of different classes next to a given observation"
+  ]
+ },
+ {
+  "id": 196,
+  "question": "The bias-variance tradeoff is an important concept in model selection. Which statement best describes this tradeoff?",
+  "options": [
+   "Increasing model complexity always reduces both bias and variance at the same time.",
+   "Bias and variance are completely independent and can be minimized separately in any model.",
+   "As model complexity increases, bias decreases and variance increases, so the goal is to balance both to minimize total error.",
+   "A model with both high bias and high variance will achieve the lowest test error because the two errors cancel each other out."
+  ]
+ }
+]

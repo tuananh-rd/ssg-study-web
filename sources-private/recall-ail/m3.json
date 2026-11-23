@@ -1,0 +1,182 @@
+[
+  {
+    "ref": "3.1",
+    "q": "Về bản chất thuật toán, Cây Quyết định (Decision Tree) hoạt động dựa trên nguyên lý giải thuật nào?",
+    "correct": "Thuật toán tham lam (greedy algorithm) phân tách dữ liệu dựa trên các thước đo độ vẩn đục (impurity measures)",
+    "wrong": [
+      "Thuật toán quy hoạch động tối ưu hóa toàn cục các đường phân cách",
+      "Thuật toán bầy đàn tối thiểu hóa khoảng cách giữa các điểm dữ liệu",
+      "Thuật toán hạ độ dốc ngẫu nhiên cực tiểu hóa hàm mất mát Hinge Loss"
+    ],
+    "explain": "Cây Quyết định là thuật toán tham lam (greedy algorithm) lựa chọn phân tách tối ưu cục bộ tại mỗi nút dựa trên các thước đo độ vẩn đục.",
+    "tip": "Cây quyết định = greedy algorithm + impurity measures."
+  },
+  {
+    "ref": "3.1",
+    "q": "Khi so sánh tốc độ Dự đoán (Prediction) với KNN và Hồi quy Logistic, Cây Quyết định có đặc điểm gì?",
+    "correct": "Rất nhanh, vì chỉ cần duyệt theo các nhánh cây từ gốc xuống lá",
+    "wrong": [
+      "Chậm nhất, vì phải tính khoảng cách với toàn bộ các điểm dữ liệu trong tập huấn luyện",
+      "Rất chậm, vì phải giải hệ phương trình tối ưu hóa tại thời điểm nhận mẫu mới",
+      "Tương đương với KNN vì cả hai đều là mô hình học lười (Lazy learner)"
+    ],
+    "explain": "Trong giai đoạn dự đoán, Cây Quyết định duyệt qua các điều kiện phân nhánh rất nhanh chóng, vượt trội hơn KNN vốn phải quét khoảng cách toàn bộ tập mẫu.",
+    "tip": "Dự đoán: Cây quyết định duyệt nhánh cực nhanh."
+  },
+  {
+    "ref": "3.1",
+    "q": "Đặc điểm của ranh giới quyết định (Decision Boundary) trong mô hình Cây Quyết định là gì?",
+    "correct": "Có cấu trúc trực quan và mang tính phân cấp (hierarchical)",
+    "wrong": [
+      "Là một siêu phẳng phẳng tuyệt đối không có tính phân cấp",
+      "Là đường cong mịn được định nghĩa bởi hàm kích hoạt Sigmoid",
+      "Luôn cố định và không thể thay đổi khi thêm dữ liệu huấn luyện mới"
+    ],
+    "explain": "Ranh giới quyết định của Cây Quyết định được tạo bởi các phép cắt trực giao từng bước theo đặc trưng, mang tính phân cấp và rất trực quan.",
+    "tip": "Cây quyết định: ranh giới trực quan, phân cấp."
+  },
+  {
+    "ref": "3.1",
+    "q": "Thước đo Entropy trong cơ chế phân tách của Cây Quyết định phản ánh điều gì?",
+    "correct": "Mức độ hỗn loạn của thông tin trong tập dữ liệu",
+    "wrong": [
+      "Khoảng cách biên cực đại giữa hai lớp phân loại đối nghịch",
+      "Số lượng mẫu tối thiểu cần thiết để tạo một nút lá mới",
+      "Tỷ lệ giữa các mẫu dự đoán đúng và tổng số mẫu kiểm tra"
+    ],
+    "explain": "Entropy là thước đo mức độ hỗn loạn (độ vẩn đục) của thông tin; entropy càng cao thì dữ liệu tại nút càng hỗn tạp.",
+    "tip": "Entropy = độ hỗn loạn thông tin."
+  },
+  {
+    "ref": "3.1",
+    "q": "Khái niệm Information Gain (Độ lợi thông tin) được định nghĩa như thế nào?",
+    "correct": "Độ lệch giữa entropy trước và sau khi phân tách dữ liệu",
+    "wrong": [
+      "Tổng độ vẩn đục của tất cả các nút lá sau khi kết thúc quá trình cắt tỉa",
+      "Tỷ lệ phần trăm dữ liệu được mô hình giải thích tương đương R-squared",
+      "Mức tăng độ chính xác phân loại khi chuyển từ cây đơn lẻ sang rừng ngẫu nhiên"
+    ],
+    "explain": "Information Gain đo lường lượng thông tin nhận được sau phép phân tách, tính bằng độ chênh lệch giữa Entropy ban đầu và Entropy sau khi chia tách.",
+    "tip": "Information Gain = Entropy trước - Entropy sau chia."
+  },
+  {
+    "ref": "3.1",
+    "q": "Chỉ số Gini Index trong phân tách Cây Quyết định đo lường điều gì?",
+    "correct": "Thước đo mức độ phân loại sai nếu chọn ngẫu nhiên một phần tử trong tập dữ liệu",
+    "wrong": [
+      "Tổng bình phương khoảng cách giữa các phần tử và trọng tâm lớp",
+      "Xác suất phần tử đó rơi vào vùng biên không thể quyết định",
+      "Mức độ tương quan đa biến giữa các cặp thuộc tính đầu vào"
+    ],
+    "explain": "Gini Index là thước đo độ vẩn đục biểu thị xác suất một phần tử bị gán nhãn sai nếu nó được phân loại ngẫu nhiên theo phân phối nhãn trong nút.",
+    "tip": "Gini Index = đo mức độ phân loại sai ngẫu nhiên."
+  },
+  {
+    "ref": "3.2",
+    "q": "Vấn đề thường gặp nhất và là nhược điểm lớn của Cây Quyết định là gì?",
+    "correct": "Có xu hướng quá khớp (overfit) với dữ liệu huấn luyện và có phương sai cao (high variance)",
+    "wrong": [
+      "Bị dưới khớp (underfitting) nghiêm trọng do các giả định thống kê khắt khe",
+      "Chỉ hoạt động được với dữ liệu có nhãn nhị phân dạng 0 và 1",
+      "Không thể biểu diễn được các luật quyết định logic trực quan"
+    ],
+    "explain": "Cây Quyết định dễ phát triển quá sâu để khớp từng điểm nhiễu, làm cho cây nhạy cảm với biến động nhỏ và dẫn đến phương sai cao (Overfitting).",
+    "tip": "Cây quyết định: dễ Overfitting và phương sai cao."
+  },
+  {
+    "ref": "3.2",
+    "q": "Kỹ thuật Cắt tỉa (Pruning) được áp dụng trên Cây Quyết định nhằm mục đích chính nào?",
+    "correct": "Loại bỏ các nhánh không mang lại nhiều giá trị dự đoán để cải thiện khả năng tổng quát hóa",
+    "wrong": [
+      "Chuyển đổi toàn bộ các biến danh mục sang dạng biến liên tục",
+      "Mở rộng thêm nhiều tầng lá để khớp hoàn hảo 100% dữ liệu huấn luyện",
+      "Kết hợp ngẫu nhiên nhiều cây lại với nhau thành mô hình Bagging"
+    ],
+    "explain": "Pruning loại bỏ những cành/lá dư thừa hoặc quá chi tiết nhằm giúp cây đơn giản hơn, từ đó tăng cường khả năng tổng quát hóa trên dữ liệu mới.",
+    "tip": "Pruning = cắt cành thừa để giảm Overfitting."
+  },
+  {
+    "ref": "3.2",
+    "q": "Việc cắt tỉa (Pruning) trong Cây Quyết định thường được căn cứ trên tiêu chí nào?",
+    "correct": "Ngưỡng lỗi phân loại (classification error threshold)",
+    "wrong": [
+      "Khoảng cách Manhattan giữa các điểm lân cận",
+      "Hệ số điều chuẩn L2 của các biến độc lập",
+      "Mức độ tăng dung lượng bộ nhớ của mô hình"
+    ],
+    "explain": "Cắt tỉa nhánh thường dựa trên việc kiểm tra xem nếu bỏ một nhánh thì lỗi phân loại (classification error) có vượt ngưỡng cho phép hay không.",
+    "tip": "Pruning dựa trên classification error threshold."
+  },
+  {
+    "ref": "3.3",
+    "q": "Cây Quyết định được đánh giá là rất dễ giải thích cho con người nhờ vào việc sử dụng cấu trúc logic nào?",
+    "correct": "Logic 'nếu... thì... nếu không' (if... then... else)",
+    "wrong": [
+      "Hàm tích phân phi tuyến nhiều lớp",
+      "Các phương trình hồi quy siêu phẳng trong không gian vô hạn chiều",
+      "Ma trận chuyển đổi Markov bậc cao"
+    ],
+    "explain": "Cây Quyết định biểu diễn tri thức dưới dạng các mệnh đề điều kiện if-then-else tuần tự, giúp con người dễ dàng đọc hiểu và giải thích nguyên nhân.",
+    "tip": "Cây quyết định = logic if... then... else."
+  },
+  {
+    "ref": "3.3",
+    "q": "Nhận định nào sau đây đúng về tính linh hoạt trong việc xử lý kiểu dữ liệu của Cây Quyết định?",
+    "correct": "Xử lý được mọi loại dữ liệu từ nhị phân, thứ tự đến liên tục",
+    "wrong": [
+      "Chỉ xử lý được dữ liệu số liên tục, không dùng được cho dữ liệu danh mục",
+      "Bắt buộc tất cả các biến phải được chuyển thành biến phân loại nhị phân 0/1",
+      "Chỉ hoạt động được với dữ liệu đã chuyển đổi bằng hàm Log"
+    ],
+    "explain": "Cây Quyết định rất linh hoạt, có thể xử lý trực tiếp nhiều dạng dữ liệu khác nhau như nhị phân, thứ tự (ordinal) hay liên tục (continuous).",
+    "tip": "Cây quyết định cân được mọi loại dữ liệu: nhị phân, thứ tự, liên tục."
+  },
+  {
+    "ref": "3.3",
+    "q": "Về mặt tiền xử lý dữ liệu, Cây Quyết định có ưu điểm vượt trội nào so với KNN và SVM?",
+    "correct": "Không yêu cầu tiền xử lý dữ liệu phức tạp hay chuẩn hóa đặc trưng (scaling)",
+    "wrong": [
+      "Tự động điền tất cả các giá trị thiếu bằng phương pháp trung vị",
+      "Tự động tạo ra các đặc trưng bậc cao đa thức mà không cần thư viện hỗ trợ",
+      "Bắt buộc phải áp dụng kiểm định giả thuyết trước khi đọc dữ liệu"
+    ],
+    "explain": "Cây Quyết định phân tách chỉ dựa trên thứ tự giá trị của từng đặc trưng độc lập, không dựa vào khoảng cách hình học nên không cần chuẩn hóa thang đo (scaling).",
+    "tip": "Cây quyết định: không cần Feature Scaling."
+  },
+  {
+    "ref": "3.4",
+    "q": "Trong đoạn mã `DecisionTreeClassifier(criterion='entropy', max_depth=5)`, tham số `criterion='entropy'` có ý nghĩa gì?",
+    "correct": "Sử dụng thước đo Entropy để đánh giá và lựa chọn đặc trưng phân tách",
+    "wrong": [
+      "Sử dụng chỉ số Gini Index để đo mức độ phân loại sai",
+      "Áp dụng hàm mất mát Hinge Loss trong quá trình huấn luyện",
+      "Tính toán khoảng cách theo chuẩn Euclidean cho các điểm lân cận"
+    ],
+    "explain": "Tham số `criterion='entropy'` yêu cầu thuật toán sử dụng thước đo Entropy (thay vì Gini) để tính toán Information Gain khi phân nhánh.",
+    "tip": "criterion='entropy' là dùng thước đo Entropy để chia nhánh."
+  },
+  {
+    "ref": "3.4",
+    "q": "Vai trò của tham số `max_depth=5` trong khởi tạo `DecisionTreeClassifier` là gì?",
+    "correct": "Giới hạn độ sâu tối đa của cây để ngăn ngừa hiện tượng quá khớp (overfitting)",
+    "wrong": [
+      "Xác định số lượng cây con được tạo ra trong rừng ngẫu nhiên",
+      "Quy định số lượng đặc trưng tối đa được chọn tại mỗi lần phân tách",
+      "Chia dữ liệu thành 5 phần bằng nhau để kiểm chéo K-fold"
+    ],
+    "explain": "`max_depth` giới hạn số tầng tối đa của cây, chặn không cho cây phát triển quá sâu để tránh overfitting.",
+    "tip": "max_depth giới hạn độ sâu cây để chống overfit."
+  },
+  {
+    "ref": "3.4",
+    "q": "Để kiểm soát và phòng ngừa hiện tượng quá khớp (overfitting) trong Cây Quyết định, ta có thể tinh chỉnh những yếu tố nào?",
+    "correct": "Tinh chỉnh các tham số như `max_depth`, `min_samples_leaf` hoặc sử dụng kiểm chéo (cross-validation)",
+    "wrong": [
+      "Tăng số bậc đa thức của các đặc trưng đầu vào lên bậc 4 hoặc bậc 5",
+      "Chuyển hàm mất mát sang hàm mũ Exponential Loss và tăng số mẫu ngoại lai",
+      "Bỏ qua bước gán nhãn dữ liệu để chuyển sang mô hình học không giám sát"
+    ],
+    "explain": "Kiểm soát overfitting ở Cây Quyết định được thực hiện bằng cách giới hạn độ sâu `max_depth`, đặt số mẫu tối thiểu ở nút lá `min_samples_leaf` hoặc dùng cross-validation.",
+    "tip": "Chống overfit cây: max_depth, min_samples_leaf, cross-validation."
+  }
+]

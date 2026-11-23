@@ -1,0 +1,325 @@
+[
+  {
+    "id": "cpv-189",
+    "slide_number": 189,
+    "question": "In what field is image stitching utilized to reconstruct torn paper?",
+    "options": [
+      "Art restoration.",
+      "Medical imaging.",
+      "Forensic and investigative science.",
+      "Archaeology."
+    ],
+    "answer": [2],
+    "explanation": "Image stitching được ứng dụng trong pháp y để ghép các tài liệu bị xé, hỗ trợ điều tra và phục hồi chứng cứ.",
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-189.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-190",
+    "slide_number": 190,
+    "question": "Which approach in face recognition treats the task as a two-dimensional problem and includes techniques like Principal Component Analysis, Linear Discriminant Analysis, and independent component analysis?",
+    "options": [
+      "Feature-based Methods",
+      "Holistic Matching Methods",
+      "Structural Classifier Methods",
+      "Neural network based method"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-190.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-192",
+    "slide_number": 192,
+    "question": "What is the underlying principle of Mean Shift segmentation?",
+    "options": [
+      "Moving pixels towards the average color",
+      "Minimizing mean intensity gradients of regions",
+      "Maximizing color contrast of objects",
+      "Applying morphological operations median images"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-192.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-193",
+    "slide_number": 193,
+    "question": "What is the contrast stretching technique in image processing?",
+    "options": [
+      "To compress the range of intensity values in an image",
+      "To reduce the overall brightness of an image",
+      "To stretch the range of intensity values for optimal utilization",
+      "To convert color images into grayscale"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Màu sắc & histogram",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-193.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-194",
+    "slide_number": 194,
+    "question": "What is the role of the Gaussian filter in the Laplacian of Gaussian (LoG) edge detection?",
+    "options": [
+      "To blur the image and reduce noise",
+      "To enhance the contrast of the image",
+      "To calculate the gradient of the image",
+      "To perform non-maximum suppression."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-194.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-195",
+    "slide_number": 195,
+    "question": "What is the primary technique used by mean shift to efficiently locate peaks in a high-dimensional data distribution?",
+    "options": [
+      "Random sampling of the pixels in a range",
+      "Gradient descent of the pixels in a clustering",
+      "Mean of the pixels in a clustering",
+      "Mean of the pixels in a range"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-195.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-196",
+    "slide_number": 196,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+      "Generating textual information from images",
+      "Extracting useful information and enhancing images",
+      "Converting images into audio signals",
+      "Creating three-dimensional representations of images"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Tổng quan & toán cơ bản",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-196.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-197",
+    "slide_number": 197,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+      "Difficulty handling objects with disconnected parts.",
+      "Inability to segment images with multiple dominant colors.",
+      "High sensitivity to noise and slight intensity variations.",
+      "Significant computational cost for processing large images."
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-197.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-198",
+    "slide_number": 198,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+      "Generating high-resolution images",
+      "Conducting pixel-level segmentation",
+      "Performing voting procedure for shape recognition",
+      "Enhancing color saturation in the image"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-198.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-199",
+    "slide_number": 199,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+      "Recognizing objects without specifying their location",
+      "Identifying and locating instances of objects in an image or video",
+      "Describing the content of an image",
+      "Classifying images based on their visual features"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-199.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-200",
+    "slide_number": 200,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+      "It minimizes the sum of squared distances between points.",
+      "It maximizes the entropy between points.",
+      "It maximizes the sum of squared differences between points.",
+      "It minimizes the entropy of the aligned image."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-200.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-201",
+    "slide_number": 201,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+      "Estimating the location of 3D points",
+      "Correcting parallax in images",
+      "Optimizing camera poses",
+      "Aligning two images"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-201.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-202",
+    "slide_number": 202,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+      "Generating textual information from images",
+      "Extracting useful information and enhancing images",
+      "Converting images into audio signals",
+      "Creating three-dimensional representations of images"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Tổng quan & toán cơ bản",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-202.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-203",
+    "slide_number": 203,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+      "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+      "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+      "Translate 2 along x axis, translate 1 along y axis",
+      "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-203.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-204",
+    "slide_number": 204,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+      "Half of the sampling frequency",
+      "The highest frequency in the signal",
+      "The frequency at which the signal becomes periodic",
+      "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-204.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-205",
+    "slide_number": 205,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+      "The phase spectrum is shifted.",
+      "The magnitude spectrum is scaled.",
+      "The frequency components are attenuated.",
+      "The Nyquist frequency is altered."
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-205.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-206",
+    "slide_number": 206,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+      "Enhancing image resolution of an image patch",
+      "Removing noise from images",
+      "Estimating the motion between sets of matched points",
+      "Adjusting image brightness"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-206.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-207",
+    "slide_number": 207,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+      "Half of the sampling frequency",
+      "The highest frequency in the signal",
+      "The frequency at which the signal becomes periodic",
+      "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-207.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-208",
+    "slide_number": 208,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+      "To penalize large deformations of the contour",
+      "To attract the contour towards object boundaries",
+      "To perform non-maximum suppression",
+      "To adjust the intensity of edge pixels"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu trung bình",
+    "image_url": "cpv-slides-png/slide-208.png",
+    "needs_review": false
+  }
+]

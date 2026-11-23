@@ -1,0 +1,352 @@
+[
+ {
+  "id": 252,
+  "question": "What happens in the thin lens model?",
+  "options": [
+   "The object is inverted.",
+   "The image is discolored.",
+   "Objects placed before or after Len produce the same results.",
+   "The image will stay the same size when you use white light as the source (sun)."
+  ],
+  "correct": [
+   "Objects placed before or after Len produce the same results."
+  ],
+  "slide_image": "cpv-slides-real/slide-282.png"
+ },
+ {
+  "id": 253,
+  "question": "Which of these describes a desirable characteristic for features used in alignment?",
+  "options": [
+   "They should be easily affected by lighting changes.",
+   "They should be distinctive and easily identifiable in both images.",
+   "They should be evenly distributed across the entire image.",
+   "They should be large and occupy a significant portion of the image."
+  ],
+  "correct": [
+   "They should be distinctive and easily identifiable in both images."
+  ],
+  "slide_image": "cpv-slides-real/slide-283.png"
+ },
+ {
+  "id": 254,
+  "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+  "options": [
+   "It typically requires pre-processing steps like normalization and alignment.",
+   "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+   "It can achieve high accuracy in controlled environments with good lighting.",
+   "It can easily identify individuals from large variations in pose and expression."
+  ],
+  "correct": [
+   "It can easily identify individuals from large variations in pose and expression."
+  ],
+  "slide_image": "cpv-slides-real/slide-284.png"
+ },
+ {
+  "id": 255,
+  "question": "Which of the following is incorrect about object tracking?",
+  "options": [
+   "A way of identifying or confirming an individual's identity using their face.",
+   "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+   "Creating a unique ID for each of the initial detections.",
+   "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+  ],
+  "correct": [
+   "A way of identifying or confirming an individual's identity using their face."
+  ],
+  "slide_image": "cpv-slides-real/slide-285.png"
+ },
+ {
+  "id": 256,
+  "question": "Which scenario benefits most from Line detection with Hough Transform?",
+  "options": [
+   "Segmenting and analyzing individual characters in handwritten text.",
+   "Identifying and classifying different types of flowers based on color and texture.",
+   "Detecting lane markings on a road in an image for autonomous driving applications.",
+   "Blur detection and image sharpening techniques that rely on accurate edge information."
+  ],
+  "correct": [
+   "Detecting lane markings on a road in an image for autonomous driving applications."
+  ],
+  "slide_image": "cpv-slides-real/slide-286.png"
+ },
+ {
+  "id": 257,
+  "question": "How is an \"Illumination model\" formed?",
+  "options": [
+   "It refers to the source of visible electromagnetic radiation",
+   "It describes the linear projection model of light",
+   "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+   "It focuses on the off-axis distance of light sources"
+  ],
+  "correct": [
+   "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness"
+  ],
+  "slide_image": "cpv-slides-real/slide-287.png"
+ },
+ {
+  "id": 258,
+  "question": "How are pixel transforms understood? Choose the best correct answer",
+  "options": [
+   "Those are transformation techniques based on pixel-by-pixel processing.",
+   "Those are transformation techniques based on pixel-by-cluster processing.",
+   "Those are transformation techniques based on pixel-by-image processing.",
+   "Those are transformation techniques based on cluster-by-cluster processing."
+  ],
+  "correct": [
+   "Those are transformation techniques based on pixel-by-pixel processing."
+  ],
+  "slide_image": "cpv-slides-real/slide-288.png"
+ },
+ {
+  "id": 259,
+  "question": "How are thresholding methods implemented? Choose the best answer",
+  "options": [
+   "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+   "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+   "The first and second is correct",
+   "The first or second is correct"
+  ],
+  "correct": [
+   "The first and second is correct"
+  ],
+  "slide_image": "cpv-slides-real/slide-289.png"
+ },
+ {
+  "id": 260,
+  "question": "How does the shutter speed parameter in digital cameras work?",
+  "options": [
+   "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+   "Controls the amount of light reaching the sensor",
+   "The physical spacing between adjacent sensor cells on the imaging chip",
+   "The active sensing area size as a fraction of the theoretically available sensing area"
+  ],
+  "correct": [
+   "Controls the amount of light reaching the sensor"
+  ],
+  "slide_image": "cpv-slides-real/slide-290.png"
+ },
+ {
+  "id": 261,
+  "question": "How does image noise affect the performance of line detection with Hough Transform?",
+  "options": [
+   "Noise has minimal impact as the voting process inherently filters out noise.",
+   "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+   "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+   "The Hough Transform is not suitable for images with any level of noise."
+  ],
+  "correct": [
+   "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection."
+  ],
+  "slide_image": "cpv-slides-real/slide-291.png"
+ },
+ {
+  "id": 262,
+  "question": "How is the Haar calculation performed for edge detection?",
+  "options": [
+   "By measuring the sharpness of pixel values in darker and lighter regions",
+   "By computing the ratio of pixel intensities in darker and lighter regions",
+   "By finding the difference between averages of pixel values in darker and lighter regions",
+   "By comparing the histograms of pixel distributions in darker and lighter regions"
+  ],
+  "correct": [
+   "By finding the difference between averages of pixel values in darker and lighter regions"
+  ],
+  "slide_image": "cpv-slides-real/slide-292.png"
+ },
+ {
+  "id": 263,
+  "question": "How does linear filtering differ from non-linear filtering in image processing?",
+  "options": [
+   "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+   "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+   "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+   "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+  ],
+  "correct": [
+   "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions."
+  ],
+  "slide_image": "cpv-slides-real/slide-293.png"
+ },
+ {
+  "id": 264,
+  "question": "How does a computer understand input images?",
+  "options": [
+   "The computer understands the image as a matrix of pixels.",
+   "The computer understands the image as a single color matrix.",
+   "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+   "All of the others"
+  ],
+  "correct": [
+   "The computer understands the image as a matrix of pixels."
+  ],
+  "slide_image": "cpv-slides-real/slide-294.png"
+ },
+ {
+  "id": 265,
+  "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+  "options": [
+   "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+   "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+   "Window size has no impact on the detection of objects of varying sizes.",
+   "A larger window size improves the detection of small objects by capturing more context."
+  ],
+  "correct": [
+   "A larger window size might miss small objects entirely if they fall outside the window boundaries."
+  ],
+  "slide_image": "cpv-slides-real/slide-295.png"
+ },
+ {
+  "id": 266,
+  "question": "How can we compute convolution using correlation?",
+  "options": [
+   "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+   "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+   "We can directly use correlation without any modification to achieve convolution.",
+   "By dividing the results of correlation with the kernel size to get the convolution result."
+  ],
+  "correct": [
+   "By rotating the kernel 180 degree around it's center before performing the correlation operation."
+  ],
+  "slide_image": "cpv-slides-real/slide-296.png"
+ },
+ {
+  "id": 267,
+  "question": "How to calculate the intensity value of pixel in color space?",
+  "options": [
+   "It is the average of the color values.",
+   "It is represented through three color values: Red, Green, and Blue.",
+   "The color component with the largest value in the color space will be the pixel intensity.",
+   "It is a combination of colors according to the CMY color model."
+  ],
+  "correct": [
+   "It is the average of the color values."
+  ],
+  "slide_image": "cpv-slides-real/slide-298.png"
+ },
+ {
+  "id": 268,
+  "question": "How do you understand object detection?",
+  "options": [
+   "Object detection is merely to recognize the presence of an object.",
+   "Object detection is the task of detecting instances of objects of a certain class within an image.",
+   "Object detection allows us to classify and locates objects in an image or video.",
+   "All of the others"
+  ],
+  "correct": [
+   "Object detection allows us to classify and locates objects in an image or video."
+  ],
+  "slide_image": "cpv-slides-real/slide-299.png"
+ },
+ {
+  "id": 269,
+  "question": "How do thresholding methods process pixels in an image based on intensity?",
+  "options": [
+   "By randomly assigning new values to pixels based on a uniform distribution",
+   "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+   "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+   "By applying color inversion to pixels below the threshold"
+  ],
+  "correct": [
+   "By replacing pixels with a black pixel if intensity is greater than a fixed constant"
+  ],
+  "slide_image": "cpv-slides-real/slide-300.png"
+ },
+ {
+  "id": 270,
+  "question": "Why use the image feature for processing, rather than using the whole image",
+  "options": [
+   "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+   "Use features to be able to apply more advanced techniques in image processing.",
+   "It reduces the number of resources required to describe a large set of data",
+   "All of the others"
+  ],
+  "correct": [
+   "It reduces the number of resources required to describe a large set of data"
+  ],
+  "slide_image": "cpv-slides-real/slide-301.png"
+ },
+ {
+  "id": 271,
+  "question": "Why do we need image stitching?",
+  "options": [
+   "Image stitching is a widely used technique for recovering original data from ripped data.",
+   "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+   "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+   "All of the others"
+  ],
+  "correct": [
+   "All of the others"
+  ],
+  "slide_image": "cpv-slides-real/slide-302.png"
+ },
+ {
+  "id": 272,
+  "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+  "options": [
+   "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+   "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+   "All weights within the kernel must be negative to achieve effective edge detection.",
+   "Using a random distribution of weights often leads to better edge detection results."
+  ],
+  "correct": [
+   "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges)."
+  ],
+  "slide_image": "cpv-slides-real/slide-303.png"
+ },
+ {
+  "id": 273,
+  "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+  "options": [
+   "More complex and require additional training data to differentiate individual objects.",
+   "Less complex and require less training data.",
+   "Equally complex with similar training data requirements.",
+   "Simpler but require very high-resolution images for accurate results."
+  ],
+  "correct": [
+   "More complex and require additional training data to differentiate individual objects."
+  ],
+  "slide_image": "cpv-slides-real/slide-304.png"
+ },
+ {
+  "id": 274,
+  "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+  "options": [
+   "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+   "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+   "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+   "All of the others."
+  ],
+  "correct": [
+   "The shape of the cancerous cells plays a vital role in determining the severity of cancer."
+  ],
+  "slide_image": "cpv-slides-real/slide-305.png"
+ },
+ {
+  "id": 275,
+  "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+  "options": [
+   "Edge Detection is a method of segmenting an image into regions of continuity.",
+   "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+   "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+   "All of the others"
+  ],
+  "correct": [
+   "Edge detection allows users to observe the features of an image for a significant change in the gray level."
+  ],
+  "slide_image": "cpv-slides-real/slide-306.png"
+ },
+ {
+  "id": 276,
+  "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+  "options": [
+   "Average face features from a training dataset.",
+   "The most distinctive facial features across different individuals.",
+   "Templates for specific facial expressions (e.g., smiling, frowning).",
+   "A 3D model of a face for high-resolution recognition."
+  ],
+  "correct": [
+   "The most distinctive facial features across different individuals."
+  ],
+  "slide_image": "cpv-slides-real/slide-307.png"
+ }
+]

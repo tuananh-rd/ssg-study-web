@@ -1,0 +1,182 @@
+{
+  "1": {
+    "q": "Bạn đang đánh giá một bộ phân loại nhị phân (binary classifier). Có 80 kết quả dương tính trong dữ liệu kiểm thử và tổng cộng 150 quan sát. Sử dụng ngưỡng 50%, bộ phân loại dự đoán 60 kết quả dương tính, trong đó có 20 kết quả không chính xác.\nĐộ chính xác (Precision) của bộ phân loại trên mẫu kiểm thử là bao nhiêu?",
+    "options": [
+      "50%",
+      "33.3%",
+      "66.7%",
+      "37.5%"
+    ]
+  },
+  "2": {
+    "q": "Bạn đang đánh giá một bộ phân loại nhị phân (binary classifier). Có 80 kết quả dương tính trong dữ liệu kiểm thử và tổng cộng 150 quan sát. Sử dụng ngưỡng 50%, bộ phân loại dự đoán 60 kết quả dương tính, trong đó có 20 kết quả không chính xác.\nĐiểm F1 (F1 score) của bộ phân loại trên mẫu kiểm thử là bao nhiêu?",
+    "options": [
+      "75%",
+      "57.2%",
+      "67.5%",
+      "42.8%"
+    ]
+  },
+  "3": {
+    "q": "Bạn đang đánh giá một bộ phân loại nhị phân (binary classifier). Có 80 kết quả dương tính trong dữ liệu kiểm thử và tổng cộng 150 quan sát. Sử dụng ngưỡng 50%, bộ phân loại dự đoán 60 kết quả dương tính, trong đó có 20 kết quả không chính xác.\nĐộ thu hồi (Recall) của bộ phân loại trên mẫu kiểm thử là bao nhiêu?",
+    "options": [
+      "66.7%",
+      "37.5%",
+      "50%",
+      "33.3%"
+    ]
+  },
+  "4": {
+    "q": "Tại sao EDA (Exploratory Data Analysis - Phân tích khám phá dữ liệu) lại hữu ích?",
+    "options": [
+      "EDA cho phép chúng ta có được cảm nhận ban đầu về dữ liệu.",
+      "Nó cho phép chúng ta xác định xem dữ liệu có hợp lý hay không, hoặc liệu có cần làm sạch thêm hay cần thêm dữ liệu không.",
+      "EDA không giúp xác định các mẫu hình và xu hướng trong dữ liệu.",
+      "Không có phương án nào ở trên"
+    ]
+  },
+  "5": {
+    "q": "Có một số cơ sở dữ liệu SQL có sẵn như là",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Cassandra"
+    ]
+  },
+  "6": {
+    "q": "Dữ liệu dưới đây xuất hiện trong 'data.txt', và Pandas đã được import.\n63.03 22.55 39.61 40.48 98.67 -0.25 AB\n39.06 10.06 25.02 29 114.41 4.56 AB\n68.83 22.22 50.09 46.61 105.99 -3.53 AB\nLàm thế nào chúng ta có thể sử dụng Pandas để nhập dữ liệu này vào một data frame?",
+    "options": [
+      "pandas.read_csv('data.txt', header=None, sep=\",\")",
+      "pandas.read_csv('data.txt')",
+      "pandas.read_csv('data.txt', delim_whitespace=True)",
+      "pandas.read_csv('data.txt', header=0, delim_whitespace=True)"
+    ]
+  },
+  "7": {
+    "q": "Dữ liệu dưới đây xuất hiện trong 'data.txt', và Pandas đã được import. Lệnh Python nào sẽ đọc chính xác dữ liệu này vào một Pandas DataFrame?\n63.03 22.55 39.61 40.48 98.67 -0.25 AB\n39.06 10.06 25.02 29 114.41 4.56 AB\n68.83 22.22 50.09 46.61 105.99 -3.53 AB",
+    "options": [
+      "pandas.read('data.txt')",
+      "pandas.read_csv('data.txt', header=None, sep=',')",
+      "pandas.read_csv('data.txt', delim_whitespace=True)",
+      "pandas.read_csv('data.txt', header=0, delim_whitespace=True)"
+    ]
+  },
+  "8": {
+    "q": "Chọn phương án có cú pháp để thu được các phần chia tách dữ liệu cần thiết nhằm huấn luyện một mô hình có tập kiểm thử (test split) bằng một phần ba kích thước dữ liệu hiện có.",
+    "options": [
+      "X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.5)",
+      "X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.33)",
+      "X_train, y_test = train_test_split(x, y, test_size=0.33)",
+      "X_train, y_test = train_test_split(x, y, test_size=0.5)"
+    ]
+  },
+  "9": {
+    "q": "Phát biểu nào sau đây về giảm mẫu (Downsampling) là ĐÚNG?",
+    "options": [
+      "Giảm mẫu có khả năng làm giảm Recall.",
+      "Giảm mẫu có khả năng làm giảm Precision.",
+      "Giảm mẫu bảo toàn tất cả các quan sát ban đầu.",
+      "Giảm mẫu dẫn đến việc tập trung quá mức vào lớp xuất hiện thường xuyên hơn."
+    ]
+  },
+  "10": {
+    "q": "Phương pháp mô hình hóa kết hợp (Ensemble modeling) nào sau đây KHÔNG phải là trường hợp đặc biệt của việc lấy trung bình mô hình (model averaging)?",
+    "options": [
+      "Các phương pháp Rừng ngẫu nhiên (Random Forest)",
+      "Các phương pháp Boosting",
+      "Phương pháp Pasting của gom tập Bootstrap (Bootstrap aggregation)",
+      "Phương pháp Bagging của gom tập Bootstrap (Bootstrap aggregation)"
+    ]
+  },
+  "11": {
+    "q": "Điều nào sau đây KHÔNG phải là một đặc điểm của thuật toán k láng giềng gần nhất (k nearest neighbors)?",
+    "options": [
+      "Nó tự xác định giá trị cho k.",
+      "Nó nhạy cảm với việc co giãn tỉ lệ (scaling).",
+      "Nó xác định các ranh giới quyết định (decision boundaries) để đưa ra dự đoán.",
+      "Nó rất phù hợp để dự đoán các biến có nhiều lớp (multiple classes)."
+    ]
+  },
+  "12": {
+    "q": "Ví dụ nào sau đây KHÔNG phải là một trường hợp sử dụng phổ biến của phân cụm (clustering) trong thế giới thực?",
+    "options": [
+      "Phát hiện bất thường (Anomaly detection).",
+      "Phân khúc khách hàng (Customer segmentation)",
+      "Xác định yếu tố rủi ro và các yếu tố phòng ngừa cho các bệnh như loãng xương",
+      "Cải thiện học có giám sát (supervised learning)."
+    ]
+  },
+  "13": {
+    "q": "Lựa chọn nào sau đây KHÔNG phải là một ví dụ về học không giám sát (Unsupervised Learning)?",
+    "options": [
+      "Phân khúc khách hàng thành các nhóm khác nhau.",
+      "Giảm kích thước của một tập dữ liệu mà không làm mất quá nhiều thông tin từ tập dữ liệu ban đầu.",
+      "Giải thích mối quan hệ giữa thu nhập của một cá nhân và số tiền họ chi trả cho một chiếc ô tô.",
+      "Gom nhóm các quan sát lại với nhau để tìm ra các mẫu hình tương đồng giữa chúng."
+    ]
+  },
+  "14": {
+    "q": "Phương án nào sau đây KHÔNG phải là một cách tiếp cận khám phá dữ liệu hợp lệ để xác định mức độ sẵn sàng của dữ liệu cho việc lập mô hình?",
+    "options": [
+      "Tạo bản đồ nhiệt tương quan (correlation heatmap) để xác nhận dấu và độ lớn của tương quan giữa các đặc trưng.",
+      "Tạo biểu đồ ô (panel plot) hiển thị các phân phối cho biến phụ thuộc và biểu đồ phân tán cho tất cả các biến độc lập.",
+      "Huấn luyện một mô hình và xác định các quan sát có phần dư (residuals) lớn nhất.",
+      "Tạo các trực quan hóa cho biểu đồ phân tán (scatter plots), biểu đồ tần suất (histograms), biểu đồ hộp (box plots) và biểu đồ lục giác (hexbin plots)."
+    ]
+  },
+  "15": {
+    "q": "Trong trường hợp nào sau đây bạn sẽ KHÔNG sử dụng học máy có giám sát (supervised machine learning)?",
+    "options": [
+      "Phân khúc khách hàng theo đặc điểm nhân khẩu học của họ.",
+      "Dự đoán số lượng khách hàng sẽ ghé thăm một cửa hàng trong một tuần nhất định.",
+      "Dự đoán xác suất một khách hàng quay lại cửa hàng.",
+      "Giải thích các yếu tố chính quyết định việc một khách hàng có quay lại cửa hàng hay không."
+    ]
+  },
+  "16": {
+    "q": "Phát biểu nào sau đây về sai số của mô hình là ĐÚNG?",
+    "options": [
+      "Hiện tượng dưới khớp (Underfitting) có đặc trưng là sai số thấp hơn ở cả mẫu huấn luyện và mẫu kiểm thử.",
+      "Hiện tượng dưới khớp (Underfitting) có đặc trưng là sai số cao hơn ở cả mẫu huấn luyện và mẫu kiểm thử.",
+      "Hiện tượng dưới khớp (Underfitting) có đặc trưng là sai số cao hơn ở mẫu huấn luyện và sai số thấp hơn ở mẫu kiểm thử.",
+      "Hiện tượng dưới khớp (Underfitting) có đặc trưng là sai số thấp hơn ở mẫu huấn luyện và sai số cao hơn ở mẫu kiểm thử."
+    ]
+  },
+  "17": {
+    "q": "Phát biểu nào dưới đây về kiểm định chéo K lần (K-fold cross-validation) là ĐÚNG?",
+    "options": [
+      "Mỗi mẫu con trong kiểm định chéo K lần có ít nhất K quan sát.",
+      "Mỗi mẫu con trong kiểm định chéo K lần có ít nhất K-1 quan sát.",
+      "Mỗi mẫu con trong số K mẫu con của kiểm định chéo K lần đều được sử dụng làm tập huấn luyện.",
+      "Mỗi mẫu con trong số K mẫu con của kiểm định chéo K lần đều được sử dụng làm tập kiểm thử."
+    ]
+  },
+  "18": {
+    "q": "Phát biểu nào sau đây về tăng mẫu tổng hợp (Synthetic Upsampling) là ĐÚNG?",
+    "options": [
+      "Tăng mẫu tổng hợp thường sẽ dẫn đến điểm F1 cao hơn.",
+      "Tăng mẫu tổng hợp sử dụng ít siêu tham số hơn so với Tăng mẫu ngẫu nhiên (Random Upsampling).",
+      "Tăng mẫu tổng hợp tạo ra các quan sát không thuộc về dữ liệu ban đầu.",
+      "Tăng mẫu tổng hợp dẫn đến việc tập trung quá mức vào lớp xuất hiện thường xuyên hơn"
+    ]
+  },
+  "19": {
+    "q": "Phát biểu nào sau đây về độ phức tạp của mô hình là ĐÚNG?",
+    "options": [
+      "Độ phức tạp của mô hình cao hơn dẫn đến khả năng quá khớp (overfitting) thấp hơn.",
+      "Độ phức tạp của mô hình cao hơn dẫn đến khả năng quá khớp (overfitting) cao hơn.",
+      "Giảm số lượng đặc trưng đồng thời thêm các tương tác đặc trưng dẫn đến khả năng quá khớp thấp hơn.",
+      "Giảm số lượng đặc trưng đồng thời thêm các tương tác đặc trưng dẫn đến khả năng quá khớp cao hơn."
+    ]
+  },
+  "20": {
+    "q": "Phát biểu nào về máy vectơ hỗ trợ (Support Vector Machines) là ĐÚNG?",
+    "options": [
+      "Các mô hình Máy vectơ hỗ trợ là phi tuyến tính.",
+      "Các mô hình Máy vectơ hỗ trợ hiếm khi bị quá khớp (overfit) trên dữ liệu huấn luyện nếu sử dụng chuẩn hoá (regularization).",
+      "Các mô hình Máy vectơ hỗ trợ có thể dùng cho phân loại nhưng không dùng được cho hồi quy.",
+      "Các mô hình Máy vectơ hỗ trợ có thể dùng cho hồi quy nhưng không dùng được cho phân loại."
+    ]
+  }
+}

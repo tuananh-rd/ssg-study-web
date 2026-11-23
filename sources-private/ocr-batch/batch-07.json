@@ -1,0 +1,342 @@
+[
+  {
+    "id": "cpv-129",
+    "slide_number": 129,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+      "First derivative",
+      "Second derivative",
+      "Prewitt operator",
+      "Robert operator"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-129.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-130",
+    "slide_number": 130,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+      "Document processing",
+      "Medical applications",
+      "Creating panoramas image",
+      "All of the above"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-130.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-131",
+    "slide_number": 131,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+      "Region splitting",
+      "Watershed",
+      "Graph-based segmentation",
+      "Probabilistic aggregation"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-131.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-132",
+    "slide_number": 132,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+      "Prewitt operator",
+      "Canny operator",
+      "Sobel (3x3)",
+      "Sobel (5x5)"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-132.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-133",
+    "slide_number": 133,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+      "Box Filter",
+      "Bilateral Filter",
+      "Blue Blur",
+      "Build Pyramid"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-133.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-134",
+    "slide_number": 134,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+      "Image Processing",
+      "Photogrammetry",
+      "Image Recognition",
+      "Pattern Recognition"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-134.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-135",
+    "slide_number": 135,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+      "Multi-view based method",
+      "Deterministic method",
+      "Probabilistic method",
+      "Shape matching"
+    ],
+    "answer": [1],
+    "explanation": null,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-135.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-136",
+    "slide_number": 136,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+      "First derivative",
+      "Second derivative",
+      "Laplacian of Gaussian",
+      "Normalized Laplacian of Gaussian"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-136.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-137",
+    "slide_number": 137,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+      "Contrast stretching",
+      "Gray world",
+      "Ground truth",
+      "Histogram equalization"
+    ],
+    "answer": [0],
+    "explanation": "Khi làm thì phải stretch ra full range trước để làm rõ nét độ chênh lệch, full use of... là chỉ việc đưa 1 tấm hình range x->y về full range của bảng màu. Contrast stretching (Kéo dãn độ tương phản): Là kỹ thuật xử lý ảnh giúp mở rộng (kéo dãn) dải mức độ sáng (intensity range) từ một khoảng hẹp ban đầu ra toàn bộ dải giá trị cho phép (ví dụ: từ 0 đến 255 đối với ảnh 8-bit), từ đó cải thiện độ tương phản của ảnh.",
+    "topic": "Màu sắc & histogram",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-137.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-138",
+    "slide_number": 138,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+      "SIFT",
+      "Histogram equalization",
+      "Fourier transform",
+      "PCA"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-138.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-139",
+    "slide_number": 139,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+      "line()",
+      "drawLine()",
+      "lineSegment()",
+      "draw.line()"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-139.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-140",
+    "slide_number": 140,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+      "Sampling pitch",
+      "Fill factor",
+      "Shutter speed",
+      "Chip size"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-140.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-141",
+    "slide_number": 141,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+      "Polar space",
+      "Cartesian space",
+      "Transform space",
+      "Gradient space"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-141.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-142",
+    "slide_number": 142,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+      "Template Matching",
+      "Multi-view Tracking",
+      "Silhouette Tracking",
+      "Contour Evolution"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-142.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-143",
+    "slide_number": 143,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+      "CamShift tracking",
+      "Kalman filtering",
+      "Mean Shift tracking",
+      "Optical flow tracking"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-143.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-144",
+    "slide_number": 144,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+      "Faster R-CNN",
+      "YOLO",
+      "SSD",
+      "Haar Cascade"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-144.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-145",
+    "slide_number": 145,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+      "By a parabolic line",
+      "By a decision tree",
+      "By a distribution",
+      "By a random selection"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-145.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-146",
+    "slide_number": 146,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+      "log(1-P)/log(1-p^k)",
+      "log(1-P)*log(1-p^k)",
+      "log[(1-P)(1-p^k)]",
+      "log[(1-P)/(1-p^k)]"
+    ],
+    "answer": [0],
+    "explanation": null,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-146.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-147",
+    "slide_number": 147,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+      "Variations due to scaling",
+      "Variations due to illumination",
+      "Image occlusion",
+      "All the above"
+    ],
+    "answer": [3],
+    "explanation": null,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-147.png",
+    "needs_review": false
+  },
+  {
+    "id": "cpv-148",
+    "slide_number": 148,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+      "F(w)+H(w)",
+      "F(w)*H(w)",
+      "F(w)H(w)",
+      "F(w)H*(w)"
+    ],
+    "answer": [2],
+    "explanation": null,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu ngắn",
+    "image_url": "cpv-slides-png/slide-148.png",
+    "needs_review": false
+  }
+]

@@ -1,0 +1,363 @@
+[
+  {
+    "slide": 109,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+      "Object classification",
+      "Trajectory prediction",
+      "Instance segmentation",
+      "ID assignment maintenance"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 110,
+    "topic": "Miền tần số & Fourier",
+    "section": "Câu ngắn",
+    "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+    "options": [
+      "Frequency analysis",
+      "Noise reduction",
+      "Edge detection",
+      "Color correction"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 111,
+    "topic": "Chuyển động & optical flow",
+    "section": "Câu ngắn",
+    "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+    "options": [
+      "Object classification",
+      "Trajectory prediction",
+      "Instance segmentation",
+      "ID assignment maintenance"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 112,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "question": "What is the primary cause of chromatic aberration in lenses?",
+    "options": [
+      "Dispersion of light",
+      "Lens curvature",
+      "Lens thickness",
+      "Lens material",
+      "None of the others"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 113,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Câu ngắn",
+    "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+    "options": [
+      "Improved color accuracy",
+      "Enhanced detail preservation",
+      "Increased computational efficiency",
+      "Reduced memory requirements"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 114,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "question": "What does K represent in the K-Means clustering algorithm?",
+    "options": [
+      "Number of dimensions",
+      "Number of data points",
+      "Number of clusters",
+      "Number of iterations"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 115,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+    "options": [
+      "Principal Component Analysis (PCA)",
+      "Histogram of Oriented Gradients (HOG)",
+      "Scale Invariant Feature Transform (SIFT)",
+      "Convolutional Neural Networks (CNN)"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 116,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+      "KNN",
+      "Logistic Regression",
+      "SVM",
+      "Softmax"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 117,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Câu ngắn",
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+      "Color correction of the image",
+      "Application of texture mapping",
+      "Performing edge detection",
+      "Adjusting contrast levels"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 118,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+      "Line features",
+      "Color histograms",
+      "Texture features",
+      "Eigenfaces"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 119,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+      "Holistic Matching Methods",
+      "Feature-based Methods",
+      "Eigenfaces",
+      "Linear Discriminant Analysis"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 120,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+      "Sensor noise",
+      "ADC resolution",
+      "Automatic Gain Control (AGC)",
+      "White balance"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 121,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Câu ngắn",
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+      "Overfitting",
+      "Outliers in the input data",
+      "Underfitting",
+      "Computational complexity"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 122,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+      "Sensor system",
+      "Number system",
+      "Logic system",
+      "Optical system"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 123,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+      "Over-segmentation",
+      "High-processing speed",
+      "Time constrains",
+      "Loss of color information"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 124,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Câu ngắn",
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+      "Security",
+      "Robotics",
+      "Medicine",
+      "All of above"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 125,
+    "topic": "Nhận dạng & học máy",
+    "section": "Câu ngắn",
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+      "YOLO",
+      "RCNN",
+      "Hog detector",
+      "Retina Net"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 126,
+    "topic": "Màu sắc & histogram",
+    "section": "Câu ngắn",
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+      "White patch",
+      "Gray world",
+      "Ground truth",
+      "Histogram equalization"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 127,
+    "topic": "Màu sắc & histogram",
+    "section": "Câu ngắn",
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+      "Red",
+      "Blue",
+      "Violet",
+      "Green"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 128,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Câu ngắn",
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+      "Active contours",
+      "Watershed",
+      "Graph-based segmentation",
+      "Region splitting"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  }
+]

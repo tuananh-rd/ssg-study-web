@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-121.png",
+  "png_no": 121,
+  "html_no": 123,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 104,
+    "slide": 118,
+    "question": "What methods can you use for Multiclass classification with no alteration",
+    "options": [
+     "KNN",
+     "Logistic Regression",
+     "SVM",
+     "Softmax"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-122.png",
+  "png_no": 122,
+  "html_no": 124,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 105,
+    "slide": 119,
+    "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+    "options": [
+     "Color correction of the image",
+     "Application of texture mapping",
+     "Performing edge detection",
+     "Adjusting contrast levels"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-123.png",
+  "png_no": 123,
+  "html_no": 125,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 106,
+    "slide": 120,
+    "question": "What type of features does Haar Cascade use for object detection?",
+    "options": [
+     "Line features",
+     "Color histograms",
+     "Texture features",
+     "Eigenfaces"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-124.png",
+  "png_no": 124,
+  "html_no": 126,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 107,
+    "slide": 121,
+    "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+    "options": [
+     "Holistic Matching Methods",
+     "Feature-based Methods",
+     "Eigenfaces",
+     "Linear Discriminant Analysis"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-125.png",
+  "png_no": 125,
+  "html_no": 127,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 108,
+    "slide": 122,
+    "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+    "options": [
+     "Sensor noise",
+     "ADC resolution",
+     "Automatic Gain Control (AGC)",
+     "White balance"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-126.png",
+  "png_no": 126,
+  "html_no": 128,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 109,
+    "slide": 123,
+    "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+    "options": [
+     "Overfitting",
+     "Outliers in the input data",
+     "Underfitting",
+     "Computational complexity"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-127.png",
+  "png_no": 127,
+  "html_no": 129,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 110,
+    "slide": 124,
+    "question": "What system does the digital camera use to perform the digitization of images?",
+    "options": [
+     "Sensor system",
+     "Number system",
+     "Logic system",
+     "Optical system"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-128.png",
+  "png_no": 128,
+  "html_no": 130,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 111,
+    "slide": 125,
+    "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+    "options": [
+     "Over-segmentation",
+     "High-processing speed",
+     "Time constrains",
+     "Loss of color information"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-129.png",
+  "png_no": 129,
+  "html_no": 131,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 112,
+    "slide": 126,
+    "question": "Which of the following is an application of computer vision?",
+    "options": [
+     "Security",
+     "Robotics",
+     "Medicine",
+     "All of above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-130.png",
+  "png_no": 130,
+  "html_no": 132,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 113,
+    "slide": 127,
+    "question": "Which of the following methods of traditional detection?",
+    "options": [
+     "YOLO",
+     "RCNN",
+     "Hog detector",
+     "Retina Net"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-131.png",
+  "png_no": 131,
+  "html_no": 133,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 114,
+    "slide": 128,
+    "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+    "options": [
+     "White patch",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-132.png",
+  "png_no": 132,
+  "html_no": 134,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 115,
+    "slide": 129,
+    "question": "Which of the following color is having the largest frequency in visible spectrum?",
+    "options": [
+     "Red",
+     "Blue",
+     "Violet",
+     "Green"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-133.png",
+  "png_no": 133,
+  "html_no": 135,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 116,
+    "slide": 130,
+    "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+    "options": [
+     "Active contours",
+     "Watershed",
+     "Graph-based segmentation",
+     "Region splitting"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-134.png",
+  "png_no": 134,
+  "html_no": 136,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 117,
+    "slide": 131,
+    "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Prewitt operator",
+     "Robert operator"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-135.png",
+  "png_no": 135,
+  "html_no": 137,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 118,
+    "slide": 132,
+    "question": "Which of the following applications of RANSAC algorithm?",
+    "options": [
+     "Document processing",
+     "Medical applications",
+     "Creating panoramas image",
+     "All of the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-136.png",
+  "png_no": 136,
+  "html_no": 138,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 119,
+    "slide": 133,
+    "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+    "options": [
+     "Region splitting",
+     "Watershed",
+     "Graph-based segmentation",
+     "Probabilistic aggregation"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ }
+]

@@ -1,0 +1,24 @@
+# phụ thuộc / build tạm
+node_modules/
+.wrangler/
+.build-test/
+*.log
+*.err
+.dev.*
+.admin-seed.sql
+.env*
+.dev.vars
+# hồ sơ trình duyệt và cấu hình cục bộ của công cụ
+.claude/
+sources-private/.prof-*/
+# ảnh/SVG slide gốc (nặng, có bản quyền của nguồn slide) và bản sao lưu
+sources-private/cpv-slides-png/
+sources-private/cpv-slides-real/
+sources-private/src-cpv-slides*
+*.bak
+*.bak-*
+sources-private/*.bak-*
+# video giới thiệu
+*.mp4
+sources-private/.prof*/
+**/Crashpad/

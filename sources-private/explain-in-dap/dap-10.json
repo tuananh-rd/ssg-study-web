@@ -1,0 +1,328 @@
+[
+ {
+  "id": 257,
+  "question": "In Watson Assistant, what is a dialog node used for?",
+  "options": [
+   "Controlling the flow of the conversation",
+   "Representing user messages",
+   "Defining intents",
+   "Storing user data"
+  ],
+  "correct": [
+   "Controlling the flow of the conversation"
+  ]
+ },
+ {
+  "id": 258,
+  "question": "In a Chi-Square test, what does a p-value less than 0.05 suggest?",
+  "options": [
+   "Reject the null hypothesis",
+   "Fail to reject the null hypothesis",
+   "Insufficient evidence to conclude",
+   "No correlation exists"
+  ],
+  "correct": [
+   "Reject the null hypothesis"
+  ]
+ },
+ {
+  "id": 260,
+  "question": "In Watson Assistant, what is the purpose of the \"Slots\" feature in dialog nodes?",
+  "options": [
+   "To capture information from the user's input",
+   "To represent empty spaces in the conversation",
+   "To reserve memory space for storing user data",
+   "To define the color scheme of the chatbot interface"
+  ],
+  "correct": [
+   "To capture information from the user's input"
+  ]
+ },
+ {
+  "id": 261,
+  "question": "You are training a Decision Tree classifier on a dataset X_train containing numerical features and y_train containing corresponding binary target labels. You decide to set the min_samples_split parameter to 10. What does this parameter control in the construction of the decision tree?",
+  "options": [
+   "One node can split only at least 10 samples.",
+   "The minimum depth of the tree is set to 10.",
+   "There must be more than 10 nodes in each depth of tree",
+   "Total number of nodes in tree must be greater than 10"
+  ],
+  "correct": [
+   "One node can split only at least 10 samples."
+  ]
+ },
+ {
+  "id": 262,
+  "question": "You are training an SVC classifier on a dataset with 1000 samples and 20 features. You decide to use grid search to find the best C value for the SVC classifier. You specify a range of C values to search over, including [0.1, 1, 10, 100, 1000]. You perform grid search with 5-fold cross-validation to find the best C value. After grid search, you find that the best C value is 10. What does this indicate about the regularization strength of the SVC classifier?",
+  "options": [
+   "Low regularization strength",
+   "High regularization strength",
+   "No regularization applied",
+   "No conclusion can be drawn from the best C value"
+  ],
+  "correct": [
+   "Low regularization strength"
+  ]
+ },
+ {
+  "id": 263,
+  "question": "You are performing grid search to find the best C value for an SVC classifier. You specify the parameter grid as follows: param_grid = {'C': [0.01, 0.1, 1, 10, 100]}. After performing grid search, you find that the best C value is 0.01. What does this suggest about the dataset and the model's complexity?",
+  "options": [
+   "Because the dataset is highly complex, a lower C value is preferred.",
+   "Because the dataset is simple, a lower C value is preferred.",
+   "Because the dataset is simple, a higher C value is preferred.",
+   "The choice of C value does not affect the model's complexity."
+  ],
+  "correct": [
+   "Because the dataset is simple, a lower C value is preferred."
+  ]
+ },
+ {
+  "id": 267,
+  "question": "What is the meaning of Mean Squared Error (MSE)?",
+  "options": [
+   "find the difference between the actual values and the predicted values then square it.",
+   "find the difference between the predictor values and the predicted values then square it.",
+   "find the difference between the intercept values and the predicted values then square it.",
+   "find the difference between the slope values and the predicted values then square it."
+  ],
+  "correct": [
+   "find the difference between the actual values and the predicted values then square it."
+  ]
+ },
+ {
+  "id": 269,
+  "question": "What is the primary purpose of Ridge Regression in machine learning?",
+  "options": [
+   "To reduce overfitting by adding a penalty term to the regression equation",
+   "To increase model complexity by introducing additional features",
+   "To maximize the coefficient of determination (R-squared)",
+   "To perform feature selection automatically"
+  ],
+  "correct": [
+   "To reduce overfitting by adding a penalty term to the regression equation"
+  ]
+ },
+ {
+  "id": 270,
+  "question": "What is the primary difference between setting a high alpha in Ridge and in Lasso?",
+  "options": [
+   "In Ridge, high alpha reduces coefficients uniformly, while in Lasso, high alpha can set some coefficients to zero.",
+   "High alpha in Ridge increases coefficients, while in Lasso, it decreases them.",
+   "Both methods treat alpha similarly, making it impossible to distinguish their effects.",
+   "High alpha in Ridge makes the model prone to underfitting, while in Lasso, it increases overfitting.",
+   "None of the others."
+  ],
+  "correct": [
+   "In Ridge, high alpha reduces coefficients uniformly, while in Lasso, high alpha can set some coefficients to zero."
+  ]
+ },
+ {
+  "id": 271,
+  "question": "What role do intents and entities play in the context of Watson Assistant?",
+  "options": [
+   "Entities handle user authentication, while intents identify user goals.",
+   "Intents handle context variables, while entities extract specific information from user input.",
+   "Entities understand the purpose of user input, while intents extract specific information.",
+   "Intents identify user goals, while entities extract specific information from user input."
+  ],
+  "correct": [
+   "Intents identify user goals, while entities extract specific information from user input."
+  ]
+ },
+ {
+  "id": 272,
+  "question": "What task does the following line of code perform? df['price'].replace(np.nan, 100, inplace=True)",
+  "options": [
+   "replace the not a number values with 100 in the column 'price'",
+   "replace the not a text values with 100 in the column 'price'",
+   "add the not a number values with 100 in the column 'price'",
+   "add the not a null values with 100 in the column 'price'"
+  ],
+  "correct": [
+   "replace the not a number values with 100 in the column 'price'"
+  ]
+ },
+ {
+  "id": 273,
+  "question": "Which of the following is true regarding the penalty term in Ridge Regression?",
+  "options": [
+   "It penalizes large coefficients by adding their squares to the cost function",
+   "It penalizes small coefficients by subtracting their squares from the cost function",
+   "It penalizes features based on their order in the dataset",
+   "It penalizes features randomly to regularize the model"
+  ],
+  "correct": [
+   "It penalizes large coefficients by adding their squares to the cost function"
+  ]
+ },
+ {
+  "id": 274,
+  "question": "Which of these statements is true about the deployment of a chatbot application?",
+  "options": [
+   "You need to re-deploy your chatbot every time you change the dialog within Watson Assistant.",
+   "You don't need to re-deploy your chatbot every time you change the dialog within Watson Assistant.",
+   "You don't need to dispose your chatbot every time you change the content within Watson Assistant.",
+   "You don't need to re-deploy your chatbot every time you change the content within Watson Assistant."
+  ],
+  "correct": [
+   "You don't need to re-deploy your chatbot every time you change the dialog within Watson Assistant."
+  ]
+ },
+ {
+  "id": 276,
+  "question": "Choose the one that best describes of Seaborn",
+  "options": [
+   "Seaborn is a Python visualization library based on scikit-learn",
+   "Seaborn can effectively increase the number of lines of code to create a plot",
+   "Seaborn is a Python visualization library that provides a high-level interface for drawing attractive statistical graphics",
+   "All answer is correct"
+  ],
+  "correct": [
+   "Seaborn is a Python visualization library that provides a high-level interface for drawing attractive statistical graphics"
+  ]
+ },
+ {
+  "id": 277,
+  "question": "Choose the one that best describes of Area chart",
+  "options": [
+   "It is commonly used to represent cumulated totals using numbers or percentages over time.",
+   "It is a type of plot which displays information as a series of data points called 'markers' connected by straight line segments.",
+   "It is a way of representing the frequency distribution of a variable.",
+   "It is commonly used to compare the values of a variable at a given point in time."
+  ],
+  "correct": [
+   "It is commonly used to represent cumulated totals using numbers or percentages over time."
+  ]
+ },
+ {
+  "id": 278,
+  "question": "Choose the best describes of Choropleth map",
+  "options": [
+   "A choropleth map is a thematic map in which areas are shaded in proportion to the measurement of the statistical variable being displayed on the map",
+   "A choropleth map is a thematic map in which areas are patterned in proportion to the measurement of the statistical variable being displayed on the map",
+   "A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map",
+   "None of the others"
+  ],
+  "correct": [
+   "A choropleth map is a thematic map in which areas are shaded or patterned in proportion to the measurement of the statistical variable being displayed on the map"
+  ]
+ },
+ {
+  "id": 279,
+  "question": "Choose the one that best describes of Bar chart",
+  "options": [
+   "It is a type of plot which displays information as a series of data points called 'markers' connected by straight line segments.",
+   "It is a way of representing the frequency distribution of a variable.",
+   "It is commonly used to compare the values of a variable at a given point in time.",
+   "It is a circular statistical graphic divided into slices to illustrate numerical proportion."
+  ],
+  "correct": [
+   "It is commonly used to compare the values of a variable at a given point in time."
+  ]
+ },
+ {
+  "id": 280,
+  "question": "Choose the one that best describes of Waffle chart",
+  "options": [
+   "It is a depiction of the frequency of different words in some textual data.",
+   "It is a circular statistical graphic divided into slices to illustrate numerical proportions.",
+   "It is a way of representing the frequency distribution of a variable.",
+   "It is an interesting visualization that is normally created to display progress toward goals."
+  ],
+  "correct": [
+   "It is an interesting visualization that is normally created to display progress toward goals."
+  ]
+ },
+ {
+  "id": 281,
+  "question": "In Watson Assistant, choose the best description of Dialog Skill?",
+  "options": [
+   "A dialog skill uses just Watson natural language processing to understand user questions and respond the answers.",
+   "A dialog skill uses just machine learning technologies to understand user questions and respond the answers.",
+   "A dialog skill uses Watson natural language processing and machine learning technologies to understand user questions and respond the answers.",
+   "None of the others"
+  ],
+  "correct": [
+   "A dialog skill uses Watson natural language processing and machine learning technologies to understand user questions and respond the answers."
+  ]
+ },
+ {
+  "id": 282,
+  "question": "In TensorFlow, what is the purpose of the model.compile() function?",
+  "options": [
+   "Initializing the neural network weights",
+   "Defining the architecture of the neural network",
+   "Compiling the model with optimizer, loss function, and metrics",
+   "Evaluating the model performance"
+  ],
+  "correct": [
+   "Compiling the model with optimizer, loss function, and metrics"
+  ]
+ },
+ {
+  "id": 283,
+  "question": "In Watson Assistant, what is an Intents? Choose the best answer",
+  "options": [
+   "Intents are purposes or goals that are expressed in a customer's input.",
+   "Intents is a container for the artifacts that define the flow of a conversation that your assistant can have with your customers",
+   "Intents is a Watson natural language processing service to understand user questions and respond the answers.",
+   "Intents are a collection of questions that users will ask the virtual assistant."
+  ],
+  "correct": [
+   "Intents are purposes or goals that are expressed in a customer's input."
+  ]
+ },
+ {
+  "id": 284,
+  "question": "In the Python array for months of the year, a developer was asked to use the print command to display \"October\". When the developer ran the block, \"November\" was displayed instead. Assuming that the calendar months are consecutive, beginning in January, what is the most likely cause for this?",
+  "options": [
+   "The developer ran the code to display the value at the 11th place in the array.",
+   "The developer ran the code to display the value at the 10th place in the array.",
+   "Every month in the array was \"November\".",
+   "The OS changed, and the subprocess created the error."
+  ],
+  "correct": [
+   "The developer ran the code to display the value at the 10th place in the array."
+  ]
+ },
+ {
+  "id": 285,
+  "question": "In a survey of 500 individuals regarding their preferred mode of transportation to work (car, public transit, bicycle, walk), if the chi-square test yields a p-value of 0.001, what conclusion can be drawn regarding the association between gender and preferred mode of transportation?",
+  "options": [
+   "Men and Women might prefer different transportation types.",
+   "There is no association between gender and preferred mode of transportation.",
+   "The chi-square test is inconclusive.",
+   "The sample size is insufficient to perform the chi-square test."
+  ],
+  "correct": [
+   "Men and Women might prefer different transportation types."
+  ]
+ },
+ {
+  "id": 286,
+  "question": "In IBM DB2, what is the significance of the SEPARATOR field in the LOAD DATA tab?",
+  "options": [
+   "It specifies the character used for delimiting columns in the input file.",
+   "It sets the primary key for the table.",
+   "It defines the data types of the columns in the input file.",
+   "It controls the loading process speed."
+  ],
+  "correct": [
+   "It specifies the character used for delimiting columns in the input file."
+  ]
+ },
+ {
+  "id": 287,
+  "question": "Implementing a voice-based interface for Watson Assistant chatbots, there are three approaches. Choose the best answer",
+  "options": [
+   "Phone calls, Watson Speech to Text APIs and Text Agent with Watson.",
+   "Phone calls, Watson Text to Speech APIs and Voice Agent with Watson.",
+   "Phone calls, Watson Speech to Text - Text to Speech APIs and Voice Agent with Watson.",
+   "Phone calls, Watson Speech to Text - Text to Speech APIs and Text Agent with Watson."
+  ],
+  "correct": [
+   "Phone calls, Watson Speech to Text - Text to Speech APIs and Voice Agent with Watson."
+  ]
+ }
+]

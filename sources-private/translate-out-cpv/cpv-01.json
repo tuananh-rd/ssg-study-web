@@ -1,0 +1,182 @@
+{
+  "1": {
+    "q": "Công thức nào để tính Laplacian của hàm Gauss đã chuẩn hoá (normalized Laplacian of Gaussian)?",
+    "options": [
+      "IV",
+      "I",
+      "III",
+      "II"
+    ]
+  },
+  "2": {
+    "q": "Hướng của gradient (gradient orientation) được tính toán như thế nào? (I: cường độ sáng tại các điểm ảnh, x: toạ độ x của điểm ảnh, y: toạ độ y của điểm ảnh)",
+    "options": [
+      "I",
+      "II",
+      "III",
+      "IV"
+    ]
+  },
+  "3": {
+    "q": "Kernel nào sau đây được sử dụng để phát hiện đường xiên +45 độ trong kỹ thuật dựa trên phép tích chập (convolution)?",
+    "options": [
+      "III",
+      "I",
+      "II",
+      "IV"
+    ]
+  },
+  "4": {
+    "q": "Cho ảnh tích hợp (integral image) của một hình ảnh (Hình 1).\nTổng cường độ sáng của tất cả các điểm ảnh trong một vùng (hình chữ nhật đỏ) hiển thị ở Hình 2 là bao nhiêu?",
+    "options": [
+      "15",
+      "17",
+      "12",
+      "19"
+    ]
+  },
+  "5": {
+    "q": "Cho một hình ảnh như sau. Hình ảnh sau khi được lọc bởi bộ lọc trung bình (mean filter) kích thước 3x3 là hình nào?",
+    "options": [
+      "II",
+      "III",
+      "I",
+      "IV"
+    ]
+  },
+  "6": {
+    "q": "Những yếu tố nào ảnh hưởng đến sự phát triển của xử lý ảnh số (digital image processing)? (chọn 2 đáp án)",
+    "options": [
+      "Sự phát triển của máy tính",
+      "Tiến bộ toán học",
+      "Xu hướng mạng xã hội",
+      "Phạm vi hẹp của một ứng dụng cụ thể"
+    ]
+  },
+  "7": {
+    "q": "______ là một ý tưởng thay thế mỗi điểm ảnh bằng giá trị trung bình của các điểm ảnh trong một vùng lân cận và có giá trị nằm trong khoảng cách d.",
+    "options": [
+      "Mean-shift",
+      "Watershed",
+      "K-mean",
+      "Không có đáp án nào trong số này"
+    ]
+  },
+  "8": {
+    "q": "______ thực hiện ghép ảnh (image stitching) hoàn toàn tự động, là một kỹ thuật nhận biết những bức ảnh nào thực sự ghép nối cùng nhau",
+    "options": [
+      "Nhận diện ảnh toàn cảnh (panoramas)",
+      "Theo dõi đối tượng (object tracking)",
+      "Nhận diện khuôn mặt",
+      "Phát hiện đối tượng (object detection)"
+    ]
+  },
+  "9": {
+    "q": "______ được sử dụng để xác định các lớp hoặc cụm khác nhau trong dữ liệu đã cho dựa trên mức độ tương đồng của dữ liệu.",
+    "options": [
+      "Bộ mô tả đặc trưng (feature descriptor)",
+      "Watershed",
+      "Harris",
+      "K-means"
+    ]
+  },
+  "10": {
+    "q": "______ là quá trình kết hợp nhiều hình ảnh chụp có trường nhìn chồng lấn để tạo ra ảnh toàn cảnh (panorama) phân đoạn hoặc hình ảnh độ phân giải cao.",
+    "options": [
+      "Tiền xử lý ảnh (image preprocessing)",
+      "Trừ ảnh (image subtraction)",
+      "Ghép ảnh (image stitching)",
+      "Thu nhận ảnh (image acquisition)"
+    ]
+  },
+  "11": {
+    "q": "______ là một phương pháp ước lượng tham số được thiết kế để xử lý tỷ lệ lớn các giá trị ngoại lai (outliers) trong dữ liệu đầu vào",
+    "options": [
+      "RANSAC",
+      "Mean shift",
+      "K-mean",
+      "Phát hiện biên Canny (Canny edge detection)"
+    ]
+  },
+  "12": {
+    "q": "______ là một quy trình tính toán chuyên sâu tập trung vào các giá trị ngoại lai trong các biến hồi quy",
+    "options": [
+      "Ước lượng MM (MM-estimation)",
+      "Ước lượng M (M-estimation)",
+      "Ước lượng S (S-estimation)",
+      "Tất cả các đáp án trên"
+    ]
+  },
+  "13": {
+    "q": "______ là quá trình phân chia một hình ảnh thành các vùng khác nhau dựa trên đặc tính của các điểm ảnh nhằm xác định các đối tượng hoặc ranh giới, giúp đơn giản hóa hình ảnh và phân tích hiệu quả hơn. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Phân đoạn ảnh (image segmentation)",
+      "Phân tích ảnh (image analysis)",
+      "Phát hiện đối tượng (object detection)",
+      "Nhận dạng đối tượng (object recognition)"
+    ]
+  },
+  "14": {
+    "q": "______ là một phương pháp nâng cao chất lượng hình ảnh của kết cấu (textures) trên bề mặt đồ họa máy tính ở các góc nhìn xiên so với camera nơi kết cấu được chiếu lên. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Bộ lọc MIP Mapping",
+      "Bộ lọc trung bình trọng số elip (EWA)",
+      "Lọc dị hướng (anisotropic filtering)",
+      "Bộ lọc Gauss trắng (Gaussian White filter)"
+    ]
+  },
+  "15": {
+    "q": "______ là một kỹ thuật xử lý ảnh được sử dụng để xác định các điểm trong ảnh số có sự gián đoạn ~ thay đổi đột ngột về độ sáng của ảnh. Chọn đáp án đúng nhất",
+    "options": [
+      "Bộ phát hiện đỉnh (peak detector)",
+      "Bộ mô tả đỉnh (peak descriptor)",
+      "Phát hiện biên (edge detection).",
+      "Bộ mô tả biên (edge descriptor)"
+    ]
+  },
+  "16": {
+    "q": "______ là một hàm hoặc toán tử nhận một hình ảnh làm đầu vào và tạo ra một hình ảnh làm đầu ra. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Biến đổi hình học (geometric transformation)",
+      "Biến đổi ảnh (image transformation)",
+      "Tính toán hình học (geometric computing)",
+      "Tính toán ảnh (image computing)"
+    ]
+  },
+  "17": {
+    "q": "______ là quá trình mà một đồ thị hiện có, hoặc phương trình được vẽ đồ thị, được sửa đổi để tạo ra một biến thể của đồ thị trước đó. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Biến đổi đồ thị (graph transformation)",
+      "Biến đổi ảnh (image transformation)",
+      "Tính toán đồ thị (graph computing)",
+      "Tính toán ảnh (image computing)"
+    ]
+  },
+  "18": {
+    "q": "______ là hình ảnh được thiết kế để xem như nhìn qua bên trong của một hình trụ. Bạn có thể xem hình ảnh theo chiều ngang ở góc 360 độ. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Phép chiếu hình trụ (cylindrical projection)",
+      "Chế độ xem hình trụ (cylindrical viewing)",
+      "Toàn cảnh hình trụ (cylindrical panoramic)",
+      "Không có đáp án nào khác"
+    ]
+  },
+  "19": {
+    "q": "______ là các mô hình xác suất và sử dụng phương pháp phân cụm mềm (soft clustering) để phân bố các điểm vào các cụm khác nhau. Chọn đáp án đúng nhất",
+    "options": [
+      "Mô hình phân cụm K-means",
+      "Mô hình SVN",
+      "Mô hình hỗn hợp Gauss (Gaussian Mixture Models)",
+      "Mô hình K lân cận (K-nearest)"
+    ]
+  },
+  "20": {
+    "q": "______ có thể được sử dụng để tìm một tập thưa các vị trí tương ứng trong các hình ảnh khác nhau. Chọn câu trả lời đúng nhất",
+    "options": [
+      "Đặc trưng cạnh (edge features)",
+      "Đặc trưng đường thẳng (line features)",
+      "Đặc trưng đối tượng (object features)",
+      "Đặc trưng điểm (point features)"
+    ]
+  }
+}

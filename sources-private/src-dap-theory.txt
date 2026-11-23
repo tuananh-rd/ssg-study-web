@@ -1,0 +1,678 @@
+SEMESTER_4_AI_DAP391m_Theory
+- A Hoàng vip top 1 FU
+Target cao, học nhàn hơn thì cứ yên tâm mà theo a 
+Lên lớp mở cái này thì khoe với bạn bè, dụ nó qua a nha hehe
+                    TARGET CAO FE LIÊN HỆ : HOÀNG HOÀNG CŨ
+  https://m.me/hoanghoangsource/
+[IMG]
+Feedback src: Xem tại đây  , hoặc xem trong tin nổi bật tcn a nhé 
+Post check legit: Xem tại đây
+Link website ForUser: https://4user.net/home/courses
+Lên lớp hay thư viện mở cái này ra học kèm được nhé, không mở slide gg docs nơi công cộng
+Overview
+Môn này mục tiêu là done 1 project (ra được 1 model hay thuật toán cụ thể để giải quyết 1 bài toán cụ thể)
+Nên đặt mục tiêu là publish 1 bài báo cụ thể, chia plan, chia task rõ ràng, ai chịu trách nhiệm phần nào. Thằng nào làm không được thì cứ kick rồi anh em chia ra làm tiếp chứ đừng ôm nhau chờ, chờ mà không có sản phẩm đầu ra cuối môn thì 7đ max ping, xui thì dưới trung bình luôn.
+Khi lên plan back up ra 3 tuần. Trước tuần thứ 7 code và model phải chạy được, tuần thứ 8 phải viết xong docs. Canh vậy thì kiểu gì tuần 10 cũng VỪA KỊP xong thôi, không dư đâu, còn nếu mà canh sát tuần 9 với tuần 10 với xong thì khả năng cao không kịp.
+Syllabus môn này phải 60% là điểm về làm việc nhóm và về làm project như nào, chỉ có 10% là kiểm tra lý thuyết thôi. Publish 1 bài báo thì được điểm bonus nữa, nên muốn điểm cao cứ auto (đặt mục tiêu) làm ra bài báo là được. 
+Kinh nghiệm làm research là chọn ra 3 topic thấy hay, rồi đấm nhau xem topic nào ngon hơn (chưa có người làm mà có dataset sẵn là ngon nhất); chốt topic rồi thì có chết cũng phải cho model chạy được, chốt rồi thì đừng bàn ra nữa, tầm đó thì nó PHẢI được, Khi check thì kiểm tra kỹ tính khả thi (có ai làm chưa? Tại sao chưa làm?) -> Literature Review. Check kỹ dataset có bị ngu không? (data thủng quá nhiều lỗ, dataset không legit, license không cho phép).
+Nhớ báo cáo tiến độ nhóm theo tuần, theo deadline giảng viên đầy đủ (Nhưng tiến độ thực tế phải nhanh hơn ÍT NHẤT 1-2 tuần)
+Một lần nữa nhắc lại: ai không làm được thì kick khỏi team, đừng để ảnh hưởng cả team, tại môn này điểm theo nhóm. Thà cho nó out team luôn chứ đừng để lúc báo cáo không có gì để báo cáo
+Nói chung môn này chill, nghiêm túc làm thì 3 tuần xong môn điểm >8đ easy. 
+Vã quá thì có thể ib tớ bùa topic cho, miễn là cam kết đúng deadline là được nhá, vì vào project tớ cũm căng lứm hehe :D
+Data Analysis with Python
+# Data Analysis with Python
+- 
+## Nhập và xuất Dữ liệu (Importing Datasets)
+Trước khi phân tích, cần hiểu rõ vấn đề cần giải quyết và bản chất của bộ dữ liệu (số lượng biến, kiểu dữ liệu của từng thuộc tính)
+- 
+### Các thư viện Python cho Khoa học Dữ liệu (Python Packages for Data Science)
+- Thư viện tính toán khoa học: Pandas (Cấu trúc dữ liệu và công cụ phân tích), NumPy (Mảng và ma trận đa chiều), SciPy (Các hàm toán học và thống kê).
+- Thư viện trực quan hóa dữ liệu: Matplotlib (Đồ thị cơ bản), Seaborn (Trực quan hóa thống kê nâng cao, biểu đồ heatmap).
+- Thư viện thuật toán Máy học: Scikit-learn (Xây dựng mô hình, tiền xử lý), Statsmodels (Khám phá dữ liệu, ước lượng mô hình thống kê).
+- 
+### Nhập và xuất dữ liệu (Importing and Exporting Data in Python)
+Dữ liệu thường được lưu trữ dưới nhiều định dạng khác nhau (.csv, .json, .xlsx, .sql). Pandas cung cấp các hàm dựng sẵn để đọc và ghi dữ liệu cực kỳ tiện lợi.
+import pandas as pd
+# Đọc file CSV
+df = pd.read_csv("data.csv")
+# Xem 5 dòng đầu tiên
+print(df.head())
+# Xuất dữ liệu ra file CSV
+df.to_csv("cleaned_data.csv", index=False)
+ | 
+- 
+## Làm sạch và tiền xử lý dữ liệu (Data Wrangling)
+- 
+### Xử lý giá trị bị thiếu (Dealing with Missing Values)
+Dữ liệu thực tế thường chứa các ô trống (NaN/Null). Có thể loại bỏ hoặc thay thế các giá trị này.
+# Xóa các dòng có giá trị bị thiếu ở cột 'price'
+df.dropna(subset=['price'], axis=0, inplace=True)
+# Thay thế giá trị thiếu bằng giá trị trung bình (Mean Imputation)
+mean_val = df['normalized-losses'].mean()
+df['normalized-losses'].fillna(mean_val, inplace=True)
+ | 
+- 
+### Định dạng dữ liệu (Data Formatting)
+Đảm bảo dữ liệu ở đúng kiểu định dạng. Ví dụ: đổi biến từ kiểu chuỗi (string) sang số thực (float).
+df['price'] = df['price'].astype('float')
+ | 
+- 
+### Chuẩn hóa dữ liệu (Data Normalization)
+Đưa dữ liệu về cùng một thang đo để thuật toán học máy hoạt động hiệu quả hơn. Các phương pháp phổ biến:
+Phương pháp
+ | Công thức / Đoạn mã Python
+ | 
+Simple Feature Scaling
+ | df['length'] = df['length'] / df['length'].max()
+ | 
+Min-Max Normalization
+ | df['length'] = (df['length'] - df['length'].min()) / (df['length'].max() - df['length'].min())
+ | 
+Z-score (Chuẩn hóa chuẩn)
+ | df['length'] = (df['length'] - df['length'].mean()) / df['length'].std()
+ | 
+- 
+### Chia khoảng (Binning)
+Phân nhóm các giá trị liên tục thành các khoảng (categorical bins) để phân tích dễ hơn (ví dụ: gộp giá tiền thành Thấp, Trung bình, Cao).
+import numpy as np
+bins = np.linspace(min(df['price']), max(df['price']), 4)
+group_names = ['Low', 'Medium', 'High']
+df['price-binned'] = pd.cut(df['price'], bins, labels=group_names, include_lowest=True)
+ | 
+- 
+### Biến đổi biến phân loại thành số (Turning categorical variables into quantitative variables)
+Sử dụng phương pháp One-Hot Encoding để tạo ra các biến giả (dummy variables) thích hợp cho phân tích mô hình.
+dummy_var = pd.get_dummies(df['fuel-type'])
+df = pd.concat([df, dummy_var], axis=1)
+ | 
+- 
+## Phân tích dữ liệu khám phá (Exploratory Data Analysis - EDA)
+- 
+### Thống kê mô tả (Descriptive Statistics)
+Cung cấp cái nhìn tổng quan về các phân phối và xu hướng trung tâm của dữ liệu.
+# Tổng hợp các thông số thống kê
+print(df.describe())
+# Đếm tần suất của các giá trị phân loại
+print(df['drive-wheels'].value_counts())
+ | 
+- 
+### Nhóm dữ liệu (Group By in Python)
+Phân tích mối quan hệ bằng cách nhóm các biến phân loại và tính giá trị trung bình của mục tiêu.
+df_test = df[['drive-wheels', 'body-style', 'price']]
+df_grp = df_test.groupby(['drive-wheels', 'body-style'], as_index=False).mean()
+# Tạo bảng Pivot
+df_pivot = df_grp.pivot(index='drive-wheels', columns='body-style')
+ | 
+- 
+### Tương quan (Correlation)
+Biểu diễn mối quan hệ phụ thuộc tuyến tính giữa các biến số với nhau. Chi tiết trong Ma trận tương quan:
+- Đường chéo (Diagonal Line): Một ma trận tương quan sẽ có đường chéo màu đỏ đậm (khi dùng Heatmap), cho thấy rằng mọi biến luôn có hệ số tương quan hoàn hảo là 1 với chính nó.
+- Tương quan dương (Positive Correlation): Khi kích thước động cơ (engine-size) tăng thì price (giá xe) cũng tăng. Suy ra có mối tương quan tuyến tính thuận.
+- Tương quan âm (Negative Correlation): Khi số dặm đi được trên một gallon cao tốc (highway-mpg) tăng thì price có xu hướng giảm. Đây là tương quan tuyến tính nghịch.
+import seaborn as sns
+import matplotlib.pyplot as plt
+# Tính Pearson Correlation
+correlation_matrix = df.corr()
+# Trực quan hóa Heatmap
+sns.heatmap(correlation_matrix, annot=True, cmap='RdBu')
+plt.show()
+# Biểu đồ phân tán (Scatter Plot) với đường hồi quy
+sns.regplot(x="engine-size", y="price", data=df)
+plt.show()
+ | 
+- 
+## Phát triển Mô hình (Model Development)
+- 
+### Hồi quy đa thức và Pipelines (Polynomial Regression and Pipelines)
+Khi mô hình tuyến tính đơn giản không khớp tốt với dữ liệu (không bắt được các đường cong trong dữ liệu), ta dùng Hồi quy Đa thức. Việc sử dụng Pipeline giúp đơn giản hóa quá trình biến đổi dữ liệu.
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+# Xây dựng Pipeline: Chuẩn hóa -> Biến đổi Đa thức -> Mô hình Hồi quy Tuyến tính
+Input = [('scale', StandardScaler()), 
+         ('polynomial', PolynomialFeatures(degree=2)), 
+         ('model', LinearRegression())]
+pipe = Pipeline(Input)
+pipe.fit(X, y)
+y_pipe_predict = pipe.predict(X)
+ | 
+- 
+### Các thước đo đánh giá In-Sample (Measures for In-Sample Evaluation)
+- R-squared (
+[IMG]
+): Thể hiện tỷ lệ phần trăm phương sai của biến mục tiêu được giải thích bởi mô hình. Giá trị càng gần 1 càng tốt.
+- Mean Squared Error (MSE): Giá trị trung bình của bình phương các sai số. MSE càng nhỏ thì mô hình càng chính xác.
+- 
+## Đánh giá và tinh chỉnh mô hình (Model evaluation and refinement)
+- 
+### Overfitting, Underfitting và chọn Mô hình
+Mô hình bị quá khớp (Overfitting) sẽ bắt "nhiễu" (noise) của dữ liệu huấn luyện, dẫn đến kết quả kém trên dữ liệu mới. Ngược lại, Underfitting xảy ra khi mô hình quá đơn giản. Cần chia nhỏ dữ liệu thành Training/Testing để đánh giá hiệu suất.
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+ | 
+- 
+### Hồi quy Ridge (Ridge Regression)
+Sử dụng khi có hiện tượng đa cộng tuyến hoặc khi mô hình đa thức bị overfitting. Tham số `alpha` kiểm soát mức độ phạt (penalty) đối với các hệ số.
+from sklearn.linear_model import Ridge
+RigeModel = Ridge(alpha=0.1)
+RigeModel.fit(x_train, y_train)
+yhat = RigeModel.predict(x_test)
+ | 
+- 
+### Grid Search (Tìm kiếm lưới siêu tham số)
+Grid Search là phương pháp vô cùng hiệu quả với ưu điểm là giúp chúng ta kiểm tra nhanh chóng nhiều siêu tham số (hyperparameters) khác nhau để tìm ra mô hình tối ưu. Mặc định phương pháp sử dụng điểm R-squared làm scoring.
+from sklearn.model_selection import GridSearchCV
+# Khởi tạo một Dictionary các siêu tham số (dictionary of parameter values)
+parameters = [{'alpha': [0.001, 0.1, 1, 10, 100, 1000]}]
+# Tạo object mô hình Ridge Regression
+RR = Ridge()
+# Khởi tạo GridSearchCV (Truyền vào object mô hình, tham số, số K-folds)
+Grid1 = GridSearchCV(RR, parameters, cv=4)
+Grid1.fit(X, y)
+# Lấy ra các giá trị tối ưu thông qua thuộc tính best_estimator_
+BestRR = Grid1.best_estimator_
+# Lấy thông tin về điểm validation trung bình thông qua thuộc tính cv_results_
+cv_res = Grid1.cv_results_
+print(BestRR.score(x_test, y_test))
+ | 
+Tóm lại Data Analysis bằng Python (Pandas, Numpy, Sklearn) sẽ bắt đầu từ: 
+việc thu thập dữ liệu (Importing) 
+-> dọn dẹp các giá trị khuyết và chuẩn hóa định dạng (Wrangling) 
+-> thăm dò mối tương quan (EDA)
+-> xây dựng và cấu hình các mô hình (Pipelines, Polynomial Regression)
+-> đánh giá toàn diện (evaluation), kiểm chứng chéo bằng Grid Search nhằm đảm bảo mô hình có tính khái quát (Generalization) tốt nhất khi xử lý trên tập dữ liệu thực tế.
+Data Visualization
+# Trực Quan Hóa Dữ Liệu Với Python (Data Visualization with Python)
+Chương này giới thiệu các công cụ cơ bản như Matplotlib, các biểu đồ lạ lạ (ví dụ: Waffle Chart, Word Cloud, bản đồ địa lý Folium) cho đến cách xây dựng các bảng điều khiển (Dashboards) tương tác bằng Plotly và Dash. 
+- 
+## Overview
+Trực quan hóa dữ liệu giúp chuyển đổi dữ liệu thô thành các biểu diễn đồ họa để dễ dàng phát hiện xu hướng, mẫu (patterns) và ngoại lai. Matplotlib là thư viện cốt lõi trong Python cho việc này, với hai cách tiếp cận chính: Scripting layer (pyplot) và Artist layer (Object-oriented). Thật ra thằng Seaborn cũng được ưu dùng tại nó vẽ biểu đồ đẹp hơn với có mấy cái tùy chỉnh và tính năng Matplotlib không có.
+- 
+### Biểu đồ đường (Line Plots) cơ bản
+Biểu đồ đường thường được sử dụng để biểu diễn dữ liệu chuỗi thời gian (time-series). Ví dụ điển hình là phân tích xu hướng nhập cư vào Canada qua các năm.
+import matplotlib.pyplot as plt
+import pandas as pd
+# Giả sử df_canada là DataFrame chứa dữ liệu nhập cư với index là tên quốc gia
+years = list(map(str, range(1980, 2014)))
+haiti = df_canada.loc['Haiti', years]
+# Vẽ biểu đồ đường
+haiti.plot(kind='line')
+plt.title('Immigration from Haiti to Canada')
+plt.ylabel('Number of immigrants')
+plt.xlabel('Years')
+plt.show()
+ | 
+- 
+## Các công cụ (Tools)
+- 
+### Biểu đồ diện tích, tần suất và biểu đồ cột (Area, Histograms, and Bar Charts)
+- Area Plot: Dựa trên biểu đồ đường nhưng tô màu phần diện tích phía dưới, thích hợp xem xét các thành phần cộng dồn theo thời gian.
+- Histogram: Biểu diễn phân phối tần suất của một tập hợp các số liệu liên tục.
+- Bar Chart: Biểu đồ cột dùng để so sánh các giá trị phân loại khác nhau.
+- 
+### Biểu đồ tròn (Pie Charts) và Biểu đồ hộp (Box Plots)
+Pie Charts biểu diễn tỷ lệ phần trăm của các thành phần trong một tổng thể. Box Plots cực kỳ hữu ích trong phân tích thống kê để xem xét sự phân tán của dữ liệu thông qua các điểm: min, tứ phân vị thứ nhất (Q1), trung vị (median), Q3, max và giá trị ngoại lai (outliers).
+# Vẽ biểu đồ hộp (Box Plot) cho dữ liệu nhập cư từ Nhật Bản tới Canada
+df_japan = df_canada.loc[['Japan'], years].transpose()
+df_japan.plot(kind='box', figsize=(8, 6))
+plt.title('Box plot of Japanese Immigrants from 1980 - 2013')
+plt.ylabel('Number of Immigrants')
+plt.show()
+ | 
+- 
+### Biểu đồ phân tán (Scatter Plots)
+Được sử dụng để xem xét mối tương quan giữa hai biến số liên tục (ví dụ: Mối quan hệ giữa năm và tổng lượng người nhập cư).
+# Vẽ biểu đồ phân tán (Scatter Plot)
+df_total.plot(kind='scatter', x='year', y='total', figsize=(10, 6), color='darkblue')
+plt.title('Total Immigration to Canada from 1980 - 2013')
+plt.xlabel('Year')
+plt.ylabel('Number of Immigrants')
+plt.show()
+ | 
+- 
+## Waffle Charts, Word Clouds, Seaborn và Geospatial Data
+- 
+### Waffle Charts và Word Clouds
+- Waffle Charts: Một biểu đồ dạng ô vuông (lưới) trực quan để thay thế Pie Chart, thể hiện tỷ lệ của các danh mục dữ liệu.
+- Word Clouds: Đám mây từ vựng biểu diễn tần suất xuất hiện của từ ngữ trong một văn bản. Kích thước của từ tỷ lệ thuận với tần suất của nó.
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+# Tạo đối tượng Word Cloud
+text = "data science python visualization machine learning pandas data data"
+wordcloud = WordCloud(background_color='white').generate(text)
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()
+ | 
+- 
+### Xử lý dữ liệu không gian địa lý với Folium
+Folium là thư viện kết nối sức mạnh xử lý dữ liệu của Python với bản đồ Leaflet.js, cho phép bạn đánh dấu (markers) hoặc tạo biểu đồ Choropleth để tô màu các vùng địa lý theo phân bố dữ liệu.
+import folium
+# Tạo bản đồ trung tâm tại Canada
+canada_map = folium.Map(location=[56.130, -106.35], zoom_start=4)
+# Thêm Marker vào bản đồ
+folium.Marker([51.25, -85.32], popup='Tỉnh bang Ontario').add_to(canada_map)
+canada_map
+ | 
+- 
+## Xây dựng Dashboards với Plotly và Dash
+Dash là một framework mã nguồn mở của Python chuyên để xây dựng các ứng dụng web phân tích dữ liệu (Dashboards) mà không cần dùng đến JavaScript hay HTML thuần. Dash cấu thành từ:
+- Dash HTML Components (dash.html): Cung cấp các thẻ HTML để xây dựng giao diện (Div, H1, P, v.v.).
+- Dash Core Components (dash.dcc): Cung cấp các công cụ tương tác như Dropdown, Slider, và Graph (sử dụng biểu đồ Plotly).
+- 
+### Tạo Dashboard tương tác (Make Dashboards interactive)
+Sự tương tác của Dash được điều khiển bởi Callback (hàm phản hồi). Decorator @app.callback kết nối Input (những gì người dùng thao tác, ví dụ chọn dropdown) với Output (biểu đồ hoặc văn bản cần được cập nhật tự động).
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
+import plotly.express as px
+import pandas as pd
+# Khởi tạo dữ liệu
+df = pd.DataFrame({
+    "Fruit": ["Apples", "Oranges", "Bananas", "Apples", "Oranges", "Bananas"],
+    "Amount": [4, 1, 2, 2, 4, 5],
+    "City": ["SF", "SF", "SF", "Montreal", "Montreal", "Montreal"]
+})
+app = dash.Dash(__name__)
+# Xây dựng bố cục giao diện
+app.layout = html.Div([
+    html.H1("Dashboard Trực quan hóa Trái cây"),
+    dcc.Dropdown(
+        id='city-dropdown',
+        options=[{'label': i, 'value': i} for i in df['City'].unique()],
+        value='SF'
+    ),
+    dcc.Graph(id='bar-chart')
+])
+# Hàm callback cập nhật biểu đồ dựa trên lựa chọn Dropdown
+@app.callback(
+    Output('bar-chart', 'figure'),
+    Input('city-dropdown', 'value')
+)
+def update_graph(selected_city):
+    filtered_df = df[df['City'] == selected_city]
+    fig = px.bar(filtered_df, x="Fruit", y="Amount", color="Fruit", title=f"Dữ liệu tại {selected_city}")
+    return fig
+if __name__ == '__main__':
+    app.run_server(debug=True)
+ | 
+Watson
+# Triển khai ứng dụng AI với Watson, và cấu hình cơ sở dữ liệu Db2 cùng REST API.
+# Thật ra vào học có khi không cần phải làm với Watson đâu cả nhà ạ, tại policy nó hên xui lắm, phần này đọc cho biết với cả có hứng thú thì tự tìm hiểu, chứ khả năng cao là nó nhót.
+Recommend ai muốn học AI theo hướng application, deploy hàng có sẵn thôi chứ không muốn đào sâu kiến trúc model thì nên tìm hiểu nhen, thích nữa thì tìm hiểu (ngoài chương trình) Replicate API, comfy
+- 
+## Phân tích dữ liệu = Python (Data Analysis)
+- 
+### Nhập và xuất dữ liệu
+Giai đoạn đầu tiên là thấu hiểu cấu trúc tập dữ liệu và định hình bài toán. Cần xác định rõ số lượng bản ghi, các biến độc lập (features) và biến mục tiêu (target variable).
+- Pandas: Cung cấp cấu trúc dữ liệu DataFrame và Series.
+- NumPy: Tối ưu hóa tính toán đại số tuyến tính và mảng đa chiều.
+- SciPy: Thư viện tính toán khoa học chuyên sâu.
+- Matplotlib & Seaborn: Trực quan hóa dữ liệu thống kê.
+- Scikit-learn: Học máy và tiền xử lý.
+- Statsmodels: Mô hình hóa thống kê.
+import pandas as pd
+url = "auto.csv"
+df = pd.read_csv(url)
+print(df.head(5))
+# Xuất dữ liệu
+df.to_csv("automobile_processed.csv", index=False)
+ | 
+- 
+### Làm sạch và biến đổi dữ liệu (Data Wrangling)
+Các bước chuẩn: Nhận diện -> Loại bỏ (nếu mất target) -> Thay thế (bằng Mean, Median hoặc Mode).
+import numpy as np
+df.replace("?", np.nan, inplace=True)
+mean_norm = df['normalized-losses'].astype('float').mean()
+df['normalized-losses'].fillna(mean_norm, inplace=True)
+# Chuẩn hóa Z-score
+df['length'] = (df['length'] - df['length'].mean()) / df['length'].std()
+# One-Hot Encoding
+dummy_var = pd.get_dummies(df["fuel-type"])
+df = pd.concat([df, dummy_var], axis=1)
+ | 
+- 
+### Khám phá dữ liệu (EDA) và mô hình
+Thực hiện thống kê mô tả, phân tích tương quan Pearson, và xây dựng Pipelines Hồi quy.
+import seaborn as sns
+import matplotlib.pyplot as plt
+# Biểu đồ phân tán và Hồi quy
+sns.regplot(x="engine-size", y="price", data=df)
+plt.show()
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, PolynomialFeatures
+from sklearn.linear_model import LinearRegression
+Input = [('scale', StandardScaler()), ('polynomial', PolynomialFeatures(degree=2)), ('model', LinearRegression())]
+pipe = Pipeline(Input)
+pipe.fit(X, y)
+ | 
+- 
+## Trực quan hóa dữ liệu = Python (Data Visualization)
+- 
+### Các công cụ trực quan hóa
+Sử dụng Matplotlib (kiến trúc 3 tầng: Backend, Artist, Scripting) để vẽ các đồ thị cơ bản.
+# Biểu đồ đường
+df_haiti.plot(kind='line', figsize=(8, 5))
+plt.title('Xu hướng Nhập cư từ Haiti sang Canada')
+plt.ylabel('Số lượng người')
+plt.show()
+ | 
+Waffle Charts, Word Clouds và Folium giúp trực quan hóa nâng cao và định vị không gian.
+import folium
+world_map = folium.Map(location=[56.130, -106.35], zoom_start=4)
+folium.Marker(location=[43.6532, -79.3832], popup='Toronto').add_to(world_map)
+ | 
+- 
+### Dashboard với Plotly và Dash
+Dash HTML Components và Dash Core Components giúp xây dựng UI, Callback quản lý tính tương tác.
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
+# Thiết lập callback để cập nhật biểu đồ
+@app.callback(
+    Output('bar-chart', 'figure'),
+    Input('dropdown', 'value')
+)
+def update_graph(selected_value):
+    return px.bar(df[df['col'] == selected_value], x='A', y='B')
+ | 
+- 
+## Xây dựng ứng dụng AI Với Watson APIs
+- 
+### Kiến trúc trợ lý nhận thức (cognitive assistant architecture)
+Watson Assistant bao gồm Intents (Ý định của người dùng), Entities (Thực thể / Từ khóa) và Dialog (Luồng kịch bản hội thoại).
+from ibm_watson import AssistantV2
+from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
+authenticator = IAMAuthenticator('API_KEY')
+assistant = AssistantV2(version='2021-06-14', authenticator=authenticator)
+response = assistant.message(
+    assistant_id='ID',
+    session_id='SESSION',
+    input={'message_type': 'text', 'text': 'Giá khóa học?'}
+).get_result()
+ | 
+- 
+### Giọng nói và triển khai (Voice & Deployment)
+Tích hợp Text-to-Speech (TTS) và Speech-to-Text (STT) để bot có khả năng nghe/nói. Watson hỗ trợ triển khai đa kênh qua Web Chat, WordPress, Slack, Facebook Messenger và Node-RED.
+from ibm_watson import TextToSpeechV1
+tts = TextToSpeechV1(authenticator=IAMAuthenticator('API_KEY'))
+with open('voice.wav', 'wb') as audio_file:
+    res = tts.synthesize('Xin chào, giá là 500 đô.', voice='en-US_AllisonV3Voice', accept='audio/wav').get_result()
+    audio_file.write(res.content)
+ | 
+- 
+## Hệ thống cơ sở dữ liệu và REST API
+- 
+### Create Db2 Service Instance
+IBM Db2 là hệ quản trị cơ sở dữ liệu quan hệ (RDBMS) thế hệ mới được tối ưu hóa cho các tác vụ phân tích dữ liệu lớn và vận hành doanh nghiệp dựa trên nền tảng điện toán đám mây. Các bước khởi tạo trên IBM Cloud Console bao gồm:
+- Truy cập vào danh mục tài nguyên (Catalog) trên trang quản trị IBM Cloud.
+- Tìm kiếm dịch vụ với từ khóa Db2 và lựa chọn gói dịch vụ phù hợp.
+- Thiết lập các thông số cơ bản bao gồm vùng tài nguyên (Region), tên thực thể dịch vụ (Service name) và nhóm tài nguyên (Resource group).
+- Nhấn nút Create để hệ thống tiến hành cấp phát tài nguyên tự động.
+Sau khi khởi tạo xong, truy cập vào giao diện quản trị console để lấy các thông tin cấu hình quan trọng như chuỗi kết nối kết nối (Credentials), cổng kết nối (Port), tên máy chủ (Hostname) phục vụ cho việc tích hợp ứng dụng bên ngoài.
+- 
+### Load Data into Db2
+Giao diện Db2 Console cung cấp một bộ công cụ trực quan cho phép người dùng trực tiếp tải lên các tệp dữ liệu phẳng như CSV, XLSX hoặc tệp định dạng văn bản. Trong quá trình nạp dữ liệu, hệ thống yêu cầu chỉ định hoặc khởi tạo một Lược đồ (Schema) để phân tách không gian tên giữa các dự án.
+- Cấu hình kiểu dữ liệu chính xác cho từng cột (ví dụ: VARCHAR cho chuỗi ký tự, INT cho số nguyên, hoặc DECIMAL).
+- Thiết lập khóa chính (Primary Key) nếu cần thiết để đảm bảo tính toàn vẹn của dữ liệu.
+SQL minh họa khởi tạo bảng và chèn dữ liệu thủ công (nào làm thì quăng cho AI tạo script add dữ liệu, chèn thủ công thì tới mùa quýt mất, chèn thủ công chỉ để đem lên bùa chú review trực tiếp thôi nhá):
+CREATE TABLE MY_SCHEMA.PRODUCTS (
+    PRODUCT_ID INT NOT NULL,
+    PRODUCT_NAME VARCHAR(100) NOT NULL,
+    PRICE DECIMAL(10, 2),
+    STOCK_QUANTITY INT,
+    PRIMARY KEY (PRODUCT_ID)
+);
+-- Chèn dữ liệu mẫu vào bảng
+INSERT INTO MY_SCHEMA.PRODUCTS (PRODUCT_ID, PRODUCT_NAME, PRICE, STOCK_QUANTITY)
+VALUES (1, 'Laptop ThinkPad X1', 1200.00, 15),
+       (2, 'MacBook Pro M3', 1999.50, 10);
+ | 
+- 
+### Setup server to provide REST API
+Kiến trúc REST API với cơ sở dữ liệu hoạt động như sau: Máy chủ trung gian đóng vai trò là một API Gateway, tiếp nhận các yêu cầu HTTP (GET, POST, PUT, DELETE) từ các ứng dụng phía máy khách, thực thi các truy vấn SQL tương ứng xuống Db2, sau đó đóng gói kết quả trả về dưới dạng JSON tiêu chuẩn. Việc thiết lập có thể được hiện thực hóa qua Node-RED hoặc các framework như Flask (Python) hay Express (Node.js).
+Mã Python minh họa xây dựng REST API kết nối IBM Db2:
+from flask import Flask, jsonify, request
+import ibm_db
+app = Flask(__name__)
+# Cấu hình chuỗi kết nối thông tin xác thực lấy từ Db2 Console
+dsn_driver = "{IBM DB2 ODBC DRIVER}"
+dsn_database = "BLUDB"
+dsn_hostname = "your-hostname.databases.appdomain.cloud"
+dsn_port = "32733"
+dsn_protocol = "TCPIP"
+dsn_uid = "your_username"
+dsn_pwd = "your_password"
+dsn_security = "SSL"
+dsn = (
+    f"DRIVER={dsn_driver};"
+    f"DATABASE={dsn_database};"
+    f"HOSTNAME={dsn_hostname};"
+    f"PORT={dsn_port};"
+    f"PROTOCOL={dsn_protocol};"
+    f"UID={dsn_uid};"
+    f"PWD={dsn_pwd};"
+    f"SECURITY={dsn_security};"
+)
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    try:
+        # Khởi tạo kết nối tới thực thể Db2
+        conn = ibm_db.connect(dsn, "", "")
+        sql = "SELECT * FROM MY_SCHEMA.PRODUCTS"
+        stmt = ibm_db.exec_immediate(conn, sql)
+        products_list = []
+        row = ibm_db.fetch_assoc(stmt)
+        while row != False:
+            products_list.append(row)
+            row = ibm_db.fetch_assoc(stmt)
+        ibm_db.close(conn)
+        return jsonify({"status": "success", "data": products_list}), 200
+    except Exception as e:
+        return jsonify({"status": "error", "message": str(e)}), 500
+if __name__ == '__main__':
+    app.run(debug=True, port=5000)
+ | 
+SpaceX
+# Quy trình thiết lập dự án hướng đối tượng doanh nghiệp.
+(đối với project SpaceX này thì thực tế trên lớp sẽ được giới thiệu và vận dụng biến tấu đủ thứ chứ không nhất thiết phải làm phân tích dữ liệu của SpaceX, đọc docs này để biết các flatform, quy trình, IDE,...)
+- 
+# Overview
+Cần áp dụng toàn bộ kiến thức về khoa học dữ liệu, từ khâu thu thập, làm sạch, phân tích khám phá, trực quan hóa đến việc xây dựng các mô hình học máy. Bối cảnh dự án (scenario) xoay quanh việc phân tích dữ liệu phóng tàu vũ trụ của công ty SpaceX nhằm dự đoán khả năng hạ cánh thành công của tầng 1 (first stage) tên lửa Falcon 9, từ đó ước tính chi phí cho một lần phóng tên lửa.
+## Khởi tạo dự án trên IBM Watson Studio:
+Nền tảng IBM Watson Studio cung cấp môi trường tích hợp để phát triển các Notebooks (Jupyter). Các bước bao gồm: Đăng nhập vào IBM Cloud, tạo dự án (Project) mới, thiết lập tài nguyên lưu trữ đám mây (Cloud Object Storage) và cấp phát môi trường lập trình.
+- 
+# Tích hợp GitHub và Watson Studio
+- 
+## Liên kết và tích hợp GitHub (Link and integrate GitHub)
+Để quản lý phiên bản mã nguồn, Watson Studio cho phép liên kết trực tiếp với tài khoản GitHub cá nhân bằng cách tạo và cung cấp Khóa truy cập cá nhân (Personal Access Token). Việc tích hợp này giúp quá trình làm việc nhóm, lưu trữ và chia sẻ mã nguồn trở nên an toàn và thuận tiện hơn.
+- 
+## Xuất bản Notebook (Publish notebook on GitHub)
+Sau khi hoàn thiện mã Python trên Jupyter Notebook trong Watson Studio, học viên có thể đẩy (push/publish) trực tiếp file notebook (có đuôi .ipynb) lên kho lưu trữ (repository) trên GitHub. Đồng thời, bạn cũng có thể thêm (Add) các Notebook mẫu sẵn có từ một kho lưu trữ GitHub về lại dự án Watson Studio để tiếp tục làm việc.
+- 
+# Thu thập dữ liệu (Collecting the data)
+- 
+## Overview
+Ở đây tập trung thu thập dữ liệu thô từ hai nguồn chính: truy xuất dữ liệu thông qua REST API do SpaceX cung cấp và thu thập dữ liệu bằng cách cào dữ liệu từ các trang web (Web Scraping).
+- 
+## Thu thập dữ liệu thông qua SpaceX REST API
+API của SpaceX cung cấp các điểm cuối (endpoints) mở để lấy dữ liệu về các đợt phóng tàu, các bộ phận tên lửa (cores, capsules). Ví dụ: endpoint api.spacexdata.com/v4/launches/past sẽ trả về danh sách dữ liệu các lần phóng trong quá khứ.
+import requests
+import pandas as pd
+# 1. Điểm cuối URL của SpaceX API cho các đợt phóng trong quá khứ
+spacex_url = "https://api.spacexdata.com/v4/launches/past"
+# 2. Thực hiện một yêu cầu GET tới API để lấy dữ liệu
+response = requests.get(spacex_url)
+# 3. Nếu mã trạng thái là 200 (Thành công), ta tiến hành xử lý dữ liệu JSON
+if response.status_code == 200:
+    data = response.json()
+    df_launches = pd.json_normalize(data)
+    print(df_launches[['flight_number', 'name', 'date_utc']].head())
+else:
+    print("Lỗi: Không thể kết nối đến SpaceX API.")
+ | 
+- 
+## Thu thập dữ liệu qua Web Scraping
+Không phải tất cả dữ liệu đều có sẵn và được sắp xếp gọn gàng qua API. Một lượng lớn dữ liệu giá trị có thể được trích xuất từ các bảng dữ liệu trên Wikipedia bằng phương pháp cào dữ liệu (Web Scraping) sử dụng thư viện BeautifulSoup.
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+# 1. URL trang Wikipedia chứa danh sách các lần phóng Falcon 9
+wiki_url = "https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches"
+# 2. Tải nội dung HTML
+html_data = requests.get(wiki_url).text
+# 3. Phân tích cú pháp HTML
+soup = BeautifulSoup(html_data, 'html.parser')
+# 4. Tìm tất cả các thẻ bảng
+html_tables = soup.find_all('table')
+# 5. Trích xuất dữ liệu từ một bảng cụ thể
+first_launch_table = html_tables[2]
+for th in first_launch_table.find_all('th'):
+    print(th.text.strip())
+ | 
+- 
+## Tiền xử lý dữ liệu SpaceX (Data Wrangling)
+- 
+### Xác định và phân tích các đặc trưng chính
+Sau bước thu thập dữ liệu thô từ API và Web Scraping, quy trình tiền xử lý tập trung vào việc định hình các thuộc tính quyết định đến khả năng hạ cánh thành công của tầng 1 (first stage) tên lửa Falcon 9:
+- Outcome: Trạng thái chi tiết của việc hạ cánh (ví dụ: True ASDS, False ASDS, True RTLS, None None). Đây là biến nền tảng để tạo nhãn mục tiêu.
+- Grid Fins & Legs: Các bộ phận cơ khí hỗ trợ điều hướng và giữ thăng bằng khi tên lửa đáp xuống bãi đáp hoặc sà lan.
+- Flights & Reused Count: Số lần lõi tên lửa đã từng bay và số lần được tái sử dụng trong quá khứ.
+- Block & Serial: Phiên bản công nghệ của lõi tên lửa (Block 1 đến Block 5) và mã định danh duy nhất của từng lõi (Serial).
+- Launch Site: Vị trí bãi phóng bệ tên lửa (vùng không gian kinh độ và vĩ độ).
+- 
+### Binary Labeling
+Biến đổi cột thuộc tính phi cấu trúc Outcome thành một biến mục tiêu nhị phân duy nhất đặt tên là Class: Gán giá trị 1 nếu tầng 1 hạ cánh thành công (các trạng thái bắt đầu bằng True) và gán giá trị 0 nếu hạ cánh thất bại hoặc không thực hiện hạ cánh (các trạng thái bắt đầu bằng False hoặc None).
+import pandas as pd
+import numpy as np
+# Giả định df là DataFrame chứa dữ liệu thô thu được từ SpaceX API
+# Khảo sát các giá trị độc bản trong cột Outcome
+print(df['Outcome'].value_counts())
+# Thiết lập danh sách các trạng thái hạ cánh thành công
+success_outcomes = ['True ASDS', 'True RTLS', 'True Ocean']
+# Áp dụng hàm lambda hoặc np.where để tạo cột Class nhị phân
+df['Class'] = np.where(df['Outcome'].isin(success_outcomes), 1, 0)
+# Kiểm tra tỷ lệ hạ cánh thành công nền tảng
+print(df['Class'].value_counts(normalize=True))
+ | 
+- 
+## Phân tích trực quan tương tác Và thiết lập Dashboard
+- 
+### Phân tích bãi phóng không gian địa lý với Folium
+Sử dụng thư viện Folium để ánh xạ các tọa độ bãi phóng (Launch Sites) của SpaceX lên bản đồ thực tế. Đồng thời áp dụng công thức toán học Haversine để tính toán khoảng cách từ vị trí bãi phóng đến các thực thể hạ tầng quan trọng xung quanh như đường bờ biển (coastlines), đường cao tốc (highways), và các trung tâm đô thị gần nhất để tìm ra mối tương quan an toàn bệ phóng.
+import folium
+from math import sin, cos, sqrt, atan2, radians
+def calculate_distance(lat1, lon1, lat2, lon2):
+    # Công thức toán học Haversine tính khoảng cách giữa hai tọa độ địa lý
+    R = 6373.0 # Bán kính Trái Đất tính theo km
+    lat1, lon1, lat2, lon2 = map(radians, [lat1, lon1, lat2, lon2])
+    dlon = lon2 - lon1
+    dlat = lat2 - lat1
+    a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return R * c
+# Khởi tạo bản đồ Folium tại bệ phóng mẫu
+site_map = folium.Map(location=[28.562302, -80.577356], zoom_start=15)
+folium.Marker([28.562302, -80.577356], popup='CCAFS LC-40').add_to(site_map)
+site_map
+ | 
+- 
+### Phát triển ứng dụng Dashboard với Plotly Dash
+Xây dựng kiến trúc Dashboard động để phân tích hiệu suất phóng tên lửa thời gian thực qua 4 nhiệm vụ (Tasks) cấu trúc cốt lõi:
+- TASK 1: Thêm một Drop-down Input component để người dùng lựa chọn giữa việc xem toàn bộ các bãi phóng (All Sites) hoặc chọn từng bãi phóng cụ thể.
+- TASK 2: Thiết lập hàm callback render biểu đồ tròn (Success Pie Chart) phản ánh tỷ lệ phần trăm số lần phóng thành công và thất bại tương ứng với bãi phóng được chọn.
+- TASK 3: Thêm cấu trúc thanh trượt Range Slider cho phép chọn bộ lọc khoảng khối lượng tải trọng (Payload Range) từ 0 kg đến 10,000 kg.
+- TASK 4: Thiết lập hàm callback kết nối đầu ra hiển thị biểu đồ phân tán (Scatter Plot) thể hiện mối quan hệ tuyến tính giữa Payload và kết quả Class, ánh xạ màu sắc theo phiên bản lõi tên lửa (Booster Version).
+import dash
+from dash import dcc, html
+from dash.dependencies import Input, Output
+import plotly.express as px
+app = dash.Dash(__name__)
+app.layout = html.Div([
+    html.H1("SpaceX Launch Records Dashboard", style={'textAlign': 'center'}),
+    # TASK 1: Thành phần chọn bãi phóng Dropdown
+    dcc.Dropdown(id='site-dropdown',
+                 options=[
+                     {'label': 'All Sites', 'value': 'ALL'},
+                     {'label': 'CCAFS LC-40', 'value': 'CCAFS LC-40'},
+                     {'label': 'VAFB SLC-4E', 'value': 'VAFB SLC-4E'},
+                     {'label': 'KSC LC-39A', 'value': 'KSC LC-39A'}
+                 ], value='ALL', placeholder="Select a Launch Site here", searchable=True),
+    html.Br(),
+    html.Div(dcc.Graph(id='success-pie-chart')),
+    html.Br(),
+    html.P("Payload range (Kg):"),
+    # TASK 3: Thành phần chọn khoảng khối lượng Range Slider
+    dcc.RangeSlider(id='payload-slider', min=0, max=10000, step=1000,
+                    marks={0: '0', 10000: '10000'}, value=[0, 10000]),
+    html.Div(dcc.Graph(id='success-payload-scatter-chart')),
+])
+# TASK 2 & TASK 4: Các hàm logic Callback xử lý tương tác đồ họa tự động
+@app.callback(
+    Output(component_id='success-pie-chart', component_property='figure'),
+    Input(component_id='site-dropdown', component_property='value')
+)
+def get_pie_chart(entered_site):
+    if entered_site == 'ALL':
+        fig = px.pie(df, values='Class', names='Launch Site', title='Total Success Launches By Site')
+    else:
+        filtered_df = df[df['Launch Site'] == entered_site]
+        fig = px.pie(filtered_df, names='Class', title=f'Total Success Launches for site {entered_site}')
+    return fig
+if __name__ == '__main__':
+    app.run_server(debug=False)
+ | 
+- 
+## Predictive Analysis
+- 
+### Chuẩn hóa ma trận đặc trưng
+Trước khi đưa các biến độc lập vào hệ thống phân loại học máy, việc sử dụng kỹ thuật cấu trúc StandardScaler là bước bắt buộc để chuyển đổi các thuộc tính số có thang đo phân tán rộng (như khối lượng tải trọng Payload) về phân phối có trung bình bằng 0 và độ lệch chuẩn bằng 1.
+- 
+### Thử nghiệm training và quét hyperparameters với GridSearchCV
+Hệ thống tiến hành phân tách tập dữ liệu thành tập huấn luyện (Train set) và tập kiểm thử độc lập (Test set). Sau đó, thực hiện việc tìm kiếm tối ưu trên không gian tham số của 4 thuật toán phân loại kinh điển bao gồm: Logistic Regression, Support Vector Machine (SVM), Decision Tree Classifier, và K-Nearest Neighbors (KNN).
+Thường các phần quét siêu tham số này sẽ khá lâu nhá
+Thuật toán Phân loại
+ | Không gian Siêu tham số Quét (Hyperparameters Grid)
+ | Mục tiêu Tối ưu hóa Hệ thống
+ | 
+Logistic Regression
+ | Hệ số phạt C: [0.01, 0.1, 1, 10], Hàm phạt penalty: ['l1', 'l2']
+ | Tối ưu hóa ranh giới phân tách xác suất tuyến tính.
+ | 
+Support Vector Machine
+ | Hệ số C, Hàm nhân kernel: ['linear', 'rbf', 'poly', 'sigmoid']
+ | Tìm kiếm siêu phẳng có biên độ khoảng cách (margin) lớn nhất.
+ | 
+Decision Tree
+ | Tiêu chí criterion: ['gini', 'entropy'], Độ sâu tối đa max_depth
+ | Tách nhóm dữ liệu dựa trên mức độ thuần khiết của thông tin.
+ | 
+K-Nearest Neighbors
+ | Số lượng láng giềng n_neighbors, Thuật toán tìm kiếm n_neighbors
+ | Phân lớp dựa trên khoảng cách biểu diễn không gian láng giềng gần nhất.
+ | 
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+# 1. Chuẩn hóa ma trận biến đầu vào X
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+# 2. Phân tách tập huấn luyện và kiểm thử theo tỷ lệ 80/20
+X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=0.2, random_state=2)
+# 3. Quét tối ưu siêu tham số cho mô hình SVM bằng GridSearchCV
+parameters = {'kernel': ('linear', 'rbf', 'poly', 'sigmoid'), 'C': [0.01, 0.1, 1, 10]}
+svm = SVC()
+clf = GridSearchCV(svm, parameters, cv=10)
+clf.fit(X_train, Y_train)
+print("Siêu tham số tối ưu tìm được:", clf.best_params_)
+print("Độ chính xác trung bình trên tập kiểm chứng chéo (CV):", clf.best_score_)
+print("Độ chính xác thực tế đánh giá trên tập Test độc lập:", clf.score(X_test, Y_test))
+ | 
+## Bài học rút ra từ project SpaceX:
+Một bài trình bày khoa học dữ liệu hướng đối tượng doanh nghiệp chuẩn mực cần tuân thủ nghiêm ngặt cấu trúc cấu thành 5 phần cơ bản sau:
+- Introduction: Định hình bối cảnh bài toán nghiên cứu chi phí phóng sà lan tên lửa của SpaceX và nêu rõ mục tiêu dự báo khả năng tái sử dụng lõi tên lửa để tiết kiệm ngân sách đầu tư.
+- Data Collection & Wrangling: Tóm tắt phương pháp gọi API, kỹ thuật cào dữ liệu Wikipedia bằng BeautifulSoup và các bước làm sạch giá trị khuyết thiếu dữ liệu.
+- Exploratory Data Analysis (EDA): Trình bày các phát hiện thống kê thông qua các câu lệnh truy vấn SQL nâng cao và các đồ thị phân tích xu hướng trực quan.
+- Interactive Analytics: Trình diễn trực tiếp mô hình bản đồ tương tác Folium chỉ rõ khoảng cách an toàn bãi phóng và ứng dụng phân tích thời gian thực Dashboard của Plotly Dash.
+- Predictive Analysis & Conclusion: Đưa ra bảng thống kê so sánh độ chính xác của 4 mô hình máy học đã huấn luyện, chỉ ra mô hình có hiệu năng cao nhất và đưa ra khuyến nghị thực tế cho doanh nghiệp.

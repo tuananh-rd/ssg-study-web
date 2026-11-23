@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m2-001",
+  "q": "Đặc điểm nào là của Team (không phải Group)?",
+  "correct": "Có mục tiêu chung cụ thể",
+  "wrong": [
+   "Có thể chỉ trao đổi thông tin",
+   "Mỗi người có thể theo mục tiêu riêng",
+   "Mức độ phụ thuộc thấp hơn"
+  ]
+ },
+ {
+  "id": "r-m2-002",
+  "q": "Đặc điểm nào là của Group (không phải Team)?",
+  "correct": "Mỗi người có thể theo mục tiêu riêng",
+  "wrong": [
+   "Cùng chịu trách nhiệm",
+   "Thành viên phụ thuộc lẫn nhau",
+   "Có quyền ra quyết định"
+  ]
+ },
+ {
+  "id": "r-m2-003",
+  "q": "Đặc điểm nào là của Team (không phải Group)?",
+  "correct": "Thành viên phụ thuộc lẫn nhau",
+  "wrong": [
+   "Mức độ phụ thuộc thấp hơn",
+   "Mỗi người có thể theo mục tiêu riêng",
+   "Thường được đánh giá cá nhân"
+  ]
+ },
+ {
+  "id": "r-m2-004",
+  "q": "Đặc điểm nào là của Group (không phải Team)?",
+  "correct": "Mức độ phụ thuộc thấp hơn",
+  "wrong": [
+   "Có quyền ra quyết định",
+   "Thành viên phụ thuộc lẫn nhau",
+   "Có mục tiêu chung cụ thể"
+  ]
+ },
+ {
+  "id": "r-m2-005",
+  "q": "Đặc điểm nào là của Team (không phải Group)?",
+  "correct": "Cùng chịu trách nhiệm",
+  "wrong": [
+   "Thường được đánh giá cá nhân",
+   "Có thể chỉ trao đổi thông tin",
+   "Mỗi người có thể theo mục tiêu riêng"
+  ]
+ },
+ {
+  "id": "r-m2-006",
+  "q": "Đặc điểm nào là của Group (không phải Team)?",
+  "correct": "Thường được đánh giá cá nhân",
+  "wrong": [
+   "Cùng chịu trách nhiệm",
+   "Có quyền ra quyết định",
+   "Có mục tiêu chung cụ thể"
+  ]
+ },
+ {
+  "id": "r-m2-007",
+  "q": "Đặc điểm nào là của Team (không phải Group)?",
+  "correct": "Có quyền ra quyết định",
+  "wrong": [
+   "Thường được đánh giá cá nhân",
+   "Mỗi người có thể theo mục tiêu riêng",
+   "Có thể chỉ trao đổi thông tin"
+  ]
+ },
+ {
+  "id": "r-m2-008",
+  "q": "Đặc điểm nào là của Group (không phải Team)?",
+  "correct": "Có thể chỉ trao đổi thông tin",
+  "wrong": [
+   "Thành viên phụ thuộc lẫn nhau",
+   "Cùng chịu trách nhiệm",
+   "Có quyền ra quyết định"
+  ]
+ },
+ {
+  "id": "r-m2-009",
+  "q": "Theo tài liệu, team là tập hợp người như thế nào?",
+  "correct": "Có kỹ năng bổ sung, cùng làm vì một mục tiêu cụ thể và cùng chịu trách nhiệm về kết quả",
+  "wrong": [
+   "Cùng phòng ban, mỗi người theo mục tiêu riêng",
+   "Chỉ trao đổi thông tin, không cần mục tiêu chung",
+   "Do một người quản lý chịu toàn bộ trách nhiệm"
+  ]
+ },
+ {
+  "id": "r-m2-010",
+  "q": "Team có bao nhiêu đặc trưng theo tài liệu?",
+  "correct": "Năm",
+  "wrong": [
+   "Ba",
+   "Bốn",
+   "Bảy"
+  ]
+ },
+ {
+  "id": "r-m2-011",
+  "q": "Ý nào KHÔNG thuộc năm đặc trưng của team?",
+  "correct": "Mỗi thành viên được đánh giá riêng",
+  "wrong": [
+   "Cùng chịu trách nhiệm cho mục tiêu chung",
+   "Có sự ổn định trong một khoảng thời gian",
+   "Hoạt động trong một bối cảnh xã hội / tổ chức"
+  ]
+ },
+ {
+  "id": "r-m2-012",
+  "q": "Đặc trưng nào của team liên quan đến thời gian?",
+  "correct": "Có sự ổn định trong một khoảng thời gian",
+  "wrong": [
+   "Lãnh đạo luân chuyển theo nhiệm vụ",
+   "Thành viên phụ thuộc lẫn nhau",
+   "Có quyền hạn và khả năng ra quyết định"
+  ]
+ },
+ {
+  "id": "r-m2-013",
+  "q": "Ý nào là lợi ích của team được nêu trong tài liệu?",
+  "correct": "Xử lý vấn đề phức tạp tốt hơn cá nhân",
+  "wrong": [
+   "Luôn hoàn thành nhanh hơn cá nhân",
+   "Không cần quản lý hỗ trợ",
+   "Tự động hiệu quả khi đủ người"
+  ]
+ },
+ {
+  "id": "r-m2-014",
+  "q": "Team giúp giảm những gì?",
+  "correct": "Sai sót, vắng mặt và tỷ lệ nghỉ việc",
+  "wrong": [
+   "Chi phí lương và thuế",
+   "Số cuộc họp và email",
+   "Nhu cầu đào tạo nhân viên"
+  ]
+ },
+ {
+  "id": "r-m2-015",
+  "q": "Theo tài liệu, kết quả của team phụ thuộc vào gì?",
+  "correct": "Thiết kế, quản lý, kỹ năng và quan hệ giữa các thành viên",
+  "wrong": [
+   "Chỉ số lượng thành viên",
+   "Chỉ năng lực của leader",
+   "Ngân sách dự án"
+  ]
+ },
+ {
+  "id": "r-m2-016",
+  "q": "Tài liệu cảnh báo điều gì về thông tin thành công của team?",
+  "correct": "Thành công thường được công bố nhiều hơn thất bại",
+  "wrong": [
+   "Thành công thường bị che giấu",
+   "Team luôn thành công hơn cá nhân",
+   "Thất bại của team không bao giờ được báo cáo"
+  ]
+ },
+ {
+  "id": "r-m2-017",
+  "q": "Kết quả chung lớn hơn tổng kết quả riêng lẻ được gọi là gì?",
+  "correct": "Synergy",
+  "wrong": [
+   "Cohesiveness",
+   "Groupthink",
+   "Interdependence"
+  ]
+ },
+ {
+  "id": "r-m2-018",
+  "q": "Trong team hoạt động tốt, vai trò lãnh đạo có đặc điểm gì?",
+  "correct": "Có thể luân chuyển theo nhiệm vụ",
+  "wrong": [
+   "Luôn cố định một người",
+   "Do giảng viên chỉ định",
+   "Thuộc về người giỏi chuyên môn nhất"
+  ]
+ },
+ {
+  "id": "r-m2-019",
+  "q": "Ý nào KHÔNG thuộc dấu hiệu team hoạt động tốt?",
+  "correct": "Mỗi người làm việc độc lập, ít trao đổi",
+  "wrong": [
+   "Giao tiếp rõ ràng",
+   "Có niềm tin",
+   "Thành viên khuyến khích nhau và thích thuộc về nhóm"
+  ]
+ },
+ {
+  "id": "r-m2-020",
+  "q": "“Quy mô” nghĩa là gì?",
+  "correct": "Nhóm càng lớn càng dễ giảm hài lòng và tăng xung đột",
+  "wrong": [
+   "Thành công làm tăng sự gắn kết",
+   "Người giống nhau thường dễ kết nối hơn",
+   "Có thể làm tăng động lực nội bộ"
+  ]
+ },
+ {
+  "id": "r-m2-021",
+  "q": "Ý sau mô tả khái niệm nào: “Nhóm càng lớn càng dễ giảm hài lòng và tăng xung đột”?",
+  "correct": "Quy mô",
+  "wrong": [
+   "Tính chọn lọc / địa vị",
+   "Tương đồng",
+   "Cạnh tranh bên ngoài"
+  ]
+ },
+ {
+  "id": "r-m2-022",
+  "q": "“Tương đồng” nghĩa là gì?",
+  "correct": "Người giống nhau thường dễ kết nối hơn",
+  "wrong": [
+   "Nhóm khó gia nhập hoặc có vị thế cao thường hấp dẫn hơn",
+   "Nhóm càng lớn càng dễ giảm hài lòng và tăng xung đột",
+   "Thành công làm tăng sự gắn kết"
+  ]
+ },
+ {
+  "id": "r-m2-023",
+  "q": "Ý sau mô tả khái niệm nào: “Người giống nhau thường dễ kết nối hơn”?",
+  "correct": "Tương đồng",
+  "wrong": [
+   "Quy mô",
+   "Tính chọn lọc / địa vị",
+   "Thành công"
+  ]
+ },
+ {
+  "id": "r-m2-024",
+  "q": "“Thành công” nghĩa là gì?",
+  "correct": "Thành công làm tăng sự gắn kết",
+  "wrong": [
+   "Nhóm càng lớn càng dễ giảm hài lòng và tăng xung đột",
+   "Người giống nhau thường dễ kết nối hơn",
+   "Có thể làm tăng động lực nội bộ"
+  ]
+ },
+ {
+  "id": "r-m2-025",
+  "q": "Ý sau mô tả khái niệm nào: “Thành công làm tăng sự gắn kết”?",
+  "correct": "Thành công",
+  "wrong": [
+   "Quy mô",
+   "Tính chọn lọc / địa vị",
+   "Cạnh tranh bên ngoài"
+  ]
+ }
+]

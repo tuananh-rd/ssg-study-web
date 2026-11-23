@@ -1,0 +1,74 @@
+[
+  {
+    "ref": "5.1",
+    "q": "Để liên kết Watson Studio với tài khoản GitHub cá nhân một cách an toàn, người dùng cần tạo và cung cấp thông tin xác thực nào?",
+    "correct": "Khóa truy cập cá nhân (Personal Access Token)",
+    "wrong": [
+      "Mật khẩu đăng nhập tài khoản IBM Cloud",
+      "Khóa đối xứng mã hóa cơ sở dữ liệu SSL",
+      "Số định danh tài khoản ngân hàng liên kết"
+    ],
+    "explain": "Watson Studio yêu cầu cung cấp Khóa truy cập cá nhân (Personal Access Token - PAT) từ GitHub để xác thực quyền quản lý mã nguồn an toàn.",
+    "tip": "Liên kết GitHub an toàn bằng Personal Access Token (PAT)."
+  },
+  {
+    "ref": "5.1",
+    "q": "Mục đích chính của việc tích hợp nền tảng GitHub vào Watson Studio là gì?",
+    "correct": "Quản lý phiên bản mã nguồn, hỗ trợ làm việc nhóm, lưu trữ và chia sẻ mã an toàn",
+    "wrong": [
+      "Tăng tốc độ tính toán phần cứng GPU cho các mô hình học sâu",
+      "Tự động xuất bản các mô hình phân loại thành dịch vụ web REST API",
+      "Xóa bỏ hoàn toàn nhu cầu sử dụng dịch vụ Cloud Object Storage"
+    ],
+    "explain": "GitHub tích hợp vào Watson Studio nhằm phục vụ việc quản lý phiên bản mã nguồn (version control), chia sẻ dự án và hỗ trợ làm việc nhóm.",
+    "tip": "GitHub = quản lý phiên bản mã nguồn và cộng tác nhóm."
+  },
+  {
+    "ref": "5.1",
+    "q": "Lợi ích nổi bật của việc kết nối tài khoản GitHub với Watson Studio trong quy trình phát triển là gì?",
+    "correct": "Giúp quá trình làm việc nhóm, lưu trữ và chia sẻ mã nguồn trở nên an toàn và thuận tiện hơn",
+    "wrong": [
+      "Tự động phát hiện lỗi cú pháp Python và tự sửa mã trước khi chạy",
+      "Cho phép chạy song song hàng ngàn luồng kiểm chứng chéo K-fold miễn phí",
+      "Thay thế hoàn toàn vai trò của người quản trị cơ sở dữ liệu Db2"
+    ],
+    "explain": "Theo nội dung bài học, việc tích hợp này giúp làm việc nhóm, lưu trữ và chia sẻ mã nguồn trở nên an toàn và thuận tiện hơn.",
+    "tip": "GitHub hỗ trợ chia sẻ mã và cộng tác nhóm an toàn."
+  },
+  {
+    "ref": "5.2",
+    "q": "Tệp tin Jupyter Notebook được xuất bản hoặc tải về từ Watson Studio có định dạng phần mở rộng tệp là gì?",
+    "correct": ".ipynb",
+    "wrong": [
+      ".py",
+      ".json",
+      ".csv"
+    ],
+    "explain": "Định dạng file chuẩn của Jupyter Notebook là IPython Notebook với phần mở rộng đuôi .ipynb.",
+    "tip": ".ipynb = Interactive Python Notebook."
+  },
+  {
+    "ref": "5.2",
+    "q": "Thao tác đẩy (push/publish) trên Watson Studio cho phép thực hiện hành động nào đối với file notebook?",
+    "correct": "Đẩy trực tiếp file notebook hoàn thiện lên kho lưu trữ (repository) trên GitHub",
+    "wrong": [
+      "Tải file notebook về máy tính cục bộ dưới dạng file PDF không thể chỉnh sửa",
+      "Triển khai mô hình trong notebook thành ứng dụng di động độc lập",
+      "Xóa vĩnh viễn mã nguồn notebook khỏi bộ nhớ đám mây của IBM"
+    ],
+    "explain": "Sau khi hoàn thiện mã Python trên Jupyter Notebook trong Watson Studio, người dùng có thể publish/push trực tiếp file notebook lên GitHub repository.",
+    "tip": "Push/publish đưa notebook từ Watson Studio lên GitHub."
+  },
+  {
+    "ref": "5.2",
+    "q": "Ngoài việc xuất bản mã nguồn lên GitHub, Watson Studio còn cho phép thực hiện thao tác tương tác nào với kho lưu trữ GitHub?",
+    "correct": "Thêm (Add) các Notebook mẫu sẵn có từ kho lưu trữ GitHub về lại dự án Watson Studio",
+    "wrong": [
+      "Tự động xóa sạch các commit cũ trên kho lưu trữ từ xa của GitHub",
+      "Chuyển đổi toàn bộ mã nguồn Python trong notebook sang mã C# hoặc Java",
+      "Tự động thuê thêm máy chủ ảo VPS mới từ tài khoản GitHub"
+    ],
+    "explain": "Watson Studio hỗ trợ tính năng hai chiều: vừa có thể đẩy notebook lên, vừa có thể thêm (Add) các notebook mẫu có sẵn từ GitHub về dự án để tiếp tục làm việc.",
+    "tip": "Có thể thêm (Add) notebook có sẵn từ GitHub về lại Watson Studio."
+  }
+]

@@ -1,0 +1,327 @@
+[
+ {
+  "id": 89,
+  "question": "In a dataset, the Minimum of a box plot is set to 20, and the third quartile (Q3) is 80. Calculate the Maximum and the first quartile (Q1) of the boxplot.",
+  "options": [
+   "Maximum = 116, Q1 = 56",
+   "Maximum = 120, Q1 = 60",
+   "Maximum = 114, Q1 = 72",
+   "Maximum = 180, Q1 = 30"
+  ],
+  "correct": [
+   "Maximum = 116, Q1 = 56"
+  ]
+ },
+ {
+  "id": 90,
+  "question": "In the Python list for days of the week, what is the index value of Wednesday?\nDays = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\", \"Thursday\", \"Friday\", \"Saturday\"]",
+  "options": [
+   "[3]",
+   "[4]",
+   "\"Wednesday\"",
+   "[-4]"
+  ],
+  "correct": [
+   "[3]"
+  ]
+ },
+ {
+  "id": 91,
+  "question": "You're constructing a polynomial regression model to estimate the temperature of a city based on the time of day (in hours). The model's equation is T = a + bx + cx^2, where T is the temperature in degrees Celsius, x is the time of day in hours, and a, b, and c are coefficients. You're using the Mean Squared Error (MSE) loss function. The training data (x, T) pairs are [(1, 4), (2, 9), (3, 16), (4, 25)]. The initial values for a, b, and c are 0.8, 1.7, and 0.9, respectively. Employing gradient descent with a learning rate set to 0.01, what are the values of a, b, and c after the first optimization iteration? Note that we feed first iteration with the first 3 data pairs (batch_size=3)!",
+  "options": [
+   "a=0.82, b=1.74, c=1.02",
+   "a=0.83, b=1.77, c=1.07",
+   "a=0.83, b=1.77, c=1.09",
+   "a=0.84, b=1.78, c=1.10"
+  ],
+  "correct": [
+   "a=0.83, b=1.77, c=1.07"
+  ]
+ },
+ {
+  "id": 92,
+  "question": "You have a DataFrame temperature_data containing temperature readings at different timestamps. Some readings are missing due to sensor errors. After filling these missing values with the last observed temperature using forward fill (ffill), what is the temperature value at the timestamp '2022-01-02'?\ntemperature_data = pd.DataFrame({\n'Temperature': [20, None, 25, None, 30],\n'Timestamp': pd.date_range(start='2022-01-01', periods=5, freq='D')\n})",
+  "options": [
+   "20",
+   "25",
+   "30",
+   "27.5"
+  ],
+  "correct": [
+   "20"
+  ]
+ },
+ {
+  "id": 93,
+  "question": "You have a DataFrame stock_prices containing daily stock prices for different companies. Some entries are missing due to data collection issues. After filling these missing values with the last observed price for each company using forward fill (ffill), what is the value in the cell at row index 2 and column 'Company A'?\nimport pandas as pd\nstock_prices = pd.DataFrame({\n'Company A': [100, 105, None, 110, None],\n'Company B': [50, None, 55, None, 60]\n})",
+  "options": [
+   "105",
+   "50",
+   "110",
+   "60"
+  ],
+  "correct": [
+   "105"
+  ]
+ },
+ {
+  "id": 94,
+  "question": "You have a DataFrame temperature_data containing temperature readings at different timestamps. Some readings are missing due to sensor errors. After filling these missing values by linear interpolation between existing values, what is the temperature value interpolated for the timestamp '2022-01-02'?\ntemperature_data = pd.DataFrame({\n'Temperature': [20, None, 25, None, 30],\n'Timestamp': pd.date_range(start='2022-01-01', periods=5, freq='D')\n})",
+  "options": [
+   "22.5",
+   "23.0",
+   "27.5",
+   "25.0"
+  ],
+  "correct": [
+   "22.5"
+  ]
+ },
+ {
+  "id": 95,
+  "question": "You're developing a logistic classifier model to predict whether the temperature in a city is high or low based on the time of day (in hours). The model's equation is prob(T) = sigmoid(a + b*x), where prob(T) represents the probability of high temperature (1) or low temperature (0), x is the time of day in hours, and a and b are coefficients. You're using the Binary Cross Entropy loss and gradient descent for optimization. The initial values for a and b are 0.8 and 1.2, respectively. Given the training data (x, T) pairs: [(3, 0), (5, 0), (13, 1), (14, 1)], and a learning rate of 0.06, what are the values of a and b after the first optimization iteration, where the first iteration uses the first two data pairs (batch_size=2)?",
+  "options": [
+   "a=0.56, b=1.14",
+   "a=0.32, b=1.08",
+   "a=0.09, b=1.02",
+   "a=-0.15, b=0.96"
+  ],
+  "correct": [
+   "a=0.56, b=1.14"
+  ]
+ },
+ {
+  "id": 96,
+  "question": "You're developing a logistic classifier model to predict whether the temperature in a city is high or low based on the time of day (in hours). The model's equation is prob(T) = sigmoid(a + b*x), where prob(T) represents the probability of high temperature (1) or low temperature (0), x is the time of day in hours, and a and b are coefficients. You're using the Binary Cross Entropy loss function and gradient descent for optimization. The initial values for a and b are 1.2 and 0.8, respectively. Given the training data (x, T) pairs: [(3, 0), (5, 0), (13, 1), (14, 1)], and a learning rate of 0.03, what are the values of a and b after the first optimization iteration, where the first iteration uses all data pairs (batch_size=4)?",
+  "options": [
+   "a=1.14, b=0.79",
+   "a=1.08, b=0.77",
+   "a=1.02, b=0.76",
+   "a=0.96, b=0.74"
+  ],
+  "correct": [
+   "a=1.14, b=0.79"
+  ]
+ },
+ {
+  "id": 97,
+  "question": "You're building a polynomial regression model to predict crop yield based on rainfall. The model's equation is y = a + bx + cx^2, where a, b, and c are coefficients, and x represents rainfall in millimeters. You're using the Mean Squared Error (MSE) loss function. The training data (x, y) pairs are [(1, 4), (2, 9), (3, 16), (4, 25)]. The initial values for a, b, and c are 0.8, 1.7, and 0.9, respectively. Employing gradient descent with a learning rate set to 0.01, what are the values of a, b, and c after the first optimization iteration? Note that we feed first iteration with first data pair (batch_size=1)!",
+  "options": [
+   "a=0.80, b=1.70, c=0.90",
+   "a=0.81, b=1.71, c=0.93",
+   "a=0.82, b=1.74, c=1.00",
+   "a=0.82, b=1.76, c=1.10"
+  ],
+  "correct": [
+   "a=0.82, b=1.74, c=1.00"
+  ]
+ },
+ {
+  "id": 98,
+  "question": "You're building a logistic classifier model to predict crop yield based on rainfall. The model's equation is p(y)=sigmoid(a+b*x), where a, and b are coefficients, and x represents rainfall in millimeters. You're using Binary Cross Entropy loss function. The training data (x,y) pairs are [(1, 0), (2,0), (3, 1), (4, 1)]. The initial values for a and b are 0.5, and 0.5, respectively. Employing gradient descent with a learning rate set to 0.05, what are the values of a and b after the first optimization iteration? Note that each iteration we feed all values for training (batch_size=4)!",
+  "options": [
+   "a=0.46, b=0.48",
+   "a=0.42, b=0.46",
+   "a=0.39, b=0.43",
+   "a=0.35, b=0.41"
+  ],
+  "correct": [
+   "a=0.46, b=0.48"
+  ]
+ },
+ {
+  "id": 99,
+  "question": "You're constructing a polynomial regression model to estimate the temperature of a city based on the time of day (in hours). The model's equation is T = a + bx + cx^2, where T is the temperature in degrees Celsius, x is the time of day in hours, and a, b, and c are coefficients. You're using the Mean Squared Error (MSE) loss function. The training data (x,T) pairs are [(1, 4), (2,9), (3, 16), (4, 25)]. The initial values for a, b, and c are 0.8, 1.7, and 0.9, respectively. Employing gradient descent with a learning rate set to 0.01, what are the values of a, b, and c after the first optimization iteration? Note that we feed first iteration with the first 3 data pairs (batch_size=3)!",
+  "options": [
+   "a=0.82, b=1.74, c=1.02",
+   "a=0.83, b=1.77, c=1.07",
+   "a=0.83, b=1.77, c=1.09",
+   "a=0.84, b=1.78, c=1.10"
+  ],
+  "correct": [
+   "a=0.83, b=1.77, c=1.07"
+  ]
+ },
+ {
+  "id": 100,
+  "question": "If a dataset has a mean of 75 and a standard deviation of 15, what is the standardized value for a data point of 90 using z-score normalization?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct": [
+   "1"
+  ]
+ },
+ {
+  "id": 101,
+  "question": "What is the Interquartile Range (IQR) of a dataset [15, 10, 5, 25, 20, 30, 40, 35]?",
+  "options": [
+   "20",
+   "15",
+   "25",
+   "30"
+  ],
+  "correct": [
+   "20"
+  ]
+ },
+ {
+  "id": 102,
+  "question": "You have a node in a Decision Tree classifier with 80 samples belonging to class A and 20 samples belonging to class B. Calculate the Gini impurity for this node.",
+  "options": [
+   "0.32",
+   "0.40",
+   "0.48",
+   "0.64"
+  ],
+  "correct": [
+   "0.32"
+  ]
+ },
+ {
+  "id": 103,
+  "question": "What is Dash?",
+  "options": [
+   "A web framework",
+   "A game development framework",
+   "A machine learning framework",
+   "A database management tool"
+  ],
+  "correct": [
+   "A web framework"
+  ]
+ },
+ {
+  "id": 104,
+  "question": "What is a output of Watson Speech Service?",
+  "options": [
+   "audio",
+   "text",
+   "json",
+   "image"
+  ],
+  "correct": [
+   "text"
+  ]
+ },
+ {
+  "id": 105,
+  "question": "What is the first phase in data analysis?",
+  "options": [
+   "Ask",
+   "Act",
+   "Prepare",
+   "Process"
+  ],
+  "correct": [
+   "Ask"
+  ]
+ },
+ {
+  "id": 106,
+  "question": "What is the primary goal of using Ridge regression?",
+  "options": [
+   "Feature selection",
+   "Handling multicollinearity",
+   "Minimizing variance",
+   "Reducing bias"
+  ],
+  "correct": [
+   "Handling multicollinearity"
+  ]
+ },
+ {
+  "id": 107,
+  "question": "What is the primary purpose of using activation functions in neural networks?",
+  "options": [
+   "Initializing weights",
+   "Reducing model complexity",
+   "Adding non-linearity to the model",
+   "Calculating gradients"
+  ],
+  "correct": [
+   "Adding non-linearity to the model"
+  ]
+ },
+ {
+  "id": 108,
+  "question": "What is the purpose of using the stackplot() function in Matplotlib?",
+  "options": [
+   "Displaying stacked bar plots",
+   "Visualizing geographic data",
+   "Creating line plots",
+   "Plotting waffle charts"
+  ],
+  "correct": [
+   "Displaying stacked bar plots"
+  ]
+ },
+ {
+  "id": 109,
+  "question": "What is the purpose of Dash in Python?",
+  "options": [
+   "Creating web applications",
+   "Visualizing statistical data",
+   "Generating machine learning models",
+   "Building interactive charts"
+  ],
+  "correct": [
+   "Creating web applications"
+  ]
+ },
+ {
+  "id": 110,
+  "question": "What is the relationship between precision and recall in a confusion matrix?",
+  "options": [
+   "They are inversely proportional",
+   "They are independent of each other",
+   "They are directly proportional",
+   "They have a quadratic relationship"
+  ],
+  "correct": [
+   "They are inversely proportional"
+  ]
+ },
+ {
+  "id": 111,
+  "question": "What is the assumption about the relationship between the independent and dependent variables in linear regression?",
+  "options": [
+   "Non-linear",
+   "Linear",
+   "Exponential",
+   "Random"
+  ],
+  "correct": [
+   "Linear"
+  ]
+ },
+ {
+  "id": 112,
+  "question": "What is the purpose of integrating a chatbot with Slack?",
+  "options": [
+   "Sending automated emails",
+   "Analyzing user behavior",
+   "Enabling conversations within Slack channels",
+   "Creating visualization reports"
+  ],
+  "correct": [
+   "Enabling conversations within Slack channels"
+  ]
+ },
+ {
+  "id": 113,
+  "question": "What does the diagonal elements of a confusion matrix represent?",
+  "options": [
+   "True positives and true negatives",
+   "False positives and false negatives",
+   "True positives and false positives",
+   "True negatives and false negatives"
+  ],
+  "correct": [
+   "True positives and true negatives"
+  ]
+ }
+]

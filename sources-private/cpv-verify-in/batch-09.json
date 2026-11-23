@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-137.png",
+  "png_no": 137,
+  "html_no": 139,
+  "hidden": "AKhi làm thì phải stretch ra full range trước để làm rõ nét độ chênh lệch, full use of... là chỉ việc đưa 1 tấm hình range x->y về full range của bảng màu\nContrast stretching (Kéo dãn độ tương phản):\n Là kỹ thuật xử lý ảnh giúp mở rộng (kéo dãn) dải mức độ sáng (intensity range) từ một khoảng hẹp ban đầu ra toàn bộ dải giá trị cho phép (ví dụ: từ $0$ đến $255$ đối với ảnh 8-bit), từ đó cải thiện độ tương phản của ảnh.",
+  "candidates": [
+   {
+    "id": 120,
+    "slide": 134,
+    "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+    "options": [
+     "Prewitt operator",
+     "Canny operator",
+     "Sobel (3x3)",
+     "Sobel (5x5)"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-138.png",
+  "png_no": 138,
+  "html_no": 140,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 121,
+    "slide": 135,
+    "question": "Which of the following is not an Image filters used in OpenCV?",
+    "options": [
+     "Box Filter",
+     "Bilateral Filter",
+     "Blue Blur",
+     "Build Pyramid"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-139.png",
+  "png_no": 139,
+  "html_no": 141,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 122,
+    "slide": 136,
+    "question": "Which of the following studies various techniques to classify patterns?",
+    "options": [
+     "Image Processing",
+     "Photogrammetry",
+     "Image Recognition",
+     "Pattern Recognition"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-140.png",
+  "png_no": 140,
+  "html_no": 142,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 123,
+    "slide": 137,
+    "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+    "options": [
+     "Multi-view based method",
+     "Deterministic method",
+     "Probabilistic method",
+     "Shape matching"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-141.png",
+  "png_no": 141,
+  "html_no": 143,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 124,
+    "slide": 138,
+    "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+    "options": [
+     "First derivative",
+     "Second derivative",
+     "Laplacian of Gaussian",
+     "Normalized Laplacian of Gaussian"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-142.png",
+  "png_no": 142,
+  "html_no": 144,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 125,
+    "slide": 139,
+    "question": "Which approach is employed to spread the range of intensity to make full use of possible values?",
+    "options": [
+     "Contrast stretching",
+     "Gray world",
+     "Ground truth",
+     "Histogram equalization"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-143.png",
+  "png_no": 143,
+  "html_no": 145,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 126,
+    "slide": 140,
+    "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+    "options": [
+     "SIFT",
+     "Histogram equalization",
+     "Fourier transform",
+     "PCA"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-144.png",
+  "png_no": 144,
+  "html_no": 146,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 127,
+    "slide": 141,
+    "question": "Which OpenCV function is commonly used to draw a line on an image?",
+    "options": [
+     "line()",
+     "drawLine()",
+     "lineSegment()",
+     "draw.line()"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-145.png",
+  "png_no": 145,
+  "html_no": 147,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 128,
+    "slide": 142,
+    "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+    "options": [
+     "Sampling pitch",
+     "Fill factor",
+     "Shutter speed",
+     "Chip size"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-146.png",
+  "png_no": 146,
+  "html_no": 148,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 129,
+    "slide": 143,
+    "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+    "options": [
+     "Polar space",
+     "Cartesian space",
+     "Transform space",
+     "Gradient space"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-147.png",
+  "png_no": 147,
+  "html_no": 149,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 130,
+    "slide": 144,
+    "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+    "options": [
+     "Template Matching",
+     "Multi-view Tracking",
+     "Silhouette Tracking",
+     "Contour Evolution"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-148.png",
+  "png_no": 148,
+  "html_no": 150,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 131,
+    "slide": 145,
+    "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+    "options": [
+     "CamShift tracking",
+     "Kalman filtering",
+     "Mean Shift tracking",
+     "Optical flow tracking"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-149.png",
+  "png_no": 149,
+  "html_no": 151,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 132,
+    "slide": 146,
+    "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+    "options": [
+     "Faster R-CNN",
+     "YOLO",
+     "SSD",
+     "Haar Cascade"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-150.png",
+  "png_no": 150,
+  "html_no": 152,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 133,
+    "slide": 147,
+    "question": "How does a Gaussian Mixture Model represent each cluster?",
+    "options": [
+     "By a parabolic line",
+     "By a decision tree",
+     "By a distribution",
+     "By a random selection"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-151.png",
+  "png_no": 151,
+  "html_no": 153,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 134,
+    "slide": 148,
+    "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+    "options": [
+     "log(1-P)/log(1-p^k)",
+     "log(1-P)*log(1-p^k)",
+     "log[(1-P)(1-p^k)]",
+     "log[(1-P)/(1-p^k)]"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-152.png",
+  "png_no": 152,
+  "html_no": 154,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 135,
+    "slide": 149,
+    "question": "When dealing with image classification, what kind of challenges do we face with images?",
+    "options": [
+     "Variations due to scaling",
+     "Variations due to illumination",
+     "Image occlusion",
+     "All the above"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 136,
+    "slide": 150,
+    "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+    "options": [
+     "F(w)+H(w)",
+     "F(w)*H(w)",
+     "F(w)H(w)",
+     "F(w)H*(w)"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 137,
+    "slide": 151,
+    "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+    "options": [
+     "Feature reduce",
+     "Feature combination",
+     "Feature compression",
+     "Feature matching"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 138,
+    "slide": 152,
+    "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+    "options": [
+     "Eyes, eyebrows, nose, hair, jaw",
+     "Eyes, eyebrows, nose, neck, mouth",
+     "Eyes, eyebrows, nose, mouth, jaw",
+     "Eyes, eyebrows, jaw, neck, ear"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 139,
+    "slide": 153,
+    "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+    "options": [
+     "Snakes model",
+     "Scissors model",
+     "Sets model",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 140,
+    "slide": 154,
+    "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+    "options": [
+     "1000x128",
+     "1200x1000",
+     "128x1200",
+     "128x128"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu ngắn",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 141,
+    "slide": 155,
+    "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+    "options": [
+     "Instance segmentation",
+     "Semantic detection",
+     "Instance detection",
+     "Semantic segmentation"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ }
+]

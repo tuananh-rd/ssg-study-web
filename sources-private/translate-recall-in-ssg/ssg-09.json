@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m6-019",
+  "q": "“Clear” nghĩa là gì?",
+  "correct": "Từ đơn giản, trực tiếp, tổ chức logic",
+  "wrong": [
+   "Phù hợp kiến thức, nhu cầu và góc nhìn người đọc",
+   "Lịch sự, tôn trọng",
+   "Đủ who, what, when, where, how và khi cần là why"
+  ]
+ },
+ {
+  "id": "r-m6-020",
+  "q": "Ý sau mô tả khái niệm nào: “Từ đơn giản, trực tiếp, tổ chức logic”?",
+  "correct": "Clear",
+  "wrong": [
+   "Complete",
+   "Courteous",
+   "Concise"
+  ]
+ },
+ {
+  "id": "r-m6-021",
+  "q": "“Concise” nghĩa là gì?",
+  "correct": "Bỏ lặp và từ không cần thiết",
+  "wrong": [
+   "Phù hợp kiến thức, nhu cầu và góc nhìn người đọc",
+   "Lịch sự, tôn trọng",
+   "Đủ who, what, when, where, how và khi cần là why"
+  ]
+ },
+ {
+  "id": "r-m6-022",
+  "q": "Ý sau mô tả khái niệm nào: “Bỏ lặp và từ không cần thiết”?",
+  "correct": "Concise",
+  "wrong": [
+   "Complete",
+   "Clear",
+   "Courteous"
+  ]
+ },
+ {
+  "id": "r-m6-023",
+  "q": "“Complete” nghĩa là gì?",
+  "correct": "Đủ who, what, when, where, how và khi cần là why",
+  "wrong": [
+   "Lịch sự, tôn trọng",
+   "Đúng ngữ pháp, chính tả, dấu câu, tên, số và sự kiện",
+   "Bỏ lặp và từ không cần thiết"
+  ]
+ },
+ {
+  "id": "r-m6-024",
+  "q": "Ý sau mô tả khái niệm nào: “Đủ who, what, when, where, how và khi cần là why”?",
+  "correct": "Complete",
+  "wrong": [
+   "Correct",
+   "Concise",
+   "Audience-focused"
+  ]
+ },
+ {
+  "id": "r-m6-025",
+  "q": "“Correct” nghĩa là gì?",
+  "correct": "Đúng ngữ pháp, chính tả, dấu câu, tên, số và sự kiện",
+  "wrong": [
+   "Lịch sự, tôn trọng",
+   "Bỏ lặp và từ không cần thiết",
+   "Từ đơn giản, trực tiếp, tổ chức logic"
+  ]
+ },
+ {
+  "id": "r-m6-026",
+  "q": "Ý sau mô tả khái niệm nào: “Đúng ngữ pháp, chính tả, dấu câu, tên, số và sự kiện”?",
+  "correct": "Correct",
+  "wrong": [
+   "Complete",
+   "Concise",
+   "Courteous"
+  ]
+ },
+ {
+  "id": "r-m6-027",
+  "q": "“Courteous” nghĩa là gì?",
+  "correct": "Lịch sự, tôn trọng",
+  "wrong": [
+   "Đủ who, what, when, where, how và khi cần là why",
+   "Phù hợp kiến thức, nhu cầu và góc nhìn người đọc",
+   "Đúng ngữ pháp, chính tả, dấu câu, tên, số và sự kiện"
+  ]
+ },
+ {
+  "id": "r-m6-028",
+  "q": "Ý sau mô tả khái niệm nào: “Lịch sự, tôn trọng”?",
+  "correct": "Courteous",
+  "wrong": [
+   "Concise",
+   "Clear",
+   "Audience-focused"
+  ]
+ },
+ {
+  "id": "r-m6-029",
+  "q": "“Audience-focused” nghĩa là gì?",
+  "correct": "Phù hợp kiến thức, nhu cầu và góc nhìn người đọc",
+  "wrong": [
+   "Đúng ngữ pháp, chính tả, dấu câu, tên, số và sự kiện",
+   "Đủ who, what, when, where, how và khi cần là why",
+   "Lịch sự, tôn trọng"
+  ]
+ },
+ {
+  "id": "r-m6-030",
+  "q": "Ý sau mô tả khái niệm nào: “Phù hợp kiến thức, nhu cầu và góc nhìn người đọc”?",
+  "correct": "Audience-focused",
+  "wrong": [
+   "Concise",
+   "Complete",
+   "Clear"
+  ]
+ },
+ {
+  "id": "r-m6-031",
+  "q": "Phong cách viết phụ thuộc vào ba yếu tố nào?",
+  "correct": "Audience, purpose và context",
+  "wrong": [
+   "Font, cỡ chữ, màu",
+   "Độ dài, số trang, số đoạn",
+   "Người gửi, người nhận, ngày gửi"
+  ]
+ },
+ {
+  "id": "r-m6-032",
+  "q": "Bốn mức phong cách viết trong tài liệu là gì?",
+  "correct": "Colloquial, casual, informal, formal",
+  "wrong": [
+   "Short, medium, long, extended",
+   "Direct, indirect, passive, active",
+   "Personal, social, business, academic"
+  ]
+ },
+ {
+  "id": "r-m6-033",
+  "q": "Business writing thường ưu tiên điều gì?",
+  "correct": "Active voice, từ cụ thể, động từ mạnh, câu tương đối ngắn",
+  "wrong": [
+   "Passive voice, câu dài",
+   "Nhiều thuật ngữ khó",
+   "Giọng công kích để thuyết phục"
+  ]
+ },
+ {
+  "id": "r-m6-034",
+  "q": "Thứ tự quy trình viết trong tài liệu?",
+  "correct": "Think → Research → Organize → Draft → Revise → Edit → Present",
+  "wrong": [
+   "Think → Research → Organize → Draft → Edit → Revise → Present",
+   "Research → Think → Draft → Organize → Revise → Edit → Present",
+   "Think → Organize → Draft → Research → Revise → Edit → Publish"
+  ]
+ },
+ {
+  "id": "r-m6-035",
+  "q": "Bước cuối cùng của quy trình viết là gì?",
+  "correct": "Present",
+  "wrong": [
+   "Publish",
+   "Edit",
+   "Revise"
+  ]
+ },
+ {
+  "id": "r-m6-036",
+  "q": "Bước ngay sau Draft trong quy trình viết?",
+  "correct": "Revise",
+  "wrong": [
+   "Edit",
+   "Organize",
+   "Present"
+  ]
+ },
+ {
+  "id": "r-m6-037",
+  "q": "Bước ngay trước Draft trong quy trình viết?",
+  "correct": "Organize",
+  "wrong": [
+   "Research",
+   "Think",
+   "Revise"
+  ]
+ },
+ {
+  "id": "r-m6-038",
+  "q": "Ý nào là câu hỏi cần đặt TRƯỚC khi viết (Think)?",
+  "correct": "Người đọc là ai và đã biết gì?",
+  "wrong": [
+   "Nên dùng font gì?",
+   "Văn bản dài bao nhiêu trang?",
+   "Ai sẽ ký văn bản?"
+  ]
+ },
+ {
+  "id": "r-m6-039",
+  "q": "Khi nghiên cứu, nên dừng thu thập thông tin khi nào?",
+  "correct": "Khi thông tin bổ sung không còn tạo nhiều giá trị",
+  "wrong": [
+   "Khi có đủ 10 nguồn",
+   "Khi hết thời gian",
+   "Không bao giờ dừng"
+  ]
+ },
+ {
+  "id": "r-m6-040",
+  "q": "Ý nào KHÔNG thuộc các cách tổ chức nội dung trong tài liệu?",
+  "correct": "Theo thứ tự chữ cái",
+  "wrong": [
+   "Theo thời gian",
+   "Problem–solution",
+   "Compare–contrast"
+  ]
+ },
+ {
+  "id": "r-m6-041",
+  "q": "Lập luận cần ba thành phần nào?",
+  "correct": "Claim/thesis rõ và sớm; lý do và bằng chứng; xử lý counterargument và rủi ro",
+  "wrong": [
+   "Mở bài; thân bài; kết bài",
+   "Số liệu; hình ảnh; câu chuyện",
+   "Ethos; pathos; logos"
+  ]
+ },
+ {
+  "id": "r-m6-042",
+  "q": "Paraphrase là gì?",
+  "correct": "Giữ ý và độ dài tương đối tương đương bằng từ / cấu trúc mới",
+  "wrong": [
+   "Rút gọn các ý chính",
+   "Chép nguyên văn có ngoặc kép",
+   "Dịch sang ngôn ngữ khác"
+  ]
+ },
+ {
+  "id": "r-m6-043",
+  "q": "Summary là gì?",
+  "correct": "Rút gọn các ý chính",
+  "wrong": [
+   "Giữ nguyên độ dài, đổi từ",
+   "Chép nguyên văn",
+   "Bình luận về văn bản"
+  ]
+ }
+]

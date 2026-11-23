@@ -1,0 +1,1926 @@
+[
+ {
+  "png": "cpv-slides-png/slide-201.png",
+  "png_no": 201,
+  "html_no": 203,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 183,
+    "slide": 198,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-202.png",
+  "png_no": 202,
+  "html_no": 204,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 184,
+    "slide": 199,
+    "question": "What is a limitation of using region growing algorithms for image segmentation?",
+    "options": [
+     "Difficulty handling objects with disconnected parts.",
+     "Inability to segment images with multiple dominant colors.",
+     "High sensitivity to noise and slight intensity variations.",
+     "Significant computational cost for processing large images."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-203.png",
+  "png_no": 203,
+  "html_no": 205,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 185,
+    "slide": 200,
+    "question": "What is the objective of the Hough Transform when applied to identify objects within a certain class of shapes?",
+    "options": [
+     "Generating high-resolution images",
+     "Conducting pixel-level segmentation",
+     "Performing voting procedure for shape recognition",
+     "Enhancing color saturation in the image"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-204.png",
+  "png_no": 204,
+  "html_no": 206,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 186,
+    "slide": 201,
+    "question": "What is the primary goal of object detection in image and video processing?",
+    "options": [
+     "Recognizing objects without specifying their location",
+     "Identifying and locating instances of objects in an image or video",
+     "Describing the content of an image",
+     "Classifying images based on their visual features"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-205.png",
+  "png_no": 205,
+  "html_no": 207,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 187,
+    "slide": 202,
+    "question": "What is the significance of the term \"least squares\" in 2D alignment methods?",
+    "options": [
+     "It minimizes the sum of squared distances between points.",
+     "It maximizes the entropy between points.",
+     "It maximizes the sum of squared differences between points.",
+     "It minimizes the entropy of the aligned image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-206.png",
+  "png_no": 206,
+  "html_no": 208,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 188,
+    "slide": 203,
+    "question": "What is the primary purpose of global bundle adjustment in image processing?",
+    "options": [
+     "Estimating the location of 3D points",
+     "Correcting parallax in images",
+     "Optimizing camera poses",
+     "Aligning two images"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-207.png",
+  "png_no": 207,
+  "html_no": 209,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 189,
+    "slide": 204,
+    "question": "What is image processing generally focused on achieving?",
+    "options": [
+     "Generating textual information from images",
+     "Extracting useful information and enhancing images",
+     "Converting images into audio signals",
+     "Creating three-dimensional representations of images"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-208.png",
+  "png_no": 208,
+  "html_no": 210,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 190,
+    "slide": 205,
+    "question": "What is the transformation where the transformation matrix is as follows?\nT = [[2, 0, 1], [0, 2, 2], [0, 0, 1]]",
+    "options": [
+     "Scale 2 and translate 1 along x axis, translate 2 along y axis",
+     "Scale 2 and translate 2 along x axis, translate 1 along y axis",
+     "Translate 2 along x axis, translate 1 along y axis",
+     "Scale 2 and translate 2 along x axis, keep unchanged to y axis"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-209.png",
+  "png_no": 209,
+  "html_no": 211,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 191,
+    "slide": 206,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-210.png",
+  "png_no": 210,
+  "html_no": 212,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 192,
+    "slide": 207,
+    "question": "What is the effect of shifting a signal in the time domain on its Fourier transform?",
+    "options": [
+     "The phase spectrum is shifted.",
+     "The magnitude spectrum is scaled.",
+     "The frequency components are attenuated.",
+     "The Nyquist frequency is altered."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-211.png",
+  "png_no": 211,
+  "html_no": 213,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 193,
+    "slide": 208,
+    "question": "What is the primary goal of feature-based alignment in image processing?",
+    "options": [
+     "Enhancing image resolution of an image patch",
+     "Removing noise from images",
+     "Estimating the motion between sets of matched points",
+     "Adjusting image brightness"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-212.png",
+  "png_no": 212,
+  "html_no": 214,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 194,
+    "slide": 209,
+    "question": "What is the Nyquist frequency in the context of Fourier transform?",
+    "options": [
+     "Half of the sampling frequency",
+     "The highest frequency in the signal",
+     "The frequency at which the signal becomes periodic",
+     "The frequency corresponding to the imaginary part of the spectrum"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-213.png",
+  "png_no": 213,
+  "html_no": 215,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 195,
+    "slide": 210,
+    "question": "What is the purpose of the internal energy term in the Snake Model?",
+    "options": [
+     "To penalize large deformations of the contour",
+     "To attract the contour towards object boundaries",
+     "To perform non-maximum suppression",
+     "To adjust the intensity of edge pixels"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-214.png",
+  "png_no": 214,
+  "html_no": 216,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 196,
+    "slide": 211,
+    "question": "What is parallax in the context of imaging?",
+    "options": [
+     "Shift in the position of objects with a change in viewpoint",
+     "Image distortion due to lens imperfections",
+     "Chromatic aberration in images",
+     "The blurring effect caused by motion during image capture"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-215.png",
+  "png_no": 215,
+  "html_no": 217,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 197,
+    "slide": 212,
+    "question": "What is the key idea behind the RANSAC algorithm for 2D alignment?",
+    "options": [
+     "Iteratively estimating a model from a subset of inliers",
+     "Minimizing the sum of squared differences",
+     "Maximizing mutual information between images",
+     "Employing kernel density estimation for feature matching"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-216.png",
+  "png_no": 216,
+  "html_no": 218,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 198,
+    "slide": 213,
+    "question": "What is the use of the geometric transformations in real life?",
+    "options": [
+     "Align multiple images that were clicked at different times.",
+     "Correct images for avoiding lens distortion.",
+     "Images according to camera orientation.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu trung bình",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 199,
+    "slide": 214,
+    "question": "What is the main drawback of using a mean filter for noise reduction?",
+    "options": [
+     "It tends to blur edges and fine details.",
+     "It is computationally expensive.",
+     "It only works well with grayscale images.",
+     "It amplifies noise in the image."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 200,
+    "slide": 215,
+    "question": "What is the key characteristic of a band-pass filter?",
+    "options": [
+     "It allows a specific range of frequencies to pass through.",
+     "It allows only low frequencies to pass through.",
+     "It allows all frequencies to pass through.",
+     "It completely blocks all frequencies."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 201,
+    "slide": 216,
+    "question": "What is the purpose of the aperture in a digital camera lens?",
+    "options": [
+     "Control the amount of light entering the camera",
+     "Enhance the depth of field",
+     "Adjust the sharpness of the image",
+     "Determine the color temperature",
+     "None of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu trung bình",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 202,
+    "slide": 217,
+    "question": "What is the first step in resampling an image from MIP-image?",
+    "options": [
+     "Applying a high-quality filter",
+     "Computing the base 2 logarithm of the image",
+     "Estimating the scalar value of the resampling rate",
+     "Using a fractional pyramid level"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 203,
+    "slide": 218,
+    "question": "What are the two cues utilized by the probabilistic merging algorithm to determine region merging?",
+    "options": [
+     "Saturation level and brightness similarity",
+     "Edge detection and contrast similarity",
+     "Gray-level similarity and texture similarity",
+     "Hue difference and pattern recognition"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 204,
+    "slide": 219,
+    "question": "What are the input and output of image processing?",
+    "options": [
+     "signal and image",
+     "signal only",
+     "image only",
+     "depends on input"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu trung bình",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ }
+]

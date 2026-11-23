@@ -1,0 +1,202 @@
+[
+ {
+  "id": 106,
+  "question": "What is the primary goal of using Ridge regression?",
+  "options": [
+   "Feature selection",
+   "Handling multicollinearity",
+   "Minimizing variance",
+   "Reducing bias"
+  ]
+ },
+ {
+  "id": 107,
+  "question": "What is the primary purpose of using activation functions in neural networks?",
+  "options": [
+   "Initializing weights",
+   "Reducing model complexity",
+   "Adding non-linearity to the model",
+   "Calculating gradients"
+  ]
+ },
+ {
+  "id": 108,
+  "question": "What is the purpose of using the stackplot() function in Matplotlib?",
+  "options": [
+   "Displaying stacked bar plots",
+   "Visualizing geographic data",
+   "Creating line plots",
+   "Plotting waffle charts"
+  ]
+ },
+ {
+  "id": 109,
+  "question": "What is the purpose of Dash in Python?",
+  "options": [
+   "Creating web applications",
+   "Visualizing statistical data",
+   "Generating machine learning models",
+   "Building interactive charts"
+  ]
+ },
+ {
+  "id": 110,
+  "question": "What is the relationship between precision and recall in a confusion matrix?",
+  "options": [
+   "They are inversely proportional",
+   "They are independent of each other",
+   "They are directly proportional",
+   "They have a quadratic relationship"
+  ]
+ },
+ {
+  "id": 111,
+  "question": "What is the assumption about the relationship between the independent and dependent variables in linear regression?",
+  "options": [
+   "Non-linear",
+   "Linear",
+   "Exponential",
+   "Random"
+  ]
+ },
+ {
+  "id": 112,
+  "question": "What is the purpose of integrating a chatbot with Slack?",
+  "options": [
+   "Sending automated emails",
+   "Analyzing user behavior",
+   "Enabling conversations within Slack channels",
+   "Creating visualization reports"
+  ]
+ },
+ {
+  "id": 113,
+  "question": "What does the diagonal elements of a confusion matrix represent?",
+  "options": [
+   "True positives and true negatives",
+   "False positives and false negatives",
+   "True positives and false positives",
+   "True negatives and false negatives"
+  ]
+ },
+ {
+  "id": 114,
+  "question": "What does the dcc in dcc.Graph stand for in Dash?",
+  "options": [
+   "Dash Core Components",
+   "Dynamic Chart Creator",
+   "Data Collection Component",
+   "Display Chart Component"
+  ]
+ },
+ {
+  "id": 115,
+  "question": "What does the horizontal line inside the box of a boxplot represent?",
+  "options": [
+   "Median",
+   "Mean",
+   "Standard deviation",
+   "Interquartile range (IQR)"
+  ]
+ },
+ {
+  "id": 116,
+  "question": "What does increasing the degree in polynomial regression models lead to?",
+  "options": [
+   "Overfitting",
+   "Underfitting",
+   "Increased bias",
+   "Reduced variance"
+  ]
+ },
+ {
+  "id": 117,
+  "question": "What does plt.xlabel() do in Matplotlib?",
+  "options": [
+   "Adds labels to the x-axis",
+   "Sets the title for the plot",
+   "Adds text to the plot",
+   "Modifies the x-axes ticks"
+  ]
+ },
+ {
+  "id": 118,
+  "question": "What does a box plot primarily show?",
+  "options": [
+   "Data distribution",
+   "Individual data points",
+   "Mean and standard deviation",
+   "Correlation between variables"
+  ]
+ },
+ {
+  "id": 119,
+  "question": "Which activation function is commonly used in the hidden layers of a CNN?",
+  "options": [
+   "ReLU (Rectified Linear Activation)",
+   "Sigmoid",
+   "Tanh (Hyperbolic Tangent)",
+   "Softmax"
+  ]
+ },
+ {
+  "id": 120,
+  "question": "What additional term does a polynomial regression equation include compared to a linear regression equation?",
+  "options": [
+   "Exponential term",
+   "Quadratic term",
+   "Logarithmic term",
+   "Trigonometric term"
+  ]
+ },
+ {
+  "id": 121,
+  "question": "What attribute or method will give you the data type of each column?",
+  "options": [
+   "dtypes",
+   "ftypes",
+   "itypes",
+   "ntypes"
+  ]
+ },
+ {
+  "id": 122,
+  "question": "What HTTP method is commonly used for retrieving data from a REST API?",
+  "options": [
+   "POSS",
+   "GET",
+   "PUT",
+   "DELETE"
+  ]
+ },
+ {
+  "id": 123,
+  "question": "What file format is often used to store geographical boundary data for choropleth mapping in Python?",
+  "options": [
+   "GeoJSON",
+   "CSV",
+   "Excel",
+   "TXT"
+  ]
+ },
+ {
+  "id": 124,
+  "question": "What type of plot in Seaborn is used to display the distribution of a continuous variable and its relationship with categorical data?",
+  "options": [
+   "Boxplot",
+   "Swarmplot",
+   "Violinplot",
+   "Stripplot"
+  ]
+ },
+ {
+  "id": 125,
+  "question": "What type of graphs can Folium library primarily help you create?",
+  "options": [
+   "Bar charts",
+   "Scatter plots",
+   "Maps",
+   "Line charts"
+  ]
+ }
+]

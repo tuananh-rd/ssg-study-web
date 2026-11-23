@@ -1,0 +1,8 @@
+﻿name = "ssg-study"
+compatibility_date = "2026-10-01"
+pages_build_output_dir = "public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ssg-study"
+database_id = "002add69-b9bc-44f3-8999-308892701493"

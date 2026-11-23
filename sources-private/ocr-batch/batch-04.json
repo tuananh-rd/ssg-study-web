@@ -1,0 +1,362 @@
+[
+  {
+    "slide": 69,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Choose the best",
+    "question": "Choose the best description of the edge in image",
+    "options": [
+      "Edges are significant local changes of intensity in a digital image.",
+      "An edge can be defined as a set of connected pixels that forms a boundary between two conjoined regions.",
+      "Three types of edges include horizontal edges, vertical edges, and circle edges",
+      "All of the others"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 70,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best answer about 2D point",
+    "options": [
+      "It is a geometric setting in which two values are required to determine the position of an element.",
+      "It represents a location in (x,y) coordinate space.",
+      "It is the property possessed by an object of producing different sensations on the eye as a result of the way the object reflects or emits light.",
+      "All of the others"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Trong CPV301 (Computer Graphics/Computer Vision Programming), 2D point được định nghĩa là một điểm biểu diễn một vị trí trong hệ tọa độ (x, y). Đây là định nghĩa chuẩn trong đồ họa máy tính.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 71,
+    "topic": "Màu sắc & histogram",
+    "section": "Choose the best",
+    "question": "Choose the best description of image histogram",
+    "options": [
+      "It is a type of histogram that acts as a graphical representation of the tonal distribution in a digital image.",
+      "It is a histogram representing the layout organization of an image, such as color and corresponding pixel position.",
+      "Two images with different compositions will produce two different image histograms.",
+      "Image histogram is used to synthesize colors in an image."
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "Image histogram là biểu đồ biểu diễn sự phân bố mức cường độ sáng (tonal/intensity distribution) hoặc giá trị màu của các pixel trong ảnh. Nó cho biết có bao nhiêu pixel ở mỗi mức sáng hoặc mỗi giá trị màu.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 72,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Choose the best",
+    "question": "Choose the best description of the feature descriptors",
+    "options": [
+      "Feature descriptor is an algorithm that takes an image and outputs feature vectors.",
+      "Feature descriptors are used to find the essential features from the given image",
+      "Feature descriptors are used to convert features to other representations through spatial transformations.",
+      "All of the others"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "Feature Descriptor là một thuật toán nhận vào ảnh (hoặc vùng ảnh quanh điểm đặc trưng - keypoint) và trả về các vector đặc trưng (feature vectors/feature descriptors) đại diện cho thông tin của vùng đó (ví dụ: SIFT, SURF, ORB, HOG). Trong Computer Vision (CPV301), quy trình thường là: Feature detector → phát hiện các điểm đặc trưng (keypoints). Feature descriptor → mô tả mỗi điểm đặc trưng bằng một feature vector để phục vụ việc so khớp (matching) hoặc nhận dạng.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 73,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Choose the best",
+    "question": "Choose the best description of the image segmentation",
+    "options": [
+      "Segmentation is the technique of dividing or partitioning an image into parts.",
+      "Image segmentation is the process of assigning a color to every pixel in an image.",
+      "Image segmentation is typically used to recognize objects and their name in images.",
+      "All of the others."
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "Image segmentation là quá trình chia một ảnh thành nhiều vùng (segments) hoặc nhóm các pixel có đặc điểm tương đồng để việc phân tích ảnh trở nên dễ dàng hơn. Đây là định nghĩa chuẩn trong Computer Vision.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 74,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Mean Shift segmentation",
+    "options": [
+      "It is a local homogenization technique that is very useful for salt- pepper or tonality differences in global objects.",
+      "Mean shift implicitly models this distribution using a smooth continuous non-parametric model",
+      "The idea is to replace each pixel with the 3x3 of the pixels in a range neighborhood and whose value is within a distance d",
+      "All of the others"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Mean Shift Segmentation là thuật toán phân cụm (clustering) dựa trên ước lượng mật độ xác suất không tham số (non-parametric density estimation). Thuật toán dịch chuyển mỗi điểm dữ liệu về vùng có mật độ cao nhất (mode) để tạo thành các cụm.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 75,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Geometric Transformations",
+    "options": [
+      "In these transformations, pixel values are not changed, the positions of pixel values are changed.",
+      "A geometric transformation of an image is a spatial transformation of the image coordinate system.",
+      "Geometric transformation is the geometry of image is changed with altering its actual pixel values.",
+      "All of the others"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Geometric Transformation là phép biến đổi tọa độ không gian (spatial transformation) của ảnh, chẳng hạn như: Translation (tịnh tiến), Rotation (xoay), Scaling (phóng to/thu nhỏ), Shearing (biến dạng), Affine/Perspective transformation. Mục tiêu là thay đổi vị trí của các pixel trong hệ tọa độ, không phải thay đổi ý nghĩa của giá trị màu.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 76,
+    "topic": "Phân đoạn & phân cụm",
+    "section": "Choose the best",
+    "question": "Choose the best description of the K- Mean for segmentation",
+    "options": [
+      "The k-means clustering algorithm attempts to fill in the missing data intervals to create new clusters.",
+      "It is used to identify data labels based on a given labeled dataset.",
+      "K Means is a classifying algorithm.",
+      "In the K-Mean algorithm, in the same data group, the closer to the central data point, the larger the difference in data will be."
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "Chính xác hơn về mặt học thuật, K-Means là thuật toán phân cụm (clustering), không phải phân loại (classification). Tuy nhiên, trong các đề CPV301/FPTU, đáp án C thường được dùng để chỉ thuật toán dùng để chia dữ liệu thành các nhóm (classes/clusters).",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 77,
+    "topic": "Màu sắc & histogram",
+    "section": "Choose the best",
+    "question": "Choose the best answer about color space",
+    "options": [
+      "Color space is the term for a system that uses a specific image model to translate color into numbers.",
+      "A color space is a specific organization of colors.",
+      "System that turns image into numbers.",
+      "Color spaces are mathematical models describing the way image can be represented."
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Color space (không gian màu) là một cách tổ chức/biểu diễn màu sắc để mỗi màu có thể được biểu diễn bằng các giá trị số (ví dụ RGB, HSV, Lab...).",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 78,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best answer about digital image",
+    "options": [
+      "The digital image is a two-dimensional array of color",
+      "The digital image is a matrix of pixels.",
+      "The digital images are composed of a combination of colors.",
+      "The digital images are created from digital cameras through a mechanical system."
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Trong CPV301 (Computer Vision), định nghĩa chuẩn của digital image là: A digital image is a matrix (2D array) of pixels. Mỗi pixel chứa giá trị cường độ sáng (ảnh xám) hoặc giá trị màu (RGB, HSV,...).",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 79,
+    "topic": "Miền tần số & Fourier",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+      "Fourier transform is a mathematical function which transforms a signal from the frequency domain to the time domain.",
+      "The Fourier Transform is an important image processing tool which is used to decompose an image into its sine and cosine components",
+      "In the Fourier domain image, each point represents a particular spatial contained in the frequency domain image.",
+      "All of the others"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Fourier Transform (FT) dùng để chuyển tín hiệu từ miền không gian/thời gian sang miền tần số (frequency domain). Trong xử lý ảnh, FT phân tích ảnh thành tổng của các thành phần sin và cos với các tần số khác nhau.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 80,
+    "topic": "Ảnh số & thu nhận ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best answer about Photometry:",
+    "options": [
+      "Photometry is proportional to the amount of light directed by the surface patch which projects onto the computer.",
+      "Photometry is the science of the measurement of light, in terms of its perceived brightness to the human eye",
+      "Photometry is the phenomenon of light being absorbed when it reaches the surface of the matter.",
+      "All of the others"
+    ],
+    "answer": [1],
+    "multi": false,
+    "explanation": "Photometry là ngành khoa học đo lường ánh sáng theo cách con người cảm nhận được (độ sáng nhìn thấy bởi mắt người). Đây là định nghĩa chuẩn trong quang học và Computer Vision.",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 81,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best answer about 2D Lines",
+    "options": [
+      "A line is a straight one-dimensional figure having no thickness and extending infinitely in both directions.",
+      "Lines are an idealization of such objects, which are often described in terms of two points",
+      "Line in the plane is often defined as the set of points whose coordinates satisfy a given linear equation.",
+      "All of others"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 82,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Choose the best",
+    "question": "Choose the best description of the convolution- Kernel",
+    "options": [
+      "It is an array-representative for transforming images from different spatial domains.",
+      "It is the process of adding each element of the image to its local neighbors, weighted by the intensity value.",
+      "It is a small matrix used to clarify certain features.",
+      "It is used in all filters to increase the brightness of the image."
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 83,
+    "topic": "Màu sắc & histogram",
+    "section": "Choose the best",
+    "question": "Choose the best description of the contrast stretching",
+    "options": [
+      "It is used as a filter, removing noise like salt and pepper",
+      "It is also known as Invert-Normalization",
+      "It improves an image by stretching the range of intensity values it contains.",
+      "It is a way of representing histogram in terms of light balance implementation"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 84,
+    "topic": "Biến đổi hình học & ghép ảnh",
+    "section": "Choose the best",
+    "question": "Choose the best description about global alignment in image stitching",
+    "options": [
+      "Global alignment requires the non-linear minimization of an error term, which is defined from point correspondences.",
+      "Global alignment is still needed to obtain a globally coherent mosaic.",
+      "The goal of global alignment is then to find a globally consistent set of alignment parameters that minimize the misregistration between all pairs of images.",
+      "All of the others"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 85,
+    "topic": "Lọc ảnh & tích chập",
+    "section": "Choose the best",
+    "question": "Choose the best description of the line detection using the convolution based technique",
+    "options": [
+      "A convolution-based technique that produces an image description of the thin lines in an input image",
+      "These kernel masks are tuned for dark lines against a grey background",
+      "A convolution-based technique is the foundation of deep learning models.",
+      "All of the others"
+    ],
+    "answer": [0],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 86,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Prewitt operator for edge detection",
+    "options": [
+      "It detects the overlap edges of an image.",
+      "It is one of the best ways to detect the color intensity and magnitude of an image",
+      "It is a good performance on detecting vertical and horizontal edges",
+      "It is never a good choice to detect the orientation of an image"
+    ],
+    "answer": [2],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 87,
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Hough transform",
+    "options": [
+      "The Hough transform is a technique that can be used to isolate features of a particular shape within an image.",
+      "Hough transform can be employed in applications where a simple analytic description of a feature is not possible.",
+      "The main advantage of the Hough transform technique is that it is tolerant of gaps in feature boundary descriptions and is relatively unaffected by image noise.",
+      "All of the others"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  },
+  {
+    "slide": 88,
+    "topic": "Miền tần số & Fourier",
+    "section": "Choose the best",
+    "question": "Choose the best description of the Fourier Transform",
+    "options": [
+      "The Fourier Transform is a device that breaks a waveform into an alternate representation, characterized by sine and cosines.",
+      "The Fourier Transform shows that any waveform can be re-written as the sum of sinusoidal functions.",
+      "The Fourier Transform gives us a unique and powerful map of viewing these waveforms.",
+      "All of the others"
+    ],
+    "answer": [3],
+    "multi": false,
+    "explanation": "",
+    "figure": false,
+    "needs_review": false,
+    "review_note": ""
+  }
+]

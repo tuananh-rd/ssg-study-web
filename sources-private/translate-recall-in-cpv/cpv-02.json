@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m2-002",
+  "q": "Trong hàm biến đổi tuyến tính g(x,y) = a * f(x,y) + b, hai tham số a (Gain) và b (Bias) lần lượt kiểm soát đặc tính nào của ảnh?",
+  "correct": "Tham số a kiểm soát độ tương phản (contrast), tham số b kiểm soát độ sáng (brightness)",
+  "wrong": [
+   "Tham số a kiểm soát độ sáng (brightness), tham số b kiểm soát độ tương phản (contrast)",
+   "Tham số a kiểm soát góc xoay, tham số b kiểm soát hệ số co giãn không gian",
+   "Tham số a kiểm soát độ bão hòa màu sắc, tham số b kiểm soát sắc độ ảnh"
+  ]
+ },
+ {
+  "id": "r-m2-003",
+  "q": "Kỹ thuật Cân bằng lược đồ xám (Histogram Equalization) chuẩn hóa mức xám của bức ảnh dựa trên hàm số nào?",
+  "correct": "Hàm phân phối tích lũy (Cumulative Distribution Function - CDF)",
+  "wrong": [
+   "Hàm mật độ xác suất chuẩn một chiều Gaussian",
+   "Hàm biến đổi Fourier rời rạc hai chiều",
+   "Hàm tự tương quan đạo hàm bậc nhất của ma trận ảnh"
+  ]
+ },
+ {
+  "id": "r-m2-004",
+  "q": "Mục đích chính của thao tác Kéo giãn tương phản (Contrast Stretching) là gì?",
+  "correct": "Tự động co giãn dải giá trị pixel hiện tại sang dải động tối đa cho phép (0-255)",
+  "wrong": [
+   "Chuyển đổi toàn bộ điểm ảnh xám thành hai mức nhị phân duy nhất 0 và 255",
+   "Làm mờ nhẹ vùng lân cận để triệt tiêu hiện tượng nhiễu hạt tiêu",
+   "Phân tách bức ảnh thành nhiều thành phần liên thông độc lập"
+  ]
+ },
+ {
+  "id": "r-m2-005",
+  "q": "Trong phép trộn ảnh tuyến tính g(x,y) = (1 - alpha) * f0(x,y) + alpha * f1(x,y), kỹ thuật này thường được ứng dụng phổ biến nhất trong trường hợp nào?",
+  "correct": "Hiệu ứng chồng mờ ảnh (cross-fading) và pha trộn kênh alpha (alpha blending)",
+  "wrong": [
+   "Khử nhiễu muối tiêu và bảo toàn các đường biên có độ tương phản cao",
+   "Tìm giao điểm của các đường thẳng trong không gian tọa độ cực",
+   "Căn chỉnh tự động các góc nghiêng của tài liệu văn bản"
+  ]
+ },
+ {
+  "id": "r-m2-006",
+  "q": "Điểm khác biệt mấu chốt về mặt toán học giữa phép Tích chập (Convolution) và phép Tương quan (Correlation) trong xử lý ảnh là gì?",
+  "correct": "Hạt nhân bộ lọc (kernel) trong phép tích chập được lật ngược theo cả chiều ngang và chiều dọc trước khi nhân tổng",
+  "wrong": [
+   "Phép tích chập chỉ áp dụng được trên ảnh màu còn phép tương quan chỉ dùng cho ảnh xám",
+   "Phép tích chập sử dụng phép nhân ma trận phi tuyến tính thay vì tổ hợp tuyến tính",
+   "Phép tích chập bắt buộc phải sắp xếp các giá trị pixel trong cửa sổ lân cận theo thứ tự tăng dần"
+  ]
+ },
+ {
+  "id": "r-m2-007",
+  "q": "Bộ lọc nào là giải pháp tối ưu nhất để loại bỏ nhiễu hạt tiêu (Salt and Pepper noise) mà vẫn bảo toàn độ sắc nét của đường biên cạnh?",
+  "correct": "Bộ lọc trung vị (Median Filter)",
+  "wrong": [
+   "Bộ lọc trung bình (Mean Filter)",
+   "Bộ lọc Gaussian (Gaussian Smoothing)",
+   "Bộ lọc thông cao Laplacian"
+  ]
+ },
+ {
+  "id": "r-m2-008",
+  "q": "Cơ chế hoạt động nào giúp Bộ lọc song phương (Bilateral Filter) vừa làm mịn bề mặt phẳng vừa bảo toàn đường biên cạnh có độ tương phản cao?",
+  "correct": "Kết hợp cả khoảng cách không gian lẫn sự sai khác về cường độ màu sắc/độ sáng khi tính trọng số",
+  "wrong": [
+   "Lật ngược mặt nạ lọc 180 độ và chỉ lấy giá trị trung vị của các pixel lân cận",
+   "Sử dụng đạo hàm bậc hai để xác định các điểm giao cắt bằng không (zero-crossings)",
+   "Nhân trực tiếp ma trận ảnh với ma trận quay trong không gian tọa độ đồng nhất"
+  ]
+ },
+ {
+  "id": "r-m2-009",
+  "q": "Hạn chế lớn nhất của Bộ lọc trung bình (Mean Filter) khi áp dụng để làm mịn hình ảnh là gì?",
+  "correct": "Làm mờ và nhòe các đường biên cạnh sắc nét của đối tượng",
+  "wrong": [
+   "Làm tăng độ nhiễu hạt tiêu do khuếch đại các điểm ngoại lai",
+   "Tạo ra các lỗ trống không xác định trên ma trận điểm ảnh đích",
+   "Làm biến dạng hình học của các đường thẳng song song trong ảnh"
+  ]
+ },
+ {
+  "id": "r-m2-010",
+  "q": "Khi đặt mặt nạ kernel ở các pixel cạnh biên của bức ảnh, các phương pháp xử lý biên ảnh (Border Handling) phổ biến gồm những kỹ thuật nào?",
+  "correct": "Giữ nguyên giá trị biên không lọc, sao chép kéo dài giá trị biên (replicate), hoặc chèn thêm dải pixel bằng 0 (zero padding)",
+  "wrong": [
+   "Tự động xoay ảnh một góc 45 độ, chuyển đổi hệ màu sang HSV, hoặc nội suy song tuyến tính",
+   "Loại bỏ hoàn toàn kênh màu xanh lá, cân bằng lược đồ xám, hoặc nhân với ma trận nghịch đảo",
+   "Cắt bỏ toàn bộ các hàng và cột có chứa giá trị cường độ sáng lớn hơn 128"
+  ]
+ },
+ {
+  "id": "r-m2-011",
+  "q": "Biến đổi Fourier thực hiện chuyển đổi bức ảnh giữa hai không gian biểu diễn nào?",
+  "correct": "Từ miền không gian (Spatial Domain) sang miền tần số (Frequency Domain)",
+  "wrong": [
+   "Từ miền màu RGB sang không gian màu cảm nhận trực quan HSV",
+   "Từ không gian tọa độ Descartes sang không gian tọa độ cực (Hough Space)",
+   "Từ ma trận số nguyên 8-bit sang ma trận nhị phân sau phân ngưỡng"
+  ]
+ },
+ {
+  "id": "r-m2-012",
+  "q": "Trong miền tần số của ảnh 2D, các thành phần tần số cao (High Frequencies) đại diện cho thông tin nào của bức ảnh?",
+  "correct": "Các chi tiết nhỏ, các vùng thay đổi cường độ sáng đột ngột, đường biên cạnh hoặc nhiễu",
+  "wrong": [
+   "Các vùng cấu trúc phẳng rộng lớn có cường độ sáng thay đổi chậm hoặc đồng đều",
+   "Giá trị trung bình độ sáng của toàn bộ bức ảnh tại gốc tọa độ",
+   "Tỷ lệ co giãn đồng dạng của các đối tượng hình học trong không gian"
+  ]
+ },
+ {
+  "id": "r-m2-013",
+  "q": "Trong các cặp biến đổi Fourier kinh điển, tín hiệu dạng Bộ lọc hộp (Box filter) ở miền không gian tương ứng với hàm nào ở miền tần số?",
+  "correct": "Hàm Sinc",
+  "wrong": [
+   "Hàm Gaussian",
+   "Hàm hằng số",
+   "Hàm xung đơn độc (Impulse)"
+  ]
+ },
+ {
+  "id": "r-m2-014",
+  "q": "Để làm mịn ảnh và triệt tiêu bớt nhiễu trong miền tần số, người ta thiết kế bộ lọc nào sau đây?",
+  "correct": "Bộ lọc thông thấp (Low-pass filter) để giữ lại các thành phần tần số thấp",
+  "wrong": [
+   "Bộ lọc thông cao (High-pass filter) để giữ lại các thành phần tần số cao",
+   "Bộ lọc trung vị phi tuyến tính để đảo ngược pha của các sóng điều hòa",
+   "Bộ lọc bất đẳng hướng để khuếch đại các biên cạnh sắc nhọn"
+  ]
+ },
+ {
+  "id": "r-m2-015",
+  "q": "Thuật toán nén ảnh JPEG sử dụng biến thể nào của biến đổi Fourier làm nền tảng cốt lõi?",
+  "correct": "Biến đổi Cosine rời rạc (Discrete Cosine Transform - DCT)",
+  "wrong": [
+   "Biến đổi Hough (Hough Transform)",
+   "Biến đổi Affine (Affine Transform)",
+   "Phân tích suy biến ma trận (SVD)"
+  ]
+ },
+ {
+  "id": "r-m2-016",
+  "q": "Hạn chế lớn nhất của kỹ thuật Biến đổi tiến (Forward Warping) khi thực hiện biến đổi hình học ảnh là gì?",
+  "correct": "Tạo ra các lỗ trống (holes) và vết nứt (cracks) trên ảnh đích do việc làm tròn tọa độ số thực",
+  "wrong": [
+   "Làm sai lệch toàn bộ dải màu của ảnh đích do hiện tượng mất kênh Luma",
+   "Đòi hỏi ma trận biến đổi bắt buộc phải có tính chất khả nghịch và trực giao",
+   "Tốn bộ nhớ gấp đôi do phải lưu trữ toàn bộ các mức phân giải MIP-map"
+  ]
+ },
+ {
+  "id": "r-m2-017",
+  "q": "Kỹ thuật Biến đổi ngược (Inverse Warping) khắc phục triệt để vấn đề lỗ trống bằng cách thức nào?",
+  "correct": "Duyệt qua từng pixel của ảnh đích, tìm ngược tọa độ trên ảnh nguồn và sử dụng các thuật toán nội suy",
+  "wrong": [
+   "Duyệt qua từng pixel ảnh nguồn và làm tròn tọa độ đến số nguyên gần nhất trên ảnh đích",
+   "Áp dụng trực tiếp bộ lọc Gaussian lên ma trận ảnh trước khi thực hiện tịnh tiến",
+   "Khởi tạo lại toàn bộ giá trị điểm ảnh bằng phân phối tích lũy CDF"
+  ]
+ },
+ {
+  "id": "r-m2-018",
+  "q": "Kỹ thuật MIP-mapping trong đồ họa máy tính hoạt động dựa trên nguyên lý nào để chống hiện tượng răng cưa?",
+  "correct": "Tạo sẵn chuỗi các phiên bản ảnh thu nhỏ với độ phân giải giảm dần (chia đôi kích thước liên tiếp)",
+  "wrong": [
+   "Tăng gấp đôi độ phân giải của ảnh gốc bằng phương pháp nội suy song tuyến tính liên tục",
+   "Chia tách ma trận biến đổi 2D thành hai phép biến đổi 1D gồm lấy mẫu lại và bẻ xiên",
+   "Áp dụng hàm phân phối Gaussian có độ lệch chuẩn vô hạn lên toàn bộ bề mặt đối tượng"
+  ]
+ },
+ {
+  "id": "r-m2-019",
+  "q": "Bộ lọc nào sau đây được thiết kế chuyên biệt để bảo toàn độ sắc nét của kết cấu bề mặt khi quan sát ở các góc nghiêng cực hạn (extreme viewing angles)?",
+  "correct": "Lọc bất đẳng hướng (Anisotropic Filtering)",
+  "wrong": [
+   "Bộ lọc trung bình (Mean Filter)",
+   "Bộ lọc hộp (Box Filter)",
+   "Bộ lọc trung vị (Median Filter)"
+  ]
+ },
+ {
+  "id": "r-m2-020",
+  "q": "Kỹ thuật Biến đổi đa bước (Multi-pass Transforms) tối ưu hóa tốc độ xử lý phần cứng bằng phương pháp nào?",
+  "correct": "Chia tách một phép biến đổi hình học 2D phức tạp thành một chuỗi các phép biến đổi 1D nối tiếp nhau",
+  "wrong": [
+   "Lặp lại phép biến đổi 2D qua nhiều khung hình với các hệ số tỷ lệ giảm dần",
+   "Thực hiện đồng thời cả biến đổi tiến và biến đổi ngược trên cùng một ma trận ảnh",
+   "Chuyển toàn bộ tọa độ điểm ảnh sang không gian Fourier trước khi thực hiện phép quay"
+  ]
+ },
+ {
+  "id": "r-m3-001",
+  "q": "Trong thuật toán phát hiện góc Harris Corner Detector, khi nào một điểm ảnh được xác định là thuộc về một Góc (Corner)?",
+  "correct": "Khi cả hai giá trị riêng λ1 và λ2 của ma trận cấu trúc đều lớn và xấp xỉ nhau (điểm R dương lớn)",
+  "wrong": [
+   "Khi một giá trị riêng rất lớn còn giá trị riêng kia xấp xỉ bằng không (điểm R có giá trị âm)",
+   "Khi cả hai giá trị riêng λ1 và λ2 đều rất nhỏ và xấp xỉ bằng không (điểm R nhỏ)",
+   "Khi hiệu số giữa hai giá trị riêng luôn vượt qua ngưỡng phân kỳ cực đại"
+  ]
+ },
+ {
+  "id": "r-m3-002",
+  "q": "Thuật toán trích xuất đặc trưng SIFT (Scale-Invariant Feature Transform) có đặc tính vượt trội nào giúp nhận dạng điểm đặc trưng bền vững?",
+  "correct": "Bất biến với tỷ lệ thu phóng (scale) và phép xoay (rotation) của bức ảnh",
+  "wrong": [
+   "Tự động chuyển đổi toàn bộ ảnh sang ma trận nhị phân không mất thông tin",
+   "Triệt tiêu hoàn toàn hiện tượng nhòe chuyển động bằng biến đổi Fourier rời rạc",
+   "Chỉ cần một giá trị ngưỡng cố định để tìm kiếm góc mà không cần tính gradient"
+  ]
+ },
+ {
+  "id": "r-m3-003",
+  "q": "Thứ tự chuẩn của các bước trong quy trình trích xuất đặc trưng của thuật toán SIFT là gì?",
+  "correct": "Tìm đỉnh trên không gian tỷ lệ → Định vị Keypoint → Gán hướng → Tạo Vector mô tả",
+  "wrong": [
+   "Gán hướng → Tạo Vector mô tả → Lọc nhiễu Gaussian → Tìm điểm Zero-crossing",
+   "Định vị Keypoint → Phân ngưỡng kép → Triệt tiêu phi cực đại → So khớp đặc trưng",
+   "Tạo Vector mô tả → Tìm ma trận Homography → Lấy mẫu MIP-mapping → Định vị Keypoint"
+  ]
+ },
+ {
+  "id": "r-m3-004",
+  "q": "Thuật toán ORB trong thị giác máy tính được phát triển dựa trên sự kết hợp của hai kỹ thuật nào?",
+  "correct": "Bộ phát hiện điểm FAST và bộ mô tả nhị phân BRIEF",
+  "wrong": [
+   "Bộ phát hiện góc Harris và bộ mô tả SIFT",
+   "Bộ lọc đạo hàm Sobel và biến đổi Cosine rời rạc DCT",
+   "Thuật toán RANSAC và bộ phân loại SVM"
+  ]
+ },
+ {
+  "id": "r-m3-005",
+  "q": "Trong kỹ thuật phát hiện biên ảnh, vector Gradient có hướng (direction) như thế nào so với hướng của đường biên thực tế?",
+  "correct": "Vuông góc với hướng của đường biên",
+  "wrong": [
+   "Song song hoàn toàn với hướng của đường biên",
+   "Tạo một góc cố định 45 độ so với đường biên",
+   "Ngược chiều với vector pháp tuyến của bề mặt vật thể"
+  ]
+ },
+ {
+  "id": "r-m3-006",
+  "q": "Thứ tự chuẩn của 4 bước trong quy trình phát hiện biên (Edge Detection) là gì?",
+  "correct": "Lọc nhiễu (Filtering) → Tăng cường chi tiết (Enhancement) → Phân ngưỡng phát hiện (Detection/Thresholding) → Định vị chính xác (Localization)",
+  "wrong": [
+   "Phân ngưỡng phát hiện → Lọc nhiễu → Định vị chính xác → Tăng cường chi tiết",
+   "Tăng cường chi tiết → Định vị chính xác → Phân ngưỡng phát hiện → Lọc nhiễu",
+   "Lọc nhiễu → Định vị chính xác → Tạo Vector mô tả → Phân ngưỡng phát hiện"
+  ]
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m4-002",
+  "q": "Mục tiêu cốt lõi của phương pháp Ensemble Learning là nhằm giảm thiểu hai loại sai số nào?",
+  "correct": "Giảm phương sai (variance) và giảm độ chệch (bias)",
+  "wrong": [
+   "Giảm số lượng mẫu dữ liệu và giảm số lượng đặc trưng đầu vào",
+   "Giảm độ vẩn đục Gini Index và triệt tiêu khoảng cách Manhattan",
+   "Giảm số lượng cụm K và giảm bán kính lân cận Epsilon"
+  ]
+ },
+ {
+  "id": "r-m4-003",
+  "q": "Ba hướng tiếp cận chính trong Ensemble Learning được đề cập trong tài liệu là gì?",
+  "correct": "Bagging, Boosting và Stacking",
+  "wrong": [
+   "K-Means, HAC và DBSCAN",
+   "Regression, Classification và Clustering",
+   "Underfitting, Overfitting và Regularization"
+  ]
+ },
+ {
+  "id": "r-m4-004",
+  "q": "Cơ chế 'Bootstrap' trong kỹ thuật Bagging được thực hiện như thế nào?",
+  "correct": "Lấy mẫu dữ liệu có thay thế để tạo ra các tập dữ liệu huấn luyện con mới",
+  "wrong": [
+   "Lấy mẫu dữ liệu tuần tự không thay thế và loại bỏ dần các mẫu bị phân loại sai",
+   "Chia đều tập dữ liệu gốc thành K phần bằng nhau và độc lập tuyệt đối",
+   "Nội suy tuyến tính giữa các điểm dữ liệu láng giềng gần nhất để sinh thêm mẫu"
+  ]
+ },
+ {
+  "id": "r-m4-005",
+  "q": "Trong kỹ thuật Bagging, kết quả dự đoán của các mô hình cơ sở được kết hợp (Aggregation) theo hình thức nào?",
+  "correct": "Lấy trung bình kết quả đối với bài toán hồi quy hoặc bỏ phiếu đa số đối với bài toán phân loại",
+  "wrong": [
+   "Sử dụng một mô hình meta phức tạp để học trọng số phi tuyến của từng cây",
+   "Nhân liên tiếp các giá trị dự đoán của từng mô hình theo một chuỗi nối tiếp",
+   "Chỉ giữ lại dự đoán của mô hình cơ sở có điểm số cao nhất trên tập kiểm tra"
+  ]
+ },
+ {
+  "id": "r-m4-006",
+  "q": "Thuật toán Rừng ngẫu nhiên (Random Forest) bổ sung tính ngẫu nhiên so với Bagging thông thường bằng cách nào?",
+  "correct": "Chỉ chọn ngẫu nhiên một tập con các đặc trưng (features) tại mỗi điểm phân tách cây",
+  "wrong": [
+   "Huấn luyện các cây theo chuỗi tuần tự để cây sau sửa sai cho cây trước",
+   "Gán nhãn ngẫu nhiên cho một nửa số quan sát trong tập dữ liệu huấn luyện",
+   "Tự động chọn ngẫu nhiên hàm mất mát giữa Hinge Loss và SSE cho từng cây"
+  ]
+ },
+ {
+  "id": "r-m4-007",
+  "q": "Điểm khác biệt quan trọng của thuật toán Extra Trees (Extremely Randomized Trees) so với Random Forest là gì?",
+  "correct": "Chọn điểm phân tách (split point) hoàn toàn ngẫu nhiên thay vì tìm điểm tối ưu, giúp giảm phương sai mạnh và tính toán nhanh hơn",
+  "wrong": [
+   "Sử dụng hàm mất mát hàm mũ Exponential Loss thay vì độ vẩn đục Gini",
+   "Bắt buộc kết hợp các mô hình khác loại như SVM và KNN thay vì cây quyết định",
+   "Chỉ sử dụng được cho các bài toán hồi quy liên tục, không áp dụng cho phân loại"
+  ]
+ },
+ {
+  "id": "r-m4-008",
+  "q": "Trong đoạn mã `RandomForestClassifier(n_estimators=100, max_features='sqrt')`, tham số `n_estimators=100` có ý nghĩa gì?",
+  "correct": "Xây dựng 100 cây quyết định cơ sở trong mô hình rừng ngẫu nhiên",
+  "wrong": [
+   "Số lần lặp tối đa của thuật toán hạ độ dốc ngẫu nhiên",
+   "Số lượng mẫu tối thiểu được phép có tại mỗi nút lá của cây",
+   "Tỷ lệ phần trăm dữ liệu bootstrap được lấy từ tập huấn luyện gốc"
+  ]
+ },
+ {
+  "id": "r-m4-009",
+  "q": "Nguyên lý hoạt động cốt lõi của kỹ thuật Boosting là gì?",
+  "correct": "Xây dựng các mô hình theo chuỗi nối tiếp (sequential), mô hình sau cố gắng sửa lỗi của mô hình trước",
+  "wrong": [
+   "Xây dựng nhiều mô hình hoàn toàn độc lập và thực thi song song trên phần cứng đa nhân",
+   "Huấn luyện một mô hình meta để kết hợp các kết quả dự đoán của các bộ phân loại khác loại",
+   "Phân chia dữ liệu thành K phần bằng nhau và huấn luyện K mô hình độc lập"
+  ]
+ },
+ {
+  "id": "r-m4-010",
+  "q": "Trong quy trình huấn luyện của Boosting, các quan sát bị dự đoán sai ở bước trước sẽ được xử lý như thế nào?",
+  "correct": "Được gán trọng số cao hơn để mô hình phía sau tập trung học vào chúng",
+  "wrong": [
+   "Bị loại bỏ hoàn toàn ra khỏi tập huấn luyện của các mô hình tiếp theo",
+   "Được tự động gán nhãn lại theo đa số các quan sát láng giềng gần nhất",
+   "Được chuyển sang tập kiểm tra để đánh giá hiệu suất out-of-bag"
+  ]
+ },
+ {
+  "id": "r-m4-011",
+  "q": "Mô hình cơ sở (Base Learner) trong Boosting thường là các 'Decision Stumps', khái niệm này được hiểu là gì?",
+  "correct": "Cây quyết định chỉ có đúng 1 tầng, đưa ra quyết định chỉ dựa trên 1 đặc trưng cụ thể",
+  "wrong": [
+   "Cây quyết định phát triển đầy đủ với độ sâu tối đa không bị giới hạn",
+   "Mạng thần kinh sâu có nhiều lớp ẩn được huấn luyện bằng lan truyền ngược",
+   "Mô hình SVM sử dụng nhân phi tuyến Gaussian RBF với tham số gamma lớn"
+  ]
+ },
+ {
+  "id": "r-m4-012",
+  "q": "Điểm khác biệt chính giữa AdaBoost và Gradient Boosting về hàm mất mát và độ kháng ngoại lai là gì?",
+  "correct": "AdaBoost dùng hàm mất mát lũy thừa rất nhạy cảm với ngoại lai, còn Gradient Boosting thường dùng hàm Deviance kháng ngoại lai tốt hơn",
+  "wrong": [
+   "AdaBoost dùng hàm Hinge Loss kháng ngoại lai, còn Gradient Boosting dùng hàm SSE nhạy cảm với ngoại lai",
+   "AdaBoost tối ưu hàm chi phí bằng Gradient Descent, còn Gradient Boosting tối ưu bằng giải thuật di truyền",
+   "AdaBoost chạy song song trên phần cứng đa nhân, còn Gradient Boosting chạy tuần tự trên một luồng duy nhất"
+  ]
+ },
+ {
+  "id": "r-m4-013",
+  "q": "Trong khai báo `GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3)`, tham số `learning_rate` đóng vai trò gì?",
+  "correct": "Kiểm soát tốc độ co giãn mức độ đóng góp của từng cây con vào mô hình tổng thể",
+  "wrong": [
+   "Quy định bán kính lân cận epsilon để tìm kiếm các điểm dữ liệu lõi",
+   "Xác định số lượng đặc trưng ngẫu nhiên được lựa chọn tại mỗi điểm phân tách",
+   "Tỷ lệ phần trăm các mẫu dữ liệu ngoại lai cần được loại bỏ trước khi fit"
+  ]
+ },
+ {
+  "id": "r-m4-014",
+  "q": "Đặc trưng lớn nhất phân biệt phương pháp Stacking (Học xếp chồng) với Bagging và Boosting là gì?",
+  "correct": "Kết hợp các mô hình thuộc các loại khác nhau (heterogeneous) như SVM, KNN, Hồi quy Logistic",
+  "wrong": [
+   "Chỉ sử dụng duy nhất một loại mô hình cơ sở đồng nhất là cây quyết định 1 tầng",
+   "Bắt buộc phải huấn luyện các mô hình cơ sở theo chuỗi nối tiếp sửa sai",
+   "Hoàn toàn không sử dụng nhãn dữ liệu trong toàn bộ quy trình huấn luyện"
+  ]
+ },
+ {
+  "id": "r-m4-015",
+  "q": "Cơ chế phân tầng trong kỹ thuật Stacking hoạt động như thế nào?",
+  "correct": "Các mô hình lớp cơ sở (level-0) đưa ra dự đoán, các dự đoán này làm đầu vào cho mô hình meta (level-1) đưa ra kết luận",
+  "wrong": [
+   "Mô hình meta (level-1) dự đoán trước, sau đó chuyển kết quả cho các mô hình lớp cơ sở (level-0) lọc nhiễu",
+   "Các mô hình cơ sở chỉ huấn luyện trên tập kiểm tra, còn mô hình meta chỉ huấn luyện trên tập huấn luyện",
+   "Dữ liệu gốc được chia thành nhiều tầng theo độ sâu của biểu đồ phân nhánh Dendrogram"
+  ]
+ },
+ {
+  "id": "r-m4-016",
+  "q": "Đầu vào của mô hình meta (level-1) trong kiến trúc Stacking là gì?",
+  "correct": "Các kết quả dự đoán (chẳng hạn như xác suất các lớp) xuất ra từ các mô hình lớp cơ sở (level-0)",
+  "wrong": [
+   "Tập dữ liệu thô ban đầu cùng với toàn bộ các đặc trưng chưa chuẩn hóa",
+   "Khoảng cách Manhattan giữa các quan sát và các tâm phân cụm",
+   "Các chỉ số độ vẩn đục Entropy và Gini Index tại từng nút lá"
+  ]
+ },
+ {
+  "id": "r-m4-017",
+  "q": "Các phương thức phổ biến để kết hợp dự đoán ở tầng mô hình meta trong Stacking là gì?",
+  "correct": "Bỏ phiếu đa số hoặc gán trọng số cho từng mô hình dựa trên hiệu suất của chúng",
+  "wrong": [
+   "Lấy mẫu bootstrap có thay thế trên ma trận tương quan đa biến",
+   "Cắt tỉa các mô hình có độ sâu lớn hơn ngưỡng lỗi phân loại cho phép",
+   "Ánh xạ các dự đoán vào không gian nhân RBF với tham số gamma cố định"
+  ]
+ },
+ {
+  "id": "r-m4-018",
+  "q": "Khi so sánh về mục đích tối ưu hóa sai số giữa Bagging và Boosting, nhận định nào sau đây là chính xác?",
+  "correct": "Bagging nhằm mục đích chính là giảm Variance (tránh quá khớp), còn Boosting nhằm giảm Bias (khắc phục dưới khớp)",
+  "wrong": [
+   "Bagging nhằm mục đích giảm Bias, còn Boosting nhằm mục đích chính là giảm Variance",
+   "Cả hai phương pháp đều chỉ nhằm giảm Bias mà không có tác động đến Variance",
+   "Bagging dùng để tối ưu mô hình meta, còn Boosting dùng để chọn đặc trưng ngẫu nhiên"
+  ]
+ },
+ {
+  "id": "r-m4-019",
+  "q": "Về cấu trúc thực thi tính toán, nhận định nào sau đây đúng khi so sánh giữa Bagging và Boosting?",
+  "correct": "Bagging có cấu trúc song song (Parallel) tận dụng tốt phần cứng đa nhân, trong khi Boosting có cấu trúc nối tiếp (Sequential)",
+  "wrong": [
+   "Bagging bắt buộc phải thực thi nối tiếp, trong khi Boosting luôn thực thi song song hoàn toàn",
+   "Cả Bagging và Boosting đều bắt buộc phải chạy phân tầng nối tiếp qua mô hình meta",
+   "Bagging chỉ chạy đơn luồng, còn Boosting chạy đa luồng trên nhiều máy chủ phân tán"
+  ]
+ },
+ {
+  "id": "r-m4-020",
+  "q": "Nguy cơ tiềm ẩn của mô hình Boosting khi số lượng vòng lặp quá lớn là gì và giải pháp khắc phục?",
+  "correct": "Dễ bị hiện tượng quá khớp (Overfitting), cần sử dụng kiểm chéo (Cross-validation) để dừng sớm",
+  "wrong": [
+   "Dễ bị hiện tượng dưới khớp (Underfitting), cần tăng thêm tham số learning_rate",
+   "Gây tràn bộ nhớ do phải lưu trữ toàn bộ ma trận khoảng cách giữa các điểm",
+   "Hàm mất mát tự động chuyển sang dạng hàm mất mát đối xứng SSE"
+  ]
+ },
+ {
+  "id": "r-m4-021",
+  "q": "Trong bài toán xử lý dữ liệu không cân bằng, biến thể nào của Bagging được sử dụng để tích hợp việc lấy mẫu lại dữ liệu?",
+  "correct": "Balanced Bagging (Blagging)",
+  "wrong": [
+   "Extreme Bagging",
+   "Sequential Bagging",
+   "Adaptive Bagging"
+  ]
+ },
+ {
+  "id": "r-m4-022",
+  "q": "Điểm khác biệt về loại mô hình cơ sở giữa Stacking so với Bagging và Boosting là gì?",
+  "correct": "Stacking sử dụng các mô hình cơ sở khác loại (không đồng nhất), trong khi Bagging và Boosting thường dùng các mô hình cùng loại (đồng nhất)",
+  "wrong": [
+   "Cả ba phương pháp đều bắt buộc phải sử dụng các mô hình cơ sở khác loại",
+   "Bagging dùng mô hình khác loại, còn Stacking chỉ dùng duy nhất cây quyết định 1 tầng",
+   "Boosting chỉ sử dụng các mô hình học không giám sát làm mô hình cơ sở"
+  ]
+ },
+ {
+  "id": "r-m4-023",
+  "q": "Nhóm mô hình nào sau đây thuộc loại Tự giải thích (Self-interpretable)?",
+  "correct": "Mô hình tuyến tính, Cây quyết định đơn giản và K-Nearest Neighbors (KNN)",
+  "wrong": [
+   "Mạng thần kinh sâu (Deep Neural Networks)",
+   "Các mô hình Ensemble lớn (Random Forest, Boosting)",
+   "Máy vectơ hỗ trợ (SVM) sử dụng nhân Gaussian RBF phức tạp"
+  ]
+ },
+ {
+  "id": "r-m4-024",
+  "q": "Đặc điểm quan trọng của các phương pháp giải thích Bất khả tri (Model-agnostic) là gì?",
+  "correct": "Có thể áp dụng cho bất kỳ mô hình nào mà không phụ thuộc vào cấu trúc bên trong của nó",
+  "wrong": [
+   "Chỉ áp dụng được riêng cho các mô hình tự giải thích đơn giản",
+   "Yêu cầu phải can thiệp trực tiếp vào mã nguồn giải thuật tối ưu hóa trọng số",
+   "Chỉ sử dụng được cho các bài toán phân cụm không giám sát"
+  ]
+ },
+ {
+  "id": "r-m4-025",
+  "q": "Phương pháp Permutation Feature Importance đánh giá mức độ quan trọng của đặc trưng bằng cách nào?",
+  "correct": "Xếp hạng tầm quan trọng của đặc trưng bằng cách hoán vị giá trị của chúng và đo lường độ suy giảm hiệu suất",
+  "wrong": [
+   "Xóa bỏ vĩnh viễn cột đặc trưng đó khỏi bảng dữ liệu gốc rồi huấn luyện lại",
+   "Tính hệ số tương quan tuyến tính giữa đặc trưng đó với biến mục tiêu",
+   "Ép trọng số của đặc trưng về 0 thông qua kỹ thuật điều chuẩn LASSO"
+  ]
+ },
+ {
+  "id": "r-m4-026",
+  "q": "Trong kỹ thuật Mô hình Thay thế Toàn cục (Global Surrogate), mô hình đơn giản được huấn luyện dựa trên nhãn mục tiêu nào?",
+  "correct": "Nhãn do mô hình hộp đen phức tạp dự đoán ra, chứ không phải nhãn thực tế của dữ liệu",
+  "wrong": [
+   "Nhãn thực tế ban đầu (ground truth) của tập dữ liệu huấn luyện",
+   "Nhãn ngẫu nhiên được sinh ra từ phân phối Gauss nhiều chiều",
+   "Nhãn chỉ số cụm nhận được từ thuật toán phân cụm K-Means"
+  ]
+ }
+]

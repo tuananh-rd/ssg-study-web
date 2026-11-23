@@ -1,0 +1,1524 @@
+[
+ {
+  "png": "cpv-slides-png/slide-041.png",
+  "png_no": 41,
+  "html_no": 43,
+  "hidden": "Not",
+  "candidates": [
+   {
+    "id": 30,
+    "slide": 38,
+    "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+    "options": [
+     "Gradient",
+     "Edge",
+     "Grayscale",
+     "Contour"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-042.png",
+  "png_no": 42,
+  "html_no": 44,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 31,
+    "slide": 39,
+    "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+    "options": [
+     "Region combination",
+     "Object combination",
+     "Region splitting",
+     "Object splitting"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-043.png",
+  "png_no": 43,
+  "html_no": 45,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 32,
+    "slide": 40,
+    "question": "The lower limit of the dynamic range ratio can be determined by ____",
+    "options": [
+     "Contrast",
+     "Saturation",
+     "Noise",
+     "Brightness"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Điền vào chỗ trống",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-044.png",
+  "png_no": 44,
+  "html_no": 46,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 33,
+    "slide": 41,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-045.png",
+  "png_no": 45,
+  "html_no": 47,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 34,
+    "slide": 42,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-046.png",
+  "png_no": 46,
+  "html_no": 48,
+  "hidden": "A Gaussian Mixture Model (GMM)\n mô hình hóa phân phối dữ liệu như tổng (weighted sum)\n của nhiều phân phối Gaussian:",
+  "candidates": [
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-047.png",
+  "png_no": 47,
+  "html_no": 49,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 35,
+    "slide": 44,
+    "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+    "options": [
+     "Affine mapping computation",
+     "Skewed two-dimensional coordinate system",
+     "Inverse covariance matrix for pixel grids",
+     "Circle projection of destination pixels"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-048.png",
+  "png_no": 48,
+  "html_no": 50,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 36,
+    "slide": 45,
+    "question": "What is not true about image stitching?",
+    "options": [
+     "It is the process of combining multiple photographic images with overlapping fields of view",
+     "It is used in forensic and investigate science for the reconstruction of torn paper",
+     "It is used to complete mapping of a particular place",
+     "It maps two pixels that have similar intensity from two adjacent images"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-049.png",
+  "png_no": 49,
+  "html_no": 51,
+  "hidden": "",
+  "candidates": [
+   {
+    "id": 37,
+    "slide": 46,
+    "question": "What is not true object detection?",
+    "options": [
+     "It is the task of detecting instances of objects of a certain class within an image",
+     "It allows to identify and locate objects in a video",
+     "It recognizes with a contour in the image",
+     "It detects instances of semantic objects of a certain class"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-050.png",
+  "png_no": 50,
+  "html_no": 52,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 38,
+    "slide": 47,
+    "question": "What is not true about RANSAC algorithm?",
+    "options": [
+     "It estimates the parameter to deal with a large number of outliers",
+     "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+     "It selects data items randomly and then find how many data items fit the model",
+     "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-051.png",
+  "png_no": 51,
+  "html_no": 53,
+  "hidden": "",
+  "candidates": [
+   {
+    "id": 39,
+    "slide": 48,
+    "question": "What is true about Gaussian mixture models?",
+    "options": [
+     "It considers the distributions as the sum of several Gaussian models",
+     "It analyzes the distribution into the product of several Gaussian models",
+     "It considers the intensity of each pixel as the sum of several Gaussian models",
+     "It analyzes the intensity of each pixel into the product of several Gaussian models"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Công thức",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-052.png",
+  "png_no": 52,
+  "html_no": 54,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 40,
+    "slide": 49,
+    "question": "Which of the following statement is TRUE?",
+    "options": [
+     "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+     "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+     "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+     "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu ngắn",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 44,
+    "slide": 55,
+    "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-053.png",
+  "png_no": 53,
+  "html_no": 55,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 41,
+    "slide": 50,
+    "question": "Which of the following is NOT an application of image alignment?",
+    "options": [
+     "Identifying document templates",
+     "Generating panorama images",
+     "Comparing multiple scans of tissue taken at different times",
+     "Enhancing scanned or photographed documents"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 44,
+    "slide": 55,
+    "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 45,
+    "slide": 56,
+    "question": "Cylindrical is used if the camera is level and we have only rotation around its vertical axis",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-054.png",
+  "png_no": 54,
+  "html_no": 56,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 44,
+    "slide": 55,
+    "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 45,
+    "slide": 56,
+    "question": "Cylindrical is used if the camera is level and we have only rotation around its vertical axis",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-055.png",
+  "png_no": 55,
+  "html_no": 57,
+  "hidden": "Dạng số",
+  "candidates": [
+   {
+    "id": 42,
+    "slide": 52,
+    "question": "Which type of information does Optical Flow NOT provide?",
+    "options": [
+     "Acceleration of objects",
+     "Velocity of pixel motion",
+     "Direction of pixel motion",
+     "Location of keypoints"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "NOT / EXCEPT",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 44,
+    "slide": 55,
+    "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 45,
+    "slide": 56,
+    "question": "Cylindrical is used if the camera is level and we have only rotation around its vertical axis",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 46,
+    "slide": 58,
+    "question": "What is the typical size (dimensionality) of a descriptor vector generated by the SIFT algorithm?",
+    "options": [
+     "128",
+     "64",
+     "256",
+     "512"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Dạng số",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-056.png",
+  "png_no": 56,
+  "html_no": 58,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 43,
+    "slide": 54,
+    "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 44,
+    "slide": 55,
+    "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 45,
+    "slide": 56,
+    "question": "Cylindrical is used if the camera is level and we have only rotation around its vertical axis",
+    "options": [
+     "True",
+     "False"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu ngắn",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 46,
+    "slide": 58,
+    "question": "What is the typical size (dimensionality) of a descriptor vector generated by the SIFT algorithm?",
+    "options": [
+     "128",
+     "64",
+     "256",
+     "512"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Dạng số",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 47,
+    "slide": 59,
+    "question": "What is the range of the spectrum that humans can see as colors?",
+    "options": [
+     "200nm- 500nm",
+     "300nm- 600nm",
+     "400nm-700nm",
+     "500nm- 900nm"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Dạng số",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ }
+]

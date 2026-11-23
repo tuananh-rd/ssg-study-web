@@ -1,0 +1,338 @@
+[
+ {
+  "id": 102,
+  "question": "In the Seven-Step process, what happens during the 'Analyze the Problem' stage?",
+  "options": [
+   "The team chooses the best solution",
+   "The team gathers information and considers multiple perspectives",
+   "The team ignores customer feedback",
+   "It forces everyone to communicate in the same way to avoid conflict.",
+   "The team assigns roles like Facilitator and Recorder"
+  ],
+  "correct": [
+   "The team gathers information and considers multiple perspectives"
+  ]
+ },
+ {
+  "id": 103,
+  "question": "How is 'Conflict' defined in the context of teamwork?",
+  "options": [
+   "A sign that a relationship is permanently failing",
+   "A struggle associated with perceived opposing goals or needs",
+   "An unnecessary interruption that should always be avoided",
+   "A method used by leaders to punish low-performing members",
+   "A situation where everyone agrees on everything"
+  ],
+  "correct": [
+   "A struggle associated with perceived opposing goals or needs"
+  ]
+ },
+ {
+  "id": 104,
+  "question": "When giving feedback, why should it be 'Goal-directed'?",
+  "options": [
+   "To show that the leader is always right",
+   "To focus on the individual's character flaws",
+   "To connect the feedback to shared objectives and standards",
+   "To make the feedback as personal as possible",
+   "To ensure the person receiving feedback feels punished"
+  ],
+  "correct": [
+   "To connect the feedback to shared objectives and standards"
+  ]
+ },
+ {
+  "id": 105,
+  "question": "What is the final step in Dewey's Reflective Thinking process?",
+  "options": [
+   "Implement the chosen solution",
+   "Evaluate solutions",
+   "Disband the team",
+   "Celebrate the success",
+   "Follow up and assess results"
+  ],
+  "correct": [
+   "Follow up and assess results"
+  ]
+ },
+ {
+  "id": 106,
+  "question": "A team member is upset because you changed their slide. To use 'Collaborative Feedback,' how handle this?",
+  "options": [
+   "\"Yours was ugly\"",
+   "\"I wanted to match style. How do you see the change?\"",
+   "Change it back and say nothing",
+   "Tell them to stop being emotional",
+   "Ask the leader to handle it"
+  ],
+  "correct": [
+   "\"I wanted to match style. How do you see the change?\""
+  ]
+ },
+ {
+  "id": 107,
+  "question": "You wait until after the meeting to give feedback to a friend in private. Which rule?",
+  "options": [
+   "Goal-directed",
+   "Respectful Feedback",
+   "Collaborative",
+   "Conflict mining",
+   "Analysis"
+  ],
+  "correct": [
+   "Respectful Feedback"
+  ]
+ },
+ {
+  "id": 108,
+  "question": "What is the difference between 'Constructive' and 'Destructive' responses to conflict?",
+  "options": [
+   "Constructive responses focus on the person's character",
+   "Destructive responses encourage open dialogue",
+   "Constructive responses encourage learning and resolution",
+   "Constructive responses are always passive",
+   "Destructive responses protect the dignity of others"
+  ],
+  "correct": [
+   "Constructive responses encourage learning and resolution"
+  ]
+ },
+ {
+  "id": 109,
+  "question": "What is a 'Face-saving' strategy in conflict management?",
+  "options": [
+   "Separate the issue from the individual and protect credibility",
+   "Attacking a person's credibility to lower their power",
+   "Ignoring the person entirely during the meeting",
+   "Using evaluation and judgment to win the debate",
+   "Forcing someone to admit they were wrong in front of the group"
+  ],
+  "correct": [
+   "Separate the issue from the individual and protect credibility"
+  ]
+ },
+ {
+  "id": 110,
+  "question": "Why can stress and change create challenges in teamwork?",
+  "options": [
+   "Teams never need to adapt processes",
+   "Collaborative work often requires adjustment and refinement",
+   "Stress automatically improves communication",
+   "Change removes the need for goals"
+  ],
+  "correct": [
+   "Collaborative work often requires adjustment and refinement"
+  ]
+ },
+ {
+  "id": 111,
+  "question": "Why is emotional intelligence important in teamwork?",
+  "options": [
+   "It reduces all responsibilities",
+   "It improves collaboration and relationships",
+   "It removes deadlines",
+   "It replaces communication"
+  ],
+  "correct": [
+   "It improves collaboration and relationships"
+  ]
+ },
+ {
+  "id": 112,
+  "question": "Which situation most likely reflects low emotional intelligence in a university team?",
+  "options": [
+   "Constructive disagreement",
+   "High engagement and participation",
+   "Withdrawal, low effort, and missed deadlines",
+   "Shared commitment to goals"
+  ],
+  "correct": [
+   "Withdrawal, low effort, and missed deadlines"
+  ]
+ },
+ {
+  "id": 113,
+  "question": "What is the primary purpose of expressing feelings productively?",
+  "options": [
+   "Releasing frustration immediately",
+   "Protecting team relationships while communicating emotions",
+   "Avoiding all emotional discussions",
+   "Winning disagreements",
+   "All are correct"
+  ],
+  "correct": [
+   "Protecting team relationships while communicating emotions"
+  ]
+ },
+ {
+  "id": 114,
+  "question": "Why does viewing an issue as a challenge improve teamwork?",
+  "options": [
+   "Challenges eliminate stress completely",
+   "Challenges reduce motivation",
+   "Challenges encourage effort and goal-oriented thinking",
+   "Challenges avoid accountability"
+  ],
+  "correct": [
+   "Challenges encourage effort and goal-oriented thinking"
+  ]
+ },
+ {
+  "id": 115,
+  "question": "What is the danger of emotionally charged discussions?",
+  "options": [
+   "They eliminate disagreement",
+   "They always improve teamwork",
+   "They reduce participation automatically",
+   "They may interfere with constructive problem-solving"
+  ],
+  "correct": [
+   "They may interfere with constructive problem-solving"
+  ]
+ },
+ {
+  "id": 116,
+  "question": "Which combination best supports effective teamwork?",
+  "options": [
+   "Aggressive communication and emotional reactions",
+   "Calmness, empathy, and constructive behaviour",
+   "Silence and avoidance",
+   "Competition and blame"
+  ],
+  "correct": [
+   "Calmness, empathy, and constructive behaviour"
+  ]
+ },
+ {
+  "id": 117,
+  "question": "What is the key purpose of the \"Appreciation Circle\" activity?",
+  "options": [
+   "To compare academic performance",
+   "To strengthen trust and positive interaction",
+   "To identify weak members",
+   "To assign leadership roles"
+  ],
+  "correct": [
+   "To strengthen trust and positive interaction"
+  ]
+ },
+ {
+  "id": 118,
+  "question": "Why is respectful communication emphasized in teamwork?",
+  "options": [
+   "It strengthens collaboration and reduces dysfunction",
+   "It removes the need for teamwork",
+   "It guarantees agreement in every discussion",
+   "It increases hierarchical control"
+  ],
+  "correct": [
+   "It strengthens collaboration and reduces dysfunction"
+  ]
+ },
+ {
+  "id": 119,
+  "question": "Which quality helps teams become stronger?",
+  "options": [
+   "Self-awareness",
+   "Avoidance",
+   "Silence",
+   "Competition only"
+  ],
+  "correct": [
+   "Self-awareness"
+  ]
+ },
+ {
+  "id": 120,
+  "question": "What is one major challenge of managing teams?",
+  "options": [
+   "Avoiding communication",
+   "Balancing individual and team needs",
+   "Eliminating all conflict",
+   "Working alone",
+   "None of them."
+  ],
+  "correct": [
+   "Balancing individual and team needs"
+  ]
+ },
+ {
+  "id": 121,
+  "question": "Why can the transition from employee to manager be difficult?",
+  "options": [
+   "Managers do less work.",
+   "Technical skills are no longer useful.",
+   "Managers must focus more on people and relationships.",
+   "Managers no longer communicate with teams.",
+   "All of them."
+  ],
+  "correct": [
+   "Managers must focus more on people and relationships."
+  ]
+ },
+ {
+  "id": 122,
+  "question": "Who should new managers manage besides direct reports?",
+  "options": [
+   "Only customers",
+   "Only senior managers",
+   "Stakeholders such as peers and influencers",
+   "Nobody else"
+  ],
+  "correct": [
+   "Stakeholders such as peers and influencers"
+  ]
+ },
+ {
+  "id": 123,
+  "question": "A manager wants to balance team paradoxes effectively. Which action best reflects this goal?",
+  "options": [
+   "Encouraging only individual competition",
+   "Supporting both autonomy and accountability",
+   "Eliminating disagreement from discussions",
+   "Giving identical responsibilities to every member"
+  ],
+  "correct": [
+   "Supporting both autonomy and accountability"
+  ]
+ },
+ {
+  "id": 124,
+  "question": "Which example best reflects \"leadership through influence\" rather than authority?",
+  "options": [
+   "Threatening punishment for mistakes",
+   "Controlling every team decision personally",
+   "Building trust and credibility with team members",
+   "Avoiding discussions with the team"
+  ],
+  "correct": [
+   "Building trust and credibility with team members"
+  ]
+ },
+ {
+  "id": 125,
+  "question": "A leader openly admits mistakes, follows through on promises, and behaves consistently. Which core leadership behaviour is being demonstrated?",
+  "options": [
+   "Delegation",
+   "Integrity",
+   "Competition",
+   "Formal authority"
+  ],
+  "correct": [
+   "Integrity"
+  ]
+ },
+ {
+  "id": 126,
+  "question": "Which response best demonstrates constructive disagreement management?",
+  "options": [
+   "Ignoring opposing opinions",
+   "Attacking the person instead of the idea",
+   "Acknowledging both viewpoints and using evidence to support a position",
+   "Ending the discussion before conflict appears"
+  ],
+  "correct": [
+   "Acknowledging both viewpoints and using evidence to support a position"
+  ]
+ }
+]

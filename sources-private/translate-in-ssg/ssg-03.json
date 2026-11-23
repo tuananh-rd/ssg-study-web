@@ -1,0 +1,205 @@
+[
+ {
+  "id": 41,
+  "question": "Why should agenda items be organized logically with estimated times?",
+  "options": [
+   "To reduce participation",
+   "To increase meeting complexity",
+   "To eliminate discussion entirely",
+   "To help the meeting stay focused and manageable"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "What is one risk of inviting unnecessary participants to a meeting?",
+  "options": [
+   "Reduced communication barriers",
+   "Simpler decision-making",
+   "Increased complexity and negative results",
+   "Better time management"
+  ]
+ },
+ {
+  "id": 43,
+  "question": "Why can circular seating arrangements improve interaction?",
+  "options": [
+   "They reinforce hierarchy strongly",
+   "They encourage more equal participation and visibility",
+   "They reduce eye contact",
+   "They limit discussion opportunities",
+   "None of them."
+  ]
+ },
+ {
+  "id": 44,
+  "question": "Which participant behavior is recommended in the meeting checklist?",
+  "options": [
+   "Leaving frequently during the discussion",
+   "Ignoring established turn-taking procedures",
+   "Demonstrating professionalism in verbal and nonverbal communication",
+   "Starting side conversations when bored",
+   "None of them."
+  ]
+ },
+ {
+  "id": 45,
+  "question": "A meeting leader regularly asks quieter members for opinions and summarizes key points. Which meeting skill is being demonstrated?",
+  "options": [
+   "Facilitation and participation management",
+   "Dominating discussion",
+   "Conflict avoidance",
+   "Informal leadership only"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "What is the purpose of agreeing on ground rules at the beginning of a meeting?",
+  "options": [
+   "To encourage interruptions",
+   "To support respectful and organized discussion",
+   "To increase conflict",
+   "To reduce accountability",
+   "None of them"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "Why is recording action items with deadlines important?",
+  "options": [
+   "It creates unnecessary documentation",
+   "It avoids future meetings",
+   "It reduces member accountability",
+   "It clarifies responsibility and follow-up expectations"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "Why are meeting roles rotated during practice activities?",
+  "options": [
+   "To create confusion among participants",
+   "To ensure all members practise different teamwork skills",
+   "To shorten the activity",
+   "To reduce accountability"
+  ]
+ },
+ {
+  "id": 49,
+  "question": "What should happen after the meeting?",
+  "options": [
+   "Team members should ignore the notes",
+   "The meeting record should be shared",
+   "All plans should change immediately",
+   "No follow-up is necessary"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "An FPT student sits down to write an email requesting an internship at a software company. According to the \"Think, Then Write\" principle, what is the very first thing they should do before putting words on the page?",
+  "options": [
+   "Write a quick first draft and plan to fix the confusion later.",
+   "Clarify their purpose, their audience, and the desired outcome of the email.",
+   "Immediately search for external sources on Google to copy a template.",
+   "Create a working outline without knowing who the primary audience is."
+  ]
+ },
+ {
+  "id": 51,
+  "question": "Before starting a Capstone project proposal, which of the following is a crucial question the team must ask themselves to ensure their message is effective?",
+  "options": [
+   "How can I use the most complex vocabulary possible?",
+   "How can I make this document as long as possible?",
+   "What is my main purpose: to inform, persuade, or request action?",
+   "Which formatting style will look the most creative, regardless of the rules?"
+  ]
+ },
+ {
+  "id": 52,
+  "question": "Why does the text highly recommend that business students use a \"Planning Checklist\" when preparing their assignments or business messages?",
+  "options": [
+   "Because it allows writers to skip the research phase entirely.",
+   "Because it guarantees the message will not require any headings or lists.",
+   "Because it helps increase the word count of the final document.",
+   "Because it reduces errors and saves time later in the writing process."
+  ]
+ },
+ {
+  "id": 53,
+  "question": "When using the Planning Checklist to determine the structure and style of a report, how should a writer organize their main points?",
+  "options": [
+   "Logically from the reader's point of view.",
+   "In the exact chronological order the research was found.",
+   "From the most confusing point to the easiest point.",
+   "Randomly, as long as headings and lists are used."
+  ]
+ },
+ {
+  "id": 54,
+  "question": "An FPT Business student is writing a report on campus cafeteria operations. They interview the cafeteria manager and review past FPT student feedback reports. What kind of research strategy is the student using?",
+  "options": [
+   "Avoiding external sources to prevent bias.",
+   "Using internal sources (such as organizational reports and interviews with people involved in the operation).",
+   "Relying purely on what they already know without learning anything new.",
+   "Committing plagiarism by using company documents."
+  ]
+ },
+ {
+  "id": 55,
+  "question": "A student finds a great paragraph in a professional tech blog and copies it into their essay, changing only two words. They do not include a citation. What is this an example of?",
+  "options": [
+   "Ethical writing, because they changed some words.",
+   "A standard business research strategy.",
+   "Paraphrasing effectively.",
+   "Plagiarism, which is using others' work without proper acknowledgment."
+  ]
+ },
+ {
+  "id": 56,
+  "question": "If an IT student needs to include the exact definition of a software framework from an authoritative database in their thesis, what MUST they do to avoid plagiarism?",
+  "options": [
+   "Use quotation marks for the exact wording and keep track of/cite the source.",
+   "Memorize the quote and pretend they thought of it themselves.",
+   "Put the quote in bold text so the teacher knows it is important, without citing it.",
+   "Paraphrase the exact wording so they don't have to use quotation marks or citations."
+  ]
+ },
+ {
+  "id": 57,
+  "question": "After analyzing all their research on AI trends, an FPT student groups related ideas together and creates a working outline. What is the primary function of this outline?",
+  "options": [
+   "It serves as the final draft to be submitted for grading.",
+   "It acts as a bridge from research to drafting.",
+   "It replaces the need for an introduction and conclusion.",
+   "It proves to the reader that no plagiarism occurred."
+  ]
+ },
+ {
+  "id": 58,
+  "question": "While reviewing articles for a literature review, a student reads \"critically.\" What does critical reading involve evaluating?",
+  "options": [
+   "Only the publication date of the source to ensure it is from this year.",
+   "The font style and formatting choices of the original author.",
+   "The writer's assumptions, logic, and possible bias.",
+   "How easily the text can be copied without quotation marks."
+  ]
+ },
+ {
+  "id": 59,
+  "question": "An FPT Event Club leader is writing an email to recruit event volunteers. According to the planning checklist, what MUST they include to ensure students can actually sign up?",
+  "options": [
+   "A long, detailed history of every past club event.",
+   "Every single detail about the club so the scope isn't limited.",
+   "The specific information the reader must have to respond (like a deadline and sign-up link).",
+   "Highly academic language to impress the university."
+  ]
+ },
+ {
+  "id": 60,
+  "question": "Which of the following is considered the \"nonverbal dimension\" in written communication?",
+  "options": [
+   "The selection of short, simple words to ensure the clarity of the business message.",
+   "The psychological expectations of both the source and the receiver.",
+   "How the message is portrayed or displayed, such as the medium, typeface, or the appearance of a signature.",
+   "Anything that blocks or distorts the communication process, such as time zone confusion."
+  ]
+ }
+]

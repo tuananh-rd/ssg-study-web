@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m2-002",
+  "q": "Điểm phân biệt cơ bản giữa bài toán Hồi quy (Regression) và Phân loại (Classification) là gì?",
+  "correct": "Hồi quy dự đoán kết quả là một giá trị số liên tục, còn phân loại dự đoán danh mục hoặc nhãn rời rạc",
+  "wrong": [
+   "Hồi quy chỉ áp dụng khi dữ liệu có ít hơn 100 mẫu, còn phân loại áp dụng cho dữ liệu lớn",
+   "Hồi quy sử dụng mô hình học không giám sát, còn phân loại dùng mô hình học có giám sát",
+   "Hồi quy bắt buộc phải dùng hàm kernel RBF, còn phân loại chỉ dùng siêu phẳng tuyến tính"
+  ]
+ },
+ {
+  "id": "r-m2-003",
+  "q": "Ưu điểm nổi bật của mô hình Hồi quy Logistic là gì?",
+  "correct": "Có tính diễn giải cao, giúp hiểu rõ tầm quan trọng và mức độ tác động của từng yếu tố",
+  "wrong": [
+   "Có khả năng tự động học các đặc trưng phi tuyến tính phức tạp như mạng nơ-ron sâu",
+   "Hoàn toàn không bị ảnh hưởng bởi thang đo của các biến đặc trưng đầu vào",
+   "Tự động triệt tiêu hoàn toàn sai số phân loại trên tập kiểm tra về 0"
+  ]
+ },
+ {
+  "id": "r-m2-004",
+  "q": "Trong khai báo `LogisticRegression(penalty='l2', C=10.0)`, tham số `penalty='l2'` thể hiện điều gì?",
+  "correct": "Sử dụng hình thức phạt điều chuẩn L2 (tổng bình phương các hệ số)",
+  "wrong": [
+   "Sử dụng khoảng cách Manhattan L1 để đo độ tương đồng",
+   "Giới hạn số lượng lớp phân loại tối đa là 2 lớp nhị phân",
+   "Chỉ định độ sâu tối đa của mô hình phân loại là 2 tầng"
+  ]
+ },
+ {
+  "id": "r-m2-005",
+  "q": "Trong Ma trận nhầm lẫn (Confusion Matrix), trường hợp một mẫu thực tế là Dương tính (Actual Positive) nhưng mô hình lại dự đoán là Âm tính (Predicted Negative) được gọi là gì?",
+  "correct": "False Negative (FN) - Sai lầm loại II",
+  "wrong": [
+   "False Positive (FP) - Sai lầm loại I",
+   "True Positive (TP)",
+   "True Negative (TN)"
+  ]
+ },
+ {
+  "id": "r-m2-006",
+  "q": "Trường hợp mẫu thực tế là Âm tính (Actual Negative) nhưng mô hình lại dự đoán là Dương tính (Predicted Positive) tương ứng với khái niệm nào?",
+  "correct": "False Positive (FP) - Sai lầm loại I",
+  "wrong": [
+   "False Negative (FN) - Sai lầm loại II",
+   "True Positive (TP)",
+   "True Negative (TN)"
+  ]
+ },
+ {
+  "id": "r-m2-007",
+  "q": "Chỉ số Recall (Độ nhạy / Sensitivity) trong bài toán phân loại đo lường điều gì?",
+  "correct": "Tỷ lệ mẫu dương tính được nhận diện đúng trong tổng số các mẫu thực tế dương tính",
+  "wrong": [
+   "Tỷ lệ mẫu thực sự dương tính trong tổng số các mẫu mà mô hình dự đoán là dương tính",
+   "Tỷ lệ tổng số mẫu dự đoán đúng (cả âm tính và dương tính) trên toàn bộ tập dữ liệu",
+   "Khả năng tránh báo động giả trên các mẫu thực tế âm tính"
+  ]
+ },
+ {
+  "id": "r-m2-008",
+  "q": "Chỉ số Precision (Độ chính xác dự đoán) phản ánh điều gì?",
+  "correct": "Tỷ lệ thực sự dương tính trong các mẫu mà mô hình dự đoán là dương tính",
+  "wrong": [
+   "Tỷ lệ các mẫu âm tính được nhận diện đúng trên tổng số mẫu thực tế âm tính",
+   "Tổng số dự đoán đúng của cả lớp dương tính và lớp âm tính chia cho tổng số mẫu",
+   "Diện tích nằm dưới đường cong hiệu năng biểu diễn tỷ lệ TPR so với FPR"
+  ]
+ },
+ {
+  "id": "r-m2-009",
+  "q": "Đường cong ROC (ROC Curve) biểu diễn mối quan hệ giữa hai đại lượng nào?",
+  "correct": "True Positive Rate (TPR) và False Positive Rate (FPR)",
+  "wrong": [
+   "Precision và Recall",
+   "Accuracy và F1-Score",
+   "Bias và Variance"
+  ]
+ },
+ {
+  "id": "r-m2-010",
+  "q": "Hai đặc điểm lý thuyết cơ bản nhất của thuật toán K-Láng giềng gần nhất (KNN) là gì?",
+  "correct": "Phi tham số (Non-parametric) và Học lười (Lazy learner)",
+  "wrong": [
+   "Có tham số (Parametric) và Học tích cực (Eager learner)",
+   "Tham lam (Greedy) và Tự động trích xuất đặc trưng (Feature extraction)",
+   "Phân cấp từ dưới lên (Bottom-up) và Tối ưu hàm mục tiêu toàn cục"
+  ]
+ },
+ {
+  "id": "r-m2-011",
+  "q": "Tại sao việc Chuẩn hóa đặc trưng (Feature Scaling) lại đặc biệt quan trọng đối với thuật toán KNN?",
+  "correct": "Vì KNN dựa trên các phép đo khoảng cách (như Euclidean), nên biến có biên độ lớn sẽ chi phối toàn bộ kết quả",
+  "wrong": [
+   "Vì KNN yêu cầu tất cả các biến đầu vào phải có phân phối chuẩn tắc với mean=0 và std=1",
+   "Vì nếu không chuẩn hóa, thuật toán không thể tính được hàm mất mát Hinge Loss",
+   "Vì Feature Scaling giúp KNN chuyển đổi từ thuật toán phân loại sang thuật toán hồi quy"
+  ]
+ },
+ {
+  "id": "r-m2-012",
+  "q": "Để chọn giá trị K tối ưu trong thuật toán KNN, người ta thường áp dụng phương pháp nào trên biểu đồ tỷ lệ lỗi?",
+  "correct": "Phương pháp Điểm khuỷu tay (Elbow Method)",
+  "wrong": [
+   "Biểu đồ phân nhánh Dendrogram",
+   "Khoảng cách Cosine cực tiểu",
+   "Phương pháp lấy mẫu lại SMOTE"
+  ]
+ },
+ {
+  "id": "r-m2-013",
+  "q": "Quy trình dự đoán nhãn cho một điểm dữ liệu mới của thuật toán KNN diễn ra như thế nào?",
+  "correct": "Tính khoảng cách tới mọi điểm, chọn K điểm gần nhất và gán nhãn theo đa số lớp trong K điểm đó",
+  "wrong": [
+   "Tìm nghiệm tối ưu của siêu phẳng bằng cách cực tiểu hóa tổng bình phương sai số phần dư",
+   "Ánh xạ điểm dữ liệu sang không gian vô hạn chiều rồi dùng hàm Sigmoid để tính xác suất",
+   "Duyệt qua các nhánh rẽ từ gốc đến lá theo tiêu chí giảm độ vẩn đục Entropy nhiều nhất"
+  ]
+ },
+ {
+  "id": "r-m2-014",
+  "q": "Khi so sánh quá trình Huấn luyện (Fit) giữa Hồi quy Tuyến tính và KNN, nhận định nào sau đây là chính xác?",
+  "correct": "Hồi quy Tuyến tính huấn luyện chậm do phải tối thiểu hóa hàm chi phí, còn KNN huấn luyện rất nhanh vì chỉ cần lưu trữ dữ liệu",
+  "wrong": [
+   "Hồi quy Tuyến tính huấn luyện nhanh vì không có tham số, còn KNN huấn luyện chậm do tìm kiếm láng giềng",
+   "Cả hai mô hình đều huấn luyện với tốc độ như nhau do cùng sử dụng thuật toán lan truyền ngược",
+   "KNN huấn luyện chậm vì phải xây dựng ma trận trọng số tối ưu trước khi nhận dữ liệu mới"
+  ]
+ },
+ {
+  "id": "r-m2-015",
+  "q": "Về giai đoạn Dự đoán (Prediction) và Tiêu tốn bộ nhớ, KNN có nhược điểm gì so với Hồi quy Tuyến tính?",
+  "correct": "KNN dự đoán chậm (phải tìm láng giềng gần nhất) và tốn bộ nhớ (phải lưu toàn bộ tập huấn luyện)",
+  "wrong": [
+   "KNN dự đoán rất nhanh nhưng chiếm ít bộ nhớ hơn do chỉ lưu một vài trọng số cơ bản",
+   "KNN không thể thực hiện dự đoán nếu tập kiểm tra có nhiều hơn 3 thuộc tính",
+   "KNN bắt buộc phải giải hệ phương trình đạo hàm bậc hai tại mỗi bước dự đoán"
+  ]
+ },
+ {
+  "id": "r-m2-016",
+  "q": "Mục tiêu chính của thuật toán Máy vectơ hỗ trợ (Support Vector Machines - SVM) là gì?",
+  "correct": "Tìm một siêu phẳng (hyperplane) phân tách các lớp sao cho khoảng cách (margin) giữa các lớp là lớn nhất",
+  "wrong": [
+   "Tối đa hóa diện tích dưới đường cong ROC bằng cách ước lượng xác suất phân phối chuẩn",
+   "Gom cụm các điểm dữ liệu dựa trên tiêu chí cực tiểu hóa độ vẩn đục Gini Index",
+   "Tạo ra các cây quyết định độc lập trên các tập con ngẫu nhiên có thay thế"
+  ]
+ },
+ {
+  "id": "r-m2-017",
+  "q": "Các 'Vectơ hỗ trợ' (Support Vectors) trong mô hình SVM có vai trò then chốt gì?",
+  "correct": "Là các điểm dữ liệu nằm gần bề mặt quyết định nhất và có tác động trực tiếp đến vị trí tối ưu của siêu phẳng",
+  "wrong": [
+   "Là các điểm ngoại lai nằm xa nhất khỏi đám mây dữ liệu cần được thuật toán loại bỏ",
+   "Là các vectơ biểu diễn trung bình tọa độ của tất cả các điểm trong cùng một cụm",
+   "Là các trọng số điều chuẩn được gán cho mô hình sau khi kết thúc quá trình fit"
+  ]
+ },
+ {
+  "id": "r-m2-018",
+  "q": "Điểm khác biệt về hàm mất mát giữa SVM và Hồi quy Logistic là gì?",
+  "correct": "SVM sử dụng hàm Hinge Loss để phạt lỗi phân loại sai, trong khi Logistic Regression dùng hàm mất mát tiệm cận giảm dần về 0",
+  "wrong": [
+   "SVM sử dụng hàm mất mát bình phương tối thiểu SSE, còn Logistic Regression dùng hàm Deviance",
+   "SVM sử dụng hàm mất mát hàm mũ Exponential Loss, còn Logistic Regression dùng Hinge Loss",
+   "Cả hai mô hình đều dùng chung hàm Hinge Loss nhưng SVM không có tham số điều chuẩn C"
+  ]
+ },
+ {
+  "id": "r-m2-019",
+  "q": "Việc sử dụng hàm mất mát Hinge Loss mang lại ưu và nhược điểm gì cho SVM so với Hồi quy Logistic?",
+  "correct": "Độ chính xác phân loại tốt hơn nhưng ít nhạy cảm hơn đối với việc ước lượng xác suất dự đoán",
+  "wrong": [
+   "Tăng tốc độ dự đoán lên gấp nhiều lần nhưng đòi hỏi dung lượng bộ nhớ lớn hơn",
+   "Tính được chính xác xác suất phần trăm đầu ra nhưng dễ bị ảnh hưởng bởi đa cộng tuyến",
+   "Loại bỏ hoàn toàn tính phụ thuộc vào siêu tham số điều chuẩn C"
+  ]
+ },
+ {
+  "id": "r-m2-020",
+  "q": "Trong scikit-learn, để khởi tạo một mô hình SVM tuyến tính với hàm mất mát Hinge, ta sử dụng cú pháp nào?",
+  "correct": "`LinearSVC(C=1.0, loss='hinge', max_iter=10000)`",
+  "wrong": [
+   "`SVC(kernel='rbf', loss='sse')`",
+   "`SGDClassifier(loss='log_loss')`",
+   "`LogisticRegression(penalty='hinge')`"
+  ]
+ },
+ {
+  "id": "r-m2-021",
+  "q": "Mô hình SVM có đặc điểm như thế nào đối với các điểm dữ liệu ngoại lai (Outliers)?",
+  "correct": "Có thể bị ảnh hưởng bởi các điểm ngoại lai, làm thay đổi đáng kể ranh giới quyết định nếu không xử lý đúng cách",
+  "wrong": [
+   "Hoàn toàn miễn nhiễm với dữ liệu ngoại lai nhờ cơ chế tự động cắt tỉa nhánh",
+   "Tự động biến đổi các điểm ngoại lai về trung tâm phân phối chuẩn",
+   "Luôn loại bỏ các điểm ngoại lai ra khỏi tập dữ liệu trước khi tối ưu siêu phẳng"
+  ]
+ },
+ {
+  "id": "r-m2-022",
+  "q": "Vai trò của tham số điều chuẩn C trong mô hình SVM là gì?",
+  "correct": "Kiểm soát sự cân bằng giữa việc tối đa hóa khoảng cách (margin) và tối thiểu hóa lỗi phân loại",
+  "wrong": [
+   "Quy định số lượng điểm lân cận cần xem xét để gán nhãn cho một mẫu",
+   "Xác định số lượng cây quyết định cơ sở trong mô hình học kết hợp",
+   "Đo lường mức độ giảm độ vẩn đục Entropy sau mỗi lần chia nhánh"
+  ]
+ },
+ {
+  "id": "r-m2-023",
+  "q": "Khi thiết lập giá trị tham số C nhỏ trong SVM, mô hình sẽ có xu hướng hành xử như thế nào?",
+  "correct": "Cho phép nhiều lỗi phân loại hơn để đạt được khoảng cách (margin) lớn hơn, giúp giảm hiện tượng quá khớp (overfitting)",
+  "wrong": [
+   "Cố gắng phân loại đúng tất cả các điểm dữ liệu bằng mọi giá, dẫn đến margin hẹp và dễ bị overfitting",
+   "Triệt tiêu hoàn toàn tất cả các vectơ hỗ trợ ra khỏi mô hình",
+   "Tự động chuyển đổi từ nhân tuyến tính sang nhân Gaussian RBF"
+  ]
+ },
+ {
+  "id": "r-m2-024",
+  "q": "Hậu quả có thể xảy ra khi ta thiết lập giá trị tham số C quá lớn trong SVM là gì?",
+  "correct": "Khoảng cách (margin) bị thu hẹp lại để cố gắng phân loại đúng mọi điểm, dễ dẫn đến hiện tượng quá khớp (overfitting)",
+  "wrong": [
+   "Mô hình bỏ qua hầu hết dữ liệu huấn luyện dẫn đến hiện tượng dưới khớp nghiêm trọng",
+   "Thời gian tính toán dự đoán giảm về mức bằng 0",
+   "Thuật toán bắt buộc phải gán nhãn -1 cho tất cả các điểm biên"
+  ]
+ },
+ {
+  "id": "r-m2-025",
+  "q": "Ý nghĩa cốt lõi của kỹ thuật Kernel Trick trong SVM là gì?",
+  "correct": "Thực hiện phân loại phi tuyến tính bằng cách ánh xạ dữ liệu vào không gian nhiều chiều hơn mà không cần tính toán trực tiếp tọa độ",
+  "wrong": [
+   "Giảm chiều dữ liệu từ không gian nhiều chiều về không gian 2 chiều để tăng tốc độ tính toán",
+   "Chuyển đổi bài toán phân loại có giám sát thành bài toán phân cụm không giám sát",
+   "Lấy mẫu ngẫu nhiên có thay thế trên tập dữ liệu để xây dựng các mô hình độc lập"
+  ]
+ },
+ {
+  "id": "r-m2-026",
+  "q": "Loại Kernel nào thường được sử dụng trong SVM để biến đổi dữ liệu phi tuyến tính sao cho có thể phân tách bằng siêu phẳng?",
+  "correct": "Gaussian (RBF) Kernel",
+  "wrong": [
+   "Linear Kernel",
+   "Manhattan Kernel",
+   "Jaccard Kernel"
+  ]
+ }
+]

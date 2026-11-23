@@ -1,0 +1,329 @@
+[
+ {
+  "id": 1,
+  "question": "What type of plot in Seaborn is used to visualize the distribution of a continuous variable along with its probability density estimate? (Select all correct answers)",
+  "options": [
+   "Histplot",
+   "KDEplot",
+   "Violinplot",
+   "Boxplot"
+  ],
+  "correct": [
+   "Histplot",
+   "KDEplot",
+   "Violinplot"
+  ]
+ },
+ {
+  "id": 2,
+  "question": "..... is a type of plot that displays values pertaining to typically two variables against each other. Choose the best answer.",
+  "options": [
+   "box plot",
+   "scatter plot",
+   "Histogram",
+   "Pie chart"
+  ],
+  "correct": [
+   "scatter plot"
+  ]
+ },
+ {
+  "id": 3,
+  "question": "Data is collected when a client makes a ______ request to a server.",
+  "options": [
+   "PORT",
+   "GET",
+   "PUT",
+   "HTTP"
+  ],
+  "correct": [
+   "GET"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Facebook Messenger and ...... are integration options within Watson Assistant from the Add Integration button. Choose the best answer",
+  "options": [
+   "Slack",
+   "Google Search",
+   "Yahoo messager",
+   "Github"
+  ],
+  "correct": [
+   "Slack"
+  ]
+ },
+ {
+  "id": 5,
+  "question": "Which regression technique introduces a penalty term based on the absolute value of the coefficients?",
+  "options": [
+   "Lasso regression",
+   "Ridge regression",
+   "ElasticNet regression",
+   "Polynomial regression"
+  ],
+  "correct": [
+   "Lasso regression"
+  ]
+ },
+ {
+  "id": 6,
+  "question": "What regression technique is an extension of linear regression but involves higher-order polynomial functions?",
+  "options": [
+   "Lasso regression",
+   "Ridge regression",
+   "Polynomial regression",
+   "ElasticNet regression"
+  ],
+  "correct": [
+   "Polynomial regression"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "In Dash, what component is used to create a text input box for user interaction?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ],
+  "correct": [
+   "dcc.Input()"
+  ]
+ },
+ {
+  "id": 8,
+  "question": "In Dash, which component is used to create a dropdown with multi-select options?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Checklist()",
+   "dcc.Graph()"
+  ],
+  "correct": [
+   "dcc.Dropdown()"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "In Dash, which component allows users to input numerical values by dragging a point along a fixed range?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ],
+  "correct": [
+   "dcc.Slider()"
+  ]
+ },
+ {
+  "id": 10,
+  "question": "Which Matplotlib function is used to create a line plot with multiple lines on the same axes?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.scatter()",
+   "plt.stackplot()"
+  ],
+  "correct": [
+   "plt.plot()"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "Which Matplotlib function is used to create a line plot with markers on data points?",
+  "options": [
+   "plt.plot()",
+   "plt.line()",
+   "plt.scatter()",
+   "plt.lines()"
+  ],
+  "correct": [
+   "plt.plot()"
+  ]
+ },
+ {
+  "id": 12,
+  "question": "Which Matplotlib function is used to create a pie chart?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.pie()",
+   "plt.scatter()"
+  ],
+  "correct": [
+   "plt.pie()"
+  ]
+ },
+ {
+  "id": 13,
+  "question": "Which Matplotlib function is used to create an area plot?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.area()",
+   "plt.stackplot()"
+  ],
+  "correct": [
+   "plt.stackplot()"
+  ]
+ },
+ {
+  "id": 14,
+  "question": "In Dash, which component allows users to input text or strings?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Textarea()",
+   "dcc.Graph()"
+  ],
+  "correct": [
+   "dcc.Input()"
+  ]
+ },
+ {
+  "id": 15,
+  "question": "In Dash, which component is used to create a drop-down menu for user interaction?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ],
+  "correct": [
+   "dcc.Dropdown()"
+  ]
+ },
+ {
+  "id": 16,
+  "question": "What type of graphs can be effectively utilized in Dashboards for real-time data analysis?",
+  "options": [
+   "Bar charts",
+   "Pie charts",
+   "Line charts",
+   "All of the above"
+  ],
+  "correct": [
+   "All of the above"
+  ]
+ },
+ {
+  "id": 17,
+  "question": "What type of graph is best suited for displaying the distribution of a single continuous variable?",
+  "options": [
+   "Pie chart",
+   "Bar chart",
+   "Histogram",
+   "Line chart"
+  ],
+  "correct": [
+   "Histogram"
+  ]
+ },
+ {
+  "id": 18,
+  "question": "Which type of plot is useful for comparing proportions across different categories using rectangles of different heights?",
+  "options": [
+   "Pie chart",
+   "Bar plot",
+   "Line plot",
+   "Scatter plot"
+  ],
+  "correct": [
+   "Bar plot"
+  ]
+ },
+ {
+  "id": 19,
+  "question": "Which plot is most suitable for showing the relationship between two continuous variables in Seaborn?",
+  "options": [
+   "Pie chart",
+   "Scatter plot",
+   "Bar plot",
+   "Area plot"
+  ],
+  "correct": [
+   "Scatter plot"
+  ]
+ },
+ {
+  "id": 21,
+  "question": "Which Seaborn function is used to create a heatmap to visualize the correlation matrix of a dataset?",
+  "options": [
+   "sns.heatmap()",
+   "sns.pairplot()",
+   "sns.jointplot()",
+   "sns.scatterplot()"
+  ],
+  "correct": [
+   "sns.heatmap()"
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Which function in Matplotlib is used to draw a histogram?",
+  "options": [
+   "hist()",
+   "draw_hist()",
+   "plot_hist()",
+   "create_histogram()"
+  ],
+  "correct": [
+   "hist()"
+  ]
+ },
+ {
+  "id": 23,
+  "question": "What function in Pandas is used to read a CSV file?",
+  "options": [
+   "read_csv()",
+   "load_csv()",
+   "import_csv()",
+   "open_csv()"
+  ],
+  "correct": [
+   "read_csv()"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "What function in Pandas is used to read a JSON file into a DataFrame?",
+  "options": [
+   "read_json()",
+   "load_json()",
+   "import_json()",
+   "parse_json()"
+  ],
+  "correct": [
+   "read_json()"
+  ]
+ },
+ {
+  "id": 25,
+  "question": "What function in Pandas is used to fill missing values in a DataFrame?",
+  "options": [
+   "fill_nulls()",
+   "replace_nulls()",
+   "fill_missing()",
+   "fillna()"
+  ],
+  "correct": [
+   "fillna()"
+  ]
+ },
+ {
+  "id": 27,
+  "question": "What Pandas function is used to display the first few rows of a DataFrame?",
+  "options": [
+   "display()",
+   "head()",
+   "show()",
+   "preview()"
+  ],
+  "correct": [
+   "head()"
+  ]
+ }
+]

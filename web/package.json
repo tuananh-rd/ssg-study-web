@@ -1,0 +1,1 @@
+{"name":"ssg-study-web","private":true,"type":"module","scripts":{"dev":"node scripts/build-content.mjs && wrangler pages dev public --d1=DB --port 8788","build":"node scripts/build-content.mjs"},"devDependencies":{"wrangler":"^4.166.0"}}

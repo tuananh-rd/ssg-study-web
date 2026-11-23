@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-281.png",
+  "png_no": 281,
+  "html_no": 283,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 262,
+    "slide": 278,
+    "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+    "options": [
+     "Ray tracing for matte surfaces and radiosity for specular surfaces",
+     "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+     "Radiosity for both matte and specular surfaces",
+     "Ray tracing for both matte and specular surfaces"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-282.png",
+  "png_no": 282,
+  "html_no": 284,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 263,
+    "slide": 279,
+    "question": "What are the differences between correlation and convolution?",
+    "options": [
+     "Convolution is measurement of total noise of one image on the other image.",
+     "The mathematical calculation of Correlation is difference as convolution in time domain",
+     "If the filter is asymmetrical then the output of both the expression would be same.",
+     "Correlation is measurement of the similarity between two image."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-283.png",
+  "png_no": 283,
+  "html_no": 285,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 264,
+    "slide": 280,
+    "question": "What role does the edge linking process play in image processing after edge detection?",
+    "options": [
+     "It introduces disorder to the detected edge pixels.",
+     "It randomly rearranges the order of edge pixels.",
+     "It organizes an unordered set of edge pixels into an ordered list of edges.",
+     "It eliminates edge information by breaking connections between neighboring pixels."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-284.png",
+  "png_no": 284,
+  "html_no": 286,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 265,
+    "slide": 281,
+    "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+    "options": [
+     "It reveals the spatial distribution of brightness in the image.",
+     "It decomposes an image into its constituent sinusoidal frequency components.",
+     "It increases the resolution of the image.",
+     "It directly removes noise pixels from the image"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Miền tần số & Fourier"
+   },
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-285.png",
+  "png_no": 285,
+  "html_no": 287,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 266,
+    "slide": 282,
+    "question": "What happens in the thin lens model?",
+    "options": [
+     "The object is inverted.",
+     "The image is discolored.",
+     "Objects placed before or after Len produce the same results.",
+     "The image will stay the same size when you use white light as the source (sun)."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-286.png",
+  "png_no": 286,
+  "html_no": 288,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 267,
+    "slide": 283,
+    "question": "Which of these describes a desirable characteristic for features used in alignment?",
+    "options": [
+     "They should be easily affected by lighting changes.",
+     "They should be distinctive and easily identifiable in both images.",
+     "They should be evenly distributed across the entire image.",
+     "They should be large and occupy a significant portion of the image."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-287.png",
+  "png_no": 287,
+  "html_no": 289,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 268,
+    "slide": 284,
+    "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+    "options": [
+     "It typically requires pre-processing steps like normalization and alignment.",
+     "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+     "It can achieve high accuracy in controlled environments with good lighting.",
+     "It can easily identify individuals from large variations in pose and expression."
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-288.png",
+  "png_no": 288,
+  "html_no": 290,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 269,
+    "slide": 285,
+    "question": "Which of the following is incorrect about object tracking?",
+    "options": [
+     "A way of identifying or confirming an individual's identity using their face.",
+     "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+     "Creating a unique ID for each of the initial detections.",
+     "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-289.png",
+  "png_no": 289,
+  "html_no": 291,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 270,
+    "slide": 286,
+    "question": "Which scenario benefits most from Line detection with Hough Transform?",
+    "options": [
+     "Segmenting and analyzing individual characters in handwritten text.",
+     "Identifying and classifying different types of flowers based on color and texture.",
+     "Detecting lane markings on a road in an image for autonomous driving applications.",
+     "Blur detection and image sharpening techniques that rely on accurate edge information."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-290.png",
+  "png_no": 290,
+  "html_no": 292,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 271,
+    "slide": 287,
+    "question": "How is an \"Illumination model\" formed?",
+    "options": [
+     "It refers to the source of visible electromagnetic radiation",
+     "It describes the linear projection model of light",
+     "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+     "It focuses on the off-axis distance of light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-291.png",
+  "png_no": 291,
+  "html_no": 293,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 272,
+    "slide": 288,
+    "question": "How are pixel transforms understood? Choose the best correct answer",
+    "options": [
+     "Those are transformation techniques based on pixel-by-pixel processing.",
+     "Those are transformation techniques based on pixel-by-cluster processing.",
+     "Those are transformation techniques based on pixel-by-image processing.",
+     "Those are transformation techniques based on cluster-by-cluster processing."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Tổng quan & toán cơ bản"
+   },
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-292.png",
+  "png_no": 292,
+  "html_no": 294,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 273,
+    "slide": 289,
+    "question": "How are thresholding methods implemented? Choose the best answer",
+    "options": [
+     "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+     "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+     "The first and second is correct",
+     "The first or second is correct"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-293.png",
+  "png_no": 293,
+  "html_no": 295,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 274,
+    "slide": 290,
+    "question": "How does the shutter speed parameter in digital cameras work?",
+    "options": [
+     "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+     "Controls the amount of light reaching the sensor",
+     "The physical spacing between adjacent sensor cells on the imaging chip",
+     "The active sensing area size as a fraction of the theoretically available sensing area"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-294.png",
+  "png_no": 294,
+  "html_no": 296,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 275,
+    "slide": 291,
+    "question": "How does image noise affect the performance of line detection with Hough Transform?",
+    "options": [
+     "Noise has minimal impact as the voting process inherently filters out noise.",
+     "Noise can cause edge points to deviate slightly, potentially affecting the accuracy of line parameters.",
+     "High levels of noise can create false peaks in the parameter space, leading to inaccurate line detection.",
+     "The Hough Transform is not suitable for images with any level of noise."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-295.png",
+  "png_no": 295,
+  "html_no": 297,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 276,
+    "slide": 292,
+    "question": "How is the Haar calculation performed for edge detection?",
+    "options": [
+     "By measuring the sharpness of pixel values in darker and lighter regions",
+     "By computing the ratio of pixel intensities in darker and lighter regions",
+     "By finding the difference between averages of pixel values in darker and lighter regions",
+     "By comparing the histograms of pixel distributions in darker and lighter regions"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-296.png",
+  "png_no": 296,
+  "html_no": 298,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 277,
+    "slide": 293,
+    "question": "How does linear filtering differ from non-linear filtering in image processing?",
+    "options": [
+     "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+     "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+     "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+     "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ }
+]

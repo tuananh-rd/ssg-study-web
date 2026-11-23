@@ -1,0 +1,1922 @@
+[
+ {
+  "png": "cpv-slides-png/slide-297.png",
+  "png_no": 297,
+  "html_no": 299,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 278,
+    "slide": 294,
+    "question": "How does a computer understand input images?",
+    "options": [
+     "The computer understands the image as a matrix of pixels.",
+     "The computer understands the image as a single color matrix.",
+     "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-298.png",
+  "png_no": 298,
+  "html_no": 300,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 279,
+    "slide": 295,
+    "question": "How does the window size in HOG object detection affect the ability to detect small objects?",
+    "options": [
+     "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+     "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+     "Window size has no impact on the detection of objects of varying sizes.",
+     "A larger window size improves the detection of small objects by capturing more context."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-299.png",
+  "png_no": 299,
+  "html_no": 301,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 280,
+    "slide": 296,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-300.png",
+  "png_no": 300,
+  "html_no": 302,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 281,
+    "slide": 297,
+    "question": "How can we compute convolution using correlation?",
+    "options": [
+     "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+     "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+     "We can directly use correlation without any modification to achieve convolution.",
+     "By dividing the results of correlation with the kernel size to get the convolution result."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Lọc ảnh & tích chập"
+   },
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-301.png",
+  "png_no": 301,
+  "html_no": 303,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 282,
+    "slide": 298,
+    "question": "How to calculate the intensity value of pixel in color space?",
+    "options": [
+     "It is the average of the color values.",
+     "It is represented through three color values: Red, Green, and Blue.",
+     "The color component with the largest value in the color space will be the pixel intensity.",
+     "It is a combination of colors according to the CMY color model."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Màu sắc & histogram"
+   },
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-302.png",
+  "png_no": 302,
+  "html_no": 304,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 283,
+    "slide": 299,
+    "question": "How do you understand object detection?",
+    "options": [
+     "Object detection is merely to recognize the presence of an object.",
+     "Object detection is the task of detecting instances of objects of a certain class within an image.",
+     "Object detection allows us to classify and locates objects in an image or video.",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-303.png",
+  "png_no": 303,
+  "html_no": 305,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 284,
+    "slide": 300,
+    "question": "How do thresholding methods process pixels in an image based on intensity?",
+    "options": [
+     "By randomly assigning new values to pixels based on a uniform distribution",
+     "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+     "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+     "By applying color inversion to pixels below the threshold"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-304.png",
+  "png_no": 304,
+  "html_no": 306,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 285,
+    "slide": 301,
+    "question": "Why use the image feature for processing, rather than using the whole image",
+    "options": [
+     "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+     "Use features to be able to apply more advanced techniques in image processing.",
+     "It reduces the number of resources required to describe a large set of data",
+     "All of the others"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-305.png",
+  "png_no": 305,
+  "html_no": 307,
+  "hidden": "",
+  "candidates": [
+   {
+    "id": 286,
+    "slide": 302,
+    "question": "Why do we need image stitching?",
+    "options": [
+     "Image stitching is a widely used technique for recovering original data from ripped data.",
+     "Image stitching is used in forensic and investigative science for the reconstruction of torn paper which is a big problem.",
+     "In image mapping, stitching of images is done to do the complete mapping of a particular place.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-306.png",
+  "png_no": 306,
+  "html_no": 308,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 287,
+    "slide": 303,
+    "question": "When designing your own kernel for edge detection, what is an important consideration when choosing the weights within the kernel?",
+    "options": [
+     "Assigning the highest weight to the center pixel ensures the most accurate gradient calculation.",
+     "The weights should be chosen to emphasize the type of edge you want to detect (e.g., stronger weights for sharper edges).",
+     "All weights within the kernel must be negative to achieve effective edge detection.",
+     "Using a random distribution of weights often leads to better edge detection results."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-307.png",
+  "png_no": 307,
+  "html_no": 309,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 288,
+    "slide": 304,
+    "question": "Compared to semantic segmentation models, instance segmentation models are generally",
+    "options": [
+     "More complex and require additional training data to differentiate individual objects.",
+     "Less complex and require less training data.",
+     "Equally complex with similar training data requirements.",
+     "Simpler but require very high-resolution images for accurate results."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-308.png",
+  "png_no": 308,
+  "html_no": 310,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 289,
+    "slide": 305,
+    "question": "Detecting cancerous cells as quickly as possible can potentially save millions of lives. Object detection will not be very useful here. So why is image segmentation so useful in this area?",
+    "options": [
+     "We will generate bounding boxes which will not help us in identifying the shape of the cells.",
+     "Segmentation processing is many times faster than object detection, thus helping to quickly prevent cancer cells.",
+     "The shape of the cancerous cells plays a vital role in determining the severity of cancer.",
+     "All of the others."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Phân đoạn & phân cụm"
+   },
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 295,
+    "slide": 311,
+    "question": "In the edge detection methods, what is the main advantage of the Canny algorithm over simpler?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-309.png",
+  "png_no": 309,
+  "html_no": 311,
+  "hidden": "C",
+  "candidates": [
+   {
+    "id": 290,
+    "slide": 306,
+    "question": "Edge detection is a technique widely used in image processing, as well as computer vision. It reduces the amount of data in an image and preserves the structural properties of an image. So what do you understand about edge detection?",
+    "options": [
+     "Edge Detection is a method of segmenting an image into regions of continuity.",
+     "Edge detection allows users to observe the features of an image for a significant change in the gray level.",
+     "Edge detection can be defined as a set of connected pixels that forms a boundary between two disjoint regions",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 295,
+    "slide": 311,
+    "question": "In the edge detection methods, what is the main advantage of the Canny algorithm over simpler?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 296,
+    "slide": 312,
+    "question": "Object tracking takes an approach that uses point tracking techniques. So how is the approach to using point tracking understood? Choose the best answer",
+    "options": [
+     "Objects detected in consecutive frames are represented by object deterministic, probabilistic methods, and the association of the object is based on the previous object state which can include object position and motion.",
+     "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: a multi- view based, template-based.",
+     "It refers to the object's shape and appearance.",
+     "This approach requires an external mechanism to detect the object in every frame."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-310.png",
+  "png_no": 310,
+  "html_no": 312,
+  "hidden": "A",
+  "candidates": [
+   {
+    "id": 291,
+    "slide": 307,
+    "question": "Eigenfaces, used in some face recognition algorithms, represent:",
+    "options": [
+     "Average face features from a training dataset.",
+     "The most distinctive facial features across different individuals.",
+     "Templates for specific facial expressions (e.g., smiling, frowning).",
+     "A 3D model of a face for high-resolution recognition."
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Nhận dạng & học máy"
+   },
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 295,
+    "slide": 311,
+    "question": "In the edge detection methods, what is the main advantage of the Canny algorithm over simpler?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 296,
+    "slide": 312,
+    "question": "Object tracking takes an approach that uses point tracking techniques. So how is the approach to using point tracking understood? Choose the best answer",
+    "options": [
+     "Objects detected in consecutive frames are represented by object deterministic, probabilistic methods, and the association of the object is based on the previous object state which can include object position and motion.",
+     "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: a multi- view based, template-based.",
+     "It refers to the object's shape and appearance.",
+     "This approach requires an external mechanism to detect the object in every frame."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 297,
+    "slide": 313,
+    "question": "The most difficult part of getting a fully automated stitching algorithm to work is deciding which pairs of images actually correspond to the same parts of the scene. What is the best solution to solve these issues? Choose the best correct answer",
+    "options": [
+     "Using a feature-based approach to remove objects from image frames. Then we get a completed panoramas image.",
+     "Using a direct pixel-based comparison between the registered images to determine if they actually are different views of the same scene.",
+     "To find the similarity of adjacent images, we determine whether the properties match or not, using the image combination method.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-311.png",
+  "png_no": 311,
+  "html_no": 313,
+  "hidden": "B",
+  "candidates": [
+   {
+    "id": 292,
+    "slide": 308,
+    "question": "Given the Sobel kernel for horizontal edge detection: [-1, 0, 1; -2, 0, 2; -1, 0, 1]. How does this kernel compute the horizontal gradient at a pixel?",
+    "options": [
+     "It subtracts the intensity of the left pixel from the right pixel.",
+     "It averages the intensity of all surrounding pixels.",
+     "It calculates a weighted sum of the pixel's intensity and its horizontal neighbors, emphasizing changes.",
+     "It directly compares the pixel's intensity to a pre-defined threshold."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 295,
+    "slide": 311,
+    "question": "In the edge detection methods, what is the main advantage of the Canny algorithm over simpler?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 296,
+    "slide": 312,
+    "question": "Object tracking takes an approach that uses point tracking techniques. So how is the approach to using point tracking understood? Choose the best answer",
+    "options": [
+     "Objects detected in consecutive frames are represented by object deterministic, probabilistic methods, and the association of the object is based on the previous object state which can include object position and motion.",
+     "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: a multi- view based, template-based.",
+     "It refers to the object's shape and appearance.",
+     "This approach requires an external mechanism to detect the object in every frame."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 297,
+    "slide": 313,
+    "question": "The most difficult part of getting a fully automated stitching algorithm to work is deciding which pairs of images actually correspond to the same parts of the scene. What is the best solution to solve these issues? Choose the best correct answer",
+    "options": [
+     "Using a feature-based approach to remove objects from image frames. Then we get a completed panoramas image.",
+     "Using a direct pixel-based comparison between the registered images to determine if they actually are different views of the same scene.",
+     "To find the similarity of adjacent images, we determine whether the properties match or not, using the image combination method.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 298,
+    "slide": 314,
+    "question": "The object tracking level can be divided into two basic types. The first type is Single Object Tracking (SOT). Choose the best description of Single Object Tracking (SOT)",
+    "options": [
+     "It creates bounding boxes that are given to the tracker based on the first frame of the input image.",
+     "Single Object Tracking is also sometimes known as Visual Object Tracking.",
+     "SOT implies that one singular object is tracked, even in environments involving other objects.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   }
+  ]
+ },
+ {
+  "png": "cpv-slides-png/slide-312.png",
+  "png_no": 312,
+  "html_no": 314,
+  "hidden": "D",
+  "candidates": [
+   {
+    "id": 293,
+    "slide": 309,
+    "question": "Hough transform is used to recognize complex lines in photographs. How do you understand Hough transform?",
+    "options": [
+     "The purpose of the technique is to find imperfect instances of objects within a certain class of shapes by a voting procedure.",
+     "For the Hough Transform algorithm, it is crucial to perform point detection first to produce a point image which will then be used as input into the algorithm.",
+     "The Hough technique is particularly useful for computing a local description of a feature.",
+     "All of the others"
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 294,
+    "slide": 310,
+    "question": "In light reflection models, what does the full Phong model encompass?",
+    "options": [
+     "Only the ambient term for other light incidents",
+     "Diffuse and ambient components without specular contributions",
+     "Diffuse and specular components from the main illuminant with an ambient term",
+     "Exclusively specular components contributed by various light sources"
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Ảnh số & thu nhận ảnh"
+   },
+   {
+    "id": 295,
+    "slide": 311,
+    "question": "In the edge detection methods, what is the main advantage of the Canny algorithm over simpler?",
+    "options": [
+     "It is significantly faster to compute and requires minimal processing power.",
+     "It is highly sensitive to noise and can easily miss important edges.",
+     "It combines multiple steps to achieve robust edge detection, including noise reduction, gradient calculation, and non-maximum suppression.",
+     "It can directly identify the specific color of edges in the image."
+    ],
+    "answer_now": [
+     2
+    ],
+    "section": "Câu dài",
+    "topic": "Biên & đặc trưng (edge, corner, SIFT…)"
+   },
+   {
+    "id": 296,
+    "slide": 312,
+    "question": "Object tracking takes an approach that uses point tracking techniques. So how is the approach to using point tracking understood? Choose the best answer",
+    "options": [
+     "Objects detected in consecutive frames are represented by object deterministic, probabilistic methods, and the association of the object is based on the previous object state which can include object position and motion.",
+     "It is usually performed by locating the moving object, which is represented by an embryonic object region, from one frame to the next: a multi- view based, template-based.",
+     "It refers to the object's shape and appearance.",
+     "This approach requires an external mechanism to detect the object in every frame."
+    ],
+    "answer_now": [
+     0
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 297,
+    "slide": 313,
+    "question": "The most difficult part of getting a fully automated stitching algorithm to work is deciding which pairs of images actually correspond to the same parts of the scene. What is the best solution to solve these issues? Choose the best correct answer",
+    "options": [
+     "Using a feature-based approach to remove objects from image frames. Then we get a completed panoramas image.",
+     "Using a direct pixel-based comparison between the registered images to determine if they actually are different views of the same scene.",
+     "To find the similarity of adjacent images, we determine whether the properties match or not, using the image combination method.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   },
+   {
+    "id": 298,
+    "slide": 314,
+    "question": "The object tracking level can be divided into two basic types. The first type is Single Object Tracking (SOT). Choose the best description of Single Object Tracking (SOT)",
+    "options": [
+     "It creates bounding boxes that are given to the tracker based on the first frame of the input image.",
+     "Single Object Tracking is also sometimes known as Visual Object Tracking.",
+     "SOT implies that one singular object is tracked, even in environments involving other objects.",
+     "All of the others"
+    ],
+    "answer_now": [
+     3
+    ],
+    "section": "Câu dài",
+    "topic": "Chuyển động & optical flow"
+   },
+   {
+    "id": 299,
+    "slide": 315,
+    "question": "There are many applications for image alignment, such as tracking objects on video, motion analysis, and many other tasks of computer vision. How do you understand image alignment?",
+    "options": [
+     "It is the image that has been created using elements from a variety of different pictures.",
+     "Image alignment is the process of matching one image called a template with another image.",
+     "The images are more paired together as a collection of stand-alone images that may follow a theme or story.",
+     "All of the others"
+    ],
+    "answer_now": [
+     1
+    ],
+    "section": "Câu dài",
+    "topic": "Biến đổi hình học & ghép ảnh"
+   }
+  ]
+ }
+]

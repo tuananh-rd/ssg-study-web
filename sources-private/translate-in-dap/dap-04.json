@@ -1,0 +1,202 @@
+[
+ {
+  "id": 66,
+  "question": "Which of the following methods would fill the missing dates with the next available date?",
+  "options": [
+   "df['DeliveryDate'] = df['DeliveryDate'].bfill()",
+   "df['DeliveryDate'] = df['DeliveryDate'].ffill()",
+   "df['DeliveryDate'] = df['DeliveryDate'].fillna(method=\"ffill\")",
+   "df['DeliveryDate'] = df['DeliveryDate'].interpolate(method='time')"
+  ]
+ },
+ {
+  "id": 67,
+  "question": "What method in Pandas is used to identify missing data within a DataFrame?",
+  "options": [
+   "find_missing()",
+   "isnull()",
+   "missing_data()",
+   "NaN_check()"
+  ]
+ },
+ {
+  "id": 68,
+  "question": "Which Python function is used to display plots inline in Jupyter Notebook?",
+  "options": [
+   "%inline plot",
+   "%matplotlib inline",
+   "plt.show()",
+   "plt.inline()"
+  ]
+ },
+ {
+  "id": 69,
+  "question": "Which Matplotlib function is used to create a stack plot?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.stack()",
+   "plt.stackplot()"
+  ]
+ },
+ {
+  "id": 70,
+  "question": "Which Dash component is used to display graphs and visualizations?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Graph()",
+   "dcc.Slider()"
+  ]
+ },
+ {
+  "id": 71,
+  "question": "Which Seaborn function is used to create a box plot to visualize the distribution of a numerical variable?",
+  "options": [
+   "sns.barplot()",
+   "sns.boxplot()",
+   "sns.violinplot()",
+   "sns.countplot()"
+  ]
+ },
+ {
+  "id": 72,
+  "question": "Which Pandas method is used to drop rows with any missing values in a DataFrame?",
+  "options": [
+   "remove_missing()",
+   "dropna()",
+   "clean_data()",
+   "remove_nulls()"
+  ]
+ },
+ {
+  "id": 73,
+  "question": "Which function is used to generate basic descriptive statistics in Pandas?",
+  "options": [
+   "df.describe()",
+   "df.head()",
+   "df.plot()",
+   "df.count()"
+  ]
+ },
+ {
+  "id": 74,
+  "question": "Which Pandas method is used to display the basic statistics of the numerical columns in a DataFrame?",
+  "options": [
+   "describe()",
+   "summary()",
+   "stats()",
+   "statistics()"
+  ]
+ },
+ {
+  "id": 75,
+  "question": "What is the largest possible element resulting in the operation df.corr()?",
+  "options": [
+   "1",
+   "0",
+   "+infinity",
+   "mean value"
+  ]
+ },
+ {
+  "id": 76,
+  "question": "What is the range of values for a correlation coefficient?",
+  "options": [
+   "[-1, 1]",
+   "[0, 1]",
+   "[-INF, INF]",
+   "[0, INF]"
+  ]
+ },
+ {
+  "id": 77,
+  "question": "What is the value of p-value to represent strong correlation? Select the best answer",
+  "options": [
+   "great than 0.1",
+   "less than 0.1",
+   "less than 0.05",
+   "less than 0.001"
+  ]
+ },
+ {
+  "id": 78,
+  "question": "What value of R2 (coefficient of determination) indicates your model performs best?",
+  "options": [
+   "-1",
+   "0",
+   "1",
+   "Infinity"
+  ]
+ },
+ {
+  "id": 79,
+  "question": "Which quartile range does the upper whisker of a box plot represent?",
+  "options": [
+   "75th to 100th percentile",
+   "50th to 75th percentile",
+   "25th to 50th percentile",
+   "0th to 25th percentile"
+  ]
+ },
+ {
+  "id": 80,
+  "question": "Consider the following code snippet:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nwhat will be the most likely printed code on the screen if the server got internal error?",
+  "options": [
+   "500",
+   "200",
+   "300",
+   "400"
+  ]
+ },
+ {
+  "id": 81,
+  "question": "Consider the following code snippet:\nresponse = requests.get(\"https://api.example.com/data\")\nprint(response.status_code)\nwhat will be the most likely printed code on the screen if the resource you request available only for admin role?",
+  "options": [
+   "401",
+   "500",
+   "303",
+   "200"
+  ]
+ },
+ {
+  "id": 82,
+  "question": "Consider the following code:\nimport pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n# Sample DataFrame\ndata = {'Feature1': [10, 20, 30, 40, 50]}\ndf = pd.DataFrame(data)\n# Standardizing the 'Feature1' column\nscaler = MinMaxScaler()\ndf['Standardized_Feature1'] = scaler.fit_transform(df[['Feature1']])\nprint(df.loc[2, 'Standardized_Feature1'])\nWhat is the output?",
+  "options": [
+   "0.5",
+   "0",
+   "1",
+   "0.7"
+  ]
+ },
+ {
+  "id": 83,
+  "question": "Consider the following Series:\n0 NaN\n1 15.0\n2 NaN\n3 25.0\n4 30.0\ndtype: float64\nIf we fill missing values in the Series with the median of the Series, what value will replace the NaN in index 0?",
+  "options": [
+   "25.0",
+   "30.0",
+   "15.0",
+   "23.33"
+  ]
+ },
+ {
+  "id": 84,
+  "question": "Given a DataFrame df with missing values in multiple columns:\nimport pandas as pd\ndf = pd.DataFrame({ 'Region': [np.nan, 'South', np.nan, 'East', np.nan, 'West'], 'Sales': [100, np.nan, 150, np.nan, 200, np.nan] })\nHow many missing values after filling df with this statement:\ndf.fillna(inplace=True)",
+  "options": [
+   "1",
+   "0",
+   "4",
+   "6"
+  ]
+ },
+ {
+  "id": 85,
+  "question": "Given a pandas DataFrame df with columns 'Category' and 'Value', if we want to find the median of values in each category, what will be the median value in the 'Category' = 'B' group?\ndf = pd.DataFrame({'Category': ['A', 'B', 'A', 'B', 'B'], 'Value': [10, 20, 30, 40, 50]})",
+  "options": [
+   "40",
+   "52",
+   "10",
+   "50"
+  ]
+ }
+]

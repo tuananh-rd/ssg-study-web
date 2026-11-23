@@ -1,0 +1,221 @@
+[
+ {
+  "id": 141,
+  "question": "Which of the following actions could best help improve trust within your teams?",
+  "options": [
+   "Avoid placing blame, lead by example, provide recognition and discuss trust beforehand",
+   "Share information",
+   "To stay in touch",
+   "Have the ability to make decisions",
+   "All of them."
+  ]
+ },
+ {
+  "id": 142,
+  "question": "What leadership skills and behaviors can effectively influence team members?",
+  "options": [
+   "Be honest in communicating and follow through on promises",
+   "Be positive in problem-solving",
+   "Maintaining effective communication",
+   "Monitor and support your team members",
+   "All of them"
+  ]
+ },
+ {
+  "id": 143,
+  "question": "How do Leaders influence and build trust in their Team members?",
+  "options": [
+   "Have the ability of managerial in group work",
+   "Have credibility that you are certain about what you want",
+   "Generate positive energy",
+   "Manage agreement and disagreement",
+   "All of them"
+  ]
+ },
+ {
+  "id": 144,
+  "question": "What are the key characteristics of effective work teams?",
+  "options": [
+   "Share accountability for achieving specific common goals",
+   "Function interdependently",
+   "Require stability",
+   "Hold authority and decision-making power",
+   "All of them"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "What are some ways you can help create a psychologically safe environment?",
+  "options": [
+   "Be engaged",
+   "Avoid blaming",
+   "Include all group members in decision-making",
+   "Remain open to feedback",
+   "All of them"
+  ]
+ },
+ {
+  "id": 146,
+  "question": "Which 3 components make up the numerator of the trust equation?",
+  "options": [
+   "Credibility, intimacy and reliability",
+   "Competency, capable and relevant credentials",
+   "Credibility, intimacy and respect",
+   "Kindness, respect, intelligence",
+   "All of them"
+  ]
+ },
+ {
+  "id": 147,
+  "question": "What is psychological safety?",
+  "options": [
+   "Group members feel safe to be themselves and are accepted for who they are",
+   "Increased creativity and innovation",
+   "Improved productivity",
+   "Key to improving diversity and enhancing teamwork",
+   "All of them"
+  ]
+ },
+ {
+  "id": 148,
+  "question": "When team members feel safe to engage in the learning process, which level of Psychological Safety are they experiencing?",
+  "options": [
+   "Inclusion safety",
+   "Learner safety",
+   "Contributor safety",
+   "Challenger Safety",
+   "All of them"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "What makes a great team?",
+  "options": [
+   "Psychological safety",
+   "Dependability",
+   "Structure and clarity",
+   "Meaning and impact",
+   "All of them"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "What is the definition of Team?",
+  "options": [
+   "A team is a group of people working with complementary skills who work together to achieve a specific goal.",
+   "A team is ability to communicate in group work.",
+   "Team is sharing accountability in teamwork.",
+   "Teamwork has the ability to bring technical skill in group.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 151,
+  "question": "What are the key characteristics of Teams?",
+  "options": [
+   "Share accountability for achieving a specific common goal.",
+   "Sharing information in group work.",
+   "Require stability in group work.",
+   "Members have the ability to make decisions in a group.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 152,
+  "question": "Why do major organizations rely much on teams to improve operations?",
+  "options": [
+   "Executives have reported that team-based operations were more productive and reduced service errors.",
+   "The team can address a variety of challenges in the world of corporate activity.",
+   "The team has the ability to engage in effective communication.",
+   "The team makes decisions and solves problems properly.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 153,
+  "question": "What are the key factors that contribute to effective teamwork?",
+  "options": [
+   "Members communicate effectively and rely on each other to get the job done better together than individually.",
+   "Members can contribute valuable resources in group work.",
+   "Members have the ability to share information in the group.",
+   "Members have the task role properly in the project.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 154,
+  "question": "What are the key factors that contribute to Team Cohesiveness?",
+  "options": [
+   "Size of the Team, similarity, success, exclusiveness, and competition.",
+   "Positive attitudes in group communication.",
+   "Technical skills to perform the project.",
+   "Constructive feedback and proactive listening.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 155,
+  "question": "What does group motivation mean?",
+  "options": [
+   "Give that person a cause or reason to act.",
+   "Group motivation provides the inspiration and incentive that moves group members to work together to achieve a common goal.",
+   "The shared feeling that the group has the power and ability to make decisions.",
+   "The shared feeling that the group is pursuing a meaningful goal.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 156,
+  "question": "What obstacles erode the performance?",
+  "options": [
+   "Unwillingness to cooperate.",
+   "Lack of managerial support.",
+   "Lack of commitment.",
+   "Failure of managers to delegate authority.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 157,
+  "question": "What is the meaning of the Group Goals?",
+  "options": [
+   "An effective group has both a clear understanding of its goal and a belief that its goal is meaningful and worthwhile.",
+   "Team members have to communicate efficiently.",
+   "Team members have a clear task role.",
+   "Team members have a relationship-building role.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 158,
+  "question": "What skill does the Team need?",
+  "options": [
+   "Communication skills.",
+   "Interpersonal skills.",
+   "Technical skills.",
+   "Decision-making and problem-solving skills.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 159,
+  "question": "What challenges may the team members face?",
+  "options": [
+   "Accomplishing the assigned task.",
+   "Maintaining communication.",
+   "Improving group cohesiveness.",
+   "Making decisions in a group.",
+   "All of them."
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Last stage in the model of the Conflict Process",
+  "options": [
+   "Frustration",
+   "Conceptualization",
+   "Behavior",
+   "Outcome"
+  ]
+ }
+]

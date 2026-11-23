@@ -1,0 +1,346 @@
+[
+ {
+  "id": 26,
+  "question": "The ______ is based on the observation that the affine mapping x = Ax' defines a skewed two-dimensional coordinate system in the vicinity of each source pixel x. Choose the best answer",
+  "options": [
+   "MIP Mapping filter",
+   "Gaussian White filter",
+   "Elliptical Weighted Average (EWA) filter",
+   "Multi pass filter"
+  ],
+  "correct": [
+   "MIP Mapping filter"
+  ],
+  "slide_image": "cpv-slides-real/slide-036.png"
+ },
+ {
+  "id": 27,
+  "question": "The ______ treats the image it operates upon like a topographic map, with the brightness of each point representing its height, and finds the lines that run along the tops of ridges. Choose the best correct answer",
+  "options": [
+   "Image transformation",
+   "Heuristic transformation",
+   "Hybrid transformation",
+   "Watershed transformation"
+  ],
+  "correct": [
+   "Image transformation"
+  ],
+  "slide_image": "cpv-slides-real/slide-037.png"
+ },
+ {
+  "id": 28,
+  "question": "The ______ is a measure of change in a function, and an image can be considered to be an array of samples of some continuous function of image intensity. Choose the best answer",
+  "options": [
+   "Gradient",
+   "Edge",
+   "Grayscale",
+   "Contour"
+  ],
+  "correct": [
+   "Grayscale"
+  ],
+  "slide_image": "cpv-slides-real/slide-038.png"
+ },
+ {
+  "id": 29,
+  "question": "The basic idea of ______ is to break the image into a set of disjoint regions which are coherent within themselves. Choose the best correct answer",
+  "options": [
+   "Region combination",
+   "Object combination",
+   "Region splitting",
+   "Object splitting"
+  ],
+  "correct": [
+   "Object splitting"
+  ],
+  "slide_image": "cpv-slides-real/slide-039.png"
+ },
+ {
+  "id": 30,
+  "question": "The lower limit of the dynamic range ratio can be determined by ____",
+  "options": [
+   "Contrast",
+   "Saturation",
+   "Noise",
+   "Brightness"
+  ],
+  "correct": [
+   "Contrast"
+  ],
+  "slide_image": "cpv-slides-real/slide-040.png"
+ },
+ {
+  "id": 31,
+  "question": "Which of the following statement is TRUE?",
+  "options": [
+   "Computer vision focuses on low-level operations such as filtering and noise reduction, while image processing involves high-level understanding and decision-making from visual data.",
+   "Computer vision and image processing are the same and used interchangeably in the context of analyzing visual data.",
+   "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images.",
+   "Image processing focuses on understanding and interpreting images, while computer vision involves operations like noise reduction and edge detection."
+  ],
+  "correct": [
+   "Computer vision aims to interpret and make decisions based on visual data, while image processing involves manipulating and transforming pixel data in images."
+  ],
+  "slide_image": "cpv-slides-real/slide-041.png"
+ },
+ {
+  "id": 32,
+  "question": "Which of the following is NOT an application of image alignment?",
+  "options": [
+   "Identifying document templates",
+   "Generating panorama images",
+   "Comparing multiple scans of tissue taken at different times",
+   "Enhancing scanned or photographed documents"
+  ],
+  "correct": [
+   "Comparing multiple scans of tissue taken at different times"
+  ],
+  "slide_image": "cpv-slides-real/slide-042.png"
+ },
+ {
+  "id": 33,
+  "question": "What is not related to Elliptical Weighted Average (EWA) algorithm?",
+  "options": [
+   "Affine mapping computation",
+   "Skewed two-dimensional coordinate system",
+   "Inverse covariance matrix for pixel grids",
+   "Circle projection of destination pixels"
+  ],
+  "correct": [
+   "Circle projection of destination pixels"
+  ],
+  "slide_image": "cpv-slides-real/slide-044.png"
+ },
+ {
+  "id": 34,
+  "question": "What is not true about image stitching?",
+  "options": [
+   "It is the process of combining multiple photographic images with overlapping fields of view",
+   "It is used in forensic and investigate science for the reconstruction of torn paper",
+   "It is used to complete mapping of a particular place",
+   "It maps two pixels that have similar intensity from two adjacent images"
+  ],
+  "correct": [
+   "It maps two pixels that have similar intensity from two adjacent images"
+  ],
+  "slide_image": "cpv-slides-real/slide-045.png"
+ },
+ {
+  "id": 35,
+  "question": "What is not true object detection?",
+  "options": [
+   "It is the task of detecting instances of objects of a certain class within an image",
+   "It allows to identify and locate objects in a video",
+   "It recognizes with a contour in the image",
+   "It detects instances of semantic objects of a certain class"
+  ],
+  "correct": [
+   "It recognizes with a contour in the image"
+  ],
+  "slide_image": "cpv-slides-real/slide-046.png"
+ },
+ {
+  "id": 36,
+  "question": "What is not true about RANSAC algorithm?",
+  "options": [
+   "It estimates the parameter to deal with a large number of outliers",
+   "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters",
+   "It selects data items randomly and then find how many data items fit the model",
+   "If the tolerance is big enough, the algorithm will accept fit and exit with success"
+  ],
+  "correct": [
+   "It generates candidate solutions by using the maximum number of data points required to estimate the underlying model parameters"
+  ],
+  "slide_image": "cpv-slides-real/slide-047.png"
+ },
+ {
+  "id": 38,
+  "question": "Which type of information does Optical Flow NOT provide?",
+  "options": [
+   "Acceleration of objects",
+   "Velocity of pixel motion",
+   "Direction of pixel motion",
+   "Location of keypoints"
+  ],
+  "correct": [
+   "Acceleration of objects"
+  ],
+  "slide_image": "cpv-slides-real/slide-052.png"
+ },
+ {
+  "id": 39,
+  "question": "\"Gaussian Mixture Model\" models each cluster to a Gaussian distribution with a specific mean and variance",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct": [
+   "True"
+  ],
+  "slide_image": "cpv-slides-real/slide-054.png"
+ },
+ {
+  "id": 40,
+  "question": "If _____ split the area of interest (usually into four equal sub-areas) and consider each of the sub-areas as the area of interest in turn.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct": [
+   "True"
+  ],
+  "slide_image": "cpv-slides-real/slide-055.png"
+ },
+ {
+  "id": 41,
+  "question": "Cylindrical is used if the camera is level and we have only rotation around its vertical axis",
+  "options": [
+   "True",
+   "False"
+  ],
+  "correct": [
+   "True"
+  ],
+  "slide_image": "cpv-slides-real/slide-056.png"
+ },
+ {
+  "id": 42,
+  "question": "What is the typical size (dimensionality) of a descriptor vector generated by the SIFT algorithm?",
+  "options": [
+   "128",
+   "64",
+   "256",
+   "512"
+  ],
+  "correct": [
+   "128"
+  ],
+  "slide_image": "cpv-slides-real/slide-058.png"
+ },
+ {
+  "id": 43,
+  "question": "What is the range of the spectrum that humans can see as colors?",
+  "options": [
+   "200nm- 500nm",
+   "300nm- 600nm",
+   "400nm-700nm",
+   "500nm- 900nm"
+  ],
+  "correct": [
+   "400nm-700nm"
+  ],
+  "slide_image": "cpv-slides-real/slide-059.png"
+ },
+ {
+  "id": 44,
+  "question": "How many colour channels does a Grayscale image have?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "correct": [
+   "1"
+  ],
+  "slide_image": "cpv-slides-real/slide-060.png"
+ },
+ {
+  "id": 45,
+  "question": "How many steps are there in the task of face recognition?",
+  "options": [
+   "1",
+   "4",
+   "2",
+   "3"
+  ],
+  "correct": [
+   "4"
+  ],
+  "slide_image": "cpv-slides-real/slide-061.png"
+ },
+ {
+  "id": 46,
+  "question": "How many points at least do we need to find affine transformation matrix?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "correct": [
+   "3"
+  ],
+  "slide_image": "cpv-slides-real/slide-062.png"
+ },
+ {
+  "id": 47,
+  "question": "A convolution-based technique is used to detect the line. Here are the four convolution masks to detect horizontal, vertical, oblique +- amount lines in an image. What is the specific value of the oblique in degrees?",
+  "options": [
+   "15",
+   "45",
+   "90",
+   "180"
+  ],
+  "correct": [
+   "45"
+  ],
+  "slide_image": "cpv-slides-real/slide-063.png"
+ },
+ {
+  "id": 48,
+  "question": "A dataset has 100 images, the size of each image is 112x112 pixels. Principal component analysis is applied to keep 200 most significant components. Initially, how many components does PCA break the image into?",
+  "options": [
+   "11200",
+   "1254400",
+   "20000",
+   "12544"
+  ],
+  "correct": [
+   "12544"
+  ],
+  "slide_image": "cpv-slides-real/slide-064.png"
+ },
+ {
+  "id": 50,
+  "question": "If we want to draw a shape and fill it inside we must write:",
+  "options": [
+   "1",
+   "fillInside = 1",
+   "fillInside = True",
+   "-1"
+  ],
+  "correct": [
+   "-1"
+  ],
+  "slide_image": "cpv-slides-real/slide-066.png"
+ },
+ {
+  "id": 51,
+  "question": "Rearrange the following steps of RAndom SAmple Consensus (RANSAC) algorithm\n1.Select N data items at random\n2.If K is big enough, accept fit and exit with success.\n3.Finds how many data items (of M) fit the model with parameter vector x within a user given tolerance. Call this K.\n4.Fail if you get here\n5.Repeat the above steps L times\n6.Estimates parameter of vector x",
+  "options": [
+   "163254",
+   "123465",
+   "254613",
+   "123654"
+  ],
+  "correct": [
+   "163254"
+  ],
+  "slide_image": "cpv-slides-real/slide-067.png"
+ },
+ {
+  "id": 52,
+  "question": "Rearrange the following steps for K-means based segmentation\n\nAssign each observation to the group that has the closest centroid\nRepeat until either the centroid position or the observations assignments no longer move\nGuess K centroids positions, a centroid for each results cluster\nWhen all observations have been assigned, recalculate the positions of the K centroids",
+  "options": [
+   "3124",
+   "3214",
+   "1324",
+   "4231"
+  ],
+  "correct": [
+   "3124"
+  ],
+  "slide_image": "cpv-slides-real/slide-068.png"
+ }
+]

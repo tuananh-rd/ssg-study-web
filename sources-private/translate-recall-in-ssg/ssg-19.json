@@ -1,0 +1,252 @@
+[
+ {
+  "id": "k-045",
+  "q": "Theo Dewey, tiêu chí của một giải pháp tốt nên được xác định khi nào?",
+  "correct": "Trước khi tạo và đánh giá các phương án",
+  "wrong": [
+   "Sau khi đã chọn phương án",
+   "Trong bước Follow up",
+   "Không cần, chỉ cần cả nhóm thích"
+  ]
+ },
+ {
+  "id": "k-046",
+  "q": "“Tạo nhiều phương án, chưa đánh giá vội” là bước nào của Dewey?",
+  "correct": "Generate solutions",
+  "wrong": [
+   "Evaluate",
+   "Analyze",
+   "Establish criteria"
+  ]
+ },
+ {
+  "id": "k-047",
+  "q": "“Đo kết quả, xác định điều hiệu quả và điều cần điều chỉnh” là bước nào?",
+  "correct": "Follow up",
+  "wrong": [
+   "Evaluate",
+   "Implement",
+   "Analyze"
+  ]
+ },
+ {
+  "id": "k-048",
+  "q": "Theo bài, xung đột (conflict) là gì?",
+  "correct": "Sự đấu tranh do nhận thức về mục tiêu hay nhu cầu đối lập, không tương thích",
+  "wrong": [
+   "Dấu hiệu cho thấy quan hệ giữa các thành viên đã thất bại",
+   "Một cuộc cãi nhau bằng lời nói giữa hai thành viên trở lên",
+   "Việc một thành viên không tham gia họp và không báo trước"
+  ]
+ },
+ {
+  "id": "k-049",
+  "q": "Avoidance (né tránh) trong xung đột có đặc điểm gì?",
+  "correct": "Cho thời gian bình tĩnh nhưng thường không giải quyết gốc vấn đề",
+  "wrong": [
+   "Luôn là cách xử lý tốt nhất vì giúp tránh làm mất lòng nhau",
+   "Giải quyết dứt điểm gốc rễ vấn đề nhờ không ai phải tranh cãi",
+   "Là phản ứng chủ động, xây dựng và phù hợp với mọi nền văn hóa"
+  ]
+ },
+ {
+  "id": "k-050",
+  "q": "Ngôn ngữ giúp giữ thể diện và uy tín cho đối phương trong xung đột gọi là gì?",
+  "correct": "Face-saving",
+  "wrong": [
+   "Face-detracting",
+   "Avoidance",
+   "Blocking"
+  ]
+ },
+ {
+  "id": "k-051",
+  "q": "Khi giao tiếp trong xung đột, nên tập trung vào điều gì?",
+  "correct": "Vấn đề và hành vi, không phán xét tính cách",
+  "wrong": [
+   "Tính cách của người kia, để họ hiểu vì sao mình bực",
+   "Xác định rõ ai đúng ai sai trước khi bàn giải pháp",
+   "Những lỗi trong quá khứ để tránh bị lặp lại lần sau"
+  ]
+ },
+ {
+  "id": "k-052",
+  "q": "Phản hồi “goal-directed” nghĩa là gì?",
+  "correct": "Gắn với mục tiêu, deadline và tiêu chuẩn chung",
+  "wrong": [
+   "Mô tả cụ thể hành vi và kết quả",
+   "Đúng thời điểm, đúng nơi, giữ phẩm giá",
+   "Tạo đối thoại và cùng thiết kế bước tiếp theo"
+  ]
+ },
+ {
+  "id": "k-053",
+  "q": "Câu phản hồi nào đúng nguyên tắc nhất?",
+  "correct": "Khi slide nộp trễ 2 ngày, nhóm không kịp tập. Mình muốn nghe lý do — lần tới chốt hạn sớm hơn nhé?",
+  "wrong": [
+   "Bạn làm slide tệ quá, lần sau nhớ làm cẩn thận hơn để cả nhóm khỏi bị ảnh hưởng.",
+   "Cố lên nhé, lần sau chắc chắn bạn sẽ làm tốt hơn! Mình tin bạn, đừng lo gì cả.",
+   "Cả nhóm đều thấy bạn lười, bạn nên tự xem lại mình trước buổi họp tuần sau đi."
+  ]
+ },
+ {
+  "id": "k-054",
+  "q": "Khi NHẬN phản hồi, nên làm gì?",
+  "correct": "Không ngắt lời, hỏi để làm rõ và cảm ơn người góp ý",
+  "wrong": [
+   "Giải thích ngay vì sao mình đúng",
+   "Im lặng rồi bỏ qua",
+   "Chỉ ra lỗi của người góp ý"
+  ]
+ },
+ {
+  "id": "k-055",
+  "q": "Texting phù hợp với loại nội dung nào?",
+  "correct": "Ngắn, không chính thức, cần phản hồi nhanh",
+  "wrong": [
+   "Nhạy cảm, như góp ý tiêu cực",
+   "Dài và phức tạp, như báo cáo",
+   "Chính thức, như thông báo chính sách"
+  ]
+ },
+ {
+  "id": "k-056",
+  "q": "Email công việc thường nên được phản hồi trong vòng bao lâu?",
+  "correct": "24 giờ",
+  "wrong": [
+   "1 giờ",
+   "3 ngày",
+   "1 tuần"
+  ]
+ },
+ {
+  "id": "k-057",
+  "q": "Điều nào KHÔNG nên làm khi viết email chuyên nghiệp?",
+  "correct": "Viết ALL CAPS để nhấn mạnh",
+  "wrong": [
+   "Nêu mục đích ngay từ sớm",
+   "Đặt subject ngắn, rõ, cụ thể",
+   "Có chữ ký và thông tin liên hệ"
+  ]
+ },
+ {
+  "id": "k-058",
+  "q": "Khi nào nên dùng Reply All?",
+  "correct": "Chỉ khi tất cả người nhận thực sự cần biết",
+  "wrong": [
+   "Luôn luôn, để mọi người cùng nắm",
+   "Khi muốn trả lời nhanh hơn",
+   "Không bao giờ được dùng"
+  ]
+ },
+ {
+  "id": "k-059",
+  "q": "Nguyên tắc netiquette nào đúng?",
+  "correct": "Luôn giả định thông điệp có thể bị chuyển tiếp hoặc đọc công khai",
+  "wrong": [
+   "Trên mạng không cần theo chuẩn mực ngoài đời",
+   "Tranh luận gay gắt (flame war) để làm rõ vấn đề",
+   "Chỉ ra lỗi của người khác thật công khai"
+  ]
+ },
+ {
+  "id": "k-060",
+  "q": "Phần đầu (header) của một memo gồm những gì?",
+  "correct": "To – From – Date – Subject",
+  "wrong": [
+   "Heading – Introduction – Body – Signature",
+   "Dear – Body – Sincerely – Signature",
+   "Subject – CC – BCC – Attachment"
+  ]
+ },
+ {
+  "id": "k-061",
+  "q": "Loại văn bản nào chủ yếu gửi RA NGOÀI tổ chức?",
+  "correct": "Business letter",
+  "wrong": [
+   "Memo",
+   "Minutes",
+   "Team charter"
+  ]
+ },
+ {
+  "id": "k-062",
+  "q": "Năm khu vực chính của business letter theo thứ tự là gì?",
+  "correct": "Heading → Introduction → Body → Conclusion / CTA → Signature",
+  "wrong": [
+   "Introduction → Heading → Body → Signature → Conclusion / CTA",
+   "Heading → Body → Introduction → Conclusion / CTA → Signature",
+   "To → From → Date → Subject → Body"
+  ]
+ },
+ {
+  "id": "k-063",
+  "q": "“Có đủ who, what, when, where, how (và why khi cần)” là nguyên tắc viết nào?",
+  "correct": "Complete",
+  "wrong": [
+   "Clear",
+   "Concise",
+   "Correct"
+  ]
+ },
+ {
+  "id": "k-064",
+  "q": "“Bỏ chỗ lặp và từ không cần thiết” là nguyên tắc viết nào?",
+  "correct": "Concise",
+  "wrong": [
+   "Clear",
+   "Complete",
+   "Courteous"
+  ]
+ },
+ {
+  "id": "k-065",
+  "q": "Business writing thường ưu tiên điều gì?",
+  "correct": "Active voice, động từ mạnh, câu tương đối ngắn",
+  "wrong": [
+   "Passive voice để trang trọng hơn",
+   "Câu dài, nhiều mệnh đề",
+   "Từ chuyên môn phức tạp để thể hiện năng lực"
+  ]
+ },
+ {
+  "id": "k-066",
+  "q": "Quy trình viết đúng thứ tự là gì?",
+  "correct": "Think → Research → Organize → Draft → Revise → Edit → Present",
+  "wrong": [
+   "Think → Organize → Research → Draft → Edit → Revise → Present",
+   "Research → Think → Draft → Organize → Revise → Edit → Present",
+   "Think → Research → Draft → Organize → Edit → Revise → Present"
+  ]
+ },
+ {
+  "id": "k-067",
+  "q": "Sửa ngữ pháp, dấu câu, từ ngữ và định dạng gọi là gì?",
+  "correct": "Editing",
+  "wrong": [
+   "Revision",
+   "Paraphrase",
+   "Summary"
+  ]
+ },
+ {
+  "id": "k-068",
+  "q": "Phát biểu nào đúng về paraphrase và summary?",
+  "correct": "Paraphrase giữ độ dài tương đương, summary rút gọn — cả hai đều cần ghi nguồn",
+  "wrong": [
+   "Paraphrase không cần ghi nguồn vì đã đổi sang từ ngữ của mình",
+   "Summary thường dài hơn bản gốc vì phải giải thích thêm ý chính",
+   "Paraphrase chỉ giữ ý chính, còn summary giữ nguyên độ dài bản gốc"
+  ]
+ },
+ {
+  "id": "k-069",
+  "q": "Solicited proposal là gì?",
+  "correct": "Đề xuất được yêu cầu qua RFP/RFQ/IFB, phải bám định dạng, tiêu chí, deadline",
+  "wrong": [
+   "Đề xuất tự gửi, phải tự chứng minh nhu cầu và giá trị",
+   "Báo cáo tiến độ gửi cho nhà tài trợ",
+   "Thư giới thiệu bản thân gửi kèm CV"
+  ]
+ }
+]

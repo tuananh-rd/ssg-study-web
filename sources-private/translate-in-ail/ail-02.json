@@ -1,0 +1,202 @@
+[
+ {
+  "id": 21,
+  "question": "Which following statement about unsupervised algorithms is CORRECT?",
+  "options": [
+   "Unsupervised algorithms are relevant when we don't have the outcomes we are trying to predict and when we want to break down our data set into smaller groups.",
+   "Unsupervised algorithms are relevant when we have outcomes we are trying to predict.",
+   "Unsupervised algorithms are typically used to forecast time related patterns like stock market trends or sales forecasts.",
+   "Unsupervised algorithms are relevant in cases that require explainability, for example comparing parameters from one model to another."
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Which statement about Logistic Regression is TRUE?",
+  "options": [
+   "Logistic Regression is a generalized linear model.",
+   "Logistic Regression models can only predict variables with 2 classes.",
+   "Logistic Regression models can be used for classification but not for regression.",
+   "Logistic Regression models cannot be used for regression and classification."
+  ]
+ },
+ {
+  "id": 23,
+  "question": "Which statement about the Pandas read_csv function is TRUE?",
+  "options": [
+   "It can only read comma-delimited data",
+   "It can read both tab-delimited and space-delimited data",
+   "It reads data into a 2-dimensional NumPy array",
+   "It allows only one argument: the name of the file"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "Which of the following statements about regularization is TRUE?",
+  "options": [
+   "Regularization always reduces the number of selected features.",
+   "Regularization increases the likelihood of overfitting relative to training data.",
+   "Regularization decreases the likelihood of overfitting relative to training data.",
+   "Regularization performs feature selection without a negative impact in the likelihood of overfitting relative to the training data."
+  ]
+ },
+ {
+  "id": 25,
+  "question": "Which of the following statements about a high-complexity model in a linear regression setting is TRUE?",
+  "options": [
+   "Cross-validation with a small k will reduce or eliminate overfitting.",
+   "A high variance of parameter estimates across cross-validation subsamples indicates likely overfitting.",
+   "A low variance of parameter estimates across cross-validation subsamples indicates likely overfitting.",
+   "Cross-validation with a large k will reduce or eliminate overfitting."
+  ]
+ },
+ {
+  "id": 27,
+  "question": "Which of the following statements about cloud data access using Pandas is TRUE?",
+  "options": [
+   "With read_csv, the online file must be comma-delimited.",
+   "The read_csv function can read data directly from a website or url.",
+   "With read_csv, the destination file must have column names in the first row.",
+   "A remote destination file must be downloaded locally before it can be read by Pandas."
+  ]
+ },
+ {
+  "id": 28,
+  "question": "Which of the following statements about Random Upsampling is TRUE?",
+  "options": [
+   "Random Upsampling preserves all original observations.",
+   "Random Upsampling will generally lead to a higher F1 score.",
+   "Random Upsampling generates observations that were not part of the original data.",
+   "Random Upsampling results in excessive focus on the more frequently-occurring class."
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Select the TRUE statement regarding the cost function for SVMs:",
+  "options": [
+   "SVMs do not use a cost function. They use regularization instead of a cost function.",
+   "SVMs use same loss function as logistic regression.",
+   "SVMs use a loss function that penalizes vectors prone to misclassification.",
+   "SVMs use the Hinge Loss function as a cost function."
+  ]
+ },
+ {
+  "id": 32,
+  "question": "You are evaluating a binary classifier. There are 50 positive outcomes in the test data, and 100 observations. Using a 50% threshold, the classifier predicts 40 positive outcomes, of which 10 are incorrect.\nIncreasing the threshold to 60% results in 5 additional positive predictions, all of which are correct. Which of the following statements about this new model (compared with the original model that had a 50% threshold) is TRUE?",
+  "options": [
+   "The F1 score of the classifier would decrease.",
+   "The area under the ROC curve would decrease.",
+   "The F1 score of the classifier would remain the same.",
+   "The area under the ROC curve would remain the same."
+  ]
+ },
+ {
+  "id": 33,
+  "question": "You are evaluating a binary classifier. There are 50 positive outcomes in the test data, and 100 observations. Using a 50% threshold, the classifier predicts 40 positive outcomes, of which 10 are incorrect.\nThe threshold is now increased further, to 70%. Which of the following statements is TRUE?",
+  "options": [
+   "The Recall of the classifier would decrease.",
+   "The Precision of the classifier would decrease.",
+   "The Recall of the classifier would increase or remain the same.",
+   "The Precision of the classifier would increase or remain the same."
+  ]
+ },
+ {
+  "id": 34,
+  "question": "Which of the following statements is FALSE?",
+  "options": [
+   "In Analytic View, increasing L2/L1 penalties force coefficients to be smaller, restricting their plausible range.",
+   "Under the Geometric formulation, the cost function minimum is found at the intersection of the penalty boundary and a contour of the traditional OLS cost function surface.",
+   "Under the Probabilistic formulation, L2 (Ridge) regularization imposes Gaussian prior on the coefficients, while L1 (Lasso) regularization imposes Laplacian prior.",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "All of these are characteristics of SVMs, EXCEPT:",
+  "options": [
+   "Support Vector Machines do not return predicted probabilities.",
+   "Support Vector Machines use decision boundaries for classification.",
+   "The algorithm behind Support Vector Machines calculates hyperplanes that minimize misclassification error.",
+   "Support Vector Machine models are non-linear."
+  ]
+ },
+ {
+  "id": 36,
+  "question": "These are all methods of dealing with unbalanced classes EXCEPT:",
+  "options": [
+   "Downsampling.",
+   "Mix of in-sample and out-of-sample.",
+   "Mix of downsampling and upsampling.",
+   "Upsampling."
+  ]
+ },
+ {
+  "id": 37,
+  "question": "These are all characteristics of the k nearest neighbors algorithm EXCEPT:",
+  "options": [
+   "It is sensitive to scaling",
+   "It determines decision boundaries to make predictions",
+   "It determines the value for k",
+   "It is well suited to predict variables with multiple classes"
+  ]
+ },
+ {
+  "id": 38,
+  "question": "These are all characteristics of decision trees, EXCEPT:",
+  "options": [
+   "They segment data based on features to predict results",
+   "They split nodes into leaves",
+   "They can be used for either classification or regression",
+   "They have well rounded decision boundaries"
+  ]
+ },
+ {
+  "id": 39,
+  "question": "You can use supervised machine learning for all of the following examples, EXCEPT:",
+  "options": [
+   "Segment customers by their demographics.",
+   "Predict the number of customers that will visit a store on a given week.",
+   "Predict the probability of a customer returning to a store.",
+   "Interpret the main drivers that determine if a customer will return to a store."
+  ]
+ },
+ {
+  "id": 41,
+  "question": "What is the role of bandwidth in mean-shift clustering?",
+  "options": [
+   "Controls convergence speed",
+   "Determines cluster size",
+   "Defines neighborhood size",
+   "Sets the number of clusters"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "What is the main concern with high bias in a model?",
+  "options": [
+   "Overfitting",
+   "Underfitting",
+   "Model convergence issues",
+   "Data leakage"
+  ]
+ },
+ {
+  "id": 43,
+  "question": "What is the key parameter in the K-means algorithm that determines the number of clusters?",
+  "options": [
+   "Learning rate",
+   "Batch size",
+   "Number of iterations",
+   "K (number of clusters)"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "What is the most common sklearn methods to add polynomial features to your data?",
+  "options": [
+   "polyFeat.add and polyFeat.transform",
+   "polyFeat.add and polyFeat.fit",
+   "polyFeat.fit and polyFeat.transform",
+   "polyFeat.transform"
+  ]
+ }
+]

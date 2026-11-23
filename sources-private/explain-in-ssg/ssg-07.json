@@ -1,0 +1,334 @@
+[
+ {
+  "id": 155,
+  "question": "What does group motivation mean?",
+  "options": [
+   "Give that person a cause or reason to act.",
+   "Group motivation provides the inspiration and incentive that moves group members to work together to achieve a common goal.",
+   "The shared feeling that the group has the power and ability to make decisions.",
+   "The shared feeling that the group is pursuing a meaningful goal.",
+   "All of them."
+  ],
+  "correct": [
+   "Group motivation provides the inspiration and incentive that moves group members to work together to achieve a common goal."
+  ]
+ },
+ {
+  "id": 156,
+  "question": "What obstacles erode the performance?",
+  "options": [
+   "Unwillingness to cooperate.",
+   "Lack of managerial support.",
+   "Lack of commitment.",
+   "Failure of managers to delegate authority.",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 157,
+  "question": "What is the meaning of the Group Goals?",
+  "options": [
+   "An effective group has both a clear understanding of its goal and a belief that its goal is meaningful and worthwhile.",
+   "Team members have to communicate efficiently.",
+   "Team members have a clear task role.",
+   "Team members have a relationship-building role.",
+   "All of them."
+  ],
+  "correct": [
+   "An effective group has both a clear understanding of its goal and a belief that its goal is meaningful and worthwhile."
+  ]
+ },
+ {
+  "id": 158,
+  "question": "What skill does the Team need?",
+  "options": [
+   "Communication skills.",
+   "Interpersonal skills.",
+   "Technical skills.",
+   "Decision-making and problem-solving skills.",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 159,
+  "question": "What challenges may the team members face?",
+  "options": [
+   "Accomplishing the assigned task.",
+   "Maintaining communication.",
+   "Improving group cohesiveness.",
+   "Making decisions in a group.",
+   "All of them."
+  ],
+  "correct": [
+   "All of them."
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Last stage in the model of the Conflict Process",
+  "options": [
+   "Frustration",
+   "Conceptualization",
+   "Behavior",
+   "Outcome"
+  ],
+  "correct": [
+   "Outcome"
+  ]
+ },
+ {
+  "id": 161,
+  "question": "What is the first stage in the model of the Conflict Process?",
+  "options": [
+   "Frustration",
+   "Conceptualization",
+   "Behavior",
+   "Outcome"
+  ],
+  "correct": [
+   "Frustration"
+  ]
+ },
+ {
+  "id": 162,
+  "question": "Which conflict-handling mode can be used when issues are more important to others than yourself – to satisfy others and maintain cooperation",
+  "options": [
+   "Avoiding",
+   "Competing",
+   "Compromising",
+   "Accommodating"
+  ],
+  "correct": [
+   "Accommodating"
+  ]
+ },
+ {
+  "id": 163,
+  "question": "Which conflict-handling mode can be used when an issue is trivial, or when more important issues are pressing",
+  "options": [
+   "Avoiding",
+   "Competing",
+   "Compromising",
+   "Accommodating"
+  ],
+  "correct": [
+   "Avoiding"
+  ]
+ },
+ {
+  "id": 164,
+  "question": "Which conflict-handling mode can be used when opponents with equal power are committed to mutually exclusive goals",
+  "options": [
+   "Avoiding",
+   "Competing",
+   "Compromising",
+   "Accommodating"
+  ],
+  "correct": [
+   "Compromising"
+  ]
+ },
+ {
+  "id": 166,
+  "question": "When conflicts arise, what intervention technique should be used as a last resort?",
+  "options": [
+   "Adaptation",
+   "Structural",
+   "Managerial",
+   "Voluntary or involuntary removal"
+  ],
+  "correct": [
+   "Voluntary or involuntary removal"
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Which mode of resolving conflict should be considered when potential disruption outweighs the benefits of resolution?",
+  "options": [
+   "Collaborating",
+   "Compromising",
+   "Avoiding",
+   "Accommodating"
+  ],
+  "correct": [
+   "Avoiding"
+  ]
+ },
+ {
+  "id": 168,
+  "question": "Withdrawing from or suppression of conflict is termed ....",
+  "options": [
+   "Collaborating",
+   "Forcing",
+   "Accommodating",
+   "Avoiding"
+  ],
+  "correct": [
+   "Avoiding"
+  ]
+ },
+ {
+  "id": 169,
+  "question": "Which stage is suitable for this following statement \"Members implement plans and achieve goals\"?",
+  "options": [
+   "Performing",
+   "Storming",
+   "Adjourning",
+   "Norming",
+   "Forming"
+  ],
+  "correct": [
+   "Performing"
+  ]
+ },
+ {
+  "id": 170,
+  "question": "Which is the highest stage of Tuckman's Stages of Group Development?",
+  "options": [
+   "Forming",
+   "Storming",
+   "Adjourning",
+   "Norming",
+   "Performing"
+  ],
+  "correct": [
+   "Performing"
+  ]
+ },
+ {
+  "id": 171,
+  "question": "What is NOT TRUE about power-with?",
+  "options": [
+   "It is the power to suggest and be listened to.",
+   "It arises from our sense of connection.",
+   "The leader must not abuse his power.",
+   "Respect and equality are shown in the group."
+  ],
+  "correct": [
+   "The leader must not abuse his power."
+  ]
+ },
+ {
+  "id": 172,
+  "question": "What is one thing that you should NOT do during the first interview?",
+  "options": [
+   "Ask about salary",
+   "Connect with interviewer",
+   "Communicate why you are a good fit",
+   "Close by arranging next interview"
+  ],
+  "correct": [
+   "Ask about salary"
+  ]
+ },
+ {
+  "id": 173,
+  "question": "What is NOT TRUE about the effect of upward comparison?",
+  "options": [
+   "Dissatisfaction",
+   "Inspiration",
+   "Gratitude",
+   "Envy"
+  ],
+  "correct": [
+   "Gratitude"
+  ]
+ },
+ {
+  "id": 174,
+  "question": "What is NOT TRUE about social comparison?",
+  "options": [
+   "Social comparison is a natural psychological tendency and one that can exert a powerful way we feel and behave.",
+   "Social comparison is not an ugly phenomenon to be avoided.",
+   "The engine of social comparison can provide the push you need to rise to the occasion a motivation, and therefore make progress toward your goals.",
+   "Social comparison and its effects on self-evaluation will not depend on personality and in differences."
+  ],
+  "correct": [
+   "Social comparison and its effects on self-evaluation will not depend on personality and in differences."
+  ]
+ },
+ {
+  "id": 175,
+  "question": "Which statement is NOT true about creativity?",
+  "options": [
+   "All humans are innately creative, especially if creativity is understood as a problem-solving skill.",
+   "As a creative thinker, you are curious, optimistic, and imaginative.",
+   "Creativity is inspired when there is a problem to solve.",
+   "Human is not innately creative."
+  ],
+  "correct": [
+   "Human is not innately creative."
+  ]
+ },
+ {
+  "id": 176,
+  "question": "Which of the following statements is NOT correct about a creative thinker?",
+  "options": [
+   "Be curious, optimistic",
+   "See problems as limits of development",
+   "Always challenge assumptions and suspend judgment",
+   "Be imaginative"
+  ],
+  "correct": [
+   "See problems as limits of development"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "Which is NOT TRUE about the Conceptualization stage in the model of conflict process?",
+  "options": [
+   "It is what parties think their opponents want as a resolution.",
+   "It is a problem-solving and strategy phase.",
+   "Parties attempt to implement modes of conflict resolution.",
+   "Parties attempt to understand the nature of the problem."
+  ],
+  "correct": [
+   "Parties attempt to implement modes of conflict resolution."
+  ]
+ },
+ {
+  "id": 178,
+  "question": "Which of the following is NOT a strategy to avoid the occurrence of Groupthink?",
+  "options": [
+   "Appointing devils' advocates in discussions",
+   "Using outside experts",
+   "Having a charismatic leader of the group",
+   "Allocating different groups for different tasks"
+  ],
+  "correct": [
+   "Having a charismatic leader of the group"
+  ]
+ },
+ {
+  "id": 179,
+  "question": "Which of the following labels does NOT represent how member behavior can disrupt a meeting?",
+  "options": [
+   "loudmouth",
+   "whisperer",
+   "latecomer",
+   "summarizer"
+  ],
+  "correct": [
+   "summarizer"
+  ]
+ },
+ {
+  "id": 180,
+  "question": "Which of the following strategies CAN NOT support university students enhancing cultural intelligence?",
+  "options": [
+   "Reading books written by authors from diverse cultural backgrounds.",
+   "Participating in intercultural workshops, seminars, festivals, and events.",
+   "Involving in work and travel abroad, or exchange learning program.",
+   "Working in a group with the same teammates in previous semesters."
+  ],
+  "correct": [
+   "Working in a group with the same teammates in previous semesters."
+  ]
+ }
+]

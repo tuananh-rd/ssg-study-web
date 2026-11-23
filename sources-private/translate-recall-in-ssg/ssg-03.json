@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m2-051",
+  "q": "Ý sau mô tả khái niệm nào: “Hành vi làm chậm tiến độ, giảm tinh thần, niềm tin hoặc đóng góp của người khác”?",
+  "correct": "Blocking roles",
+  "wrong": [
+   "Task-facilitating roles",
+   "Relationship-building roles",
+   "Chuyên môn / kỹ thuật"
+  ]
+ },
+ {
+  "id": "r-m2-052",
+  "q": "Có bao nhiêu nhóm vai trò trong nhóm theo tài liệu?",
+  "correct": "Ba",
+  "wrong": [
+   "Hai",
+   "Bốn",
+   "Năm"
+  ]
+ },
+ {
+  "id": "r-m2-053",
+  "q": "Quá thiên về nhiệm vụ trong team dẫn đến điều gì?",
+  "correct": "Gây căng thẳng",
+  "wrong": [
+   "Làm chậm quyết định",
+   "Tạo groupthink",
+   "Tăng gắn kết"
+  ]
+ },
+ {
+  "id": "r-m2-054",
+  "q": "Quá thiên về đồng thuận trong team dẫn đến điều gì?",
+  "correct": "Có thể làm chậm quyết định",
+  "wrong": [
+   "Gây căng thẳng",
+   "Tăng tốc độ làm việc",
+   "Tăng xung đột"
+  ]
+ },
+ {
+  "id": "r-m3-001",
+  "q": "Team charter còn được gọi là gì?",
+  "correct": "Team contract",
+  "wrong": [
+   "Team report",
+   "Team agenda",
+   "Team proposal"
+  ]
+ },
+ {
+  "id": "r-m3-002",
+  "q": "Ý nào là nội dung của team charter?",
+  "correct": "Cách xử lý bất đồng, chậm tiến độ và vi phạm cam kết",
+  "wrong": [
+   "Điểm số từng thành viên",
+   "Kết quả khảo sát dự án",
+   "Ngân sách của nhà tài trợ"
+  ]
+ },
+ {
+  "id": "r-m3-003",
+  "q": "Ý nào KHÔNG thuộc nội dung team charter?",
+  "correct": "Kết quả cuối cùng của dự án",
+  "wrong": [
+   "Mục tiêu và sản phẩm cần bàn giao",
+   "Lịch họp và kênh giao tiếp",
+   "Cách ra quyết định"
+  ]
+ },
+ {
+  "id": "r-m3-004",
+  "q": "Thói quen nào được tài liệu khuyến khích khi khởi động dự án?",
+  "correct": "Thiết kế quy trình xử lý xung đột trước khi xung đột xảy ra",
+  "wrong": [
+   "Một người ôm toàn bộ công việc",
+   "Chỉ chia sẻ ý tưởng chắc chắn được dùng",
+   "Để mỗi người tự quyết deadline"
+  ]
+ },
+ {
+  "id": "r-m3-005",
+  "q": "Ý nào KHÔNG thuộc thói quen quan trọng khi làm việc nhóm?",
+  "correct": "Ôm toàn bộ công việc để kiểm soát chất lượng",
+  "wrong": [
+   "Luôn tham dự họp và giữ deadline",
+   "Tận dụng điểm mạnh của từng người",
+   "Lắng nghe, kiên nhẫn và đưa mọi người vào quyết định"
+  ]
+ },
+ {
+  "id": "r-m3-006",
+  "q": "“Credibility” nghĩa là gì?",
+  "correct": "Bạn nói gì, biết gì; mức chính xác và chuyên môn",
+  "wrong": [
+   "Bạn tập trung vào lợi ích riêng hay lợi ích của người khác / team",
+   "Bạn có thực hiện cam kết ổn định, đúng hạn hay không",
+   "Người khác có cảm thấy an toàn khi chia sẻ với bạn không"
+  ]
+ },
+ {
+  "id": "r-m3-007",
+  "q": "Ý sau mô tả khái niệm nào: “Bạn nói gì, biết gì; mức chính xác và chuyên môn”?",
+  "correct": "Credibility",
+  "wrong": [
+   "Self-orientation",
+   "Reliability",
+   "Intimacy"
+  ]
+ },
+ {
+  "id": "r-m3-008",
+  "q": "“Reliability” nghĩa là gì?",
+  "correct": "Bạn có thực hiện cam kết ổn định, đúng hạn hay không",
+  "wrong": [
+   "Người khác có cảm thấy an toàn khi chia sẻ với bạn không",
+   "Bạn tập trung vào lợi ích riêng hay lợi ích của người khác / team",
+   "Bạn nói gì, biết gì; mức chính xác và chuyên môn"
+  ]
+ },
+ {
+  "id": "r-m3-009",
+  "q": "Ý sau mô tả khái niệm nào: “Bạn có thực hiện cam kết ổn định, đúng hạn hay không”?",
+  "correct": "Reliability",
+  "wrong": [
+   "Self-orientation",
+   "Credibility",
+   "Intimacy"
+  ]
+ },
+ {
+  "id": "r-m3-010",
+  "q": "“Intimacy” nghĩa là gì?",
+  "correct": "Người khác có cảm thấy an toàn khi chia sẻ với bạn không",
+  "wrong": [
+   "Bạn nói gì, biết gì; mức chính xác và chuyên môn",
+   "Bạn tập trung vào lợi ích riêng hay lợi ích của người khác / team",
+   "Bạn có thực hiện cam kết ổn định, đúng hạn hay không"
+  ]
+ },
+ {
+  "id": "r-m3-011",
+  "q": "Ý sau mô tả khái niệm nào: “Người khác có cảm thấy an toàn khi chia sẻ với bạn không”?",
+  "correct": "Intimacy",
+  "wrong": [
+   "Credibility",
+   "Self-orientation",
+   "Reliability"
+  ]
+ },
+ {
+  "id": "r-m3-012",
+  "q": "“Self-orientation” nghĩa là gì?",
+  "correct": "Bạn tập trung vào lợi ích riêng hay lợi ích của người khác / team",
+  "wrong": [
+   "Người khác có cảm thấy an toàn khi chia sẻ với bạn không",
+   "Bạn có thực hiện cam kết ổn định, đúng hạn hay không",
+   "Bạn nói gì, biết gì; mức chính xác và chuyên môn"
+  ]
+ },
+ {
+  "id": "r-m3-013",
+  "q": "Ý sau mô tả khái niệm nào: “Bạn tập trung vào lợi ích riêng hay lợi ích của người khác / team”?",
+  "correct": "Self-orientation",
+  "wrong": [
+   "Credibility",
+   "Reliability",
+   "Intimacy"
+  ]
+ },
+ {
+  "id": "r-m3-014",
+  "q": "Công thức Trust Equation là gì?",
+  "correct": "Trustworthiness = (Credibility + Reliability + Intimacy) / Self-orientation",
+  "wrong": [
+   "Trustworthiness = Credibility × Reliability × Intimacy",
+   "Trustworthiness = (Credibility + Intimacy) / Reliability",
+   "Trustworthiness = Credibility + Reliability − Self-orientation"
+  ]
+ },
+ {
+  "id": "r-m3-015",
+  "q": "Ý nào là cách xây dựng niềm tin theo tài liệu?",
+  "correct": "Chuẩn bị trước khi họp",
+  "wrong": [
+   "Giữ thông tin cho riêng mình",
+   "Hứa nhiều để tạo thiện cảm",
+   "Tránh đặt câu hỏi"
+  ]
+ },
+ {
+  "id": "r-m3-016",
+  "q": "Ý nào KHÔNG thuộc lợi ích của niềm tin cao?",
+  "correct": "Ít cần giao tiếp hơn",
+  "wrong": [
+   "Phản hồi cởi mở hơn",
+   "Chia sẻ kiến thức nhiều hơn",
+   "Phát hiện vấn đề sớm"
+  ]
+ },
+ {
+  "id": "r-m3-017",
+  "q": "Niềm tin cao giúp tăng ba điều gì?",
+  "correct": "Sáng tạo, tốc độ và chất lượng",
+  "wrong": [
+   "Lương, thưởng và chức vụ",
+   "Số lượng thành viên và cuộc họp",
+   "Quy tắc, kỷ luật và kiểm soát"
+  ]
+ },
+ {
+  "id": "r-m3-018",
+  "q": "“Inclusion safety” nghĩa là gì?",
+  "correct": "Cảm thấy được chấp nhận và thuộc về nhóm",
+  "wrong": [
+   "Dám dùng kỹ năng và đóng góp ý tưởng",
+   "Dám chất vấn cách làm hoặc quyết định hiện tại",
+   "Dám hỏi, học và mắc lỗi"
+  ]
+ },
+ {
+  "id": "r-m3-019",
+  "q": "Ý sau mô tả khái niệm nào: “Cảm thấy được chấp nhận và thuộc về nhóm”?",
+  "correct": "Inclusion safety",
+  "wrong": [
+   "Contributor safety",
+   "Challenger safety",
+   "Learner safety"
+  ]
+ },
+ {
+  "id": "r-m3-020",
+  "q": "“Learner safety” nghĩa là gì?",
+  "correct": "Dám hỏi, học và mắc lỗi",
+  "wrong": [
+   "Cảm thấy được chấp nhận và thuộc về nhóm",
+   "Dám chất vấn cách làm hoặc quyết định hiện tại",
+   "Dám dùng kỹ năng và đóng góp ý tưởng"
+  ]
+ },
+ {
+  "id": "r-m3-021",
+  "q": "Ý sau mô tả khái niệm nào: “Dám hỏi, học và mắc lỗi”?",
+  "correct": "Learner safety",
+  "wrong": [
+   "Inclusion safety",
+   "Contributor safety",
+   "Challenger safety"
+  ]
+ }
+]

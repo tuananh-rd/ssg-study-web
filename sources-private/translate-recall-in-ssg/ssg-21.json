@@ -1,0 +1,142 @@
+[
+ {
+  "id": "k-095",
+  "q": "“Được các bác sĩ khuyên dùng” là nguyên tắc ảnh hưởng nào?",
+  "correct": "Authority",
+  "wrong": [
+   "Liking",
+   "Consensus / social proof",
+   "Reciprocity"
+  ]
+ },
+ {
+  "id": "k-096",
+  "q": "Hành vi nào VI PHẠM đạo đức trong thuyết phục?",
+  "correct": "Biến vấn đề phức tạp thành lựa chọn trắng–đen giả tạo",
+  "wrong": [
+   "Trích dẫn nguồn đáng tin cậy",
+   "Nói rõ tổ chức mà mình đại diện",
+   "Nói rõ khi kết luận chỉ là khả năng"
+  ]
+ },
+ {
+  "id": "k-097",
+  "q": "Elevator pitch dài khoảng bao lâu và kết thúc bằng gì?",
+  "correct": "30–60 giây, kết bằng một call to action cụ thể",
+  "wrong": [
+   "30–60 giây, kết bằng lời cảm ơn chung chung",
+   "3–5 phút, kết bằng câu hỏi về mức lương",
+   "10–15 giây, kết bằng tên của bạn"
+  ]
+ },
+ {
+  "id": "k-098",
+  "q": "“Hành trình dài hạn gồm nhiều công việc, hướng đến học hỏi và phát triển” là định nghĩa của gì?",
+  "correct": "Career",
+  "wrong": [
+   "Job",
+   "Internship",
+   "Major"
+  ]
+ },
+ {
+  "id": "k-099",
+  "q": "Các giai đoạn phát triển nghề nghiệp theo thứ tự là gì?",
+  "correct": "Growth → Exploration → Establishing → Maintaining / Reinventing",
+  "wrong": [
+   "Exploration → Growth → Establishing → Maintaining / Reinventing",
+   "Growth → Establishing → Exploration → Maintaining / Reinventing",
+   "Exploration → Establishing → Growth → Maintaining / Reinventing"
+  ]
+ },
+ {
+  "id": "k-100",
+  "q": "Chu kỳ phát triển nghề nghiệp gồm những bước nào?",
+  "correct": "Set goals → Take actions → Review progress → Adjust",
+  "wrong": [
+   "Take actions → Set goals → Adjust → Review progress",
+   "Review progress → Set goals → Take actions → Adjust",
+   "Set goals → Review progress → Take actions → Adjust"
+  ]
+ },
+ {
+  "id": "k-101",
+  "q": "Kỹ năng nào là soft / transferable skill?",
+  "correct": "Quản lý thời gian",
+  "wrong": [
+   "Lập trình Python",
+   "Kế toán",
+   "Thiết kế mạch điện"
+  ]
+ },
+ {
+  "id": "k-102",
+  "q": "Thông tin nào KHÔNG nên đưa vào résumé?",
+  "correct": "Kỳ vọng lương",
+  "wrong": [
+   "Kinh nghiệm tình nguyện",
+   "Kỹ năng liên quan đến vị trí",
+   "Dự án và thành tích"
+  ]
+ },
+ {
+  "id": "k-103",
+  "q": "Dạng résumé đưa thông tin MỚI NHẤT lên trước là gì?",
+  "correct": "Reverse chronological",
+  "wrong": [
+   "Functional",
+   "Hybrid",
+   "Infographic"
+  ]
+ },
+ {
+  "id": "k-104",
+  "q": "Cover letter cần trả lời hai câu hỏi nào?",
+  "correct": "“Why this job?” và “Why you?”",
+  "wrong": [
+   "“What salary?” và “When can you start?”",
+   "“Who are you?” và “Where do you live?”",
+   "“What is your weakness?” và “Why did you leave?”"
+  ]
+ },
+ {
+  "id": "k-105",
+  "q": "STAR là viết tắt của gì?",
+  "correct": "Situation – Task – Action – Result",
+  "wrong": [
+   "Skill – Task – Attitude – Result",
+   "Situation – Target – Action – Review",
+   "Strength – Task – Achievement – Reflection"
+  ]
+ },
+ {
+  "id": "k-106",
+  "q": "Sau phỏng vấn, nên gửi thank-you email trong vòng bao lâu?",
+  "correct": "24 giờ",
+  "wrong": [
+   "1 giờ",
+   "3 ngày",
+   "1 tuần"
+  ]
+ },
+ {
+  "id": "k-107",
+  "q": "Khi chuyển báo cáo thành bài thuyết trình, nên chọn những gì?",
+  "correct": "Một core message và 3–4 ý hỗ trợ",
+  "wrong": [
+   "Toàn bộ các mục của báo cáo",
+   "Một ý duy nhất, không cần ý hỗ trợ",
+   "7–10 ý để thật đầy đủ"
+  ]
+ },
+ {
+  "id": "k-108",
+  "q": "Bảng số liệu chi tiết trong báo cáo nên xử lý thế nào khi thuyết trình?",
+  "correct": "Chuyển sang backup slides",
+  "wrong": [
+   "Chép nguyên lên slide chính",
+   "Đọc to từng con số",
+   "Bỏ hẳn, không chuẩn bị"
+  ]
+ }
+]

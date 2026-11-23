@@ -1,0 +1,202 @@
+[
+ {
+  "id": 146,
+  "question": "What library is commonly used in Python for data manipulation and analysis?",
+  "options": [
+   "Numpy",
+   "Pandas",
+   "Scikit-learn",
+   "Matplotlib"
+  ]
+ },
+ {
+  "id": 148,
+  "question": "Which statistical measure is commonly used to fill in missing numerical data in Pandas?",
+  "options": [
+   "Mean",
+   "Mode",
+   "Median",
+   "Standard Deviation"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "Which Scikit-learn class is used to create pipelines?",
+  "options": [
+   "Pipeline",
+   "PipelineModel",
+   "Pipe",
+   "ModelPipeline"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "Which Python library is mainly used for data visualization?",
+  "options": [
+   "Pandas",
+   "NumPy",
+   "Matplotlib",
+   "Requests"
+  ]
+ },
+ {
+  "id": 151,
+  "question": "Which Python library commonly implements grid search for hyperparameter tuning?",
+  "options": [
+   "Pandas",
+   "NumPy",
+   "Scikit-learn",
+   "TensorFlow"
+  ]
+ },
+ {
+  "id": 152,
+  "question": "Which Python library is best suited for creating interactive data visualizations and dashboards?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Plotly",
+   "Folium"
+  ]
+ },
+ {
+  "id": 153,
+  "question": "Which Python library is used to make HTTP requests for accessing web pages and APIs?",
+  "options": [
+   "BeautifulSoup",
+   "Scrapy",
+   "Requests",
+   "Selenium"
+  ]
+ },
+ {
+  "id": 154,
+  "question": "Which Python library is commonly used for web scraping and parsing HTML content?",
+  "options": [
+   "BeautifulSoup",
+   "Pandas",
+   "Requests",
+   "Scrapy"
+  ]
+ },
+ {
+  "id": 155,
+  "question": "Which Python library is specifically designed for building web-based analytic applications?",
+  "options": [
+   "Matplotlib",
+   "Seaborn",
+   "Folium",
+   "Dash"
+  ]
+ },
+ {
+  "id": 157,
+  "question": "Which tool is used to define the conversational flow and responses in Watson Assistant?",
+  "options": [
+   "Dialog Node Editor",
+   "Intent Generator",
+   "Entity Extractor",
+   "Fallback Intent Creator"
+  ]
+ },
+ {
+  "id": 158,
+  "question": "Which parameter in plt.plot() sets the width of the line?",
+  "options": [
+   "linewidth",
+   "line_width",
+   "width",
+   "line"
+  ]
+ },
+ {
+  "id": 159,
+  "question": "Which regression technique is used to handle linear relationships between variables?",
+  "options": [
+   "Logistic regression",
+   "Polynomial regression",
+   "Ridge regression",
+   "Linear regression"
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Which state does a data analyst compare with the ideal state to determine what data needs to be captured?",
+  "options": [
+   "Relative",
+   "Sick",
+   "Current",
+   "Absolute"
+  ]
+ },
+ {
+  "id": 161,
+  "question": "When integrating a Watson Assistant chatbot with Facebook Messenger, what is required for the setup?",
+  "options": [
+   "Developer API key",
+   "Facebook Graph API",
+   "OAuth token",
+   "Access token"
+  ]
+ },
+ {
+  "id": 162,
+  "question": "How is word size typically determined in a word cloud?",
+  "options": [
+   "Based on word count",
+   "Based on word length",
+   "By alphabetical order",
+   "Randomly assigned sizes"
+  ]
+ },
+ {
+  "id": 163,
+  "question": "How is precision calculated using values from a confusion matrix?",
+  "options": [
+   "TP / (TP + FP)",
+   "TP / (TP + TN)",
+   "TP / (TP + FN)",
+   "TP / (FP + FN)"
+  ]
+ },
+ {
+  "id": 164,
+  "question": "How does Watson Assistant manage the flow of conversation with users?",
+  "options": [
+   "Through entities",
+   "Via context variables",
+   "Using dialog nodes",
+   "With API calls"
+  ]
+ },
+ {
+  "id": 165,
+  "question": "A scatter plot is a mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. What kind of relationship do the two variables have, in case of increasing trend.",
+  "options": [
+   "Independent linear relationship",
+   "Dependent cross relationship",
+   "Dispositive multi-linear relationship",
+   "Positive linear relationship"
+  ]
+ },
+ {
+  "id": 166,
+  "question": "A developer want to open a file for adding new data into the existing data in the file using this command with open(\"users/Animals/Dogs/doNames.txt\") as dogName. What is missing from this code?",
+  "options": [
+   "The \"n\" mode",
+   "The \"a\" mode",
+   "The \"x\" mode",
+   "The \"w\" mode"
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Consider the following equation, what is the parameter x? Y = b0 + b1x",
+  "options": [
+   "the predictor",
+   "the target",
+   "the intercept",
+   "the slope"
+  ]
+ }
+]

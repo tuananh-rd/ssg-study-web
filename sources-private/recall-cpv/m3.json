@@ -1,0 +1,158 @@
+[
+  {
+    "ref": "3.2",
+    "q": "Trong thuật toán phát hiện góc Harris Corner Detector, khi nào một điểm ảnh được xác định là thuộc về một Góc (Corner)?",
+    "correct": "Khi cả hai giá trị riêng λ1 và λ2 của ma trận cấu trúc đều lớn và xấp xỉ nhau (điểm R dương lớn)",
+    "wrong": [
+      "Khi một giá trị riêng rất lớn còn giá trị riêng kia xấp xỉ bằng không (điểm R có giá trị âm)",
+      "Khi cả hai giá trị riêng λ1 và λ2 đều rất nhỏ và xấp xỉ bằng không (điểm R nhỏ)",
+      "Khi hiệu số giữa hai giá trị riêng luôn vượt qua ngưỡng phân kỳ cực đại"
+    ],
+    "explain": "Harris Corner Detector phân loại dựa trên các giá trị riêng: Vùng phẳng khi λ1 và λ2 đều nhỏ; Biên khi một giá trị vượt trội (R < 0); Góc khi λ1 và λ2 đều lớn và xấp xỉ nhau (R lớn).",
+    "tip": "Harris Corner: λ1 và λ2 đều lớn -> Góc (Corner); một lớn một nhỏ -> Biên (Edge); đều nhỏ -> Phẳng (Flat)."
+  },
+  {
+    "ref": "3.2",
+    "q": "Thuật toán trích xuất đặc trưng SIFT (Scale-Invariant Feature Transform) có đặc tính vượt trội nào giúp nhận dạng điểm đặc trưng bền vững?",
+    "correct": "Bất biến với tỷ lệ thu phóng (scale) và phép xoay (rotation) của bức ảnh",
+    "wrong": [
+      "Tự động chuyển đổi toàn bộ ảnh sang ma trận nhị phân không mất thông tin",
+      "Triệt tiêu hoàn toàn hiện tượng nhòe chuyển động bằng biến đổi Fourier rời rạc",
+      "Chỉ cần một giá trị ngưỡng cố định để tìm kiếm góc mà không cần tính gradient"
+    ],
+    "explain": "SIFT là thuật toán cực kỳ mạnh mẽ, có khả năng bất biến với tỷ lệ (scale) và phép xoay (rotation).",
+    "tip": "SIFT: Scale-Invariant (bất biến tỷ lệ) + bất biến phép xoay."
+  },
+  {
+    "ref": "3.2",
+    "q": "Thứ tự chuẩn của các bước trong quy trình trích xuất đặc trưng của thuật toán SIFT là gì?",
+    "correct": "Tìm đỉnh trên không gian tỷ lệ → Định vị Keypoint → Gán hướng → Tạo Vector mô tả",
+    "wrong": [
+      "Gán hướng → Tạo Vector mô tả → Lọc nhiễu Gaussian → Tìm điểm Zero-crossing",
+      "Định vị Keypoint → Phân ngưỡng kép → Triệt tiêu phi cực đại → So khớp đặc trưng",
+      "Tạo Vector mô tả → Tìm ma trận Homography → Lấy mẫu MIP-mapping → Định vị Keypoint"
+    ],
+    "explain": "Quy trình SIFT gồm: Tìm đỉnh trên không gian tỷ lệ (Scale-space peak selection) → Định vị Keypoint → Gán hướng (Orientation) → Tạo Vector mô tả (Descriptor) → Khớp.",
+    "tip": "Quy trình SIFT: Scale-space peak -> Keypoint localization -> Orientation assignment -> Keypoint descriptor."
+  },
+  {
+    "ref": "3.2",
+    "q": "Thuật toán ORB trong thị giác máy tính được phát triển dựa trên sự kết hợp của hai kỹ thuật nào?",
+    "correct": "Bộ phát hiện điểm FAST và bộ mô tả nhị phân BRIEF",
+    "wrong": [
+      "Bộ phát hiện góc Harris và bộ mô tả SIFT",
+      "Bộ lọc đạo hàm Sobel và biến đổi Cosine rời rạc DCT",
+      "Thuật toán RANSAC và bộ phân loại SVM"
+    ],
+    "explain": "ORB là thuật toán trích xuất đặc trưng kết hợp giữa bộ dò điểm FAST và bộ mô tả dạng chuỗi nhị phân BRIEF.",
+    "tip": "ORB = Oriented FAST and Rotated BRIEF."
+  },
+  {
+    "ref": "3.2",
+    "q": "Trong kỹ thuật phát hiện biên ảnh, vector Gradient có hướng (direction) như thế nào so với hướng của đường biên thực tế?",
+    "correct": "Vuông góc với hướng của đường biên",
+    "wrong": [
+      "Song song hoàn toàn với hướng của đường biên",
+      "Tạo một góc cố định 45 độ so với đường biên",
+      "Ngược chiều với vector pháp tuyến của bề mặt vật thể"
+    ],
+    "explain": "Vector Gradient trong xử lý ảnh có độ lớn biểu thị độ rõ nét của biên và hướng vuông góc với hướng của đường biên.",
+    "tip": "Gradient chỉ hướng thay đổi độ sáng mạnh nhất, tức vuông góc với đường biên."
+  },
+  {
+    "ref": "3.2",
+    "q": "Thứ tự chuẩn của 4 bước trong quy trình phát hiện biên (Edge Detection) là gì?",
+    "correct": "Lọc nhiễu (Filtering) → Tăng cường chi tiết (Enhancement) → Phân ngưỡng phát hiện (Detection/Thresholding) → Định vị chính xác (Localization)",
+    "wrong": [
+      "Phân ngưỡng phát hiện → Lọc nhiễu → Định vị chính xác → Tăng cường chi tiết",
+      "Tăng cường chi tiết → Định vị chính xác → Phân ngưỡng phát hiện → Lọc nhiễu",
+      "Lọc nhiễu → Định vị chính xác → Tạo Vector mô tả → Phân ngưỡng phát hiện"
+    ],
+    "explain": "4 bước chuẩn để phát hiện biên là: Lọc nhiễu (Filtering) → Tăng cường chi tiết (Enhancement) → Phân ngưỡng phát hiện (Detection/Thresholding) → Định vị chính xác (Localization).",
+    "tip": "4 bước tìm biên: Lọc nhiễu -> Tăng cường -> Phân ngưỡng -> Định vị."
+  },
+  {
+    "ref": "3.2",
+    "q": "Phương pháp phát hiện biên Laplacian of Gaussian (LoG) xác định vị trí của đường biên dựa trên dấu hiệu toán học nào?",
+    "correct": "Điểm giao cắt qua giá trị không (Zero-crossing) của đạo hàm bậc hai",
+    "wrong": [
+      "Điểm cực đại toàn cục của hàm phân phối tích lũy CDF",
+      "Giao điểm của các đường cong hình sin trong không gian tham số",
+      "Điểm có giá trị đạo hàm bậc nhất tiến tới vô hạn"
+    ],
+    "explain": "LoG dùng đạo hàm bậc 2 kết hợp làm mờ Gaussian để tìm điểm Zero-crossing nhằm xác định vị trí biên.",
+    "tip": "LoG dùng đạo hàm bậc 2 để tìm điểm Zero-crossing."
+  },
+  {
+    "ref": "3.2",
+    "q": "Vì sao thuật toán Canny được xem là chuẩn mực tối ưu nhất (optimal) trong các kỹ thuật phát hiện biên?",
+    "correct": "Ít nhạy với nhiễu, định vị biên cực tốt và chỉ trả về một đường biên mỏng duy nhất nhờ triệt tiêu phi cực đại và phân ngưỡng kép",
+    "wrong": [
+      "Chỉ sử dụng các phép tính cộng trừ số nguyên đơn giản trên kernel 2x2 giúp tiết kiệm bộ nhớ nhất",
+      "Không cần thiết lập bất kỳ tham số ngưỡng nào mà tự động thích ứng trên mọi loại ảnh",
+      "Hoạt động hoàn toàn độc lập với đạo hàm gradient và không bị ảnh hưởng bởi phép quay"
+    ],
+    "explain": "Toán tử Canny được xem là chuẩn mực tối ưu nhất vì ít nhạy nhiễu, định vị biên cực tốt và chỉ trả về 1 đường biên mỏng duy nhất thông qua thuật toán triệt tiêu phi cực đại và phân ngưỡng kép.",
+    "tip": "Canny tối ưu nhờ: khử nhiễu Gaussian + Gradient + triệt tiêu phi cực đại + phân ngưỡng kép."
+  },
+  {
+    "ref": "3.3",
+    "q": "Trong thuật toán Biến đổi Hough (Hough Transform), phương trình đường thẳng được biểu diễn trong hệ tọa độ cực có dạng như thế nào?",
+    "correct": "d = x * cos(θ) + y * sin(θ)",
+    "wrong": [
+      "y = a * x + b",
+      "d = x * sin(θ) - y * cos(θ)",
+      "d^2 = (x - x0)^2 + (y - y0)^2"
+    ],
+    "explain": "Biến đổi Hough biểu diễn đường thẳng bằng phương trình tọa độ cực: d = x*cos(θ) + y*sin(θ), trong đó d là khoảng cách từ gốc tọa độ đến đường thẳng và θ là góc pháp tuyến.",
+    "tip": "Hough Line biểu diễn cực: d = x*cos(θ) + y*sin(θ)."
+  },
+  {
+    "ref": "3.3",
+    "q": "Mỗi điểm biên (x, y) trong không gian ảnh thực khi chuyển sang không gian tham số Hough (Hough Space) sẽ tạo thành hình dạng nào?",
+    "correct": "Một đường cong hình sin",
+    "wrong": [
+      "Một điểm tọa độ duy nhất",
+      "Một đường thẳng dốc đứng",
+      "Một đường tròn đồng tâm"
+    ],
+    "explain": "Mỗi điểm ảnh (x, y) trên không gian thực sẽ tạo thành một đường cong hình sin trong không gian tham số (Hough space).",
+    "tip": "Một điểm trong không gian ảnh = Một đường hình sin trong không gian Hough."
+  },
+  {
+    "ref": "3.3",
+    "q": "Trong không gian tham số Hough, vị trí của một đường thẳng thực tế trên ảnh được xác định bằng cách thức nào?",
+    "correct": "Tìm giao điểm có số phiếu tích lũy (voting) cao nhất của các đường cong hình sin",
+    "wrong": [
+      "Tính trung bình cộng tọa độ của tất cả các điểm nằm trên trục hoành",
+      "Tìm điểm có giá trị đạo hàm bậc hai bằng 0 (Zero-crossing)",
+      "Lấy mẫu ngẫu nhiên 4 điểm biên và giải ma trận Homography"
+    ],
+    "explain": "Trong hệ thống bỏ phiếu (voting), giao điểm của nhiều đường cong trong không gian Hough (nơi có giá trị tích lũy/bin cao nhất) đại diện cho đường thẳng đi qua các điểm đó trên ảnh thực.",
+    "tip": "Giao điểm có số phiếu voting cao nhất trong Hough space = đường thẳng thực tế."
+  },
+  {
+    "ref": "3.3",
+    "q": "Thứ tự chuẩn của các bước trong quy trình phát hiện đường thẳng bằng Hough Transform là gì?",
+    "correct": "Tiền xử lý (Blur) → Canny (Tìm biên) → Lọc vùng quan tâm (Masking ROI) → Hough Transform",
+    "wrong": [
+      "Hough Transform → Canny (Tìm biên) → Lọc vùng quan tâm → Tiền xử lý (Blur)",
+      "Masking ROI → Hough Transform → Làm mờ Gaussian → Phân ngưỡng Otsu",
+      "Canny (Tìm biên) → Hough Transform → Trích xuất đặc trưng SIFT → Lọc Median"
+    ],
+    "explain": "Quy trình chuẩn để phát hiện đường thẳng: Tiền xử lý (Blur) → Canny (Tìm biên) → Lọc vùng quan tâm (Masking ROI) → Hough Transform.",
+    "tip": "Blur -> Canny -> Mask ROI -> Hough Transform."
+  },
+  {
+    "ref": "3.3",
+    "q": "Phương pháp phát hiện đường thẳng dựa trên tích chập (Convolution-based) sử dụng các mặt nạ (masks) như thế nào để nhận diện hướng đường thẳng?",
+    "correct": "Dùng các mặt nạ có trọng số cao ở hàng giữa, cột giữa hoặc đường chéo để đánh giá độ phản hồi (response)",
+    "wrong": [
+      "Nhân ma trận ảnh với bộ lọc Gaussian hai chiều có độ lệch chuẩn biến thiên liên tục",
+      "Lật ngược ma trận ảnh theo chiều thẳng đứng và tính sai phân tích phân CDF",
+      "Dùng mặt nạ hình elip để gom cụm các pixel có cùng mức xám lại thành một điểm"
+    ],
+    "explain": "Kỹ thuật dùng mặt nạ cụ thể như mặt nạ ngang (trọng số cao ở hàng giữa), mặt nạ dọc (trọng số cao ở cột giữa), mặt nạ chéo ±45 độ để đo phản hồi (response) xác định hướng đường thẳng.",
+    "tip": "Convolution-based line detection dùng các mask ngang/dọc/chéo để so khớp phản hồi."
+  }
+]

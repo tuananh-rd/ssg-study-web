@@ -1,0 +1,327 @@
+[
+ {
+  "id": 166,
+  "question": "A developer want to open a file for adding new data into the existing data in the file using this command with open(\"users/Animals/Dogs/doNames.txt\") as dogName. What is missing from this code?",
+  "options": [
+   "The \"n\" mode",
+   "The \"a\" mode",
+   "The \"x\" mode",
+   "The \"w\" mode"
+  ],
+  "correct": [
+   "The \"a\" mode"
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Consider the following equation, what is the parameter x? Y = b0 + b1x",
+  "options": [
+   "the predictor",
+   "the target",
+   "the intercept",
+   "the slope"
+  ],
+  "correct": [
+   "the predictor"
+  ]
+ },
+ {
+  "id": 168,
+  "question": "In the dcc.Slider component of Dash, what does the marks property allow you to do?",
+  "options": [
+   "It defines the range of values for the slider.",
+   "It specifies the color of the slider.",
+   "It sets the initial value of the slider.",
+   "It labels specific values on the slider."
+  ],
+  "correct": [
+   "It labels specific values on the slider."
+  ]
+ },
+ {
+  "id": 169,
+  "question": "In a simple linear regression equation (y = mx + c), what does 'm' represent?",
+  "options": [
+   "Intercept",
+   "Slope",
+   "Residuals",
+   "Dependent variable"
+  ],
+  "correct": [
+   "Slope"
+  ]
+ },
+ {
+  "id": 170,
+  "question": "In polynomial regression, what degree does the relationship between variables have?",
+  "options": [
+   "Linear",
+   "Quadratic",
+   "Cubic",
+   "All of the above"
+  ],
+  "correct": [
+   "All of the above"
+  ]
+ },
+ {
+  "id": 171,
+  "question": "In Sklearn, which regression model is suitable for reducing model complexity and preventing overfitting by adding a regularization term?",
+  "options": [
+   "Linear Regression",
+   "Polynomial Regression",
+   "Ridge Regression",
+   "Lasted Regression"
+  ],
+  "correct": [
+   "Ridge Regression"
+  ]
+ },
+ {
+  "id": 172,
+  "question": "In RESTful API design, what does the acronym \"URI\" stand for?",
+  "options": [
+   "Universal Resource Identifier",
+   "Uniform Resource Identifier",
+   "Unique Resource Identifier",
+   "Unrestricted Resource Identifier"
+  ],
+  "correct": [
+   "Uniform Resource Identifier"
+  ]
+ },
+ {
+  "id": 173,
+  "question": "In the context of training a neural network using TensorFlow, what does \"fitting the model\" refer to?",
+  "options": [
+   "Evaluating the model's performance",
+   "Adjusting hyper-parameters",
+   "Training the model on a dataset",
+   "Predicting on new data"
+  ],
+  "correct": [
+   "Training the model on a dataset"
+  ]
+ },
+ {
+  "id": 174,
+  "question": "In a confusion matrix, what does the term \"false positive\" (FP) represent?",
+  "options": [
+   "Instances incorrectly predicted as positive",
+   "Instances correctly predicted as positive",
+   "Instances correctly predicted as negative",
+   "Instances incorrectly predicted as negative"
+  ],
+  "correct": [
+   "Instances incorrectly predicted as positive"
+  ]
+ },
+ {
+  "id": 175,
+  "question": "In web scraping, what does the requests library in Python primarily facilitate?",
+  "options": [
+   "Handling HTTP requests and responses",
+   "Parsing HTML content",
+   "Data analysis",
+   "Visualization"
+  ],
+  "correct": [
+   "Handling HTTP requests and responses"
+  ]
+ },
+ {
+  "id": 176,
+  "question": "In TensorFlow, what does CNN stand for in the context of neural networks?",
+  "options": [
+   "Convolutional Natural Network",
+   "Centralized Neural Network",
+   "Convolutional Neural Network",
+   "Connected Neuron Network"
+  ],
+  "correct": [
+   "Convolutional Neural Network"
+  ]
+ },
+ {
+  "id": 177,
+  "question": "If the predicted function is y = b0 + b1x1 + b2x2 + b3x3 + b4x4. The method is?",
+  "options": [
+   "Multiple linear regression",
+   "None linear regression",
+   "Linear regression",
+   "None of the others"
+  ],
+  "correct": [
+   "Multiple linear regression"
+  ]
+ },
+ {
+  "id": 178,
+  "question": "If we group a pandas DataFrame df by column 'Region', and then calculate the count of values for each group, what will be the group with the highest figure in the grouped data?\ndf = pd.DataFrame({'Region': ['Asia', 'Asia', 'Europe', 'Europe', 'Asia'], 'Country': ['Japan', 'Japan', 'Japan', 'USA', 'Japan'], Value: [10, 20, 30, 40, 50]})",
+  "options": [
+   "Asia",
+   "Japan",
+   "['Asia', 'Japan']",
+   "Europe"
+  ],
+  "correct": [
+   "Asia"
+  ]
+ },
+ {
+  "id": 179,
+  "question": "The following code is an example of (df['len'] - df['len'].mean()) / df['len'].std()?",
+  "options": [
+   "z-score",
+   "t-score",
+   "m-score",
+   "r-score"
+  ],
+  "correct": [
+   "z-score"
+  ]
+ },
+ {
+  "id": 180,
+  "question": "You are training an SVC classifier on a dataset with numerical features and a binary target variable. You want to tune the C hyperparameter of the SVC model to improve its performance. Which method allows you to calculate the best C value using cross-validation?",
+  "options": [
+   "Grid Search",
+   "Random Search",
+   "Sequential Feature Selection",
+   "Recursive Feature Elimination"
+  ],
+  "correct": [
+   "Grid Search"
+  ]
+ },
+ {
+  "id": 181,
+  "question": "You have a dataset customer_data containing information about customers, including their age, income, and whether they purchased a product (binary classification). You want to train a Support Vector Classifier (SVC) with a linear kernel to predict whether a new customer will purchase the product based on their age and income. You want to evaluate the performance of the trained SVC model. Which evaluation metric would be most appropriate for this binary classification problem?",
+  "options": [
+   "F1 Score",
+   "Mean Absolute Error (MAE)",
+   "R-squared",
+   "Mean Squared Error (MSE)"
+  ],
+  "correct": [
+   "F1 Score"
+  ]
+ },
+ {
+  "id": 184,
+  "question": "How does increasing the alpha value impact the model's coefficients in Lasso regression?",
+  "options": [
+   "Coefficients are shrunk towards zero.",
+   "Coefficients are increased by the alpha.",
+   "Coefficients remain unchanged.",
+   "Intercepts increase in magnitude as alpha increases."
+  ],
+  "correct": [
+   "Coefficients are shrunk towards zero."
+  ]
+ },
+ {
+  "id": 196,
+  "question": "What is the primary role of the Fully Connected (Dense) layers in a CNN?",
+  "options": [
+   "Extracting features from images",
+   "Reducing the number of parameters in the model",
+   "Handling temporal data",
+   "Making predictions based on extracted features"
+  ],
+  "correct": [
+   "Making predictions based on extracted features"
+  ]
+ },
+ {
+  "id": 197,
+  "question": "What is the key advantage of integrating a chatbot with multiple platforms (e.g., Facebook, Slack)?",
+  "options": [
+   "Enhanced data security",
+   "Centralized conversation history",
+   "Improved user engagement across different channels",
+   "Streamlined API authentication"
+  ],
+  "correct": [
+   "Improved user engagement across different channels"
+  ]
+ },
+ {
+  "id": 198,
+  "question": "What is the purpose of the options property in the dcc.Dropdown component?",
+  "options": [
+   "It defines the available options that the user can select.",
+   "It sets the initial selected value of the dropdown.",
+   "It specifies the layout style of the dropdown.",
+   "It controls the visibility of the dropdown menu."
+  ],
+  "correct": [
+   "It defines the available options that the user can select."
+  ]
+ },
+ {
+  "id": 199,
+  "question": "What is the primary purpose of using the choropleth() function in Folium?",
+  "options": [
+   "Creating line plots",
+   "Displaying geographical data with colors on maps",
+   "Generating pie charts",
+   "Creating scatter plots"
+  ],
+  "correct": [
+   "Displaying geographical data with colors on maps"
+  ]
+ },
+ {
+  "id": 200,
+  "question": "What is the purpose of the dropout layer in a CNN?",
+  "options": [
+   "Reducing the learning rate",
+   "Preventing overfitting by randomly dropping neurons during training",
+   "Increasing the number of parameters in the model",
+   "Enhancing model accuracy"
+  ],
+  "correct": [
+   "Preventing overfitting by randomly dropping neurons during training"
+  ]
+ },
+ {
+  "id": 201,
+  "question": "What is the purpose of entities in the context of chatbot development with Watson Assistant?",
+  "options": [
+   "To extract specific information from user input",
+   "To represent different users in a conversation",
+   "To define the overall flow of the conversation",
+   "To store user profiles"
+  ],
+  "correct": [
+   "To extract specific information from user input"
+  ]
+ },
+ {
+  "id": 202,
+  "question": "What is the primary function of Beautiful Soup in web scraping?",
+  "options": [
+   "Sending HTTP requests",
+   "Parsing and navigating HTML/XML documents",
+   "Storing scraped data in databases",
+   "Visualizing scraped data"
+  ],
+  "correct": [
+   "Parsing and navigating HTML/XML documents"
+  ]
+ },
+ {
+  "id": 204,
+  "question": "What is the primary purpose of logistic regression?",
+  "options": [
+   "Classifying data into two or more categories",
+   "Predicting continuous outcomes",
+   "Clustering data points",
+   "Identifying outliers in a dataset"
+  ],
+  "correct": [
+   "Classifying data into two or more categories"
+  ]
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m4-027",
+  "q": "Giả định cốt lõi của phương pháp LIME (Local Surrogate) khi giải thích quyết định của mô hình là gì?",
+  "correct": "Dù mô hình hộp đen phức tạp trên toàn cục, nhưng trong một vùng rất nhỏ xung quanh một điểm dữ liệu, nó có thể được xấp xỉ bằng một đường thẳng (tuyến tính)",
+  "wrong": [
+   "Toàn bộ dữ liệu huấn luyện có thể được phân tách hoàn hảo bằng một siêu phẳng tuyến tính toàn cục",
+   "Mọi đặc trưng đầu vào đều độc lập hoàn toàn với nhau trên không gian nhiều chiều",
+   "Mô hình hộp đen có thể được thay thế hoàn toàn bởi một cây quyết định 1 tầng duy nhất"
+  ]
+ },
+ {
+  "id": "r-m4-028",
+  "q": "Trong quy trình thực hiện của LIME, các biến thể (perturbations) được gán trọng số theo nguyên tắc nào?",
+  "correct": "Những biến thể càng nằm gần điểm gốc thì trọng số càng cao, những điểm xa thì trọng số thấp",
+  "wrong": [
+   "Tất cả các biến thể đều được gán trọng số bằng nhau tuyệt đối",
+   "Những biến thể nằm càng xa điểm gốc thì được gán trọng số càng lớn",
+   "Trọng số được gán ngẫu nhiên theo phân phối đều từ 0 đến 1"
+  ]
+ },
+ {
+  "id": "r-m4-029",
+  "q": "Tại sao chỉ số Accuracy (Độ chính xác) tuyệt đối không nên dùng để đánh giá mô hình trên dữ liệu mất cân bằng?",
+  "correct": "Vì mô hình chỉ cần dự đoán đúng lớp đa số đã đạt Accuracy rất cao trong khi hoàn toàn bỏ qua hoặc dự đoán sai lớp thiểu số",
+  "wrong": [
+   "Vì công thức của Accuracy sẽ bị chia cho 0 khi lớp thiểu số có số lượng mẫu quá ít",
+   "Vì Accuracy chỉ áp dụng cho các bài toán hồi quy liên tục, không dùng cho phân loại",
+   "Vì ma trận nhầm lẫn sẽ tự động đảo ngược các giá trị TP và TN khi tính toán"
+  ]
+ },
+ {
+  "id": "r-m4-030",
+  "q": "Ba thước đo đánh giá phù hợp được khuyến nghị sử dụng thay cho Accuracy đối với dữ liệu không cân bằng là gì?",
+  "correct": "AUC (Area Under Curve), F1 Score và Cohen's Kappa",
+  "wrong": [
+   "SSE, TSS và R-squared",
+   "Entropy, Information Gain và Gini Index",
+   "Inertia, Distortion và Bandwidth"
+  ]
+ },
+ {
+  "id": "r-m4-031",
+  "q": "Kỹ thuật SMOTE tạo ra các điểm dữ liệu mới cho lớp thiểu số bằng cơ chế nào?",
+  "correct": "Tạo ra các mẫu mới dựa trên các mẫu hiện có thông qua nội suy toán học",
+  "wrong": [
+   "Nhân bản sao chép trực tiếp các hàng dữ liệu có sẵn của lớp thiểu số",
+   "Loại bỏ các điểm lớp đa số nằm quá gần ranh giới quyết định",
+   "Ánh xạ các điểm dữ liệu sang không gian đặc trưng vô hạn chiều bằng nhân RBF"
+  ]
+ },
+ {
+  "id": "r-m4-032",
+  "q": "Trong quy trình xử lý dữ liệu không cân bằng, thao tác Resampling bắt buộc phải thực hiện ở thời điểm nào?",
+  "correct": "Chỉ thực hiện sau khi đã chia tách tập dữ liệu Train và Test (sau Stratified Split)",
+  "wrong": [
+   "Thực hiện trên toàn bộ dữ liệu gốc trước khi tiến hành chia tách tập Train và Test",
+   "Chỉ thực hiện trên tập kiểm tra (Test set) sau khi mô hình đã huấn luyện xong",
+   "Thực hiện đồng thời trong quá trình tính toán ma trận nhầm lẫn cuối cùng"
+  ]
+ },
+ {
+  "id": "r-m4-033",
+  "q": "Tiêu chí giữ lại điểm dữ liệu lớp đa số của thuật toán NearMiss-1 là gì?",
+  "correct": "Các điểm có khoảng cách trung bình đến 3 điểm lớp thiểu số gần nhất là nhỏ nhất",
+  "wrong": [
+   "Các điểm có khoảng cách trung bình đến 3 điểm lớp thiểu số xa nhất là nhỏ nhất",
+   "Các điểm là láng giềng gần nhất của từng điểm thuộc lớp thiểu số",
+   "Các điểm có tọa độ trùng với tâm cụm K-Means của lớp đa số"
+  ]
+ },
+ {
+  "id": "r-m4-034",
+  "q": "Điểm khác biệt giữa hai kỹ thuật làm sạch ranh giới Tomek Links và ENN (Edited Nearest Neighbors) là gì?",
+  "correct": "Tomek Links loại bỏ các điểm lớp đa số nằm quá gần lớp thiểu số, còn ENN loại bỏ các điểm có nhãn khác với đa số các láng giềng xung quanh",
+  "wrong": [
+   "Tomek Links nhân bản thêm mẫu thiểu số, còn ENN giảm bớt mẫu đa số",
+   "Tomek Links chỉ áp dụng cho bài toán hồi quy, còn ENN chỉ áp dụng cho phân loại",
+   "Tomek Links đo khoảng cách Cosine, còn ENN bắt buộc đo khoảng cách Manhattan"
+  ]
+ },
+ {
+  "id": "r-m4-035",
+  "q": "Bản chất cốt lõi của Học không giám sát (Unsupervised Learning) là gì?",
+  "correct": "Mô hình được huấn luyện trên dữ liệu không có nhãn (unlabeled data) và tự tìm ra các cấu trúc hoặc quy luật ẩn",
+  "wrong": [
+   "Mô hình bắt buộc phải có nhãn mục tiêu dạng danh mục rời rạc được gán sẵn",
+   "Mô hình sử dụng hàm mất mát Hinge Loss để tối đa hóa biên phân cách margin",
+   "Mô hình chỉ huấn luyện trên các tập dữ liệu đã được cân bằng tỷ lệ mẫu bằng SMOTE"
+  ]
+ },
+ {
+  "id": "r-m4-036",
+  "q": "Hai dạng bài toán chính của Học không giám sát được nêu trong tài liệu là gì?",
+  "correct": "Phân cụm (Clustering) và Giảm chiều dữ liệu (Dimension Reduction)",
+  "wrong": [
+   "Hồi quy (Regression) và Phân loại (Classification)",
+   "Học tăng cường (Reinforcement) và Học chuyển giao (Transfer Learning)",
+   "Kiểm định giả thuyết (Hypothesis Testing) và Ước lượng Bayes (Bayesian Estimation)"
+  ]
+ },
+ {
+  "id": "r-m4-037",
+  "q": "Vấn đề 'Lời nguyền chiều dữ liệu' (Curse of Dimensionality) xảy ra do nguyên nhân nào?",
+  "correct": "Số lượng mẫu huấn luyện cần thiết tăng theo cấp số nhân với số chiều, khiến quá nhiều đặc trưng dẫn đến hiệu suất mô hình kém đi",
+  "wrong": [
+   "Số lượng cụm K tăng quá nhanh làm cho thuật toán phân cụm không thể hội tụ",
+   "Dữ liệu bị trùng lặp quá nhiều khiến trọng số mô hình bị thiên lệch",
+   "Khoảng cách Euclidean giữa các điểm luôn hội tụ về giá trị 0"
+  ]
+ },
+ {
+  "id": "r-m4-038",
+  "q": "Thuật toán nào được tài liệu nhấn mạnh với công dụng giúp giảm chiều dữ liệu (Dimension Reduction)?",
+  "correct": "PCA (Principal Component Analysis)",
+  "wrong": [
+   "K-Means",
+   "DBSCAN",
+   "AdaBoost"
+  ]
+ },
+ {
+  "id": "r-m4-039",
+  "q": "Trong thuật toán K-Means, vị trí của tâm cụm (centroid) được cập nhật lại ở mỗi bước lặp bằng cách nào?",
+  "correct": "Lấy trung bình tọa độ của tất cả các điểm dữ liệu trong cụm đó",
+  "wrong": [
+   "Chọn ngẫu nhiên một điểm dữ liệu bất kỳ nằm trong cụm làm tâm mới",
+   "Tính trung vị khoảng cách Manhattan từ các điểm tới gốc tọa độ",
+   "Tìm điểm có mật độ lân cận lớn hơn tham số MinPts trong bán kính Epsilon"
+  ]
+ },
+ {
+  "id": "r-m4-040",
+  "q": "Cải tiến của phương pháp khởi tạo K-Means++ so với K-Means truyền thống mang lại lợi ích gì?",
+  "correct": "Khởi tạo tâm cụm thông minh hơn giúp thuật toán hội tụ nhanh hơn và tránh các nghiệm tối ưu cục bộ kém",
+  "wrong": [
+   "Tự động tìm ra số lượng cụm K tối ưu mà không cần người dùng chỉ định",
+   "Cho phép thuật toán xử lý tốt các cụm có hình dạng bất kỳ không phải hình cầu",
+   "Loại bỏ hoàn toàn các điểm dữ liệu ngoại lai ra khỏi quá trình tính toán"
+  ]
+ },
+ {
+  "id": "r-m4-041",
+  "q": "Phương pháp Điểm khuỷu tay (Elbow Method) dùng để xác định số lượng cụm K tối ưu bằng cách nào?",
+  "correct": "Vẽ biểu đồ giá trị Inertia theo K và chọn điểm mà tại đó tốc độ giảm của Inertia chậm lại rõ rệt",
+  "wrong": [
+   "Vẽ biểu đồ ROC và chọn điểm có diện tích dưới đường cong AUC lớn nhất",
+   "Cắt ngang qua đường thẳng đứng dài nhất trên biểu đồ phân cấp Dendrogram",
+   "Tìm giá trị K tại đó toàn bộ dữ liệu có nhãn phân loại chính xác 100%"
+  ]
+ },
+ {
+  "id": "r-m4-042",
+  "q": "Chỉ số Inertia (SSE) trong thuật toán K-Means được định nghĩa như thế nào?",
+  "correct": "Tổng bình phương khoảng cách từ các điểm đến tâm cụm của chúng",
+  "wrong": [
+   "Trung bình bình phương khoảng cách giữa các cặp tâm cụm với nhau",
+   "Khoảng cách Euclidean lớn nhất giữa hai điểm bất kỳ trong cùng một cụm",
+   "Tỷ lệ giữa phương sai nội cụm và phương sai giữa các cụm"
+  ]
+ },
+ {
+  "id": "r-m4-043",
+  "q": "Khi số lượng cụm K tăng lên, giá trị của chỉ số Inertia trong K-Means sẽ biến thiên như thế nào?",
+  "correct": "Inertia luôn luôn giảm khi tăng K",
+  "wrong": [
+   "Inertia luôn luôn tăng khi tăng K",
+   "Inertia giữ nguyên không đổi với mọi giá trị của K",
+   "Inertia chỉ giảm khi K là số chẵn và tăng khi K là số lẻ"
+  ]
+ },
+ {
+  "id": "r-m4-044",
+  "q": "Ứng dụng nào sau đây của kỹ thuật phân cụm giúp doanh nghiệp tối ưu hóa các chiến dịch tiếp thị?",
+  "correct": "Phân khúc khách hàng theo hành vi mua sắm và nhân khẩu học",
+  "wrong": [
+   "Dự đoán giá trị doanh thu chứng khoán trong tương lai bằng hồi quy",
+   "Tự động điền dữ liệu thiếu bằng phương pháp gán nhãn Masking",
+   "Phát hiện lỗi sai lầm loại I trong quy trình kiểm định giả thuyết"
+  ]
+ },
+ {
+  "id": "r-m4-045",
+  "q": "Thuật toán phân cụm hỗ trợ bài toán Phát hiện bất thường (Anomaly Detection) dựa trên cơ chế nào?",
+  "correct": "Xác định các điểm dữ liệu nằm cô lập, không thuộc về cụm nào một cách rõ rệt",
+  "wrong": [
+   "Xác định các điểm dữ liệu nằm sát trung tâm của cụm có mật độ cao nhất",
+   "Đếm số lượng điểm rơi vào các nút lá có độ vẩn đục Entropy bằng 0",
+   "Tìm kiếm các biến có hệ số hồi quy bị triệt tiêu về 0 bởi LASSO"
+  ]
+ },
+ {
+  "id": "r-m4-046",
+  "q": "Trong xử lý hình ảnh, kỹ thuật phân cụm được ứng dụng vào bài toán Nén hình ảnh (Image Compression) như thế nào?",
+  "correct": "Giảm số lượng màu sắc hoặc độ phân giải nhưng vẫn giữ được nội dung chính của bức ảnh",
+  "wrong": [
+   "Chuyển đổi hình ảnh màu thành ảnh đen trắng nhị phân 0 và 1",
+   "Tăng gấp đôi độ phân giải của bức ảnh bằng phép nội suy điểm ảnh",
+   "Tự động xóa bỏ hoàn toàn nền phía sau của vật thể chính trong ảnh"
+  ]
+ },
+ {
+  "id": "r-m4-047",
+  "q": "Trong thư viện scikit-learn, thuộc tính nào của đối tượng `KMeans` sau khi huấn luyện lưu trữ giá trị Inertia (tổng bình phương khoảng cách tới tâm cụm)?",
+  "correct": "`kmeans.inertia_`",
+  "wrong": [
+   "`kmeans.cluster_centers_`",
+   "`kmeans.labels_`",
+   "`kmeans.distortion_`"
+  ]
+ },
+ {
+  "id": "r-m4-048",
+  "q": "Để truy xuất tọa độ vị trí của các tâm cụm sau khi mô hình `KMeans` hoàn tất huấn luyện, ta sử dụng thuộc tính nào?",
+  "correct": "`kmeans.cluster_centers_`",
+  "wrong": [
+   "`kmeans.inertia_`",
+   "`kmeans.centroids_`",
+   "`kmeans.centers_`"
+  ]
+ },
+ {
+  "id": "r-m4-049",
+  "q": "Phương thức nào của `KMeans` vừa thực hiện huấn luyện mô hình vừa trả về trực tiếp nhãn cụm dự đoán cho tập dữ liệu đầu vào?",
+  "correct": "`kmeans.fit_predict(X)`",
+  "wrong": [
+   "`kmeans.transform(X)`",
+   "`kmeans.score(X)`",
+   "`kmeans.fit_transform(X)`"
+  ]
+ },
+ {
+  "id": "r-m4-050",
+  "q": "Đặc điểm của Khoảng cách Euclid (Euclidean / L2 Distance) là gì?",
+  "correct": "Tính đường thẳng ngắn nhất giữa hai điểm, phù hợp cho dữ liệu tọa độ nhưng nhạy cảm với lời nguyền chiều dữ liệu",
+  "wrong": [
+   "Tính tổng chênh lệch tuyệt đối giữa các tọa độ và không bị ảnh hưởng bởi số chiều",
+   "Đo góc giữa hai vectơ và hoàn toàn không bị ảnh hưởng bởi độ lớn (scaling)",
+   "Đo tỷ lệ giữa phần tử chung trên tổng số phần tử độc nhất của hai tập hợp"
+  ]
+ },
+ {
+  "id": "r-m4-051",
+  "q": "Khoảng cách Manhattan (L1 / City Block) thường được ưu tiên sử dụng trong trường hợp nào?",
+  "correct": "Khi các đặc trưng không có cùng đơn vị đo hoặc dữ liệu di chuyển trong mạng lưới ô bàn cờ",
+  "wrong": [
+   "Khi cần đo mức độ tương đồng giữa các tài liệu văn bản dài",
+   "Khi dữ liệu là các tập hợp nhị phân cần tính tỷ lệ Intersection over Union",
+   "Khi cần tìm các cụm có hình dạng phức tạp lồi lõm bất kỳ"
+  ]
+ }
+]

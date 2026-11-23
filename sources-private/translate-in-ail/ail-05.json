@@ -1,0 +1,202 @@
+[
+ {
+  "id": 87,
+  "question": "What is log transformation commonly used for?",
+  "options": [
+   "Handling missing values in numeric features",
+   "Reducing the impact of outliers in skewed distributions",
+   "Converting categorical features into numeric features",
+   "Converting numerical features into categorical features"
+  ]
+ },
+ {
+  "id": 88,
+  "question": "What is the major purpose of distance metrics in clustering?",
+  "options": [
+   "To measure the physical distance between data points",
+   "To quantify the similarity or dissimilarity between data points",
+   "To determine the direction of data points",
+   "To classify data points into predefined clusters"
+  ]
+ },
+ {
+  "id": 89,
+  "question": "What is the main condition to use stacking as ensemble method?",
+  "options": [
+   "Models need to be parametric",
+   "Models need to be nonparametric",
+   "Models need to output residual values for each class",
+   "Models need to output predicted probabilities"
+  ]
+ },
+ {
+  "id": 90,
+  "question": "What is a hyperplane in the context of SVM?",
+  "options": [
+   "A plane that separates the data into two classes",
+   "A line that connects support vectors",
+   "A subspace of lower dimensionality",
+   "The axis of the highest variance in the data"
+  ]
+ },
+ {
+  "id": 91,
+  "question": "What is the role of the regularization parameter in the regularization process?",
+  "options": [
+   "It controls the overall strength of regularization",
+   "It sets the learning rate for the optimization algorithm",
+   "It defines the number of iterations in model training",
+   "It has no impact on regularization"
+  ]
+ },
+ {
+  "id": 92,
+  "question": "What is the purpose of point estimation in statistics?",
+  "options": [
+   "To estimate a range of values for a parameter",
+   "To summarize the central tendency of a dataset",
+   "To provide a single value as the best guess for a parameter",
+   "To assess the variability of a dataset"
+  ]
+ },
+ {
+  "id": 93,
+  "question": "What is the main objective of using ensemble methods such as bagging and boosting, in the case of imbalanced classes?",
+  "options": [
+   "To decrease the model's accuracy",
+   "To increase the model's complexity",
+   "To improve the model's generalization and handling of imbalanced data",
+   "To reduce the impact of the majority class"
+  ]
+ },
+ {
+  "id": 95,
+  "question": "What is one of the real-world solutions to fix the problems of the curse dimensionality?",
+  "options": [
+   "Increase the size of the data set",
+   "Use more computational power",
+   "Reduce the dimension of the data set.",
+   "Balance the classes of a data set"
+  ]
+ },
+ {
+  "id": 97,
+  "question": "What is artificial intelligence?",
+  "options": [
+   "A subset of deep learning.",
+   "Any program that can sense, reason, act, and adapt.",
+   "A subset of machine learning",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 98,
+  "question": "What is the main goal of unsupervised learning?",
+  "options": [
+   "Predicting a target variable",
+   "Classifying data into predefined categories",
+   "Discovering patterns and structures in data",
+   "Evaluating model accuracy"
+  ]
+ },
+ {
+  "id": 99,
+  "question": "What is the purpose of using bootstrapping in the Bagging algorithm?",
+  "options": [
+   "To reduce overfitting",
+   "To create diverse subsets of the dataset",
+   "To increase the number of features",
+   "To speed up the training process"
+  ]
+ },
+ {
+  "id": 100,
+  "question": "What are the Weaknesses of the Mean shift method?",
+  "options": [
+   "Result depends on window size (bandwidth)",
+   "Selection of window size is not easy",
+   "Does not assume number or shape of clusters",
+   "Robust to outliers"
+  ]
+ },
+ {
+  "id": 101,
+  "question": "What does the test set represent in machine learning?",
+  "options": [
+   "The part of the data used for model training",
+   "A set of examples the model has already seen during training",
+   "New, unseen data the model has not encountered during training",
+   "A set of data reserved for validation purposes"
+  ]
+ },
+ {
+  "id": 102,
+  "question": "What are the strengths of the Mean shift algorithm?",
+  "options": [
+   "Model-free: does not assume number or shape of clusters",
+   "Can use just one parameter: window size (bandwidth)",
+   "Robust to outliers",
+   "All of these"
+  ]
+ },
+ {
+  "id": 103,
+  "question": "What are \"core points\" in the DBSCAN algorithm?",
+  "options": [
+   "Core points are outliers that do not belong to any cluster",
+   "Core points are data points that has at least a minimum number of other points (minPts) within a specified distance (epsilon) from it",
+   "Core points are data points that are isolated from the rest of the dataset",
+   "Core points are centroids of the clusters identified by DBSCAN"
+  ]
+ },
+ {
+  "id": 105,
+  "question": "What are polynomial features?",
+  "options": [
+   "They are higher order relationships in the data.",
+   "They are logistic regression coefficients.",
+   "They are lower order relationships in the data.",
+   "They are represented by linear relationships in the data."
+  ]
+ },
+ {
+  "id": 106,
+  "question": "What are the two main data problems companies face when getting started with artificial intelligence/machine learning?",
+  "options": [
+   "Data sampling and categorization",
+   "Outliers and duplicated data",
+   "Lack of relevant data and bad data",
+   "Lack of training and expertise"
+  ]
+ },
+ {
+  "id": 107,
+  "question": "What does the hyperparameter \"alpha\" control in Elastic Net regularization?",
+  "options": [
+   "Overall strength of regularization",
+   "Balance between L1 and L2 penalties",
+   "Learning rate of the optimization algorithm",
+   "Number of iterations in model training"
+  ]
+ },
+ {
+  "id": 108,
+  "question": "What does the term \"precision\" measure in the context of classification metrics?",
+  "options": [
+   "The ability to correctly identify positive instances",
+   "The ability to correctly identify negative instances",
+   "The proportion of actual positive instances correctly identified",
+   "The trade-off between precision and recall"
+  ]
+ },
+ {
+  "id": 109,
+  "question": "Which of the following is an example of feature engineering?",
+  "options": [
+   "Importing libraries in Python",
+   "Standardizing numeric features",
+   "Creating a new feature based on existing ones",
+   "All of these"
+  ]
+ }
+]

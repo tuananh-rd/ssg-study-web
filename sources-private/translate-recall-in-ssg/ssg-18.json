@@ -1,0 +1,252 @@
+[
+ {
+  "id": "k-020",
+  "q": "Khi self-orientation TĂNG thì trustworthiness thay đổi thế nào?",
+  "correct": "Giảm",
+  "wrong": [
+   "Tăng",
+   "Không đổi",
+   "Chỉ tăng khi reliability cũng tăng"
+  ]
+ },
+ {
+  "id": "k-021",
+  "q": "“Bạn có thực hiện cam kết ổn định, đúng hạn không” là thành phần nào của Trust Equation?",
+  "correct": "Reliability",
+  "wrong": [
+   "Credibility",
+   "Intimacy",
+   "Self-orientation"
+  ]
+ },
+ {
+  "id": "k-022",
+  "q": "“Người khác có cảm thấy an toàn khi chia sẻ với bạn không” là thành phần nào?",
+  "correct": "Intimacy",
+  "wrong": [
+   "Credibility",
+   "Reliability",
+   "Self-orientation"
+  ]
+ },
+ {
+  "id": "k-023",
+  "q": "“Bạn nói gì, biết gì; mức chính xác và chuyên môn” là thành phần nào?",
+  "correct": "Credibility",
+  "wrong": [
+   "Reliability",
+   "Intimacy",
+   "Self-orientation"
+  ]
+ },
+ {
+  "id": "k-024",
+  "q": "Psychological safety (an toàn tâm lý) là gì?",
+  "correct": "Niềm tin chung rằng team an toàn để nói ý kiến, hỏi, nhận sai mà không bị chế giễu",
+  "wrong": [
+   "Niềm tin vào một cá nhân, dựa trên credibility, reliability và intimacy",
+   "Cảm giác yên tâm về việc làm, thu nhập và phúc lợi khi tham gia team",
+   "Quy định bảo mật thông tin nội bộ mà mọi thành viên phải tuân thủ"
+  ]
+ },
+ {
+  "id": "k-025",
+  "q": "Thứ tự 4 tầng của psychological safety là gì?",
+  "correct": "Inclusion → Learner → Contributor → Challenger",
+  "wrong": [
+   "Learner → Inclusion → Contributor → Challenger",
+   "Inclusion → Contributor → Learner → Challenger",
+   "Contributor → Learner → Inclusion → Challenger"
+  ]
+ },
+ {
+  "id": "k-026",
+  "q": "Một thành viên dám chất vấn cách làm hiện tại của nhóm. Đó là tầng an toàn tâm lý nào?",
+  "correct": "Challenger safety",
+  "wrong": [
+   "Contributor safety",
+   "Learner safety",
+   "Inclusion safety"
+  ]
+ },
+ {
+  "id": "k-027",
+  "q": "Một thành viên dám hỏi khi chưa hiểu và không sợ mắc lỗi. Đó là tầng nào?",
+  "correct": "Learner safety",
+  "wrong": [
+   "Inclusion safety",
+   "Contributor safety",
+   "Challenger safety"
+  ]
+ },
+ {
+  "id": "k-028",
+  "q": "Hành động nào giúp TẠO an toàn tâm lý?",
+  "correct": "Không đổ lỗi; hỏi “lần sau chúng ta cải thiện thế nào?”",
+  "wrong": [
+   "Chỉ để người giỏi nhất phát biểu",
+   "Phê bình công khai người mắc lỗi để cả nhóm rút kinh nghiệm",
+   "Mặc định tin nhắn khó hiểu là có ý xấu"
+  ]
+ },
+ {
+  "id": "k-029",
+  "q": "Thách thức lớn nhất của người quản lý mới là gì?",
+  "correct": "Chuyển từ tự làm tốt sang giúp người khác làm tốt",
+  "wrong": [
+   "Học thêm chuyên môn kỹ thuật",
+   "Làm thay phần việc khó của nhân viên",
+   "Chỉ cần quản lý cấp dưới trực tiếp"
+  ]
+ },
+ {
+  "id": "k-030",
+  "q": "“Lãnh đạo chỉ đặt định hướng lớn, team tự điều hành hằng ngày” là mô hình nào?",
+  "correct": "Self-managing team",
+  "wrong": [
+   "Manager-led team",
+   "Cross-functional team",
+   "Virtual team"
+  ]
+ },
+ {
+  "id": "k-031",
+  "q": "Virtual team cần đặc biệt chú trọng điều gì?",
+  "correct": "Giao tiếp, phối hợp và xây dựng niềm tin mạnh hơn",
+  "wrong": [
+   "Tích hợp nhiều chuyên môn khác nhau",
+   "Để lãnh đạo đặt toàn bộ mục tiêu và hoạt động",
+   "Giảm số lần trao đổi để tránh phiền"
+  ]
+ },
+ {
+  "id": "k-032",
+  "q": "Theo bài, phong cách lãnh đạo nào là tốt nhất?",
+  "correct": "Không có phong cách tốt cho mọi tình huống — phải điều chỉnh theo team",
+  "wrong": [
+   "Luôn độc đoán, vì lãnh đạo quyết định nhanh thì team hiệu quả hơn",
+   "Luôn trao toàn quyền cho team để tăng tối đa sở hữu và động lực",
+   "Luôn dùng manager-led vì mục tiêu và hoạt động được giao rõ ràng"
+  ]
+ },
+ {
+  "id": "k-033",
+  "q": "Self-awareness trong emotional intelligence là gì?",
+  "correct": "Nhận biết cảm xúc của chính mình",
+  "wrong": [
+   "Kiểm soát phản ứng của bản thân",
+   "Hiểu cảm xúc của người khác",
+   "Duy trì động lực"
+  ]
+ },
+ {
+  "id": "k-034",
+  "q": "“Hiểu được cảm xúc của người khác” là thành phần nào của EI?",
+  "correct": "Social awareness / empathy",
+  "wrong": [
+   "Self-awareness",
+   "Self-management",
+   "Self-motivation"
+  ]
+ },
+ {
+  "id": "k-035",
+  "q": "Biểu hiện nào cho thấy EI thấp?",
+  "correct": "Chậm deadline, nỗ lực thấp, rút khỏi nhóm",
+  "wrong": [
+   "Dùng I-statement khi bực bội",
+   "Tạm dừng rồi nói lại khi đã bình tĩnh",
+   "Xem vấn đề như thử thách có thể xử lý"
+  ]
+ },
+ {
+  "id": "k-036",
+  "q": "Câu nào là I-statement đúng cách?",
+  "correct": "Tôi thấy lo khi bản nháp nộp trễ vì nhóm khó kịp deadline. Mình chốt hạn sớm hơn được không?",
+  "wrong": [
+   "Bạn lúc nào cũng nộp trễ, lần này cả nhóm lại phải ngồi chờ bạn nữa rồi.",
+   "Bạn làm cả nhóm thất bại rồi, mình không muốn làm chung với bạn nữa.",
+   "Sao bạn vô trách nhiệm vậy? Lần sau bạn phải nộp đúng hạn cho mình."
+  ]
+ },
+ {
+  "id": "k-037",
+  "q": "Mẫu I-statement đúng thứ tự là gì?",
+  "correct": "“Tôi cảm thấy … khi … vì … Tôi mong chúng ta có thể …”",
+  "wrong": [
+   "“Khi … tôi mong … vì … tôi cảm thấy …”",
+   "“Bạn đã … nên tôi cảm thấy … Bạn phải …”",
+   "“Tôi mong … vì … khi … tôi cảm thấy …”"
+  ]
+ },
+ {
+  "id": "k-038",
+  "q": "Trước cuộc họp, nên giao những vai trò nào?",
+  "correct": "Facilitator, timekeeper, note-taker, presenter",
+  "wrong": [
+   "Leader, sponsor, auditor, guest",
+   "Chair, critic, devil’s advocate, observer",
+   "Manager, client, reviewer, secretary"
+  ]
+ },
+ {
+  "id": "k-039",
+  "q": "Người ghi lại biên bản (minutes) của cuộc họp đảm nhận vai trò nào?",
+  "correct": "Note-taker",
+  "wrong": [
+   "Facilitator",
+   "Timekeeper",
+   "Presenter"
+  ]
+ },
+ {
+  "id": "k-040",
+  "q": "Mục tiêu họp nào được viết đúng cách?",
+  "correct": "Chốt 3 nhiệm vụ và người phụ trách cho tuần tới",
+  "wrong": [
+   "Bàn về dự án và các vấn đề liên quan của nhóm",
+   "Gặp nhau trao đổi tình hình chung của mọi người",
+   "Cập nhật chung các việc đang làm trong tuần này"
+  ]
+ },
+ {
+  "id": "k-041",
+  "q": "Mỗi action item sau cuộc họp phải có đủ những gì?",
+  "correct": "Who – What – When",
+  "wrong": [
+   "Why – Where – How",
+   "Who – Why – Where",
+   "What – How – Cost"
+  ]
+ },
+ {
+  "id": "k-042",
+  "q": "Agenda nên được gửi khi nào?",
+  "correct": "Trước cuộc họp, kèm tài liệu",
+  "wrong": [
+   "Đầu buổi họp",
+   "Sau buổi họp, cùng minutes",
+   "Không cần gửi, chỉ cần nói miệng"
+  ]
+ },
+ {
+  "id": "k-043",
+  "q": "Việc nào thuộc giai đoạn SAU cuộc họp?",
+  "correct": "Chia sẻ minutes và theo dõi deadline",
+  "wrong": [
+   "Giao vai trò timekeeper",
+   "Gửi agenda cho người tham dự",
+   "Nhắc lại mục tiêu và agenda"
+  ]
+ },
+ {
+  "id": "k-044",
+  "q": "Quy trình giải quyết vấn đề 7 bước của Dewey theo đúng thứ tự là gì?",
+  "correct": "Define → Analyze → Establish criteria → Generate → Evaluate → Implement → Follow up",
+  "wrong": [
+   "Define → Generate → Analyze → Establish criteria → Evaluate → Implement → Follow up",
+   "Analyze → Define → Establish criteria → Generate → Evaluate → Implement → Follow up",
+   "Define → Analyze → Generate → Establish criteria → Evaluate → Implement → Follow up"
+  ]
+ }
+]

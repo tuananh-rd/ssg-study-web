@@ -1,0 +1,254 @@
+[
+  {
+    "ref": "4.2",
+    "q": "Mục tiêu cốt lõi của bài toán Phân đoạn ảnh (Image Segmentation) là gì?",
+    "correct": "Chia bức ảnh thành các vùng riêng biệt và gán nhãn cho từng pixel có cùng đặc trưng chung",
+    "wrong": [
+      "Tạo ra một khung hình ảnh có độ phân giải siêu cao từ các ảnh thành phần có vùng chồng lấn",
+      "Tìm kiếm ma trận biến đổi phối cảnh 3x3 để căn chỉnh ảnh chụp tài liệu về dạng chuẩn",
+      "Lọc bỏ hoàn toàn các thành phần tần số cao để làm mịn toàn bộ phông nền bức ảnh"
+    ],
+    "explain": "Phân đoạn ảnh là quá trình chia bức ảnh thành các vùng riêng biệt dựa trên các đặc trưng điểm ảnh (màu sắc, cường độ sáng, kết cấu) và gán nhãn cho từng pixel có cùng đặc trưng.",
+    "tip": "Segmentation = chia ảnh thành các vùng và gán nhãn cho từng pixel."
+  },
+  {
+    "ref": "4.2",
+    "q": "Vì sao kỹ thuật phân đoạn ảnh (Segmentation) đóng vai trò sinh tử trong chẩn đoán ung thư y tế hơn là phát hiện đối tượng (Object Detection)?",
+    "correct": "Giúp xác định hình dạng và đường viền chính xác của tế bào thay vì chỉ đóng khung bằng một hộp bao đơn thuần",
+    "wrong": [
+      "Cho phép trích xuất đặc trưng SIFT nhanh hơn gấp nhiều lần so với các mô hình mạng nơ-ron",
+      "Tự động phân tách các kênh màu YCbCr thành các thành phần tần số độc lập để nén ảnh",
+      "Triệt tiêu hoàn toàn hiện tượng blooming phát sinh từ cảm biến quang học CCD"
+    ],
+    "explain": "Trong y tế, phân đoạn giúp xác định hình dạng chính xác của các tế bào ung thư để đánh giá mức độ nghiêm trọng, điều mà các bounding boxes của Object Detection thông thường không làm được.",
+    "tip": "Ung thư y tế cần hình dạng/đường viền chính xác của tế bào -> cần Segmentation."
+  },
+  {
+    "ref": "4.2",
+    "q": "Điểm khác biệt quan trọng giữa Phân đoạn thực thể (Instance Segmentation) và Phân đoạn ngữ nghĩa (Semantic Segmentation) là gì?",
+    "correct": "Phân đoạn thực thể phân tách rõ ràng từng cá thể đối tượng độc lập trong cùng một lớp ngữ nghĩa",
+    "wrong": [
+      "Phân đoạn thực thể chỉ phân loại toàn bộ bức ảnh vào đúng một nhãn duy nhất mà không gán nhãn pixel",
+      "Phân đoạn thực thể chỉ áp dụng được trên ảnh đa phổ mà không hoạt động trên ảnh màu RGB thông thường",
+      "Phân đoạn thực thể không thể phân biệt được đối tượng thuộc lớp người và đối tượng thuộc lớp xe cộ"
+    ],
+    "explain": "Semantic Segmentation chỉ phân loại pixel thuộc lớp nào, còn Instance Segmentation vừa phân loại lớp vừa tách biệt rõ ràng từng cá thể thực thể khác nhau trong cùng một lớp.",
+    "tip": "Semantic: nhãn theo lớp; Instance: tách từng cá thể trong lớp."
+  },
+  {
+    "ref": "4.2",
+    "q": "Trong bài toán Phân đoạn ngữ nghĩa (Semantic Segmentation), mô hình thực hiện gán nhãn ở cấp độ nào?",
+    "correct": "Gán nhãn lớp đối tượng cho từng điểm ảnh (pixel-level)",
+    "wrong": [
+      "Gán nhãn phân loại cho toàn bộ bức ảnh (image-level)",
+      "Gán nhãn cho một hộp giới hạn hình chữ nhật (bounding-box level)",
+      "Gán nhãn cho từng chuỗi khung hình video liên tiếp (video-level)"
+    ],
+    "explain": "Semantic Segmentation phân loại từng điểm ảnh thuộc về lớp đối tượng nào (ví dụ: người, đường sá, bầu trời).",
+    "tip": "Semantic Segmentation = phân loại gán nhãn từng pixel."
+  },
+  {
+    "ref": "4.3",
+    "q": "Trong mô hình đường viền chủ động (Active Contours / Snakes), hai loại lực tác động chính lên đường cong biến dạng là gì?",
+    "correct": "Lực nội tại (internal forces) giữ mượt mà và lực ngoại tại (external forces) kéo về phía biên đối tượng",
+    "wrong": [
+      "Lực ly tâm của điểm ảnh và lực hấp dẫn của nguồn sáng môi trường",
+      "Lực ma sát bề mặt cảm biến và lực cản của hàm phân phối tích lũy CDF",
+      "Lực phân ngưỡng nhị phân và lực xoay theo góc pháp tuyến của biến đổi Hough"
+    ],
+    "explain": "Mô hình Snakes chuyển động dưới tác động của lực nội tại (internal forces - giữ cho đường cong mượt mà) và lực ngoại tại (external forces - kéo đường cong về phía biên cạnh đối tượng).",
+    "tip": "Snakes: Lực nội tại (internal) giữ mượt + Lực ngoại tại (external) kéo về biên."
+  },
+  {
+    "ref": "4.3",
+    "q": "Yếu tố nào sau đây có ảnh hưởng mang tính quyết định nhất đến độ chính xác của mô hình Snakes truyền thống?",
+    "correct": "Số lượng và vị trí của các điểm khởi tạo ban đầu tạo thành vòng khép kín quanh đối tượng",
+    "wrong": [
+      "Tỷ số tín hiệu cực đại trên nhiễu PSNR của thuật toán nén ảnh JPEG",
+      "Bậc tự do của ma trận biến đổi phối cảnh Projective 3x3",
+      "Tần số quét của cảm biến quang học kỹ thuật số CMOS"
+    ],
+    "explain": "Người dùng thiết lập các điểm ban đầu để tạo thành vòng khép kín quanh đối tượng; số lượng và vị trí điểm khởi tạo quyết định lớn đến độ chính xác của thuật toán.",
+    "tip": "Độ chính xác của Snakes phụ thuộc lớn vào việc khởi tạo điểm ban đầu."
+  },
+  {
+    "ref": "4.3",
+    "q": "Kỹ thuật Kéo thông minh (Intelligent Scissors) hoạt động dựa trên cơ chế tương tác nào giữa người dùng và thuật toán?",
+    "correct": "Khi người dùng kéo đường vẽ thô, thuật toán tự động bám chặt và uốn lượn theo đường biên có độ tương phản cao",
+    "wrong": [
+      "Người dùng chỉ định trước K tâm cụm và thuật toán tự động chia ảnh thành 4 vùng con theo Quadtree",
+      "Thuật toán tự động tìm kiếm các điểm cực đại trong không gian tham số Hough mà không cần người dùng thao tác",
+      "Người dùng xoay ma trận ảnh một góc 45 độ để thuật toán tìm đường biên mỏng bằng bộ lọc Canny"
+    ],
+    "explain": "Khi người dùng kéo một đường thô (màu trắng), thuật toán Intelligent Scissors tự động bám chặt và uốn lượn theo biên có độ tương phản cao trong thời gian thực.",
+    "tip": "Intelligent Scissors: người dùng vẽ thô, thuật toán tự bám biên tương phản cao."
+  },
+  {
+    "ref": "4.3",
+    "q": "Thuật toán Dynamic Snakes sử dụng công cụ nào để theo dõi (track) đường viền đối tượng chuyển động qua các khung hình liên tiếp?",
+    "correct": "Bộ lọc Kalman hoặc thuật toán Condensation dựa trên kỹ thuật lấy mẫu theo hệ số (factored sampling)",
+    "wrong": [
+      "Biến đổi Cosine rời rạc DCT kết hợp với bộ lọc trung vị cửa sổ 5x5",
+      "Phân tích suy biến ma trận SVD kết hợp với toán tử tích chập Sobel",
+      "Bảng băm đa chiều và cấu trúc cây k-d trees phân nhánh nhị phân"
+    ],
+    "explain": "Dynamic Snakes & CONDENSATION sử dụng bộ lọc Kalman hoặc thuật toán Condensation (dựa trên factored sampling) để theo dõi đường viền chuyển động qua các chuỗi khung hình.",
+    "tip": "Dynamic Snakes: dùng Kalman filter hoặc CONDENSATION để tracking."
+  },
+  {
+    "ref": "4.3",
+    "q": "Ưu điểm vượt trội của phương pháp Tập mức (Level Sets) so với mô hình Snakes thông thường là gì?",
+    "correct": "Xử lý cực tốt các thay đổi cấu trúc hình học phức tạp như chia tách hoặc hợp nhất vùng",
+    "wrong": [
+      "Hoàn toàn không cần sử dụng hàm toán học bậc cao để biểu diễn đường cong",
+      "Luôn đảm bảo tốc độ tính toán nhanh hơn gấp mười lần so với phân ngưỡng nhị phân",
+      "Không phụ thuộc vào bất kỳ hàm chi phí năng lượng nào khi tối ưu hóa"
+    ],
+    "explain": "Level Sets biểu diễn đường cong 2D dưới dạng zero level set của một hàm mặt phẳng bậc cao hơn, xử lý cực tốt các thay đổi cấu trúc hình học phức tạp (chia tách hoặc hợp nhất vùng).",
+    "tip": "Level Sets: xử lý tốt chia tách và hợp nhất vùng (topology changes)."
+  },
+  {
+    "ref": "4.4",
+    "q": "Thuật toán phân đoạn Chia và Trộn (Split and Merge) dựa trên cấu trúc dữ liệu phân cấp nào?",
+    "correct": "Cây tứ phân (Quadtree)",
+    "wrong": [
+      "Cây nhị phân k-d (k-d Tree)",
+      "Danh sách liên kết đơn",
+      "Đồ thị phẳng hai phía (Bipartite Graph)"
+    ],
+    "explain": "Thuật toán Split and Merge dựa trên cấu trúc phân cấp cây tứ phân (Quadtree) để chia và trộn các vùng ảnh.",
+    "tip": "Split and Merge gắn liền với cấu trúc Quadtree (cây tứ phân)."
+  },
+  {
+    "ref": "4.4",
+    "q": "Trong bước Chia (Split) của thuật toán Split and Merge, điều kiện nào kích hoạt việc chia một vùng ảnh thành 4 vùng con bằng nhau?",
+    "correct": "Khi vùng ảnh đó không thỏa mãn tiêu chí đồng nhất (ví dụ phương sai cường độ sáng lớn hơn ngưỡng)",
+    "wrong": [
+      "Khi diện tích của vùng ảnh vượt quá một nửa kích thước toàn bộ ma trận ảnh ban đầu",
+      "Khi tất cả các pixel trong vùng đều có cùng một giá trị mức xám duy nhất",
+      "Khi vùng ảnh chứa ít nhất một điểm góc được phát hiện bởi thuật toán Harris"
+    ],
+    "explain": "Nếu một vùng không thỏa mãn tiêu chí kiểm tra tính đồng nhất (homogeneity criterion, ví dụ phương sai lớn hơn ngưỡng), nó sẽ bị chia thành 4 vùng con bằng nhau.",
+    "tip": "Split: không đồng nhất (homogeneity) -> chia thành 4 vùng con."
+  },
+  {
+    "ref": "4.4",
+    "q": "Mục đích chính của bước Trộn (Merge) trong thuật toán Split and Merge là gì?",
+    "correct": "Kết hợp các vùng lân cận có thuộc tính tương đồng để tránh việc ảnh bị phân rã thành quá nhiều mảnh nhỏ",
+    "wrong": [
+      "Tự động lật ngược mặt nạ lọc để thực hiện phép tích chập không gian",
+      "Gán lại nhãn của tất cả các pixel về hai giá trị nhị phân duy nhất 0 và 255",
+      "Tính toán ma trận biến đổi phối cảnh giữa các vùng ảnh độc lập"
+    ],
+    "explain": "Sau khi chia, các vùng lân cận có thuộc tính tương đồng hoặc thỏa mãn tiêu chí đồng nhất khi kết hợp lại sẽ được trộn vào nhau để tránh ảnh bị phân rã thành quá nhiều mảnh nhỏ.",
+    "tip": "Merge: gộp các vùng lân cận tương đồng để ảnh không bị vụn vặt."
+  },
+  {
+    "ref": "4.4",
+    "q": "Trong thuật toán Watershed (Phân đoạn lưu vực), cường độ sáng của các pixel được mô phỏng tương đương với khái niệm địa hình nào?",
+    "correct": "Độ cao địa hình, trong đó pixel sáng là đỉnh núi và pixel tối là thung lũng",
+    "wrong": [
+      "Hướng gió thổi, trong đó pixel sáng là hướng gió thuận và pixel tối là hướng gió nghịch",
+      "Độ sâu của dòng chảy ngầm, trong đó pixel sáng là đáy sông và pixel tối là mặt nước",
+      "Khoảng cách Euclid từ tâm bức ảnh đến các biên giới hạn địa hình"
+    ],
+    "explain": "Watershed xem cường độ sáng như độ cao địa hình: pixel sáng là đỉnh núi/đường phân thủy (ridges), pixel tối là thung lũng/lưu vực thoát nước (drainage basins).",
+    "tip": "Watershed: cường độ sáng = độ cao; sáng = đỉnh núi, tối = thung lũng."
+  },
+  {
+    "ref": "4.4",
+    "q": "Trong cơ chế hoạt động của thuật toán Watershed, đường đập (watershed line) phân chia ranh giới đối tượng được dựng lên tại thời điểm nào?",
+    "correct": "Khi dòng nước ngập dâng lên từ các lưu vực khác nhau chuẩn bị tràn vào nhau",
+    "wrong": [
+      "Khi toàn bộ các pixel trong ảnh đều đạt giá trị cường độ sáng tối đa 255",
+      "Khi hàm phân phối tích lũy CDF của vùng lân cận đạt giá trị trung vị bằng 0",
+      "Khi gradient của ảnh giảm xuống bằng 0 tại tất cả các điểm yên ngựa"
+    ],
+    "explain": "Thuật toán thực hiện 'ngập nước' từ các thung lũng, khi nước từ các lưu vực khác nhau chuẩn bị tràn vào nhau, một đường đập (watershed line) sẽ được dựng lên để phân đoạn ranh giới.",
+    "tip": "Watershed line được dựng khi nước từ 2 lưu vực chuẩn bị tràn vào nhau."
+  },
+  {
+    "ref": "4.5",
+    "q": "Thuật toán gom cụm K-Means phân đoạn ảnh dựa trên tiêu chí đo lường nào giữa các điểm ảnh?",
+    "correct": "Khoảng cách trong không gian màu giữa vector màu của điểm ảnh và các tâm cụm (centroids)",
+    "wrong": [
+      "Khoảng cách địa lý thực tế giữa hai máy ảnh chụp tại các góc nhìn khác nhau",
+      "Độ lệch góc quay trong ma trận biến đổi tọa độ đồng nhất 3 chiều",
+      "Tần số rung động của màn trập máy ảnh khi ghi nhận dữ liệu"
+    ],
+    "explain": "K-Means gom cụm dữ liệu điểm ảnh dựa trên khoảng cách không gian màu (ví dụ vector 3D gồm R, G, B) tới K tâm cụm chỉ định trước.",
+    "tip": "K-Means phân đoạn màu: đo khoảng cách vector RGB tới centroid gần nhất."
+  },
+  {
+    "ref": "4.5",
+    "q": "Thứ tự các bước chuẩn trong một chu trình lặp của thuật toán K-Means là gì?",
+    "correct": "Gán mỗi điểm ảnh vào tâm cụm gần nhất → Cập nhật vị trí tâm cụm bằng trung bình cộng các điểm trong cụm",
+    "wrong": [
+      "Cập nhật vị trí tâm cụm bằng trung vị → Chia cụm thành 4 vùng con theo cấu trúc Quadtree",
+      "Gán điểm ảnh vào cụm ngẫu nhiên → Tính toán ma trận biến đổi Affine giữa các tâm cụm",
+      "Tìm đỉnh mật độ xác suất cực đại → Dịch chuyển cửa sổ tìm kiếm theo băng thông"
+    ],
+    "explain": "Chu trình lặp của K-Means gồm: Bước Gán (Assign - gán pixel vào tâm cụm gần nhất) và Bước Cập nhật (Update - tính lại tâm cụm bằng trung bình cộng tọa độ các điểm trong cụm).",
+    "tip": "K-Means lặp 2 bước: Assign (gán cụm) -> Update (tính lại mean)."
+  },
+  {
+    "ref": "4.5",
+    "q": "Mô hình hỗn hợp Gaussian (Gaussian Mixture Model - GMM) mở rộng thuật toán K-Means dựa trên giả định toán học nào?",
+    "correct": "Dữ liệu không gian màu được tạo ra từ một tập hợp các phân phối chuẩn Gaussian khác nhau",
+    "wrong": [
+      "Dữ liệu điểm ảnh luôn tuân theo phân phối đều trên dải tần số từ 0 đến 255",
+      "Mọi cụm dữ liệu bắt buộc phải có cùng một phương sai và kích thước đối xứng",
+      "Toàn bộ ảnh có thể phân tách thành chuỗi các hàm tuần hoàn sin và cosin độc lập"
+    ],
+    "explain": "GMM là mô hình mở rộng mang tính xác suất của K-Means, giả định dữ liệu không gian màu được tạo ra từ một tập hợp các phân phối chuẩn Gaussian khác nhau.",
+    "tip": "GMM: mô hình xác suất giả định dữ liệu sinh từ tổ hợp các Gaussian."
+  },
+  {
+    "ref": "4.5",
+    "q": "Điểm khác biệt căn bản nhất về số lượng cụm K giữa thuật toán K-Means và thuật toán Mean Shift là gì?",
+    "correct": "K-Means bắt buộc phải chỉ định trước số cụm K, trong khi Mean Shift tự động xác định số cụm dựa trên mật độ dữ liệu",
+    "wrong": [
+      "K-Means tự động dò tìm số cụm K, trong khi Mean Shift chỉ hoạt động khi số cụm K bằng 2",
+      "K-Means yêu cầu số cụm K phải là lũy thừa của 4, trong khi Mean Shift yêu cầu K là số nguyên tố",
+      "Cả hai thuật toán đều không thể kiểm soát được số lượng cụm sinh ra sau phân đoạn"
+    ],
+    "explain": "K-Means bắt buộc phải khai báo trước số lượng cụm K, trong khi Mean Shift là thuật toán phi tham số tự động tìm kiếm các mốt/đỉnh mật độ dữ liệu thực tế.",
+    "tip": "K-Means: cần khai báo trước K; Mean Shift: tự động tìm số cụm."
+  },
+  {
+    "ref": "4.5",
+    "q": "Trong thuật toán Mean Shift, tham số quan trọng nhất mà người dùng cần thiết lập là gì?",
+    "correct": "Băng thông hạt nhân hay kích thước cửa sổ tìm kiếm (Bandwidth)",
+    "wrong": [
+      "Số lượng cụm K cố định ban đầu",
+      "Tỷ số nén ảnh cực đại PSNR",
+      "Ngưỡng phân tách nhị phân T của thuật toán Otsu"
+    ],
+    "explain": "Tham số chính cần chọn trong thuật toán Mean Shift là kích thước cửa sổ tìm kiếm hay băng thông hạt nhân (Bandwidth).",
+    "tip": "Mean Shift: tham số mấu chốt là Bandwidth (băng thông cửa sổ)."
+  },
+  {
+    "ref": "4.5",
+    "q": "So với K-Means, hình dáng của các vùng phân đoạn được tạo ra bởi thuật toán Mean Shift có đặc điểm gì?",
+    "correct": "Cực kỳ linh hoạt, có thể bám theo bất kỳ hình dạng vùng phức tạp bất kỳ nào",
+    "wrong": [
+      "Bắt buộc luôn có dạng hình cầu lồi đối xứng xung quanh tâm cụm",
+      "Luôn có dạng hình chữ nhật song song với các trục tọa độ ảnh",
+      "Chỉ tạo ra các đường thẳng phân tách mỏng có độ dày đúng một pixel"
+    ],
+    "explain": "K-Means có xu hướng tạo ra các vùng cụm hình cầu lồi, trong khi Mean Shift cực kỳ linh hoạt và có thể bám theo bất kỳ hình dạng vùng phức tạp nào.",
+    "tip": "K-Means: hình cầu lồi; Mean Shift: hình dạng tùy ý linh hoạt."
+  },
+  {
+    "ref": "4.5",
+    "q": "Khả năng chống chịu đối với các điểm nhiễu ngoại lai (outliers) của K-Means và Mean Shift khác nhau như thế nào?",
+    "correct": "K-Means dễ bị ảnh hưởng bởi outliers, trong khi Mean Shift rất bền vững (robust) trước các điểm ngoại lai",
+    "wrong": [
+      "K-Means hoàn toàn miễn nhiễm với outliers, trong khi Mean Shift bị sai lệch nặng nề",
+      "Cả hai thuật toán đều nhạy cảm như nhau đối với các điểm dữ liệu nằm xa tâm cụm",
+      "Outliers bị triệt tiêu hoàn toàn bởi bộ lọc Gaussian tích hợp sẵn trong cả hai thuật toán"
+    ],
+    "explain": "K-Means dễ bị ảnh hưởng nhiễu bởi các điểm ngoại lai (outliers), trong khi Mean Shift rất bền vững (robust) trước các điểm nhiễu ngoại lai.",
+    "tip": "Mean Shift bền vững (robust) với outliers hơn K-Means."
+  }
+]

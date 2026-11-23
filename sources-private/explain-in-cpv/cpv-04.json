@@ -1,0 +1,353 @@
+[
+ {
+  "id": 90,
+  "question": "What is the input for computer vision?",
+  "options": [
+   "Text",
+   "Audio",
+   "Video",
+   "Image"
+  ],
+  "correct": [
+   "Image"
+  ],
+  "slide_image": "cpv-slides-real/slide-110.png"
+ },
+ {
+  "id": 91,
+  "question": "What is a fundamental aspect of object tracking that involves assigning a distinct identifier to each detected object and subsequently monitoring their movements across consecutive video frames?",
+  "options": [
+   "Object classification",
+   "Trajectory prediction",
+   "Instance segmentation",
+   "ID assignment maintenance"
+  ],
+  "correct": [
+   "ID assignment maintenance"
+  ],
+  "slide_image": "cpv-slides-real/slide-111.png"
+ },
+ {
+  "id": 92,
+  "question": "What is the primary purpose of the Fourier transform in signal processing and image analysis?",
+  "options": [
+   "Frequency analysis",
+   "Noise reduction",
+   "Edge detection",
+   "Color correction"
+  ],
+  "correct": [
+   "Frequency analysis"
+  ],
+  "slide_image": "cpv-slides-real/slide-112.png"
+ },
+ {
+  "id": 93,
+  "question": "What is the primary cause of chromatic aberration in lenses?",
+  "options": [
+   "Dispersion of light",
+   "Lens curvature",
+   "Lens thickness",
+   "Lens material",
+   "None of the others"
+  ],
+  "correct": [
+   "Dispersion of light"
+  ],
+  "slide_image": "cpv-slides-real/slide-114.png"
+ },
+ {
+  "id": 94,
+  "question": "What is an advantage of utilizing a series of one-dimensional transforms over large, non-separable, two-dimensional filter kernels in image processing?",
+  "options": [
+   "Improved color accuracy",
+   "Enhanced detail preservation",
+   "Increased computational efficiency",
+   "Reduced memory requirements"
+  ],
+  "correct": [
+   "Increased computational efficiency"
+  ],
+  "slide_image": "cpv-slides-real/slide-115.png"
+ },
+ {
+  "id": 95,
+  "question": "What does K represent in the K-Means clustering algorithm?",
+  "options": [
+   "Number of dimensions",
+   "Number of data points",
+   "Number of clusters",
+   "Number of iterations"
+  ],
+  "correct": [
+   "Number of clusters"
+  ],
+  "slide_image": "cpv-slides-real/slide-116.png"
+ },
+ {
+  "id": 96,
+  "question": "What method is commonly employed to extract feature locations and descriptors in the feature-based matching stage of panorama recognition?",
+  "options": [
+   "Principal Component Analysis (PCA)",
+   "Histogram of Oriented Gradients (HOG)",
+   "Scale Invariant Feature Transform (SIFT)",
+   "Convolutional Neural Networks (CNN)"
+  ],
+  "correct": [
+   "Scale Invariant Feature Transform (SIFT)"
+  ],
+  "slide_image": "cpv-slides-real/slide-117.png"
+ },
+ {
+  "id": 97,
+  "question": "What methods can you use for Multiclass classification with no alteration",
+  "options": [
+   "KNN",
+   "Logistic Regression",
+   "SVM",
+   "Softmax"
+  ],
+  "correct": [
+   "KNN"
+  ],
+  "slide_image": "cpv-slides-real/slide-118.png"
+ },
+ {
+  "id": 98,
+  "question": "What initial step is crucial for the Hough Transform algorithm when recognizing complex lines in photographs?",
+  "options": [
+   "Color correction of the image",
+   "Application of texture mapping",
+   "Performing edge detection",
+   "Adjusting contrast levels"
+  ],
+  "correct": [
+   "Performing edge detection"
+  ],
+  "slide_image": "cpv-slides-real/slide-119.png"
+ },
+ {
+  "id": 99,
+  "question": "What type of features does Haar Cascade use for object detection?",
+  "options": [
+   "Line features",
+   "Color histograms",
+   "Texture features",
+   "Eigenfaces"
+  ],
+  "correct": [
+   "Line features"
+  ],
+  "slide_image": "cpv-slides-real/slide-120.png"
+ },
+ {
+  "id": 100,
+  "question": "What type of face recognition method involves the extraction of local features like eyes, nose, and mouth, followed by feeding their locations and statistics into a structural classifier?",
+  "options": [
+   "Holistic Matching Methods",
+   "Feature-based Methods",
+   "Eigenfaces",
+   "Linear Discriminant Analysis"
+  ],
+  "correct": [
+   "Feature-based Methods"
+  ],
+  "slide_image": "cpv-slides-real/slide-121.png"
+ },
+ {
+  "id": 101,
+  "question": "What aspect of the camera's operation is in charge of adjusting amplification and black level to correspond with incident light power to the image's dynamic range?",
+  "options": [
+   "Sensor noise",
+   "ADC resolution",
+   "Automatic Gain Control (AGC)",
+   "White balance"
+  ],
+  "correct": [
+   "Automatic Gain Control (AGC)"
+  ],
+  "slide_image": "cpv-slides-real/slide-122.png"
+ },
+ {
+  "id": 102,
+  "question": "What purpose is RANdom SAmple Consensus (RANSAC) primarily designed to address in parameter estimation?",
+  "options": [
+   "Overfitting",
+   "Outliers in the input data",
+   "Underfitting",
+   "Computational complexity"
+  ],
+  "correct": [
+   "Outliers in the input data"
+  ],
+  "slide_image": "cpv-slides-real/slide-123.png"
+ },
+ {
+  "id": 103,
+  "question": "What system does the digital camera use to perform the digitization of images?",
+  "options": [
+   "Sensor system",
+   "Number system",
+   "Logic system",
+   "Optical system"
+  ],
+  "correct": [
+   "Sensor system"
+  ],
+  "slide_image": "cpv-slides-real/slide-124.png"
+ },
+ {
+  "id": 104,
+  "question": "What issue is often associated with using the watershed algorithm on images with textured backgrounds?",
+  "options": [
+   "Over-segmentation",
+   "High-processing speed",
+   "Time constrains",
+   "Loss of color information"
+  ],
+  "correct": [
+   "Over-segmentation"
+  ],
+  "slide_image": "cpv-slides-real/slide-125.png"
+ },
+ {
+  "id": 105,
+  "question": "Which of the following is an application of computer vision?",
+  "options": [
+   "Security",
+   "Robotics",
+   "Medicine",
+   "All of above"
+  ],
+  "correct": [
+   "All of above"
+  ],
+  "slide_image": "cpv-slides-real/slide-126.png"
+ },
+ {
+  "id": 106,
+  "question": "Which of the following methods of traditional detection?",
+  "options": [
+   "YOLO",
+   "RCNN",
+   "Hog detector",
+   "Retina Net"
+  ],
+  "correct": [
+   "Hog detector"
+  ],
+  "slide_image": "cpv-slides-real/slide-127.png"
+ },
+ {
+  "id": 107,
+  "question": "Which of the following algorithms will distribute the intensity of an image across the entire intensity range?",
+  "options": [
+   "White patch",
+   "Gray world",
+   "Ground truth",
+   "Histogram equalization"
+  ],
+  "correct": [
+   "Histogram equalization"
+  ],
+  "slide_image": "cpv-slides-real/slide-128.png"
+ },
+ {
+  "id": 108,
+  "question": "Which of the following color is having the largest frequency in visible spectrum?",
+  "options": [
+   "Red",
+   "Blue",
+   "Violet",
+   "Green"
+  ],
+  "correct": [
+   "Violet"
+  ],
+  "slide_image": "cpv-slides-real/slide-129.png"
+ },
+ {
+  "id": 109,
+  "question": "Which of the following employs energy forces and constraints to separate the pixels of interest from the image?",
+  "options": [
+   "Active contours",
+   "Watershed",
+   "Graph-based segmentation",
+   "Region splitting"
+  ],
+  "correct": [
+   "Active contours"
+  ],
+  "slide_image": "cpv-slides-real/slide-130.png"
+ },
+ {
+  "id": 110,
+  "question": "Which of the following methods identifies edges in an image by zero-crossing technique?",
+  "options": [
+   "First derivative",
+   "Second derivative",
+   "Prewitt operator",
+   "Robert operator"
+  ],
+  "correct": [
+   "Second derivative"
+  ],
+  "slide_image": "cpv-slides-real/slide-131.png"
+ },
+ {
+  "id": 111,
+  "question": "Which of the following applications of RANSAC algorithm?",
+  "options": [
+   "Document processing",
+   "Medical applications",
+   "Creating panoramas image",
+   "All of the above"
+  ],
+  "correct": [
+   "All of the above"
+  ],
+  "slide_image": "cpv-slides-real/slide-132.png"
+ },
+ {
+  "id": 112,
+  "question": "Which of the following will segment an image based on gray-level similarity and texture similarity?",
+  "options": [
+   "Region splitting",
+   "Watershed",
+   "Graph-based segmentation",
+   "Probabilistic aggregation"
+  ],
+  "correct": [
+   "Graph-based segmentation"
+  ],
+  "slide_image": "cpv-slides-real/slide-133.png"
+ },
+ {
+  "id": 113,
+  "question": "Which of the following operators utilizes Laplacian of Gaussian?",
+  "options": [
+   "Prewitt operator",
+   "Canny operator",
+   "Sobel (3x3)",
+   "Sobel (5x5)"
+  ],
+  "correct": [
+   "Canny operator"
+  ],
+  "slide_image": "cpv-slides-real/slide-134.png"
+ },
+ {
+  "id": 114,
+  "question": "Which of the following is not an Image filters used in OpenCV?",
+  "options": [
+   "Box Filter",
+   "Bilateral Filter",
+   "Blue Blur",
+   "Build Pyramid"
+  ],
+  "correct": [
+   "Blue Blur"
+  ],
+  "slide_image": "cpv-slides-real/slide-135.png"
+ }
+]

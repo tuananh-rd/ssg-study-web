@@ -1,0 +1,22 @@
+{
+"21":{"q":"Hàm Seaborn nào được dùng để tạo bản đồ nhiệt (heatmap) nhằm trực quan hóa ma trận tương quan (correlation matrix) của một tập dữ liệu?","options":["sns.heatmap()","sns.pairplot()","sns.jointplot()","sns.scatterplot()"]},
+"22":{"q":"Hàm nào trong Matplotlib được dùng để vẽ biểu đồ tần suất (histogram)?","options":["hist()","draw_hist()","plot_hist()","create_histogram()"]},
+"23":{"q":"Hàm nào trong Pandas được dùng để đọc một tệp CSV?","options":["read_csv()","load_csv()","import_csv()","open_csv()"]},
+"24":{"q":"Hàm nào trong Pandas được dùng để đọc một tệp JSON vào DataFrame?","options":["read_json()","load_json()","import_json()","parse_json()"]},
+"25":{"q":"Hàm nào trong Pandas được dùng để điền các giá trị bị thiếu (missing values) trong một DataFrame?","options":["fill_nulls()","replace_nulls()","fill_missing()","fillna()"]},
+"27":{"q":"Hàm Pandas nào được dùng để hiển thị vài dòng đầu tiên của một DataFrame?","options":["display()","head()","show()","preview()"]},
+"28":{"q":"Phương thức Pandas nào được dùng để tạo biểu đồ miền (area plot)?","options":["plot(kind='area')","plot(type='area')","plot.area()","plot.area"]},
+"29":{"q":"Phương thức Pandas nào được dùng để nạp dữ liệu từ một tệp CSV vào DataFrame?","options":["read_csv()","load_data()","import_data()","create_dataframe()"]},
+"30":{"q":"Phương thức nào trong Sklearn thường được dùng để tinh chỉnh siêu tham số (hyperparameter tuning) bằng cách tìm kiếm vét cạn trên một lưới tham số được chỉ định?","options":["GridSearchCV()","RandomizedSearchCV()","HyperparameterTuner()","TuneGrid()"]},
+"31":{"q":"Phương thức nào trong Matplotlib được dùng để lưu một hình vẽ (figure) vào tệp?","options":["savefig()","save()","export()","saveas()"]},
+"32":{"q":"Mô-đun nào của Matplotlib cung cấp giao diện vẽ biểu đồ giống MATLAB?","options":["matplotlib.pyplot","matplotlib.figure","matplotlib.axis","matplotlib.plot"]},
+"33":{"q":"Hàm Matplotlib nào được dùng để tạo biểu đồ miền xếp chồng (stacked area plot) nhằm biểu diễn nhiều biến thay đổi theo một khoảng liên tục?","options":["plt.area()","plt.stack()","plt.stackplot()","plt.plot()"]},
+"34":{"q":"Hàm Matplotlib nào được dùng để tạo biểu đồ cột (bar plot) với các cột xếp chồng lên nhau?","options":["plt.bar()","plt.stack()","plt.stackplot()","plt.bar_stack()"]},
+"35":{"q":"Phương thức Matplotlib nào được dùng để tạo biểu đồ tròn (pie chart)?","options":["plot_pie()","draw_pie()","pie_chart()","pie()"]},
+"36":{"q":"Phương thức nào trong Sklearn được dùng để tạo một pipeline học máy với các bước tuần tự như chuẩn hóa dữ liệu và huấn luyện mô hình?","options":["build_pipeline()","make_pipeline()","create_pipeline()","init_pipeline()"]},
+"37":{"q":"Phương thức nào có thể được dùng để xử lý dữ liệu bị thiếu trong một DataFrame của Pandas?","options":["dropna()","fillna()","isnull()","Tất cả các đáp án trên"]},
+"38":{"q":"Hàm Seaborn nào được dùng để trực quan hóa phân phối của một biến liên tục được tách theo các nhóm (categories)?","options":["sns.histplot()","sns.kdeplot()","sns.violinplot()","sns.boxplot()"]},
+"40":{"q":"Hàm Seaborn nào được dùng để tạo biểu đồ cột hiển thị số lượng của các giá trị duy nhất trong một biến phân loại (categorical variable)?","options":["sns.countplot()","sns.barplot()","sns.pointplot()","sns.boxplot()"]},
+"41":{"q":"Hàm Seaborn nào được dùng để tạo biểu đồ cột với các cột xếp chồng (stacked bars)?","options":["sns.barplot()","sns.countplot()","sns.pointplot()","sns.stackedplot()"]},
+"42":{"q":"Hàm Seaborn nào được dùng để tạo bản đồ nhiệt (heatmap)?","options":["plot_heatmap()","draw_heatmap()","heatmap()","create_heatmap()"]}
+}

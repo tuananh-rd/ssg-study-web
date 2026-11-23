@@ -1,0 +1,327 @@
+[
+ {
+  "id": 28,
+  "question": "Which Pandas method is used to create an area plot?",
+  "options": [
+   "plot(kind='area')",
+   "plot(type='area')",
+   "plot.area()",
+   "plot.area"
+  ],
+  "correct": [
+   "plot.area()"
+  ]
+ },
+ {
+  "id": 29,
+  "question": "Which Pandas method is used to load data from a CSV file into a DataFrame?",
+  "options": [
+   "read_csv()",
+   "load_data()",
+   "import_data()",
+   "create_dataframe()"
+  ],
+  "correct": [
+   "read_csv()"
+  ]
+ },
+ {
+  "id": 30,
+  "question": "What method in Sklearn is commonly used for hyperparameter tuning by exhaustively searching through a specified parameter grid?",
+  "options": [
+   "GridSearchCV()",
+   "RandomizedSearchCV()",
+   "HyperparameterTuner()",
+   "TuneGrid()"
+  ],
+  "correct": [
+   "GridSearchCV()"
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Which method in Matplotlib is used to save a figure to a file?",
+  "options": [
+   "savefig()",
+   "save()",
+   "export()",
+   "saveas()"
+  ],
+  "correct": [
+   "savefig()"
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Which module of Matplotlib provides a MATLAB-like plotting interface?",
+  "options": [
+   "matplotlib.pyplot",
+   "matplotlib.figure",
+   "matplotlib.axis",
+   "matplotlib.plot"
+  ],
+  "correct": [
+   "matplotlib.pyplot"
+  ]
+ },
+ {
+  "id": 33,
+  "question": "Which Matplotlib function is used to create a stacked area plot to represent multiple variables evolving over a continuous interval?",
+  "options": [
+   "plt.area()",
+   "plt.stack()",
+   "plt.stackplot()",
+   "plt.plot()"
+  ],
+  "correct": [
+   "plt.stackplot()"
+  ]
+ },
+ {
+  "id": 34,
+  "question": "Which Matplotlib function is used to create a bar plot with the bars stacked on top of each other?",
+  "options": [
+   "plt.bar()",
+   "plt.stack()",
+   "plt.stackplot()",
+   "plt.bar_stack()"
+  ],
+  "correct": [
+   "plt.bar()"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "Which Matplotlib method is used to create a pie chart?",
+  "options": [
+   "plot_pie()",
+   "draw_pie()",
+   "pie_chart()",
+   "pie()"
+  ],
+  "correct": [
+   "pie()"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "Which method in Sklearn is used to create a machine learning pipeline with sequential steps like data scaling and model fitting?",
+  "options": [
+   "build_pipeline()",
+   "make_pipeline()",
+   "create_pipeline()",
+   "init_pipeline()"
+  ],
+  "correct": [
+   "make_pipeline()"
+  ]
+ },
+ {
+  "id": 37,
+  "question": "Which method can be used to handle missing data in a DataFrame in Pandas?",
+  "options": [
+   "dropna()",
+   "fillna()",
+   "isnull()",
+   "All of the above"
+  ],
+  "correct": [
+   "All of the above"
+  ]
+ },
+ {
+  "id": 38,
+  "question": "Which Seaborn function is used to visualize the distribution of a continuous variable separated by categories?",
+  "options": [
+   "sns.histplot()",
+   "sns.kdeplot()",
+   "sns.violinplot()",
+   "sns.boxplot()"
+  ],
+  "correct": [
+   "sns.violinplot()"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "Which Seaborn function is used to create a bar plot displaying the count of unique values in a categorical variable?",
+  "options": [
+   "sns.countplot()",
+   "sns.barplot()",
+   "sns.pointplot()",
+   "sns.boxplot()"
+  ],
+  "correct": [
+   "sns.countplot()"
+  ]
+ },
+ {
+  "id": 41,
+  "question": "Which Seaborn function is used to create a bar plot with the addition of stacked bars?",
+  "options": [
+   "sns.barplot()",
+   "sns.countplot()",
+   "sns.pointplot()",
+   "sns.stackedplot()"
+  ],
+  "correct": [
+   "sns.barplot()"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "Which Seaborn function is used to create a heatmap?",
+  "options": [
+   "plot_heatmap()",
+   "draw_heatmap()",
+   "heatmap()",
+   "create_heatmap()"
+  ],
+  "correct": [
+   "heatmap()"
+  ]
+ },
+ {
+  "id": 43,
+  "question": "Which code sample will produce the first five lines of a .csv file named \"dogs.csv\"?",
+  "options": [
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf.head()",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = [1-5]",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = [0 - 4]",
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf = x5"
+  ],
+  "correct": [
+   "dog_names = 'dogs.csv'\ndf = pandas.read_csv(dog_names)\ndf.head()"
+  ]
+ },
+ {
+  "id": 44,
+  "question": "When loading data from an HTML table using Pandas, which function is used?",
+  "options": [
+   "read_html()",
+   "read_html_table()",
+   "parse_html()",
+   "import_html()"
+  ],
+  "correct": [
+   "read_html()"
+  ]
+ },
+ {
+  "id": 46,
+  "question": "How can you set the center of the map using Folium?",
+  "options": [
+   "location",
+   "change_center()",
+   "center()",
+   "set_center"
+  ],
+  "correct": [
+   "location"
+  ]
+ },
+ {
+  "id": 47,
+  "question": "How would you access the column \"price\" from the dataframe df?",
+  "options": [
+   "df[\"price\"]",
+   "df.\"price\"",
+   "df.[price]",
+   "df.column[\"price\"]"
+  ],
+  "correct": [
+   "df[\"price\"]"
+  ]
+ },
+ {
+  "id": 48,
+  "question": "How would you rename the column \"point\" to \"location\"?",
+  "options": [
+   "df.rename(columns={\"point\": \"location\"}, inplace=True)",
+   "df.change(columns={\"location\": \" point \"}, inplace=True)",
+   "df.rename(columns={\"location\": \"point\"}, inplace=True)",
+   "df.Change(columns={\"point\": \"location\"}, inplace=True)"
+  ],
+  "correct": [
+   "df.rename(columns={\"point\": \"location\"}, inplace=True)"
+  ]
+ },
+ {
+  "id": 49,
+  "question": "A developer runs a ls command and sees the following files in their cwd: /user/Animals/Dogs/dogBreeds.txt, /user/Animals/Dogs/dogNames.txt, /user/Animals/Dogs/Fido.png. They realize they have accidentally duplicated dogBreeds as dogNames. How would the developer replace the dogNames file to be correct?",
+  "options": [
+   "with open (\"/users/Animals/Dogs/dogNames.txt\") as dogNames",
+   "with open (\"/users/Animals/Dogs/dogNames.txt\", \"r\") as dogNames",
+   "with open(\"/users/Animals/Dogs/dogNames.txt\", \"w\") as dogNames",
+   "with open (\"/users/Animals/Dogs/dogNames.txt\", w) as dogNames"
+  ],
+  "correct": [
+   "with open(\"/users/Animals/Dogs/dogNames.txt\", \"w\") as dogNames"
+  ]
+ },
+ {
+  "id": 50,
+  "question": "A teacher has grades stored in an array. The array is: grades = np.array([100, 30, 77, 20, 99, 100]). What code will produce the lowest grade from the array, and assign it to a variable that will accurately describe the value assigned to it?",
+  "options": [
+   "grades = grades.min()",
+   "grades.min() = lowest_grade",
+   "lowest_grade = grades.min()",
+   "grades.min() = grades"
+  ],
+  "correct": [
+   "lowest_grade = grades.min()"
+  ]
+ },
+ {
+  "id": 51,
+  "question": "In Seaborn, which function is used to create a heatmap to visualize the correlation matrix of a dataset?",
+  "options": [
+   "sns.heatmap()",
+   "sns.pairplot()",
+   "sns.jointplot()",
+   "sns.scatterplot()"
+  ],
+  "correct": [
+   "sns.heatmap()"
+  ]
+ },
+ {
+  "id": 52,
+  "question": "In Sklearn, which method is used for cross-validation to assess how the model performs on new data?",
+  "options": [
+   "evaluate()",
+   "validate()",
+   "cross_val_score()",
+   "model_performance()"
+  ],
+  "correct": [
+   "cross_val_score()"
+  ]
+ },
+ {
+  "id": 53,
+  "question": "In Matplotlib, which function is used to add labels to a pie chart?",
+  "options": [
+   "plt.pie()",
+   "plt.labels()",
+   "plt.add_labels()",
+   "plt.annotate()"
+  ],
+  "correct": [
+   "plt.pie()"
+  ]
+ },
+ {
+  "id": 54,
+  "question": "In Dash, which component is used to create a range slider for selecting values within a specified range?",
+  "options": [
+   "dcc.RangeSlider()",
+   "dcc.Slider()",
+   "dcc.Input()",
+   "dcc.Dropdown()"
+  ],
+  "correct": [
+   "dcc.RangeSlider()"
+  ]
+ }
+]

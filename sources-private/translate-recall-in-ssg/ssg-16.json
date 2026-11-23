@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m10-028",
+  "q": "Ý sau mô tả khái niệm nào: “2–3 trải nghiệm phù hợp; dùng STAR và liên hệ trực tiếp job description”?",
+  "correct": "Middle",
+  "wrong": [
+   "Opening",
+   "Closing",
+   "Header và greeting"
+  ]
+ },
+ {
+  "id": "r-m10-029",
+  "q": "“Closing” nghĩa là gì?",
+  "correct": "Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi",
+  "wrong": [
+   "Thông tin liên hệ, ngày, employer; “Dear Hiring Manager” nếu không biết tên",
+   "2–3 trải nghiệm phù hợp; dùng STAR và liên hệ trực tiếp job description",
+   "Vị trí, nguồn tin, tình trạng hiện tại và lý do quan tâm"
+  ]
+ },
+ {
+  "id": "r-m10-030",
+  "q": "Ý sau mô tả khái niệm nào: “Tóm tắt fit, cảm ơn, đề nghị phỏng vấn và thể hiện mong muốn phản hồi”?",
+  "correct": "Closing",
+  "wrong": [
+   "Middle",
+   "Opening",
+   "Header và greeting"
+  ]
+ },
+ {
+  "id": "r-m10-031",
+  "q": "Cover letter dài bao nhiêu?",
+  "correct": "Một trang",
+  "wrong": [
+   "Hai trang",
+   "Nửa trang",
+   "Không giới hạn"
+  ]
+ },
+ {
+  "id": "r-m10-032",
+  "q": "Cover letter trả lời hai câu hỏi nào?",
+  "correct": "Vì sao công việc / công ty này? Vì sao bạn phù hợp?",
+  "wrong": [
+   "Lương bao nhiêu? Khi nào bắt đầu?",
+   "Bạn học trường nào? Bạn bao nhiêu tuổi?",
+   "Bạn có sở thích gì? Bạn ở đâu?"
+  ]
+ },
+ {
+  "id": "r-m10-033",
+  "q": "Ý nào cần TRÁNH khi viết cover letter?",
+  "correct": "Lặp lại résumé",
+  "wrong": [
+   "Liên hệ job description",
+   "Dùng STAR",
+   "Cảm ơn và đề nghị phỏng vấn"
+  ]
+ },
+ {
+  "id": "r-m10-034",
+  "q": "Các loại phỏng vấn trong tài liệu?",
+  "correct": "Phone/video, one-on-one, panel, group",
+  "wrong": [
+   "Written, oral, online, offline",
+   "Formal, informal, casual, technical",
+   "Short, long, single, double"
+  ]
+ },
+ {
+  "id": "r-m10-035",
+  "q": "STAR là viết tắt của gì?",
+  "correct": "Situation – Task – Action – Result",
+  "wrong": [
+   "Skill – Talent – Ability – Result",
+   "Situation – Target – Answer – Review",
+   "Strategy – Task – Achievement – Reward"
+  ]
+ },
+ {
+  "id": "r-m10-036",
+  "q": "STAR dùng cho loại câu hỏi nào?",
+  "correct": "Teamwork, vấn đề, thành tích, sai lầm và xung đột",
+  "wrong": [
+   "Câu hỏi về lương",
+   "Câu hỏi về sở thích cá nhân",
+   "Câu hỏi kỹ thuật thuần túy"
+  ]
+ },
+ {
+  "id": "r-m10-037",
+  "q": "Sau phỏng vấn nên gửi thank-you email khi nào?",
+  "correct": "Trong 24 giờ",
+  "wrong": [
+   "Sau 1 tuần",
+   "Khi có kết quả",
+   "Không cần gửi"
+  ]
+ },
+ {
+  "id": "r-m10-038",
+  "q": "Ý nào là việc nên làm TRONG phỏng vấn?",
+  "correct": "Nếu chưa rõ câu hỏi, xin làm rõ",
+  "wrong": [
+   "Dùng slang cho thân thiện",
+   "Ngắt lời để thể hiện nhiệt tình",
+   "Đoán ý câu hỏi rồi trả lời"
+  ]
+ },
+ {
+  "id": "r-m10-039",
+  "q": "Ý nào là việc nên làm TRƯỚC phỏng vấn?",
+  "correct": "Nghiên cứu công ty và vị trí",
+  "wrong": [
+   "Gửi thank-you email",
+   "Tự đánh giá điều cần cải thiện",
+   "Cảm ơn trực tiếp"
+  ]
+ },
+ {
+  "id": "r-m10-040",
+  "q": "Trang phục gợi ý cho Mini Career Fair?",
+  "correct": "Business casual hoặc theo yêu cầu",
+  "wrong": [
+   "Đồng phục thể thao",
+   "Trang phục dạ hội",
+   "Tùy thích"
+  ]
+ },
+ {
+  "id": "r-m10-041",
+  "q": "Elevator pitch chuẩn bị cho career fair dài bao lâu?",
+  "correct": "30–60 giây",
+  "wrong": [
+   "5 phút",
+   "10 giây",
+   "2–3 phút"
+  ]
+ },
+ {
+  "id": "r-m10-042",
+  "q": "Reflection sau career fair dài bao nhiêu từ?",
+  "correct": "150–200 hoặc 200–300 từ theo yêu cầu giảng viên",
+  "wrong": [
+   "50–100 từ",
+   "500–800 từ",
+   "1000 từ"
+  ]
+ },
+ {
+  "id": "r-m10-043",
+  "q": "Sau career fair nên chọn bao nhiêu mục tiêu cải thiện trong ba tháng?",
+  "correct": "2–3",
+  "wrong": [
+   "1",
+   "5–7",
+   "10"
+  ]
+ },
+ {
+  "id": "r-m10-044",
+  "q": "Ý nào là việc nên làm TRONG sự kiện career fair?",
+  "correct": "Cảm ơn trước khi rời đi",
+  "wrong": [
+   "Tổng hợp phản hồi về CV",
+   "Viết reflection",
+   "Chọn mục tiêu cải thiện"
+  ]
+ },
+ {
+  "id": "r-m11-001",
+  "q": "13 bước chuyển report thành bài thuyết trình: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Mỗi thành viên đọc lại toàn bộ báo cáo",
+  "wrong": [
+   "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ",
+   "Tổ chức introduction – body – conclusion",
+   "Dự đoán câu hỏi, phân người trả lời theo chuyên môn"
+  ]
+ },
+ {
+  "id": "r-m11-002",
+  "q": "13 bước chuyển report thành bài thuyết trình: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Kiểm tra lỗi, định dạng, thiết bị và tài liệu dự phòng",
+  "wrong": [
+   "Kiểm tra objectives, methods, results và conclusions",
+   "Điều chỉnh độ chi tiết theo audience",
+   "Chỉ chọn dữ liệu và ví dụ quan trọng; chuyển bảng chi tiết sang backup slides"
+  ]
+ },
+ {
+  "id": "r-m11-003",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Mỗi thành viên đọc lại toàn bộ báo cáo” là gì?",
+  "correct": "Kiểm tra objectives, methods, results và conclusions",
+  "wrong": [
+   "Dùng report làm nguồn, không đọc report như script",
+   "Tổ chức introduction – body – conclusion",
+   "Chọn một core message khán giả phải nhớ"
+  ]
+ },
+ {
+  "id": "r-m11-004",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Kiểm tra objectives, methods, results và conclusions” là gì?",
+  "correct": "Chọn một core message khán giả phải nhớ",
+  "wrong": [
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+   "Kiểm tra lỗi, định dạng, thiết bị và tài liệu dự phòng",
+   "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ"
+  ]
+ },
+ {
+  "id": "r-m11-005",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Chọn một core message khán giả phải nhớ” là gì?",
+  "correct": "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+  "wrong": [
+   "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ",
+   "Kiểm tra lỗi, định dạng, thiết bị và tài liệu dự phòng",
+   "Chỉ chọn dữ liệu và ví dụ quan trọng; chuyển bảng chi tiết sang backup slides"
+  ]
+ },
+ {
+  "id": "r-m11-006",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations” là gì?",
+  "correct": "Dùng report làm nguồn, không đọc report như script",
+  "wrong": [
+   "Mỗi thành viên đọc lại toàn bộ báo cáo",
+   "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ",
+   "Chọn một core message khán giả phải nhớ"
+  ]
+ },
+ {
+  "id": "r-m11-007",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Dùng report làm nguồn, không đọc report như script” là gì?",
+  "correct": "Chỉ chọn dữ liệu và ví dụ quan trọng; chuyển bảng chi tiết sang backup slides",
+  "wrong": [
+   "Điều chỉnh độ chi tiết theo audience",
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+   "Kiểm tra objectives, methods, results và conclusions"
+  ]
+ },
+ {
+  "id": "r-m11-008",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Chỉ chọn dữ liệu và ví dụ quan trọng; chuyển bảng chi tiết sang backup slides” là gì?",
+  "correct": "Tổ chức introduction – body – conclusion",
+  "wrong": [
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+   "Dùng report làm nguồn, không đọc report như script",
+   "Kiểm tra objectives, methods, results và conclusions"
+  ]
+ }
+]

@@ -1,0 +1,866 @@
+[
+  {
+    "ref": "4.1",
+    "q": "Kỹ thuật Học kết hợp (Ensemble Learning) được định nghĩa là gì?",
+    "correct": "Kỹ thuật kết hợp dự đoán từ nhiều mô hình đơn lẻ (base learners) để tạo ra mô hình tổng thể có khả năng tổng quát hóa tốt hơn và ổn định hơn",
+    "wrong": [
+      "Phương pháp thay thế toàn bộ dữ liệu huấn luyện bằng các thành phần chính sau khi giảm chiều bằng PCA",
+      "Kỹ thuật chỉ huấn luyện một cây quyết định duy nhất với độ sâu không giới hạn nhằm loại bỏ hoàn toàn sai số",
+      "Mô hình học máy không giám sát chuyên dùng để gom nhóm các quan sát có cùng phân phối xác suất"
+    ],
+    "explain": "Ensemble Learning kết hợp nhiều mô hình cơ sở (base learners) để tạo ra một mô hình mạnh có độ ổn định và khả năng tổng quát hóa vượt trội.",
+    "tip": "Ensemble = kết hợp nhiều base learners."
+  },
+  {
+    "ref": "4.1",
+    "q": "Mục tiêu cốt lõi của phương pháp Ensemble Learning là nhằm giảm thiểu hai loại sai số nào?",
+    "correct": "Giảm phương sai (variance) và giảm độ chệch (bias)",
+    "wrong": [
+      "Giảm số lượng mẫu dữ liệu và giảm số lượng đặc trưng đầu vào",
+      "Giảm độ vẩn đục Gini Index và triệt tiêu khoảng cách Manhattan",
+      "Giảm số lượng cụm K và giảm bán kính lân cận Epsilon"
+    ],
+    "explain": "Mục tiêu của Ensemble là giảm Variance (lỗi do quá nhạy cảm với dữ liệu) và giảm Bias (lỗi do mô hình quá đơn giản).",
+    "tip": "Mục tiêu Ensemble: giảm Variance và giảm Bias."
+  },
+  {
+    "ref": "4.1",
+    "q": "Ba hướng tiếp cận chính trong Ensemble Learning được đề cập trong tài liệu là gì?",
+    "correct": "Bagging, Boosting và Stacking",
+    "wrong": [
+      "K-Means, HAC và DBSCAN",
+      "Regression, Classification và Clustering",
+      "Underfitting, Overfitting và Regularization"
+    ],
+    "explain": "Ba trường phái nền tảng của Ensemble Learning là Bagging, Boosting và Stacking.",
+    "tip": "Bộ ba Ensemble: Bagging, Boosting, Stacking."
+  },
+  {
+    "ref": "4.2",
+    "q": "Cơ chế 'Bootstrap' trong kỹ thuật Bagging được thực hiện như thế nào?",
+    "correct": "Lấy mẫu dữ liệu có thay thế để tạo ra các tập dữ liệu huấn luyện con mới",
+    "wrong": [
+      "Lấy mẫu dữ liệu tuần tự không thay thế và loại bỏ dần các mẫu bị phân loại sai",
+      "Chia đều tập dữ liệu gốc thành K phần bằng nhau và độc lập tuyệt đối",
+      "Nội suy tuyến tính giữa các điểm dữ liệu láng giềng gần nhất để sinh thêm mẫu"
+    ],
+    "explain": "Bootstrap là kỹ thuật lấy mẫu ngẫu nhiên có hoàn lại (có thay thế) từ tập dữ liệu gốc để tạo ra các tập con huấn luyện.",
+    "tip": "Bootstrap = lấy mẫu có thay thế (with replacement)."
+  },
+  {
+    "ref": "4.2",
+    "q": "Trong kỹ thuật Bagging, kết quả dự đoán của các mô hình cơ sở được kết hợp (Aggregation) theo hình thức nào?",
+    "correct": "Lấy trung bình kết quả đối với bài toán hồi quy hoặc bỏ phiếu đa số đối với bài toán phân loại",
+    "wrong": [
+      "Sử dụng một mô hình meta phức tạp để học trọng số phi tuyến của từng cây",
+      "Nhân liên tiếp các giá trị dự đoán của từng mô hình theo một chuỗi nối tiếp",
+      "Chỉ giữ lại dự đoán của mô hình cơ sở có điểm số cao nhất trên tập kiểm tra"
+    ],
+    "explain": "Giai đoạn Aggregation trong Bagging thực hiện lấy trung bình (cho bài toán Regression) hoặc bỏ phiếu theo số đông (cho Classification).",
+    "tip": "Bagging = Bootstrap + Aggregation (trung bình / bỏ phiếu)."
+  },
+  {
+    "ref": "4.2",
+    "q": "Thuật toán Rừng ngẫu nhiên (Random Forest) bổ sung tính ngẫu nhiên so với Bagging thông thường bằng cách nào?",
+    "correct": "Chỉ chọn ngẫu nhiên một tập con các đặc trưng (features) tại mỗi điểm phân tách cây",
+    "wrong": [
+      "Huấn luyện các cây theo chuỗi tuần tự để cây sau sửa sai cho cây trước",
+      "Gán nhãn ngẫu nhiên cho một nửa số quan sát trong tập dữ liệu huấn luyện",
+      "Tự động chọn ngẫu nhiên hàm mất mát giữa Hinge Loss và SSE cho từng cây"
+    ],
+    "explain": "Random Forest tạo thêm sự đa dạng giữa các cây bằng cách chỉ chọn ngẫu nhiên một tập con đặc trưng (thường là sqrt) tại mỗi lần phân nhánh.",
+    "tip": "Random Forest = Bagging + chọn ngẫu nhiên tập con đặc trưng tại mỗi split."
+  },
+  {
+    "ref": "4.2",
+    "q": "Điểm khác biệt quan trọng của thuật toán Extra Trees (Extremely Randomized Trees) so với Random Forest là gì?",
+    "correct": "Chọn điểm phân tách (split point) hoàn toàn ngẫu nhiên thay vì tìm điểm tối ưu, giúp giảm phương sai mạnh và tính toán nhanh hơn",
+    "wrong": [
+      "Sử dụng hàm mất mát hàm mũ Exponential Loss thay vì độ vẩn đục Gini",
+      "Bắt buộc kết hợp các mô hình khác loại như SVM và KNN thay vì cây quyết định",
+      "Chỉ sử dụng được cho các bài toán hồi quy liên tục, không áp dụng cho phân loại"
+    ],
+    "explain": "Extra Trees tăng tối đa tính ngẫu nhiên bằng cách chọn ngưỡng phân tách hoàn toàn ngẫu nhiên cho mỗi đặc trưng thay vì tìm ngưỡng tối ưu.",
+    "tip": "Extra Trees = ngưỡng phân tách ngẫu nhiên hoàn toàn."
+  },
+  {
+    "ref": "4.2",
+    "q": "Trong đoạn mã `RandomForestClassifier(n_estimators=100, max_features='sqrt')`, tham số `n_estimators=100` có ý nghĩa gì?",
+    "correct": "Xây dựng 100 cây quyết định cơ sở trong mô hình rừng ngẫu nhiên",
+    "wrong": [
+      "Số lần lặp tối đa của thuật toán hạ độ dốc ngẫu nhiên",
+      "Số lượng mẫu tối thiểu được phép có tại mỗi nút lá của cây",
+      "Tỷ lệ phần trăm dữ liệu bootstrap được lấy từ tập huấn luyện gốc"
+    ],
+    "explain": "Tham số `n_estimators=100` quy định số lượng cây quyết định (trees) được tạo ra trong mô hình Random Forest.",
+    "tip": "n_estimators là số lượng cây cơ sở."
+  },
+  {
+    "ref": "4.3",
+    "q": "Nguyên lý hoạt động cốt lõi của kỹ thuật Boosting là gì?",
+    "correct": "Xây dựng các mô hình theo chuỗi nối tiếp (sequential), mô hình sau cố gắng sửa lỗi của mô hình trước",
+    "wrong": [
+      "Xây dựng nhiều mô hình hoàn toàn độc lập và thực thi song song trên phần cứng đa nhân",
+      "Huấn luyện một mô hình meta để kết hợp các kết quả dự đoán của các bộ phân loại khác loại",
+      "Phân chia dữ liệu thành K phần bằng nhau và huấn luyện K mô hình độc lập"
+    ],
+    "explain": "Boosting hoạt động theo cơ chế tuần tự (sequential); mỗi mô hình mới được thêm vào nhằm khắc phục sai số của các mô hình phía trước.",
+    "tip": "Boosting = tuần tự (sequential), cây sau sửa sai cho cây trước."
+  },
+  {
+    "ref": "4.3",
+    "q": "Trong quy trình huấn luyện của Boosting, các quan sát bị dự đoán sai ở bước trước sẽ được xử lý như thế nào?",
+    "correct": "Được gán trọng số cao hơn để mô hình phía sau tập trung học vào chúng",
+    "wrong": [
+      "Bị loại bỏ hoàn toàn ra khỏi tập huấn luyện của các mô hình tiếp theo",
+      "Được tự động gán nhãn lại theo đa số các quan sát láng giềng gần nhất",
+      "Được chuyển sang tập kiểm tra để đánh giá hiệu suất out-of-bag"
+    ],
+    "explain": "Boosting tăng trọng số cho các mẫu bị đoán sai, buộc các mô hình tiếp theo phải tập trung nhiều hơn vào các trường hợp khó này.",
+    "tip": "Đoán sai ở bước trước thì bước sau tăng trọng số."
+  },
+  {
+    "ref": "4.3",
+    "q": "Mô hình cơ sở (Base Learner) trong Boosting thường là các 'Decision Stumps', khái niệm này được hiểu là gì?",
+    "correct": "Cây quyết định chỉ có đúng 1 tầng, đưa ra quyết định chỉ dựa trên 1 đặc trưng cụ thể",
+    "wrong": [
+      "Cây quyết định phát triển đầy đủ với độ sâu tối đa không bị giới hạn",
+      "Mạng thần kinh sâu có nhiều lớp ẩn được huấn luyện bằng lan truyền ngược",
+      "Mô hình SVM sử dụng nhân phi tuyến Gaussian RBF với tham số gamma lớn"
+    ],
+    "explain": "Decision Stump là cây quyết định tối giản chỉ có 1 nút gốc và 2 nút lá (1 tầng), thường chỉ phân nhánh dựa trên 1 đặc trưng duy nhất.",
+    "tip": "Decision Stumps = cây 1 tầng, quyết định dựa trên 1 feature."
+  },
+  {
+    "ref": "4.3",
+    "q": "Điểm khác biệt chính giữa AdaBoost và Gradient Boosting về hàm mất mát và độ kháng ngoại lai là gì?",
+    "correct": "AdaBoost dùng hàm mất mát lũy thừa rất nhạy cảm với ngoại lai, còn Gradient Boosting thường dùng hàm Deviance kháng ngoại lai tốt hơn",
+    "wrong": [
+      "AdaBoost dùng hàm Hinge Loss kháng ngoại lai, còn Gradient Boosting dùng hàm SSE nhạy cảm với ngoại lai",
+      "AdaBoost tối ưu hàm chi phí bằng Gradient Descent, còn Gradient Boosting tối ưu bằng giải thuật di truyền",
+      "AdaBoost chạy song song trên phần cứng đa nhân, còn Gradient Boosting chạy tuần tự trên một luồng duy nhất"
+    ],
+    "explain": "AdaBoost sử dụng Exponential Loss khiến nó rất nhạy với outliers; trong khi Gradient Boosting thường dùng Deviance (binomial log-likelihood) kháng ngoại lai tốt hơn.",
+    "tip": "AdaBoost: exponential loss nhạy outliers; Gradient Boosting: deviance kháng outliers tốt hơn."
+  },
+  {
+    "ref": "4.3",
+    "q": "Trong khai báo `GradientBoostingClassifier(n_estimators=100, learning_rate=0.1, max_depth=3)`, tham số `learning_rate` đóng vai trò gì?",
+    "correct": "Kiểm soát tốc độ co giãn mức độ đóng góp của từng cây con vào mô hình tổng thể",
+    "wrong": [
+      "Quy định bán kính lân cận epsilon để tìm kiếm các điểm dữ liệu lõi",
+      "Xác định số lượng đặc trưng ngẫu nhiên được lựa chọn tại mỗi điểm phân tách",
+      "Tỷ lệ phần trăm các mẫu dữ liệu ngoại lai cần được loại bỏ trước khi fit"
+    ],
+    "explain": "Tham số `learning_rate` điều chỉnh mức độ đóng góp (bước thu hẹp) của mỗi cây con khi được cộng dồn vào mô hình tổng thể.",
+    "tip": "learning_rate kiểm soát mức đóng góp của từng cây con."
+  },
+  {
+    "ref": "4.4",
+    "q": "Đặc trưng lớn nhất phân biệt phương pháp Stacking (Học xếp chồng) với Bagging và Boosting là gì?",
+    "correct": "Kết hợp các mô hình thuộc các loại khác nhau (heterogeneous) như SVM, KNN, Hồi quy Logistic",
+    "wrong": [
+      "Chỉ sử dụng duy nhất một loại mô hình cơ sở đồng nhất là cây quyết định 1 tầng",
+      "Bắt buộc phải huấn luyện các mô hình cơ sở theo chuỗi nối tiếp sửa sai",
+      "Hoàn toàn không sử dụng nhãn dữ liệu trong toàn bộ quy trình huấn luyện"
+    ],
+    "explain": "Stacking kết hợp các thuật toán khác nhau (heterogeneous), tận dụng thế mạnh đa dạng của nhiều họ mô hình như SVM, KNN, Logistic Regression.",
+    "tip": "Stacking = kết hợp mô hình khác loại (heterogeneous)."
+  },
+  {
+    "ref": "4.4",
+    "q": "Cơ chế phân tầng trong kỹ thuật Stacking hoạt động như thế nào?",
+    "correct": "Các mô hình lớp cơ sở (level-0) đưa ra dự đoán, các dự đoán này làm đầu vào cho mô hình meta (level-1) đưa ra kết luận",
+    "wrong": [
+      "Mô hình meta (level-1) dự đoán trước, sau đó chuyển kết quả cho các mô hình lớp cơ sở (level-0) lọc nhiễu",
+      "Các mô hình cơ sở chỉ huấn luyện trên tập kiểm tra, còn mô hình meta chỉ huấn luyện trên tập huấn luyện",
+      "Dữ liệu gốc được chia thành nhiều tầng theo độ sâu của biểu đồ phân nhánh Dendrogram"
+    ],
+    "explain": "Stacking tổ chức theo tầng: mô hình cơ sở level-0 sinh ra các dự đoán, sau đó mô hình meta level-1 học cách kết hợp các dự đoán đó.",
+    "tip": "Stacking: level-0 (base) đưa dự đoán -> level-1 (meta) tổng hợp."
+  },
+  {
+    "ref": "4.4",
+    "q": "Đầu vào của mô hình meta (level-1) trong kiến trúc Stacking là gì?",
+    "correct": "Các kết quả dự đoán (chẳng hạn như xác suất các lớp) xuất ra từ các mô hình lớp cơ sở (level-0)",
+    "wrong": [
+      "Tập dữ liệu thô ban đầu cùng với toàn bộ các đặc trưng chưa chuẩn hóa",
+      "Khoảng cách Manhattan giữa các quan sát và các tâm phân cụm",
+      "Các chỉ số độ vẩn đục Entropy và Gini Index tại từng nút lá"
+    ],
+    "explain": "Mô hình meta level-1 nhận đầu vào là các giá trị dự đoán hoặc xác suất phân loại do các mô hình level-0 tạo ra.",
+    "tip": "Đầu vào level-1 là dự đoán từ level-0."
+  },
+  {
+    "ref": "4.4",
+    "q": "Các phương thức phổ biến để kết hợp dự đoán ở tầng mô hình meta trong Stacking là gì?",
+    "correct": "Bỏ phiếu đa số hoặc gán trọng số cho từng mô hình dựa trên hiệu suất của chúng",
+    "wrong": [
+      "Lấy mẫu bootstrap có thay thế trên ma trận tương quan đa biến",
+      "Cắt tỉa các mô hình có độ sâu lớn hơn ngưỡng lỗi phân loại cho phép",
+      "Ánh xạ các dự đoán vào không gian nhân RBF với tham số gamma cố định"
+    ],
+    "explain": "Mô hình meta thường kết hợp kết quả bằng cách bỏ phiếu đa số hoặc gán trọng số theo hiệu suất dự đoán của từng mô hình cơ sở.",
+    "tip": "Kết hợp Stacking: bỏ phiếu đa số hoặc gán trọng số theo hiệu suất."
+  },
+  {
+    "ref": "4.5",
+    "q": "Khi so sánh về mục đích tối ưu hóa sai số giữa Bagging và Boosting, nhận định nào sau đây là chính xác?",
+    "correct": "Bagging nhằm mục đích chính là giảm Variance (tránh quá khớp), còn Boosting nhằm giảm Bias (khắc phục dưới khớp)",
+    "wrong": [
+      "Bagging nhằm mục đích giảm Bias, còn Boosting nhằm mục đích chính là giảm Variance",
+      "Cả hai phương pháp đều chỉ nhằm giảm Bias mà không có tác động đến Variance",
+      "Bagging dùng để tối ưu mô hình meta, còn Boosting dùng để chọn đặc trưng ngẫu nhiên"
+    ],
+    "explain": "Bagging kết hợp nhiều mô hình độc lập giúp giảm Variance; Boosting xây dựng chuỗi mô hình sửa sai giúp giảm Bias.",
+    "tip": "Bagging giảm Variance; Boosting giảm Bias."
+  },
+  {
+    "ref": "4.5",
+    "q": "Về cấu trúc thực thi tính toán, nhận định nào sau đây đúng khi so sánh giữa Bagging và Boosting?",
+    "correct": "Bagging có cấu trúc song song (Parallel) tận dụng tốt phần cứng đa nhân, trong khi Boosting có cấu trúc nối tiếp (Sequential)",
+    "wrong": [
+      "Bagging bắt buộc phải thực thi nối tiếp, trong khi Boosting luôn thực thi song song hoàn toàn",
+      "Cả Bagging và Boosting đều bắt buộc phải chạy phân tầng nối tiếp qua mô hình meta",
+      "Bagging chỉ chạy đơn luồng, còn Boosting chạy đa luồng trên nhiều máy chủ phân tán"
+    ],
+    "explain": "Bagging xây dựng các cây độc lập nên có thể chạy song song (multithreaded), trong khi Boosting cây sau phụ thuộc cây trước nên chạy nối tiếp.",
+    "tip": "Bagging song song (parallel); Boosting nối tiếp (sequential)."
+  },
+  {
+    "ref": "4.5",
+    "q": "Nguy cơ tiềm ẩn của mô hình Boosting khi số lượng vòng lặp quá lớn là gì và giải pháp khắc phục?",
+    "correct": "Dễ bị hiện tượng quá khớp (Overfitting), cần sử dụng kiểm chéo (Cross-validation) để dừng sớm",
+    "wrong": [
+      "Dễ bị hiện tượng dưới khớp (Underfitting), cần tăng thêm tham số learning_rate",
+      "Gây tràn bộ nhớ do phải lưu trữ toàn bộ ma trận khoảng cách giữa các điểm",
+      "Hàm mất mát tự động chuyển sang dạng hàm mất mát đối xứng SSE"
+    ],
+    "explain": "Boosting lặp quá nhiều sẽ cố khớp cả nhiễu và ngoại lai dẫn đến Overfitting, do đó cần dùng Cross-validation để dừng sớm (early stopping).",
+    "tip": "Boosting lặp nhiều dễ Overfit -> dùng Cross-validation dừng sớm."
+  },
+  {
+    "ref": "4.5",
+    "q": "Trong bài toán xử lý dữ liệu không cân bằng, biến thể nào của Bagging được sử dụng để tích hợp việc lấy mẫu lại dữ liệu?",
+    "correct": "Balanced Bagging (Blagging)",
+    "wrong": [
+      "Extreme Bagging",
+      "Sequential Bagging",
+      "Adaptive Bagging"
+    ],
+    "explain": "Balanced Bagging (Blagging) tích hợp việc lấy mẫu lại cân bằng dữ liệu trực tiếp trong quá trình tạo mẫu bootstrap của từng cây.",
+    "tip": "Blagging = Balanced Bagging cho dữ liệu mất cân bằng."
+  },
+  {
+    "ref": "4.5",
+    "q": "Điểm khác biệt về loại mô hình cơ sở giữa Stacking so với Bagging và Boosting là gì?",
+    "correct": "Stacking sử dụng các mô hình cơ sở khác loại (không đồng nhất), trong khi Bagging và Boosting thường dùng các mô hình cùng loại (đồng nhất)",
+    "wrong": [
+      "Cả ba phương pháp đều bắt buộc phải sử dụng các mô hình cơ sở khác loại",
+      "Bagging dùng mô hình khác loại, còn Stacking chỉ dùng duy nhất cây quyết định 1 tầng",
+      "Boosting chỉ sử dụng các mô hình học không giám sát làm mô hình cơ sở"
+    ],
+    "explain": "Bagging và Boosting thường dùng các cây quyết định (đồng nhất), còn Stacking kết hợp các mô hình khác loại như SVM, KNN, Logistic Regression.",
+    "tip": "Stacking = không đồng nhất (heterogeneous); Bagging/Boosting = đồng nhất."
+  },
+  {
+    "ref": "4.7",
+    "q": "Nhóm mô hình nào sau đây thuộc loại Tự giải thích (Self-interpretable)?",
+    "correct": "Mô hình tuyến tính, Cây quyết định đơn giản và K-Nearest Neighbors (KNN)",
+    "wrong": [
+      "Mạng thần kinh sâu (Deep Neural Networks)",
+      "Các mô hình Ensemble lớn (Random Forest, Boosting)",
+      "Máy vectơ hỗ trợ (SVM) sử dụng nhân Gaussian RBF phức tạp"
+    ],
+    "explain": "Mô hình tự giải thích có cấu trúc đơn giản, trực quan, dễ dàng theo dõi trực tiếp như Linear Regression, Decision Tree đơn giản, KNN.",
+    "tip": "Tự giải thích: Tuyến tính, Cây đơn giản, KNN."
+  },
+  {
+    "ref": "4.7",
+    "q": "Đặc điểm quan trọng của các phương pháp giải thích Bất khả tri (Model-agnostic) là gì?",
+    "correct": "Có thể áp dụng cho bất kỳ mô hình nào mà không phụ thuộc vào cấu trúc bên trong của nó",
+    "wrong": [
+      "Chỉ áp dụng được riêng cho các mô hình tự giải thích đơn giản",
+      "Yêu cầu phải can thiệp trực tiếp vào mã nguồn giải thuật tối ưu hóa trọng số",
+      "Chỉ sử dụng được cho các bài toán phân cụm không giám sát"
+    ],
+    "explain": "Model-agnostic là các kỹ thuật giải thích có thể áp dụng cho bất kỳ mô hình hộp đen nào mà không cần biết cấu trúc bên trong của nó.",
+    "tip": "Model-agnostic = bất khả tri mô hình, dùng cho mô hình nào cũng được."
+  },
+  {
+    "ref": "4.7",
+    "q": "Phương pháp Permutation Feature Importance đánh giá mức độ quan trọng của đặc trưng bằng cách nào?",
+    "correct": "Xếp hạng tầm quan trọng của đặc trưng bằng cách hoán vị giá trị của chúng và đo lường độ suy giảm hiệu suất",
+    "wrong": [
+      "Xóa bỏ vĩnh viễn cột đặc trưng đó khỏi bảng dữ liệu gốc rồi huấn luyện lại",
+      "Tính hệ số tương quan tuyến tính giữa đặc trưng đó với biến mục tiêu",
+      "Ép trọng số của đặc trưng về 0 thông qua kỹ thuật điều chuẩn LASSO"
+    ],
+    "explain": "Permutation Feature Importance xáo trộn (hoán vị) ngẫu nhiên giá trị của từng đặc trưng để xem độ chính xác của mô hình giảm sút bao nhiêu.",
+    "tip": "Permutation Feature Importance = hoán vị giá trị đặc trưng để đo độ sụt giảm hiệu suất."
+  },
+  {
+    "ref": "4.7",
+    "q": "Trong kỹ thuật Mô hình Thay thế Toàn cục (Global Surrogate), mô hình đơn giản được huấn luyện dựa trên nhãn mục tiêu nào?",
+    "correct": "Nhãn do mô hình hộp đen phức tạp dự đoán ra, chứ không phải nhãn thực tế của dữ liệu",
+    "wrong": [
+      "Nhãn thực tế ban đầu (ground truth) của tập dữ liệu huấn luyện",
+      "Nhãn ngẫu nhiên được sinh ra từ phân phối Gauss nhiều chiều",
+      "Nhãn chỉ số cụm nhận được từ thuật toán phân cụm K-Means"
+    ],
+    "explain": "Mô hình thay thế huấn luyện một mô hình đơn giản để dự đoán bắt chước theo kết quả của mô hình hộp đen, nhằm giải thích hành vi của hộp đen đó.",
+    "tip": "Global Surrogate học cách bắt chước đầu ra của hộp đen."
+  },
+  {
+    "ref": "4.7",
+    "q": "Giả định cốt lõi của phương pháp LIME (Local Surrogate) khi giải thích quyết định của mô hình là gì?",
+    "correct": "Dù mô hình hộp đen phức tạp trên toàn cục, nhưng trong một vùng rất nhỏ xung quanh một điểm dữ liệu, nó có thể được xấp xỉ bằng một đường thẳng (tuyến tính)",
+    "wrong": [
+      "Toàn bộ dữ liệu huấn luyện có thể được phân tách hoàn hảo bằng một siêu phẳng tuyến tính toàn cục",
+      "Mọi đặc trưng đầu vào đều độc lập hoàn toàn với nhau trên không gian nhiều chiều",
+      "Mô hình hộp đen có thể được thay thế hoàn toàn bởi một cây quyết định 1 tầng duy nhất"
+    ],
+    "explain": "LIME giả định rằng xung quanh vùng lân cận hẹp của một điểm dữ liệu cụ thể, ranh giới quyết định phức tạp có thể xấp xỉ tốt bằng mô hình tuyến tính.",
+    "tip": "LIME: cục bộ hẹp xấp xỉ bằng đường thẳng tuyến tính."
+  },
+  {
+    "ref": "4.7",
+    "q": "Trong quy trình thực hiện của LIME, các biến thể (perturbations) được gán trọng số theo nguyên tắc nào?",
+    "correct": "Những biến thể càng nằm gần điểm gốc thì trọng số càng cao, những điểm xa thì trọng số thấp",
+    "wrong": [
+      "Tất cả các biến thể đều được gán trọng số bằng nhau tuyệt đối",
+      "Những biến thể nằm càng xa điểm gốc thì được gán trọng số càng lớn",
+      "Trọng số được gán ngẫu nhiên theo phân phối đều từ 0 đến 1"
+    ],
+    "explain": "LIME gán trọng số dựa trên khoảng cách tới điểm gốc: biến thể càng gần điểm cần giải thích thì càng quan trọng và nhận trọng số càng cao.",
+    "tip": "LIME: càng gần điểm gốc thì trọng số càng cao."
+  },
+  {
+    "ref": "4.8",
+    "q": "Tại sao chỉ số Accuracy (Độ chính xác) tuyệt đối không nên dùng để đánh giá mô hình trên dữ liệu mất cân bằng?",
+    "correct": "Vì mô hình chỉ cần dự đoán đúng lớp đa số đã đạt Accuracy rất cao trong khi hoàn toàn bỏ qua hoặc dự đoán sai lớp thiểu số",
+    "wrong": [
+      "Vì công thức của Accuracy sẽ bị chia cho 0 khi lớp thiểu số có số lượng mẫu quá ít",
+      "Vì Accuracy chỉ áp dụng cho các bài toán hồi quy liên tục, không dùng cho phân loại",
+      "Vì ma trận nhầm lẫn sẽ tự động đảo ngược các giá trị TP và TN khi tính toán"
+    ],
+    "explain": "Khi dữ liệu mất cân bằng (vd 99% âm tính), mô hình chỉ cần đoán 100% âm tính đã đạt 99% Accuracy nhưng vô dụng vì bỏ sót hoàn toàn lớp thiểu số.",
+    "tip": "Dữ liệu lệch tuyệt đối không dùng Accuracy."
+  },
+  {
+    "ref": "4.8",
+    "q": "Ba thước đo đánh giá phù hợp được khuyến nghị sử dụng thay cho Accuracy đối với dữ liệu không cân bằng là gì?",
+    "correct": "AUC (Area Under Curve), F1 Score và Cohen's Kappa",
+    "wrong": [
+      "SSE, TSS và R-squared",
+      "Entropy, Information Gain và Gini Index",
+      "Inertia, Distortion và Bandwidth"
+    ],
+    "explain": "Đối với dữ liệu mất cân bằng, tài liệu khuyến nghị sử dụng AUC, F1 Score và Cohen's Kappa thay cho Accuracy.",
+    "tip": "Thước đo dữ liệu mất cân bằng: AUC, F1 Score, Cohen's Kappa."
+  },
+  {
+    "ref": "4.8",
+    "q": "Kỹ thuật SMOTE tạo ra các điểm dữ liệu mới cho lớp thiểu số bằng cơ chế nào?",
+    "correct": "Tạo ra các mẫu mới dựa trên các mẫu hiện có thông qua nội suy toán học",
+    "wrong": [
+      "Nhân bản sao chép trực tiếp các hàng dữ liệu có sẵn của lớp thiểu số",
+      "Loại bỏ các điểm lớp đa số nằm quá gần ranh giới quyết định",
+      "Ánh xạ các điểm dữ liệu sang không gian đặc trưng vô hạn chiều bằng nhân RBF"
+    ],
+    "explain": "SMOTE (Synthetic Minority Oversampling Technique) tổng hợp mẫu mới bằng cách nội suy toán học giữa các điểm dữ liệu lớp thiểu số láng giềng.",
+    "tip": "SMOTE = nội suy toán học tạo điểm thiểu số mới."
+  },
+  {
+    "ref": "4.8",
+    "q": "Trong quy trình xử lý dữ liệu không cân bằng, thao tác Resampling bắt buộc phải thực hiện ở thời điểm nào?",
+    "correct": "Chỉ thực hiện sau khi đã chia tách tập dữ liệu Train và Test (sau Stratified Split)",
+    "wrong": [
+      "Thực hiện trên toàn bộ dữ liệu gốc trước khi tiến hành chia tách tập Train và Test",
+      "Chỉ thực hiện trên tập kiểm tra (Test set) sau khi mô hình đã huấn luyện xong",
+      "Thực hiện đồng thời trong quá trình tính toán ma trận nhầm lẫn cuối cùng"
+    ],
+    "explain": "Phải chia Train/Test trước rồi mới Resampling trên tập Train để tránh rò rỉ thông tin từ tập kiểm tra vào tập huấn luyện (data leakage).",
+    "tip": "Chia Train/Test trước -> Resampling sau."
+  },
+  {
+    "ref": "4.8",
+    "q": "Tiêu chí giữ lại điểm dữ liệu lớp đa số của thuật toán NearMiss-1 là gì?",
+    "correct": "Các điểm có khoảng cách trung bình đến 3 điểm lớp thiểu số gần nhất là nhỏ nhất",
+    "wrong": [
+      "Các điểm có khoảng cách trung bình đến 3 điểm lớp thiểu số xa nhất là nhỏ nhất",
+      "Các điểm là láng giềng gần nhất của từng điểm thuộc lớp thiểu số",
+      "Các điểm có tọa độ trùng với tâm cụm K-Means của lớp đa số"
+    ],
+    "explain": "NearMiss-1 giữ lại các điểm đa số có khoảng cách trung bình tới 3 điểm thiểu số gần nhất là nhỏ nhất.",
+    "tip": "NearMiss-1: trung bình đến 3 điểm thiểu số GẦN NHẤT là nhỏ nhất."
+  },
+  {
+    "ref": "4.8",
+    "q": "Điểm khác biệt giữa hai kỹ thuật làm sạch ranh giới Tomek Links và ENN (Edited Nearest Neighbors) là gì?",
+    "correct": "Tomek Links loại bỏ các điểm lớp đa số nằm quá gần lớp thiểu số, còn ENN loại bỏ các điểm có nhãn khác với đa số các láng giềng xung quanh",
+    "wrong": [
+      "Tomek Links nhân bản thêm mẫu thiểu số, còn ENN giảm bớt mẫu đa số",
+      "Tomek Links chỉ áp dụng cho bài toán hồi quy, còn ENN chỉ áp dụng cho phân loại",
+      "Tomek Links đo khoảng cách Cosine, còn ENN bắt buộc đo khoảng cách Manhattan"
+    ],
+    "explain": "Tomek Links loại bỏ các cặp điểm đa số/thiểu số quá sát nhau gây nhiễu ranh giới; ENN loại bỏ điểm có nhãn lệch pha so với đa số láng giềng để làm mượt ranh giới.",
+    "tip": "Tomek Links loại đa số sát ranh giới; ENN loại điểm khác nhãn láng giềng."
+  },
+  {
+    "ref": "4.9",
+    "q": "Bản chất cốt lõi của Học không giám sát (Unsupervised Learning) là gì?",
+    "correct": "Mô hình được huấn luyện trên dữ liệu không có nhãn (unlabeled data) và tự tìm ra các cấu trúc hoặc quy luật ẩn",
+    "wrong": [
+      "Mô hình bắt buộc phải có nhãn mục tiêu dạng danh mục rời rạc được gán sẵn",
+      "Mô hình sử dụng hàm mất mát Hinge Loss để tối đa hóa biên phân cách margin",
+      "Mô hình chỉ huấn luyện trên các tập dữ liệu đã được cân bằng tỷ lệ mẫu bằng SMOTE"
+    ],
+    "explain": "Unsupervised Learning làm việc với dữ liệu không gán nhãn, hệ thống tự động khám phá cấu trúc, quy luật hoặc cụm tiềm ẩn trong dữ liệu.",
+    "tip": "Unsupervised Learning = huấn luyện trên unlabeled data."
+  },
+  {
+    "ref": "4.9",
+    "q": "Hai dạng bài toán chính của Học không giám sát được nêu trong tài liệu là gì?",
+    "correct": "Phân cụm (Clustering) và Giảm chiều dữ liệu (Dimension Reduction)",
+    "wrong": [
+      "Hồi quy (Regression) và Phân loại (Classification)",
+      "Học tăng cường (Reinforcement) và Học chuyển giao (Transfer Learning)",
+      "Kiểm định giả thuyết (Hypothesis Testing) và Ước lượng Bayes (Bayesian Estimation)"
+    ],
+    "explain": "Hai dạng chính của Unsupervised Learning là Phân cụm (gom nhóm tương đồng) và Giảm chiều dữ liệu (giảm số biến đặc trưng).",
+    "tip": "Học không giám sát gồm: Phân cụm & Giảm chiều dữ liệu."
+  },
+  {
+    "ref": "4.9",
+    "q": "Vấn đề 'Lời nguyền chiều dữ liệu' (Curse of Dimensionality) xảy ra do nguyên nhân nào?",
+    "correct": "Số lượng mẫu huấn luyện cần thiết tăng theo cấp số nhân với số chiều, khiến quá nhiều đặc trưng dẫn đến hiệu suất mô hình kém đi",
+    "wrong": [
+      "Số lượng cụm K tăng quá nhanh làm cho thuật toán phân cụm không thể hội tụ",
+      "Dữ liệu bị trùng lặp quá nhiều khiến trọng số mô hình bị thiên lệch",
+      "Khoảng cách Euclidean giữa các điểm luôn hội tụ về giá trị 0"
+    ],
+    "explain": "Curse of Dimensionality xảy ra khi số chiều tăng cao, không gian trở nên cực kỳ thưa thớt và số mẫu cần thiết tăng lũy thừa, làm suy giảm hiệu suất mô hình.",
+    "tip": "Lời nguyền chiều dữ liệu: số mẫu cần tăng theo cấp số nhân với số chiều."
+  },
+  {
+    "ref": "4.9",
+    "q": "Thuật toán nào được tài liệu nhấn mạnh với công dụng giúp giảm chiều dữ liệu (Dimension Reduction)?",
+    "correct": "PCA (Principal Component Analysis)",
+    "wrong": [
+      "K-Means",
+      "DBSCAN",
+      "AdaBoost"
+    ],
+    "explain": "Tài liệu ghi chú rõ: 'PCA giúp giảm chiều dữ liệu' bằng cách tìm các thành phần biến thiên chính của tập dữ liệu.",
+    "tip": "PCA giúp giảm chiều dữ liệu."
+  },
+  {
+    "ref": "4.10",
+    "q": "Trong thuật toán K-Means, vị trí của tâm cụm (centroid) được cập nhật lại ở mỗi bước lặp bằng cách nào?",
+    "correct": "Lấy trung bình tọa độ của tất cả các điểm dữ liệu trong cụm đó",
+    "wrong": [
+      "Chọn ngẫu nhiên một điểm dữ liệu bất kỳ nằm trong cụm làm tâm mới",
+      "Tính trung vị khoảng cách Manhattan từ các điểm tới gốc tọa độ",
+      "Tìm điểm có mật độ lân cận lớn hơn tham số MinPts trong bán kính Epsilon"
+    ],
+    "explain": "K-Means tính lại tâm cụm bằng cách lấy trung bình cộng tọa độ của tất cả các quan sát hiện được gán vào cụm đó.",
+    "tip": "K-Means cập nhật centroid = trung bình tọa độ các điểm trong cụm."
+  },
+  {
+    "ref": "4.10",
+    "q": "Cải tiến của phương pháp khởi tạo K-Means++ so với K-Means truyền thống mang lại lợi ích gì?",
+    "correct": "Khởi tạo tâm cụm thông minh hơn giúp thuật toán hội tụ nhanh hơn và tránh các nghiệm tối ưu cục bộ kém",
+    "wrong": [
+      "Tự động tìm ra số lượng cụm K tối ưu mà không cần người dùng chỉ định",
+      "Cho phép thuật toán xử lý tốt các cụm có hình dạng bất kỳ không phải hình cầu",
+      "Loại bỏ hoàn toàn các điểm dữ liệu ngoại lai ra khỏi quá trình tính toán"
+    ],
+    "explain": "K-Means++ phân bổ các tâm cụm ban đầu cách xa nhau một cách có tính toán, giúp tăng tốc độ hội tụ và tránh cực tiểu cục bộ không tốt.",
+    "tip": "K-Means++ khởi tạo tâm cụm thông minh, hội tụ nhanh, tránh cực tiểu kém."
+  },
+  {
+    "ref": "4.10",
+    "q": "Phương pháp Điểm khuỷu tay (Elbow Method) dùng để xác định số lượng cụm K tối ưu bằng cách nào?",
+    "correct": "Vẽ biểu đồ giá trị Inertia theo K và chọn điểm mà tại đó tốc độ giảm của Inertia chậm lại rõ rệt",
+    "wrong": [
+      "Vẽ biểu đồ ROC và chọn điểm có diện tích dưới đường cong AUC lớn nhất",
+      "Cắt ngang qua đường thẳng đứng dài nhất trên biểu đồ phân cấp Dendrogram",
+      "Tìm giá trị K tại đó toàn bộ dữ liệu có nhãn phân loại chính xác 100%"
+    ],
+    "explain": "Elbow Method vẽ đồ thị Inertia theo K; điểm khuỷu tay (elbow) là nơi tốc độ suy giảm của Inertia bắt đầu chững lại rõ rệt.",
+    "tip": "Elbow Method: điểm tốc độ giảm của Inertia chậm lại rõ rệt."
+  },
+  {
+    "ref": "4.10",
+    "q": "Chỉ số Inertia (SSE) trong thuật toán K-Means được định nghĩa như thế nào?",
+    "correct": "Tổng bình phương khoảng cách từ các điểm đến tâm cụm của chúng",
+    "wrong": [
+      "Trung bình bình phương khoảng cách giữa các cặp tâm cụm với nhau",
+      "Khoảng cách Euclidean lớn nhất giữa hai điểm bất kỳ trong cùng một cụm",
+      "Tỷ lệ giữa phương sai nội cụm và phương sai giữa các cụm"
+    ],
+    "explain": "Inertia (SSE) đo độ chặt của các cụm, tính bằng tổng bình phương khoảng cách từ mỗi điểm dữ liệu đến tâm cụm tương ứng.",
+    "tip": "Inertia = tổng bình phương khoảng cách từ các điểm đến tâm cụm."
+  },
+  {
+    "ref": "4.10",
+    "q": "Khi số lượng cụm K tăng lên, giá trị của chỉ số Inertia trong K-Means sẽ biến thiên như thế nào?",
+    "correct": "Inertia luôn luôn giảm khi tăng K",
+    "wrong": [
+      "Inertia luôn luôn tăng khi tăng K",
+      "Inertia giữ nguyên không đổi với mọi giá trị của K",
+      "Inertia chỉ giảm khi K là số chẵn và tăng khi K là số lẻ"
+    ],
+    "explain": "Khi tăng số cụm K, các điểm càng ở gần tâm cụm của chúng hơn nên tổng bình phương khoảng cách Inertia luôn luôn giảm.",
+    "tip": "Inertia luôn giảm khi tăng K."
+  },
+  {
+    "ref": "4.11",
+    "q": "Ứng dụng nào sau đây của kỹ thuật phân cụm giúp doanh nghiệp tối ưu hóa các chiến dịch tiếp thị?",
+    "correct": "Phân khúc khách hàng theo hành vi mua sắm và nhân khẩu học",
+    "wrong": [
+      "Dự đoán giá trị doanh thu chứng khoán trong tương lai bằng hồi quy",
+      "Tự động điền dữ liệu thiếu bằng phương pháp gán nhãn Masking",
+      "Phát hiện lỗi sai lầm loại I trong quy trình kiểm định giả thuyết"
+    ],
+    "explain": "Phân cụm được dùng rộng rãi trong Marketing để phân khúc khách hàng theo nhóm hành vi, độ tuổi, sở thích.",
+    "tip": "Phân khúc khách hàng: gom nhóm theo hành vi, nhân khẩu học."
+  },
+  {
+    "ref": "4.11",
+    "q": "Thuật toán phân cụm hỗ trợ bài toán Phát hiện bất thường (Anomaly Detection) dựa trên cơ chế nào?",
+    "correct": "Xác định các điểm dữ liệu nằm cô lập, không thuộc về cụm nào một cách rõ rệt",
+    "wrong": [
+      "Xác định các điểm dữ liệu nằm sát trung tâm của cụm có mật độ cao nhất",
+      "Đếm số lượng điểm rơi vào các nút lá có độ vẩn đục Entropy bằng 0",
+      "Tìm kiếm các biến có hệ số hồi quy bị triệt tiêu về 0 bởi LASSO"
+    ],
+    "explain": "Các điểm dữ liệu bất thường (gian lận, lỗi hệ thống) thường nằm tách biệt, không thuộc vào bất kỳ cụm chính nào.",
+    "tip": "Phát hiện bất thường: điểm không thuộc về cụm nào rõ rệt."
+  },
+  {
+    "ref": "4.11",
+    "q": "Trong xử lý hình ảnh, kỹ thuật phân cụm được ứng dụng vào bài toán Nén hình ảnh (Image Compression) như thế nào?",
+    "correct": "Giảm số lượng màu sắc hoặc độ phân giải nhưng vẫn giữ được nội dung chính của bức ảnh",
+    "wrong": [
+      "Chuyển đổi hình ảnh màu thành ảnh đen trắng nhị phân 0 và 1",
+      "Tăng gấp đôi độ phân giải của bức ảnh bằng phép nội suy điểm ảnh",
+      "Tự động xóa bỏ hoàn toàn nền phía sau của vật thể chính trong ảnh"
+    ],
+    "explain": "Phân cụm gom các màu tương tự thành các màu đại diện (centroids), giúp giảm bớt số lượng màu cần lưu trữ mà vẫn giữ được nội dung ảnh.",
+    "tip": "Nén hình ảnh: giảm số màu/độ phân giải nhưng giữ nội dung chính."
+  },
+  {
+    "ref": "4.12",
+    "q": "Trong thư viện scikit-learn, thuộc tính nào của đối tượng `KMeans` sau khi huấn luyện lưu trữ giá trị Inertia (tổng bình phương khoảng cách tới tâm cụm)?",
+    "correct": "`kmeans.inertia_`",
+    "wrong": [
+      "`kmeans.cluster_centers_`",
+      "`kmeans.labels_`",
+      "`kmeans.distortion_`"
+    ],
+    "explain": "Thuộc tính `.inertia_` của đối tượng `KMeans` chứa tổng bình phương khoảng cách từ các điểm tới tâm cụm tương ứng.",
+    "tip": "kmeans.inertia_ lưu giá trị Inertia."
+  },
+  {
+    "ref": "4.12",
+    "q": "Để truy xuất tọa độ vị trí của các tâm cụm sau khi mô hình `KMeans` hoàn tất huấn luyện, ta sử dụng thuộc tính nào?",
+    "correct": "`kmeans.cluster_centers_`",
+    "wrong": [
+      "`kmeans.inertia_`",
+      "`kmeans.centroids_`",
+      "`kmeans.centers_`"
+    ],
+    "explain": "Thuộc tính `.cluster_centers_` chứa ma trận tọa độ các tâm cụm sau khi thuật toán hội tụ.",
+    "tip": "kmeans.cluster_centers_ lưu tọa độ các tâm cụm."
+  },
+  {
+    "ref": "4.12",
+    "q": "Phương thức nào của `KMeans` vừa thực hiện huấn luyện mô hình vừa trả về trực tiếp nhãn cụm dự đoán cho tập dữ liệu đầu vào?",
+    "correct": "`kmeans.fit_predict(X)`",
+    "wrong": [
+      "`kmeans.transform(X)`",
+      "`kmeans.score(X)`",
+      "`kmeans.fit_transform(X)`"
+    ],
+    "explain": "`fit_predict(X)` kết hợp cả bước huấn luyện (fit) và trả về nhãn cụm được gán cho từng mẫu trong X.",
+    "tip": "fit_predict() vừa huấn luyện vừa gán nhãn cụm."
+  },
+  {
+    "ref": "4.14",
+    "q": "Đặc điểm của Khoảng cách Euclid (Euclidean / L2 Distance) là gì?",
+    "correct": "Tính đường thẳng ngắn nhất giữa hai điểm, phù hợp cho dữ liệu tọa độ nhưng nhạy cảm với lời nguyền chiều dữ liệu",
+    "wrong": [
+      "Tính tổng chênh lệch tuyệt đối giữa các tọa độ và không bị ảnh hưởng bởi số chiều",
+      "Đo góc giữa hai vectơ và hoàn toàn không bị ảnh hưởng bởi độ lớn (scaling)",
+      "Đo tỷ lệ giữa phần tử chung trên tổng số phần tử độc nhất của hai tập hợp"
+    ],
+    "explain": "Khoảng cách Euclidean là độ dài đường thẳng ngắn nhất giữa 2 điểm (L2), rất trực quan trên tọa độ nhưng suy giảm hiệu quả khi số chiều quá cao.",
+    "tip": "Euclidean (L2): đường thẳng ngắn nhất, nhạy với số chiều cao."
+  },
+  {
+    "ref": "4.14",
+    "q": "Khoảng cách Manhattan (L1 / City Block) thường được ưu tiên sử dụng trong trường hợp nào?",
+    "correct": "Khi các đặc trưng không có cùng đơn vị đo hoặc dữ liệu di chuyển trong mạng lưới ô bàn cờ",
+    "wrong": [
+      "Khi cần đo mức độ tương đồng giữa các tài liệu văn bản dài",
+      "Khi dữ liệu là các tập hợp nhị phân cần tính tỷ lệ Intersection over Union",
+      "Khi cần tìm các cụm có hình dạng phức tạp lồi lõm bất kỳ"
+    ],
+    "explain": "Khoảng cách Manhattan (L1) tính tổng khoảng cách chênh lệch tuyệt đối từng trục, phù hợp khi các biến không cùng đơn vị hoặc đi theo lưới đường phố bàn cờ.",
+    "tip": "Manhattan (L1): ô bàn cờ, đặc trưng không cùng đơn vị."
+  },
+  {
+    "ref": "4.14",
+    "q": "Tại sao Khoảng cách Cosine (Cosine Distance) lại đặc biệt hiệu quả trong khai phá dữ liệu văn bản (Text Mining)?",
+    "correct": "Đo góc giữa hai vectơ nên không bị ảnh hưởng bởi độ lớn (độ dài văn bản), chỉ quan tâm đến tần suất và hướng tương đối",
+    "wrong": [
+      "Tính toán khoảng cách theo đường thẳng ngắn nhất giữa các từ khóa xuất hiện",
+      "Tự động chuẩn hóa phân phối từ vựng về phân phối chuẩn có trung bình bằng 0",
+      "Có khả năng kháng hoàn toàn các điểm dữ liệu ngoại lai dựa vào khoảng cách tứ phân vị"
+    ],
+    "explain": "Cosine đo góc giữa 2 vectơ, không bị chi phối bởi độ dài văn bản (scaling) mà tập trung vào sự tương đồng về tỷ lệ phân bổ từ vựng.",
+    "tip": "Cosine: đo góc giữa 2 vector, không bị ảnh hưởng bởi độ dài văn bản."
+  },
+  {
+    "ref": "4.14",
+    "q": "Khoảng cách Jaccard (Jaccard Distance) được tính toán dựa trên nguyên lý nào?",
+    "correct": "Dựa trên tỷ lệ phần tử chung trên tổng số phần tử độc nhất (Intersection over Union)",
+    "wrong": [
+      "Căn bậc hai của tổng bình phương chênh lệch giữa các tọa độ",
+      "Tích vô hướng của hai vectơ chia cho tích độ dài của chúng",
+      "Tổng độ chênh lệch tuyệt đối giữa các biến đặc trưng"
+    ],
+    "explain": "Khoảng cách Jaccard đo độ khác biệt giữa các tập hợp dựa trên tỷ lệ giao trên hợp (IoU), phù hợp cho dữ liệu nhị phân hoặc tập hợp từ.",
+    "tip": "Jaccard = Intersection over Union (IoU)."
+  },
+  {
+    "ref": "4.14",
+    "q": "Theo ví dụ tính tay trong tài liệu, với hai vectơ `a = [[1, 2, 3]]` và `b = [[4, 5, 6]]`, khoảng cách Euclidean được tính như thế nào?",
+    "correct": "sqrt((1-4)^2 + (2-5)^2 + (3-6)^2) = sqrt(9 + 9 + 9) = sqrt(27) (xấp xỉ 5.196)",
+    "wrong": [
+      "|1-4| + |2-5| + |3-6| = 3 + 3 + 3 = 9",
+      "(1*4 + 2*5 + 3*6) = 4 + 10 + 18 = 32",
+      "(1-4)^2 + (2-5)^2 + (3-6)^2 = 27"
+    ],
+    "explain": "Khoảng cách Euclidean là căn bậc hai của tổng bình phương các hiệu tọa độ: sqrt((-3)^2 + (-3)^2 + (-3)^2) = sqrt(27) ≈ 5.196.",
+    "tip": "Euclidean = căn bậc 2 tổng hiệu bình phương."
+  },
+  {
+    "ref": "4.15",
+    "q": "Thuật toán Phân cụm Phân cấp kết tụ (Hierarchical Agglomerative Clustering - HAC) xây dựng các cụm theo mô hình nào?",
+    "correct": "Mô hình phân cấp từ dưới lên (Bottom-up), ban đầu mỗi điểm là một cụm rồi gộp dần các cụm gần nhất",
+    "wrong": [
+      "Mô hình phân cấp từ trên xuống (Top-down), chia đôi toàn bộ dữ liệu thành các cụm nhỏ",
+      "Chọn ngẫu nhiên K tâm cụm rồi gán các điểm vào tâm gần nhất cho đến khi hội tụ",
+      "Di chuyển tâm của cửa sổ tìm kiếm về phía có mật độ điểm cao nhất"
+    ],
+    "explain": "HAC là giải thuật Bottom-up: bắt đầu từ việc mỗi điểm là 1 cụm riêng lẻ, sau đó lặp lại việc gộp 2 cụm gần nhau nhất lại cho đến khi chỉ còn 1 cụm lớn.",
+    "tip": "HAC = Bottom-up, gộp dần từ dưới lên."
+  },
+  {
+    "ref": "4.15",
+    "q": "Phương pháp liên kết Ward Linkage trong phân cụm phân cấp hoạt động theo tiêu chí nào?",
+    "correct": "Kết hợp các cụm sao cho tổng phương sai (Inertia) tăng lên là ít nhất",
+    "wrong": [
+      "Đo khoảng cách nhỏ nhất giữa hai điểm thuộc hai cụm khác nhau",
+      "Đo khoảng cách lớn nhất giữa hai điểm thuộc hai cụm khác nhau",
+      "Tính khoảng cách trung bình của tất cả các cặp điểm giữa hai cụm"
+    ],
+    "explain": "Ward Linkage gộp các cụm sao cho mức tăng của tổng phương sai nội cụm (Inertia) là nhỏ nhất; đây là phương pháp phổ biến nhất trong HAC.",
+    "tip": "Ward Linkage: tổng phương sai (inertia) tăng lên là ít nhất."
+  },
+  {
+    "ref": "4.15",
+    "q": "Phương pháp liên kết nào trong HAC dễ bị ảnh hưởng bởi nhiễu do gây ra hiệu ứng 'chuỗi' (chaining)?",
+    "correct": "Single Linkage",
+    "wrong": [
+      "Complete Linkage",
+      "Average Linkage",
+      "Ward Linkage"
+    ],
+    "explain": "Single Linkage đo khoảng cách nhỏ nhất giữa 2 cụm nên các điểm nhiễu có thể đóng vai trò cầu nối, gây ra hiệu ứng dây chuyền kết nối các cụm xa nhau.",
+    "tip": "Single Linkage dễ bị hiệu ứng chuỗi (chaining)."
+  },
+  {
+    "ref": "4.15",
+    "q": "Khi quan sát biểu đồ phân nhánh Dendrogram, việc cắt ngang cây phân cấp ở vị trí nào thường mang lại kết quả phân cụm tự nhiên và ổn định nhất?",
+    "correct": "Cắt ngang qua các đường thẳng đứng dài nhất (nơi khoảng cách giữa các lần gộp cụm là lớn nhất)",
+    "wrong": [
+      "Cắt ngang qua các nhánh nằm ngang ở vị trí thấp nhất sát đáy biểu đồ",
+      "Cắt tại điểm có số lượng nhánh con đúng bằng số lượng thuộc tính đầu vào",
+      "Cắt tại điểm mà tất cả các điểm dữ liệu đều trở thành các cụm đơn lẻ"
+    ],
+    "explain": "Các đường thẳng đứng dài nhất biểu thị khoảng cách gộp cụm lớn nhất (các cụm cách xa nhau rõ rệt), do đó cắt tại đây cho kết quả phân cụm tự nhiên nhất.",
+    "tip": "Cắt Dendrogram tại đường thẳng đứng dài nhất."
+  },
+  {
+    "ref": "4.15",
+    "q": "Tiêu chí đo khoảng cách giữa hai cụm của phương pháp liên kết Complete Linkage là gì?",
+    "correct": "Khoảng cách lớn nhất giữa hai điểm thuộc hai cụm khác nhau",
+    "wrong": [
+      "Khoảng cách nhỏ nhất giữa hai điểm thuộc hai cụm khác nhau",
+      "Khoảng cách trung bình giữa tất cả các cặp điểm của hai cụm",
+      "Khoảng cách giữa hai tâm cụm tính theo phân phối chuẩn"
+    ],
+    "explain": "Complete Linkage lấy khoảng cách xa nhất giữa hai điểm của hai cụm làm thước đo khoảng cách giữa hai cụm đó.",
+    "tip": "Complete Linkage = khoảng cách lớn nhất giữa 2 điểm."
+  },
+  {
+    "ref": "4.16",
+    "q": "Hai ưu điểm nổi bật của thuật toán phân cụm DBSCAN là gì?",
+    "correct": "Có thể tìm thấy các cụm có hình dạng bất kỳ và tự động loại bỏ nhiễu (noise)",
+    "wrong": [
+      "Tốc độ tính toán nhanh hơn K-Means trên tập dữ liệu hàng triệu mẫu",
+      "Không yêu cầu bất kỳ tham số đầu vào nào từ phía người sử dụng",
+      "Luôn chia dữ liệu thành các cụm hình cầu đồng đều và hoàn hảo"
+    ],
+    "explain": "DBSCAN phân cụm dựa trên mật độ nên nhận diện được các cụm có hình dạng ngoằn ngoèo, lồi lõm bất kỳ và tự động tách biệt các điểm nhiễu.",
+    "tip": "DBSCAN: cụm hình dạng bất kỳ + tự loại nhiễu."
+  },
+  {
+    "ref": "4.16",
+    "q": "Trong DBSCAN, một điểm dữ liệu được xác định là 'Điểm lõi' (Core Point) khi thỏa mãn điều kiện nào?",
+    "correct": "Có nhiều hơn MinPts điểm lân cận nằm trong bán kính Epsilon (eps)",
+    "wrong": [
+      "Nằm trong bán kính eps của điểm khác nhưng bản thân có ít hơn MinPts lân cận",
+      "Hoàn toàn không có bất kỳ điểm lân cận nào nằm trong bán kính eps",
+      "Có tọa độ trùng khớp chính xác với tâm cụm K-Means"
+    ],
+    "explain": "Core Point là điểm có mật độ dày đặc: số lượng điểm nằm trong bán kính eps xung quanh nó phải lớn hơn ngưỡng MinPts.",
+    "tip": "Core Point: > MinPts lân cận trong bán kính eps."
+  },
+  {
+    "ref": "4.16",
+    "q": "Khái niệm 'Điểm biên' (Density-reachable) trong DBSCAN có đặc trưng gì?",
+    "correct": "Nằm trong vùng bán kính eps của một điểm lõi nhưng bản thân nó không có đủ MinPts lân cận",
+    "wrong": [
+      "Có nhiều hơn MinPts lân cận nhưng nằm ngoài bán kính eps của mọi điểm lõi",
+      "Không thuộc bất kỳ cụm nào và luôn bị gán nhãn -1",
+      "Là điểm có khoảng cách tới tâm cụm nhỏ nhất trong toàn bộ tập dữ liệu"
+    ],
+    "explain": "Điểm biên nằm trong vùng lân cận eps của một Core Point nên vẫn thuộc về cụm đó, nhưng bản thân nó không đủ MinPts lân cận để thành Core Point.",
+    "tip": "Điểm biên: trong eps của Core Point nhưng bản thân không đủ MinPts."
+  },
+  {
+    "ref": "4.16",
+    "q": "Trong scikit-learn, thuật toán `DBSCAN` gán nhãn giá trị nào để đại diện cho các điểm dữ liệu nhiễu (Noise)?",
+    "correct": "Nhãn -1",
+    "wrong": [
+      "Nhãn 0",
+      "Nhãn 99",
+      "Nhãn None"
+    ],
+    "explain": "DBSCAN gán nhãn -1 cho tất cả các điểm không thỏa mãn điều kiện thuộc về bất kỳ cụm mật độ nào (điểm nhiễu / noise).",
+    "tip": "DBSCAN gán nhãn -1 cho nhiễu."
+  },
+  {
+    "ref": "4.16",
+    "q": "Hai siêu tham số quan trọng nhất cần thiết lập khi khởi tạo `DBSCAN(eps=0.5, min_samples=5)` là gì?",
+    "correct": "Bán kính vùng lân cận `eps` và số lượng điểm tối thiểu trong vùng lân cận `min_samples` (MinPts)",
+    "wrong": [
+      "Số lượng cụm `n_clusters` và phương pháp liên kết `linkage`",
+      "Kích thước cửa sổ `bandwidth` và số lượng thành phần chính `n_components`",
+      "Tham số điều chuẩn `C` và hàm mất mát `loss`"
+    ],
+    "explain": "DBSCAN được điều khiển bởi 2 tham số chính: eps (bán kính lân cận) và min_samples (số điểm tối thiểu để tạo thành vùng mật độ cao).",
+    "tip": "DBSCAN: eps và min_samples (MinPts)."
+  },
+  {
+    "ref": "4.17",
+    "q": "Thuật toán Mean-Shift Clustering hoạt động dựa trên cơ chế nào?",
+    "correct": "Tìm kiếm các vùng có mật độ dữ liệu cao nhất (mốt - mode) bằng cách di chuyển tâm của một cửa sổ về phía có mật độ cao hơn cho đến khi hội tụ",
+    "wrong": [
+      "Cực tiểu hóa hàm mất mát SSE bằng cách cập nhật các trọng số theo đạo hàm bậc một",
+      "Chia dữ liệu thành các cụm hình cầu dựa trên việc gán điểm vào tâm cụm gần nhất",
+      "Gộp dần các điểm dữ liệu từ dưới lên trên biểu đồ phân cấp Dendrogram"
+    ],
+    "explain": "Mean-Shift là thuật toán tìm mốt (mode): nó trượt cửa sổ tìm kiếm dần về phía vùng có mật độ điểm cao hơn cho tới khi đạt đỉnh mật độ.",
+    "tip": "Mean-Shift: di chuyển tâm cửa sổ về phía mật độ cao nhất (mode)."
+  },
+  {
+    "ref": "4.17",
+    "q": "Ưu điểm nổi bật của thuật toán phân cụm Mean-Shift là gì?",
+    "correct": "Không cần khai báo trước số lượng cụm K và có thể tìm thấy các cụm có kích thước không đều",
+    "wrong": [
+      "Tốc độ xử lý cực kỳ nhanh trên các tập dữ liệu có quy mô hàng triệu mẫu",
+      "Hoàn toàn không phụ thuộc vào bất kỳ siêu tham số kích thước cửa sổ nào",
+      "Có thể hoạt động hiệu quả với mọi độ đo khoảng cách phi tuyến tính"
+    ],
+    "explain": "Mean-Shift không cần người dùng chỉ định trước K và có khả năng phát hiện các cụm có hình dạng, kích thước không đồng đều.",
+    "tip": "Mean-Shift: không cần khai báo trước K, cụm kích thước không đều."
+  },
+  {
+    "ref": "4.17",
+    "q": "Nhược điểm lớn của thuật toán Mean-Shift được nêu trong tài liệu là gì?",
+    "correct": "Chạy chậm với dữ liệu lớn và phụ thuộc nhiều vào tham số 'bandwidth' (kích thước cửa sổ)",
+    "wrong": [
+      "Bắt buộc người dùng phải phỏng đoán chính xác số lượng cụm K ban đầu",
+      "Không thể tìm thấy các cụm có kích thước và mật độ khác nhau",
+      "Tự động biến đổi toàn bộ nhãn mục tiêu sang dạng biến liên tục"
+    ],
+    "explain": "Mean-Shift có độ phức tạp cao nên chạy chậm với dữ liệu lớn, đồng thời kết quả phụ thuộc rất lớn vào việc chọn bandwidth phù hợp.",
+    "tip": "Mean-Shift chạy chậm với dữ liệu lớn, phụ thuộc bandwidth."
+  },
+  {
+    "ref": "4.17",
+    "q": "Hàm nào trong scikit-learn được dùng để hỗ trợ ước lượng tự động tham số kích thước cửa sổ (bandwidth) cho Mean-Shift?",
+    "correct": "`estimate_bandwidth(X, quantile=0.2)`",
+    "wrong": [
+      "`find_optimal_k(X)`",
+      "`calculate_inertia(X)`",
+      "`get_eps_radius(X)`"
+    ],
+    "explain": "Hàm `estimate_bandwidth` trong `sklearn.cluster` giúp ước lượng giá trị bandwidth phù hợp dựa trên phân vị khoảng cách dữ liệu.",
+    "tip": "estimate_bandwidth() để ước lượng bandwidth cho Mean-Shift."
+  },
+  {
+    "ref": "4.18",
+    "q": "Khi làm việc với tập dữ liệu cực lớn và cần thuật toán phân cụm chạy rất nhanh, phương pháp nào là lựa chọn phù hợp nhất?",
+    "correct": "K-Means",
+    "wrong": [
+      "Hierarchical Clustering",
+      "Mean-Shift",
+      "DBSCAN với nhiều mức mật độ khác nhau"
+    ],
+    "explain": "K-Means có ưu điểm nổi bật là tốc độ tính toán rất nhanh, phù hợp cho các tập dữ liệu có kích thước cực lớn.",
+    "tip": "Dữ liệu cực lớn, cần rất nhanh -> K-Means."
+  },
+  {
+    "ref": "4.18",
+    "q": "Nhược điểm về độ phức tạp tính toán của thuật toán Phân cụm Phân cấp (Hierarchical) khi xử lý tập dữ liệu lớn là gì?",
+    "correct": "Chạy chậm với dữ liệu lớn do độ phức tạp tính toán lên tới O(N^2) và phải chọn K để cắt cây",
+    "wrong": [
+      "Chỉ tìm được các cụm có hình dạng ngoằn ngoèo bất kỳ và nhạy cảm với eps",
+      "Không thể biểu diễn trực quan quá trình gom cụm bằng biểu đồ Dendrogram",
+      "Bắt buộc phải khởi tạo tâm cụm bằng kỹ thuật thông minh K-Means++"
+    ],
+    "explain": "Hierarchical Clustering có độ phức tạp O(N^2) nên chạy rất chậm trên các bộ dữ liệu lớn, ngoài ra vẫn phải chọn K để cắt cây.",
+    "tip": "Hierarchical chậm với dữ liệu lớn (O(N^2))."
+  },
+  {
+    "ref": "4.18",
+    "q": "Nhược điểm chính của thuật toán DBSCAN trong so sánh tổng quan giữa các thuật toán phân cụm là gì?",
+    "correct": "Nhạy cảm với tham số eps và hoạt động không tốt với các cụm có mật độ khác nhau",
+    "wrong": [
+      "Bắt buộc người dùng phải biết trước và khai báo chính xác số lượng cụm K",
+      "Chỉ có thể phát hiện được các cụm có hình dạng hình cầu đối xứng",
+      "Không có khả năng tự động phát hiện và lọc bỏ các điểm dữ liệu nhiễu"
+    ],
+    "explain": "DBSCAN nhạy cảm với việc chọn eps và gặp khó khăn khi các cụm trong dữ liệu có mật độ chênh lệch lớn.",
+    "tip": "DBSCAN nhạy cảm với eps, không tốt với các cụm mật độ khác nhau."
+  },
+  {
+    "ref": "4.18",
+    "q": "Đặc điểm hạn chế nào sau đây là của thuật toán Mean-Shift khi so sánh với các thuật toán phân cụm khác?",
+    "correct": "Chạy chậm và chỉ dùng khoảng cách Euclidean",
+    "wrong": [
+      "Chỉ hiệu quả với các cụm hình cầu và bắt buộc phải biết trước số lượng cụm K",
+      "Độ phức tạp tính toán O(N^2) và bắt buộc phải cắt cây phân cấp",
+      "Rất nhạy cảm với tham số eps và không phát hiện được điểm nhiễu"
+    ],
+    "explain": "Mean-Shift có nhược điểm là tốc độ thực thi chậm và chỉ áp dụng được với thước đo khoảng cách Euclidean.",
+    "tip": "Mean-Shift chạy chậm và chỉ dùng khoảng cách Euclidean."
+  }
+]

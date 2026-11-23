@@ -1,0 +1,352 @@
+[
+ {
+  "id": 115,
+  "question": "Which of the following studies various techniques to classify patterns?",
+  "options": [
+   "Image Processing",
+   "Photogrammetry",
+   "Image Recognition",
+   "Pattern Recognition"
+  ],
+  "correct": [
+   "Pattern Recognition"
+  ],
+  "slide_image": "cpv-slides-real/slide-136.png"
+ },
+ {
+  "id": 116,
+  "question": "Which of the following belongs to kernel tracking approach in object tracking algorithms?",
+  "options": [
+   "Multi-view based method",
+   "Deterministic method",
+   "Probabilistic method",
+   "Shape matching"
+  ],
+  "correct": [
+   "Deterministic method"
+  ],
+  "slide_image": "cpv-slides-real/slide-137.png"
+ },
+ {
+  "id": 117,
+  "question": "Which of the following algorithms is used to detect the position of a blob in an image?",
+  "options": [
+   "First derivative",
+   "Second derivative",
+   "Laplacian of Gaussian",
+   "Normalized Laplacian of Gaussian"
+  ],
+  "correct": [
+   "Normalized Laplacian of Gaussian"
+  ],
+  "slide_image": "cpv-slides-real/slide-138.png"
+ },
+ {
+  "id": 119,
+  "question": "Which technique is commonly used to detect keypoints and descriptors in images for panorama recognition?",
+  "options": [
+   "SIFT",
+   "Histogram equalization",
+   "Fourier transform",
+   "PCA"
+  ],
+  "correct": [
+   "SIFT"
+  ],
+  "slide_image": "cpv-slides-real/slide-140.png"
+ },
+ {
+  "id": 120,
+  "question": "Which OpenCV function is commonly used to draw a line on an image?",
+  "options": [
+   "line()",
+   "drawLine()",
+   "lineSegment()",
+   "draw.line()"
+  ],
+  "correct": [
+   "line()"
+  ],
+  "slide_image": "cpv-slides-real/slide-141.png"
+ },
+ {
+  "id": 121,
+  "question": "Which technical specification of a camera regulates the quantity of light that reaches the sensor and establishes the exposure level of an image?",
+  "options": [
+   "Sampling pitch",
+   "Fill factor",
+   "Shutter speed",
+   "Chip size"
+  ],
+  "correct": [
+   "Shutter speed"
+  ],
+  "slide_image": "cpv-slides-real/slide-142.png"
+ },
+ {
+  "id": 122,
+  "question": "Which type of following spaces does the Hough Transform often use for representing lines in parameter space?",
+  "options": [
+   "Polar space",
+   "Cartesian space",
+   "Transform space",
+   "Gradient space"
+  ],
+  "correct": [
+   "Polar space"
+  ],
+  "slide_image": "cpv-slides-real/slide-143.png"
+ },
+ {
+  "id": 123,
+  "question": "Which type of object tracking method estimates the object region in each frame, utilizing information encoded within the object region itself?",
+  "options": [
+   "Template Matching",
+   "Multi-view Tracking",
+   "Silhouette Tracking",
+   "Contour Evolution"
+  ],
+  "correct": [
+   "Template Matching"
+  ],
+  "slide_image": "cpv-slides-real/slide-144.png"
+ },
+ {
+  "id": 124,
+  "question": "Which tracking algorithm is known for its ability to handle scale variations, rotation, and occlusions by adaptively adjusting the search window?",
+  "options": [
+   "CamShift tracking",
+   "Kalman filtering",
+   "Mean Shift tracking",
+   "Optical flow tracking"
+  ],
+  "correct": [
+   "CamShift tracking"
+  ],
+  "slide_image": "cpv-slides-real/slide-145.png"
+ },
+ {
+  "id": 125,
+  "question": "Which object detection algorithm is known for its two-stage architecture involving region proposals and object classification?",
+  "options": [
+   "Faster R-CNN",
+   "YOLO",
+   "SSD",
+   "Haar Cascade"
+  ],
+  "correct": [
+   "Faster R-CNN"
+  ],
+  "slide_image": "cpv-slides-real/slide-146.png"
+ },
+ {
+  "id": 126,
+  "question": "How does a Gaussian Mixture Model represent each cluster?",
+  "options": [
+   "By a parabolic line",
+   "By a decision tree",
+   "By a distribution",
+   "By a random selection"
+  ],
+  "correct": [
+   "By a distribution"
+  ],
+  "slide_image": "cpv-slides-real/slide-147.png"
+ },
+ {
+  "id": 127,
+  "question": "How is the required minimum number of trials calculated in RANSAC algorithm, given P, the probability of success after S trails, p, the probability of inliers and k, the number of random samples inliers?",
+  "options": [
+   "log(1-P)/log(1-p^k)",
+   "log(1-P)*log(1-p^k)",
+   "log[(1-P)(1-p^k)]",
+   "log[(1-P)/(1-p^k)]"
+  ],
+  "correct": [
+   "log(1-P)/log(1-p^k)"
+  ],
+  "slide_image": "cpv-slides-real/slide-148.png"
+ },
+ {
+  "id": 128,
+  "question": "When dealing with image classification, what kind of challenges do we face with images?",
+  "options": [
+   "Variations due to scaling",
+   "Variations due to illumination",
+   "Image occlusion",
+   "All the above"
+  ],
+  "correct": [
+   "All the above"
+  ],
+  "slide_image": "cpv-slides-real/slide-149.png"
+ },
+ {
+  "id": 129,
+  "question": "When the Fourier transform is used, the values of the properties are also transformed accordingly. What is the result of the Fourier transform applied to convolution f(x) * h(x)?",
+  "options": [
+   "F(w)+H(w)",
+   "F(w)*H(w)",
+   "F(w)H(w)",
+   "F(w)H*(w)"
+  ],
+  "correct": [
+   "F(w)H(w)"
+  ],
+  "slide_image": "cpv-slides-real/slide-150.png"
+ },
+ {
+  "id": 130,
+  "question": "After extracted features and their descriptors from two or more images then the next is to establish some preliminary feature matches between these images. Which name is it called?",
+  "options": [
+   "Feature reduce",
+   "Feature combination",
+   "Feature compression",
+   "Feature matching"
+  ],
+  "correct": [
+   "Feature matching"
+  ],
+  "slide_image": "cpv-slides-real/slide-151.png"
+ },
+ {
+  "id": 131,
+  "question": "Algorithms used for face detection based on what set features to recognize faces? Choose the best correct answer",
+  "options": [
+   "Eyes, eyebrows, nose, hair, jaw",
+   "Eyes, eyebrows, nose, neck, mouth",
+   "Eyes, eyebrows, nose, mouth, jaw",
+   "Eyes, eyebrows, jaw, neck, ear"
+  ],
+  "correct": [
+   "Eyes, eyebrows, nose, mouth, jaw"
+  ],
+  "slide_image": "cpv-slides-real/slide-152.png"
+ },
+ {
+  "id": 132,
+  "question": "Active contour is described as an active model for the process of segmentation. Which of the following algorithms is used in active contour? Choose the best answer",
+  "options": [
+   "Snakes model",
+   "Scissors model",
+   "Sets model",
+   "All of the others"
+  ],
+  "correct": [
+   "Snakes model"
+  ],
+  "slide_image": "cpv-slides-real/slide-153.png"
+ },
+ {
+  "id": 133,
+  "question": "A dataset has 1000 images, the size of each image is 128x128. Principal component analysis is applied to keep 1200 most significant components. What is the number of features of the whole dataset in eigenspace?",
+  "options": [
+   "1000x128",
+   "1200x1000",
+   "128x1200",
+   "128x128"
+  ],
+  "correct": [
+   "1200x1000"
+  ],
+  "slide_image": "cpv-slides-real/slide-154.png"
+ },
+ {
+  "id": 134,
+  "question": "It is an approach detecting, for every pixel, belonging class of the object. What is the exact name of this process?",
+  "options": [
+   "Instance segmentation",
+   "Semantic detection",
+   "Instance detection",
+   "Semantic segmentation"
+  ],
+  "correct": [
+   "Semantic segmentation"
+  ],
+  "slide_image": "cpv-slides-real/slide-155.png"
+ },
+ {
+  "id": 135,
+  "question": "It is performed fully automated image stitching is a technique to recognize which images actually go together. What is the exact name of this process?",
+  "options": [
+   "Panoramas creating",
+   "Recognizing panoramas",
+   "Parallax removal",
+   "Bundle Adjustment"
+  ],
+  "correct": [
+   "Recognizing panoramas"
+  ],
+  "slide_image": "cpv-slides-real/slide-156.png"
+ },
+ {
+  "id": 136,
+  "question": "It is the ability to perceive an object's physical properties (such as shape, color, and texture) and apply semantic attributes to the object. What is the exact name of this process? Choose the best correct answer",
+  "options": [
+   "Object detection",
+   "Object locating",
+   "Object recognition",
+   "Object tracking"
+  ],
+  "correct": [
+   "Object recognition"
+  ],
+  "slide_image": "cpv-slides-real/slide-157.png"
+ },
+ {
+  "id": 137,
+  "question": "In which coordinate system are points represented using the radial distance, azimuthal angle, and height?",
+  "options": [
+   "Cylindrical coordinates",
+   "Cartesian coordinates",
+   "Spherical coordinates",
+   "Polar coordinates"
+  ],
+  "correct": [
+   "Cylindrical coordinates"
+  ],
+  "slide_image": "cpv-slides-real/slide-158.png"
+ },
+ {
+  "id": 138,
+  "question": "In image processing, what is the next step after feature detection?",
+  "options": [
+   "Preprocessing",
+   "Feature description",
+   "Feature combination",
+   "Noise remove( filters)"
+  ],
+  "correct": [
+   "Feature description"
+  ],
+  "slide_image": "cpv-slides-real/slide-159.png"
+ },
+ {
+  "id": 139,
+  "question": "In watershed segmentation, what does a watershed boundary represent?",
+  "options": [
+   "Object edges",
+   "Object centroids",
+   "Valleys in the image",
+   "Image pixels"
+  ],
+  "correct": [
+   "Object edges"
+  ],
+  "slide_image": "cpv-slides-real/slide-160.png"
+ },
+ {
+  "id": 140,
+  "question": "In Fourier transform, what is the abbreviation for DFT?",
+  "options": [
+   "Display Fourier Transform",
+   "Distribute Fourier Transform",
+   "Discrete Fourier Transform",
+   "Discontinous Fourier Transform"
+  ],
+  "correct": [
+   "Discrete Fourier Transform"
+  ],
+  "slide_image": "cpv-slides-real/slide-161.png"
+ }
+]

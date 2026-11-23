@@ -1,0 +1,336 @@
+[
+ {
+  "id": 231,
+  "question": "Why do people join in different groups? (Choose 2 answers)",
+  "options": [
+   "Groups meet their psychological needs",
+   "Groups meet their social needs",
+   "People can reduce the insecurity of \"standing alone\"",
+   "People feel stronger"
+  ],
+  "correct": [
+   "Groups meet their psychological needs",
+   "Groups meet their social needs"
+  ]
+ },
+ {
+  "id": 232,
+  "question": "Which questions do we tend to ask in the process of creative thinking? (choose 3 options)",
+  "options": [
+   "Can I combine perspectives/solutions?",
+   "What else is out there?",
+   "Why not?",
+   "What is good about...?"
+  ],
+  "correct": [
+   "Can I combine perspectives/solutions?",
+   "What else is out there?",
+   "Why not?"
+  ]
+ },
+ {
+  "id": 233,
+  "question": "The checklist for ensuring that a report fulfills its goals include: (Choose 3 answers)",
+  "options": [
+   "Information is accurate, complete, and documented",
+   "Figures, tables, and art are clear and correctly labeled",
+   "A report presents as much progress as possible, even if not all the goals were achieved.",
+   "A report represents your best effort"
+  ],
+  "correct": [
+   "Information is accurate, complete, and documented",
+   "Figures, tables, and art are clear and correctly labeled",
+   "A report represents your best effort"
+  ]
+ },
+ {
+  "id": 234,
+  "question": "What is the term for people who are put into positions of leadership by forces outside the group? Choose two answers.",
+  "options": [
+   "Emergent leader",
+   "Formal leader",
+   "Informal leader",
+   "Designated leader"
+  ],
+  "correct": [
+   "Formal leader",
+   "Designated leader"
+  ]
+ },
+ {
+  "id": 235,
+  "question": "Important factor(s) that determine whether people will engage in social comparison is (are):",
+  "options": [
+   "Relevance",
+   "Similarity",
+   "Interest",
+   "Emotion",
+   "Cognitive domain",
+   "All of the answers are correct"
+  ],
+  "correct": [
+   "Relevance",
+   "Similarity"
+  ]
+ },
+ {
+  "id": 236,
+  "question": "What are included in a report abstract?",
+  "options": [
+   "Highlight topic, methods, data, and results",
+   "A list of the main parts of the report",
+   "Label, report, features title, author",
+   "Methodology"
+  ],
+  "correct": [
+   "Highlight topic, methods, data, and results"
+  ]
+ },
+ {
+  "id": 237,
+  "question": "According to Edward Hall, the four main categories of distance used in communication are:",
+  "options": [
+   "Intimate, Touch, Gestures, and Public space",
+   "Intimate, Personal, Social, and Public space",
+   "Personal, Artifacts, Paralanguage, and Public space",
+   "Personal, Facial expressions, Physical characteristics, and Public space"
+  ],
+  "correct": [
+   "Intimate, Personal, Social, and Public space"
+  ]
+ },
+ {
+  "id": 238,
+  "question": "PDCA stands for:",
+  "options": [
+   "Plan – demonstrate – check – articulate",
+   "Prepare – demonstrate – calibrate – act",
+   "Plan – do – check – act",
+   "Prepare – do – check – act"
+  ],
+  "correct": [
+   "Plan – do – check – act"
+  ]
+ },
+ {
+  "id": 239,
+  "question": "How many people does \"a span of control\" structure averagely have in their team?",
+  "options": [
+   "3",
+   "5",
+   "7",
+   "10"
+  ],
+  "correct": [
+   "5"
+  ]
+ },
+ {
+  "id": 240,
+  "question": "Which age group is considered to have tentative choices and support a desire for autonomy?",
+  "options": [
+   "12 – 17",
+   "18 – 26",
+   "27 – 31",
+   "32 – 42"
+  ],
+  "correct": [
+   "18 – 26"
+  ]
+ },
+ {
+  "id": 241,
+  "question": "Which date format is best for a cover letter?",
+  "options": [
+   "October 9, 2023",
+   "9/10/23",
+   "9/10/2023",
+   "9th October, 23"
+  ],
+  "correct": [
+   "October 9, 2023"
+  ]
+ },
+ {
+  "id": 242,
+  "question": "What is the typical length of a cover letter?",
+  "options": [
+   "1–2 paragraphs",
+   "2–3 paragraphs",
+   "3–4 paragraphs",
+   "More than 4 paragraphs"
+  ],
+  "correct": [
+   "3–4 paragraphs"
+  ]
+ },
+ {
+  "id": 243,
+  "question": "_____ is \"the ability to judge, check, and even critique the value of material for a given purpose\".",
+  "options": [
+   "Applying",
+   "Evaluating",
+   "Analyzing",
+   "Creating"
+  ],
+  "correct": [
+   "Evaluating"
+  ]
+ },
+ {
+  "id": 244,
+  "question": "_____ is \"the ability to grasp or construct meaning from oral, written, and graphic messages\".",
+  "options": [
+   "Remembering",
+   "Understanding",
+   "Analyzing",
+   "Applying"
+  ],
+  "correct": [
+   "Understanding"
+  ]
+ },
+ {
+  "id": 245,
+  "question": "\"_____ enables one individual or group to make the decisions that affect others, and to enforce control\".",
+  "options": [
+   "Power-from-within",
+   "Power-with",
+   "Power-over",
+   "Power-from-outside"
+  ],
+  "correct": [
+   "Power-over"
+  ]
+ },
+ {
+  "id": 246,
+  "question": "_____ cultures focus on the needs of the nation, community, family, or group of workers",
+  "options": [
+   "Collectivist",
+   "Individualistic",
+   "Low-Power Distance",
+   "High-Power Distance"
+  ],
+  "correct": [
+   "Collectivist"
+  ]
+ },
+ {
+  "id": 247,
+  "question": "... is the continuous process of building your skills, knowledge and experiences related to your professional life",
+  "options": [
+   "Employment",
+   "An occupation",
+   "A career",
+   "None are correct"
+  ],
+  "correct": [
+   "A career"
+  ]
+ },
+ {
+  "id": 248,
+  "question": "What is the possible response in the consequence of legitimate power?",
+  "options": [
+   "Resistance",
+   "Compliance",
+   "Commitment",
+   "Avoidance"
+  ],
+  "correct": [
+   "Compliance"
+  ]
+ },
+ {
+  "id": 249,
+  "question": "What is a good advice to communicate effectively in a job interview?",
+  "options": [
+   "Using jargon",
+   "Rambling",
+   "Keep eye contact",
+   "Over friendly"
+  ],
+  "correct": [
+   "Keep eye contact"
+  ]
+ },
+ {
+  "id": 250,
+  "question": "What is the main advantage of social facilitation?",
+  "options": [
+   "Feel better",
+   "Perform tasks improved",
+   "Work more independently",
+   "Have high chance of promotion"
+  ],
+  "correct": [
+   "Perform tasks improved"
+  ]
+ },
+ {
+  "id": 251,
+  "question": "What is one disadvantages of having large group?",
+  "options": [
+   "Overestimate their abilities",
+   "Rank themselves above average",
+   "More involvement",
+   "Reduce communication"
+  ],
+  "correct": [
+   "Reduce communication"
+  ]
+ },
+ {
+  "id": 252,
+  "question": "What is the quickest and easiest solution to reduce conflict?",
+  "options": [
+   "Physical separation",
+   "Use of rules and regulations",
+   "Third-party consultation",
+   "Confrontation and negotiation"
+  ],
+  "correct": [
+   "Physical separation"
+  ]
+ },
+ {
+  "id": 253,
+  "question": "What is the negative effect of downward comparison?",
+  "options": [
+   "Envy",
+   "Dissatisfaction",
+   "Scorn",
+   "Pessimistic"
+  ],
+  "correct": [
+   "Scorn"
+  ]
+ },
+ {
+  "id": 255,
+  "question": "What is the final best practice for boosting multicultural skills?",
+  "options": [
+   "Developing cultural intelligence",
+   "Developing cognitive complexity",
+   "Developing cultural competence",
+   "Developing cross-cultural skills"
+  ],
+  "correct": [
+   "Developing cultural intelligence"
+  ]
+ },
+ {
+  "id": 256,
+  "question": "What is the best way to dress to impress employers in an interview?",
+  "options": [
+   "No matter what you wear",
+   "Be trendy (crop top, Jordans, etc...)",
+   "Wear a formal suit",
+   "Wear a Nike jogging suit"
+  ],
+  "correct": [
+   "Wear a formal suit"
+  ]
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "id": 153,
+  "question": "What does synthetic oversampling technique in handling imbalanced datasets do?",
+  "options": [
+   "It involves creating entirely new features for the minority class",
+   "It generates synthetic samples for the minority class to balance the dataset",
+   "It randomly removes samples from both classes",
+   "It focuses on increasing the size of the majority class"
+  ]
+ },
+ {
+  "id": 155,
+  "question": "What problem occurs when the classes in a dataset are highly unbalanced?",
+  "options": [
+   "The model may focus equally on all classes, leading to balanced accuracy and fair predictions.",
+   "The model will ignore rare classes and achieve perfect predictions for minority classes.",
+   "The model tends to be biased toward the majority class, making poor predictions for the minority class.",
+   "The model will automatically adjust weights and handle all classes without error."
+  ]
+ },
+ {
+  "id": 156,
+  "question": "What role does feature engineering play in the machine learning process?",
+  "options": [
+   "It involves optimizing model hyperparameters",
+   "It refers to the creation of complex algorithms for model training.",
+   "It focuses on selecting and transforming input variables to enhance model performance",
+   "It is irrelevant in the context of machine learning."
+  ]
+ },
+ {
+  "id": 157,
+  "question": "What happen with our second cluster centroid when we use the probability formula?",
+  "options": [
+   "When we use the probability formula, we put less weight on the points that are far away. So, our second cluster centroid is likely going to be closer.",
+   "When we use the probability formula, we put more weight on the points that are far away. So, our second cluster centroid is likely going to be more distant.",
+   "When we use the probability formula, we put more weight on the lighter centroids, because it will take more computational power to draw our clusters. So, the second cluster centroid is likely going to be less distant.",
+   "When we use the probability formula, we put less weight on the points that are far away. So, our second cluster centroid is likely going to be more distant."
+  ]
+ },
+ {
+  "id": 158,
+  "question": "Which of the following statements is true about downsampling in imbalanced datasets?",
+  "options": [
+   "Downsampling always leads to better model performance",
+   "Downsampling involves removing samples from the majority class",
+   "Downsampling is primarily used to increase the size of the dataset",
+   "Downsampling has no impact on the distribution of classes"
+  ]
+ },
+ {
+  "id": 159,
+  "question": "Which of the following statements is true regarding Random and Synthetic Over Sampling in the context of imbalanced datasets?",
+  "options": [
+   "Random Over Sampling duplicates random instances of the minority class to balance the dataset, while Synthetic Over Sampling generates new synthetic instances.",
+   "Random Over Sampling generates new synthetic instances of the minority class, while Synthetic Over Sampling duplicates random instances.",
+   "Random Over Sampling and Synthetic Over Sampling both involve duplicating random instances of the minority class.",
+   "Random Over Sampling and Synthetic Over Sampling are identical techniques with different names."
+  ]
+ },
+ {
+  "id": 160,
+  "question": "Which of the following statements correctly defines the strengths of the DBSCAN algorithm?",
+  "options": [
+   "No need to specify the number of clusters (cf. K-means), allows for noise, and can handle arbitrary-shaped clusters.",
+   "Do well with different density, works with just one parameter, the n_clu defines itself.",
+   "The algorithm will find the outliers first, draw regular shapes, works faster than other algorithms.",
+   "The algorithm is computationally intensive, it is sensitive to outliers, and it requires few hyperparameters to be tuned."
+  ]
+ },
+ {
+  "id": 161,
+  "question": "Which of the following statements correctly defines the weaknesses of the DBSCAN algorithm?",
+  "options": [
+   "The clusters it find might not be trustworthy, it needs noisy data to work, and it can't handle subgroups.",
+   "It needs two parameters as input, finding appropriate values of ε and n_clu can be difficult, and it does not do well with clusters of different density.",
+   "The algorithm will find the outliers first, it draws regular shapes, and it works faster than other algorithms.",
+   "The algorithm is computationally intensive, it is sensitive to outliers, and it requires too many hyperparameters to be tuned."
+  ]
+ },
+ {
+  "id": 162,
+  "question": "Which of the following statements is a characteristic of the Mean Shift algorithm?",
+  "options": [
+   "Not require us to set the number of clusters, the number of clusters will be determined for us.",
+   "Bad with non-spherical cluster shapes.",
+   "You need to decide the number of clusters on your own, choosing the numbers directly or the minimum distance threshold.",
+   "Good with non-spherical cluster shapes."
+  ]
+ },
+ {
+  "id": 163,
+  "question": "Which of the following statements is a characteristic of the K-means algorithm?",
+  "options": [
+   "It is limited to use the Euclidean distance within his formulation.",
+   "To determine the number of clusters we use the elbow method.",
+   "Can be slow to calculate as the number of observations increases.",
+   "It's limited to use the Ward distance within his formulation."
+  ]
+ },
+ {
+  "id": 164,
+  "question": "Which of the following statements best describes the iterative part of the K-means algorithm?",
+  "options": [
+   "The k-means algorithm assigns a number of clusters at random.",
+   "The k-means algorithm adjusts the centroids to the new mean of each cluster, and then it keeps repeating this process until no example is assigned to another cluster.",
+   "The k-means algorithm iteratively deletes outliers.",
+   "The k-means algorithm iteratively calculates the distance from each point to the centroid of each cluster."
+  ]
+ },
+ {
+  "id": 165,
+  "question": "Which of the following statements is a business case for the use of the Manhattan distance (L1)?",
+  "options": [
+   "We use it in business cases where there is very high dimensionality.",
+   "We use it in business cases where there is low dimensionality.",
+   "We use it in business cases where the dimensionality is unknown.",
+   "We use it in business cases with outliers."
+  ]
+ },
+ {
+  "id": 167,
+  "question": "Which statement describes better \"The Smarter initialization of K-mean clusters\"?",
+  "options": [
+   "\"Draw a line between the data points to create 2 big clusters.\"",
+   "\"After we find our centroids, we calculate the distance between all our data points.\"",
+   "\"Pick one point random as initial point and for the second pick instead of doing it randomly we prioritize by assigning the probability of the distance.\"",
+   "\"We start by having two centroids as far as possible between each other.\""
+  ]
+ },
+ {
+  "id": 168,
+  "question": "Which scenario would most likely benefit from applying SMOTE (Synthetic Minority Over-sampling Technique)?",
+  "options": [
+   "When the training data has too many outliers affecting majority class predictions.",
+   "When the classes are balanced but have different feature scales that need normalization.",
+   "When the training data is linearly separable but suffers from high variance.",
+   "When a classification dataset has a severely imbalanced distribution between classes, leading to poor minority class recall."
+  ]
+ },
+ {
+  "id": 169,
+  "question": "Which statement is a common use of Dimension Reduction in the real world?",
+  "options": [
+   "Image tracking",
+   "Explaining the relation between the amount of alcohol consumption and diabetes.",
+   "Deep Learning",
+   "Predicting whether a customer will return to a store to make a major purchase."
+  ]
+ },
+ {
+  "id": 170,
+  "question": "How does the choice of splitting criterion affect the decision tree model?",
+  "options": [
+   "The choice of splitting criterion has no impact on the decision tree model.",
+   "Different splitting criteria may result in different decision boundaries and model performance.",
+   "The splitting criterion determines the maximum depth of the tree.",
+   "The splitting criterion adjusts the regularization strength of the model."
+  ]
+ },
+ {
+  "id": 171,
+  "question": "How to explain the concept of learning rate in the Boosting algorithms?",
+  "options": [
+   "It is the speed at which the algorithm learns from the data",
+   "It controls the contribution of each weak learner to the final prediction",
+   "It measures the accuracy of the model",
+   "It determines the number of boosting rounds"
+  ]
+ },
+ {
+  "id": 172,
+  "question": "When applying K-means clustering, what is the role of the hyperparameter K, and how does it impact the results?",
+  "options": [
+   "K controls the learning rate and convergence speed",
+   "K determines the number of clusters, influencing the final grouping of data points",
+   "K represents the dimensionality of the feature space",
+   "K is unrelated to clustering; it refers to the number of iterations"
+  ]
+ },
+ {
+  "id": 173,
+  "question": "When using bagging methods like Random Forest, what is the role of feature randomness during the training of individual trees?",
+  "options": [
+   "It forces each tree to overfit to its subset, improving accuracy on the training data.",
+   "It reduces training time by eliminating the need to evaluate multiple features at each split.",
+   "It ensures that only the most important features are selected across all trees.",
+   "It decorrelates the trees, making the ensemble stronger and reducing the variance without increasing bias significantly."
+  ]
+ },
+ {
+  "id": 174,
+  "question": "When would hierarchical agglomerative clustering (HAC) be preferred over K-Means?",
+  "options": [
+   "When you want a dendrogram showing nested clusters without specifying the number of clusters beforehand",
+   "When you need to cluster millions of data points quickly in a scalable and memory-efficient manner.",
+   "When your data has perfectly spherical and equally-sized clusters, making K-Means more natural.",
+   "When you are performing feature selection and need an algorithm with built-in regularization."
+  ]
+ }
+]

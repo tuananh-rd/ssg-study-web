@@ -1,0 +1,202 @@
+[
+ {
+  "id": 133,
+  "question": "What is the primary goal of supervised learning?",
+  "options": [
+   "Discovering hidden patterns in data",
+   "Making predictions based on labeled training data",
+   "Classifying data into categories",
+   "Clustering similar data points"
+  ]
+ },
+ {
+  "id": 134,
+  "question": "What is the effect of the L1 regularization penalty on model coefficients?",
+  "options": [
+   "Encourages equalization of coefficients",
+   "Encourages sparsity (some coefficients become exactly zero)",
+   "Encourages large coefficients",
+   "Has no impact on coefficients"
+  ]
+ },
+ {
+  "id": 135,
+  "question": "What is the main reason to use under-sampling in an imbalanced classification problem?",
+  "options": [
+   "To artificially inflate the minority class instances by creating synthetic examples.",
+   "To increase training time by providing more instances for model learning.",
+   "To force the model to ignore the majority class completely during training.",
+   "To balance the class distribution by reducing the number of majority class instances, which can improve the model's ability to detect minority instances."
+  ]
+ },
+ {
+  "id": 136,
+  "question": "What is a potential challenge associated with the K-means algorithm?",
+  "options": [
+   "It is sensitive to the initial choice of centroids and can converge to local optima",
+   "It always produces the same clusters regardless of the dataset",
+   "It performs poorly on high-dimensional data",
+   "It is only suitable for small datasets"
+  ]
+ },
+ {
+  "id": 137,
+  "question": "What is the curse of dimensionality in machine learning?",
+  "options": [
+   "The curse of dimensionality refers to the limitation of models in handling high-dimensional data.",
+   "The curse of dimensionality describes the increased computational efficiency with higher dimensions.",
+   "The curse of dimensionality is irrelevant in machine learning",
+   "The curse of dimensionality occurs only in linear regression models"
+  ]
+ },
+ {
+  "id": 138,
+  "question": "What is typically the first step in fitting a logistic regression model using scikit-learn?",
+  "options": [
+   "import logistic regression from the sklearn.linear_model module\ne.g. from sklearn.linear_model import LogisticRegression",
+   "import Logistic from the sklearn.regression module\ne.g. from sklearn.regression import Logistic",
+   "import Logistic from the sklearn.linear_regression module\ne.g. from sklearn.linear_regression import Logistic",
+   "import logistic regression from the sklearn.linearclassifier module\ne.g. from sklearn.linear classifier import LogisticRegression"
+  ]
+ },
+ {
+  "id": 139,
+  "question": "What is the difference between simple linear regression and multiple linear regression?",
+  "options": [
+   "Simple linear regression has more accuracy",
+   "Multiple linear regression has only one independent variable",
+   "Simple linear regression deals with one independent variable, while multiple linear regression handles multiple independent variables",
+   "Multiple linear regression is used exclusively for classification tasks"
+  ]
+ },
+ {
+  "id": 140,
+  "question": "What is the purpose of splitting a dataset into training and test sets in machine learning?",
+  "options": [
+   "To increase the size of the training set for better model performance",
+   "To reduce overfitting by evaluating the model on unseen data",
+   "To improve the computational efficiency of model training",
+   "To introduce randomness and diversity in the training process"
+  ]
+ },
+ {
+  "id": 141,
+  "question": "What is feature engineering?",
+  "options": [
+   "A process of building machine learning models",
+   "A process of transforming raw data into features that better represent the underlying problem",
+   "A process of evaluating model performance",
+   "None of these"
+  ]
+ },
+ {
+  "id": 142,
+  "question": "What is the most important factor to consider when evaluating a Machine Learning model?",
+  "options": [
+   "Model estimation involves choosing parameters that minimize the cost function.",
+   "Model selection involves choosing a model that minimizes the cost function.",
+   "Model estimation involves choosing a cost function that can be compared across models.",
+   "Model selection involves choosing modeling parameters that minimize in-sample validation error."
+  ]
+ },
+ {
+  "id": 143,
+  "question": "What is the goal of machine learning?",
+  "options": [
+   "The goal of machine learning is to achieve high accuracy in prediction for future examples, not for the training ones.",
+   "The goal of machine learning is to achieve high accuracy in prediction for future examples, and for the training ones.",
+   "The goal of machine learning is to achieve low accuracy in prediction for future examples, high accuracy for the training phase.",
+   "The goal of machine learning is to achieve low accuracy in prediction for future examples, and low accuracy for the training phase."
+  ]
+ },
+ {
+  "id": 144,
+  "question": "What is p-value in statistical hypothesis testing?",
+  "options": [
+   "The probability of making a Type I error",
+   "The probability of rejecting a true null hypothesis",
+   "The probability of accepting a false null hypothesis",
+   "The probability of observing the data given that the null hypothesis is true"
+  ]
+ },
+ {
+  "id": 145,
+  "question": "What is the main goal of adding polynomial features to a linear regression?",
+  "options": [
+   "Remove the linearity of the regression and turn it into a polynomial model.",
+   "Capture the relation of the outcome with features of higher order.",
+   "Increase the interpretability of a black box model.",
+   "Ensure similar results across all folds when using K-fold cross validation."
+  ]
+ },
+ {
+  "id": 146,
+  "question": "What is the key feature for the Cosine Distance?",
+  "options": [
+   "The size of the curve.",
+   "The Cosine Distance, which takes into account the angle between 2 points.",
+   "It is sensitive to the size of the data set.",
+   "It is not sensitive to the size of the data set."
+  ]
+ },
+ {
+  "id": 147,
+  "question": "What is the primary objective of using K-Means clustering in unsupervised learning tasks?",
+  "options": [
+   "To partition the dataset into k clusters where each observation belongs to the cluster with the nearest mean, minimizing within-cluster variance.",
+   "To build a supervised classification model based on labeled examples for future prediction tasks.",
+   "To assign each point to multiple clusters simultaneously and maximize between-cluster distances.",
+   "To predict continuous target values using linear combinations of features in the dataset."
+  ]
+ },
+ {
+  "id": 148,
+  "question": "What is a potential downside of using a single train-test split instead of cross-validation?",
+  "options": [
+   "It takes significantly more computation time",
+   "It may lead to underfitting",
+   "It prevents hyperparameter tuning",
+   "The evaluation may be highly sensitive to how the data is split"
+  ]
+ },
+ {
+  "id": 149,
+  "question": "What are confidence intervals in statistical inference?",
+  "options": [
+   "Confidence intervals provide a range of values within which the true population parameter is likely to fall",
+   "Confidence intervals are used to measure the strength of association between two variables.",
+   "Confidence intervals represent the probability that a hypothesis is true",
+   "Confidence intervals are only applicable to large sample sizes"
+  ]
+ },
+ {
+  "id": 150,
+  "question": "What are the eigenvalues in PCA?",
+  "options": [
+   "Eigenvalues represent the mean values of each feature",
+   "Eigenvalues indicate the importance of each principal component in capturing variance",
+   "Eigenvalues are the coefficients of the linear regression model in PCA",
+   "Eigenvalues are not relevant in PCA"
+  ]
+ },
+ {
+  "id": 151,
+  "question": "What are the potential consequences of using a high-complexity model in linear regression?",
+  "options": [
+   "A high variance of parameter estimates across cross-validation sub-samples indicates likely overfitting.",
+   "Cross-validation with a small k will reduce or eliminate overfitting.",
+   "A low variance of parameter estimates across cross-validation subsamples indicates likely overfitting.",
+   "Cross-validation with a large k will reduce or eliminate overfitting."
+  ]
+ },
+ {
+  "id": 152,
+  "question": "What does NoSQL stand for and what does it represent?",
+  "options": [
+   "NoSQL stands for Not-only SQL, and it represents a set of databases that are relational, therefore, they have fixed structure.",
+   "NoSQL stands for Non-Structured Query Language, and it represents a set of relational databases with fixed schemas.",
+   "NoSQL stands for Non-Structured Query Language, and it represents a set of non-relational databases with varied schemas.",
+   "NoSQL stands for Not-only SQL, and it represents a set of databases that are not relational, therefore, they vary in structure."
+  ]
+ }
+]

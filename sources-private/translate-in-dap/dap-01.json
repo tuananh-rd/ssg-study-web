@@ -1,0 +1,202 @@
+[
+ {
+  "id": 1,
+  "question": "What type of plot in Seaborn is used to visualize the distribution of a continuous variable along with its probability density estimate? (Select all correct answers)",
+  "options": [
+   "Histplot",
+   "KDEplot",
+   "Violinplot",
+   "Boxplot"
+  ]
+ },
+ {
+  "id": 2,
+  "question": "..... is a type of plot that displays values pertaining to typically two variables against each other. Choose the best answer.",
+  "options": [
+   "box plot",
+   "scatter plot",
+   "Histogram",
+   "Pie chart"
+  ]
+ },
+ {
+  "id": 3,
+  "question": "Data is collected when a client makes a ______ request to a server.",
+  "options": [
+   "PORT",
+   "GET",
+   "PUT",
+   "HTTP"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Facebook Messenger and ...... are integration options within Watson Assistant from the Add Integration button. Choose the best answer",
+  "options": [
+   "Slack",
+   "Google Search",
+   "Yahoo messager",
+   "Github"
+  ]
+ },
+ {
+  "id": 5,
+  "question": "Which regression technique introduces a penalty term based on the absolute value of the coefficients?",
+  "options": [
+   "Lasso regression",
+   "Ridge regression",
+   "ElasticNet regression",
+   "Polynomial regression"
+  ]
+ },
+ {
+  "id": 6,
+  "question": "What regression technique is an extension of linear regression but involves higher-order polynomial functions?",
+  "options": [
+   "Lasso regression",
+   "Ridge regression",
+   "Polynomial regression",
+   "ElasticNet regression"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "In Dash, what component is used to create a text input box for user interaction?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ]
+ },
+ {
+  "id": 8,
+  "question": "In Dash, which component is used to create a dropdown with multi-select options?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Checklist()",
+   "dcc.Graph()"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "In Dash, which component allows users to input numerical values by dragging a point along a fixed range?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ]
+ },
+ {
+  "id": 10,
+  "question": "Which Matplotlib function is used to create a line plot with multiple lines on the same axes?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.scatter()",
+   "plt.stackplot()"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "Which Matplotlib function is used to create a line plot with markers on data points?",
+  "options": [
+   "plt.plot()",
+   "plt.line()",
+   "plt.scatter()",
+   "plt.lines()"
+  ]
+ },
+ {
+  "id": 12,
+  "question": "Which Matplotlib function is used to create a pie chart?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.pie()",
+   "plt.scatter()"
+  ]
+ },
+ {
+  "id": 13,
+  "question": "Which Matplotlib function is used to create an area plot?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.area()",
+   "plt.stackplot()"
+  ]
+ },
+ {
+  "id": 14,
+  "question": "In Dash, which component allows users to input text or strings?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Textarea()",
+   "dcc.Graph()"
+  ]
+ },
+ {
+  "id": 15,
+  "question": "In Dash, which component is used to create a drop-down menu for user interaction?",
+  "options": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ]
+ },
+ {
+  "id": 16,
+  "question": "What type of graphs can be effectively utilized in Dashboards for real-time data analysis?",
+  "options": [
+   "Bar charts",
+   "Pie charts",
+   "Line charts",
+   "All of the above"
+  ]
+ },
+ {
+  "id": 17,
+  "question": "What type of graph is best suited for displaying the distribution of a single continuous variable?",
+  "options": [
+   "Pie chart",
+   "Bar chart",
+   "Histogram",
+   "Line chart"
+  ]
+ },
+ {
+  "id": 18,
+  "question": "Which type of plot is useful for comparing proportions across different categories using rectangles of different heights?",
+  "options": [
+   "Pie chart",
+   "Bar plot",
+   "Line plot",
+   "Scatter plot"
+  ]
+ },
+ {
+  "id": 19,
+  "question": "Which plot is most suitable for showing the relationship between two continuous variables in Seaborn?",
+  "options": [
+   "Pie chart",
+   "Scatter plot",
+   "Bar plot",
+   "Area plot"
+  ]
+ },
+ {
+  "id": 20,
+  "question": "Which Seaborn function can be used to create a categorical plot with non-overlapping points?",
+  "options": [
+   "sns.barplot()",
+   "sns.pointplot()",
+   "sns.scatterplot()",
+   "sns.boxplot()"
+  ]
+ }
+]

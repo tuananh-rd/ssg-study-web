@@ -1,0 +1,230 @@
+[
+  {
+    "ref": "5.2",
+    "q": "Bản chất của bài toán Căn chỉnh dựa trên đặc trưng (Feature-Based Alignment) trong thị giác máy tính là gì?",
+    "correct": "Ước lượng chuyển động (motion estimation) giữa các tập hợp điểm 2D hoặc 3D đã được so khớp",
+    "wrong": [
+      "Phân đoạn ngữ nghĩa gán nhãn cho từng điểm ảnh dựa trên lược đồ màu",
+      "Khử nhiễu muối tiêu bằng cách thay thế pixel bằng giá trị trung vị",
+      "Nén dung lượng bức ảnh thông qua biến đổi Cosine rời rạc DCT"
+    ],
+    "explain": "Căn chỉnh dựa trên đặc trưng là bài toán ước lượng chuyển động (motion estimation) giữa hai hoặc nhiều tập hợp các điểm 2D hoặc 3D đã được so khớp để đảm bảo chúng nhất quán về mặt hình học.",
+    "tip": "Feature-Based Alignment bản chất là bài toán motion estimation giữa các tập điểm."
+  },
+  {
+    "ref": "5.2",
+    "q": "Kỹ thuật Căn chỉnh dựa trên đặc trưng (Feature-Based Alignment) sử dụng loại đặc trưng nào làm đầu vào chính?",
+    "correct": "Tập hợp các đặc trưng thưa (sparse set of features) được trích xuất từ ảnh",
+    "wrong": [
+      "Toàn bộ ma trận điểm ảnh dày đặc (dense pixel matrix) của cả bức ảnh",
+      "Lược đồ phân phối tích lũy CDF của các kênh màu RGB",
+      "Các đường bao liên tục thu được từ thuật toán phân đoạn Watershed"
+    ],
+    "explain": "Thuật toán phát hiện một tập hợp đặc trưng thưa (sparse set of features) trong ảnh thứ nhất và tìm các điểm tương ứng trong ảnh thứ hai để căn chỉnh.",
+    "tip": "Feature-based alignment sử dụng sparse set of features (tập đặc trưng thưa)."
+  },
+  {
+    "ref": "5.2",
+    "q": "Mục đích cuối cùng của việc tính toán ma trận biến đổi hình học trong Feature-Based Alignment là gì?",
+    "correct": "Biến đổi hình ảnh nguồn để khớp chồng khít nhất quán về mặt hình học lên ảnh đích",
+    "wrong": [
+      "Thay đổi dải màu của ảnh nguồn để đồng bộ với dải phổ màu của ảnh đích",
+      "Tăng cường độ tương phản toàn cục của ảnh đích lên mức tối đa 255",
+      "Tạo ra một mô hình phân loại nhị phân để nhận diện khuôn mặt"
+    ],
+    "explain": "Sau khi tìm điểm tương ứng, thuật toán tính toán một ma trận biến đổi hình học (transformation matrix) để làm mượt hoặc biến đổi ảnh này khớp chồng khít lên ảnh kia.",
+    "tip": "Mục đích căn chỉnh là làm cho các ảnh khớp chồng khít lên nhau."
+  },
+  {
+    "ref": "5.3",
+    "q": "Trong bài toán căn chỉnh 2D bằng phương pháp bình phương tối thiểu, hàm mục tiêu cần tối ưu hóa là gì?",
+    "correct": "Tối thiểu hóa tổng bình phương sai số khoảng cách giữa các cặp điểm đặc trưng",
+    "wrong": [
+      "Tối đa hóa khoảng cách Euclid giữa các điểm đặc trưng trên hai ảnh",
+      "Tối thiểu hóa số lượng tham số chuyển động p trong ma trận biến đổi",
+      "Tối đa hóa giá trị định thức của ma trận tọa độ đồng nhất"
+    ],
+    "explain": "Để tìm ước lượng tối ưu cho vector tham số p, mục tiêu là tối thiểu hóa tổng bình phương sai số khoảng cách (Least Squares Error).",
+    "tip": "Least Squares = tối thiểu hóa tổng bình phương sai số khoảng cách."
+  },
+  {
+    "ref": "5.3",
+    "q": "Kỹ thuật Trọng số bất định (Uncertainty Weighting) cải tiến phương pháp bình phương tối thiểu bằng cách nào?",
+    "correct": "Gán trọng số bằng nghịch đảo của phương sai để giảm thiểu ảnh hưởng của các điểm có độ bất định cao",
+    "wrong": [
+      "Nhân gấp đôi trọng số của tất cả các điểm nằm ở góc ngoài cùng của bức ảnh",
+      "Loại bỏ ngẫu nhiên 50% số điểm đặc trưng trước khi thực hiện tối ưu hóa",
+      "Thay thế toàn bộ sai số Euclid bằng hàm khoảng cách Manhattan"
+    ],
+    "explain": "Thuật toán tối ưu bằng cách thêm trọng số nghịch đảo phương sai để giảm ảnh hưởng của các điểm có độ bất định cao: Σ σ_i⁻² || x'_i - f(x_i; p) ||².",
+    "tip": "Uncertainty Weighting: gán trọng số nghịch đảo phương sai σ⁻² để giảm ảnh hưởng của điểm bất định cao."
+  },
+  {
+    "ref": "5.3",
+    "q": "Khi mối quan hệ giữa dữ liệu đo đạc và các biến số cần tìm không mang tính chất tuyến tính đơn giản, phương pháp nào thường được áp dụng?",
+    "correct": "Phương pháp bình phương tối thiểu phi tuyến tính hoặc kỹ thuật ước lượng bền vững (M-estimation) để giải lặp",
+    "wrong": [
+      "Phân tích suy biến ma trận SVD một bước không cần lặp",
+      "Thuật toán phân ngưỡng nhị phân Otsu toàn cục",
+      "Phép nhân ma trận trực tiếp với bộ lọc Gaussian một chiều"
+    ],
+    "explain": "Khi không có mối quan hệ tuyến tính đơn giản, các phương pháp bình phương tối thiểu phi tuyến tính hoặc kỹ thuật ước lượng bền vững (M-estimation) sẽ được áp dụng để giải lặp.",
+    "tip": "Phi tuyến tính -> dùng non-linear least squares hoặc M-estimation giải lặp."
+  },
+  {
+    "ref": "5.3",
+    "q": "Trong công thức x'_i = f(x_i; p) của bài toán căn chỉnh 2D, ký hiệu p đại diện cho yếu tố nào?",
+    "correct": "Vector chứa các tham số chuyển động cần ước lượng",
+    "wrong": [
+      "Tọa độ không gian 3 chiều của nguồn sáng điểm",
+      "Bậc tự do của cảm biến camera kỹ thuật số",
+      "Giá trị mức xám trung bình của vùng lân cận"
+    ],
+    "explain": "Trong mô hình x'_i = f(x_i; p), p là vector chứa các tham số chuyển động cần tìm.",
+    "tip": "p là vector motion parameters (tham số chuyển động)."
+  },
+  {
+    "ref": "5.4",
+    "q": "Lý do chính khiến phương pháp Bình phương tối thiểu thông thường (Least Squares) thất bại khi áp dụng trên dữ liệu so khớp đặc trưng thực tế là gì?",
+    "correct": "Cực kỳ nhạy cảm với các điểm ngoại lai (outliers), chỉ một vài cặp điểm khớp sai có thể làm lệch hoàn toàn mô hình",
+    "wrong": [
+      "Không có khả năng giải quyết các bài toán có số lượng điểm dữ liệu vượt quá 100 điểm",
+      "Đòi hỏi thời gian tính toán gấp nhiều lần so với các thuật toán lấy mẫu ngẫu nhiên",
+      "Chỉ hoạt động được trên dữ liệu không gian 1 chiều chứ không mở rộng được sang 2D"
+    ],
+    "explain": "Least Squares rất nhạy cảm với outliers — chỉ cần một vài cặp điểm khớp sai nghiêm trọng có thể làm lệch hoàn toàn ma trận biến đổi.",
+    "tip": "Least Squares thất bại khi có outliers; RANSAC ra đời để giải quyết bài toán này."
+  },
+  {
+    "ref": "5.4",
+    "q": "Để ước lượng ma trận biến đổi đồng hình (Homography) 2D trong thuật toán RANSAC, số lượng điểm dữ liệu tối thiểu N cần lấy mẫu ngẫu nhiên ở mỗi vòng lặp là bao nhiêu?",
+    "correct": "N = 4 điểm",
+    "wrong": [
+      "N = 2 điểm",
+      "N = 3 điểm",
+      "N = 8 điểm"
+    ],
+    "explain": "Thuật toán chọn ngẫu nhiên N điểm dữ liệu tối thiểu cần thiết để xác định mô hình, đối với phép Homography thì N = 4.",
+    "tip": "Homography cần tối thiểu N = 4 cặp điểm."
+  },
+  {
+    "ref": "5.4",
+    "q": "Trong thuật toán RANSAC, khái niệm điểm nội tại (inliers) được định nghĩa như thế nào?",
+    "correct": "Các điểm dữ liệu khớp với mô hình ước lượng ứng viên trong phạm vi sai số cho phép",
+    "wrong": [
+      "Các điểm dữ liệu nằm ngoài rìa biên của bức ảnh có cường độ sáng bằng 0",
+      "Các điểm đặc trưng bị gán nhãn sai do hiện tượng rung lắc của cảm biến",
+      "Các điểm có khoảng cách lớn nhất tới tâm cụm của thuật toán K-Means"
+    ],
+    "explain": "Inliers là tập hợp các điểm dữ liệu khớp với mô hình vừa tính trong phạm vi sai số cho phép (tolerance).",
+    "tip": "Inliers = điểm dữ liệu phù hợp với mô hình trong ngưỡng sai số."
+  },
+  {
+    "ref": "5.4",
+    "q": "Thuật toán RANSAC sẽ đưa ra kết luận thất bại trong trường hợp nào sau đây?",
+    "correct": "Sau tổng số L lần lặp vẫn không tìm thấy mô hình có số lượng inliers thỏa mãn yêu cầu",
+    "wrong": [
+      "Khi số lượng inliers vượt quá 80% tổng số điểm dữ liệu đầu vào",
+      "Khi thời gian xử lý của một vòng lặp vượt quá chu kỳ của màn trập máy ảnh",
+      "Khi ma trận hiệp phương sai của các điểm đặc trưng có định thức bằng 1"
+    ],
+    "explain": "Nếu sau L lần lặp vẫn không tìm thấy mô hình thỏa mãn (số lượng inliers không đủ lớn), thuật toán sẽ báo lỗi thất bại.",
+    "tip": "RANSAC thất bại khi hết L lần lặp mà không đủ số lượng inliers."
+  },
+  {
+    "ref": "5.4",
+    "q": "Bản chất cơ chế hoạt động của thuật toán RANSAC thuộc nhóm kỹ thuật tính toán nào?",
+    "correct": "Kỹ thuật tái lấy mẫu ngẫu nhiên (resampling)",
+    "wrong": [
+      "Kỹ thuật quy hoạch động chia để trị (Dynamic Programming)",
+      "Kỹ thuật phân rã ma trận suy biến trực giao (SVD)",
+      "Kỹ thuật xấp xỉ đạo hàm bậc hai qua phép tích chập"
+    ],
+    "explain": "RANSAC là một kỹ thuật tái lấy mẫu (resampling) tạo ra các giải pháp ứng viên bằng cách chỉ sử dụng số lượng điểm dữ liệu tối thiểu cần thiết.",
+    "tip": "RANSAC: Random Sample Consensus = kỹ thuật resampling (tái lấy mẫu)."
+  },
+  {
+    "ref": "5.5",
+    "q": "Trong bài toán căn chỉnh chuyển động vật thể cứng 3D (Rigid / Euclidean Motion), thuật toán Orthogonal Procrustes sử dụng công cụ toán học nào để tìm ma trận quay tối ưu?",
+    "correct": "Phân tích suy biến ma trận (Singular Value Decomposition - SVD)",
+    "wrong": [
+      "Biến đổi Fourier nhanh 2 chiều (FFT)",
+      "Thuật toán phân cụm xác suất GMM",
+      "Phép biến đổi Cosine rời rạc DCT"
+    ],
+    "explain": "Thuật toán Orthogonal Procrustes sử dụng phân tích suy biến ma trận (SVD) để tìm ma trận quay tối ưu giữa hai tập hợp điểm 3D.",
+    "tip": "Orthogonal Procrustes dùng SVD để tìm ma trận quay."
+  },
+  {
+    "ref": "5.5",
+    "q": "Hai thuật toán kinh điển thường được sử dụng thay thế cho nhau để căn chỉnh đặc trưng 3D của chuyển động vật thể cứng là gì?",
+    "correct": "Orthogonal Procrustes và Định hướng Tuyệt đối (Absolute Orientation)",
+    "wrong": [
+      "Harris Corner và Scale-Invariant Feature Transform (SIFT)",
+      "Mean Shift và K-Means Clustering",
+      "Viola-Jones và Single Shot MultiBox Detector (SSD)"
+    ],
+    "explain": "Đối với chuyển động vật thể cứng (Rigid Motion) gồm quay và tịnh tiến không gian, hai thuật toán kinh điển là Orthogonal Procrustes và Absolute Orientation.",
+    "tip": "Căn chỉnh 3D vật thể cứng: Orthogonal Procrustes và Absolute Orientation."
+  },
+  {
+    "ref": "5.5",
+    "q": "Sai số về độ chính xác giữa thuật toán Orthogonal Procrustes và thuật toán Định hướng Tuyệt đối trong thực tế có đặc điểm gì?",
+    "correct": "Sai số giữa hai phương pháp hoàn toàn không đáng kể nên thường được dùng thay cho nhau",
+    "wrong": [
+      "Orthogonal Procrustes luôn có sai số gấp đôi phương pháp Định hướng Tuyệt đối",
+      "Phương pháp Định hướng Tuyệt đối chỉ chính xác khi số điểm dữ liệu lớn hơn 10.000 điểm",
+      "Orthogonal Procrustes chỉ áp dụng được khi có sự biến dạng co giãn phi tuyến"
+    ],
+    "explain": "Sai số về độ chính xác giữa Orthogonal Procrustes và Absolute Orientation trong các ứng dụng thực tế là hoàn toàn không đáng kể nên hay được dùng thay cho nhau.",
+    "tip": "Sai số giữa Procrustes và Absolute Orientation không đáng kể trong thực tế."
+  },
+  {
+    "ref": "5.6",
+    "q": "Trong thực tế, kỹ thuật căn chỉnh ảnh dựa trên đặc trưng được ứng dụng cho mục đích y tế nào?",
+    "correct": "Căn chỉnh chồng khít các ảnh chụp quét mô tại các thời điểm khác nhau để theo dõi sự phát triển của bệnh lý",
+    "wrong": [
+      "Nén các tệp dữ liệu hồ sơ bệnh án thành định dạng nhị phân để tiết kiệm bộ nhớ",
+      "Tự động phóng to độ phân giải của hình ảnh siêu âm mà không cần tái lấy mẫu",
+      "Tách các tế bào máu bằng thuật toán biến đổi Hough tìm đường tròn"
+    ],
+    "explain": "Trong y tế, căn chỉnh đặc trưng giúp chồng khít các ảnh quét mô (scans) được chụp tại các thời điểm khác nhau để so sánh, theo dõi sự phát triển của bệnh lý.",
+    "tip": "Ứng dụng y tế của alignment: chồng khít ảnh quét mô qua các thời điểm."
+  },
+  {
+    "ref": "5.6",
+    "q": "Trong mã nguồn OpenCV để căn chỉnh ảnh 2D, hàm nào được sử dụng để ước lượng ma trận Homography kết hợp loại bỏ điểm ngoại lai bằng RANSAC?",
+    "correct": "cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, ...)",
+    "wrong": [
+      "cv2.getRotationMatrix2D()",
+      "cv2.warpAffine()",
+      "cv2.drawKeypoints()"
+    ],
+    "explain": "`cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)` dùng RANSAC để tính ma trận Homography và loại bỏ các điểm outliers.",
+    "tip": "findHomography kết hợp cờ cv2.RANSAC để lọc outlier."
+  },
+  {
+    "ref": "5.6",
+    "q": "Sau khi tính toán được ma trận biến đổi phối cảnh (Homography) M, hàm nào trong OpenCV được dùng để bẻ cong (warp) bức ảnh nguồn về khung nhìn của ảnh đích?",
+    "correct": "cv2.warpPerspective()",
+    "wrong": [
+      "cv2.convertScaleAbs()",
+      "cv2.filter2D()",
+      "cv2.equalizeHist()"
+    ],
+    "explain": "`cv2.warpPerspective(img1, M, (w, h))` được dùng để warp ảnh theo ma trận cấu trúc góc nhìn Homography.",
+    "tip": "Homography là phép chiếu phối cảnh nên dùng cv2.warpPerspective."
+  },
+  {
+    "ref": "5.6",
+    "q": "Ứng dụng nào sau đây KHÔNG phải là ứng dụng tiêu biểu của kỹ thuật Căn chỉnh dựa trên đặc trưng (Feature-Based Alignment) được nêu trong tài liệu?",
+    "correct": "Đổi không gian màu từ BGR sang YCrCb để phân tích phổ màu",
+    "wrong": [
+      "Căn chỉnh hình ảnh tài liệu chụp nghiêng từ điện thoại về đúng khung mẫu tiêu chuẩn",
+      "Chồng khít các ảnh quét mô y tế chụp tại các mốc thời gian khác nhau",
+      "Ghép nối nhiều bức ảnh có trường nhìn chồng lấn để tạo ảnh Panorama"
+    ],
+    "explain": "Tài liệu nêu 3 ứng dụng cốt lõi: xử lý tài liệu văn bản, ứng dụng y tế, và tạo ảnh toàn cảnh (Panorama). Đổi không gian màu là xử lý điểm ảnh cơ bản.",
+    "tip": "3 ứng dụng căn chỉnh đặc trưng: tài liệu văn bản, y tế, ảnh toàn cảnh Panorama."
+  }
+]

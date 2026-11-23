@@ -1,0 +1,353 @@
+[
+ {
+  "id": 1,
+  "question": "What is the formula to calculate normalized Laplacian of Gaussian?",
+  "options": [
+   "IV",
+   "I",
+   "III",
+   "II"
+  ],
+  "correct": [
+   "I"
+  ],
+  "slide_image": "cpv-slides-real/slide-009.png"
+ },
+ {
+  "id": 2,
+  "question": "How is the orientation of the gradient computed? (I: intensity at pixels, x: x coordinate of pixel, y: y coordinate of pixel)",
+  "options": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ],
+  "correct": [
+   "II"
+  ],
+  "slide_image": "cpv-slides-real/slide-010.png"
+ },
+ {
+  "id": 3,
+  "question": "Which of the following kernels is used to detect oblique of +45 degrees in convolution based technique?",
+  "options": [
+   "III",
+   "I",
+   "II",
+   "IV"
+  ],
+  "correct": [
+   "III"
+  ],
+  "slide_image": "cpv-slides-real/slide-011.png"
+ },
+ {
+  "id": 4,
+  "question": "Given the integral image of an image (Figure 1).\nWhat is the sum of all pixels' intensity in a patch (red rectangle) shown in Figure 2?",
+  "options": [
+   "15",
+   "17",
+   "12",
+   "19"
+  ],
+  "correct": [
+   "15"
+  ],
+  "slide_image": "cpv-slides-real/slide-012.png"
+ },
+ {
+  "id": 5,
+  "question": "Given an image as follow. What is the filtered image as it is filtered by a mean filter with the size of 3x3?",
+  "options": [
+   "II",
+   "III",
+   "I",
+   "IV"
+  ],
+  "correct": [
+   "IV"
+  ],
+  "slide_image": "cpv-slides-real/slide-013.png"
+ },
+ {
+  "id": 6,
+  "question": "What are the factors influencing the evolution of digital image processing? (2 options)",
+  "options": [
+   "Computer development",
+   "mathematical progress",
+   "Social media trends",
+   "Narrow range of a specific application"
+  ],
+  "correct": [
+   "Computer development",
+   "mathematical progress"
+  ],
+  "slide_image": "cpv-slides-real/slide-014.png"
+ },
+ {
+  "id": 7,
+  "question": "______ is an idea that replaces each pixel with the mean of the pixels in a range neighborhood and whose value is within a distance d.",
+  "options": [
+   "Mean-shift",
+   "Watershed",
+   "K-mean",
+   "None of these"
+  ],
+  "correct": [
+   "None of these"
+  ],
+  "slide_image": "cpv-slides-real/slide-015.png"
+ },
+ {
+  "id": 8,
+  "question": "______ is perform fully automated image stitching is a technique to recognize which images actually go togethering",
+  "options": [
+   "Recognize panoramas",
+   "Object tracking",
+   "Recognize face",
+   "Object Detection"
+  ],
+  "correct": [
+   "Object tracking"
+  ],
+  "slide_image": "cpv-slides-real/slide-016.png"
+ },
+ {
+  "id": 9,
+  "question": "______ is used to identify different classes or clusters in the given data based on how similar the data is.",
+  "options": [
+   "Feature descriptor",
+   "Watershed",
+   "Harris",
+   "K-means"
+  ],
+  "correct": [
+   "Feature descriptor"
+  ],
+  "slide_image": "cpv-slides-real/slide-017.png"
+ },
+ {
+  "id": 10,
+  "question": "______ is the process of combining multiple photographic images with overlapping fields of view to produce a segmented panorama or high-resolution image.",
+  "options": [
+   "Image preprocessing",
+   "Image subtraction",
+   "Image stitching",
+   "Image acquisition"
+  ],
+  "correct": [
+   "Image preprocessing"
+  ],
+  "slide_image": "cpv-slides-real/slide-018.png"
+ },
+ {
+  "id": 11,
+  "question": "______ is a parameter estimation approach designed to cope with a large proportion of outliers in the input data",
+  "options": [
+   "RANSAC",
+   "Mean shift",
+   "K-mean",
+   "Canny edge detection"
+  ],
+  "correct": [
+   "Canny edge detection"
+  ],
+  "slide_image": "cpv-slides-real/slide-019.png"
+ },
+ {
+  "id": 12,
+  "question": "______ is a computationally intensive procedure that focuses on outliers in the regressor variables",
+  "options": [
+   "MM-estimation",
+   "M-estimation",
+   "S-estimation",
+   "All of the above"
+  ],
+  "correct": [
+   "S-estimation"
+  ],
+  "slide_image": "cpv-slides-real/slide-020.png"
+ },
+ {
+  "id": 13,
+  "question": "______ is the process of dividing an image into different regions based on the characteristics of pixels to identify objects or boundaries to simplify an image and more efficiently analyze it. Choose the best correct answer",
+  "options": [
+   "Image segmentation",
+   "Image analysis",
+   "Object detection",
+   "Object recognition"
+  ],
+  "correct": [
+   "Image segmentation"
+  ],
+  "slide_image": "cpv-slides-real/slide-021.png"
+ },
+ {
+  "id": 14,
+  "question": "______ is a method of enhancing the image quality of textures on surfaces of computer graphics that are at oblique viewing angles with respect to the camera where the projection of the texture. Choose the best answer",
+  "options": [
+   "MIP Mapping filter",
+   "Elliptical Weighted Average (EWA) filter",
+   "Anisotropic filtering",
+   "Gaussian White filter"
+  ],
+  "correct": [
+   "Anisotropic filtering"
+  ],
+  "slide_image": "cpv-slides-real/slide-022.png"
+ },
+ {
+  "id": 15,
+  "question": "______ is a technique of image processing used to identify points in a digital image with discontinuities ~ sharp changes in the image brightness. Choose the best answer",
+  "options": [
+   "Peak detector",
+   "Peak descriptor",
+   "Edge detection.",
+   "Edge descriptor"
+  ],
+  "correct": [
+   "Peak detector"
+  ],
+  "slide_image": "cpv-slides-real/slide-023.png"
+ },
+ {
+  "id": 16,
+  "question": "______ is a function or operator that takes an image as its input and produces an image as its output. Choose the best answer",
+  "options": [
+   "Geometric transformation",
+   "Image transformation",
+   "Geometric computing",
+   "Image computing"
+  ],
+  "correct": [
+   "Geometric computing"
+  ],
+  "slide_image": "cpv-slides-real/slide-025.png"
+ },
+ {
+  "id": 17,
+  "question": "______ is the process by which an existing graph, or graphed equation, is modified to produce a variation of the proceeding graph. Choose the best answer",
+  "options": [
+   "Graph transformation",
+   "Image transformation",
+   "Graph computing",
+   "Image computing"
+  ],
+  "correct": [
+   "Graph transformation"
+  ],
+  "slide_image": "cpv-slides-real/slide-026.png"
+ },
+ {
+  "id": 18,
+  "question": "______ is an image that is meant to be viewed as if seen through the inside of a cylinder. You can look at the image horizontally at a 360 degree. Choose the best correct answer",
+  "options": [
+   "Cylindrical projection",
+   "Cylindrical viewing",
+   "Cylindrical panoramic",
+   "None of the others"
+  ],
+  "correct": [
+   "Cylindrical projection"
+  ],
+  "slide_image": "cpv-slides-real/slide-028.png"
+ },
+ {
+  "id": 19,
+  "question": "______ are probabilistic models and use the soft clustering approach for distributing the points in different clusters. Choose the best answer",
+  "options": [
+   "K-mean clustering model",
+   "SVN model",
+   "Gaussian Mixture Models",
+   "K- nearest model"
+  ],
+  "correct": [
+   "Gaussian Mixture Models"
+  ],
+  "slide_image": "cpv-slides-real/slide-029.png"
+ },
+ {
+  "id": 20,
+  "question": "______ can be used to find a sparse set of corresponding locations in different images. Choose the best answer",
+  "options": [
+   "Edge features",
+   "Line features",
+   "Object features",
+   "Point features"
+  ],
+  "correct": [
+   "Edge features"
+  ],
+  "slide_image": "cpv-slides-real/slide-030.png"
+ },
+ {
+  "id": 21,
+  "question": "An ______ is a transformation that preserves collinearity and the ratio of distances. Choose the best answer",
+  "options": [
+   "Projective transformation",
+   "Euclidean transformation",
+   "Affine transformation",
+   "Similarity transformation"
+  ],
+  "correct": [
+   "Affine transformation"
+  ],
+  "slide_image": "cpv-slides-real/slide-031.png"
+ },
+ {
+  "id": 22,
+  "question": "An interesting application of image stitching is the ability to ______ taken with a panning camera",
+  "options": [
+   "Video Brush system",
+   "Multiple-image stitching",
+   "Panoramic video textures",
+   "Summarize and compress videos"
+  ],
+  "correct": [
+   "Summarize and compress videos"
+  ],
+  "slide_image": "cpv-slides-real/slide-032.png"
+ },
+ {
+  "id": 23,
+  "question": "In a ______, the line detector operator consists of a convolution mask tuned to detect the presence of lines of a particular width n and a θ orientation. Choose the best correct answer",
+  "options": [
+   "Content-based techniques",
+   "Gaussian technique",
+   "Convolution based technique",
+   "Edge detection technique"
+  ],
+  "correct": [
+   "Convolution based technique"
+  ],
+  "slide_image": "cpv-slides-real/slide-033.png"
+ },
+ {
+  "id": 24,
+  "question": "Object recognition consists of ______ objects within a picture with a given degree of confidence. Choose the best correct answer",
+  "options": [
+   "Detection, identifying, and locating",
+   "Identifying, and locating",
+   "Detection and locating",
+   "Recognizing, identifying, and locating"
+  ],
+  "correct": [
+   "Recognizing, identifying, and locating"
+  ],
+  "slide_image": "cpv-slides-real/slide-034.png"
+ },
+ {
+  "id": 25,
+  "question": "The dynamic range of the imaging system is a quantitative relation where the upper limit can be determined by ____",
+  "options": [
+   "Saturation",
+   "Contrast",
+   "Noise",
+   "Brightness"
+  ],
+  "correct": [
+   "Noise"
+  ],
+  "slide_image": "cpv-slides-real/slide-035.png"
+ }
+]

@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m3-008",
+  "q": "Trong thư viện Folium, cú pháp nào được dùng để gắn một điểm đánh dấu (Marker) lên đối tượng bản đồ đã tạo?",
+  "correct": "folium.Marker(location=[lat, lon], popup='...').add_to(map_name)",
+  "wrong": [
+   "map_name.insert(folium.Marker(location=[lat, lon]))",
+   "folium.Marker(location=[lat, lon]).render(map_name)",
+   "map_name.append_marker([lat, lon], popup='...')"
+  ]
+ },
+ {
+  "id": "r-m3-009",
+  "q": "Trong ứng dụng xây dựng bằng Dash, thành phần nào giữ vai trò quản lý tính tương tác giữa lựa chọn của người dùng và việc cập nhật biểu đồ?",
+  "correct": "Hàm phản hồi (Callback) với decorator @app.callback",
+  "wrong": [
+   "Phương thức fit() trong mô hình hồi quy tuyến tính",
+   "Cấu trúc bảng Dash HTML Components",
+   "Hàm khởi tạo đối tượng Folium Map"
+  ]
+ },
+ {
+  "id": "r-m3-010",
+  "q": "Kiến trúc trợ lý nhận thức (cognitive assistant architecture) trong Watson Assistant gồm 3 thành phần cốt lõi nào?",
+  "correct": "Intents (Ý định), Entities (Thực thể / Từ khóa) và Dialog (Kịch bản hội thoại)",
+  "wrong": [
+   "Input, Hidden Layers và Output",
+   "Model, View và Controller",
+   "Database, API Gateway và Web Client"
+  ]
+ },
+ {
+  "id": "r-m3-011",
+  "q": "Trong Watson Assistant, thành phần 'Intents' đại diện cho điều gì?",
+  "correct": "Ý định hoặc mục đích của người dùng khi đưa ra câu nói",
+  "wrong": [
+   "Từ khóa hoặc danh từ cụ thể chỉ thực thể trong câu",
+   "Cây sơ đồ logic điều hướng các nhánh rẽ hội thoại",
+   "Khóa bảo mật cá nhân dùng để kết nối với đám mây"
+  ]
+ },
+ {
+  "id": "r-m3-012",
+  "q": "Dịch vụ nào của IBM Watson giúp chuyển đổi văn bản câu trả lời thành giọng nói âm thanh?",
+  "correct": "Text-to-Speech (TTS)",
+  "wrong": [
+   "Speech-to-Text (STT)",
+   "Language Translator",
+   "Natural Language Understanding"
+  ]
+ },
+ {
+  "id": "r-m3-013",
+  "q": "Theo tài liệu, Watson Assistant hỗ trợ triển khai đa kênh (deployment) thông qua những nền tảng nào?",
+  "correct": "Web Chat, WordPress, Slack, Facebook Messenger và Node-RED",
+  "wrong": [
+   "Hệ điều hành Android thuần, iOS Swift, Docker và Kubernetes",
+   "Email SMTP, SMS Gateway truyền thống và Tổng đài Analog",
+   "Chỉ hỗ trợ duy nhất giao diện dòng lệnh CLI trên terminal"
+  ]
+ },
+ {
+  "id": "r-m3-014",
+  "q": "Để xác thực quyền truy cập khi tương tác với các dịch vụ Watson API bằng IBM Cloud Python SDK, lớp đối tượng nào được sử dụng?",
+  "correct": "IAMAuthenticator",
+  "wrong": [
+   "BasicAuthSession",
+   "OAuth2BearerToken",
+   "JWTHeaderVerifier"
+  ]
+ },
+ {
+  "id": "r-m3-015",
+  "q": "IBM Db2 thuộc loại hệ quản trị cơ sở dữ liệu nào?",
+  "correct": "Hệ quản trị cơ sở dữ liệu quan hệ (RDBMS)",
+  "wrong": [
+   "Cơ sở dữ liệu phi quan hệ dạng tài liệu (Document NoSQL)",
+   "Cơ sở dữ liệu đồ thị phân tán (Graph Database)",
+   "Kho lưu trữ khóa - giá trị trong bộ nhớ (Key-Value Store)"
+  ]
+ },
+ {
+  "id": "r-m3-016",
+  "q": "Khi khởi tạo một phiên bản dịch vụ Db2 trên IBM Cloud Console, các thông số cấu hình cơ bản cần thiết lập gồm những gì?",
+  "correct": "Vùng tài nguyên (Region), tên thực thể dịch vụ (Service name) và nhóm tài nguyên (Resource group)",
+  "wrong": [
+   "Số lượng bảng tối đa, kiểu mã hóa SSL và địa chỉ IP tĩnh",
+   "Thuật toán mã hóa mật khẩu, cổng REST API và giao thức HTTP",
+   "Tên người dùng quản trị tối cao, dung lượng RAM và số nhân CPU"
+  ]
+ },
+ {
+  "id": "r-m3-017",
+  "q": "Trong quá trình nạp dữ liệu vào Db2, thành phần nào được sử dụng để phân tách không gian tên giữa các dự án?",
+  "correct": "Lược đồ (Schema)",
+  "wrong": [
+   "Khóa ngoại (Foreign Key)",
+   "Cổng kết nối (Port)",
+   "Chuỗi kết nối (DSN)"
+  ]
+ },
+ {
+  "id": "r-m3-018",
+  "q": "Trong mô hình kiến trúc cung cấp REST API cho cơ sở dữ liệu, máy chủ trung gian (như Flask hoặc Express) giữ vai trò gì?",
+  "correct": "Đóng vai trò API Gateway tiếp nhận yêu cầu HTTP, thực thi truy vấn SQL và đóng gói kết quả dạng JSON",
+  "wrong": [
+   "Lưu trữ vĩnh viễn toàn bộ dữ liệu bảng thay thế cơ sở dữ liệu Db2",
+   "Tự động huấn luyện lại các mô hình học máy theo chu kỳ thời gian thực",
+   "Sinh mã HTML tĩnh để hiển thị giao diện báo cáo cho người dùng cuối"
+  ]
+ },
+ {
+  "id": "r-m3-019",
+  "q": "Thư viện Python nào được sử dụng trực tiếp để kết nối và thực thi truy vấn SQL với cơ sở dữ liệu IBM Db2?",
+  "correct": "ibm_db",
+  "wrong": [
+   "sqlite3",
+   "psycopg2",
+   "mysql-connector"
+  ]
+ },
+ {
+  "id": "r-m3-020",
+  "q": "Phương thức nào trong thư viện `ibm_db` được sử dụng để lấy từng dòng bản ghi dữ liệu kết quả dưới dạng dictionary liên kết?",
+  "correct": "ibm_db.fetch_assoc()",
+  "wrong": [
+   "ibm_db.fetchall()",
+   "ibm_db.get_row()",
+   "ibm_db.read_record()"
+  ]
+ },
+ {
+  "id": "r-m3-021",
+  "q": "Mục đích quan trọng nhất của việc thiết lập Khóa chính (Primary Key) khi tạo bảng trong cơ sở dữ liệu quan hệ Db2 là gì?",
+  "correct": "Đảm bảo tính toàn vẹn và tính duy nhất của dữ liệu trên mỗi dòng bản ghi",
+  "wrong": [
+   "Tự động mã hóa toàn bộ dữ liệu lưu trữ trên các cột số",
+   "Tăng tốc độ truyền tải gói tin qua giao thức mạng HTTP",
+   "Cho phép lưu trữ giá trị rỗng (NULL) không giới hạn trên cột đó"
+  ]
+ },
+ {
+  "id": "r-m4-001",
+  "q": "Bối cảnh dự án tổng hợp (scenario) được đề cập xoay quanh việc phân tích dữ liệu của công ty nào?",
+  "correct": "Công ty hàng không vũ trụ SpaceX",
+  "wrong": [
+   "Tập đoàn máy tính IBM",
+   "Cơ quan Hàng không Vũ trụ NASA",
+   "Tập đoàn công nghệ Microsoft"
+  ]
+ },
+ {
+  "id": "r-m4-002",
+  "q": "Mục tiêu kỹ thuật cốt lõi trong dự án phân tích dữ liệu SpaceX là dự đoán điều gì?",
+  "correct": "Khả năng hạ cánh thành công của tầng 1 (first stage) tên lửa Falcon 9",
+  "wrong": [
+   "Quỹ đạo bay chính xác của vệ tinh nhân tạo Starlink",
+   "Thời gian cần thiết để chế tạo động cơ tên lửa Merlin",
+   "Tỷ lệ tiêu hao nhiên liệu oxy lỏng trong quá trình cất cánh"
+  ]
+ },
+ {
+  "id": "r-m4-003",
+  "q": "Việc dự đoán khả năng hạ cánh thành công của tầng 1 tên lửa Falcon 9 mang lại ý nghĩa thực tiễn quan trọng nào cho doanh nghiệp?",
+  "correct": "Ước tính chi phí cho một lần phóng tên lửa",
+  "wrong": [
+   "Tự động hóa hoàn toàn việc lập trình hệ điều hành tàu con thoi",
+   "Xác định vị trí địa lý của bãi phóng tên lửa tiếp theo trên thế giới",
+   "Thay thế toàn bộ phi hành đoàn bằng trí tuệ nhân tạo"
+  ]
+ },
+ {
+  "id": "r-m4-004",
+  "q": "Nền tảng IBM Watson Studio cung cấp môi trường tích hợp chuyên dùng để phát triển loại tài liệu/công cụ nào?",
+  "correct": "Jupyter Notebooks",
+  "wrong": [
+   "Hệ điều hành nhúng thời gian thực RTOS",
+   "Trình biên dịch mã máy C++ chuyên dụng",
+   "Phần mềm thiết kế đồ họa 3D CAD"
+  ]
+ },
+ {
+  "id": "r-m4-005",
+  "q": "Trong các bước khởi tạo dự án trên IBM Watson Studio, dịch vụ đám mây nào được liên kết để lưu trữ tài nguyên và dữ liệu dự án?",
+  "correct": "Cloud Object Storage (COS)",
+  "wrong": [
+   "Elastic Block Storage (EBS)",
+   "Network File System (NFS)",
+   "Simple Notification Service (SNS)"
+  ]
+ },
+ {
+  "id": "r-m4-006",
+  "q": "Các bước chuẩn để khởi tạo một môi trường làm việc dự án trên IBM Watson Studio gồm những gì?",
+  "correct": "Đăng nhập IBM Cloud -> Tạo Project mới -> Thiết lập Cloud Object Storage -> Cấp phát môi trường lập trình",
+  "wrong": [
+   "Cài đặt Linux -> Biên dịch kernel -> Cài thư viện Python -> Mở port mạng",
+   "Tạo cơ sở dữ liệu Db2 -> Viết REST API -> Kết nối Webhook -> Đăng nhập GitHub",
+   "Khởi tạo GitHub repository -> Viết kịch bản Watson Assistant -> Cấp phát môi trường"
+  ]
+ },
+ {
+  "id": "r-m5-001",
+  "q": "Để liên kết Watson Studio với tài khoản GitHub cá nhân một cách an toàn, người dùng cần tạo và cung cấp thông tin xác thực nào?",
+  "correct": "Khóa truy cập cá nhân (Personal Access Token)",
+  "wrong": [
+   "Mật khẩu đăng nhập tài khoản IBM Cloud",
+   "Khóa đối xứng mã hóa cơ sở dữ liệu SSL",
+   "Số định danh tài khoản ngân hàng liên kết"
+  ]
+ },
+ {
+  "id": "r-m5-002",
+  "q": "Mục đích chính của việc tích hợp nền tảng GitHub vào Watson Studio là gì?",
+  "correct": "Quản lý phiên bản mã nguồn, hỗ trợ làm việc nhóm, lưu trữ và chia sẻ mã an toàn",
+  "wrong": [
+   "Tăng tốc độ tính toán phần cứng GPU cho các mô hình học sâu",
+   "Tự động xuất bản các mô hình phân loại thành dịch vụ web REST API",
+   "Xóa bỏ hoàn toàn nhu cầu sử dụng dịch vụ Cloud Object Storage"
+  ]
+ },
+ {
+  "id": "r-m5-003",
+  "q": "Lợi ích nổi bật của việc kết nối tài khoản GitHub với Watson Studio trong quy trình phát triển là gì?",
+  "correct": "Giúp quá trình làm việc nhóm, lưu trữ và chia sẻ mã nguồn trở nên an toàn và thuận tiện hơn",
+  "wrong": [
+   "Tự động phát hiện lỗi cú pháp Python và tự sửa mã trước khi chạy",
+   "Cho phép chạy song song hàng ngàn luồng kiểm chứng chéo K-fold miễn phí",
+   "Thay thế hoàn toàn vai trò của người quản trị cơ sở dữ liệu Db2"
+  ]
+ },
+ {
+  "id": "r-m5-004",
+  "q": "Tệp tin Jupyter Notebook được xuất bản hoặc tải về từ Watson Studio có định dạng phần mở rộng tệp là gì?",
+  "correct": ".ipynb",
+  "wrong": [
+   ".py",
+   ".json",
+   ".csv"
+  ]
+ },
+ {
+  "id": "r-m5-005",
+  "q": "Thao tác đẩy (push/publish) trên Watson Studio cho phép thực hiện hành động nào đối với file notebook?",
+  "correct": "Đẩy trực tiếp file notebook hoàn thiện lên kho lưu trữ (repository) trên GitHub",
+  "wrong": [
+   "Tải file notebook về máy tính cục bộ dưới dạng file PDF không thể chỉnh sửa",
+   "Triển khai mô hình trong notebook thành ứng dụng di động độc lập",
+   "Xóa vĩnh viễn mã nguồn notebook khỏi bộ nhớ đám mây của IBM"
+  ]
+ }
+]

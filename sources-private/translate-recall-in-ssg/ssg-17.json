@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m11-009",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Tổ chức introduction – body – conclusion” là gì?",
+  "correct": "Slide phải nhấn mạnh, không chép lời nói",
+  "wrong": [
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+   "Dự đoán câu hỏi, phân người trả lời theo chuyên môn",
+   "Chia vai và thời gian nói cân bằng; thiết kế transition giữa người nói"
+  ]
+ },
+ {
+  "id": "r-m11-010",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Slide phải nhấn mạnh, không chép lời nói” là gì?",
+  "correct": "Chia vai và thời gian nói cân bằng; thiết kế transition giữa người nói",
+  "wrong": [
+   "Kiểm tra lỗi, định dạng, thiết bị và tài liệu dự phòng",
+   "Tổ chức introduction – body – conclusion",
+   "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ"
+  ]
+ },
+ {
+  "id": "r-m11-011",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Chia vai và thời gian nói cân bằng; thiết kế transition giữa người nói” là gì?",
+  "correct": "Điều chỉnh độ chi tiết theo audience",
+  "wrong": [
+   "Dự đoán câu hỏi, phân người trả lời theo chuyên môn",
+   "Chọn một core message khán giả phải nhớ",
+   "Mỗi thành viên đọc lại toàn bộ báo cáo"
+  ]
+ },
+ {
+  "id": "r-m11-012",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Điều chỉnh độ chi tiết theo audience” là gì?",
+  "correct": "Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ",
+  "wrong": [
+   "Chọn một core message khán giả phải nhớ",
+   "Chia vai và thời gian nói cân bằng; thiết kế transition giữa người nói",
+   "Slide phải nhấn mạnh, không chép lời nói"
+  ]
+ },
+ {
+  "id": "r-m11-013",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Rehearse toàn bộ, đo thời gian và luyện delivery phi ngôn ngữ” là gì?",
+  "correct": "Dự đoán câu hỏi, phân người trả lời theo chuyên môn",
+  "wrong": [
+   "Tổ chức introduction – body – conclusion",
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations",
+   "Mỗi thành viên đọc lại toàn bộ báo cáo"
+  ]
+ },
+ {
+  "id": "r-m11-014",
+  "q": "13 bước chuyển report thành bài thuyết trình: ngay sau “Dự đoán câu hỏi, phân người trả lời theo chuyên môn” là gì?",
+  "correct": "Kiểm tra lỗi, định dạng, thiết bị và tài liệu dự phòng",
+  "wrong": [
+   "Điều chỉnh độ chi tiết theo audience",
+   "Chỉ chọn dữ liệu và ví dụ quan trọng; chuyển bảng chi tiết sang backup slides",
+   "Chọn 3–4 ý hỗ trợ: problem, solution, results, recommendations"
+  ]
+ },
+ {
+  "id": "k-001",
+  "q": "Điểm khác biệt cốt lõi giữa team và group là gì?",
+  "correct": "Team có mục tiêu chung cụ thể, phụ thuộc lẫn nhau và cùng chịu trách nhiệm",
+  "wrong": [
+   "Team luôn đông người hơn group",
+   "Group có quyền ra quyết định, team chỉ trao đổi thông tin",
+   "Team được đánh giá cá nhân, group được đánh giá chung"
+  ]
+ },
+ {
+  "id": "k-002",
+  "q": "Thành viên của một GROUP (không phải team) thường được đánh giá thế nào?",
+  "correct": "Đánh giá cá nhân",
+  "wrong": [
+   "Đánh giá chung cả nhóm",
+   "Đánh giá theo kết quả của trưởng nhóm",
+   "Không được đánh giá"
+  ]
+ },
+ {
+  "id": "k-003",
+  "q": "Ý nào KHÔNG thuộc 5 đặc trưng của team?",
+  "correct": "Mỗi thành viên theo đuổi mục tiêu riêng",
+  "wrong": [
+   "Có sự ổn định trong một khoảng thời gian",
+   "Có quyền hạn và khả năng ra quyết định",
+   "Hoạt động trong một bối cảnh xã hội / tổ chức"
+  ]
+ },
+ {
+  "id": "k-004",
+  "q": "Synergy nghĩa là gì?",
+  "correct": "Kết quả chung lớn hơn tổng kết quả của từng người cộng lại",
+  "wrong": [
+   "Mọi thành viên có kỹ năng giống hệt nhau",
+   "Cả nhóm luôn đồng ý với nhau",
+   "Mức độ hấp dẫn của nhóm đối với thành viên"
+  ]
+ },
+ {
+  "id": "k-005",
+  "q": "Group cohesiveness là gì?",
+  "correct": "Mức độ hấp dẫn của nhóm đối với thành viên — hài lòng và muốn ở lại",
+  "wrong": [
+   "Khuynh hướng tuân theo áp lực nhóm, bỏ qua ý kiến trái chiều",
+   "Kết quả chung lớn hơn tổng kết quả riêng lẻ",
+   "Thỏa thuận về cách team làm việc"
+  ]
+ },
+ {
+  "id": "k-006",
+  "q": "Yếu tố nào KHÔNG thuộc 5 yếu tố ảnh hưởng đến cohesiveness?",
+  "correct": "Số buổi họp mỗi tuần",
+  "wrong": [
+   "Quy mô nhóm",
+   "Cạnh tranh bên ngoài",
+   "Tính chọn lọc / địa vị của nhóm"
+  ]
+ },
+ {
+  "id": "k-007",
+  "q": "Nhóm càng lớn thì cohesiveness thường thay đổi thế nào?",
+  "correct": "Dễ giảm hài lòng và tăng xung đột",
+  "wrong": [
+   "Gắn kết hơn vì có nhiều người hỗ trợ",
+   "Không bị ảnh hưởng",
+   "Tự động tạo ra synergy"
+  ]
+ },
+ {
+  "id": "k-008",
+  "q": "Groupthink là gì?",
+  "correct": "Tuân theo áp lực nhóm, giảm tư duy phản biện và bỏ qua ý kiến trái chiều",
+  "wrong": [
+   "Mức độ hấp dẫn của nhóm, khiến thành viên hài lòng và muốn ở lại lâu dài",
+   "Cách tạo thật nhiều ý tưởng trước, rồi mới đánh giá theo tiêu chí chung",
+   "Việc lãnh đạo luân chuyển theo nhiệm vụ để mọi người cùng phát triển"
+  ]
+ },
+ {
+  "id": "k-009",
+  "q": "Cách nào giúp PHÒNG TRÁNH groupthink?",
+  "correct": "Chủ động mời phản biện và yêu cầu bằng chứng",
+  "wrong": [
+   "Để lãnh đạo chốt kết luận sớm cho nhanh",
+   "Đánh giá ngay mỗi ý tưởng vừa được nêu",
+   "Chỉ lắng nghe ý kiến của số đông"
+  ]
+ },
+ {
+  "id": "k-010",
+  "q": "Yếu tố nào làm GIẢM hiệu quả của team?",
+  "correct": "Vai trò không rõ, phân công không công bằng",
+  "wrong": [
+   "Lãnh đạo luân chuyển theo nhiệm vụ",
+   "Thành viên phụ thuộc tích cực vào nhau",
+   "Giao tiếp rõ ràng"
+  ]
+ },
+ {
+  "id": "k-011",
+  "q": "Bốn nhóm kỹ năng cần có của thành viên team là gì?",
+  "correct": "Giao tiếp; chuyên môn; ra quyết định & giải quyết vấn đề; quan hệ liên cá nhân",
+  "wrong": [
+   "Giao tiếp; lãnh đạo; thuyết trình; viết báo cáo",
+   "Chuyên môn; ngoại ngữ; tin học; quản lý thời gian",
+   "Lắng nghe; đồng cảm; thuyết phục; đàm phán"
+  ]
+ },
+ {
+  "id": "k-012",
+  "q": "“Cung cấp thông tin, theo dõi tiến độ, thúc đẩy ra quyết định” thuộc nhóm vai trò nào?",
+  "correct": "Task-facilitating roles",
+  "wrong": [
+   "Relationship-building roles",
+   "Blocking roles",
+   "Challenger roles"
+  ]
+ },
+ {
+  "id": "k-013",
+  "q": "“Tạo động lực, đồng cảm, duy trì gắn kết và xử lý mâu thuẫn” thuộc nhóm vai trò nào?",
+  "correct": "Relationship-building roles",
+  "wrong": [
+   "Task-facilitating roles",
+   "Blocking roles",
+   "Challenger roles"
+  ]
+ },
+ {
+  "id": "k-014",
+  "q": "Một thành viên độc chiếm thảo luận và né tránh trách nhiệm. Đây là vai trò gì?",
+  "correct": "Blocking roles",
+  "wrong": [
+   "Task-facilitating roles",
+   "Relationship-building roles",
+   "Challenger roles"
+  ]
+ },
+ {
+  "id": "k-015",
+  "q": "Team quá thiên về đồng thuận (quan hệ) dễ gặp hậu quả gì?",
+  "correct": "Chậm ra quyết định",
+  "wrong": [
+   "Căng thẳng vì áp lực nhiệm vụ",
+   "Tư duy phản biện tăng mạnh",
+   "Synergy tăng cao"
+  ]
+ },
+ {
+  "id": "k-016",
+  "q": "Team charter / team contract là gì?",
+  "correct": "Thỏa thuận về cách team làm việc",
+  "wrong": [
+   "Báo cáo tiến độ gửi giảng viên",
+   "Đề xuất dự án gửi nhà tài trợ",
+   "Biên bản ghi lại một cuộc họp"
+  ]
+ },
+ {
+  "id": "k-017",
+  "q": "Nội dung nào KHÔNG cần có trong team charter?",
+  "correct": "Điểm số cá nhân của từng thành viên ở các môn khác",
+  "wrong": [
+   "Cách ra quyết định",
+   "Cách xử lý chậm tiến độ và vi phạm cam kết",
+   "Lịch họp và kênh giao tiếp"
+  ]
+ },
+ {
+  "id": "k-018",
+  "q": "Quy trình xử lý xung đột của team nên được thiết kế khi nào?",
+  "correct": "Trước khi xung đột xảy ra",
+  "wrong": [
+   "Ngay khi có xung đột đầu tiên",
+   "Sau khi dự án kết thúc",
+   "Chỉ khi giảng viên yêu cầu"
+  ]
+ },
+ {
+  "id": "k-019",
+  "q": "Công thức Trust Equation là gì?",
+  "correct": "Trustworthiness = (Credibility + Reliability + Intimacy) / Self-orientation",
+  "wrong": [
+   "Trustworthiness = (Credibility + Reliability + Self-orientation) / Intimacy",
+   "Trustworthiness = Credibility × Reliability × Intimacy",
+   "Trustworthiness = (Reliability + Intimacy + Self-orientation) / Credibility"
+  ]
+ }
+]

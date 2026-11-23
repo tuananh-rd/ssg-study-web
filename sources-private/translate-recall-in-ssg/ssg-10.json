@@ -1,0 +1,252 @@
+[
+ {
+  "id": "r-m6-044",
+  "q": "Paraphrase và summary có cần ghi nguồn không?",
+  "correct": "Có, cả hai đều cần",
+  "wrong": [
+   "Không cần",
+   "Chỉ summary cần",
+   "Chỉ paraphrase cần"
+  ]
+ },
+ {
+  "id": "r-m6-045",
+  "q": "Revision xem xét điều gì?",
+  "correct": "Nội dung, tổ chức và độ rõ ở cấp độ lớn",
+  "wrong": [
+   "Ngữ pháp, dấu câu, định dạng",
+   "Chỉ chính tả",
+   "Chỉ font chữ"
+  ]
+ },
+ {
+  "id": "r-m6-046",
+  "q": "Editing sửa điều gì?",
+  "correct": "Ngữ pháp, dấu câu, từ và định dạng",
+  "wrong": [
+   "Nội dung và cấu trúc",
+   "Lập luận và bằng chứng",
+   "Mục tiêu văn bản"
+  ]
+ },
+ {
+  "id": "r-m7-001",
+  "q": "“Solicited” nghĩa là gì?",
+  "correct": "Được yêu cầu qua RFP / RFQ / IFB; phải bám chặt định dạng, tiêu chí và deadline",
+  "wrong": [
+   "Tự đề xuất; linh hoạt hơn nhưng phải chứng minh rõ nhu cầu, giá trị và mức liên quan",
+   "Logic, lý do và bằng chứng",
+   "Độ tin cậy, năng lực, tư cách và thiện chí"
+  ]
+ },
+ {
+  "id": "r-m7-002",
+  "q": "Ý sau mô tả khái niệm nào: “Được yêu cầu qua RFP / RFQ / IFB; phải bám chặt định dạng, tiêu chí và deadline”?",
+  "correct": "Solicited",
+  "wrong": [
+   "Unsolicited",
+   "Logos",
+   "Pathos"
+  ]
+ },
+ {
+  "id": "r-m7-003",
+  "q": "“Unsolicited” nghĩa là gì?",
+  "correct": "Tự đề xuất; linh hoạt hơn nhưng phải chứng minh rõ nhu cầu, giá trị và mức liên quan",
+  "wrong": [
+   "Được yêu cầu qua RFP / RFQ / IFB; phải bám chặt định dạng, tiêu chí và deadline",
+   "Logic, lý do và bằng chứng",
+   "Cảm xúc, đam mê và sự đồng cảm"
+  ]
+ },
+ {
+  "id": "r-m7-004",
+  "q": "Ý sau mô tả khái niệm nào: “Tự đề xuất; linh hoạt hơn nhưng phải chứng minh rõ nhu cầu, giá trị và mức liên quan”?",
+  "correct": "Unsolicited",
+  "wrong": [
+   "Solicited",
+   "Logos",
+   "Pathos"
+  ]
+ },
+ {
+  "id": "r-m7-005",
+  "q": "Business proposal là gì?",
+  "correct": "Đề nghị bằng văn bản nhằm giải quyết vấn đề / đáp ứng nhu cầu, thuyết phục đối tượng chấp nhận kế hoạch",
+  "wrong": [
+   "Báo cáo tiến độ dự án",
+   "Văn bản nội bộ thông báo chính sách",
+   "Thư cảm ơn sau phỏng vấn"
+  ]
+ },
+ {
+  "id": "r-m7-006",
+  "q": "Solicited proposal được yêu cầu qua những tài liệu nào?",
+  "correct": "RFP / RFQ / IFB",
+  "wrong": [
+   "Memo / Letter / Email",
+   "Agenda / Minutes",
+   "CV / Cover letter"
+  ]
+ },
+ {
+  "id": "r-m7-007",
+  "q": "Solicited proposal phải bám chặt điều gì?",
+  "correct": "Định dạng, tiêu chí và deadline",
+  "wrong": [
+   "Sở thích của người viết",
+   "Mẫu của dự án trước",
+   "Số trang tối đa 1"
+  ]
+ },
+ {
+  "id": "r-m7-008",
+  "q": "Unsolicited proposal phải chứng minh rõ điều gì?",
+  "correct": "Nhu cầu, giá trị và mức liên quan",
+  "wrong": [
+   "Định dạng theo RFP",
+   "Giá thấp nhất",
+   "Số người tham gia"
+  ]
+ },
+ {
+  "id": "r-m7-009",
+  "q": "Các phần thường gặp của proposal: mục đứng ĐẦU TIÊN là gì?",
+  "correct": "Cover page",
+  "wrong": [
+   "Market / current-situation analysis",
+   "Benefits ngắn hạn và dài hạn",
+   "Timeline với milestone và ngày cụ thể"
+  ]
+ },
+ {
+  "id": "r-m7-010",
+  "q": "Các phần thường gặp của proposal: mục đứng CUỐI CÙNG là gì?",
+  "correct": "Conclusion",
+  "wrong": [
+   "Proposal / idea – Who, What, When, Where, Why, How",
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Benefits ngắn hạn và dài hạn"
+  ]
+ },
+ {
+  "id": "r-m7-011",
+  "q": "Các phần thường gặp của proposal: ngay sau “Cover page” là gì?",
+  "correct": "Executive summary",
+  "wrong": [
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Marketing / communication plan",
+   "Market / current-situation analysis"
+  ]
+ },
+ {
+  "id": "r-m7-012",
+  "q": "Các phần thường gặp của proposal: ngay sau “Executive summary” là gì?",
+  "correct": "Background",
+  "wrong": [
+   "Conclusion",
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Market / current-situation analysis"
+  ]
+ },
+ {
+  "id": "r-m7-013",
+  "q": "Các phần thường gặp của proposal: ngay sau “Background” là gì?",
+  "correct": "Proposal / idea – Who, What, When, Where, Why, How",
+  "wrong": [
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Marketing / communication plan",
+   "Benefits ngắn hạn và dài hạn"
+  ]
+ },
+ {
+  "id": "r-m7-014",
+  "q": "Các phần thường gặp của proposal: ngay sau “Proposal / idea – Who, What, When, Where, Why, How” là gì?",
+  "correct": "Market / current-situation analysis",
+  "wrong": [
+   "Background",
+   "Cover page",
+   "Marketing / communication plan"
+  ]
+ },
+ {
+  "id": "r-m7-015",
+  "q": "Các phần thường gặp của proposal: ngay sau “Market / current-situation analysis” là gì?",
+  "correct": "Benefits ngắn hạn và dài hạn",
+  "wrong": [
+   "Conclusion",
+   "Proposal / idea – Who, What, When, Where, Why, How",
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có"
+  ]
+ },
+ {
+  "id": "r-m7-016",
+  "q": "Các phần thường gặp của proposal: ngay sau “Benefits ngắn hạn và dài hạn” là gì?",
+  "correct": "Timeline với milestone và ngày cụ thể",
+  "wrong": [
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Cover page",
+   "Executive summary"
+  ]
+ },
+ {
+  "id": "r-m7-017",
+  "q": "Các phần thường gặp của proposal: ngay sau “Timeline với milestone và ngày cụ thể” là gì?",
+  "correct": "Marketing / communication plan",
+  "wrong": [
+   "Benefits ngắn hạn và dài hạn",
+   "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+   "Executive summary"
+  ]
+ },
+ {
+  "id": "r-m7-018",
+  "q": "Các phần thường gặp của proposal: ngay sau “Marketing / communication plan” là gì?",
+  "correct": "Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có",
+  "wrong": [
+   "Market / current-situation analysis",
+   "Background",
+   "Conclusion"
+  ]
+ },
+ {
+  "id": "r-m7-019",
+  "q": "Các phần thường gặp của proposal: ngay sau “Finance: chi phí ban đầu, nguồn thu hoặc ngân sách, thời điểm hoàn vốn nếu có” là gì?",
+  "correct": "Conclusion",
+  "wrong": [
+   "Marketing / communication plan",
+   "Timeline với milestone và ngày cụ thể",
+   "Benefits ngắn hạn và dài hạn"
+  ]
+ },
+ {
+  "id": "r-m7-020",
+  "q": "Proposal chuyên nghiệp thường trình bày bằng định dạng nào?",
+  "correct": "PDF",
+  "wrong": [
+   "Word để người đọc sửa",
+   "Ảnh chụp",
+   "Slide PowerPoint"
+  ]
+ },
+ {
+  "id": "r-m7-021",
+  "q": "Ý nào là yêu cầu của proposal chuyên nghiệp?",
+  "correct": "Không phóng đại",
+  "wrong": [
+   "Càng dài càng tốt",
+   "Không cần trích nguồn",
+   "Tập trung vào cảm xúc"
+  ]
+ },
+ {
+  "id": "r-m7-022",
+  "q": "Phần “Timeline” của proposal cần có gì?",
+  "correct": "Milestone và ngày cụ thể",
+  "wrong": [
+   "Danh sách thành viên",
+   "Kết quả khảo sát",
+   "Lời cảm ơn"
+  ]
+ }
+]

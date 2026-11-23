@@ -1,0 +1,202 @@
+[
+ {
+  "id": 1,
+  "question": "You are evaluating a binary classifier. There are 80 positive outcomes in the test data, and 150 observations. Using a 50% threshold, the classifier predicts 60 positive outcomes, of which 20 are incorrect.\nWhat is the classifier's Precision on the test sample?",
+  "options": [
+   "50%",
+   "33.3%",
+   "66.7%",
+   "37.5%"
+  ]
+ },
+ {
+  "id": 2,
+  "question": "You are evaluating a binary classifier. There are 80 positive outcomes in the test data, and 150 observations. Using a 50% threshold, the classifier predicts 60 positive outcomes, of which 20 are incorrect.\nWhat is the classifier's F1 score on the test sample?",
+  "options": [
+   "75%",
+   "57.2%",
+   "67.5%",
+   "42.8%"
+  ]
+ },
+ {
+  "id": 3,
+  "question": "You are evaluating a binary classifier. There are 80 positive outcomes in the test data, and 150 observations. Using a 50% threshold, the classifier predicts 60 positive outcomes, of which 20 are incorrect.\nWhat is the classifier's Recall on the test sample?",
+  "options": [
+   "66.7%",
+   "37.5%",
+   "50%",
+   "33.3%"
+  ]
+ },
+ {
+  "id": 4,
+  "question": "Why is EDA Useful?",
+  "options": [
+   "EDA allows us to get an initial feel for the data.",
+   "It lets us determine if the data makes sense, or if further cleaning or more data is needed.",
+   "EDA does not help to identify patterns and trends in the data.",
+   "None of these"
+  ]
+ },
+ {
+  "id": 5,
+  "question": "There are several SQL databases available such as",
+  "options": [
+   "MySQL",
+   "PostgreSQL",
+   "MongoDB",
+   "Cassandra"
+  ]
+ },
+ {
+  "id": 6,
+  "question": "The data below appears in 'data.txt', and Pandas has been imported.\n63.03 22.55 39.61 40.48 98.67 -0.25 AB\n39.06 10.06 25.02 29 114.41 4.56 AB\n68.83 22.22 50.09 46.61 105.99 -3.53 AB\nHow can we use Pandas to import this data into a data frame?",
+  "options": [
+   "pandas.read_csv('data.txt', header=None, sep=\",\")",
+   "pandas.read_csv('data.txt')",
+   "pandas.read_csv('data.txt', delim_whitespace=True)",
+   "pandas.read_csv('data.txt', header=0, delim_whitespace=True)"
+  ]
+ },
+ {
+  "id": 7,
+  "question": "The data below appears in 'data.txt', and Pandas has been imported. Which Python command will read it correctly into a Pandas DataFrame?\n63.03 22.55 39.61 40.48 98.67 -0.25 AB\n39.06 10.06 25.02 29 114.41 4.56 AB\n68.83 22.22 50.09 46.61 105.99 -3.53 AB",
+  "options": [
+   "pandas.read('data.txt')",
+   "pandas.read_csv('data.txt', header=None, sep=',')",
+   "pandas.read_csv('data.txt', delim_whitespace=True)",
+   "pandas.read_csv('data.txt', header=0, delim_whitespace=True)"
+  ]
+ },
+ {
+  "id": 8,
+  "question": "Select the option that has the syntax to obtain the data splits you will need to train a model having a test split that is a third the size of your available data.",
+  "options": [
+   "X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.5)",
+   "X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.33)",
+   "X_train, y_test = train_test_split(x, y, test_size=0.33)",
+   "X_train, y_test = train_test_split(x, y, test_size=0.5)"
+  ]
+ },
+ {
+  "id": 9,
+  "question": "Which of the following statements about Downsampling is TRUE?",
+  "options": [
+   "Downsampling is likely to decrease Recall.",
+   "Downsampling is likely to decrease Precision.",
+   "Downsampling preserves all the original observations.",
+   "Downsampling results in excessive focus on the more frequently-occurring class."
+  ]
+ },
+ {
+  "id": 10,
+  "question": "Which type of Ensemble modeling approach is NOT a special case of model averaging?",
+  "options": [
+   "Random Forest methods",
+   "Boosting methods",
+   "The Pasting method of Bootstrap aggregation",
+   "The Bagging method of Bootstrap aggregation"
+  ]
+ },
+ {
+  "id": 11,
+  "question": "Which of the following is NOT a characteristic of the k nearest neighbors algorithm?",
+  "options": [
+   "It determines the value for k.",
+   "It is sensitive to scaling.",
+   "It determines decision boundaries to make predictions.",
+   "It is well suited to predict variables with multiple classes."
+  ]
+ },
+ {
+  "id": 12,
+  "question": "Which of the following examples is NOT a common use case of clustering in the real world?",
+  "options": [
+   "Anomaly detection.",
+   "Customer segmentation",
+   "Determine risk factor and prevention factors for diseases such as osteoporosis",
+   "Improve supervised learning."
+  ]
+ },
+ {
+  "id": 13,
+  "question": "Which of these options is NOT an example of Unsupervised Learning?",
+  "options": [
+   "Segmenting costumers into different groups.",
+   "Reducing the size of a data set without losing too much information from our original data set.",
+   "Explaining the relationship between an individual's income and the price they pay for a car.",
+   "Grouping observations together to find similar patterns across them."
+  ]
+ },
+ {
+  "id": 14,
+  "question": "Which of the following options is NOT a valid exploratory data approach for determining data readiness for modeling?",
+  "options": [
+   "Create a correlation heatmap to confirm the sign and magnitude of correlation across your features.",
+   "Create a panel plot that shows distributions for the dependent variable and scatter plots for all independent variables.",
+   "Train a model and identify the observations with the largest residuals.",
+   "Create visualizations for scatter plots, histograms, box plots, and hexbin plots."
+  ]
+ },
+ {
+  "id": 15,
+  "question": "In which of the following cases would you NOT use supervised machine learning?",
+  "options": [
+   "Segment customers by their demographics.",
+   "Predict the number of customers that will visit a store on a given week.",
+   "Predict the probability of a customer returning to a store.",
+   "Interpret the main drivers that determine if a customer will return to a store."
+  ]
+ },
+ {
+  "id": 16,
+  "question": "Which of the following statements about model errors is TRUE?",
+  "options": [
+   "Underfitting is characterized by lower errors in both training and test samples.",
+   "Underfitting is characterized by higher errors in both training and test samples.",
+   "Underfitting is characterized by higher errors in training samples and lower errors in test samples.",
+   "Underfitting is characterized by lower errors in training samples and higher errors in test samples."
+  ]
+ },
+ {
+  "id": 17,
+  "question": "Which statement about K-fold cross-validation below is TRUE?",
+  "options": [
+   "Each subsample in K-fold cross-validation has at least K observations.",
+   "Each subsample in K-fold cross-validation has at least K-1 observations.",
+   "Each of the K subsamples in K-fold cross-validation is used as a training set.",
+   "Each of the K subsamples in K-fold cross-validation is used as a test set."
+  ]
+ },
+ {
+  "id": 18,
+  "question": "Which of the following statements about Synthetic Upsampling is TRUE?",
+  "options": [
+   "Synthetic Upsampling will generally lead to a higher F1 score.",
+   "Synthetic Upsampling uses fewer hyperparameters than Random Upsampling.",
+   "Synthetic Upsampling generates observations that were not part of the original data.",
+   "Synthetic Upsampling results in excessive focus on the more frequently-occurring class"
+  ]
+ },
+ {
+  "id": 19,
+  "question": "Which of the following statements about model complexity is TRUE?",
+  "options": [
+   "Higher model complexity leads to a lower chance of overfitting.",
+   "Higher model complexity leads to a higher chance of overfitting.",
+   "Reducing the number of features while adding feature interactions leads to a lower chance of overfitting.",
+   "Reducing the number of features while adding feature interactions leads to a higher chance of overfitting."
+  ]
+ },
+ {
+  "id": 20,
+  "question": "Which statement about Support Vector Machines is TRUE?",
+  "options": [
+   "Support Vector Machine models are non-linear.",
+   "Support Vector Machine models rarely overfit on training data if using regularization.",
+   "Support Vector Machine models can be used for classification but not for regression.",
+   "Support Vector Machine models can be used for regression but not for classification."
+  ]
+ }
+]

@@ -1,0 +1,202 @@
+[
+ {
+  "id": 21,
+  "question": "Which Seaborn function is used to create a heatmap to visualize the correlation matrix of a dataset?",
+  "options": [
+   "sns.heatmap()",
+   "sns.pairplot()",
+   "sns.jointplot()",
+   "sns.scatterplot()"
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Which function in Matplotlib is used to draw a histogram?",
+  "options": [
+   "hist()",
+   "draw_hist()",
+   "plot_hist()",
+   "create_histogram()"
+  ]
+ },
+ {
+  "id": 23,
+  "question": "What function in Pandas is used to read a CSV file?",
+  "options": [
+   "read_csv()",
+   "load_csv()",
+   "import_csv()",
+   "open_csv()"
+  ]
+ },
+ {
+  "id": 24,
+  "question": "What function in Pandas is used to read a JSON file into a DataFrame?",
+  "options": [
+   "read_json()",
+   "load_json()",
+   "import_json()",
+   "parse_json()"
+  ]
+ },
+ {
+  "id": 25,
+  "question": "What function in Pandas is used to fill missing values in a DataFrame?",
+  "options": [
+   "fill_nulls()",
+   "replace_nulls()",
+   "fill_missing()",
+   "fillna()"
+  ]
+ },
+ {
+  "id": 27,
+  "question": "What Pandas function is used to display the first few rows of a DataFrame?",
+  "options": [
+   "display()",
+   "head()",
+   "show()",
+   "preview()"
+  ]
+ },
+ {
+  "id": 28,
+  "question": "Which Pandas method is used to create an area plot?",
+  "options": [
+   "plot(kind='area')",
+   "plot(type='area')",
+   "plot.area()",
+   "plot.area"
+  ]
+ },
+ {
+  "id": 29,
+  "question": "Which Pandas method is used to load data from a CSV file into a DataFrame?",
+  "options": [
+   "read_csv()",
+   "load_data()",
+   "import_data()",
+   "create_dataframe()"
+  ]
+ },
+ {
+  "id": 30,
+  "question": "What method in Sklearn is commonly used for hyperparameter tuning by exhaustively searching through a specified parameter grid?",
+  "options": [
+   "GridSearchCV()",
+   "RandomizedSearchCV()",
+   "HyperparameterTuner()",
+   "TuneGrid()"
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Which method in Matplotlib is used to save a figure to a file?",
+  "options": [
+   "savefig()",
+   "save()",
+   "export()",
+   "saveas()"
+  ]
+ },
+ {
+  "id": 32,
+  "question": "Which module of Matplotlib provides a MATLAB-like plotting interface?",
+  "options": [
+   "matplotlib.pyplot",
+   "matplotlib.figure",
+   "matplotlib.axis",
+   "matplotlib.plot"
+  ]
+ },
+ {
+  "id": 33,
+  "question": "Which Matplotlib function is used to create a stacked area plot to represent multiple variables evolving over a continuous interval?",
+  "options": [
+   "plt.area()",
+   "plt.stack()",
+   "plt.stackplot()",
+   "plt.plot()"
+  ]
+ },
+ {
+  "id": 34,
+  "question": "Which Matplotlib function is used to create a bar plot with the bars stacked on top of each other?",
+  "options": [
+   "plt.bar()",
+   "plt.stack()",
+   "plt.stackplot()",
+   "plt.bar_stack()"
+  ]
+ },
+ {
+  "id": 35,
+  "question": "Which Matplotlib method is used to create a pie chart?",
+  "options": [
+   "plot_pie()",
+   "draw_pie()",
+   "pie_chart()",
+   "pie()"
+  ]
+ },
+ {
+  "id": 36,
+  "question": "Which method in Sklearn is used to create a machine learning pipeline with sequential steps like data scaling and model fitting?",
+  "options": [
+   "build_pipeline()",
+   "make_pipeline()",
+   "create_pipeline()",
+   "init_pipeline()"
+  ]
+ },
+ {
+  "id": 37,
+  "question": "Which method can be used to handle missing data in a DataFrame in Pandas?",
+  "options": [
+   "dropna()",
+   "fillna()",
+   "isnull()",
+   "All of the above"
+  ]
+ },
+ {
+  "id": 38,
+  "question": "Which Seaborn function is used to visualize the distribution of a continuous variable separated by categories?",
+  "options": [
+   "sns.histplot()",
+   "sns.kdeplot()",
+   "sns.violinplot()",
+   "sns.boxplot()"
+  ]
+ },
+ {
+  "id": 40,
+  "question": "Which Seaborn function is used to create a bar plot displaying the count of unique values in a categorical variable?",
+  "options": [
+   "sns.countplot()",
+   "sns.barplot()",
+   "sns.pointplot()",
+   "sns.boxplot()"
+  ]
+ },
+ {
+  "id": 41,
+  "question": "Which Seaborn function is used to create a bar plot with the addition of stacked bars?",
+  "options": [
+   "sns.barplot()",
+   "sns.countplot()",
+   "sns.pointplot()",
+   "sns.stackedplot()"
+  ]
+ },
+ {
+  "id": 42,
+  "question": "Which Seaborn function is used to create a heatmap?",
+  "options": [
+   "plot_heatmap()",
+   "draw_heatmap()",
+   "heatmap()",
+   "create_heatmap()"
+  ]
+ }
+]

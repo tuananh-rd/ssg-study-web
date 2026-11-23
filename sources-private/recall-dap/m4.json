@@ -1,0 +1,74 @@
+[
+  {
+    "ref": "4.1",
+    "q": "Bối cảnh dự án tổng hợp (scenario) được đề cập xoay quanh việc phân tích dữ liệu của công ty nào?",
+    "correct": "Công ty hàng không vũ trụ SpaceX",
+    "wrong": [
+      "Tập đoàn máy tính IBM",
+      "Cơ quan Hàng không Vũ trụ NASA",
+      "Tập đoàn công nghệ Microsoft"
+    ],
+    "explain": "Dự án nghiên cứu tình huống phân tích dữ liệu các đợt phóng tàu vũ trụ thực tế của công ty SpaceX.",
+    "tip": "Dự án thực hành lớn xoay quanh dữ liệu phóng tên lửa của SpaceX."
+  },
+  {
+    "ref": "4.1",
+    "q": "Mục tiêu kỹ thuật cốt lõi trong dự án phân tích dữ liệu SpaceX là dự đoán điều gì?",
+    "correct": "Khả năng hạ cánh thành công của tầng 1 (first stage) tên lửa Falcon 9",
+    "wrong": [
+      "Quỹ đạo bay chính xác của vệ tinh nhân tạo Starlink",
+      "Thời gian cần thiết để chế tạo động cơ tên lửa Merlin",
+      "Tỷ lệ tiêu hao nhiên liệu oxy lỏng trong quá trình cất cánh"
+    ],
+    "explain": "Mục tiêu trọng tâm của dự án là xây dựng mô hình dự báo tầng 1 (first stage) của tên lửa Falcon 9 có hạ cánh an toàn thành công hay không.",
+    "tip": "Mục tiêu: dự đoán khả năng hạ cánh thành công tầng 1 (first stage) Falcon 9."
+  },
+  {
+    "ref": "4.1",
+    "q": "Việc dự đoán khả năng hạ cánh thành công của tầng 1 tên lửa Falcon 9 mang lại ý nghĩa thực tiễn quan trọng nào cho doanh nghiệp?",
+    "correct": "Ước tính chi phí cho một lần phóng tên lửa",
+    "wrong": [
+      "Tự động hóa hoàn toàn việc lập trình hệ điều hành tàu con thoi",
+      "Xác định vị trí địa lý của bãi phóng tên lửa tiếp theo trên thế giới",
+      "Thay thế toàn bộ phi hành đoàn bằng trí tuệ nhân tạo"
+    ],
+    "explain": "Tầng 1 chiếm phần lớn giá trị tên lửa; nếu hạ cánh và tái sử dụng thành công sẽ giảm mạnh chi phí, do đó dự đoán thành công giúp ước tính chính xác chi phí cho mỗi lần phóng.",
+    "tip": "Tái sử dụng tầng 1 giúp ước tính và tiết kiệm chi phí phóng."
+  },
+  {
+    "ref": "4.2",
+    "q": "Nền tảng IBM Watson Studio cung cấp môi trường tích hợp chuyên dùng để phát triển loại tài liệu/công cụ nào?",
+    "correct": "Jupyter Notebooks",
+    "wrong": [
+      "Hệ điều hành nhúng thời gian thực RTOS",
+      "Trình biên dịch mã máy C++ chuyên dụng",
+      "Phần mềm thiết kế đồ họa 3D CAD"
+    ],
+    "explain": "IBM Watson Studio cung cấp môi trường đám mây tích hợp để lập trình và thực thi các Notebook (Jupyter Notebooks) trong khoa học dữ liệu.",
+    "tip": "Watson Studio là môi trường chạy Jupyter Notebook trên đám mây."
+  },
+  {
+    "ref": "4.2",
+    "q": "Trong các bước khởi tạo dự án trên IBM Watson Studio, dịch vụ đám mây nào được liên kết để lưu trữ tài nguyên và dữ liệu dự án?",
+    "correct": "Cloud Object Storage (COS)",
+    "wrong": [
+      "Elastic Block Storage (EBS)",
+      "Network File System (NFS)",
+      "Simple Notification Service (SNS)"
+    ],
+    "explain": "IBM Watson Studio yêu cầu liên kết với dịch vụ Cloud Object Storage (lưu trữ đối tượng đám mây) để chứa các tệp dữ liệu, mã nguồn và mô hình.",
+    "tip": "Lưu trữ dự án Watson Studio bằng Cloud Object Storage."
+  },
+  {
+    "ref": "4.2",
+    "q": "Các bước chuẩn để khởi tạo một môi trường làm việc dự án trên IBM Watson Studio gồm những gì?",
+    "correct": "Đăng nhập IBM Cloud -> Tạo Project mới -> Thiết lập Cloud Object Storage -> Cấp phát môi trường lập trình",
+    "wrong": [
+      "Cài đặt Linux -> Biên dịch kernel -> Cài thư viện Python -> Mở port mạng",
+      "Tạo cơ sở dữ liệu Db2 -> Viết REST API -> Kết nối Webhook -> Đăng nhập GitHub",
+      "Khởi tạo GitHub repository -> Viết kịch bản Watson Assistant -> Cấp phát môi trường"
+    ],
+    "explain": "Các bước theo quy trình: Đăng nhập vào IBM Cloud, tạo Project mới, gắn Cloud Object Storage và cấp phát môi trường tính toán (environment runtime).",
+    "tip": "Quy trình: Đăng nhập -> Tạo Project -> Thiết lập Cloud Object Storage -> Cấp phát môi trường."
+  }
+]

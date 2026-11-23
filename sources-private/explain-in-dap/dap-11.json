@@ -1,0 +1,41 @@
+[
+ {
+  "id": 288,
+  "question": "You want to filter the DataFrame df_customer to select male customers aged 40 or older (see dataset below). Which Pandas code snippet is equivalent to the SQL query: SELECT * FROM df_customer WHERE gender = 'M' AND age >= 40?\nimport pandas as pd\n# Create a DataFrame for customer information\ncustomer_data = {\n'customer_id': [1001, 1002, 1003, 1004, 1005],\n'name': ['Alice', 'Bob', 'Charlie', 'David', 'Emma'],\n'age': [30, 25, 35, 40, 45],\n'gender': ['F', 'M', 'M', 'M', 'F']\n}\ndf_customer = pd.DataFrame(customer_data)",
+  "options": [
+   "df_filtered = df_customer[(df_customer['gender'] == 'M') & (df_customer['age'] >= 40)]",
+   "df_filtered = df_customer[(df_customer['gender'] == 'M') && (df_customer['age'] >= 40)]",
+   "df_filtered = df_customer[df_customer['gender'] == 'M' & df_customer['age'] > 40]",
+   "df_filtered = df_customer[(df_customer['gender'] = 'M') AND (df_customer['age'] > 40)]"
+  ],
+  "correct": [
+   "df_filtered = df_customer[(df_customer['gender'] == 'M') & (df_customer['age'] >= 40)]"
+  ]
+ },
+ {
+  "id": 289,
+  "question": "You want to send a request to \"https://api.example.com/submit\" with JSON data {\"name\": \"John\", \"age\": 30}. Which of the following code snippets correctly sends this request, note that you do not want to show the data on URL?",
+  "options": [
+   "response = requests.post(\"https://api.example.com/submit\", json={\"name\": \"John\", \"age\": 30})",
+   "response = requests.post(\"https://api.example.com/submit\", params={\"name\": \"John\", \"age\": 30})",
+   "response = requests.get(\"https://api.example.com/submit\", json={\"name\": \"John\", \"age\": 30})",
+   "response = requests.get(\"https://api.example.com/submit\", params={\"name\": \"John\", \"age\": 30})"
+  ],
+  "correct": [
+   "response = requests.post(\"https://api.example.com/submit\", json={\"name\": \"John\", \"age\": 30})"
+  ]
+ },
+ {
+  "id": 290,
+  "question": "You are explaining the concept of impurity to a colleague who is new to decision trees. Which of the following statements best describes impurity in the context of decision trees?",
+  "options": [
+   "Impurity measures the purity of a node in terms of class distribution.",
+   "Impurity measures the level of randomness in the dataset.",
+   "Impurity measures the depth of a decision tree to prevent overfit problem.",
+   "Impurity measures the number of features in a dataset that are not relevant for classification."
+  ],
+  "correct": [
+   "Impurity measures the purity of a node in terms of class distribution."
+  ]
+ }
+]

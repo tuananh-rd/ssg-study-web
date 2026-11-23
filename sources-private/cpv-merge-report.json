@@ -1,0 +1,547 @@
+{
+ "changed": [
+  {
+   "id": 7,
+   "png": 15,
+   "old": [
+    3
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is an idea that replaces each pixel with the mean of "
+  },
+  {
+   "id": 8,
+   "png": 16,
+   "old": [
+    1
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is perform fully automated image stitching is a techn"
+  },
+  {
+   "id": 9,
+   "png": 17,
+   "old": [
+    0
+   ],
+   "now": [
+    3
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is used to identify different classes or clusters in "
+  },
+  {
+   "id": 10,
+   "png": 18,
+   "old": [
+    0
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is the process of combining multiple photographic ima"
+  },
+  {
+   "id": 11,
+   "png": 19,
+   "old": [
+    3
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is a parameter estimation approach designed to cope w"
+  },
+  {
+   "id": 15,
+   "png": 23,
+   "old": [
+    0
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "Ảnh thiếu ký hiệu giữa 'discontinuities' và 'sharp'.",
+   "q": "______ is a technique of image processing used to identify p"
+  },
+  {
+   "id": 16,
+   "png": 24,
+   "old": [
+    2
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "Trùng nội dung với slide 21 (id 13); id 16 là bản trùng.",
+   "q": "______ is the process of dividing an image into different re"
+  },
+  {
+   "id": 17,
+   "png": 25,
+   "old": [
+    2
+   ],
+   "now": [
+    1
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ is a function or operator that takes an image as its "
+  },
+  {
+   "id": 19,
+   "png": 27,
+   "old": [
+    1
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "Cau trung noi dung voi id 15 (cung de, cung phuong an).",
+   "q": "______ is a technique of image processing used to identify p"
+  },
+  {
+   "id": 22,
+   "png": 30,
+   "old": [
+    0
+   ],
+   "now": [
+    3
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "______ can be used to find a sparse set of corresponding loc"
+  },
+  {
+   "id": 26,
+   "png": 34,
+   "old": [
+    3
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "Object recognition consists of ______ objects within a pictu"
+  },
+  {
+   "id": 27,
+   "png": 35,
+   "old": [
+    2
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The dynamic range of the imaging system is a quantitative re"
+  },
+  {
+   "id": 28,
+   "png": 36,
+   "old": [
+    0
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The ______ is based on the observation that the affine mappi"
+  },
+  {
+   "id": 29,
+   "png": 37,
+   "old": [
+    0
+   ],
+   "now": [
+    3
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The ______ treats the image it operates upon like a topograp"
+  },
+  {
+   "id": 30,
+   "png": 38,
+   "old": [
+    2
+   ],
+   "now": [
+    0
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The ______ is a measure of change in a function, and an imag"
+  },
+  {
+   "id": 31,
+   "png": 39,
+   "old": [
+    3
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The basic idea of ______ is to break the image into a set of"
+  },
+  {
+   "id": 32,
+   "png": 40,
+   "old": [
+    0
+   ],
+   "now": [
+    2
+   ],
+   "st": "ok",
+   "note": "",
+   "q": "The lower limit of the dynamic range ratio can be determined"
+  },
+  {
+   "id": 120,
+   "png": 132,
+   "old": [
+    1
+   ],
+   "now": [
+    3
+   ],
+   "st": "ok",
+   "note": "Hidden chon D (Sobel 5x5); khong co giai thich de doi chieu, giu theo hidden.",
+   "q": "Which of the following operators utilizes Laplacian of Gauss"
+  },
+  {
+   "id": 291,
+   "png": 305,
+   "old": [
+    1
+   ],
+   "now": [],
+   "st": "unsure",
+   "note": "hidden is empty; Eigenfaces are principal components capturing the most distinctive variation across faces (B).",
+   "q": "Eigenfaces, used in some face recognition algorithms, repres"
+  }
+ ],
+ "textDiff": [
+  {
+   "id": 54,
+   "png": 64,
+   "old": [
+    "1",
+    "fillInside = 1",
+    "fillInside = True",
+    "-1"
+   ],
+   "img": [
+    "1",
+    "fillInside = 1",
+    "fillInside = True",
+    "-1"
+   ],
+   "ans": [
+    3
+   ]
+  },
+  {
+   "id": 134,
+   "png": 146,
+   "old": [
+    "log(1-P)/log(1-p^k)",
+    "log(1-P)*log(1-p^k)",
+    "log[(1-P)(1-p^k)]",
+    "log[(1-P)/(1-p^k)]"
+   ],
+   "img": [
+    "log(1-P)/log(1-p^k)",
+    "log(1-P)*log(1-p^k)",
+    "log[(1-P)(1-p^k)]",
+    "log[(1-P)/(1-p^k)]"
+   ],
+   "ans": [
+    0
+   ]
+  },
+  {
+   "id": 136,
+   "png": 148,
+   "old": [
+    "F(w)+H(w)",
+    "F(w)*H(w)",
+    "F(w)H(w)",
+    "F(w)H*(w)"
+   ],
+   "img": [
+    "F(w)+H(w)",
+    "F(w)*H(w)",
+    "F(w)H(w)",
+    "F(w)H*(w)"
+   ],
+   "ans": [
+    2
+   ]
+  },
+  {
+   "id": 169,
+   "png": 181,
+   "old": [
+    "cv2.flip(img, -1)",
+    "cv2.flip(img, 1)",
+    "cv2.flip(img, 0)",
+    "cv2.flip(img, 2)"
+   ],
+   "img": [
+    "cv2.flip(img, -1)",
+    "cv2.flip(img, 1)",
+    "cv2.flip(img, 0)",
+    "cv2.flip(img, 2)"
+   ],
+   "ans": [
+    0
+   ]
+  },
+  {
+   "id": 277,
+   "png": 291,
+   "old": [
+    "Linear filtering involves non-sequential combinations of input pixels, while non-linear filtering only uses linear combinations.",
+    "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms or non-linear functions.",
+    "Non-linear filtering exclusively utilizes spatial masks, while linear filtering relies entirely on statistical properties.",
+    "Linear and non-linear filtering both use spatial masks, but linear filtering always replaces the original pixel value with the maximum value in the neighborhood."
+   ],
+   "img": [
+    "Linear filtering involves non-sequential combinations of pixel values, while non-linear filtering follows a linear pattern",
+    "In linear filtering, the output pixel value is a linear combination of input pixel values, whereas non-linear filtering employs ordering mechanisms",
+    "Non-linear filtering exclusively utilizes spatial masks for convolution, while linear filtering relies on pixel ordering mechanisms",
+    "Linear and non-linear filtering both use spatial masks interchangeably to modify input pixel values"
+   ],
+   "ans": [
+    1
+   ]
+  },
+  {
+   "id": 278,
+   "png": 292,
+   "old": [
+    "The computer understands the image as a matrix of pixels.",
+    "The computer understands the image as a single color matrix.",
+    "The computer reads the input image as an integer array, with each value representing the size of the pixel.",
+    "All of the others"
+   ],
+   "img": [
+    "The computer understands the image as a matrix of pixels.",
+    "The computer understands the image as a single color matrix.",
+    "The computer reads the input image as an integer array of values stored in the binary image.",
+    "All of the others"
+   ],
+   "ans": [
+    0
+   ]
+  },
+  {
+   "id": 279,
+   "png": 293,
+   "old": [
+    "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+    "A smaller window size is ideal for all object sizes, maximizing detection accuracy.",
+    "Window size has no impact on the detection of objects of varying sizes.",
+    "A larger window size improves the detection of small objects by capturing more context."
+   ],
+   "img": [
+    "A larger window size might miss small objects entirely if they fall outside the window boundaries.",
+    "A smaller window size is ideal for all object sizes, including small ones.",
+    "Window size has no impact on the detection of objects of any size.",
+    "A larger window size improves the detection accuracy for small objects."
+   ],
+   "ans": [
+    0
+   ]
+  },
+  {
+   "id": 280,
+   "png": 294,
+   "old": [
+    "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+    "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+    "We can directly use correlation without any modification to achieve convolution.",
+    "By dividing the results of correlation with the kernel size to get the convolution result."
+   ],
+   "img": [
+    "No difference exists, convolution and correlation produce the same results.",
+    "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+    "We can directly use the correlation result without any modifications.",
+    "By dividing the results of correlation by a constant factor"
+   ],
+   "ans": [
+    1
+   ]
+  },
+  {
+   "id": 281,
+   "png": 295,
+   "old": [
+    "No difference exists between the two operations; convolution and correlation can be used interchangeably.",
+    "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+    "We can directly use correlation without any modification to achieve convolution.",
+    "By dividing the results of correlation with the kernel size to get the convolution result."
+   ],
+   "img": [
+    "No difference exists, convolution and correlation produce the same results.",
+    "By rotating the kernel 180 degree around it's center before performing the correlation operation.",
+    "We can directly use the correlation result without any modifications.",
+    "By dividing the results of correlation by a constant factor."
+   ],
+   "ans": [
+    1
+   ]
+  },
+  {
+   "id": 282,
+   "png": 296,
+   "old": [
+    "It is the average of the color values.",
+    "It is represented through three color values: Red, Green, and Blue.",
+    "The color component with the largest value in the color space will be the pixel intensity.",
+    "It is a combination of colors according to the CMY color model."
+   ],
+   "img": [
+    "It is the average of the color values.",
+    "It is represented through three color values: Red, Green, and Blue.",
+    "The color component with the largest value will be represented as a representation of the intensity value.",
+    "It is a combination of colors in the color space."
+   ],
+   "ans": [
+    0
+   ]
+  },
+  {
+   "id": 283,
+   "png": 297,
+   "old": [
+    "Object detection is merely to recognize the presence of an object.",
+    "Object detection is the task of detecting instances of objects of a certain class within an image.",
+    "Object detection allows us to classify and locates objects in an image or video.",
+    "All of the others"
+   ],
+   "img": [
+    "Object detection is merely to recognize the object with a different color in the image.",
+    "Object detection is the task of detecting instances of objects of a certain class within an image.",
+    "Object detection allows us to classify and locates objects in an image or video.",
+    "All of the others"
+   ],
+   "ans": [
+    2
+   ]
+  },
+  {
+   "id": 284,
+   "png": 298,
+   "old": [
+    "By randomly assigning new values to pixels based on a uniform distribution",
+    "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+    "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+    "By applying color inversion to pixels below the threshold"
+   ],
+   "img": [
+    "By randomly assigning black or white pixels to each pixel in the image",
+    "By replacing pixels with a black pixel if intensity is greater than a fixed constant",
+    "By replacing pixels with a white pixel if intensity is less than a fixed constant",
+    "By applying color inversion to all pixels in the image"
+   ],
+   "ans": [
+    1
+   ]
+  },
+  {
+   "id": 285,
+   "png": 299,
+   "old": [
+    "In the photo, we are only interested in the color of the image, the surrounding details can be omitted.",
+    "Use features to be able to apply more advanced techniques in image processing.",
+    "It reduces the number of resources required to describe a large set of data",
+    "All of the others"
+   ],
+   "img": [
+    "In the photo, we are only interested in the color, as well as the size of the photo.",
+    "Use features to be able to apply more advanced techniques later like deep learning.",
+    "It reduces the number of resources required to describe a large set of data",
+    "All of the others"
+   ],
+   "ans": [
+    2
+   ]
+  }
+ ],
+ "newQ": [],
+ "dupIds": [
+  [
+   310,
+   324,
+   326
+  ],
+  [
+   311,
+   325,
+   327
+  ]
+ ],
+ "conflicts": [
+  {
+   "png": 135,
+   "id": 123,
+   "st": "conflict",
+   "ans": [
+    1
+   ],
+   "suggest": [
+    0
+   ],
+   "note": "Theo phan loai chuan (Yilmaz et al.), kernel tracking gom template/density-based va multi-view appearance models; Deterministic/Probabilistic thuoc point tracking, Shape matching thuoc silhouette tracking. Hidden chon B (Deterministic) co the sai, de xuat A."
+  },
+  {
+   "png": 278,
+   "id": 264,
+   "st": "conflict",
+   "ans": [
+    3
+   ],
+   "suggest": [
+    2
+   ],
+   "note": "hidden says D (eliminates edge info), which is clearly wrong; edge linking organizes unordered edge pixels into ordered edge lists (C)."
+  },
+  {
+   "png": 305,
+   "id": 291,
+   "st": "unsure",
+   "ans": [],
+   "suggest": [
+    1
+   ],
+   "note": "hidden is empty; Eigenfaces are principal components capturing the most distinctive variation across faces (B)."
+  }
+ ]
+}

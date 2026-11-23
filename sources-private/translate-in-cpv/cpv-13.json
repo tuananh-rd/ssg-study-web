@@ -1,0 +1,202 @@
+[
+ {
+  "id": 241,
+  "question": "What is the Difference Between Cylindrical and Spherical Panoramas?",
+  "options": [
+   "By using spherical panoramas you can effortlessly capture any area in all directions.",
+   "Cylindrical panoramas cover an entire 360 degree, except for the up and down view.",
+   "Spherical panoramas on the other hand not only capture the 360-degree view but also take into account the horizontal and vertical view.",
+   "Cylindrical panoramas are the best of the lot, as they can be taken without the tripod being seen or the photographer's shadow."
+  ]
+ },
+ {
+  "id": 242,
+  "question": "What is translation transformation?",
+  "options": [
+   "We rotate the object at a particular angle θ (theta) from its origin",
+   "It moves an object to a different position on the screen.",
+   "It changes the size of an object.",
+   "It is scaling, skewing, and rotation."
+  ]
+ },
+ {
+  "id": 243,
+  "question": "What is the main approach of feature-based alignment?",
+  "options": [
+   "Align the 4 corners of two photos",
+   "Finding a way to recover an image's angle through spatial transformations",
+   "Overlap the pictures together and find similarities between them",
+   "Find a few matching features in both images then compute alignment"
+  ]
+ },
+ {
+  "id": 244,
+  "question": "What is the basic principle of object detection?",
+  "options": [
+   "Object detection is based on the features that make up the object.",
+   "Each object's surface has a different structure and shape. Hence object detection relies on color relevance",
+   "Object detection is based on the semantics of the objects in the image.",
+   "All of the others"
+  ]
+ },
+ {
+  "id": 245,
+  "question": "What is the difference between image processing and computer vision? Choose the most correct answer",
+  "options": [
+   "Image processing and computer vision are two different concepts.",
+   "The task of computer vision is an analysis of an image.",
+   "Computer vision can be understood as the steps to increase image clarity, through noise filtering steps.",
+   "Image processing performs tasks such as analyzing what objects are in the image"
+  ]
+ },
+ {
+  "id": 246,
+  "question": "What is meant by image segmentation in image processing?",
+  "options": [
+   "Image segmentation is the division of an image into regions or categories, which correspond to different objects or parts of objects.",
+   "Image segmentation is a method in which a digital image is broken down into various subgroups based their color or position",
+   "All of the others",
+   "None of the others"
+  ]
+ },
+ {
+  "id": 247,
+  "question": "What is the underlying principle behind feature-based alignment?",
+  "options": [
+   "It identifies and matches distinctive features (e.g., corners, edges) across images to achieve alignment.",
+   "It relies on manual user input to specify corresponding points between images for alignment.",
+   "It directly matches and aligns entire image regions without any processing.",
+   "It aligns images based on their overall brightness and color distributions."
+  ]
+ },
+ {
+  "id": 248,
+  "question": "What are the two traditional methods suggested for modeling light effects based on surface characteristics?",
+  "options": [
+   "Ray tracing for matte surfaces and radiosity for specular surfaces",
+   "Ray tracing for mostly specular surfaces and radiosity for mostly matte surfaces",
+   "Radiosity for both matte and specular surfaces",
+   "Ray tracing for both matte and specular surfaces"
+  ]
+ },
+ {
+  "id": 249,
+  "question": "What are the differences between correlation and convolution?",
+  "options": [
+   "Convolution is measurement of total noise of one image on the other image.",
+   "The mathematical calculation of Correlation is difference as convolution in time domain",
+   "If the filter is asymmetrical then the output of both the expression would be same.",
+   "Correlation is measurement of the similarity between two image."
+  ]
+ },
+ {
+  "id": 250,
+  "question": "What role does the edge linking process play in image processing after edge detection?",
+  "options": [
+   "It introduces disorder to the detected edge pixels.",
+   "It randomly rearranges the order of edge pixels.",
+   "It organizes an unordered set of edge pixels into an ordered list of edges.",
+   "It eliminates edge information by breaking connections between neighboring pixels."
+  ]
+ },
+ {
+  "id": 251,
+  "question": "What property of the Fourier transform makes it particularly useful for image processing tasks like noise reduction or edge detection?",
+  "options": [
+   "It reveals the spatial distribution of brightness in the image.",
+   "It decomposes an image into its constituent sinusoidal frequency components.",
+   "It increases the resolution of the image.",
+   "It directly removes noise pixels from the image"
+  ]
+ },
+ {
+  "id": 252,
+  "question": "What happens in the thin lens model?",
+  "options": [
+   "The object is inverted.",
+   "The image is discolored.",
+   "Objects placed before or after Len produce the same results.",
+   "The image will stay the same size when you use white light as the source (sun)."
+  ]
+ },
+ {
+  "id": 253,
+  "question": "Which of these describes a desirable characteristic for features used in alignment?",
+  "options": [
+   "They should be easily affected by lighting changes.",
+   "They should be distinctive and easily identifiable in both images.",
+   "They should be evenly distributed across the entire image.",
+   "They should be large and occupy a significant portion of the image."
+  ]
+ },
+ {
+  "id": 254,
+  "question": "Which of these statements is incorrect about face recognition in traditional methods?",
+  "options": [
+   "It typically requires pre-processing steps like normalization and alignment.",
+   "It often involves extracting facial features like eigenfaces or Fisherfaces.",
+   "It can achieve high accuracy in controlled environments with good lighting.",
+   "It can easily identify individuals from large variations in pose and expression."
+  ]
+ },
+ {
+  "id": 255,
+  "question": "Which of the following is incorrect about object tracking?",
+  "options": [
+   "A way of identifying or confirming an individual's identity using their face.",
+   "Taking an initial set of object detections (such as an input set of bounding box coordinates).",
+   "Creating a unique ID for each of the initial detections.",
+   "Tracking each of the objects as they move around frames in a video, maintaining the assignment of unique IDs."
+  ]
+ },
+ {
+  "id": 256,
+  "question": "Which scenario benefits most from Line detection with Hough Transform?",
+  "options": [
+   "Segmenting and analyzing individual characters in handwritten text.",
+   "Identifying and classifying different types of flowers based on color and texture.",
+   "Detecting lane markings on a road in an image for autonomous driving applications.",
+   "Blur detection and image sharpening techniques that rely on accurate edge information."
+  ]
+ },
+ {
+  "id": 257,
+  "question": "How is an \"Illumination model\" formed?",
+  "options": [
+   "It refers to the source of visible electromagnetic radiation",
+   "It describes the linear projection model of light",
+   "It outlines the inputs, assumptions, and outputs for calculating surface color and brightness",
+   "It focuses on the off-axis distance of light sources"
+  ]
+ },
+ {
+  "id": 258,
+  "question": "How are pixel transforms understood? Choose the best correct answer",
+  "options": [
+   "Those are transformation techniques based on pixel-by-pixel processing.",
+   "Those are transformation techniques based on pixel-by-cluster processing.",
+   "Those are transformation techniques based on pixel-by-image processing.",
+   "Those are transformation techniques based on cluster-by-cluster processing."
+  ]
+ },
+ {
+  "id": 259,
+  "question": "How are thresholding methods implemented? Choose the best answer",
+  "options": [
+   "It replaces each pixel in an image with a black pixel if the image intensity is less than some fixed constant.",
+   "It replaces each pixel in an image with a white pixel if the image intensity is greater than that constant.",
+   "The first and second is correct",
+   "The first or second is correct"
+  ]
+ },
+ {
+  "id": 260,
+  "question": "How does the shutter speed parameter in digital cameras work?",
+  "options": [
+   "Adjusting amplification and black level to get a \"good fit\" of the incident light power to the range of the image",
+   "Controls the amount of light reaching the sensor",
+   "The physical spacing between adjacent sensor cells on the imaging chip",
+   "The active sensing area size as a fraction of the theoretically available sensing area"
+  ]
+ }
+]

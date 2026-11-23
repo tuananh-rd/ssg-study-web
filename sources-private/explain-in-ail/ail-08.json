@@ -1,0 +1,67 @@
+[
+ {
+  "id": 195,
+  "question": "The main purpose of scaling features before fitting a k nearest neighbor model is to:",
+  "options": [
+   "Help find the appropriate value of k",
+   "Ensure decision boundaries have roughly the same size for all classes",
+   "Ensure that features have similar influence on the distance calculation",
+   "Break ties in case there is the same number of neighbors of different classes next to a given observation"
+  ],
+  "correct": [
+   "Ensure that features have similar influence on the distance calculation"
+  ]
+ },
+ {
+  "id": 196,
+  "question": "The bias-variance tradeoff is an important concept in model selection. Which statement best describes this tradeoff?",
+  "options": [
+   "Increasing model complexity always reduces both bias and variance at the same time.",
+   "Bias and variance are completely independent and can be minimized separately in any model.",
+   "As model complexity increases, bias decreases and variance increases, so the goal is to balance both to minimize total error.",
+   "A model with both high bias and high variance will achieve the lowest test error because the two errors cancel each other out."
+  ],
+  "correct": [
+   "As model complexity increases, bias decreases and variance increases, so the goal is to balance both to minimize total error."
+  ]
+ },
+ {
+  "id": 197,
+  "question": "Select the option that best completes the following sentence:\nFor data with many features, principal components analysis",
+  "options": [
+   "identifies which features can be safely discarded",
+   "reduces the number of features without losing any information.",
+   "establishes a minimum number of viable features for use in the analysis.",
+   "generates new features that are linear combinations of the original features."
+  ],
+  "correct": [
+   "generates new features that are linear combinations of the original features."
+  ]
+ },
+ {
+  "id": 198,
+  "question": "Usually the first step to fit a k nearest neighbor classifier using scikit learn is to:",
+  "options": [
+   "import KNN from the sklearn.knearest neighbors module\ne.g. from sklearn.knearestneighbors import KNN",
+   "import KNeighbors Classifier from the sklearn.neighbors module\ne.g. from sklearn.neighbors import KNeighborsClassifier",
+   "import Classifier from the sklearn.nearestneighbors module\ne.g. from sklearn.nearestneighbors import Classifier",
+   "import KNNClassifier from the sklearn.knearestneighbors module\ne.g. from sklearn.knearest neighbors import KNNClassifier"
+  ],
+  "correct": [
+   "import KNeighbors Classifier from the sklearn.neighbors module\ne.g. from sklearn.neighbors import KNeighborsClassifier"
+  ]
+ },
+ {
+  "id": 199,
+  "question": "Usually the first step to fit a logistic regression model using scikit learn is to:",
+  "options": [
+   "import logistic regression from the sklearn.linear_model module\ne.g. from sklearn.linear_model import LogisticRegression",
+   "import Logistic from the sklearn.regression module\ne.g. from sklearn.regression import Logistic",
+   "import Logistic from the sklearn.linear_regression module\ne.g. from sklearn.linear_regression import Logistic",
+   "import logistic regression from the sklearn.linear classifier module\ne.g. from sklearn.linearclassifier import Logistic Regression"
+  ],
+  "correct": [
+   "import logistic regression from the sklearn.linear_model module\ne.g. from sklearn.linear_model import LogisticRegression"
+  ]
+ }
+]

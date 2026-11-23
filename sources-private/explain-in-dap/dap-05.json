@@ -1,0 +1,327 @@
+[
+ {
+  "id": 114,
+  "question": "What does the dcc in dcc.Graph stand for in Dash?",
+  "options": [
+   "Dash Core Components",
+   "Dynamic Chart Creator",
+   "Data Collection Component",
+   "Display Chart Component"
+  ],
+  "correct": [
+   "Dash Core Components"
+  ]
+ },
+ {
+  "id": 115,
+  "question": "What does the horizontal line inside the box of a boxplot represent?",
+  "options": [
+   "Median",
+   "Mean",
+   "Standard deviation",
+   "Interquartile range (IQR)"
+  ],
+  "correct": [
+   "Median"
+  ]
+ },
+ {
+  "id": 116,
+  "question": "What does increasing the degree in polynomial regression models lead to?",
+  "options": [
+   "Overfitting",
+   "Underfitting",
+   "Increased bias",
+   "Reduced variance"
+  ],
+  "correct": [
+   "Overfitting"
+  ]
+ },
+ {
+  "id": 117,
+  "question": "What does plt.xlabel() do in Matplotlib?",
+  "options": [
+   "Adds labels to the x-axis",
+   "Sets the title for the plot",
+   "Adds text to the plot",
+   "Modifies the x-axes ticks"
+  ],
+  "correct": [
+   "Adds labels to the x-axis"
+  ]
+ },
+ {
+  "id": 118,
+  "question": "What does a box plot primarily show?",
+  "options": [
+   "Data distribution",
+   "Individual data points",
+   "Mean and standard deviation",
+   "Correlation between variables"
+  ],
+  "correct": [
+   "Data distribution"
+  ]
+ },
+ {
+  "id": 119,
+  "question": "Which activation function is commonly used in the hidden layers of a CNN?",
+  "options": [
+   "ReLU (Rectified Linear Activation)",
+   "Sigmoid",
+   "Tanh (Hyperbolic Tangent)",
+   "Softmax"
+  ],
+  "correct": [
+   "ReLU (Rectified Linear Activation)"
+  ]
+ },
+ {
+  "id": 120,
+  "question": "What additional term does a polynomial regression equation include compared to a linear regression equation?",
+  "options": [
+   "Exponential term",
+   "Quadratic term",
+   "Logarithmic term",
+   "Trigonometric term"
+  ],
+  "correct": [
+   "Exponential term"
+  ]
+ },
+ {
+  "id": 121,
+  "question": "What attribute or method will give you the data type of each column?",
+  "options": [
+   "dtypes",
+   "ftypes",
+   "itypes",
+   "ntypes"
+  ],
+  "correct": [
+   "dtypes"
+  ]
+ },
+ {
+  "id": 122,
+  "question": "What HTTP method is commonly used for retrieving data from a REST API?",
+  "options": [
+   "POSS",
+   "GET",
+   "PUT",
+   "DELETE"
+  ],
+  "correct": [
+   "GET"
+  ]
+ },
+ {
+  "id": 123,
+  "question": "What file format is often used to store geographical boundary data for choropleth mapping in Python?",
+  "options": [
+   "GeoJSON",
+   "CSV",
+   "Excel",
+   "TXT"
+  ],
+  "correct": [
+   "GeoJSON"
+  ]
+ },
+ {
+  "id": 124,
+  "question": "What type of plot in Seaborn is used to display the distribution of a continuous variable and its relationship with categorical data?",
+  "options": [
+   "Boxplot",
+   "Swarmplot",
+   "Violinplot",
+   "Stripplot"
+  ],
+  "correct": [
+   "Violinplot"
+  ]
+ },
+ {
+  "id": 125,
+  "question": "What type of graphs can Folium library primarily help you create?",
+  "options": [
+   "Bar charts",
+   "Scatter plots",
+   "Maps",
+   "Line charts"
+  ],
+  "correct": [
+   "Maps"
+  ]
+ },
+ {
+  "id": 126,
+  "question": "What type of graph is best suited for displaying the relationship between two continuous variables along with their individual distributions?",
+  "options": [
+   "Scatter plot",
+   "Heatmap",
+   "Line plot",
+   "Waffle chart"
+  ],
+  "correct": [
+   "Scatter plot"
+  ]
+ },
+ {
+  "id": 127,
+  "question": "What type of plot in Matplotlib is best for displaying the proportion of different categories in a dataset?",
+  "options": [
+   "Line plot",
+   "Bar plot",
+   "Scatter plot",
+   "Waffle chart"
+  ],
+  "correct": [
+   "Waffle chart"
+  ]
+ },
+ {
+  "id": 128,
+  "question": "What type of algorithm is K-nearest neighbors (KNN)?",
+  "options": [
+   "Supervised learning",
+   "Unsupervised learning",
+   "Semi-supervised learning",
+   "Reinforcement learning"
+  ],
+  "correct": [
+   "Supervised learning"
+  ]
+ },
+ {
+  "id": 129,
+  "question": "What should be investigated to assist with remediation when a process change error occurs?",
+  "options": [
+   "source cause",
+   "stakeholders involved",
+   "purpose",
+   "original intent"
+  ],
+  "correct": [
+   "source cause"
+  ]
+ },
+ {
+  "id": 130,
+  "question": "What would be added to the command highest_gpa = grades to produce the highest number in an array of student GPAs?",
+  "options": [
+   ".max",
+   "(high)",
+   ".max()",
+   ".high"
+  ],
+  "correct": [
+   ".max()"
+  ]
+ },
+ {
+  "id": 131,
+  "question": "Which of the following is a supervised machine learning algorithm?",
+  "options": [
+   "K-Means",
+   "Linear Regression",
+   "Apriori",
+   "PCA"
+  ],
+  "correct": [
+   "Linear Regression"
+  ]
+ },
+ {
+  "id": 132,
+  "question": "Which evaluation metric is commonly used to assess the performance of a regression model in TensorFlow?",
+  "options": [
+   "Accuracy",
+   "Mean Squared Error (MSE)",
+   "R-squared (R^2)",
+   "F1 Score"
+  ],
+  "correct": [
+   "Mean Squared Error (MSE)"
+  ]
+ },
+ {
+  "id": 133,
+  "question": "Which visualization is suitable to examine the distribution of a single numerical variable?",
+  "options": [
+   "Box plot",
+   "Line chart",
+   "Scatter plot",
+   "Heatmap"
+  ],
+  "correct": [
+   "Box plot"
+  ]
+ },
+ {
+  "id": 134,
+  "question": "Which callback decorator is used to update the contents of a component based on user input?",
+  "options": [
+   "@app.callback",
+   "@dash_callback",
+   "@app.route",
+   "@update_content"
+  ],
+  "correct": [
+   "@app.callback"
+  ]
+ },
+ {
+  "id": 135,
+  "question": "Which method is used to assess the performance of a regression model?",
+  "options": [
+   "Confusion matrix",
+   "R-squared score",
+   "F1 score",
+   "Classification report"
+  ],
+  "correct": [
+   "R-squared score"
+  ]
+ },
+ {
+  "id": 136,
+  "question": "Which metric is commonly used to evaluate classification models in TensorFlow?",
+  "options": [
+   "Mean Squared Error (MSE)",
+   "Accuracy",
+   "R-squared",
+   "Mean Absolute Error (MAE)"
+  ],
+  "correct": [
+   "Accuracy"
+  ]
+ },
+ {
+  "id": 137,
+  "question": "What platform is commonly used to build conversational agents or chatbots using Watson's AI capabilities?",
+  "options": [
+   "Watson Assistant",
+   "Watson Discovery",
+   "Watson Studio",
+   "Watson Analytics"
+  ],
+  "correct": [
+   "Watson Assistant"
+  ]
+ },
+ {
+  "id": 138,
+  "question": "Which normalization technique transforms data to have a mean of zero and a standard deviation of one?",
+  "options": [
+   "Z-score Normalization",
+   "Min-Max Scaling",
+   "Log Transformation",
+   "Robust Scaling"
+  ],
+  "correct": [
+   "Z-score Normalization"
+  ]
+ }
+]
