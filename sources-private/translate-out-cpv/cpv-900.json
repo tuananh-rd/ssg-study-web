@@ -1,0 +1,11 @@
+{
+  "277": {
+    "q": "Eigenfaces, được dùng trong một số thuật toán nhận dạng khuôn mặt (face recognition), biểu diễn điều gì?",
+    "options": [
+      "Các đặc trưng khuôn mặt trung bình từ một tập dữ liệu huấn luyện.",
+      "Các đặc trưng khuôn mặt có tính phân biệt nhất giữa các cá nhân khác nhau.",
+      "Các mẫu biểu cảm khuôn mặt cụ thể, ví dụ cười hoặc cau mày.",
+      "Một mô hình 3D của khuôn mặt dùng để nhận dạng ở độ phân giải cao."
+    ]
+  }
+}

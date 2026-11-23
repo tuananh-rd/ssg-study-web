@@ -10,13 +10,24 @@ const COLORS = ['#3b5bdb', '#7048e8', '#d6336c', '#e8590c', '#0c8599', '#2f9e44'
 const loadQ = f => JSON.parse(rd(W, 'data', f).match(/window\.QUESTIONS\s*=\s*([\s\S]*?);\s*$/)[1]);
 
 // ---------- CPV: gộp câu trùng, gắn ảnh slide cho câu có hình ----------
-const cpvRaw = JSON.parse(rd(W, 'data', 'cpv-questions.json')), seen = new Map(), cpv = [];
+const cpvRaw = JSON.parse(rd(W, 'data', 'cpv-questions.json')), seen = new Map(), cpv = [], cpvSourceIds = new Map();
 for (const q of cpvRaw) {
   const sig = (q.question + '||' + [...q.options].sort().join('|')).toLowerCase().replace(/\s+/g, ' ');
-  if (seen.has(sig)) { const f = seen.get(sig); if (!f.explanation && q.explanation) f.explanation = q.explanation; continue; }
+  if (seen.has(sig)) { const f = seen.get(sig); cpvSourceIds.set(String(q.id), f.id); if (!f.explanation && q.explanation) f.explanation = q.explanation; continue; }
   const o = { id: cpv.length + 1, slide: q.slide, topic: q.topic, section: q.section, question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '' };
   if (q.figure || /hình ảnh|biểu đồ|công thức/i.test(q.section)) { const n = String(q.slide).padStart(3, '0'); if (fs.existsSync(path.join(W, 'data', 'cpv-img', n + '.png'))) o.img = `/api/img/cpv/${n}.png`; }
-  seen.set(sig, o); cpv.push(o);
+  seen.set(sig, o); cpv.push(o); cpvSourceIds.set(String(q.id), o.id);
+}
+
+// Các batch cũ dùng ID sau gộp trùng; cpv-901.json theo HANDOFF dùng ID bộ đề gốc.
+// Chỉ ánh xạ batch sửa mới, giữ ID hiển thị để không làm lệch tiến độ đã lưu.
+function cpvSourceOverrides(kind) {
+  const file = path.join(ROOT, 'sources-private', kind + '-cpv', 'cpv-901.json');
+  if (!fs.existsSync(file)) return {};
+  return Object.fromEntries(Object.entries(JSON.parse(fs.readFileSync(file, 'utf8'))).map(([id, value]) => {
+    if (!cpvSourceIds.has(id)) throw new Error(`CPV override có ID nguồn không hợp lệ: ${id}`);
+    return [cpvSourceIds.get(id), value];
+  }));
 }
 
 const SUBJECTS = {
@@ -37,8 +48,10 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
   { const r = applyFormulas(S.file, L.modules); console.log('  công thức ' + S.name + ':', r.n, r.miss.length ? 'LỆCH ' + r.miss.join(', ') : ''); }
   const bank = S.bank().map((q, i) => ({ id: q.id ?? i + 1, slide: q.slide, topic: q.topic, section: q.section || '', question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '', ...(q.img ? { img: q.img } : {}) }));
   { const dir = path.join(ROOT, 'sources-private', 'explain-out-' + S.file), ex = {}; let n = 0;
-    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f))) { try { Object.assign(ex, JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
-    for (const q of bank) if (!q.explanation && ex[q.id]) { q.explanation = ex[q.id]; n++; }
+    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f) && !(S.file === 'cpv' && f === 'cpv-901.json'))) { try { Object.assign(ex, JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
+    const overrides = S.file === 'cpv' ? cpvSourceOverrides('explain-out') : {};
+    Object.assign(ex, overrides);
+    for (const q of bank) if ((overrides[q.id] || !q.explanation) && ex[q.id]) { q.explanation = ex[q.id]; n++; }
     console.log('  lời giải soạn sẵn ' + S.name + ':', n + '/' + bank.length); }
   const topicMod = { ...S.topicMod }; for (const q of bank) if (!topicMod[q.topic]) topicMod[q.topic] = S.defMod;
   const perMod = {}; bank.forEach(q => perMod[topicMod[q.topic]] = (perMod[topicMod[q.topic]] || 0) + 1);
@@ -57,8 +70,9 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
     }
   }
   const xl = {};
-  { const rdd = (d, fn) => { const dir = path.join(ROOT, 'sources-private', d); if (!fs.existsSync(dir)) return; for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f))) { try { fn(JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } } };
+  { const rdd = (d, fn) => { const dir = path.join(ROOT, 'sources-private', d); if (!fs.existsSync(dir)) return; for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f) && !(d === 'translate-out-cpv' && f === 'cpv-901.json'))) { try { fn(JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } } };
     rdd('translate-out-' + S.file, o => { for (const [k, v] of Object.entries(o)) xl['b-' + k] = v; });
+    if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;
     rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
   const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
   const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl })};`;

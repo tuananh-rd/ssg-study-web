@@ -1,0 +1,83 @@
+{
+  "277": {
+    "q": "Lọc tuyến tính (linear filtering) khác lọc phi tuyến (non-linear filtering) như thế nào trong xử lý ảnh?",
+    "options": [
+      "Lọc tuyến tính kết hợp các giá trị pixel không theo trình tự, trong khi lọc phi tuyến tuân theo một dạng tuyến tính.",
+      "Trong lọc tuyến tính, giá trị pixel đầu ra là tổ hợp tuyến tính của các giá trị pixel đầu vào, còn lọc phi tuyến sử dụng cơ chế sắp thứ tự.",
+      "Lọc phi tuyến chỉ sử dụng mặt nạ không gian (spatial masks) để thực hiện tích chập (convolution), còn lọc tuyến tính dựa vào cơ chế sắp thứ tự pixel.",
+      "Lọc tuyến tính và lọc phi tuyến đều sử dụng các mặt nạ không gian thay thế cho nhau để thay đổi giá trị pixel đầu vào."
+    ]
+  },
+  "278": {
+    "q": "Máy tính hiểu ảnh đầu vào như thế nào?",
+    "options": [
+      "Máy tính hiểu ảnh như một ma trận pixel.",
+      "Máy tính hiểu ảnh như một ma trận đơn màu.",
+      "Máy tính đọc ảnh đầu vào như một mảng các giá trị số nguyên được lưu trong ảnh nhị phân (binary image).",
+      "Tất cả các phương án còn lại."
+    ]
+  },
+  "279": {
+    "q": "Kích thước cửa sổ (window size) trong phát hiện đối tượng bằng HOG ảnh hưởng thế nào đến khả năng phát hiện các đối tượng nhỏ?",
+    "options": [
+      "Cửa sổ lớn hơn có thể bỏ sót hoàn toàn các đối tượng nhỏ nếu chúng nằm ngoài ranh giới cửa sổ.",
+      "Cửa sổ nhỏ hơn là lựa chọn lý tưởng cho mọi kích thước đối tượng, kể cả các đối tượng nhỏ.",
+      "Kích thước cửa sổ không ảnh hưởng đến việc phát hiện đối tượng ở bất kỳ kích thước nào.",
+      "Cửa sổ lớn hơn giúp tăng độ chính xác phát hiện các đối tượng nhỏ."
+    ]
+  },
+  "280": {
+    "q": "Có thể tính tích chập (convolution) bằng phép tương quan (correlation) như thế nào?",
+    "options": [
+      "Không có sự khác biệt; convolution và correlation cho cùng kết quả.",
+      "Xoay kernel 180 độ quanh tâm của nó trước khi thực hiện correlation.",
+      "Có thể dùng trực tiếp kết quả correlation mà không cần thay đổi gì.",
+      "Chia kết quả correlation cho một hệ số không đổi."
+    ]
+  },
+  "281": {
+    "q": "Có thể tính tích chập (convolution) bằng phép tương quan (correlation) như thế nào?",
+    "options": [
+      "Không có sự khác biệt; convolution và correlation cho cùng kết quả.",
+      "Xoay kernel 180 độ quanh tâm của nó trước khi thực hiện correlation.",
+      "Có thể dùng trực tiếp kết quả correlation mà không cần thay đổi gì.",
+      "Chia kết quả correlation cho một hệ số không đổi."
+    ]
+  },
+  "282": {
+    "q": "Tính giá trị cường độ (intensity) của pixel trong không gian màu (color space) như thế nào?",
+    "options": [
+      "Đó là trung bình của các giá trị màu.",
+      "Giá trị này được biểu diễn bằng ba giá trị màu: Red, Green và Blue.",
+      "Thành phần màu có giá trị lớn nhất được dùng để biểu diễn giá trị cường độ.",
+      "Đó là sự kết hợp các màu trong không gian màu."
+    ]
+  },
+  "283": {
+    "q": "Bạn hiểu phát hiện đối tượng (object detection) như thế nào?",
+    "options": [
+      "Object detection chỉ là nhận ra đối tượng có màu khác trong ảnh.",
+      "Object detection là nhiệm vụ phát hiện các đối tượng thuộc một lớp nhất định trong ảnh.",
+      "Object detection cho phép phân loại và định vị các đối tượng trong ảnh hoặc video.",
+      "Tất cả các phương án còn lại."
+    ]
+  },
+  "284": {
+    "q": "Các phương pháp phân ngưỡng (thresholding) xử lý pixel trong ảnh dựa trên cường độ như thế nào?",
+    "options": [
+      "Gán ngẫu nhiên màu đen hoặc trắng cho từng pixel trong ảnh.",
+      "Thay pixel bằng pixel màu đen nếu cường độ lớn hơn một hằng số cố định.",
+      "Thay pixel bằng pixel màu trắng nếu cường độ nhỏ hơn một hằng số cố định.",
+      "Đảo màu tất cả các pixel trong ảnh."
+    ]
+  },
+  "285": {
+    "q": "Tại sao dùng đặc trưng ảnh (image features) để xử lý thay vì dùng toàn bộ ảnh?",
+    "options": [
+      "Trong bức ảnh, ta chỉ quan tâm đến màu sắc cũng như kích thước của ảnh.",
+      "Dùng features để có thể áp dụng các kỹ thuật nâng cao hơn về sau, như deep learning.",
+      "Cách này giảm lượng tài nguyên cần thiết để mô tả một tập dữ liệu lớn.",
+      "Tất cả các phương án còn lại."
+    ]
+  }
+}
