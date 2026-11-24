@@ -135,6 +135,7 @@ function hub(){
    (SUBJ.length?'<div class="grid">'+cards+'</div>':'<div class="card empty"><h3>Chưa có môn học nào</h3><p>Tài khoản của bạn chưa được cấp quyền truy cập môn nào. Vui lòng liên hệ quản trị viên, sau đó tải lại trang.</p></div>')+'<div id="rkhome"></div>';
   if(window.WebRank)window.WebRank.mount();
 }
+document.addEventListener('profile-updated',function(e){var d=e.detail;if(d&&d.me&&ME&&d.name){ME.name=d.name;acctInit();}});
 function logout(){
   api('logout','POST').then(function(){try{Object.keys(localStorage).filter(function(k){return /^(ssg105_progress_v2|dap391m_progress_v2|ail303m_progress_v2|cpv301_progress_v2|ssg-web-user|ssg_guide_seen|ssg_quiz_tip|ssg-learn-)/.test(k);}).forEach(function(k){localStorage.removeItem(k);});}catch(e){}ME=null;if(window.WebChat)window.WebChat.stop();if(window.WebMusic)window.WebMusic.stop();authView('login');});
 }
@@ -182,7 +183,7 @@ function adminView(){
 var LOGT={login_ok:['Đăng nhập','ok'],login_fail:['Đăng nhập sai','bad'],login_blocked:['Đăng nhập bị chặn','bad'],logout:['Đăng xuất',''],register:['Đăng ký mới','ok'],password_change:['Đổi mật khẩu',''],
  app_open:['Mở môn',''],access_denied:['Bị từ chối môn','bad'],quiz_answer:['Trả lời câu',''],quiz_finish:['Xong bài','ok'],exam_finish:['Nộp bài thi thử','ok'],lesson_view:['Đọc lý thuyết',''],focus_session:['Phiên tập trung',''],
  search:['Tra cứu',''],ai_chat:['Hỏi Bố Tuấn Anh','ai'],ai_translate:['Dịch bằng AI','ai'],duel_host:['Tạo phòng đấu',''],duel_join:['Vào phòng đấu',''],duel_finish:['Xong trận đấu','ok'],
- admin_user_update:['QT sửa tài khoản','adm'],admin_reset_password:['QT cấp lại mật khẩu','adm'],admin_user_delete:['QT xoá tài khoản','adm'],admin_log_view:['QT xem nhật ký','adm'],admin_reload:['QT yêu cầu tải lại','adm'],chat_send:['Nhắn chat chung',''],chat_delete:['QT xoá tin chat','adm']};
+ admin_user_update:['QT sửa tài khoản','adm'],admin_reset_password:['QT cấp lại mật khẩu','adm'],admin_user_delete:['QT xoá tài khoản','adm'],admin_log_view:['QT xem nhật ký','adm'],profile_rename:['Đổi tên',''],admin_reload:['QT yêu cầu tải lại','adm'],chat_send:['Nhắn chat chung',''],chat_delete:['QT xoá tin chat','adm']};
 var LOGSTUDY='quiz_answer,quiz_finish,exam_finish,lesson_view,focus_session,duel_finish,ai_chat,ai_translate';
 var LOGG=[['Học tập',LOGSTUDY],['Tất cả',''],['Đăng nhập & mở môn','login_ok,login_fail,login_blocked,logout,register,password_change,access_denied,app_open'],['Làm bài','quiz_answer,quiz_finish,exam_finish'],['Đọc & tập trung','lesson_view,focus_session'],['AI & tra cứu','ai_chat,ai_translate,search'],['Thi đấu','duel_host,duel_join,duel_finish'],['Chat','chat_send,chat_delete'],['Quản trị','admin_user_update,admin_reset_password,admin_user_delete,admin_log_view,admin_reload']];
 function fmtS(t){return new Date(t).toLocaleString('vi-VN',{day:'2-digit',month:'2-digit',year:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'});}
@@ -246,7 +247,7 @@ function logView(){
   summary();reload();
 }
 function loadExtras(){
-  ['chat.js','whatsnew.js','music.js','rank.js','profile.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();if(f==='music.js'&&window.WebMusic)window.WebMusic.start();if(f==='rank.js'&&window.WebRank)window.WebRank.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=10';document.body.appendChild(s);});
+  ['chat.js','whatsnew.js','music.js','rank.js','profile.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();if(f==='music.js'&&window.WebMusic)window.WebMusic.start();if(f==='rank.js'&&window.WebRank)window.WebRank.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=11';document.body.appendChild(s);});
 }
 function boot(){
   api('me').then(function(j){

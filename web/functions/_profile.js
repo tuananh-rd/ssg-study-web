@@ -4,6 +4,7 @@
 //   PUT /api/profile               → sửa hồ sơ của chính mình
 import { json, bad } from './_lib.js';
 import { titleOf, dayOf } from './_rank.js';
+import { logEvent } from './_log.js';
 
 const clean = (s, n) => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F​-‏‪-‮⁦-⁩]/g, '').replace(/\r\n?/g, '\n').trim().slice(0, n);
 const IMG_RE = /^data:(image\/(?:jpeg|png|webp));base64,([A-Za-z0-9+/=]+)$/;
@@ -34,12 +35,25 @@ export async function handleProfile(request, env, user, b, readJson, c) {
       if (typeof d.avatar !== 'string' || d.avatar.length > MAX_AVATAR || !IMG_RE.test(d.avatar)) return bad('Ảnh không hợp lệ hoặc quá lớn', 413);
       avatar = d.avatar; avTs = Date.now();
     }
+    let newName = null;
+    if (d.name !== undefined) {
+      newName = clean(d.name, 60).replace(/\s+/g, ' ');
+      if (newName.length < 2) return bad('Tên cần ít nhất 2 ký tự');
+      if (newName.toLowerCase() !== String(user.name).toLowerCase()) {
+        const dup = await env.DB.prepare('SELECT id FROM users WHERE lower(name)=lower(?) AND id!=?').bind(newName, user.id).first();
+        if (dup) return bad('Tên này đã có người dùng, hãy chọn tên khác');
+      }
+    }
     const accent = /^#[0-9a-fA-F]{6}$/.test(d.accent || '') ? d.accent.toLowerCase() : null;
     const now = Date.now();
     await env.DB.prepare(`INSERT INTO profiles (user_id,bio,motto,accent,avatar,av_ts,updated_at) VALUES (?,?,?,?,?,?,?)
       ON CONFLICT(user_id) DO UPDATE SET bio=excluded.bio,motto=excluded.motto,accent=excluded.accent,avatar=excluded.avatar,av_ts=excluded.av_ts,updated_at=excluded.updated_at`)
       .bind(user.id, clean(d.bio, 240), clean(d.motto, 70), accent, avatar, avTs, now).run();
-    return json({ ok: true, pv: avatar ? avTs : 0 });
+    if (newName && newName !== user.name) {
+      await env.DB.prepare('UPDATE users SET name=? WHERE id=?').bind(newName, user.id).run();
+      await logEvent(env, request, user, 'profile_rename', null, { from: user.name, to: newName });
+    }
+    return json({ ok: true, pv: avatar ? avTs : 0, name: newName || user.name });
   }
   if (m === 'GET' && +b) {
     const id = +b, now = Date.now();

@@ -65,21 +65,22 @@ function edit(p){
   }
   box.innerHTML='<div class="pf-ban"><button class="pf-x" type="button" aria-label="Đóng">×</button></div><div class="pf-bd pf-f"><h2 style="margin:6px 0 0;font-size:1.2rem">Chỉnh sửa hồ sơ</h2>'+
    '<label>Ảnh đại diện</label><div class="pf-ap"><div class="pf-av" style="width:72px;height:72px"><span id="pf-pv" class="rk-av t0" style="--s:72px;width:72px;height:72px;font-size:1.8rem"></span></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="pf-b" id="pf-up" type="button">Chọn ảnh</button><button class="pf-b" id="pf-rm" type="button">Gỡ ảnh</button></div><input type="file" id="pf-file" accept="image/*" hidden></div>'+
+   '<label>Tên hiển thị <span class="pf-cn" id="pf-c0"></span></label><input type="text" id="pf-nm" maxlength="60" value="'+esc(p.name)+'">'+
    '<label>Câu nói của bạn <span class="pf-cn" id="pf-c1"></span></label><input type="text" id="pf-mo" maxlength="70" placeholder="Một câu bạn thích…" value="'+esc(p.motto)+'">'+
    '<label>Giới thiệu <span class="pf-cn" id="pf-c2"></span></label><textarea id="pf-bio" maxlength="240" placeholder="Bạn đang ôn gì, mục tiêu của bạn…">'+esc(p.bio)+'</textarea>'+
    '<label>Màu hồ sơ</label><div class="pf-sw">'+ACC.map(function(c){return '<button type="button" data-c="'+c+'" style="--c:'+c+'" aria-label="Màu '+c+'"></button>';}).join('')+'</div>'+
    '<div class="pf-er" id="pf-er" hidden></div><div class="pf-ft"><button class="pf-b" id="pf-cn" type="button">Huỷ</button><button class="pf-b pr" id="pf-sv" type="button">Lưu</button></div></div>';
   paint();
   var mo=box.querySelector('#pf-mo'),bio=box.querySelector('#pf-bio'),er=box.querySelector('#pf-er');
-  function cnt(){box.querySelector('#pf-c1').textContent=mo.value.length+'/70';box.querySelector('#pf-c2').textContent=bio.value.length+'/240';}cnt();mo.oninput=bio.oninput=cnt;
+  var nm=box.querySelector('#pf-nm');function cnt(){box.querySelector('#pf-c0').textContent=nm.value.length+'/60';box.querySelector('#pf-c1').textContent=mo.value.length+'/70';box.querySelector('#pf-c2').textContent=bio.value.length+'/240';}cnt();nm.oninput=mo.oninput=bio.oninput=cnt;
   function fail(m){er.textContent=m;er.hidden=false;}
   box.querySelector('.pf-x').onclick=function(){view(p);};box.querySelector('#pf-cn').onclick=function(){view(p);};
   box.querySelector('#pf-up').onclick=function(){box.querySelector('#pf-file').click();};
   box.querySelector('#pf-file').onchange=function(){var f=this.files[0];this.value='';if(!f)return;if(!/^image\//.test(f.type))return fail('Chỉ chọn được tệp ảnh');shrink(f).then(function(d){st.avatar=d;st.preview=d;er.hidden=true;paint();}).catch(function(e){fail(e.message);});};
   box.querySelector('#pf-rm').onclick=function(){st.avatar=null;st.preview='';paint();};
   [].forEach.call(box.querySelectorAll('.pf-sw button'),function(b){b.onclick=function(){st.accent=b.dataset.c;paint();};});
-  box.querySelector('#pf-sv').onclick=function(){var b=this;b.disabled=true;var pl={motto:mo.value,bio:bio.value,accent:st.accent};if(st.avatar!==undefined)pl.avatar=st.avatar;
-    put(pl).then(function(){return get('/api/profile/'+p.id);}).then(function(np){document.dispatchEvent(new CustomEvent('profile-updated',{detail:np}));view(np);}).catch(function(e){b.disabled=false;fail(e.message);});};
+  box.querySelector('#pf-sv').onclick=function(){var b=this;b.disabled=true;var pl={name:nm.value,motto:mo.value,bio:bio.value,accent:st.accent};if(st.avatar!==undefined)pl.avatar=st.avatar;
+    put(pl).then(function(){return get('/api/profile/'+p.id);}).then(function(np){document.dispatchEvent(new CustomEvent('profile-updated',{detail:np}));if(window.WebChat&&window.WebChat.refresh)try{window.WebChat.refresh();}catch(e){}view(np);}).catch(function(e){b.disabled=false;fail(e.message);});};
 }
 function open(id){
   id=+id;if(!id)return;var box=shell();box.style.setProperty('--ac','#3b5bdb');box.innerHTML='<div class="pf-ld">Đang tải hồ sơ…</div>';
