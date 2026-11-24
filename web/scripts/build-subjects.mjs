@@ -15,7 +15,7 @@ for (const q of cpvRaw) {
   const sig = (q.question + '||' + [...q.options].sort().join('|')).toLowerCase().replace(/\s+/g, ' ');
   if (seen.has(sig)) { const f = seen.get(sig); cpvSourceIds.set(String(q.id), f.id); if (!f.explanation && q.explanation) f.explanation = q.explanation; continue; }
   const o = { id: cpv.length + 1, slide: q.slide, topic: q.topic, section: q.section, question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '' };
-  if (q.figure || /hình ảnh|biểu đồ|công thức/i.test(q.section)) { const n = String(q.slide).padStart(3, '0'); if (fs.existsSync(path.join(W, 'data', 'cpv-img', n + '.png'))) o.img = `/api/img/cpv/${n}.png`; }
+  if (q.figure) { const n = String(q.slide).padStart(3, '0'); if (fs.existsSync(path.join(W, 'data', 'cpv-img', n + '.png'))) o.img = `/api/img/cpv/${n}.png`; }
   seen.set(sig, o); cpv.push(o); cpvSourceIds.set(String(q.id), o.id);
 }
 
