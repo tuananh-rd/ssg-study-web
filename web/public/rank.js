@@ -66,8 +66,8 @@ function podium(rows){
 }
 function draw(d,b){
   if(!b)return;var m=d.me,h='',per=d.period==='week'?'tuần này':d.period==='month'?'30 ngày qua':'từ trước đến nay';
-  var pct=m.next?Math.max(3,Math.min(100,Math.round((m.total-m.from)/(m.next.at-m.from)*100))):100;
-  h+='<div class="rk-me t'+m.ti+'" style="--tc:'+m.tc+'">'+fx(m.ti)+'<div class="lb">Danh hiệu của bạn</div><div class="tn">'+esc(m.title)+'</div>'+
+  var pct=m&&m.next?Math.max(3,Math.min(100,Math.round((m.total-m.from)/(m.next.at-m.from)*100))):100;
+  if(!m)h+='<div class="rk-empty" style="padding:10px 8px 16px">Quản trị viên không tính điểm xếp hạng.</div>';else h+='<div class="rk-me t'+m.ti+'" style="--tc:'+m.tc+'">'+fx(m.ti)+'<div class="lb">Danh hiệu của bạn</div><div class="tn">'+esc(m.title)+'</div>'+
    '<div class="pt"><b id="rk-cnt">0</b><span>tổng điểm'+(m.rank?' · hạng '+m.rank+' '+per:'')+'</span></div>'+
    '<div class="rk-bar"><i id="rk-fill"></i></div><div class="nx">'+(m.next?'Còn <b>'+ptsTxt(m.next.at-m.total)+'</b> điểm nữa để lên <b>'+esc(m.next.name)+'</b>':'Bạn đã đạt danh hiệu cao nhất!')+'</div>'+
    '<div class="rk-st"><div><small>'+svg(I.sun,13)+' Hôm nay</small><b>+'+ptsTxt(m.today)+'</b></div><div><small>'+svg(I.flame,13)+' Chuỗi ngày học</small><b>'+m.streak+' ngày</b></div><div><small>'+svg(I.target,13)+' Điểm '+(d.period==='all'?'tổng':'kỳ này')+'</small><b>'+ptsTxt(m.pts)+'</b></div></div></div>';
@@ -77,7 +77,7 @@ function draw(d,b){
     var rest=d.rows.filter(function(r){return r.rank>3;}),mx=d.rows[0].pts||1;
     if(rest.length)h+='<ul class="rk-l">'+rest.map(function(r,i){return '<li class="rk-r'+(r.me?' me':'')+'" style="animation-delay:'+Math.min(i,12)*30+'ms"><span class="rk-n">'+r.rank+'</span>'+av(r,38)+'<div class="rk-w"><b><span class="n">'+esc(r.name)+'</span>'+(r.me?'<span class="rk-you">BẠN</span>':'')+badge(r.title,r.tc,r.ti)+'</b><small>'+r.quiz+' câu quiz · '+r.min+' phút đọc'+(r.focus?' · '+r.focus+' phút tập trung':'')+'</small><div class="rk-mini"><i style="width:'+Math.max(3,Math.round(r.pts/mx*100))+'%"></i></div></div><div class="rk-p">'+ptsTxt(r.pts)+'<small>điểm</small></div></li>';}).join('')+'</ul>';
   }
-  h+='<div class="rk-lad">'+d.titles.map(function(t,i){return '<span class="st'+(i===m.ti?' on':i<m.ti?' done':' lock')+'" style="--c:'+t.c+'">'+badge(t.name,t.c,i)+' <em>'+ptsTxt(t.at)+'</em></span>';}).join('')+'</div>';
+  h+='<div class="rk-lad">'+d.titles.map(function(t,i){var cur=m?m.ti:-1;return '<span class="st'+(i===cur?' on':i<cur?' done':' lock')+'" style="--c:'+t.c+'">'+badge(t.name,t.c,i)+' <em>'+ptsTxt(t.at)+'</em></span>';}).join('')+'</div>';
   h+='<details class="rk-how"><summary>Cách tính điểm</summary><div class="rk-gr">'+
    '<div><b>'+svg(I.q,15)+'Làm quiz</b><span><em>+1</em> mỗi câu, trả lời đúng <em>+1</em> nữa. Tối đa '+d.caps.quiz+' câu/ngày.</span></div>'+
    '<div><b>'+svg(I.book,15)+'Đọc lý thuyết</b><span><em>+2</em> mỗi phút khi đang xem bài. Tối đa '+Math.round(d.caps.readSec/60)+' phút/ngày.</span></div>'+
@@ -85,7 +85,7 @@ function draw(d,b){
    '<div><b>'+svg(I.crown,15)+'Thi đấu</b><span><em>+5</em> mỗi trận, về nhất (từ 2 người) <em>+10</em> nữa. Tối đa '+d.caps.duel+' điểm/ngày.</span></div>'+
    '<div><b>'+svg(I.sun,15)+'Tập trung</b><span><em>+1</em> mỗi phút Pomodoro. Tối đa '+d.caps.focus+' phút/ngày.</span></div></div></details>';
   b.innerHTML=h;
-  var c=b.querySelector('#rk-cnt'),f=b.querySelector('#rk-fill');if(c)countUp(c,m.total);if(f)setTimeout(function(){f.style.width=pct+'%';},60);
+  var c=b.querySelector('#rk-cnt'),f=b.querySelector('#rk-fill');if(c&&m)countUp(c,m.total);if(f)setTimeout(function(){f.style.width=pct+'%';},60);
 }
 function load(p,b,cur){
   b=b||document.getElementById('rk-body');if(!b)return;cur=cur||function(){return PER;};

@@ -42,7 +42,7 @@ export async function handleEvent(request, env, user, readJson) {
     scored.push({ type: e.type, ts, detail: e.detail && typeof e.detail === 'object' ? e.detail : {} });
   }
   if (stmts.length) await env.DB.batch(stmts);
-  if (scored.length) await scoreEvents(env, user.id, scored);
+  if (scored.length && user.role !== 'admin') await scoreEvents(env, user.id, scored);   // quản trị viên không tính điểm
   return json({ ok: true, n: stmts.length });
 }
 

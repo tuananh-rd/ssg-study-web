@@ -61,7 +61,8 @@ var CSS='#wc-fab{position:fixed;left:18px;bottom:20px;z-index:80;width:50px;heig
 '@media(max-width:760px){#wc-fab{left:14px;bottom:78px}#wc-prev{left:14px;bottom:138px}#wc-panel{left:0;right:0;bottom:0;top:0;width:100vw;height:100dvh;border-radius:0}.wc-del{display:block}}';
 function hue(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return h;}
 function fmtT(t){var d=new Date(t),n=new Date(),hm=('0'+d.getHours()).slice(-2)+':'+('0'+d.getMinutes()).slice(-2);return d.toDateString()===n.toDateString()?hm:('0'+d.getDate()).slice(-2)+'/'+('0'+(d.getMonth()+1)).slice(-2)+' '+hm;}
-function nameHtml(m){var cls=m.role==='admin'?'admin':'user';return '<span class="wc-n '+cls+'" style="--wcc:hsl('+hue(m.name)+',60%,42%)">'+esc(m.name)+'</span>'+(m.role==='admin'?'<span class="wc-tag">'+ICON.shield+'QTV</span>':'');}
+function ttHtml(t){return t?'<span class="rk-tt t'+(t[2]|0)+'" style="background-color:'+esc(t[1])+';--c:'+esc(t[1])+'">'+esc(t[0])+'</span>':'';}
+function nameHtml(m){var cls=m.role==='admin'?'admin':'user';return '<span class="wc-n '+cls+'" style="--wcc:hsl('+hue(m.name)+',60%,42%)">'+esc(m.name)+'</span>'+(m.role==='admin'?'<span class="wc-tag">'+ICON.shield+'QTV</span>':ttHtml(m.tt));}
 function build(){
   if($('#wc-fab'))return;
   var st=document.createElement('style');st.id='wc-css';st.textContent=CSS;document.head.appendChild(st);
@@ -113,7 +114,7 @@ function draw(full){
   A.msgs.forEach(function(m){
     var me=m.uid===ME.id,first=!prev||prev.uid!==m.uid||m.ts-prev.ts>180000;prev=m;
     var canDel=ME.role==='admin'||me;
-    h+='<div class="wc-m '+(!me&&mentionsMe(m)?'men-me ':'')+(me?'me ':'')+(m.role==='admin'?'admin ':'')+(first?'first':'')+'" data-id="'+m.id+'">'+(first?'<div class="wc-h">'+(me?'':nameHtml(m))+'<span class="wc-t">'+fmtT(m.ts)+'</span></div>':'')+'<div class="wc-b">'+(m.re?'<div class="wc-quote'+(m.re.gone?' gone':'')+'" data-go="'+m.re.id+'"><b>'+esc(m.re.gone?'Tin đã xoá':(m.re.name||''))+'</b><span>'+esc(m.re.gone?'':(m.re.body||(m.re.img?'Ảnh':'')))+'</span></div>':'')+(m.img?'<img class="wc-img" data-i="'+m.id+'" src="/api/chat/img/'+m.id+'" alt="Ảnh" loading="lazy">':'')+(m.body?'<div class="wc-tx">'+bodyHtml(m)+'</div>':'')+'<button class="wc-rep" type="button" data-r="'+m.id+'" title="Trả lời tin nhắn này" aria-label="Trả lời">'+ICON.reply+'</button>'+(canDel?'<button class="wc-del" type="button" data-d="'+m.id+'" title="Xoá tin nhắn" aria-label="Xoá">×</button>':'')+'</div></div>';
+    h+='<div class="wc-m '+(!me&&mentionsMe(m)?'men-me ':'')+(me?'me ':'')+(m.role==='admin'?'admin ':'')+(first?'first':'')+'" data-id="'+m.id+'">'+(first?'<div class="wc-h">'+(me?ttHtml(m.tt):nameHtml(m))+'<span class="wc-t">'+fmtT(m.ts)+'</span></div>':'')+'<div class="wc-b">'+(m.re?'<div class="wc-quote'+(m.re.gone?' gone':'')+'" data-go="'+m.re.id+'"><b>'+esc(m.re.gone?'Tin đã xoá':(m.re.name||''))+'</b><span>'+esc(m.re.gone?'':(m.re.body||(m.re.img?'Ảnh':'')))+'</span></div>':'')+(m.img?'<img class="wc-img" data-i="'+m.id+'" src="/api/chat/img/'+m.id+'" alt="Ảnh" loading="lazy">':'')+(m.body?'<div class="wc-tx">'+bodyHtml(m)+'</div>':'')+'<button class="wc-rep" type="button" data-r="'+m.id+'" title="Trả lời tin nhắn này" aria-label="Trả lời">'+ICON.reply+'</button>'+(canDel?'<button class="wc-del" type="button" data-d="'+m.id+'" title="Xoá tin nhắn" aria-label="Xoá">×</button>':'')+'</div></div>';
   });
   l.innerHTML=h;
   [].forEach.call(l.querySelectorAll('[data-d]'),function(b){b.onclick=function(){if(!confirm('Xoá tin nhắn này?'))return;api('chat/'+b.dataset.d,'DELETE').then(function(j){if(j.error){alert(j.error);return;}A.msgs=A.msgs.filter(function(x){return x.id!==+b.dataset.d;});draw();});};});
@@ -170,7 +171,7 @@ function loadOnline(){
   api('chat/online').then(function(j){
     if(j.error||!j.users)return;var o=$('#wc-on');if(!o)return;A.on=j.users.length;var n=$('#wc-onn');if(n)n.textContent=A.on;
     o.innerHTML='<div class="wc-onh">'+j.users.length+' người đang online</div>'+(j.users.length?j.users.map(function(u){var me=u.id===ME.id;
-      return '<div class="wc-ou"><span class="wc-av" style="background:hsl('+hue(u.name)+',55%,45%)">'+esc(u.name.trim().charAt(0).toUpperCase()||'?')+'<i class="wc-dot sm"></i></span><span class="wc-on-n">'+nameHtml({name:u.name,role:u.role})+(me?' <em class="wc-me">(Bạn)</em>':'')+'</span></div>';}).join(''):'<div class="wc-empty">Chưa có ai.</div>');
+      return '<div class="wc-ou"><span class="wc-av'+(u.tt?' rk-av t'+(u.tt[2]|0):'')+'" style="--s:34px;--c:'+(u.tt?esc(u.tt[1]):'#888')+';background:hsl('+hue(u.name)+',55%,45%)">'+esc(u.name.trim().charAt(0).toUpperCase()||'?')+'<i class="wc-dot sm"></i></span><span class="wc-on-n">'+nameHtml({name:u.name,role:u.role,tt:u.tt})+(me?' <em class="wc-me">(Bạn)</em>':'')+'</span></div>';}).join(''):'<div class="wc-empty">Chưa có ai.</div>');
   }).catch(function(){});
 }
 function reloadCheck(j,initial){
