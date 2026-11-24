@@ -3461,7 +3461,22 @@ function duelDraw() {
       }).join('') + '</div>' +
       '</div>' + dxHtml +
       reactHtml + '<div class="row between"><span class="small muted hide-m">Phím tắt: <kbd>1</kbd>–<kbd>' + opts.length + '</kbd> hoặc <kbd>A</kbd>–<kbd>' + L[opts.length - 1] + '</kbd></span>' + leave + '</div>';
+    // Người khác chọn đáp án/thả cảm xúc chỉ làm thay đổi bảng điểm và dòng cảm xúc: cập nhật riêng hai chỗ đó,
+    // KHÔNG dựng lại cả màn hình câu hỏi (dựng lại làm màn hình nháy như tải lại).
+    var qfp = [s.phase, s.i, myPick, myP && myP.hideI, myP && myP.x2, myP && myP.pw && myP.pw.x2, myP && myP.pw && myP.pw.fifty, !!s.xpText, rv ? s.winner : '', rv && myP ? myP.gain : ''].join('|');
+    var gridEl = content.querySelector('.duel-grid');
+    if (DU.qfp === qfp && gridEl && content.querySelector('.opts') && content.querySelector('.react-bar')) {
+      var sbHtml = renderScoreboard(s);
+      if (gridEl.__sb !== sbHtml) { gridEl.innerHTML = sbHtml; gridEl.__sb = sbHtml; }
+      var feedEl = content.querySelector('.react-bar .feed');
+      if (feedEl) { var fdHtml = (s.feed || []).slice(-3).map(function(f) { return '<span><b>' + esc(f.n) + '</b>: ' + REACTS[f.k] + '</span>'; }).join(''); if (feedEl.__fd !== fdHtml) { feedEl.innerHTML = fdHtml; feedEl.__fd = fdHtml; } }
+      duelTick();
+      return;
+    }
+    DU.qfp = qfp;
     content.innerHTML = h;
+    var gridNew = content.querySelector('.duel-grid'); if (gridNew) gridNew.__sb = renderScoreboard(s);
+    var feedNew = content.querySelector('.react-bar .feed'); if (feedNew) feedNew.__fd = (s.feed || []).slice(-3).map(function(f) { return '<span><b>' + esc(f.n) + '</b>: ' + REACTS[f.k] + '</span>'; }).join('');
     bind('.opt', 'click', function(e, b) { duelPick(+b.dataset.k); });
     bind('[data-pw]', 'click', function(e, b) { duelUsePower(b.dataset.pw); });
     bind('[data-rx]', 'click', function(e, b) { duelUseReact(+b.dataset.rx); });
