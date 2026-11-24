@@ -2,3 +2,5 @@
   Cache-Control: no-cache
 /whatsnew.js
   Cache-Control: no-cache
+/music.js
+  Cache-Control: no-cache

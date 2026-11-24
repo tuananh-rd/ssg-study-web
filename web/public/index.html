@@ -135,7 +135,7 @@ function hub(){
    (SUBJ.length?'<div class="grid">'+cards+'</div>':'<div class="card empty"><h3>Chưa có môn học nào</h3><p>Tài khoản của bạn chưa được cấp quyền truy cập môn nào. Vui lòng liên hệ quản trị viên, sau đó tải lại trang.</p></div>');
 }
 function logout(){
-  api('logout','POST').then(function(){try{Object.keys(localStorage).filter(function(k){return /^(ssg105_progress_v2|dap391m_progress_v2|ail303m_progress_v2|cpv301_progress_v2|ssg-web-user|ssg_guide_seen|ssg_quiz_tip|ssg-learn-)/.test(k);}).forEach(function(k){localStorage.removeItem(k);});}catch(e){}ME=null;if(window.WebChat)window.WebChat.stop();authView('login');});
+  api('logout','POST').then(function(){try{Object.keys(localStorage).filter(function(k){return /^(ssg105_progress_v2|dap391m_progress_v2|ail303m_progress_v2|cpv301_progress_v2|ssg-web-user|ssg_guide_seen|ssg_quiz_tip|ssg-learn-)/.test(k);}).forEach(function(k){localStorage.removeItem(k);});}catch(e){}ME=null;if(window.WebChat)window.WebChat.stop();if(window.WebMusic)window.WebMusic.stop();authView('login');});
 }
 /* ---------- quản trị ---------- */
 var NAMES={ssg105:'SSG105',dap391m:'DAP391m',ail303m:'AIL303m',cpv301:'CPV301'};
@@ -243,7 +243,7 @@ function logView(){
   summary();reload();
 }
 function loadExtras(){
-  ['chat.js','whatsnew.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=1';document.body.appendChild(s);});
+  ['chat.js','whatsnew.js','music.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();if(f==='music.js'&&window.WebMusic)window.WebMusic.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=1';document.body.appendChild(s);});
 }
 function boot(){
   api('me').then(function(j){
