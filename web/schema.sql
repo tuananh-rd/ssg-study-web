@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS duel_invites (id INTEGER PRIMARY KEY AUTOINCREMENT, t
 CREATE INDEX IF NOT EXISTS idx_inv_to ON duel_invites (to_user, id);
 
 -- Chat chung
-CREATE TABLE IF NOT EXISTS chat_messages (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER NOT NULL, body TEXT NOT NULL, mentions TEXT);
+CREATE TABLE IF NOT EXISTS chat_messages (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER NOT NULL, body TEXT NOT NULL, mentions TEXT, img TEXT, reply_to INTEGER);
 CREATE INDEX IF NOT EXISTS idx_chat_ts ON chat_messages (ts);
 
 -- Nhật ký hoạt động (chỉ quản trị viên được cấp quyền can_logs mới xem được)
