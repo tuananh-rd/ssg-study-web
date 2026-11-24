@@ -19,7 +19,7 @@ r = await call('/api/rank?period=week'); const me = r.j.rows[0];
 // 10+6 + 6 + 34 + 20 + 25 = 101
 ok(me && me.pts === 101 && me.me && me.rank === 1, 'tổng điểm 101: ' + (me && me.pts));
 ok(me && me.quiz === 10 && me.min === 3 && me.title === 'Siêu Tuất', 'quiz=10, đọc 3 phút, danh hiệu Siêu Tuất (' + (me && me.title) + ')');
-ok(r.j.me.next && r.j.me.next.name === 'Tuất Vương' && r.j.me.today === 101, 'danh hiệu kế tiếp + điểm hôm nay');
+ok(r.j.me.next && r.j.me.next.name === 'Vua Tuất' && r.j.me.today === 101, 'danh hiệu kế tiếp + điểm hôm nay');
 ok(r.j.me.streak === 1, 'chuỗi 1 ngày');
 // giới hạn mỗi ngày
 const big = []; for (let i = 0; i < 500; i++) big.push(ev('quiz_answer', { ok: true }));

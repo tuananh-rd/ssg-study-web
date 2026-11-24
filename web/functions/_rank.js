@@ -10,11 +10,11 @@ export const CAPS = { quiz: 400, readSec: 180 * 60, exam: 200, duel: 150, focus:
 export const TITLES = [
   { at: 0, name: 'Tuất', c: '#8892a6' },
   { at: 100, name: 'Siêu Tuất', c: '#3f8f5a' },
-  { at: 300, name: 'Tuất Vương', c: '#1c8ea8' },
+  { at: 300, name: 'Vua Tuất', c: '#1c8ea8' },
   { at: 700, name: 'Súc Vật', c: '#3b5bdb' },
   { at: 1500, name: 'Siêu Súc Vật', c: '#7a4fd1' },
   { at: 3000, name: 'Súc Vật Vương', c: '#c2410c' },
-  { at: 6000, name: 'Vua Tuất', c: '#c0275a' },
+  { at: 6000, name: 'Tuất Vương', c: '#c0275a' },
   { at: 10000, name: 'Thần Tuất', c: '#b7791f' },
 ];
 export const titleOf = pts => { let t = TITLES[0], i = 0; TITLES.forEach((x, k) => { if (pts >= x.at) { t = x; i = k; } }); return { ...t, i, next: TITLES[i + 1] || null }; };
