@@ -754,7 +754,7 @@ body.th-open .dock-fab{display:none}
 .qlay>.qmain{margin:0;order:1;min-width:0}.qlay>.qside{order:2;min-width:0}
 @media(min-width:1000px){
   #content:has(.qlay){--cw:1240px}
-  .qlay{grid-template-columns:minmax(300px,360px) minmax(0,1fr);gap:20px}
+  .qlay{grid-template-columns:minmax(280px,var(--qw,360px)) minmax(0,1fr);gap:20px}
   .qlay>.qside{order:0;position:sticky;top:76px;max-height:calc(100vh - 96px);display:flex;flex-direction:column}
   .qlay>.qmain{order:1}
 }
@@ -1010,3 +1010,17 @@ body.focus-mode .dock-fab{display:inline-flex}
 #focusBtn.focus-fab.on{box-shadow:0 6px 22px rgba(15,23,42,.22)}
 @media(max-width:760px){#focusBtn.focus-fab{bottom:78px;left:auto;right:14px;translate:none}}
 body.dock-open #focusBtn.focus-fab{display:none}
+
+/* chỉnh kích thước khung chatbot cạnh câu hỏi */
+.qs-rh,.qs-bh{display:none}
+@media(min-width:1000px){
+  .qlay>.qside{position:sticky}
+  .qs-rh{display:block;position:absolute;top:14px;bottom:14px;right:-12px;width:14px;cursor:ew-resize;z-index:5;border-radius:6px;touch-action:none}
+  .qs-rh::after{content:"";position:absolute;left:5px;top:50%;height:46px;width:4px;margin-top:-23px;border-radius:3px;background:var(--line);transition:background .15s,height .15s}
+  .qs-rh:hover::after,body.qs-dragging .qs-rh::after{background:var(--primary);height:70px;margin-top:-35px}
+  .qs-bh{display:block;position:absolute;left:14px;right:14px;bottom:-12px;height:14px;cursor:ns-resize;z-index:5;touch-action:none}
+  .qs-bh::after{content:"";position:absolute;top:5px;left:50%;width:46px;margin-left:-23px;height:4px;border-radius:3px;background:var(--line);transition:background .15s,width .15s}
+  .qs-bh:hover::after,body.qs-dragging .qs-bh::after{background:var(--primary);width:70px;margin-left:-35px}
+  .qlay.qs-h>.qside{max-height:none}.qlay.qs-h .qside .ai-log{flex:none;height:var(--qlh);max-height:none}
+  body.qs-dragging{user-select:none;cursor:grabbing}body.qs-dragging iframe{pointer-events:none}
+}

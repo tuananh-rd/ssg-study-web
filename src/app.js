@@ -182,6 +182,7 @@ function runQuiz(list,title,back,lang,resume){
       '<p class="small muted hide-m">Phím tắt: <kbd>1</kbd>–<kbd>'+opts.length+'</kbd> hoặc <kbd>A</kbd>–<kbd>'+L[opts.length-1]+'</kbd> để chọn'+(multi?', <kbd>Enter</kbd> để kiểm tra rồi sang câu tiếp.':', <kbd>Enter</kbd> để sang câu tiếp.')+'</p>');
     $$('[data-ql]').forEach(function(b){b.onclick=function(){var nl=b.dataset.ql;if(nl===lang)return;lang=nl;try{localStorage.setItem('ui_qlang',lang);}catch(e){}if(answered){toast('Ngôn ngữ mới áp dụng từ câu tiếp theo');$$('[data-ql]').forEach(function(x){x.classList.toggle('on',x.dataset.ql===lang);});}else show();};});
     if($('#focusBtn'))$('#focusBtn').onclick=function(){focusToggle();};
+    qsideResize();
     if($('#thBtn'))$('#thBtn').onclick=function(){if(TH.open)thClose();else thOpen(q.module,q.ref);};
     $$('[data-rg]').forEach(function(b){b.onclick=function(){var v=+b.dataset.rg;try{localStorage.setItem('ui_reask',v);}catch(e){}$$('[data-rg]').forEach(function(x){x.classList.toggle('on',x===b);});toast(v?'Câu sai sẽ được hỏi lại sau '+v+' câu':'Đã tắt hỏi lại câu sai');};});
     if(TH.open&&(q.ref||q.module))thOpen(q.module,q.ref,true);
@@ -571,6 +572,26 @@ function focusOff(){
   focusFabDraw();
 }
 function focusToggle(){if(FC.on)focusOff();else focusOn();}
+// Kéo để đổi kích thước khung chatbot cạnh câu hỏi (độ rộng: cạnh phải; chiều cao phần hội thoại: cạnh dưới). Nhớ theo trình duyệt, nhấp đúp để về mặc định.
+function qsideResize(){
+  var lay=$('.qlay'),side=$('.qside');if(!lay||!side||window.innerWidth<1000)return;
+  var W=+localStorage.getItem('qs_w')||0,H=+localStorage.getItem('qs_h')||0;
+  function apply(){if(W)lay.style.setProperty('--qw',W+'px');else lay.style.removeProperty('--qw');if(H){lay.style.setProperty('--qlh',H+'px');lay.classList.add('qs-h');}else{lay.style.removeProperty('--qlh');lay.classList.remove('qs-h');}}
+  apply();
+  var rh=document.createElement('div');rh.className='qs-rh';rh.title='Kéo để đổi độ rộng (nhấp đúp: mặc định)';rh.setAttribute('aria-hidden','true');
+  var bh=document.createElement('div');bh.className='qs-bh';bh.title='Kéo để đổi chiều cao (nhấp đúp: mặc định)';bh.setAttribute('aria-hidden','true');
+  side.appendChild(rh);side.appendChild(bh);
+  try{new MutationObserver(function(){if(!side.contains(rh))side.appendChild(rh);if(!side.contains(bh))side.appendChild(bh);}).observe(side,{childList:true});}catch(e){}
+  function drag(h,onmove,onend){h.addEventListener('pointerdown',function(e){e.preventDefault();var sx=e.clientX,sy=e.clientY,s0={w:side.getBoundingClientRect().width,h:($('.ai-log',side)||{getBoundingClientRect:function(){return {height:260};}}).getBoundingClientRect().height};
+    document.body.classList.add('qs-dragging');
+    function mv(ev){onmove(ev.clientX-sx,ev.clientY-sy,s0);apply();}
+    function up(){document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);document.body.classList.remove('qs-dragging');onend();}
+    document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);});}
+  drag(rh,function(dx,dy,s0){var max=Math.min(760,lay.getBoundingClientRect().width-380);W=Math.round(Math.max(280,Math.min(max,s0.w+dx)));},function(){try{localStorage.setItem('qs_w',String(W));}catch(e){}});
+  drag(bh,function(dx,dy,s0){H=Math.round(Math.max(140,Math.min(window.innerHeight-240,s0.h+dy)));},function(){try{localStorage.setItem('qs_h',String(H));}catch(e){}});
+  rh.addEventListener('dblclick',function(){W=0;try{localStorage.removeItem('qs_w');}catch(e){}apply();});
+  bh.addEventListener('dblclick',function(){H=0;try{localStorage.removeItem('qs_h');}catch(e){}apply();});
+}
 // Nút Tập trung nổi ở đáy màn hình, có mặt ở mọi mục (phím tắt F)
 function focusFabDraw(){var b=document.getElementById('focusBtn');if(!b)return;b.classList.toggle('on',!!FC.on);b.innerHTML=ic('expand')+'<span>'+(FC.on?'Thoát tập trung':'Tập trung')+'</span>';b.title=FC.on?'Thoát chế độ tập trung (phím F)':'Chế độ tập trung: toàn màn hình, ẩn mọi thứ không cần thiết, có đồng hồ Pomodoro (phím F)';}
 setTimeout(function(){try{if(document.getElementById('focusBtn'))return;var b=document.createElement('button');b.type='button';b.id='focusBtn';b.className='focus-fab';b.onclick=function(){focusToggle();};document.body.appendChild(b);focusFabDraw();}catch(e){console.error(e);}},0);
