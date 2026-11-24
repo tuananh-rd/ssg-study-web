@@ -2716,6 +2716,16 @@ function trackFlush(){
   if(TRK.q.length){clearTimeout(TRK.t);TRK.t=setTimeout(trackFlush,1500);}
 }
 addEventListener('pagehide',trackFlush);document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')trackFlush();});
+// Đo thời gian đọc lý thuyết (chỉ tính khi đang xem bài, tab hiển thị và có thao tác trong 45 giây gần nhất) → điểm bảng xếp hạng
+var RT={sec:0,mod:'',act:Date.now()};
+['mousemove','keydown','scroll','touchstart','pointerdown','wheel'].forEach(function(ev){addEventListener(ev,function(){RT.act=Date.now();},{passive:true,capture:true});});
+function rtFlush(){if(RT.sec>=5){track('read_time',{mod:RT.mod,secs:Math.min(120,RT.sec)});}RT.sec=0;}
+setInterval(function(){
+  var m=/^#\/learn\/([^?\/]+)/.exec(location.hash||'');
+  if(m&&document.visibilityState==='visible'&&Date.now()-RT.act<45000&&document.hasFocus()){if(RT.mod&&RT.mod!==m[1])rtFlush();RT.mod=m[1];RT.sec+=5;if(RT.sec>=60)rtFlush();}
+  else if(RT.sec)rtFlush();
+},5000);
+document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')rtFlush();});
 function record(q,ok){
   track('quiz_answer',{id:q.id,ok:!!ok,src:q.bank?'bank':(q.type||'q'),mod:q.module||'',ref:q.ref||'',retry:q._retry||0});
   var a=P.answers[q.id]||(P.answers[q.id]={seen:0,correct:0});a.seen++;if(ok)a.correct++;a.lastOk=ok;

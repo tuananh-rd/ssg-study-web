@@ -80,3 +80,11 @@ CREATE TABLE IF NOT EXISTS activity_log (
 CREATE INDEX IF NOT EXISTS idx_log_ts ON activity_log (ts DESC);
 CREATE INDEX IF NOT EXISTS idx_log_user ON activity_log (user_id, ts DESC);
 CREATE INDEX IF NOT EXISTS idx_log_type ON activity_log (type, ts DESC);
+
+-- Điểm học tập theo ngày (giờ VN) cho bảng xếp hạng
+CREATE TABLE IF NOT EXISTS score_daily (
+  user_id INTEGER NOT NULL, day TEXT NOT NULL,
+  quiz INTEGER NOT NULL DEFAULT 0, ok INTEGER NOT NULL DEFAULT 0, read_sec INTEGER NOT NULL DEFAULT 0,
+  exam_pts INTEGER NOT NULL DEFAULT 0, duel_pts INTEGER NOT NULL DEFAULT 0, focus_min INTEGER NOT NULL DEFAULT 0,
+  pts INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (user_id, day));
+CREATE INDEX IF NOT EXISTS idx_score_day ON score_daily (day);

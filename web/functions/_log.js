@@ -1,6 +1,7 @@
 // Nhật ký hoạt động người dùng. Ghi: máy chủ (đăng nhập, quản trị, AI, mở môn, thi đấu) + trình duyệt (làm bài, đọc bài…).
 // CHỈ quản trị viên có cờ can_logs mới đọc được (xem handleLogs). Giữ 90 ngày.
 import { json, bad, SUBJECT_IDS } from './_lib.js';
+import { scoreEvents } from './_rank.js';
 
 const KEEP_MS = 90 * 86400000;
 const clip = (s, n) => (s == null ? null : String(s).slice(0, n));
@@ -18,19 +19,21 @@ export async function logEvent(env, req, user, type, subject, detail) {
 }
 
 // Sự kiện do trình duyệt gửi lên: chỉ nhận đúng các loại này, chuỗi bị cắt ngắn.
-const CLIENT_TYPES = new Set(['quiz_answer', 'quiz_finish', 'lesson_view', 'exam_finish', 'duel_finish', 'focus_session', 'search', 'ai_ask_click', 'page_view']);
+const CLIENT_TYPES = new Set(['quiz_answer', 'quiz_finish', 'lesson_view', 'exam_finish', 'duel_finish', 'focus_session', 'read_time', 'search', 'ai_ask_click', 'page_view']);
 export async function handleEvent(request, env, user, readJson) {
   const d = await readJson(request); if (!d || !Array.isArray(d.events)) return bad('Dữ liệu không hợp lệ');
   const subj = SUBJECT_IDS.includes(d.subject) ? d.subject : null;
   if (subj && !user.subjects.includes(subj)) return bad('Không có quyền', 403);
-  const now = Date.now(), ip = clip(clientIp(request), 64), ua = clip(request.headers.get('user-agent'), 160), stmts = [];
+  const now = Date.now(), ip = clip(clientIp(request), 64), ua = clip(request.headers.get('user-agent'), 160), stmts = [], scored = [];
   for (const e of d.events.slice(0, 40)) {
     if (!e || !CLIENT_TYPES.has(e.type)) continue;
     let det = null; try { det = JSON.stringify(e.detail == null ? {} : e.detail).slice(0, 700); } catch { }
     const ts = Math.min(now, Math.max(now - 3600000, +e.ts || now));
     stmts.push(env.DB.prepare('INSERT INTO activity_log (ts,user_id,email,ip,ua,type,subject,detail) VALUES (?,?,?,?,?,?,?,?)').bind(ts, user.id, user.email, ip, ua, e.type, subj, det));
+    scored.push({ type: e.type, ts, detail: e.detail && typeof e.detail === 'object' ? e.detail : {} });
   }
   if (stmts.length) await env.DB.batch(stmts);
+  if (scored.length) await scoreEvents(env, user.id, scored);
   return json({ ok: true, n: stmts.length });
 }
 
