@@ -37,6 +37,6 @@ export async function serveApp({ request, env }, subject) {
   if (!user.subjects.includes(subject)) { await logEvent(env, request, user, 'access_denied', subject, null); return forbidden(); }
   await logEvent(env, request, user, 'app_open', subject, null);
     let html = APPS[subject];
-  html = html.replace(/<head[^>]*>/i, m => m + syncScript(subject, user)).replace(/<\/body>/i, bar() + liveTag() + '<script src="/chat.js?v=2" defer></script><script src="/whatsnew.js?v=2" defer></script><script src="/music.js?v=2" defer></script></body>');
+  html = html.replace(/<head[^>]*>/i, m => m + syncScript(subject, user)).replace(/<\/body>/i, bar() + liveTag() + '<script src="/chat.js?v=3" defer></script><script src="/whatsnew.js?v=3" defer></script><script src="/music.js?v=3" defer></script></body>');
   return new Response(html, { headers: HEAD });
 }
