@@ -768,7 +768,7 @@ body.th-open .dock-fab{display:none}
 .qside .ai-log{flex:1;min-height:180px;max-height:calc(100vh - 470px)}
 @media(max-width:999px){.qside .ai-log{max-height:380px}}
 /* Chế độ tập trung */
-body.focus-mode #top,body.focus-mode #nav,body.focus-mode .quiz-tip-pill,body.focus-mode .resume-card,body.focus-mode .hide-m,body.focus-mode .rgap,body.focus-mode #bottom{display:none!important}
+body.focus-mode #top,body.focus-mode #nav,body.focus-mode .quiz-tip-pill,body.focus-mode .resume-card,body.focus-mode .hide-m,body.focus-mode #bottom{display:none!important}
 body.focus-mode #content{margin-left:auto!important;margin-right:auto!important;padding-top:84px;--cw:1240px}
 body.focus-mode .qlay>.qside{top:84px;max-height:calc(100vh - 104px)}
 /* nền dịu mắt: ba cảnh gradient chuyển động rất chậm */
@@ -1004,3 +1004,9 @@ body.focus-mode .dock-fab{display:inline-flex}
 .att-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.att-th{width:84px;height:64px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,.35);cursor:zoom-in}.att-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.18);border-radius:8px;padding:3px 8px;font-size:.78rem;max-width:100%}.att-chip svg{width:14px;height:14px;flex:none}.att-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dock.att-drop,.ai-chat.att-drop{outline:3px dashed var(--primary);outline-offset:-6px}
 .ai-compose .att-btn{margin-bottom:2px}
+
+/* nút Tập trung nổi ở đáy, giữa màn hình */
+#focusBtn.focus-fab{position:fixed;left:50%;translate:-50% 0;bottom:20px;z-index:78;margin:0;padding:10px 20px;min-height:44px;border-radius:999px;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-weight:700}
+#focusBtn.focus-fab.on{box-shadow:0 6px 22px rgba(15,23,42,.22)}
+@media(max-width:760px){#focusBtn.focus-fab{bottom:78px;left:auto;right:14px;translate:none}}
+body.dock-open #focusBtn.focus-fab{display:none}

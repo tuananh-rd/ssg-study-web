@@ -152,7 +152,7 @@ function thOpen(mod,ref,keep){
 function hasLang(q,l){return l==='en'?!!(q.bank||q.en):!!(!q.bank||q.vi);}
 function quizTools(q,lang){
   var g=reaskGap(),has=!!(q&&(q.ref||(q.module&&MOD[q.module])));
-  return '<span class="qtools"><span class="qlang" role="group" aria-label="Ngôn ngữ câu hỏi"><button type="button" data-ql="vi" class="'+(lang==='vi'?'on':'')+'" title="Tiếng Việt">VI</button><button type="button" data-ql="en" class="'+(lang==='en'?'on':'')+'" title="English">EN</button></span>'+(hasLang(q,lang)?'':'<span class="tag" title="Câu này chưa có bản dịch sang ngôn ngữ đang chọn, đang hiển thị bản gốc">chưa có bản dịch</span>')+'<button type="button" class="btn sm'+(document.body.classList.contains('focus-mode')?' on':'')+'" id="focusBtn" title="Chế độ tập trung: toàn màn hình, ẩn mọi thứ không cần thiết, có đồng hồ Pomodoro (phím F)">'+ic('expand')+'<span>Tập trung</span></button>'+(has?'<button type="button" class="btn sm" id="thBtn" title="Mở lý thuyết bên cạnh (phím T)">'+ic('book')+'<span>Lý thuyết</span></button>':'')+
+  return '<span class="qtools"><span class="qlang" role="group" aria-label="Ngôn ngữ câu hỏi"><button type="button" data-ql="vi" class="'+(lang==='vi'?'on':'')+'" title="Tiếng Việt">VI</button><button type="button" data-ql="en" class="'+(lang==='en'?'on':'')+'" title="English">EN</button></span>'+(hasLang(q,lang)?'':'<span class="tag" title="Câu này chưa có bản dịch sang ngôn ngữ đang chọn, đang hiển thị bản gốc">chưa có bản dịch</span>')+(has?'<button type="button" class="btn sm" id="thBtn" title="Mở lý thuyết bên cạnh (phím T)">'+ic('book')+'<span>Lý thuyết</span></button>':'')+
     '<span class="rgap" title="Câu trả lời sai sẽ được hỏi lại sau số câu bạn chọn"><span class="small muted">Hỏi lại câu sai</span><span class="qlang rg" role="group" aria-label="Hỏi lại câu sai sau bao nhiêu câu">'+[[0,'Tắt'],[3,'3'],[5,'5'],[10,'10']].map(function(o){return '<button type="button" data-rg="'+o[0]+'" class="'+(g===o[0]?'on':'')+'" title="'+(o[0]?'Sau '+o[0]+' câu':'Không hỏi lại')+'">'+o[1]+'</button>';}).join('')+'</span></span></span>';
 }
 
@@ -329,7 +329,7 @@ routes.learn=function(id,qs){
   P.lastLesson=id;P.read[id]=true;save();track('lesson_view',{mod:id,s:qs&&qs.s||''});
   var ix=D.modules.indexOf(m),prev=D.modules[ix-1],nxt=D.modules[ix+1];
   var mins=readMins(m),nsec=m.sections.length;
-  render('<div class="row small muted"><a href="#/learn">← Lý thuyết</a><span>·</span>'+dot(id)+m.short+(m.priority===4?' <span class="tag warn">Hay ra thi</span>':'')+'<button type="button" class="btn sm'+(document.body.classList.contains('focus-mode')?' on':'')+'" id="focusBtn" style="margin-left:auto" title="Chế độ tập trung: toàn màn hình, ẩn mọi thứ không cần thiết, có đồng hồ Pomodoro (phím F)">'+ic('expand')+'<span>Tập trung</span></button></div>'+
+  render('<div class="row small muted"><a href="#/learn">← Lý thuyết</a><span>·</span>'+dot(id)+m.short+(m.priority===4?' <span class="tag warn">Hay ra thi</span>':'')+'</div>'+
    '<header class="lesson-head"><h1>'+esc(m.title)+'</h1><div class="lesson-meta"><span>'+ic('book')+nsec+' mục</span><span>'+ic('clock')+'khoảng '+mins+' phút đọc</span></div></header>'+
    (m.keyPoints&&m.keyPoints.length?'<div class="keybox"><b>Ý phải nhớ</b><ul>'+m.keyPoints.map(function(k){return '<li>'+esc(k)+'</li>';}).join('')+'</ul></div>':'')+
    '<div class="lesson">'+
@@ -559,7 +559,7 @@ function focusOn(){
   FC.running=true;FC.endAt=Date.now()+FC.left*1000;
   clearInterval(FC.timer);FC.timer=setInterval(fcTick,500);
   var de=document.documentElement;try{if(de.requestFullscreen&&!document.fullscreenElement){FC.fs=true;de.requestFullscreen().catch(function(){FC.fs=false;});}}catch(e){FC.fs=false;}
-  fcDraw();fcBreakShow();var b=document.getElementById('focusBtn');if(b)b.classList.add('on');
+  fcDraw();fcBreakShow();focusFabDraw();
 }
 function focusOff(){
   if(!FC.on)return;
@@ -568,9 +568,13 @@ function focusOff(){
   FC.left=0;FC.phase='work';
   var e=document.getElementById('fpom');if(e)e.remove();var b=document.getElementById('fbreak');if(b)b.remove();
   var wasFs=FC.fs;FC.fs=false;if(wasFs&&document.fullscreenElement){try{document.exitFullscreen();}catch(x){}}
-  var fb=document.getElementById('focusBtn');if(fb)fb.classList.remove('on');
+  focusFabDraw();
 }
 function focusToggle(){if(FC.on)focusOff();else focusOn();}
+// Nút Tập trung nổi ở đáy màn hình, có mặt ở mọi mục (phím tắt F)
+function focusFabDraw(){var b=document.getElementById('focusBtn');if(!b)return;b.classList.toggle('on',!!FC.on);b.innerHTML=ic('expand')+'<span>'+(FC.on?'Thoát tập trung':'Tập trung')+'</span>';b.title=FC.on?'Thoát chế độ tập trung (phím F)':'Chế độ tập trung: toàn màn hình, ẩn mọi thứ không cần thiết, có đồng hồ Pomodoro (phím F)';}
+setTimeout(function(){try{if(document.getElementById('focusBtn'))return;var b=document.createElement('button');b.type='button';b.id='focusBtn';b.className='focus-fab';b.onclick=function(){focusToggle();};document.body.appendChild(b);focusFabDraw();}catch(e){console.error(e);}},0);
+
 document.addEventListener('fullscreenchange',function(){if(FC.on&&FC.fs&&!document.fullscreenElement){if(FC.keepUntil&&Date.now()<FC.keepUntil){FC.fs=false;return;}focusOff();}});
 document.addEventListener('keydown',function(e){if((e.key==='f'||e.key==='F')&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&!/INPUT|TEXTAREA|SELECT/.test(e.target.tagName||'')&&document.getElementById('focusBtn'))focusToggle();});
 
