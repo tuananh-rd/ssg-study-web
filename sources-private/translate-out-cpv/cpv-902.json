@@ -1,0 +1,11 @@
+{
+  "297": {
+    "q": "_____ dựa trên factored sampling nhưng được mở rộng để áp dụng lặp đi lặp lại cho các ảnh liên tiếp trong một chuỗi.",
+    "options": [
+      "Bộ mô tả đặc trưng (Feature descriptor)",
+      "Condensation",
+      "Ghép đặc trưng (Feature matching)",
+      "Biến đổi Hough (Hough transform)"
+    ]
+  }
+}

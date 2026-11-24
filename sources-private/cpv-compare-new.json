@@ -1,0 +1,107 @@
+{
+ "diff": [
+  {
+   "idNew": 4,
+   "slideNew": 10,
+   "idCur": 4,
+   "q": "Given the integral image of an image (Figure 1). What is the sum of al",
+   "newAns": [
+    "19"
+   ],
+   "curAns": [
+    "15"
+   ],
+   "expl": ""
+  },
+  {
+   "idNew": 38,
+   "slideNew": 48,
+   "idCur": 34,
+   "q": "Which of the following is NOT an application of image alignment?",
+   "newAns": [
+    "Identifying document templates"
+   ],
+   "curAns": [
+    "Comparing multiple scans of tissue taken at different times"
+   ],
+   "expl": ""
+  },
+  {
+   "idNew": 114,
+   "slideNew": 132,
+   "idCur": 120,
+   "q": "Which of the following operators utilizes Laplacian of Gaussian?",
+   "newAns": [
+    "Canny operator"
+   ],
+   "curAns": [
+    "Sobel (5x5)"
+   ],
+   "expl": ""
+  },
+  {
+   "idNew": 117,
+   "slideNew": 135,
+   "idCur": 123,
+   "q": "Which of the following belongs to kernel tracking approach in object t",
+   "newAns": [
+    "Deterministic method"
+   ],
+   "curAns": [
+    "Multi-view based method"
+   ],
+   "expl": ""
+  },
+  {
+   "idNew": 173,
+   "slideNew": 195,
+   "idCur": 182,
+   "q": "What is the primary technique used by mean shift to efficiently locate",
+   "newAns": [
+    "Gradient descent of the pixels in a clustering"
+   ],
+   "curAns": [
+    "Mean of the pixels in a range"
+   ],
+   "expl": ""
+  },
+  {
+   "idNew": 249,
+   "slideNew": 278,
+   "idCur": 264,
+   "q": "What role does the edge linking process play in image processing after",
+   "newAns": [
+    "It eliminates edge information by breaking connections between neighboring pixels."
+   ],
+   "curAns": [
+    "It organizes an unordered set of edge pixels into an ordered list of edges."
+   ],
+   "expl": ""
+  }
+ ],
+ "onlyNew": [
+  {
+   "id": 7,
+   "slide": 14,
+   "q": "_____ is based on factored sampling but extended to apply iteratively to successive images",
+   "ans": [
+    "Condensation"
+   ]
+  },
+  {
+   "id": 231,
+   "slide": 257,
+   "q": "What is computer vision? (definition)",
+   "ans": [
+    "Computer Vision is a field of computer science that enables the computer to understand just like a human."
+   ]
+  }
+ ],
+ "curOnly": [
+  {
+   "id": 291,
+   "slide": 307,
+   "q": "Eigenfaces, used in some face recognition algorithms, represent:"
+  }
+ ]
+}

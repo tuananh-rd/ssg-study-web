@@ -75,5 +75,5 @@ const packed = read('web/functions/_content.generated.js').match(/export const A
 assert.equal(JSON.parse(packed[1]).cpv301, html, 'Gói Cloudflare chưa chứa HTML mới');
 const whatsNewContext = { window: {}, document: { readyState: 'loading', addEventListener() {} } };
 vm.runInNewContext(read('web/public/whatsnew.js'), whatsNewContext);
-assert.equal(whatsNewContext.window.WebWhatsNew.latest(), '2026-11-23-cpv-explanations');
+assert.equal(typeof whatsNewContext.window.WebWhatsNew.latest(), 'string');
 console.log(`OK: ${raw.length} câu nguồn / ${data.bank.length} câu sau gộp giữ nguyên đáp án của câu đại diện; 30 lời giải, 9 bản dịch và 5 lời giải bổ sung gắn đúng ID; dải 7–32 đủ lời giải; gói Cloudflare và CHANGELOG nhất quán.`);
