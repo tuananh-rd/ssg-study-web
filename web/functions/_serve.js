@@ -1,6 +1,6 @@
 // Phục vụ trang môn học có kiểm quyền + chèn script đồng bộ tiến độ về tài khoản.
 import { SUBJECTS, getUser } from './_lib.js';
-import { logEvent } from './_log.js';
+import { logEvent, logEventOnce } from './_log.js';
 import { liveTag } from './_live.js';
 import { APPS } from './_content.generated.js';
 
@@ -35,7 +35,7 @@ export async function serveApp({ request, env }, subject) {
   const user = await getUser(request, env); if (!user) return redirectLogin(request.url);
   if (!SUBJECTS[subject] || !APPS[subject]) return new Response('Không tìm thấy', { status: 404 });
   if (!user.subjects.includes(subject)) { await logEvent(env, request, user, 'access_denied', subject, null); return forbidden(); }
-  await logEvent(env, request, user, 'app_open', subject, null);
+  await logEventOnce(env, request, user, 'app_open', subject, null, 15 * 60000);   // mở lại liên tục chỉ ghi 1 dòng mỗi 15 phút
     let html = APPS[subject];
   html = html.replace(/<head[^>]*>/i, m => m + syncScript(subject, user)).replace(/<\/body>/i, bar() + liveTag() + '<script src="/chat.js?v=4" defer></script><script src="/whatsnew.js?v=4" defer></script><script src="/rank.js?v=5" defer></script><script src="/music.js?v=4" defer></script></body>');
   return new Response(html, { headers: HEAD });

@@ -18,6 +18,15 @@ export async function logEvent(env, req, user, type, subject, detail) {
   } catch (e) { console.error('log fail', e && e.message); }
 }
 
+/** Như logEvent nhưng bỏ qua nếu cùng người, cùng loại, cùng môn đã được ghi trong windowMs gần đây (tránh nhật ký bị ngập bởi việc lặp lại). */
+export async function logEventOnce(env, req, user, type, subject, detail, windowMs) {
+  try {
+    const hit = await env.DB.prepare("SELECT 1 x FROM activity_log WHERE user_id=? AND type=? AND COALESCE(subject,'')=? AND ts>? LIMIT 1").bind(user.id, type, subject || '', Date.now() - windowMs).first();
+    if (hit) return;
+  } catch { }
+  return logEvent(env, req, user, type, subject, detail);
+}
+
 // Sự kiện do trình duyệt gửi lên: chỉ nhận đúng các loại này, chuỗi bị cắt ngắn.
 const CLIENT_TYPES = new Set(['quiz_answer', 'quiz_finish', 'lesson_view', 'exam_finish', 'duel_finish', 'focus_session', 'read_time', 'search', 'ai_ask_click', 'page_view']);
 export async function handleEvent(request, env, user, readJson) {
@@ -29,7 +38,7 @@ export async function handleEvent(request, env, user, readJson) {
     if (!e || !CLIENT_TYPES.has(e.type)) continue;
     let det = null; try { det = JSON.stringify(e.detail == null ? {} : e.detail).slice(0, 700); } catch { }
     const ts = Math.min(now, Math.max(now - 3600000, +e.ts || now));
-    stmts.push(env.DB.prepare('INSERT INTO activity_log (ts,user_id,email,ip,ua,type,subject,detail) VALUES (?,?,?,?,?,?,?,?)').bind(ts, user.id, user.email, ip, ua, e.type, subj, det));
+    if (e.type !== 'read_time') stmts.push(env.DB.prepare('INSERT INTO activity_log (ts,user_id,email,ip,ua,type,subject,detail) VALUES (?,?,?,?,?,?,?,?)').bind(ts, user.id, user.email, ip, ua, e.type, subj, det));
     scored.push({ type: e.type, ts, detail: e.detail && typeof e.detail === 'object' ? e.detail : {} });
   }
   if (stmts.length) await env.DB.batch(stmts);
@@ -47,9 +56,9 @@ export async function handleLogs(request, env, user, sub) {
     const day = Date.now() - 86400000, week = Date.now() - 7 * 86400000;
     const q = async (sql, ...b) => (await env.DB.prepare(sql).bind(...b).all()).results;
     const [tot, byType, topUsers, active, fails] = await Promise.all([
-      q('SELECT COUNT(*) n FROM activity_log WHERE ts>?', day),
+      q("SELECT COUNT(*) n FROM activity_log WHERE ts>? AND type NOT IN ('admin_log_view','app_open')", day),
       q('SELECT type,COUNT(*) n FROM activity_log WHERE ts>? GROUP BY type ORDER BY n DESC', week),
-      q('SELECT l.user_id,l.email,COUNT(*) n,MAX(l.ts) last FROM activity_log l WHERE l.ts>? AND l.user_id IS NOT NULL GROUP BY l.user_id ORDER BY n DESC LIMIT 8', week),
+      q("SELECT l.user_id,l.email,COUNT(*) n,MAX(l.ts) last FROM activity_log l WHERE l.ts>? AND l.user_id IS NOT NULL AND l.type IN ('quiz_answer','quiz_finish','exam_finish','lesson_view','focus_session','duel_finish','ai_chat','ai_translate') GROUP BY l.user_id ORDER BY n DESC LIMIT 8", week),
       q('SELECT COUNT(DISTINCT user_id) n FROM activity_log WHERE ts>? AND user_id IS NOT NULL', day),
       q("SELECT COUNT(*) n FROM activity_log WHERE ts>? AND type IN ('login_fail','login_blocked')", day),
     ]);
@@ -66,6 +75,6 @@ export async function handleLogs(request, env, user, sub) {
   const limit = Math.min(200, Math.max(10, +p.get('limit') || 60));
   const rows = (await env.DB.prepare(`SELECT id,ts,user_id,email,ip,ua,type,subject,detail FROM activity_log ${where.length ? 'WHERE ' + where.join(' AND ') : ''} ORDER BY id DESC LIMIT ?`).bind(...b, limit + 1).all()).results;
   const more = rows.length > limit; if (more) rows.pop();
-  if (!p.get('before')) await logEvent(env, request, user, 'admin_log_view', null, { filter: Object.fromEntries([...p].filter(([k]) => k !== 'before' && k !== 'limit')) });
+  if (!p.get('before')) await logEventOnce(env, request, user, 'admin_log_view', null, { filter: Object.fromEntries([...p].filter(([k]) => k !== 'before' && k !== 'limit')) }, 30 * 60000);   // mở/làm mới nhiều lần chỉ ghi 1 dòng mỗi 30 phút
   return json({ rows, more, next: more ? rows[rows.length - 1].id : null });
 }
