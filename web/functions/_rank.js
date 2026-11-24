@@ -51,13 +51,13 @@ export async function scoreEvents(env, uid, evs) {
   } catch (e) { console.error('score fail', e && e.message); }
 }
 
-/** Danh hiệu theo tổng điểm cho một nhóm người dùng (quản trị viên không có điểm → không có danh hiệu): Map id → [tên, màu, bậc] */
+/** Danh hiệu theo tổng điểm cho một nhóm người dùng (tài khoản đặt no_rank → không có danh hiệu): Map id → [tên, màu, bậc] */
 export async function titlesFor(env, ids) {
   const out = new Map(); ids = [...new Set(ids.filter(x => +x > 0))].slice(0, 200); if (!ids.length) return out;
   const ph = ids.map(() => '?').join(',');
-  const us = (await env.DB.prepare(`SELECT id,role FROM users WHERE id IN (${ph})`).bind(...ids).all()).results;
+  const us = (await env.DB.prepare(`SELECT id,no_rank FROM users WHERE id IN (${ph})`).bind(...ids).all()).results;
   const pts = new Map((await env.DB.prepare(`SELECT user_id id,SUM(pts) p FROM score_daily WHERE user_id IN (${ph}) GROUP BY user_id`).bind(...ids).all()).results.map(r => [r.id, r.p]));
-  for (const u of us) if (u.role !== 'admin') { const t = titleOf(pts.get(u.id) || 0); out.set(u.id, [t.name, t.c, t.i]); }
+  for (const u of us) if (!u.no_rank) { const t = titleOf(pts.get(u.id) || 0); out.set(u.id, [t.name, t.c, t.i]); }
   return out;
 }
 
@@ -68,8 +68,8 @@ export async function handleRank(request, env, user) {
   const since = period === 'all' ? '0000-00-00' : dayOf(now - (period === 'week' ? 6 : 29) * 86400000);
   const q = async (sql, ...b) => (await env.DB.prepare(sql).bind(...b).all()).results;
   const [top, life, mine] = await Promise.all([
-    q(`SELECT s.user_id id,u.name,u.role,SUM(s.pts) pts,SUM(s.quiz) quiz,SUM(s.ok) ok,SUM(s.read_sec) rsec,SUM(s.focus_min) focus
-       FROM score_daily s JOIN users u ON u.id=s.user_id WHERE s.day>=? AND u.status='active' AND u.role<>'admin' GROUP BY s.user_id HAVING SUM(s.pts)>0 ORDER BY pts DESC,s.user_id LIMIT 100`, since),
+    q(`SELECT u.id id,u.name,u.role,COALESCE(SUM(s.pts),0) pts,COALESCE(SUM(s.quiz),0) quiz,COALESCE(SUM(s.ok),0) ok,COALESCE(SUM(s.read_sec),0) rsec,COALESCE(SUM(s.focus_min),0) focus
+       FROM users u LEFT JOIN score_daily s ON s.user_id=u.id AND s.day>=? WHERE u.status='active' AND u.no_rank=0 GROUP BY u.id ORDER BY pts DESC,u.id LIMIT 100`, since),
     q('SELECT user_id id,SUM(pts) pts FROM score_daily GROUP BY user_id'),
     q('SELECT day,pts FROM score_daily WHERE user_id=? AND pts>0 ORDER BY day DESC LIMIT 400', user.id),
   ]);
@@ -83,8 +83,8 @@ export async function handleRank(request, env, user) {
   const myRow = rows.find(r => r.me);
   return json({
     period, rows,
-    admin: user.role === 'admin',
-    me: user.role === 'admin' ? null : { rank: myRow ? myRow.rank : null, pts: myRow ? myRow.pts : 0, total: myTotal, title: mt.name, tc: mt.c, ti: mt.i, next: mt.next ? { name: mt.next.name, at: mt.next.at } : null, from: mt.at, streak, today: today ? today.pts : 0 },
+    admin: !!user.no_rank,
+    me: user.no_rank ? null : { rank: myRow ? myRow.rank : null, pts: myRow ? myRow.pts : 0, total: myTotal, title: mt.name, tc: mt.c, ti: mt.i, next: mt.next ? { name: mt.next.name, at: mt.next.at } : null, from: mt.at, streak, today: today ? today.pts : 0 },
     titles: TITLES, caps: CAPS,
   });
 }

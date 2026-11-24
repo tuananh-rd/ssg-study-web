@@ -8,7 +8,7 @@ import { execFileSync } from 'node:child_process'; import fs from 'node:fs';
 const WR = 'node_modules/wrangler/bin/wrangler.js';
 const DAY = '2026-10-01', APPLY = process.argv.includes('--apply');
 const q = sql => { const o = execFileSync(process.execPath, [WR, 'd1', 'execute', 'ssg-study', '--remote', '--json', '--command', sql], { encoding: 'utf8', maxBuffer: 1 << 28 }); return JSON.parse(o)[0].results; };
-const users = q("SELECT id,name,role FROM users WHERE status='active' AND role!='admin'");
+const users = q("SELECT id,name,role FROM users WHERE status='active' AND no_rank=0");
 const logs = new Map(q(`SELECT user_id id,SUM(quiz) quiz,SUM(ok) ok FROM score_daily WHERE day!='${DAY}' GROUP BY user_id`).map(r => [r.id, r]));
 const prog = q('SELECT user_id,subject,data FROM progress');
 const rows = [];

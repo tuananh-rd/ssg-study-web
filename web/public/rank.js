@@ -67,7 +67,7 @@ function podium(rows){
 function draw(d,b){
   if(!b)return;var m=d.me,h='',per=d.period==='week'?'tuần này':d.period==='month'?'30 ngày qua':'từ trước đến nay';
   var pct=m&&m.next?Math.max(3,Math.min(100,Math.round((m.total-m.from)/(m.next.at-m.from)*100))):100;
-  if(!m)h+='<div class="rk-empty" style="padding:10px 8px 16px">Quản trị viên không tính điểm xếp hạng.</div>';else h+='<div class="rk-me t'+m.ti+'" style="--tc:'+m.tc+'">'+fx(m.ti)+'<div class="lb">Danh hiệu của bạn</div><div class="tn">'+esc(m.title)+'</div>'+
+  if(!m)h+='<div class="rk-empty" style="padding:10px 8px 16px">Tài khoản của bạn không tính điểm xếp hạng.</div>';else h+='<div class="rk-me t'+m.ti+'" style="--tc:'+m.tc+'">'+fx(m.ti)+'<div class="lb">Danh hiệu của bạn</div><div class="tn">'+esc(m.title)+'</div>'+
    '<div class="pt"><b id="rk-cnt">0</b><span>tổng điểm'+(m.rank?' · hạng '+m.rank+' '+per:'')+'</span></div>'+
    '<div class="rk-bar"><i id="rk-fill"></i></div><div class="nx">'+(m.next?'Còn <b>'+ptsTxt(m.next.at-m.total)+'</b> điểm nữa để lên <b>'+esc(m.next.name)+'</b>':'Bạn đã đạt danh hiệu cao nhất!')+'</div>'+
    '<div class="rk-st"><div><small>'+svg(I.sun,13)+' Hôm nay</small><b>+'+ptsTxt(m.today)+'</b></div><div><small>'+svg(I.flame,13)+' Chuỗi ngày học</small><b>'+m.streak+' ngày</b></div><div><small>'+svg(I.target,13)+' Điểm '+(d.period==='all'?'tổng':'kỳ này')+'</small><b>'+ptsTxt(m.pts)+'</b></div></div></div>';

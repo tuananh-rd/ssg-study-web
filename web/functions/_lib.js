@@ -51,7 +51,7 @@ export async function createSession(env, userId) {
 export async function getUser(req, env) {
   const t = parseCookies(req)[COOKIE]; if (!t || !/^[0-9a-f]{64}$/.test(t)) return null;
   const row = await env.DB.prepare(
-    'SELECT u.id,u.email,u.name,u.role,u.status,u.must_change,u.can_logs FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>?'
+    'SELECT u.id,u.email,u.name,u.role,u.status,u.must_change,u.can_logs,u.no_rank FROM sessions s JOIN users u ON u.id=s.user_id WHERE s.token_hash=? AND s.expires_at>?'
   ).bind(await sha256hex(t), Date.now()).first();
   if (!row || row.status !== 'active') return null;
   const g = await env.DB.prepare('SELECT subject FROM grants WHERE user_id=?').bind(row.id).all();
