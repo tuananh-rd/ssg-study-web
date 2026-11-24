@@ -156,7 +156,7 @@ function adminView(){
        '<td><div class="acts">'+(u.role==='admin'?'':'<button class="btn sm" data-a="grants">Lưu quyền</button>')+
         (u.status==='pending'?'<button class="btn sm p" data-a="approve">Phê duyệt</button>':'')+
         (u.status==='active'&&!self?'<button class="btn sm" data-a="disable">Khoá</button>':'')+(u.status==='disabled'?'<button class="btn sm" data-a="enable">Mở khoá</button>':'')+
-        '<button class="btn sm" data-a="reset">Cấp lại mật khẩu</button>'+(u.status==='active'?'<button class="btn sm" data-a="reload" title="Yêu cầu trình duyệt của người này tải lại trang">Tải lại trang của họ</button>':'')+(j.canLogs&&u.role==='admin'?'<button class="btn sm" data-a="logs">'+(u.can_logs?'Thu hồi quyền xem nhật ký':'Cho phép xem nhật ký')+'</button>':'')+
+        '<button class="btn sm" data-a="rename">Đổi tên</button><button class="btn sm" data-a="reset">Cấp lại mật khẩu</button>'+(u.status==='active'?'<button class="btn sm" data-a="reload" title="Yêu cầu trình duyệt của người này tải lại trang">Tải lại trang của họ</button>':'')+(j.canLogs&&u.role==='admin'?'<button class="btn sm" data-a="logs">'+(u.can_logs?'Thu hồi quyền xem nhật ký':'Cho phép xem nhật ký')+'</button>':'')+
         (self?'':'<button class="btn sm" data-a="role">'+(u.role==='admin'?'Gỡ quyền quản trị':'Cấp quyền quản trị')+'</button><button class="btn sm danger" data-a="del">Xoá</button>')+'</div></td></tr>';}).join('')+'</tbody></table>';
     [].forEach.call(document.querySelectorAll('[data-a]'),function(b){b.onclick=function(){act(b);};});
   });}
@@ -168,6 +168,7 @@ function adminView(){
     else if(a==='disable'){if(confirm('Khoá tài khoản này? Người dùng sẽ bị đăng xuất ngay.'))post({status:'disabled'});}
     else if(a==='enable')post({status:'active'});
     else if(a==='reload'){if(confirm('Yêu cầu trình duyệt của người này tải lại trang? (Họ sẽ thấy thông báo đếm ngược 8 giây và có thể hoãn.)'))api('admin/reload','POST',{user_id:+id}).then(function(j){if(j.error)alert(j.error);else{b.textContent='Đã gửi ✓';setTimeout(function(){b.textContent='Tải lại trang của họ';},2500);}});}
+    else if(a==='rename'){var cur=(tr.querySelector('td b')||{}).textContent||'';var nn=prompt('Tên hiển thị mới cho tài khoản này (2–60 ký tự):',cur);if(nn===null)return;nn=nn.trim();if(nn.length<2||nn.length>60){alert('Tên cần từ 2 đến 60 ký tự');return;}if(nn===cur)return;post({name:nn});}
     else if(a==='logs'){var has=tr.dataset.cl==='1';if(confirm(has?'Thu hồi quyền xem nhật ký của quản trị viên này?':'Cho phép quản trị viên này xem nhật ký hoạt động chi tiết của mọi người dùng?'))post({can_logs:!has});}
     else if(a==='role'){if(confirm('Thay đổi quyền quản trị của tài khoản này?'))post({role:tr.querySelector('.tag.admin')?'user':'admin'});}
     else if(a==='del'){if(confirm('Xoá vĩnh viễn tài khoản và toàn bộ tiến độ học của người này? Thao tác không thể hoàn tác.'))api('admin/users/'+id,'DELETE').then(function(j){if(j.error)alert(j.error);load();});}
