@@ -58,7 +58,9 @@ export async function onRequest({ request, env, params }) {
     if (a === 'live' && m === 'GET') {
       await touchPresence(env, user);
       const rl = await env.DB.prepare('SELECT id,msg FROM reload_cmds WHERE ts>? AND (user_id IS NULL OR user_id=?) ORDER BY id DESC LIMIT 1').bind(Date.now() - 600000, user.id).first();
-      return json({ v: VERSION, rl: rl ? rl.id : 0, rlmsg: rl ? rl.msg || '' : '' });
+      const nowT = Date.now();
+      const iv = await env.DB.prepare("SELECT i.id,i.code,i.subj,u.name FROM duel_invites i JOIN users u ON u.id=i.from_user JOIN duel_rooms r ON r.code=i.code AND r.last>? AND r.phase IN ('wait','ready') WHERE i.to_user=? AND i.ts>? ORDER BY i.id DESC LIMIT 1").bind(nowT - 20000, user.id, nowT - 120000).first();
+      return json({ v: VERSION, rl: rl ? rl.id : 0, rlmsg: rl ? rl.msg || '' : '', inv: iv ? { id: iv.id, code: iv.code, subj: iv.subj, from: iv.name } : null });
     }
     if (a === 'chat') return handleChat(request, env, user, b, readJson);
     if (a === 'ai' && m === 'POST') return handleAi(request, env, user, readJson, logEvent);

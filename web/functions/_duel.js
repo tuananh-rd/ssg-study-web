@@ -23,6 +23,27 @@ export async function handleDuel(request, env, user, action, readJson) {
   const d = await readJson(request); if (!d) return bad('Dữ liệu không hợp lệ');
   const now = Date.now(); await sweep(env, now);
 
+  if (action === 'invite') {   // chủ phòng mời người đang online
+    const code = d.code; if (!okCode(code)) return bad('Mã phòng không hợp lệ');
+    const room = await env.DB.prepare('SELECT host_user,subj,last,phase FROM duel_rooms WHERE code=?').bind(code).first();
+    if (!room || now - room.last > ROOM_TTL) return bad('Phòng không còn mở', 404);
+    if (room.host_user !== user.id) return bad('Chỉ chủ phòng mới mời được', 403);
+    const subject = String(room.subj || '').replace(/-duel-$/, '');
+    const recent = (await env.DB.prepare('SELECT COUNT(*) n FROM duel_invites WHERE from_user=? AND ts>?').bind(user.id, now - 60000).first()).n;
+    const to = [...new Set((Array.isArray(d.to) ? d.to : []).map(Number).filter(n => n > 0 && n !== user.id))].slice(0, 8);
+    if (!to.length) return bad('Chưa chọn người nhận');
+    if (recent + to.length > 24) return bad('Mời quá nhiều, đợi một lát', 429);
+    const sent = [], skipped = [];
+    for (const id of to) {
+      const t = await env.DB.prepare("SELECT id,role,status FROM users WHERE id=?").bind(id).first();
+      if (!t || t.status !== 'active') { skipped.push({ id, why: 'không hoạt động' }); continue; }
+      if (t.role !== 'admin' && !(await env.DB.prepare('SELECT 1 FROM grants WHERE user_id=? AND subject=?').bind(id, subject).first())) { skipped.push({ id, why: 'chưa được cấp môn này' }); continue; }
+      await env.DB.prepare('INSERT INTO duel_invites (ts,from_user,to_user,code,subj) VALUES (?,?,?,?,?)').bind(now, user.id, id, code, subject).run(); sent.push(id);
+    }
+    if (sent.length) await logEvent(env, request, user, 'duel_invite', subject, { code, to: sent });
+    return json({ ok: true, sent, skipped });
+  }
+
   if (action === 'list') {
     const subj = String(d.subj || '').slice(0, 40);
     const rows = (await env.DB.prepare("SELECT code,name,n,phase FROM duel_rooms WHERE last>? AND subj=? AND phase IN ('wait','ready') AND n<8 ORDER BY created DESC LIMIT 20").bind(now - ROOM_TTL, subj).all()).results || [];

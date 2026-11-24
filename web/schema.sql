@@ -57,8 +57,12 @@ CREATE TABLE IF NOT EXISTS reload_cmds (id INTEGER PRIMARY KEY AUTOINCREMENT, ts
 -- Người đang online (cập nhật mỗi khi trình duyệt hỏi máy chủ, giới hạn 1 lần/20 giây)
 CREATE TABLE IF NOT EXISTS presence (user_id INTEGER PRIMARY KEY, ts INTEGER NOT NULL);
 
+-- Lời mời vào phòng thi đấu
+CREATE TABLE IF NOT EXISTS duel_invites (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, from_user INTEGER NOT NULL, to_user INTEGER NOT NULL, code TEXT NOT NULL, subj TEXT);
+CREATE INDEX IF NOT EXISTS idx_inv_to ON duel_invites (to_user, id);
+
 -- Chat chung
-CREATE TABLE IF NOT EXISTS chat_messages (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER NOT NULL, body TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS chat_messages (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER NOT NULL, body TEXT NOT NULL, mentions TEXT);
 CREATE INDEX IF NOT EXISTS idx_chat_ts ON chat_messages (ts);
 
 -- Nhật ký hoạt động (chỉ quản trị viên được cấp quyền can_logs mới xem được)

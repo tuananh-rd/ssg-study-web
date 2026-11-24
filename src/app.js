@@ -1018,6 +1018,32 @@ function duelBotPicker() {
     duelAddBot({ name: BOT_NAMES[k], av: av }); b.disabled = true; b.textContent = 'Đã có';
   }; });
 }
+// Mời người đang online vào phòng (chỉ chạy trên web có tài khoản)
+function duelInvitePicker() {
+  var s = DU.s; if (!s || DU.role !== 'host' || !window.AI_SERVER) return;
+  DU.invited = DU.invited || {};
+  modal('<h3 style="margin-top:0">Mời người đang online</h3><div class="bp-list" id="invL"><p class="muted small">Đang tải danh sách…</p></div><p class="small muted" style="margin-bottom:0">Người được mời sẽ thấy khung "Tham gia" ở bất kỳ trang nào của web. Lời mời hết hạn sau 2 phút.</p>', [{ t: 'Đóng', v: null, primary: true }]);
+  var m = $('#modal');
+  function draw(users) {
+    var L = $('#invL', m); if (!L) return;
+    users = users.filter(function(u) { return u.id !== duelMyUserId(); });
+    if (!users.length) { L.innerHTML = '<p class="muted small">Hiện chưa có ai khác đang online.</p>'; return; }
+    L.innerHTML = users.map(function(u) {
+      var done = DU.invited[DU.code + ':' + u.id];
+      return '<div class="bp-row"><span class="bp-av">' + avHtml({ av: { c: u.id % 8, i: u.id % 12 } }, 36) + '</span><div class="bp-n"><b>' + esc(u.name) + '</b>' + (u.role === 'admin' ? ' <span class="tag warn">QTV</span>' : '') + '</div><button type="button" class="btn sm primary" data-inv="' + u.id + '"' + (done ? ' disabled' : '') + '>' + (done ? 'Đã mời' : 'Mời') + '</button></div>';
+    }).join('');
+    $$('[data-inv]', L).forEach(function(b) { b.onclick = function() {
+      var id = +b.dataset.inv; b.disabled = true; b.textContent = 'Đang gửi…';
+      svApi('invite', { code: DU.code, to: [id] }).then(function(j) {
+        if (j.error) { b.disabled = false; b.textContent = 'Mời'; return toast(j.error); }
+        if (j.sent && j.sent.length) { DU.invited[DU.code + ':' + id] = 1; b.textContent = 'Đã mời'; toast('Đã gửi lời mời'); }
+        else { b.disabled = false; b.textContent = 'Mời'; toast('Không mời được: ' + ((j.skipped && j.skipped[0] && j.skipped[0].why) || 'không rõ lý do')); }
+      }).catch(function() { b.disabled = false; b.textContent = 'Mời'; toast('Lỗi mạng'); });
+    }; });
+  }
+  fetch('/api/chat/online', { credentials: 'same-origin' }).then(function(r) { return r.json(); }).then(function(j) { DU.myUid = j.me; draw(j.users || []); }).catch(function() { var L = $('#invL', m); if (L) L.innerHTML = '<p class="muted small">Không tải được danh sách.</p>'; });
+}
+function duelMyUserId() { return DU.myUid || 0; }
 function duelRemoveBot(id) {
   var s = DU.s; if (!s || DU.role !== 'host') return;
   s.players = s.players.filter(function(p) { return p.id !== id; });
@@ -1642,6 +1668,7 @@ function duelDraw() {
       (isHost ? '<div class="row" style="margin-top:12px;gap:10px 16px"><div class="seg">' + Object.keys(DUEL_SRC).map(function(k) { return '<button data-dsrc="' + k + '" class="' + (cfg.src === k ? 'on' : '') + '">' + DUEL_SRC[k].t + '</button>'; }).join('') + '</div>' +
         '<div class="seg">' + [10, 15, 20, 30].map(function(n) { return '<button data-dn="' + n + '" class="' + (cfg.n === n ? 'on' : '') + '">' + n + ' câu</button>'; }).join('') + '</div><div class="seg">' + [15, 20, 30].map(function(n) { return '<button data-dsec="' + n + '" class="' + (cfg.sec === n ? 'on' : '') + '">' + n + 's</button>'; }).join('') + '</div></div>' : '') + '</div>' +
       (isHost ? '<div class="card row between"><div><b>Đối thủ máy</b><div class="small muted">Thêm máy để thi đấu khi chưa đủ người.</div></div><div class="row">' + duelLvSeg() + '<button class="btn sm" id="dbot" type="button">Thêm máy</button></div></div>' : '') +
+      (isHost && window.AI_SERVER ? '<div class="card row between"><div><b>Mời người đang online</b><div class="small muted">Gửi lời mời vào phòng cho người đang mở web (họ phải được cấp môn này).</div></div><button class="btn sm" id="dinv" type="button">Mời người online</button></div>' : '') +
       (isHost ? '<button class="btn primary big" id="dstart" style="width:100%"' + (canStart ? '' : ' disabled') + '>' + (canStart ? 'Bắt đầu trận đấu (' + activePlayers.length + ' người) '+ic('arrow')+'' : 'Đang chờ người chơi khác vào phòng (tối thiểu 2)...') + '</button>' : '<div class="card center" style="padding:16px"><span class="spin sm"></span> Đang chờ chủ phòng bắt đầu trận đấu…</div>');
     content.innerHTML = h;
     if (isHost) {
@@ -1652,6 +1679,7 @@ function duelDraw() {
       bind('#dstart', 'click', duelStart);
       bind('[data-blv]', 'click', function(e, b) { DU.botLv = b.dataset.blv; duelDraw(); });
       bind('#dbot', 'click', duelBotPicker);
+      bind('#dinv', 'click', duelInvitePicker);
       bind('[data-rmbot]', 'click', function(e, b) { duelRemoveBot(b.dataset.rmbot); });
     }
   }
@@ -1830,8 +1858,10 @@ function duelDraw() {
     }).join('');
   }
 }
-routes.duel=function(){
+routes.duel=function(_,qs){
   content.innerHTML='';duelDraw();window.scrollTo(0,0);
+  if(qs&&qs.join&&window.AI_SERVER){var jc=String(qs.join).toUpperCase().replace(/[^A-Z0-9]/g,'').slice(0,6);history.replaceState(null,'',location.pathname+location.search+'#/duel');
+    var ci=$('#dcode');if(ci&&jc.length===6&&!DU.s&&!DU.busy){ci.value=jc;if(duelName()){DU.myName=duelName();duelJoin(jc);}else{toast('Nhập tên hiển thị rồi bấm Vào phòng');var nmI=$('#dname');if(nmI)nmI.focus();}}}
   setKeys(function(e){var s=DU.s;if(s&&s.phase==='reveal'&&DU.role==='host'&&(e.key==='Enter'||e.key==='ArrowRight')){duelAdvance();return true;}if(!s||s.phase!=='q')return;var n=keyIdx(e,s.opts[s.ids[s.i]].length);if(n>=0){duelPick(n);return true;}});
 };
 
