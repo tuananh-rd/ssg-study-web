@@ -36,13 +36,75 @@ var aiChats={};
 function aiChat(id){return aiChats[id]||(aiChats[id]={msgs:[],busy:false,draft:'',open:false});}
 function blocksText(bs){return bs.filter(function(b){return b&&b.type==='text';}).map(function(b){return b.text||'';}).join('');}
 
+/* ---- đính kèm ảnh / tệp ---- */
+var ATT_MAX_IMG=4,ATT_FILE_CHARS=60000,ATT_PDF_PAGES=60;
+function attRecent(chat){var idx=[];chat.msgs.forEach(function(m,i){if(m.role==='user'&&m.imgs&&m.imgs.length)idx.push(i);});return idx.slice(-2);}
+function attContent(chat,m,i,mode){
+  var text=typeof m.content==='string'?m.content:blocksText(m.content);
+  if(m.role!=='user'||!m.imgs||!m.imgs.length)return mode==='anthropic'?m.content:text;
+  if(attRecent(chat).indexOf(i)<0)return (mode==='anthropic'?[{type:'text',text:text+'\n[Người dùng đã gửi '+m.imgs.length+' ảnh ở lượt trước]'}]:text+'\n[Người dùng đã gửi '+m.imgs.length+' ảnh ở lượt trước]');
+  if(mode==='anthropic')return m.imgs.map(function(u){return {type:'image',source:{type:'base64',media_type:'image/jpeg',data:u.split(',')[1]}};}).concat([{type:'text',text:text}]);
+  return [{type:'text',text:text}].concat(m.imgs.map(function(u){return {type:'image_url',image_url:{url:u}};}));
+}
+var ATT_TEXT_RE=/\.(txt|md|markdown|csv|tsv|json|jsonl|xml|html?|css|js|jsx|ts|tsx|py|ipynb|java|c|h|cpp|hpp|cs|go|rs|rb|php|sh|bat|ps1|sql|r|m|yaml|yml|toml|ini|cfg|log|tex|rtf)$/i;
+function attImage(file){return new Promise(function(res,rej){var u=URL.createObjectURL(file),im=new Image();im.onload=function(){
+  var s=Math.min(1,1400/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=Math.max(1,Math.round(im.width*s));c.height=Math.max(1,Math.round(im.height*s));
+  var x=c.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,c.width,c.height);x.drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);
+  var q=.85,d=c.toDataURL('image/jpeg',q);while(d.length>1600000&&q>.35){q-=.1;d=c.toDataURL('image/jpeg',q);}
+  if(d.length>1750000)return rej(new Error('Ảnh quá lớn, hãy chụp lại nhỏ hơn'));res({kind:'img',name:file.name||'ảnh',url:d});};
+  im.onerror=function(){URL.revokeObjectURL(u);rej(new Error('Không đọc được ảnh '+(file.name||'')));};im.src=u;});}
+function attPdfLib(){if(window.pdfjsLib)return Promise.resolve(window.pdfjsLib);if(attPdfLib.p)return attPdfLib.p;
+  attPdfLib.p=new Promise(function(res,rej){var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';s.onload=function(){window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';res(window.pdfjsLib);};s.onerror=function(){attPdfLib.p=null;rej(new Error('Không tải được bộ đọc PDF'));};document.head.appendChild(s);});return attPdfLib.p;}
+async function attPdf(file){
+  var lib=await attPdfLib(),pdf=await lib.getDocument({data:await file.arrayBuffer()}).promise,out=[],n=Math.min(pdf.numPages,ATT_PDF_PAGES),len=0;
+  for(var p=1;p<=n&&len<ATT_FILE_CHARS;p++){var pg=await pdf.getPage(p),tc=await pg.getTextContent(),t=tc.items.map(function(i){return i.str;}).join(' ').replace(/\s+/g,' ').trim();if(t){out.push('--- Trang '+p+' ---\n'+t);len+=t.length;}}
+  var txt=out.join('\n\n');if(!txt.trim())throw new Error('PDF "'+file.name+'" là ảnh scan, không có chữ để đọc. Hãy chụp từng trang rồi gửi dạng ảnh.');
+  var cut=txt.length>ATT_FILE_CHARS;return {kind:'file',name:file.name,text:cut?txt.slice(0,ATT_FILE_CHARS):txt,note:'PDF '+pdf.numPages+' trang'+(cut||n<pdf.numPages?', chỉ đọc phần đầu':'')};}
+async function attText(file){
+  var t=await file.text();if(t.indexOf('\u0000')>=0)throw new Error('"'+file.name+'" là tệp nhị phân, chưa đọc được');
+  var cut=t.length>ATT_FILE_CHARS;return {kind:'file',name:file.name,text:cut?t.slice(0,ATT_FILE_CHARS):t,note:cut?'đã cắt còn '+ATT_FILE_CHARS+' ký tự đầu':''};}
+async function attAdd(chat,files){
+  chat.att=chat.att||[];chat.attBusy=(chat.attBusy||0);
+  for(var i=0;i<files.length;i++){
+    var f=files[i];chat.attBusy++;if(chat.attView)chat.attView();
+    try{
+      var isImg=/^image\//.test(f.type)||/\.(png|jpe?g|webp|gif|bmp)$/i.test(f.name);
+      if(isImg){if(chat.att.filter(function(x){return x.kind==='img';}).length>=ATT_MAX_IMG)throw new Error('Gửi tối đa '+ATT_MAX_IMG+' ảnh mỗi lần');if(f.size>25e6)throw new Error('Ảnh quá lớn (trên 25 MB)');chat.att.push(await attImage(f));}
+      else if(/pdf$/i.test(f.type)||/\.pdf$/i.test(f.name)){if(f.size>40e6)throw new Error('PDF quá lớn (trên 40 MB)');chat.att.push(await attPdf(f));}
+      else if(/^text\//.test(f.type)||ATT_TEXT_RE.test(f.name)){if(f.size>10e6)throw new Error('Tệp quá lớn (trên 10 MB)');chat.att.push(await attText(f));}
+      else throw new Error('Chưa đọc được loại tệp "'+f.name+'". Hãy gửi ảnh, PDF hoặc tệp văn bản/mã nguồn.');
+    }catch(e){if(typeof toast==='function')toast(e.message||'Không đọc được tệp');}
+    chat.attBusy--;if(chat.attView)chat.attView();
+  }
+}
+function attHtml(m){
+  if(!m.att||!m.att.length)return '';
+  return '<div class="att-row">'+m.att.map(function(x){return x.kind==='img'&&x.url?'<img class="att-th" src="'+x.url+'" alt="'+esc(x.name)+'">':'<span class="att-chip">'+ic('book')+'<span>'+esc(x.name)+'</span></span>';}).join('')+'</div>';}
+/** Thanh đính kèm + nút kẹp giấy + kéo thả/dán ảnh cho một khung chat. o: {btn,input,bar,box,ta} */
+function attBind(chat,o){
+  chat.att=chat.att||[];
+  chat.attView=function(){
+    o.bar.hidden=!(chat.att.length||chat.attBusy);
+    o.bar.innerHTML=chat.att.map(function(x,i){return '<span class="att-pill">'+(x.kind==='img'?'<img src="'+x.url+'" alt="">':ic('book'))+'<span class="att-n" title="'+esc(x.name+(x.note?' · '+x.note:''))+'">'+esc(x.name)+'</span><button type="button" data-rm="'+i+'" aria-label="Bỏ tệp">'+ic('close')+'</button></span>';}).join('')+(chat.attBusy?'<span class="att-pill busy"><i class="att-spin"></i> Đang đọc…</span>':'');
+    [].forEach.call(o.bar.querySelectorAll('[data-rm]'),function(b){b.onclick=function(){chat.att.splice(+b.dataset.rm,1);chat.attView();};});
+  };
+  o.btn.onclick=function(){o.input.click();};
+  o.input.onchange=function(){var fs=[].slice.call(o.input.files);o.input.value='';attAdd(chat,fs);};
+  o.ta.addEventListener('paste',function(e){var fs=[];[].forEach.call((e.clipboardData&&e.clipboardData.items)||[],function(it){if(it.kind==='file'){var f=it.getAsFile();if(f)fs.push(f);}});if(fs.length){e.preventDefault();attAdd(chat,fs);}});
+  var hasFiles=function(e){return e.dataTransfer&&[].indexOf.call(e.dataTransfer.types||[],'Files')>=0;};
+  o.box.addEventListener('dragover',function(e){if(hasFiles(e)){e.preventDefault();o.box.classList.add('att-drop');}});
+  o.box.addEventListener('dragleave',function(e){if(!o.box.contains(e.relatedTarget))o.box.classList.remove('att-drop');});
+  o.box.addEventListener('drop',function(e){if(hasFiles(e)){e.preventDefault();o.box.classList.remove('att-drop');attAdd(chat,[].slice.call(e.dataTransfer.files));}});
+  chat.attView();
+}
+var ATT_ACCEPT='image/*,.pdf,.txt,.md,.csv,.json,.py,.js,.ts,.html,.css,.java,.c,.cpp,.cs,.sql,.ipynb,.xml,.yml,.yaml,.log,.tex';
 function aiRequest(chat,opts){
   opts=opts||{};var p=aiProvider(),model=aiModel(),key=AiCfg.get().key,system=opts.system||AI_SYSTEM;
   if(AI_SRV)return {headers:{'content-type':'application/json','x-requested-with':'ssg-web'},
-    body:{mode:system===TR_SYSTEM?'translate':'chat',subject:SJ.id,messages:[{role:'system',content:system}].concat(chat.msgs.map(function(m){return {role:m.role,content:typeof m.content==='string'?m.content:blocksText(m.content)};}))}};
+    body:{mode:system===TR_SYSTEM?'translate':'chat',subject:SJ.id,messages:[{role:'system',content:system}].concat(chat.msgs.map(function(m,i){return {role:m.role,content:attContent(chat,m,i,'openai')};}))}};
   if(p==='openai')return {headers:{'content-type':'application/json',authorization:'Bearer '+key},
-    body:{model:model,stream:true,messages:[{role:'system',content:system}].concat(chat.msgs.map(function(m){return {role:m.role,content:typeof m.content==='string'?m.content:blocksText(m.content)};}))}};
-  var body={model:model,max_tokens:16000,stream:true,system:system,messages:chat.msgs.map(function(m){return {role:m.role,content:m.content};})};
+    body:{model:model,stream:true,messages:[{role:'system',content:system}].concat(chat.msgs.map(function(m,i){return {role:m.role,content:attContent(chat,m,i,'openai')};}))}};
+  var body={model:model,max_tokens:16000,stream:true,system:system,messages:chat.msgs.map(function(m,i){return {role:m.role,content:attContent(chat,m,i,'anthropic')};})};
   if(p==='anthropic-compat')return {headers:{'content-type':'application/json','x-api-key':key,authorization:'Bearer '+key,'anthropic-version':'2023-06-01'},body:body};
   var headers={'content-type':'application/json','x-api-key':key,'anthropic-version':'2026-10-21','anthropic-dangerous-direct-browser-access':'true'};
   body.output_config={effort:opts.effort||'medium'};
@@ -100,7 +162,10 @@ function aiErrText(e){
 }
 async function aiAsk(chat,text,shown,restoreDraft){
   if(chat.busy)return;
-  chat.msgs.push({role:'user',content:text,shown:shown});chat.busy=true;chat.err=null;chat.partial='';if(chat.view)chat.view();
+  var att=(chat.att||[]).slice();chat.att=[];
+  var fileTxt=att.filter(function(x){return x.kind==='file';}).map(function(x){return '\n\n[Tệp đính kèm: '+x.name+(x.note?' — '+x.note:'')+']\n```\n'+x.text+'\n```';}).join('');
+  var imgs=att.filter(function(x){return x.kind==='img';}).map(function(x){return x.url;});
+  chat.msgs.push({role:'user',content:text+fileTxt,shown:shown,imgs:imgs,att:att.map(function(x){return {kind:x.kind,name:x.name,url:x.kind==='img'?x.url:null,note:x.note||''};})});chat.busy=true;chat.err=null;chat.partial='';if(chat.attView)chat.attView();if(chat.view)chat.view();
   try{
     var r=await aiStream(chat,function(bs){chat.partial=blocksText(bs);if(chat.view)chat.view();});
     if(r.stop==='refusal')throw new Error('AI từ chối trả lời yêu cầu này. Thử hỏi lại theo cách khác.');
@@ -109,7 +174,7 @@ async function aiAsk(chat,text,shown,restoreDraft){
     if(aiProvider()==='anthropic'){var p=AI_MODELS[aiModel()].price,cost=(r.usage.in*p[0]+r.usage.out*p[1])/1e6;
       if(r.model!==aiModel())meta=r.model+' (dự phòng)'+(tokens?' · '+tokens+' token':'');meta+=' · ≈ $'+(cost<0.01?cost.toFixed(4):cost.toFixed(3));}
     chat.msgs.push({role:'assistant',content:aiEcho(r.blocks),shown:shownText,meta:meta});
-  }catch(e){chat.msgs.pop();chat.err=aiErrText(e);chat.retry=e.name==='AbortError'?null:{text:text,shown:shown};if(restoreDraft)chat.draft=shown;}
+  }catch(e){chat.msgs.pop();chat.att=att.concat(chat.att||[]);chat.err=aiErrText(e);chat.retry=e.name==='AbortError'?null:{text:text,shown:shown};if(restoreDraft)chat.draft=shown;}
   finally{chat.busy=false;chat.partial='';chat.ctrl=null;if(chat.view)chat.view();}
 }
 // Markdown nhẹ: tiêu đề, gạch đầu dòng, danh sách số, **đậm**, `code`
@@ -281,21 +346,22 @@ function aiPanel(box,q,getCtx,chat){
     box.innerHTML='<div class="ai-chat-head"><div class="ai-who"><span class="ai-badge sm">'+ic('spark')+'</span><div><b>Bố Tuấn Anh</b><div class="small muted">'+(AI_SRV?'Hỏi đáp riêng cho môn này':esc(aiModelName())+(aiProvider()==='anthropic'?'':' · bên thứ 3'))+'</div></div></div>'+
       '<span class="row" style="gap:2px"><button class="iconbtn sm" id="aiclr" title="Xoá hội thoại" aria-label="Xoá hội thoại">'+ic('trash')+'</button>'+(AI_SRV?'':'<button class="iconbtn sm" id="aicfg" title="Cài đặt chatbot" aria-label="Cài đặt chatbot">'+ic('gear')+'</button>')+'</span></div>'+
       '<div class="ai-log" aria-live="polite"></div><div class="ai-chips"></div>'+
-      '<div class="ai-compose"><textarea class="ai-input" rows="1" placeholder="Hỏi thêm về câu này…"></textarea><button class="btn sm" id="aistop" hidden>■ Dừng</button><button class="ai-send" id="aisend" aria-label="Gửi">'+ic('arrow')+'</button></div>'+
+      '<div class="att-bar" id="aiAtt" hidden></div><div class="ai-compose"><button class="iconbtn att-btn" id="aiAt" type="button" title="Đính kèm ảnh, PDF hoặc tệp văn bản" aria-label="Đính kèm">'+ic('clip')+'</button><input type="file" id="aiFile" multiple hidden accept="'+ATT_ACCEPT+'"><textarea class="ai-input" rows="1" placeholder="Hỏi thêm về câu này…"></textarea><button class="btn sm" id="aistop" hidden>■ Dừng</button><button class="ai-send" id="aisend" aria-label="Gửi">'+ic('arrow')+'</button></div>'+
       '<div class="ai-foot small muted"><span><kbd>Enter</kbd> gửi · <kbd>Shift</kbd>+<kbd>Enter</kbd> xuống dòng</span><span>Hội thoại mất khi tải lại trang</span></div>';
     var log=$('.ai-log',box),input=$('.ai-input',box),chips=$('.ai-chips',box);input.value=chat.draft||'';
     function grow(){input.style.height='auto';input.style.height=Math.min(input.scrollHeight,160)+'px';}
     input.oninput=function(){chat.draft=input.value;grow();};
     input.onkeydown=function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}if(e.key==='Escape')input.blur();};
+    attBind(chat,{btn:$('#aiAt',box),input:$('#aiFile',box),bar:$('#aiAtt',box),box:box,ta:input});
     $('#aistop',box).onclick=function(){if(chat.ctrl)chat.ctrl.abort();};
     $('#aisend',box).onclick=function(){send();};
     $('#aiclr',box).onclick=function(){if(!chat.busy){chat.msgs=[];chat.err=null;chat.retry=null;draw();}};
     if($('#aicfg',box))$('#aicfg',box).onclick=function(){show(true);};
     function ask(t,shown,restore){aiAsk(chat,chat.msgs.length?t:aiPrompt(q,getCtx())+'\n\nCâu hỏi của tôi: '+t,shown||t,restore);}
-    function send(t){t=(t||input.value).trim();if(!t||chat.busy)return;input.value='';chat.draft='';grow();ask(t,t,true);}
+    function send(t){t=(t||input.value).trim();if((!t&&!(chat.att&&chat.att.length))||chat.busy||chat.attBusy)return;if(!t)t='Hãy xem giúp tôi phần đính kèm này.';input.value='';chat.draft='';grow();ask(t,t,true);}
     function bubble(m,i){
       var asst=m.role==='assistant';
-      return '<div class="ai-msg '+m.role+'">'+(asst?'<span class="ai-badge xs">'+ic('spark')+'</span>':'')+'<div class="ai-bub"><div class="ai-msg-text">'+(asst?mdLite(m.shown):esc(m.shown))+'</div>'+
+      return '<div class="ai-msg '+m.role+'">'+(asst?'<span class="ai-badge xs">'+ic('spark')+'</span>':'')+'<div class="ai-bub"><div class="ai-msg-text">'+(asst?mdLite(m.shown):esc(m.shown)+attHtml(m))+'</div>'+
         (asst?'<div class="ai-msg-meta"><span>'+esc(m.meta||'')+'</span><button class="link-btn" data-copy="'+i+'">Chép</button></div>':'')+'</div></div>';
     }
     function draw(){
@@ -441,14 +507,15 @@ function dockBuild(){
   dock.el=document.createElement('aside');dock.el.className='dock';dock.el.setAttribute('aria-label','Bố Tuấn Anh');
   dock.el.innerHTML='<div class="dk-head"><div><b>Bố Tuấn Anh</b><div class="small muted" id="dkCtx"></div></div><div class="row" style="gap:6px"><button class="iconbtn sm dk-mx" id="dkMx" type="button" title="Phóng to / thu nhỏ (nhấp đúp tiêu đề để về mặc định)" aria-label="Phóng to">'+ic('expand')+'</button><button class="iconbtn sm" id="dkClr" type="button" title="Xoá hội thoại" aria-label="Xoá hội thoại">'+ic('trash')+'</button><button class="iconbtn sm" id="dkX" type="button" title="Đóng" aria-label="Đóng">'+ic('close')+'</button></div></div>'+
     '<div class="dk-log" id="dkLog"></div>'+
-    '<div class="dk-foot"><div id="dkQuote"></div><div id="dkChips" class="dk-chips"></div><form id="dkForm" class="dk-form"><textarea id="dkIn" rows="1" placeholder="Hỏi bố đi con…" aria-label="Câu hỏi"></textarea><button class="btn primary" type="submit" aria-label="Gửi">'+ic('arrow')+'</button></form></div>';
+    '<div class="dk-foot"><div id="dkQuote"></div><div id="dkChips" class="dk-chips"></div><div id="dkAtt" class="att-bar" hidden></div><form id="dkForm" class="dk-form"><button class="iconbtn att-btn" id="dkAt" type="button" title="Đính kèm ảnh, PDF hoặc tệp văn bản (cũng kéo thả hoặc dán ảnh được)" aria-label="Đính kèm">'+ic('clip')+'</button><input type="file" id="dkFile" multiple hidden accept="'+ATT_ACCEPT+'"><textarea id="dkIn" rows="1" placeholder="Hỏi bố đi con…" aria-label="Câu hỏi"></textarea><button class="btn primary" type="submit" aria-label="Gửi">'+ic('arrow')+'</button></form></div>';
   document.body.appendChild(dock.fab);document.body.appendChild(dock.el);
   var c=dock.chat;c.view=dockDraw;
   $('#dkX',dock.el).onclick=function(){dockToggle(false);};
   $('#dkClr',dock.el).onclick=function(){if(c.ctrl)try{c.ctrl.abort();}catch(e){}c.msgs=[];c.err=null;c.busy=false;dock.ctxKey='';dock.quote='';dockDraw();};
-  $('#dkForm',dock.el).onsubmit=function(e){e.preventDefault();var t=$('#dkIn',dock.el);var q=t.value.trim();if(!q||c.busy)return;t.value='';t.style.height='';dockSend(q);};
+  $('#dkForm',dock.el).onsubmit=function(e){e.preventDefault();var t=$('#dkIn',dock.el);var q=t.value.trim();if((!q&&!(c.att&&c.att.length))||c.busy||c.attBusy)return;if(!q)q='Hãy xem giúp tôi phần đính kèm này.';t.value='';t.style.height='';dockSend(q);};
   $('#dkIn',dock.el).addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();$('#dkForm',dock.el).requestSubmit();}});
   $('#dkIn',dock.el).addEventListener('input',function(){this.style.height='auto';this.style.height=Math.min(this.scrollHeight,120)+'px';});
+  attBind(dock.chat,{btn:$('#dkAt',dock.el),input:$('#dkFile',dock.el),bar:$('#dkAtt',dock.el),box:dock.el,ta:$('#dkIn',dock.el)});
   dockFloat();dockDraw();
 }
 
@@ -518,7 +585,7 @@ function dockDraw(){
   $('#dkCtx',dock.el).textContent=ctx.label?'Đang đọc: '+(ctx.label.length>70?ctx.label.slice(0,68)+'…':ctx.label):'Hỏi bất kỳ điều gì về môn '+SJ.name;
   var log=$('#dkLog',dock.el),nearEnd=log.scrollHeight-log.scrollTop-log.clientHeight<80,h='';
   if(!c.msgs.length&&!c.busy)h='<div class="dk-empty"><p><b>Có gì không hiểu thì hỏi bố.</b></p><p>Bôi đen đoạn con thấy khó hiểu để bố giảng riêng, hoặc gõ câu hỏi về mục con đang đọc. Đừng để bố phải nhắc.</p></div>';
-  c.msgs.forEach(function(m){h+=m.role==='user'?'<div class="dk-u"><div>'+esc(m.shown||'')+'</div></div>':'<div class="dk-a" data-raw="'+esc(m.shown||'')+'"><div class="dk-who">'+ic('spark')+'<b>Bố Tuấn Anh</b><button type="button" class="md-copy">Chép</button></div>'+mdLite(m.shown||'')+'</div>';});
+  c.msgs.forEach(function(m){h+=m.role==='user'?'<div class="dk-u"><div>'+esc(m.shown||'')+attHtml(m)+'</div></div>':'<div class="dk-a" data-raw="'+esc(m.shown||'')+'"><div class="dk-who">'+ic('spark')+'<b>Bố Tuấn Anh</b><button type="button" class="md-copy">Chép</button></div>'+mdLite(m.shown||'')+'</div>';});
   if(c.busy)h+='<div class="dk-a">'+(c.partial?mdLite(c.partial):'<span class="typing"><i></i><i></i><i></i></span>')+'</div>';
   if(c.err)h+='<div class="dk-a ai-err">'+esc(c.err)+(c.retry?' <button class="btn sm" id="dkRetry" type="button">Thử lại</button>':'')+'</div>';
   log.innerHTML=h;if(nearEnd||c.busy)log.scrollTop=log.scrollHeight;

@@ -993,3 +993,14 @@ body.sr-open{overflow:hidden}
 .prose p.fig-only .fig-ph{display:flex;justify-content:center;padding:14px;white-space:normal}
 /* Tập trung: vẫn hiện nút Hỏi Bố, đặt cao hơn thanh đồng hồ không che nội dung */
 body.focus-mode .dock-fab{display:inline-flex}
+
+/* ===== Đính kèm ảnh / tệp cho chatbot ===== */
+.att-bar{display:flex;flex-wrap:wrap;gap:6px;padding:8px 12px 0}.att-bar[hidden]{display:none}
+.att-pill{display:inline-flex;align-items:center;gap:6px;max-width:190px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:3px 4px 3px 4px;font-size:.78rem}
+.att-pill img{width:24px;height:24px;border-radius:50%;object-fit:cover;flex:none}.att-pill>svg{width:16px;height:16px;margin-left:6px;flex:none;color:var(--primary)}
+.att-pill .att-n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}.att-pill button{border:0;background:none;color:var(--muted);cursor:pointer;display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;padding:0;flex:none}.att-pill button:hover{background:var(--line);color:var(--text)}.att-pill button svg{width:12px;height:12px}
+.att-pill.busy{padding:3px 10px;color:var(--muted)}.att-spin{width:12px;height:12px;border:2px solid var(--line);border-top-color:var(--primary);border-radius:50%;animation:attsp .8s linear infinite;display:inline-block}@keyframes attsp{to{transform:rotate(360deg)}}
+.att-btn{flex:none;align-self:flex-end;color:var(--muted)}.att-btn:hover{color:var(--primary)}
+.att-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.att-th{width:84px;height:64px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,.35);cursor:zoom-in}.att-chip{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.18);border-radius:8px;padding:3px 8px;font-size:.78rem;max-width:100%}.att-chip svg{width:14px;height:14px;flex:none}.att-chip span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dock.att-drop,.ai-chat.att-drop{outline:3px dashed var(--primary);outline-offset:-6px}
+.ai-compose .att-btn{margin-bottom:2px}
