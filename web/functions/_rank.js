@@ -39,7 +39,8 @@ export async function scoreEvents(env, uid, evs) {
       const d = e.detail || {}, r = await get(dayOf(e.ts));
       if (e.type === 'quiz_answer') { if (r.quiz < CAPS.quiz) { r.quiz++; if (d.ok) r.ok++; r.dirty = true; } }
       else if (e.type === 'read_time') { const s = num(d.secs, 120); if (s && r.read_sec < CAPS.readSec) { r.read_sec = Math.min(CAPS.readSec, r.read_sec + s); r.dirty = true; } }
-      else if (e.type === 'exam_finish') { if (num(d.total, 1000) >= 10 && r.exam_pts < CAPS.exam) { r.exam_pts = Math.min(CAPS.exam, r.exam_pts + 10 + Math.round(num(d.score, 10) * 3)); r.dirty = true; } }
+      else if (e.type === 'exam_finish') {   // chỉ có điểm khi làm ít nhất một nửa số câu
+        const tot = num(d.total, 1000), ans = d.answered === undefined ? (+d.right > 0 ? tot : 0) : num(d.answered, 1000); if (tot >= 10 && ans >= tot / 2 && r.exam_pts < CAPS.exam) { r.exam_pts = Math.min(CAPS.exam, r.exam_pts + 10 + Math.round(num(d.score, 10) * 3)); r.dirty = true; } }
       else if (e.type === 'duel_finish') { if (r.duel_pts < CAPS.duel) { r.duel_pts = Math.min(CAPS.duel, r.duel_pts + 5 + (+d.rank === 1 && +d.players >= 2 ? 10 : 0)); r.dirty = true; } }
       else if (e.type === 'focus_session') { const m = Math.round(num(d.min, 180)); if (m && r.focus_min < CAPS.focus) { r.focus_min = Math.min(CAPS.focus, r.focus_min + m); r.dirty = true; } }
     }

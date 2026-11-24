@@ -91,18 +91,18 @@ function trackFlush(){
   if(TRK.q.length){clearTimeout(TRK.t);TRK.t=setTimeout(trackFlush,1500);}
 }
 addEventListener('pagehide',trackFlush);document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')trackFlush();});
-// Đo thời gian đọc lý thuyết (chỉ tính khi đang xem bài, tab hiển thị và có thao tác trong 45 giây gần nhất) → điểm bảng xếp hạng
+// Đo thời gian đọc lý thuyết (chỉ tính khi đang xem bài, tab hiển thị và có thao tác trong 2,5 phút gần nhất (đọc chữ thường không đụng chuột)) → điểm bảng xếp hạng
 var RT={sec:0,mod:'',act:Date.now()};
 ['mousemove','keydown','scroll','touchstart','pointerdown','wheel'].forEach(function(ev){addEventListener(ev,function(){RT.act=Date.now();},{passive:true,capture:true});});
 function rtFlush(){if(RT.sec>=5){track('read_time',{mod:RT.mod,secs:Math.min(120,RT.sec)});}RT.sec=0;}
 setInterval(function(){
   var m=/^#\/learn\/([^?\/]+)/.exec(location.hash||'');
-  if(m&&document.visibilityState==='visible'&&Date.now()-RT.act<45000&&document.hasFocus()){if(RT.mod&&RT.mod!==m[1])rtFlush();RT.mod=m[1];RT.sec+=5;if(RT.sec>=60)rtFlush();}
+  if(m&&document.visibilityState==='visible'&&Date.now()-RT.act<150000){if(RT.mod&&RT.mod!==m[1])rtFlush();RT.mod=m[1];RT.sec+=5;if(RT.sec>=30)rtFlush();}
   else if(RT.sec)rtFlush();
 },5000);
 document.addEventListener('visibilitychange',function(){if(document.visibilityState==='hidden')rtFlush();});
-function record(q,ok){
-  track('quiz_answer',{id:q.id,ok:!!ok,src:q.bank?'bank':(q.type||'q'),mod:q.module||'',ref:q.ref||'',retry:q._retry||0});
+function record(q,ok,quiet){
+  if(!quiet)track('quiz_answer',{id:q.id,ok:!!ok,src:q.bank?'bank':(q.type||'q'),mod:q.module||'',ref:q.ref||'',retry:q._retry||0});
   var a=P.answers[q.id]||(P.answers[q.id]={seen:0,correct:0});a.seen++;if(ok)a.correct++;a.lastOk=ok;
   var r=P.recent[q.module]||(P.recent[q.module]=[]);r.push(ok?1:0);if(r.length>20)r.splice(0,r.length-20);
   var m=P.mistakes[q.id];
@@ -796,9 +796,9 @@ function examRun(){
 function submitExam(auto){
   var E=P.examInProgress;if(!E)return;clearTimers();
   var by={},right=0,wrong=[];
-  E.ids.forEach(function(id){var q=QMAP[id],ok=E.answers[id]===T(q,'en').correct;if(ok)right++;else wrong.push(id);var b=by[q.module]||(by[q.module]=[0,0]);b[1]++;if(ok)b[0]++;record(q,ok);});
+  E.ids.forEach(function(id){var q=QMAP[id],ok=E.answers[id]===T(q,'en').correct;if(ok)right++;else wrong.push(id);var b=by[q.module]||(by[q.module]=[0,0]);b[1]++;if(ok)b[0]++;record(q,ok,E.answers[id]==null);});   // câu bỏ trống: vẫn tính là sai trong tiến độ nhưng không ghi nhật ký/không tính điểm
   var bm={};Object.keys(by).forEach(function(k){bm[k]=by[k][0]/by[k][1];});
-  track('exam_finish',{right:right,total:E.ids.length,score:Math.round(right/E.ids.length*100)/10,auto:!!auto});
+  track('exam_finish',{answered:E.ids.filter(function(x){return E.answers[x]!=null;}).length,right:right,total:E.ids.length,score:Math.round(right/E.ids.length*100)/10,auto:!!auto});
   P.exams.push({date:new Date().toISOString(),config:E.config,score:Math.round(right/E.ids.length*100)/10,right:right,total:E.ids.length,byModule:bm,past:E.past||null,seconds:Math.round(Math.min(Date.now()-E.startedAt,E.endsAt-E.startedAt)/1000),wrong:wrong,answers:E.answers});
   P.examInProgress=null;save();if(auto)toast('Hết giờ — bài đã được tự động nộp');
   location.hash='#/exam?r='+(P.exams.length-1);

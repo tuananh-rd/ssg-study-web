@@ -52,6 +52,14 @@ export const canViewLogs = u => !!u && u.role === 'admin' && !!u.can_logs;
 export async function handleLogs(request, env, user, sub) {
   if (!canViewLogs(user)) return bad('Bạn chưa được cấp quyền xem nhật ký', 403);
   const url = new URL(request.url), p = url.searchParams;
+  if (sub === 'scores') {   // nhật ký điểm: điểm từng người theo ngày + tổng
+    const uid = +p.get('user') || 0, q = async (sql, ...b) => (await env.DB.prepare(sql).bind(...b).all()).results;
+    const [rows, totals] = await Promise.all([
+      q(`SELECT s.user_id,u.name,u.email,s.day,s.quiz,s.ok,s.read_sec,s.exam_pts,s.duel_pts,s.focus_min,s.pts,u.no_rank FROM score_daily s JOIN users u ON u.id=s.user_id ${uid ? 'WHERE s.user_id=?' : ''} ORDER BY s.day DESC,s.pts DESC LIMIT 300`, ...(uid ? [uid] : [])),
+      q('SELECT s.user_id,u.name,u.email,u.no_rank,SUM(s.pts) pts,SUM(s.quiz) quiz,SUM(s.read_sec) rsec FROM score_daily s JOIN users u ON u.id=s.user_id GROUP BY s.user_id ORDER BY pts DESC'),
+    ]);
+    return json({ rows, totals });
+  }
   if (sub === 'summary') {
     const day = Date.now() - 86400000, week = Date.now() - 7 * 86400000;
     const q = async (sql, ...b) => (await env.DB.prepare(sql).bind(...b).all()).results;

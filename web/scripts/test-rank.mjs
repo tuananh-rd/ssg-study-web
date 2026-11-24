@@ -6,7 +6,7 @@ const ck = (l.headers.get('set-cookie') || '').split(';')[0];
 const call = async (p, m, b) => { const r = await fetch(B + p, { method: m || 'GET', headers: { ...h, cookie: ck }, body: b ? JSON.stringify(b) : undefined }); return { s: r.status, j: await r.json().catch(() => null) }; };
 let fails = 0; const ok = (c, m) => { console.log((c ? 'OK   ' : 'FAIL ') + m); if (!c) fails++; };
 const now = Date.now(), ev = (type, detail) => ({ type, ts: now, detail });
-let r = await call('/api/rank'); ok(r.s === 200 && r.j.rows.length === 0 && r.j.me.total === 0, 'ban đầu chưa có điểm');
+let r = await call('/api/rank'); ok(r.s === 200 && r.j.rows.every(x => x.pts === 0) && r.j.me.total === 0, 'ban đầu chưa có điểm');
 const evs = [];
 for (let i = 0; i < 10; i++) evs.push(ev('quiz_answer', { id: i, ok: i < 6 }));              // 10 câu, 6 đúng → 16
 evs.push(ev('read_time', { secs: 120 }), ev('read_time', { secs: 60 }));                      // 3 phút → +6
@@ -14,7 +14,7 @@ evs.push(ev('exam_finish', { right: 8, total: 10, score: 8 }));                 
 evs.push(ev('exam_finish', { right: 1, total: 5, score: 2 }));                                // dưới 10 câu → 0
 evs.push(ev('duel_finish', { rank: 1, players: 3 }), ev('duel_finish', { rank: 2, players: 3 })); // 15 + 5 = 20
 evs.push(ev('focus_session', { min: 25 }));                                                   // +25
-r = await call('/api/event', 'POST', { events: evs }); ok(r.s === 200 && r.j.n === evs.length, 'gửi sự kiện');
+r = await call('/api/event', 'POST', { events: evs }); ok(r.s === 200 && r.j.n === evs.length - 2, 'gửi sự kiện (read_time không ghi nhật ký)');
 r = await call('/api/rank?period=week'); const me = r.j.rows[0];
 // 10+6 + 6 + 34 + 20 + 25 = 101
 ok(me && me.pts === 101 && me.me && me.rank === 1, 'tổng điểm 101: ' + (me && me.pts));
