@@ -1,7 +1,7 @@
 /* Bảng xếp hạng học tập: điểm tính ở máy chủ từ quiz, thời gian đọc lý thuyết, thi thử, thi đấu, tập trung. */
 (function(){
 if(window.WebRank)return;
-var PER='week',HP='week',CACHE={},ov=null,fab=null;
+var PER='all',HP='all',CACHE={},ov=null,fab=null;
 function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
 function api(p){return fetch('/api/rank?period='+p,{credentials:'same-origin',headers:{'x-requested-with':'ssg-web'}}).then(function(r){if(!r.ok)throw new Error('Không tải được bảng xếp hạng');return r.json();});}
 function svg(p,w){return '<svg viewBox="0 0 24 24" width="'+(w||18)+'" height="'+(w||18)+'" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+p+'</svg>';}
@@ -92,7 +92,7 @@ function load(p,b,cur){
   if(CACHE[p]){draw(CACHE[p],b);}else b.innerHTML='<div class="rk-empty">Đang tải…</div>';
   api(p).then(function(d){CACHE[p]=d;if(cur()===p&&b.isConnected)draw(d,b);}).catch(function(e){if(!CACHE[p])b.innerHTML='<div class="rk-empty">'+esc(e.message)+'</div>';});
 }
-function tabs(cur){return '<div class="rk-tabs">'+[['week','Tuần'],['month','30 ngày'],['all','Tất cả']].map(function(t){return '<button type="button" data-p="'+t[0]+'" class="'+(t[0]===cur?'on':'')+'">'+t[1]+'</button>';}).join('')+'</div>';}
+function tabs(cur){return '';return '<div class="rk-tabs">'+[['week','Tuần'],['month','30 ngày'],['all','Tất cả']].map(function(t){return '<button type="button" data-p="'+t[0]+'" class="'+(t[0]===cur?'on':'')+'">'+t[1]+'</button>';}).join('')+'</div>';}
 function wire(root,get,set,b){root.querySelectorAll('.rk-tabs button').forEach(function(bt){bt.onclick=function(){set(bt.dataset.p);root.querySelectorAll('.rk-tabs button').forEach(function(x){x.classList.toggle('on',x===bt);});load(get(),b,get);};});}
 function mount(){
   var el=document.getElementById('rkhome');if(!el)return;css();
