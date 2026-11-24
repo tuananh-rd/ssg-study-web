@@ -3,6 +3,7 @@
 import { json, bad } from './_lib.js';
 import { logEvent } from './_log.js';
 import { titlesFor } from './_rank.js';
+import { avatarVersions } from './_profile.js';
 
 const MAX_LEN = 500, MIN_GAP = 900, KEEP_MS = 30 * 86400000, FIRST = 50;
 const clean = s => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F​-‏‪-‮⁦-⁩]/g, '').replace(/\r\n?/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
@@ -31,13 +32,15 @@ export async function handleChat(request, env, user, sub, readJson, arg) {
     const q = (new URL(request.url).searchParams.get('q') || '').trim().slice(0, 30), now = Date.now();
     const rows = (await env.DB.prepare("SELECT u.id,u.name,u.role,(p.ts>?) AS on_ FROM users u LEFT JOIN presence p ON p.user_id=u.id WHERE u.status='active' AND u.id<>? AND u.name LIKE ? ESCAPE '\\' ORDER BY on_ DESC, (u.name LIKE ? ESCAPE '\\') DESC, u.name COLLATE NOCASE LIMIT 8").bind(now - ONLINE_MS, user.id, '%' + likeEsc(q) + '%', likeEsc(q) + '%').all()).results;
     const tt = await titlesFor(env, rows.map(r => r.id));
-    return json({ users: rows.map(r => ({ id: r.id, name: r.name, role: r.role, on: !!r.on_, tt: tt.get(r.id) || null })) });
+    const pv = await avatarVersions(env, rows.map(r => r.id));
+    return json({ users: rows.map(r => ({ id: r.id, name: r.name, role: r.role, on: !!r.on_, tt: tt.get(r.id) || null, pv: pv.get(r.id) || 0 })) });
   }
   if (m === 'GET' && sub === 'online') {
     await touchPresence(env, user);
     const rows = (await env.DB.prepare("SELECT u.id,u.name,u.role,p.ts FROM presence p JOIN users u ON u.id=p.user_id WHERE p.ts>? AND u.status='active' ORDER BY (u.role='admin') DESC, u.name COLLATE NOCASE LIMIT 200").bind(Date.now() - ONLINE_MS).all()).results;
     const tt = await titlesFor(env, rows.map(r => r.id));
-    return json({ users: rows.map(r => ({ id: r.id, name: r.name, role: r.role, ts: r.ts, tt: tt.get(r.id) || null })), me: user.id });
+    const pv = await avatarVersions(env, rows.map(r => r.id));
+    return json({ users: rows.map(r => ({ id: r.id, name: r.name, role: r.role, ts: r.ts, tt: tt.get(r.id) || null, pv: pv.get(r.id) || 0 })), me: user.id });
   }
   if (m === 'GET' && !sub) {
     const p = new URL(request.url).searchParams, after = Math.max(0, +p.get('after') || 0);

@@ -6,3 +6,5 @@
   Cache-Control: no-cache
 /rank.js
   Cache-Control: no-cache
+/profile.js
+  Cache-Control: no-cache

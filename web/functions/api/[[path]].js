@@ -6,6 +6,7 @@ import { handleAi } from '../_ai.js';
 import { handleDuel } from '../_duel.js';
 import { handleChat, touchPresence } from '../_chat.js';
 import { handleRank } from '../_rank.js';
+import { handleProfile } from '../_profile.js';
 import { VERSION } from '../_live.js';
 import { logEvent, handleEvent, handleLogs, canViewLogs } from '../_log.js';
 
@@ -63,6 +64,7 @@ export async function onRequest({ request, env, params }) {
       const iv = await env.DB.prepare("SELECT i.id,i.code,i.subj,u.name FROM duel_invites i JOIN users u ON u.id=i.from_user JOIN duel_rooms r ON r.code=i.code AND r.last>? AND r.phase IN ('wait','ready') WHERE i.to_user=? AND i.ts>? ORDER BY i.id DESC LIMIT 1").bind(nowT - 20000, user.id, nowT - 120000).first();
       return json({ v: VERSION, rl: rl ? rl.id : 0, rlmsg: rl ? rl.msg || '' : '', inv: iv ? { id: iv.id, code: iv.code, subj: iv.subj, from: iv.name } : null });
     }
+    if (a === 'profile') return handleProfile(request, env, user, b, readJson, c);
     if (a === 'rank' && m === 'GET') return handleRank(request, env, user);
     if (a === 'chat') return handleChat(request, env, user, b, readJson, c);
     if (a === 'ai' && m === 'POST') return handleAi(request, env, user, readJson, logEvent);

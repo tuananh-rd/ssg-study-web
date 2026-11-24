@@ -17,7 +17,7 @@ var I={
 var AVC=['#e5484d','#e5832d','#d6a100','#3f9b5f','#1c93a8','#3b5bdb','#7a4fd1','#c0368f'];
 function avc(id){return AVC[Math.abs(+id||0)%AVC.length];}
 function ini(n){n=String(n||'?').trim().split(/\s+/);return (n[n.length-1]||'?').charAt(0).toUpperCase();}
-function av(r,sz){return '<span class="rk-av t'+(r.ti||0)+'" style="--s:'+sz+'px;--c:'+r.tc+';background:'+avc(r.id)+'">'+esc(ini(r.name))+'</span>';}
+function av(r,sz){return '<span class="rk-av t'+(r.ti||0)+'" data-pf="'+r.id+'" title="Xem hồ sơ" style="--s:'+sz+'px;--c:'+r.tc+';background:'+avc(r.id)+'">'+(r.pv?'<img src="/api/profile/avatar/'+r.id+'?v='+r.pv+'" alt="" loading="lazy">':esc(ini(r.name)))+'</span>';}
 function badge(n,c,ti){return '<span class="rk-tt t'+(ti||0)+'" style="background-color:'+c+';--c:'+c+'">'+esc(n)+'</span>';}
 function fx(ti){if(ti<2)return '';var h='<div class="rk-fx">';for(var i=0;i<10;i++)h+='<i style="--k:'+i+'"></i>';return h+'</div>';}
 function ptsTxt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
@@ -25,6 +25,8 @@ var RED=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matche
 function countUp(el,to){if(RED||!to){el.textContent=ptsTxt(to);return;}var t0=null,d=Math.min(1200,300+to*0.6);function f(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/d);k=1-Math.pow(1-k,3);el.textContent=ptsTxt(Math.round(to*k));if(k<1&&el.isConnected)requestAnimationFrame(f);}requestAnimationFrame(f);}
 
 function css(){if(document.getElementById('rk-css'))return;var s=document.createElement('style');s.id='rk-css';s.textContent=
+'body.focus-mode #rk-fab,body.focus-mode #rk-ov{display:none!important}'+
+'.rk-av[data-pf]{cursor:pointer}.rk-av img{position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover}'+
 '#rk-fab{position:fixed;left:14px;bottom:186px;z-index:79;width:50px;height:50px;border-radius:50%;border:1px solid var(--line,#ddd);background:var(--panel,#fff);color:var(--primary,#3b5bdb);display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 20px rgba(15,23,42,.25);transition:transform .15s}#rk-fab:hover{transform:scale(1.07)}'+
 '#rk-ov{position:fixed;inset:0;z-index:210;display:flex;align-items:center;justify-content:center;padding:14px;background:rgba(10,14,24,.55);backdrop-filter:blur(5px);white-space:normal}'+
 '#rk-box{box-sizing:border-box;width:min(720px,100%);max-height:94vh;overflow:auto;background:var(--panel,#fff);color:var(--text,#111);border:1px solid var(--line,#ddd);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.4);padding:20px 22px;font-weight:400}'+
@@ -115,6 +117,7 @@ function start(){
   if(fab||document.getElementById('rk-fab')||document.getElementById('rkhome'))return;
   fab=document.createElement('button');fab.id='rk-fab';fab.type='button';fab.title='Bảng xếp hạng';fab.setAttribute('aria-label','Bảng xếp hạng');fab.innerHTML=svg(I.trophy,22);fab.onclick=open;document.body.appendChild(fab);
 }
+document.addEventListener('profile-updated',function(){CACHE={};if(document.getElementById('rkhome'))mount();else if(ov)load(PER);});
 window.WebRank={start:start,open:open,mount:mount};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();

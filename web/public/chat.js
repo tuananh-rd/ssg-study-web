@@ -171,7 +171,7 @@ function loadOnline(){
   api('chat/online').then(function(j){
     if(j.error||!j.users)return;var o=$('#wc-on');if(!o)return;A.on=j.users.length;var n=$('#wc-onn');if(n)n.textContent=A.on;
     o.innerHTML='<div class="wc-onh">'+j.users.length+' người đang online</div>'+(j.users.length?j.users.map(function(u){var me=u.id===ME.id;
-      return '<div class="wc-ou"><span class="wc-av'+(u.tt?' rk-av t'+(u.tt[2]|0):'')+'" style="--s:34px;--c:'+(u.tt?esc(u.tt[1]):'#888')+';background:hsl('+hue(u.name)+',55%,45%)">'+esc(u.name.trim().charAt(0).toUpperCase()||'?')+'<i class="wc-dot sm"></i></span><span class="wc-on-n">'+nameHtml({name:u.name,role:u.role,tt:u.tt})+(me?' <em class="wc-me">(Bạn)</em>':'')+'</span></div>';}).join(''):'<div class="wc-empty">Chưa có ai.</div>');
+      return '<div class="wc-ou"><span class="wc-av'+(u.tt?' rk-av t'+(u.tt[2]|0):'')+'" data-pf="'+u.id+'" title="Xem hồ sơ" style="--s:34px;--c:'+(u.tt?esc(u.tt[1]):'#888')+';background:hsl('+hue(u.name)+',55%,45%);cursor:pointer">'+(u.pv?'<img src="/api/profile/avatar/'+u.id+'?v='+u.pv+'" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;border-radius:50%;object-fit:cover">':esc(u.name.trim().charAt(0).toUpperCase()||'?'))+'<i class="wc-dot sm"></i></span><span class="wc-on-n">'+nameHtml({name:u.name,role:u.role,tt:u.tt})+(me?' <em class="wc-me">(Bạn)</em>':'')+'</span></div>';}).join(''):'<div class="wc-empty">Chưa có ai.</div>');
   }).catch(function(){});
 }
 function reloadCheck(j,initial){

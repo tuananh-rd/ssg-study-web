@@ -69,14 +69,14 @@ export async function handleRank(request, env, user) {
   const since = period === 'all' ? '0000-00-00' : dayOf(now - (period === 'week' ? 6 : 29) * 86400000);
   const q = async (sql, ...b) => (await env.DB.prepare(sql).bind(...b).all()).results;
   const [top, life, mine] = await Promise.all([
-    q(`SELECT u.id id,u.name,u.email,u.role,COALESCE(SUM(s.pts),0) pts,COALESCE(SUM(s.quiz),0) quiz,COALESCE(SUM(s.ok),0) ok,COALESCE(SUM(s.read_sec),0) rsec,COALESCE(SUM(s.focus_min),0) focus
+    q(`SELECT u.id id,u.name,u.email,u.role,COALESCE(SUM(s.pts),0) pts,COALESCE(SUM(s.quiz),0) quiz,COALESCE(SUM(s.ok),0) ok,COALESCE(SUM(s.read_sec),0) rsec,COALESCE(SUM(s.focus_min),0) focus,(SELECT av_ts FROM profiles p WHERE p.user_id=u.id AND p.avatar IS NOT NULL) pv
        FROM users u LEFT JOIN score_daily s ON s.user_id=u.id AND s.day>=? WHERE u.status='active' AND u.no_rank=0 GROUP BY u.id ORDER BY pts DESC,u.id LIMIT 100`, since),
     q('SELECT user_id id,SUM(pts) pts FROM score_daily GROUP BY user_id'),
     q('SELECT day,pts FROM score_daily WHERE user_id=? AND pts>0 ORDER BY day DESC LIMIT 400', user.id),
   ]);
   const total = new Map(life.map(x => [x.id, x.pts]));
   let last = null, rank = 0;
-  const rows = top.map((r, i) => { if (r.pts !== last) { rank = i + 1; last = r.pts; } const t = titleOf(total.get(r.id) || 0); return { rank, id: r.id, name: r.name, email: r.email, admin: r.role === 'admin', pts: r.pts, quiz: r.quiz, ok: r.ok, min: Math.floor(r.rsec / 60), focus: r.focus, title: t.name, tc: t.c, ti: t.i, me: r.id === user.id }; });
+  const rows = top.map((r, i) => { if (r.pts !== last) { rank = i + 1; last = r.pts; } const t = titleOf(total.get(r.id) || 0); return { rank, id: r.id, pv: r.pv || 0, name: r.name, email: r.email, admin: r.role === 'admin', pts: r.pts, quiz: r.quiz, ok: r.ok, min: Math.floor(r.rsec / 60), focus: r.focus, title: t.name, tc: t.c, ti: t.i, me: r.id === user.id }; });
   // thông tin của chính người xem (kể cả khi ngoài top 100)
   const myTotal = total.get(user.id) || 0, mt = titleOf(myTotal);
   const days = new Set(mine.map(x => x.day)); let streak = 0, d = now; if (!days.has(dayOf(d))) d -= 86400000; while (days.has(dayOf(d))) { streak++; d -= 86400000; }

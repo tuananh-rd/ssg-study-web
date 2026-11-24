@@ -89,3 +89,6 @@ CREATE TABLE IF NOT EXISTS score_daily (
   exam_pts INTEGER NOT NULL DEFAULT 0, duel_pts INTEGER NOT NULL DEFAULT 0, focus_min INTEGER NOT NULL DEFAULT 0,
   pts INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (user_id, day));
 CREATE INDEX IF NOT EXISTS idx_score_day ON score_daily (day);
+
+-- Hồ sơ người dùng (ảnh đại diện, câu nói, giới thiệu, màu nhấn)
+CREATE TABLE IF NOT EXISTS profiles (user_id INTEGER PRIMARY KEY, bio TEXT, motto TEXT, accent TEXT, avatar TEXT, av_ts INTEGER, updated_at INTEGER NOT NULL);
