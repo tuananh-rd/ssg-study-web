@@ -38,7 +38,12 @@ var CSS='#wc-fab{position:fixed;left:18px;bottom:20px;z-index:80;width:50px;heig
 '#wc-jump{position:absolute;left:50%;transform:translateX(-50%);bottom:76px;z-index:2;display:none;border:0;border-radius:999px;padding:6px 14px;background:var(--primary,#3b5bdb);color:var(--primary-ink,var(--ink,#fff));font:700 .8rem system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3)}#wc-jump.on{display:block}'+
 '#wc-form{display:flex;gap:8px;align-items:flex-end;padding:10px;border-top:1px solid var(--line,#ddd);background:var(--panel,#fff)}#wc-in{flex:1;resize:none;max-height:110px;border:1px solid var(--line,#ddd);border-radius:12px;padding:9px 12px;font:inherit;font-size:.92rem;background:var(--panel2,#f6f7fb);color:var(--text,#111);outline:0}#wc-in:focus{border-color:var(--primary,#3b5bdb)}'+
 '#wc-send{border:0;background:var(--primary,#3b5bdb);color:var(--primary-ink,var(--ink,#fff));width:40px;height:40px;border-radius:12px;cursor:pointer;display:grid;place-items:center;flex:none}#wc-send:disabled{opacity:.5;cursor:default}'+
-'.wc-empty{margin:auto;text-align:center;color:var(--muted,#667);font-size:.9rem;padding:20px}.wc-err{color:#e03131;font-size:.78rem;padding:0 12px 6px;background:var(--panel,#fff)}'+
+'.wc-onb{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line,#ddd);background:var(--panel2,#f6f7fb);color:var(--text,#111);border-radius:999px;padding:4px 10px;font:600 .76rem system-ui,sans-serif;cursor:pointer}.wc-onb:hover,.wc-onb.on{border-color:var(--primary,#3b5bdb);color:var(--primary,#3b5bdb)}'+
+'.wc-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb344;box-shadow:0 0 0 0 rgba(47,179,68,.6);animation:wcpulse 2s infinite}.wc-dot.sm{position:absolute;right:-1px;bottom:-1px;width:10px;height:10px;border:2px solid var(--panel,#fff);box-sizing:border-box;animation:none}'+
+'@keyframes wcpulse{70%{box-shadow:0 0 0 6px rgba(47,179,68,0)}100%{box-shadow:0 0 0 0 rgba(47,179,68,0)}}'+
+'#wc-on{flex:1;overflow-y:auto;padding:10px 14px;background:var(--panel2,#f6f7fb)}#wc-on[hidden]{display:none}.wc-onh{font:700 .78rem system-ui,sans-serif;color:var(--muted,#667);text-transform:uppercase;letter-spacing:.05em;margin:2px 0 10px}'+
+'.wc-ou{display:flex;align-items:center;gap:10px;padding:7px 8px;border-radius:10px}.wc-ou:hover{background:var(--panel,#fff)}.wc-av{position:relative;width:34px;height:34px;border-radius:50%;color:#fff;display:grid;place-items:center;font-weight:800;flex:none}.wc-on-n{display:flex;align-items:center;gap:6px;min-width:0;word-break:break-word}.wc-me{font-style:normal;color:var(--muted,#667);font-size:.8rem}'+
+'#wc-list[hidden]{display:none}.wc-empty{margin:auto;text-align:center;color:var(--muted,#667);font-size:.9rem;padding:20px}.wc-err{color:#e03131;font-size:.78rem;padding:0 12px 6px;background:var(--panel,#fff)}'+
 'body.focus-mode #wc-fab,body.focus-mode #wc-prev{display:none!important}'+
 '@media(max-width:760px){#wc-fab{left:14px;bottom:78px}#wc-prev{left:14px;bottom:138px}#wc-panel{left:0;right:0;bottom:0;top:0;width:100vw;height:100dvh;border-radius:0}.wc-del{display:block}}';
 function hue(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return h;}
@@ -50,10 +55,11 @@ function build(){
   var fab=document.createElement('button');fab.id='wc-fab';fab.type='button';fab.setAttribute('aria-label','Chat chung');fab.title='Chat chung';fab.innerHTML=ICON.chat+'<span id="wc-badge"></span>';
   var prev=document.createElement('div');prev.id='wc-prev';prev.setAttribute('role','status');
   var pn=document.createElement('aside');pn.id='wc-panel';pn.setAttribute('aria-label','Chat chung');
-  pn.innerHTML='<div class="h"><b>Chat chung<small id="wc-sub"></small></b><button class="ib" id="wc-mute" type="button"></button><button class="ib" id="wc-x" type="button" aria-label="Đóng">'+ICON.x+'</button></div><div id="wc-list" aria-live="polite"></div><button id="wc-jump" type="button"></button><div class="wc-err" id="wc-err" hidden></div>'+
+  pn.innerHTML='<div class="h"><b>Chat chung<small id="wc-sub"></small></b><button class="wc-onb" id="wc-onb" type="button" title="Xem ai đang online" aria-pressed="false"><i class="wc-dot"></i><span id="wc-onn">0</span> online</button><button class="ib" id="wc-mute" type="button"></button><button class="ib" id="wc-x" type="button" aria-label="Đóng">'+ICON.x+'</button></div><div id="wc-list" aria-live="polite"></div><div id="wc-on" hidden></div><button id="wc-jump" type="button"></button><div class="wc-err" id="wc-err" hidden></div>'+
    '<form id="wc-form"><textarea id="wc-in" rows="1" maxlength="500" placeholder="Nhắn cho mọi người…" aria-label="Tin nhắn"></textarea><button id="wc-send" type="submit" aria-label="Gửi">'+ICON.send+'</button></form>';
   document.body.appendChild(fab);document.body.appendChild(prev);document.body.appendChild(pn);
   fab.onclick=function(){toggle();};prev.onclick=function(){toggle(true);};
+  $('#wc-onb').onclick=function(){toggleOn();};
   $('#wc-x').onclick=function(){toggle(false);};$('#wc-mute').onclick=function(){setMute(!A.muted);};
   $('#wc-jump').onclick=function(){scrollEnd(true);};
   $('#wc-list').addEventListener('scroll',function(){if(atEnd()){$('#wc-jump').classList.remove('on');markRead();}});
@@ -111,7 +117,20 @@ function ingest(j,initial,own){
   else{draw();}
   if(others.length&&!(visible&&atEnd())){A.unread+=others.length;badge();showPrev(others[others.length-1]);}
 }
+function toggleOn(on){
+  A.onOpen=on===undefined?!A.onOpen:!!on;var l=$('#wc-list'),o=$('#wc-on'),f=$('#wc-form'),b=$('#wc-onb');if(!l||!o)return;
+  l.hidden=A.onOpen;o.hidden=!A.onOpen;f.style.display=A.onOpen?'none':'';if(b){b.classList.toggle('on',A.onOpen);b.setAttribute('aria-pressed',A.onOpen?'true':'false');}
+  if(A.onOpen)loadOnline();else scrollEnd(true);
+}
+function loadOnline(){
+  api('chat/online').then(function(j){
+    if(j.error||!j.users)return;var o=$('#wc-on');if(!o)return;A.on=j.users.length;var n=$('#wc-onn');if(n)n.textContent=A.on;
+    o.innerHTML='<div class="wc-onh">'+j.users.length+' người đang online</div>'+(j.users.length?j.users.map(function(u){var me=u.id===ME.id;
+      return '<div class="wc-ou"><span class="wc-av" style="background:hsl('+hue(u.name)+',55%,45%)">'+esc(u.name.trim().charAt(0).toUpperCase()||'?')+'<i class="wc-dot sm"></i></span><span class="wc-on-n">'+nameHtml({name:u.name,role:u.role})+(me?' <em class="wc-me">(Bạn)</em>':'')+'</span></div>';}).join(''):'<div class="wc-empty">Chưa có ai.</div>');
+  }).catch(function(){});
+}
 function reloadCheck(j,initial){
+  if(typeof j.on==='number'){A.on=j.on;var n=$('#wc-onn');if(n)n.textContent=j.on;if(A.onOpen&&A.n%2===0)loadOnline();}
   var id=+j.rl||0;if(initial){A.rl=id;return;}if(id>(A.rl||0)){A.rl=id;reloadAsk(j.rlmsg||'');}
 }
 function reloadAsk(msg){

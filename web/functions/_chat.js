@@ -7,8 +7,20 @@ const MAX_LEN = 500, MIN_GAP = 900, KEEP_MS = 30 * 86400000, FIRST = 50;
 const clean = s => String(s == null ? '' : s).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F​-‏‪-‮⁦-⁩]/g, '').replace(/\r\n?/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
 const SEL = 'SELECT m.id,m.ts,m.user_id uid,m.body,u.name,u.role FROM chat_messages m LEFT JOIN users u ON u.id=m.user_id';
 
+const ONLINE_MS = 45000, TOUCH_MS = 20000;
+/** Đánh dấu người dùng đang online; chỉ ghi khi bản ghi cũ hơn 20 giây để tiết kiệm ghi D1. */
+export async function touchPresence(env, user) {
+  try { const now = Date.now(); await env.DB.prepare('INSERT INTO presence (user_id,ts) VALUES (?,?) ON CONFLICT(user_id) DO UPDATE SET ts=excluded.ts WHERE presence.ts < ?').bind(user.id, now, now - TOUCH_MS).run(); } catch (e) { console.error('presence', e && e.message); }
+}
+async function onlineCount(env) { const r = await env.DB.prepare("SELECT COUNT(*) n FROM presence p JOIN users u ON u.id=p.user_id WHERE p.ts>? AND u.status='active'").bind(Date.now() - ONLINE_MS).first(); return r ? r.n : 0; }
+
 export async function handleChat(request, env, user, sub, readJson) {
   const m = request.method;
+  if (m === 'GET' && sub === 'online') {
+    await touchPresence(env, user);
+    const rows = (await env.DB.prepare("SELECT u.id,u.name,u.role,p.ts FROM presence p JOIN users u ON u.id=p.user_id WHERE p.ts>? AND u.status='active' ORDER BY (u.role='admin') DESC, u.name COLLATE NOCASE LIMIT 200").bind(Date.now() - ONLINE_MS).all()).results;
+    return json({ users: rows.map(r => ({ id: r.id, name: r.name, role: r.role, ts: r.ts })), me: user.id });
+  }
   if (m === 'GET' && !sub) {
     const p = new URL(request.url).searchParams, after = Math.max(0, +p.get('after') || 0);
     let rows;
@@ -16,6 +28,7 @@ export async function handleChat(request, env, user, sub, readJson) {
     else rows = (await env.DB.prepare(`${SEL} ORDER BY m.id DESC LIMIT ?`).bind(FIRST).all()).results.reverse();
     const out = { msgs: rows.map(r => ({ id: r.id, ts: r.ts, uid: r.uid, name: r.name || 'Tài khoản đã xoá', role: r.name ? r.role : 'user', body: r.body })), me: user.id };
     if (p.get('sync') === '1' || !after) out.alive = (await env.DB.prepare('SELECT id FROM chat_messages ORDER BY id DESC LIMIT 80').all()).results.map(r => r.id);
+    await touchPresence(env, user); out.on = await onlineCount(env);
     const rl = await env.DB.prepare('SELECT id,msg FROM reload_cmds WHERE ts>? AND (user_id IS NULL OR user_id=?) ORDER BY id DESC LIMIT 1').bind(Date.now() - 600000, user.id).first();
     out.rl = rl ? rl.id : 0; if (rl) out.rlmsg = rl.msg || '';
     return json(out);

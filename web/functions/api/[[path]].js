@@ -4,7 +4,7 @@ import { SUBJECTS, SUBJECT_IDS, json, bad, hashPassword, timingSafeEqual, create
 import { CPV_IMAGES } from '../_content.generated.js';
 import { handleAi } from '../_ai.js';
 import { handleDuel } from '../_duel.js';
-import { handleChat } from '../_chat.js';
+import { handleChat, touchPresence } from '../_chat.js';
 import { VERSION } from '../_live.js';
 import { logEvent, handleEvent, handleLogs, canViewLogs } from '../_log.js';
 
@@ -56,6 +56,7 @@ export async function onRequest({ request, env, params }) {
 
     if (a === 'event' && m === 'POST') return handleEvent(request, env, user, readJson);
     if (a === 'live' && m === 'GET') {
+      await touchPresence(env, user);
       const rl = await env.DB.prepare('SELECT id,msg FROM reload_cmds WHERE ts>? AND (user_id IS NULL OR user_id=?) ORDER BY id DESC LIMIT 1').bind(Date.now() - 600000, user.id).first();
       return json({ v: VERSION, rl: rl ? rl.id : 0, rlmsg: rl ? rl.msg || '' : '' });
     }

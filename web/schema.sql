@@ -54,6 +54,9 @@ CREATE INDEX IF NOT EXISTS idx_duel_msgs ON duel_msgs (code, to_id, id);
 -- Lệnh yêu cầu tải lại trang (quản trị viên gửi cho một người hoặc mọi người)
 CREATE TABLE IF NOT EXISTS reload_cmds (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER, by_id INTEGER, msg TEXT);
 
+-- Người đang online (cập nhật mỗi khi trình duyệt hỏi máy chủ, giới hạn 1 lần/20 giây)
+CREATE TABLE IF NOT EXISTS presence (user_id INTEGER PRIMARY KEY, ts INTEGER NOT NULL);
+
 -- Chat chung
 CREATE TABLE IF NOT EXISTS chat_messages (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, user_id INTEGER NOT NULL, body TEXT NOT NULL);
 CREATE INDEX IF NOT EXISTS idx_chat_ts ON chat_messages (ts);
