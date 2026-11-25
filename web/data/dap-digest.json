@@ -1,0 +1,239 @@
+{
+ "title": "Lý thuyết DAP391m theo bộ đề",
+ "intro": "Tóm tắt kiến thức mà 278 câu của bộ đề DAP391m đã hỏi, sắp theo chủ đề. Mỗi mục có các ý phải nhớ, bảng so sánh các khái niệm dễ nhầm và số câu liên quan trong bộ đề. Chỗ ghi \"theo bộ đề\" là đáp án của bộ đề, có thể khác cách nói trong tài liệu.",
+ "chapters": [
+ {
+  "id": "d1", "title": "1. Quy trình phân tích dữ liệu và Python cơ bản",
+  "sections": [
+   { "h": "Quy trình phân tích dữ liệu", "qs": [105, 160, 192, 129, 249, 250, 266, 187],
+     "pts": [
+      "Sáu pha của quy trình phân tích: **Ask → Prepare → Process → Analyze → Share → Act**. Pha ĐẦU TIÊN là **Ask** (đặt câu hỏi).",
+      "Trong vòng đời Data Science, bước đầu trước khi phân tích là **Data Collection and Understanding** (thu thập và hiểu dữ liệu).",
+      "Để biết cần thu thập dữ liệu nào, nhà phân tích so sánh trạng thái **hiện tại (current)** với trạng thái lý tưởng.",
+      "Khi một thay đổi quy trình gây kết quả xấu, tập trung vào **nguyên nhân gốc (source cause)**, không phải từng hệ quả riêng lẻ hay người liên quan. Dự án trễ hạn: bước đầu là **root cause analysis**.",
+      "**EDA (Exploratory Data Analysis)**: hiểu cấu trúc và mẫu của dữ liệu. Không chỉ làm sau khi huấn luyện, không bỏ qua, và KHÔNG giống feature engineering.",
+      "Các bước tiền xử lý thường gặp: xử lý dữ liệu thiếu, chuẩn hóa/thu phóng đặc trưng, mã hóa biến phân loại. **Model deployment (triển khai mô hình) KHÔNG phải bước tiền xử lý**."] },
+   { "h": "Python cơ bản và NumPy", "qs": [90, 284, 49, 166, 247, 50, 130, 246],
+     "pts": [
+      "Chỉ số list bắt đầu từ 0: trong list các ngày từ Sunday, Wednesday có chỉ số [3]. Hiển thị \"November\" thay vì \"October\" nghĩa là chạy nhầm vị trí thứ 11 thay vì thứ 10 (tháng 10 ở chỉ số 9).",
+      "Mở file: mode \"r\" đọc, \"w\" ghi (xóa nội dung cũ), \"a\" ghi thêm vào cuối. Muốn thêm dữ liệu vào file có sẵn: thiếu mode \"a\".",
+      "Dùng câu lệnh **with open(...)** để file được đóng tự động, không lo quên đóng file.",
+      "NumPy: dùng .min(), .max(), .mean() (có dấu ngoặc). Gán kết quả cho biến có tên mô tả đúng: lowest_grade = grades.min(); highest_gpa = grades.max()."] },
+   { "h": "Vai trò các thư viện", "qs": [146, 150, 144, 151, 153, 154, 155, 152, 145, 194, 125],
+     "pts": [
+      "**Pandas**: xử lý và phân tích dữ liệu. **Matplotlib**: thư viện chính để vẽ biểu đồ (tĩnh, tương tác, chất lượng xuất bản). **Seaborn**: giao diện cấp cao dựa trên Matplotlib.",
+      "**Folium**: vẽ bản đồ tương tác. **Dash / Plotly Dash**: ứng dụng web phân tích và dashboard tương tác. **Plotly**: biểu đồ tương tác, dùng cùng Dash.",
+      "**Scikit-learn**: học máy, có grid search (GridSearchCV) và pipeline.",
+      "**Requests**: gửi HTTP request truy cập trang web và API. **BeautifulSoup**: phân tích (parse) HTML/XML khi web scraping."],
+     "tbl": { "head": ["Thư viện", "Dùng để"],
+              "rows": [["Pandas", "Xử lý, phân tích dữ liệu"], ["Matplotlib", "Vẽ biểu đồ"], ["Seaborn", "Biểu đồ thống kê cấp cao"], ["Folium", "Bản đồ tương tác"], ["Dash / Plotly", "Dashboard web tương tác"], ["Scikit-learn", "Học máy, grid search, pipeline"], ["Requests", "Gửi HTTP request"], ["BeautifulSoup", "Parse HTML/XML"]] } }
+  ]
+ },
+ {
+  "id": "d2", "title": "2. Pandas và tiền xử lý dữ liệu",
+  "sections": [
+   { "h": "Đọc dữ liệu và xem nhanh", "qs": [23, 24, 29, 65, 44, 27, 43, 121, 73, 74, 236, 47, 48, 288, 178, 85],
+     "pts": [
+      "Đọc dữ liệu: **read_csv()** (CSV), **read_json()** (JSON), **read_html()** (bảng HTML). Mọi tên khác như load_csv, import_csv đều sai.",
+      "**head()** xem vài dòng đầu (mặc định 5 dòng). **dtypes** cho kiểu dữ liệu từng cột. **describe()** thống kê mô tả cho cột số. **value_counts()** đếm các giá trị duy nhất.",
+      "Truy cập cột: df[\"price\"]. Đổi tên cột: df.rename(columns={\"point\": \"location\"}, inplace=True): khóa cũ, giá trị mới.",
+      "Lọc dòng: kết hợp điều kiện bằng toán tử & với từng điều kiện trong ngoặc, ví dụ df[(df['gender']=='M') & (df['age']>=40)]. Không dùng &&, AND hay =.",
+      "groupby rồi lấy median: nhóm B có giá trị [20, 40, 50] nên median = 40. Group có số lượng lớn nhất ở ví dụ bộ đề là \"Asia\"."] },
+   { "h": "Xử lý dữ liệu thiếu", "qs": [67, 72, 25, 37, 185, 64, 66, 61, 148, 83, 84, 88, 92, 93, 94, 272],
+     "pts": [
+      "Phát hiện thiếu: **isnull()**. Xóa dòng có giá trị thiếu: **dropna()**. Điền: **fillna()**. Các cách đều dùng được nên câu \"All of the above\" là đáp án.",
+      "**bfill()** (backward fill): điền bằng giá trị hợp lệ KẾ TIẾP phía sau. **ffill()** (forward fill): điền bằng giá trị hợp lệ TRƯỚC đó. Điền ngày thiếu bằng ngày kế tiếp → bfill.",
+      "**interpolate()**: nội suy tuyến tính. Ví dụ [20, NaN, 25, NaN, 30]: giá trị thiếu đầu tiên = 22.5; ffill cho 20.",
+      "Chuỗi [NaN, 15, NaN, 25, 30] điền bằng median (25) → NaN ở chỉ số 0 thành 25.0. Thống kê hay dùng để điền dữ liệu số thiếu (theo bộ đề): Mean.",
+      "df['price'].replace(np.nan, 100, inplace=True): thay giá trị NaN bằng 100 trong cột price.",
+      "Các cách xử lý dữ liệu thiếu: xóa dòng, imputation (điền), bỏ qua khi phân tích; \"All of the above\"."] },
+   { "h": "Chuẩn hóa và mã hóa", "qs": [138, 221, 179, 253, 82, 222, 59, 60, 62, 195, 58],
+     "pts": [
+      "**Z-score**: (x − mean) / std, đưa dữ liệu về mean 0, độ lệch chuẩn 1. Ví dụ mean 75, std 15, x = 90 → z = 1.",
+      "**Min-Max scaling**: đưa dữ liệu về khoảng cố định, thường [0, 1]. Với [10,20,30,40,50], giá trị ở vị trí 2 (30) → 0.5.",
+      "**Log transformation**: dùng khi dữ liệu lệch (skewed distribution).",
+      "**fit_transform()**: vừa học tham số vừa biến đổi dữ liệu huấn luyện trong một bước.",
+      "**Frequency encoding**: thay mỗi nhãn bằng số lần xuất hiện: df['Gender'].map(df['Gender'].value_counts()).",
+      "**One-hot encoding**: pd.get_dummies(df, columns=['Fruit'], drop_first=True) và bỏ cột gốc. **Label encoding**: gán mỗi nhãn một số nguyên.",
+      "Dữ liệu nhiều chiều: giảm chiều bằng **PCA (Principal Component Analysis)**. One-Hot Encoding và Feature scaling không phải kỹ thuật giảm chiều.",
+      "df['Text'].str.replace(r'[^\\w\\s]', ''): đoạn mã loại dấu câu, trong ví dụ bộ đề là xóa dấu phẩy."] },
+   { "h": "Thống kê cơ bản", "qs": [75, 76, 77, 78, 100, 101, 86, 79, 87, 89, 240, 258, 285],
+     "pts": [
+      "**Hệ số tương quan**: nằm trong [-1, 1]; giá trị lớn nhất của df.corr() là 1.",
+      "**p-value** nhỏ biểu thị bằng chứng mạnh: theo bộ đề, tương quan mạnh khi p < 0.001. Kiểm định Chi-square với p < 0.05: **bác bỏ giả thuyết không (reject the null)**, có liên quan giữa hai biến (ví dụ nam và nữ có thể ưa thích phương tiện khác nhau).",
+      "**R² (hệ số xác định)**: bằng 1 là mô hình tốt nhất.",
+      "**IQR = Q3 − Q1**. Ví dụ [5,10,15,20,25,30,35,40]: Q1 = 12.5, Q3 = 32.5 → IQR = 20. Phương sai của [20,25,30,35,40] là 50 (theo bộ đề).",
+      "**Box plot**: râu trên là từ phân vị 75% đến 100%. Râu dưới = Q1 − 1.5·IQR, râu trên = Q3 + 1.5·IQR. Ví dụ Max = 100, Q1 = 20 → Q3 = 52, Min = −28. Ví dụ Min = 20, Q3 = 80 → Q1 = 56, Max = 116.",
+      "Phân phối lệch (skewed) trên box plot: hai râu có độ dài KHÔNG đối xứng."],
+     "tbl": { "head": ["Đại lượng", "Công thức hoặc giá trị cần nhớ"],
+              "rows": [["IQR", "Q3 − Q1"], ["Râu dưới / râu trên", "Q1 − 1.5·IQR / Q3 + 1.5·IQR"], ["Z-score", "(x − mean) / std"], ["Hệ số tương quan", "Nằm trong [-1, 1]"], ["Gini impurity", "1 − Σ p²"]] } }
+  ]
+ },
+ {
+  "id": "d3", "title": "3. Trực quan hóa: Matplotlib, Seaborn, Folium, Dash",
+  "sections": [
+   { "h": "Chọn loại biểu đồ", "qs": [2, 17, 18, 19, 126, 127, 133, 118, 115, 183, 256, 162, 165, 277, 279, 280, 16],
+     "pts": [
+      "**Scatter plot**: quan hệ giữa hai biến liên tục. Xu hướng tăng → quan hệ tuyến tính dương (positive linear).",
+      "**Histogram**: phân phối của MỘT biến liên tục. **Bar plot**: so sánh giá trị hoặc tỉ lệ giữa các nhóm bằng các hình chữ nhật cao thấp khác nhau.",
+      "**Box plot**: hiển thị phân phối dữ liệu. Đường ngang trong hộp là **median** (trung vị), chiều rộng hộp mô tả IQR.",
+      "**Heatmap**: màu đậm nhạt thể hiện độ mạnh của tương quan.",
+      "**Waffle chart**: hiển thị tiến độ hoặc tỉ lệ các nhóm; theo bộ đề là biểu đồ phù hợp để hiển thị tỉ lệ các danh mục.",
+      "**Word cloud**: kích thước từ phụ thuộc số lần xuất hiện (word count).",
+      "**Area chart**: biểu diễn các tổng tích lũy. **Pie chart**: hình tròn chia thành các lát.",
+      "Dashboard dùng được nhiều loại biểu đồ cho dữ liệu thời gian thực: cột, tròn, đường (đáp án \"All of the above\")."] },
+   { "h": "Matplotlib", "qs": [10, 11, 12, 13, 22, 31, 32, 33, 34, 35, 53, 68, 69, 108, 117, 158, 186, 224, 230, 245, 28],
+     "pts": [
+      "**matplotlib.pyplot** là module giao diện kiểu MATLAB. Hiển thị biểu đồ trong Jupyter: **%matplotlib inline**.",
+      "**plt.plot()**: đường (nhiều đường trên cùng trục, hoặc đường có marker). **plt.scatter()**: phân tán. **plt.bar()**: cột. **plt.pie()**: tròn. **hist()**: histogram. **plt.stackplot()**: biểu đồ vùng xếp chồng (area/stack plot). Không có plt.area() hay plt.stack().",
+      "Tham số **linewidth** đặt độ dày đường. **plt.xlabel()** gắn nhãn trục x. **savefig()** lưu hình ra file. **subplot()**: nhiều biểu đồ trong một hình.",
+      "Pandas: biểu đồ vùng dùng **plot.area()**; biểu đồ tròn dùng plot(kind='pie'), tham số **autopct** tự định dạng nhãn phần trăm, **legend=True** thêm chú giải. Tham số **bins** của hist điều khiển số cột (bin).",
+      "Theo bộ đề, câu hỏi về thêm nhãn cho biểu đồ tròn có đáp án plt.pie() (qua tham số labels) và câu biểu đồ cột xếp chồng có đáp án plt.bar()."],
+     "tbl": { "head": ["Muốn vẽ", "Hàm Matplotlib"],
+              "rows": [["Đường (có thể có marker)", "plt.plot()"], ["Cột", "plt.bar()"], ["Phân tán", "plt.scatter()"], ["Tròn", "plt.pie()"], ["Vùng xếp chồng", "plt.stackplot()"], ["Histogram", "hist()"]] } },
+   { "h": "Seaborn", "qs": [1, 38, 124, 71, 40, 41, 20, 21, 51, 42, 223, 276],
+     "pts": [
+      "**histplot, kdeplot, violinplot**: cùng hiển thị phân phối của biến liên tục kèm ước lượng mật độ (câu \"Select all\"); boxplot không nằm trong nhóm này.",
+      "**violinplot**: phân phối của biến liên tục theo từng nhóm phân loại, kèm quan hệ với dữ liệu phân loại.",
+      "**boxplot**: phân phối biến số bằng hộp. **countplot**: số lần xuất hiện của mỗi giá trị duy nhất của biến phân loại. **barplot**: biểu đồ cột (theo bộ đề cũng là đáp án cho câu cột xếp chồng). **pointplot**: biểu đồ điểm.",
+      "**heatmap()**: ma trận tương quan của bộ dữ liệu (không có plot_heatmap hay draw_heatmap).",
+      "Tham số **order** của regplot điều khiển bậc của hồi quy đa thức.",
+      "**Seaborn**: thư viện trực quan hóa cấp cao (high-level interface), dựa trên Matplotlib, không phải trên scikit-learn."] },
+   { "h": "Folium", "qs": [125, 188, 205, 241, 46, 57, 235, 225, 199, 226, 234, 278, 123, 143],
+     "pts": [
+      "**Folium**: thư viện vẽ dữ liệu địa lý trên bản đồ tương tác (không phải biểu đồ cột, đường hay phân tán).",
+      "Tạo bản đồ cơ bản bằng hàm **folium.Map()**. Đặt tâm bản đồ bằng tham số **location**.",
+      "**folium.Marker()**: đánh dấu tại vĩ độ và kinh độ. **CircleMarker()**: dấu chấm với bán kính xác định. **Circle()**: vòng tròn có bán kính thay đổi.",
+      "**Choropleth map**: bản đồ chuyên đề, vùng được tô màu hoặc hoa văn theo giá trị dữ liệu. Dữ liệu biên giới địa lý thường lưu dạng **GeoJSON**. Theo bộ đề, tham số chỉ định dữ liệu cần hiển thị trong Choropleth là **value**."] },
+   { "h": "Dash", "qs": [103, 109, 155, 145, 114, 70, 7, 14, 8, 15, 9, 54, 168, 198, 217, 134, 251, 255, 264],
+     "pts": [
+      "**Dash** là web framework Python để tạo ứng dụng web phân tích và dashboard tương tác. **dcc** = Dash Core Components.",
+      "**dcc.Graph()**: hiển thị biểu đồ. **dcc.Input()**: ô nhập văn bản/chuỗi. **dcc.Dropdown()**: danh sách thả xuống (có thể chọn nhiều). **dcc.Slider()**: thanh trượt chọn một giá trị trong khoảng cố định. **dcc.RangeSlider()**: thanh trượt chọn một KHOẢNG giá trị.",
+      "Thuộc tính **marks** của Slider: gắn nhãn cho các giá trị cụ thể. Thuộc tính **options** của Dropdown: danh sách lựa chọn khả dụng.",
+      "**@app.callback**: decorator cập nhật nội dung một thành phần theo thao tác người dùng. Callback liên kết các thành phần và cập nhật layout.",
+      "**add_trace()**: thêm nhiều trace vào một biểu đồ."],
+     "tbl": { "head": ["Thành phần", "Chức năng"],
+              "rows": [["dcc.Input()", "Ô nhập văn bản"], ["dcc.Dropdown()", "Danh sách thả xuống, có thể chọn nhiều"], ["dcc.Slider()", "Kéo chọn MỘT giá trị"], ["dcc.RangeSlider()", "Kéo chọn một KHOẢNG giá trị"], ["dcc.Graph()", "Hiển thị biểu đồ"]] } }
+  ]
+ },
+ {
+  "id": "d4", "title": "4. Thu thập dữ liệu: API, web scraping, SQL",
+  "sections": [
+   { "h": "API và HTTP", "qs": [3, 122, 231, 172, 80, 81, 289, 175],
+     "pts": [
+      "Dữ liệu được lấy khi client gửi **GET request** đến server. Phương thức thường dùng để lấy dữ liệu từ REST API: **GET**. requests.get(url) gửi GET đến URL chỉ định.",
+      "**URI** = Uniform Resource Identifier.",
+      "Mã trạng thái: **200** thành công; **401** chưa được phép (tài nguyên chỉ dành cho vai trò admin); **500** lỗi nội bộ của server.",
+      "Gửi dữ liệu JSON mà không muốn hiện trên URL: dùng **requests.post(url, json={...})**. Dùng params với GET sẽ đưa dữ liệu lên URL.",
+      "Thư viện **requests** xử lý HTTP request và response."] },
+   { "h": "Web scraping", "qs": [153, 154, 202, 218, 44, 63, 265],
+     "pts": [
+      "**Requests** lấy trang; **BeautifulSoup** phân tích và duyệt tài liệu HTML/XML. Pandas có **read_html()** để đọc bảng HTML.",
+      "**HTML parsing**: xác định và trích các phần tử cụ thể từ trang web.",
+      "Tìm phần tử bằng class: soup.find_all('div', class_='product-item') rồi find tiếp thẻ con theo tên thẻ và class; chú ý đúng tên thẻ (h3, span) và dùng chỉ số đúng (ví dụ [-1] là phần tử cuối).",
+      "Câu 218 trong bộ đề phát biểu mục đích của requests là \"scraping and parsing\" (đáp án của bộ đề), trong khi câu 175 mô tả đúng hơn là xử lý HTTP request và response."] },
+   { "h": "IBM DB2 và SQL", "qs": [141, 286, 288],
+     "pts": [
+      "Tiện ích nạp dữ liệu từ file ngoài vào bảng trong IBM DB2: **LOAD DATA**.",
+      "Trường **SEPARATOR** trong tab LOAD DATA: ký tự phân cách các cột trong file đầu vào.",
+      "Chuyển truy vấn SQL WHERE gender = 'M' AND age >= 40 sang Pandas: df[(df['gender']=='M') & (df['age']>=40)]."] }
+  ]
+ },
+ {
+  "id": "d5", "title": "5. Học máy: hồi quy, phân loại, tối ưu mô hình",
+  "sections": [
+   { "h": "Hồi quy tuyến tính và đánh giá", "qs": [111, 159, 167, 169, 177, 209, 267, 135, 193, 132, 78, 220],
+     "pts": [
+      "Hồi quy tuyến tính giả định quan hệ TUYẾN TÍNH giữa biến độc lập và biến phụ thuộc. Phương trình y = b0 + b1·x: x là biến dự đoán (predictor), b1 (m) là độ dốc (slope), b0 là hệ số chặn (intercept).",
+      "Nhiều biến x1…x4: **multiple linear regression**.",
+      "Mục tiêu: **cực tiểu tổng bình phương phần dư (residuals)**. **MSE** là trung bình bình phương hiệu giữa giá trị thực và giá trị dự đoán.",
+      "Đánh giá hồi quy: **R²** (bằng 1 là tốt nhất), **RMSE**, MSE. Accuracy, Precision, Recall, F1 là của phân loại.",
+      "**Residual plot**: mỗi điểm là hiệu giữa giá trị quan sát và giá trị dự đoán."] },
+   { "h": "Polynomial, Ridge, Lasso, ElasticNet", "qs": [5, 6, 106, 139, 171, 116, 120, 170, 210, 211, 233, 237, 248, 184, 269, 270, 273, 292],
+     "pts": [
+      "**Polynomial regression**: mở rộng hồi quy tuyến tính bằng hạng tử bậc cao, mô hình quan hệ PHI TUYẾN. Dùng khi quan hệ giữa các biến phi tuyến. Bậc có thể là bậc hai, bậc ba… (đáp án \"All of the above\"). Tăng bậc dẫn đến **overfitting**. **PolynomialFeatures** tạo các đặc trưng đa thức. Hệ số của x² khác 0 nghĩa là ảnh hưởng của biến phi tuyến. Theo bộ đề, câu hỏi \"hạng tử thêm vào so với hồi quy tuyến tính\" có đáp án Exponential term (ý là các hạng tử lũy thừa bậc cao như x²).",
+      "**Ridge (L2)**: phạt bằng BÌNH PHƯƠNG hệ số, giảm overfitting, xử lý đa cộng tuyến (multicollinearity). Phạt hệ số lớn bằng cách cộng bình phương của chúng vào hàm chi phí.",
+      "**Lasso (L1)**: phạt bằng GIÁ TRỊ TUYỆT ĐỐI của hệ số, có thể đưa một số hệ số về 0 (chọn đặc trưng). Tăng alpha → hệ số co về 0.",
+      "**ElasticNet**: kết hợp cả hai hình phạt Ridge và Lasso.",
+      "Khác biệt khi alpha cao: Ridge thu nhỏ hệ số đồng đều; Lasso có thể đưa hệ số về đúng 0."],
+     "tbl": { "head": ["Mô hình", "Hình phạt", "Điểm nhớ"],
+              "rows": [["Ridge", "Bình phương hệ số (L2)", "Giảm overfitting, đa cộng tuyến, thu nhỏ đồng đều"], ["Lasso", "Giá trị tuyệt đối (L1)", "Có thể đưa hệ số về 0, chọn đặc trưng"], ["ElasticNet", "Kết hợp L1 và L2", "Ridge + Lasso"], ["Polynomial", "Hạng tử bậc cao", "Quan hệ phi tuyến; bậc cao dễ overfitting"]] } },
+   { "h": "Phân loại và độ đo", "qs": [128, 131, 204, 113, 174, 163, 110, 190, 181, 61, 95, 96, 98],
+     "pts": [
+      "**Logistic regression**: phân loại dữ liệu vào hai hoặc nhiều nhóm (không phải dự đoán giá trị liên tục). **KNN** là học có giám sát (supervised). Linear Regression cũng là học có giám sát; K-Means, Apriori, PCA thì không.",
+      "**Confusion matrix**: đường chéo là TP và TN. **False positive (FP)**: mẫu bị dự đoán SAI là dương.",
+      "**Precision = TP / (TP + FP)**. **Recall = TP / (TP + FN)**. Precision và recall có quan hệ nghịch (tăng cái này thường giảm cái kia).",
+      "Dữ liệu mất cân bằng: dùng **F1-score**. Bài phân loại nhị phân với SVC: F1 Score hợp lý hơn MAE, R², MSE (là của hồi quy).",
+      "SVC chỉ dùng các đặc trưng làm X (age, income), không đưa cột mục tiêu purchased vào X."] },
+   { "h": "Cây quyết định và SVC", "qs": [102, 290, 182, 261, 180, 262, 263],
+     "pts": [
+      "**Gini impurity** = 1 − Σ p². Nút 80 mẫu lớp A, 20 mẫu lớp B: 1 − (0.8² + 0.2²) = 0.32.",
+      "**Impurity** đo độ \"thuần\" của một nút theo phân bố lớp.",
+      "**min_samples_split**: số mẫu tối thiểu để một nút được tách. Tăng giá trị này → cây đơn giản hơn → có thể **underfitting**.",
+      "**SVC, tham số C**: C càng LỚN thì mức điều chuẩn (regularization) càng YẾU. Best C = 10 (lớn) → regularization thấp. Best C = 0.01 (nhỏ) → dữ liệu đơn giản, ưu tiên C nhỏ.",
+      "Chọn C bằng **Grid Search**."] },
+   { "h": "Tối ưu mô hình, cross-validation, pipeline", "qs": [30, 151, 216, 244, 252, 52, 213, 229, 36, 149, 222],
+     "pts": [
+      "**Grid search (GridSearchCV)**: tìm siêu tham số tốt nhất bằng cách thử TẤT CẢ tổ hợp trong lưới tham số. \"Grid\" là tập các tham số mô hình tiềm năng (không phải tập đặc trưng hay độ đo). RandomizedSearchCV chọn ngẫu nhiên.",
+      "**Cross-validation** (cross_val_score): ước lượng hiệu năng mô hình trên tập dữ liệu độc lập. Tham số **cv** = số fold.",
+      "**Pipeline** (lớp Pipeline) hoặc **make_pipeline()**: chuỗi bước tuần tự như scale dữ liệu rồi fit mô hình.",
+      "**fit_transform()**: học và biến đổi dữ liệu huấn luyện đồng thời."] },
+   { "h": "Deep learning với TensorFlow", "qs": [107, 119, 227, 228, 142, 196, 200, 282, 173, 206, 214, 132, 136, 242, 176],
+     "pts": [
+      "**Activation function**: đưa tính PHI TUYẾN vào mô hình. **ReLU**: hàm kích hoạt hay dùng ở lớp ẩn của CNN. **Softmax** ở lớp ra: chuyển logits thành phân phối xác suất trên nhiều lớp.",
+      "**CNN = Convolutional Neural Network**. **MaxPooling**: giảm kích thước không gian và kiểm soát overfitting. **Dense (Fully Connected)**: dự đoán dựa trên đặc trưng đã trích. **Dropout**: chống overfitting bằng cách ngẫu nhiên bỏ nơ-ron khi huấn luyện.",
+      "**model.compile()**: gắn optimizer, loss function và metrics. **model.fit()**: huấn luyện mô hình trên dữ liệu huấn luyện. **model.evaluate()**: đánh giá hiệu năng trên dữ liệu kiểm tra.",
+      "Metric thường dùng: MSE cho hồi quy; Accuracy cho phân loại. TensorFlow hỗ trợ tối ưu huấn luyện bằng nhiều thuật toán tối ưu."] }
+  ]
+ },
+ {
+  "id": "d6", "title": "6. IBM Watson",
+  "sections": [
+   { "h": "Watson Assistant: intent, entity, dialog", "qs": [137, 201, 238, 254, 271, 283, 164, 257, 157, 260, 281],
+     "pts": [
+      "**Watson Assistant**: nền tảng xây dựng chatbot hội thoại.",
+      "**Intent**: mục đích hoặc mục tiêu người dùng thể hiện trong câu nhập. **Entity**: trích xuất thông tin cụ thể từ câu nhập. Hai khái niệm này khác nhau: intents hiểu mục tiêu, entities trích thông tin.",
+      "**Dialog node**: điều khiển luồng hội thoại. Công cụ định nghĩa luồng hội thoại và câu trả lời: Dialog Node Editor. **Slots**: thu thập thông tin từ câu nhập của người dùng.",
+      "**Dialog skill**: dùng cả xử lý ngôn ngữ tự nhiên của Watson và học máy để hiểu câu hỏi."] },
+   { "h": "Triển khai và tích hợp chatbot", "qs": [4, 112, 197, 161, 191, 208, 212, 243, 274, 287],
+     "pts": [
+      "Tùy chọn tích hợp từ nút Add Integration: Facebook Messenger và **Slack**. Tích hợp Slack để cho phép hội thoại ngay trong kênh Slack. Tích hợp nhiều nền tảng giúp tăng mức tương tác người dùng trên nhiều kênh.",
+      "Thiết lập tích hợp Facebook Messenger cần **access token**.",
+      "**Integrations**: triển khai chatbot lên các ứng dụng. **Try it out**: để gỡ lỗi (debug) chatbot.",
+      "Xác thực truy cập các API Watson: **API key**.",
+      "Thay đổi dialog KHÔNG cần triển khai lại chatbot.",
+      "Webhook kết nối DB2: cấu hình bằng địa chỉ endpoint URL trong thiết lập webhook.",
+      "Giao diện giọng nói cho chatbot có ba cách: cuộc gọi điện thoại, Watson Speech to Text và Text to Speech APIs, và Voice Agent with Watson."] },
+   { "h": "Các dịch vụ API của Watson", "qs": [104, 207, 239, 140, 189, 219],
+     "pts": [
+      "**Speech-to-Text**: chuyển giọng nói thành văn bản; đầu ra là text; trong thời gian thực xử lý luồng âm thanh đang truyền. **Text-to-Speech**: chuyển văn bản thành giọng nói.",
+      "**Natural Language Understanding (NLU)**: hiểu và xử lý nội dung văn bản; dùng cho phân tích cảm xúc, trích thực thể, dịch.",
+      "**Watson Discovery**: lập chỉ mục và tìm kiếm tài liệu. **Watson Language Translator**: dịch ngôn ngữ.",
+      "Watson Assistant xây chatbot; Watson Studio là môi trường làm việc khoa học dữ liệu."],
+     "tbl": { "head": ["Dịch vụ", "Dùng để"],
+              "rows": [["Watson Assistant", "Xây chatbot hội thoại"], ["Speech-to-Text", "Giọng nói → văn bản"], ["Text-to-Speech", "Văn bản → giọng nói"], ["Natural Language Understanding", "Hiểu nội dung văn bản"], ["Watson Discovery", "Lập chỉ mục và tìm kiếm tài liệu"], ["Language Translator", "Dịch ngôn ngữ"]] } }
+  ]
+ },
+ {
+  "id": "d7", "title": "7. Bẫy thường gặp khi bấm nhanh",
+  "sections": [
+   { "h": "Câu tính hệ số hồi quy theo số liệu cố định", "qs": [91, 99, 97, 95, 96, 98],
+     "pts": [
+      "Các câu này đưa sẵn dữ liệu và yêu cầu chọn bộ hệ số tối ưu khi cực tiểu hóa MSE (polynomial regression) hoặc Binary Cross-Entropy (logistic regression). Cách tính chuẩn của một vòng lặp gradient descent: tham số mới = tham số cũ − learning rate × gradient trung bình trên batch. Tuy nhiên khi mình tính tay theo công thức chuẩn, kết quả không khớp đáp án của bộ đề ở nhiều câu (đề dùng quy ước riêng), nên với nhóm câu này hãy học thuộc đáp án của bộ đề.",
+      "Polynomial regression nhiệt độ theo giờ (câu 91 và 99): a = 0.83, b = 1.77, c = 1.07. Polynomial regression sản lượng theo lượng mưa (câu 97): a = 0.82, b = 1.74, c = 1.00.",
+      "Logistic regression dùng sigmoid(a + b·x): nhiệt độ cao/thấp theo giờ (câu 95): a = 0.56, b = 1.14; câu 96: a = 1.14, b = 0.79; sản lượng theo lượng mưa (câu 98): a = 0.46, b = 0.48.",
+      "Hai câu 91 và 99 là cùng một đề, câu 95 và 96 khác dữ liệu nên khác đáp án: đọc kỹ số liệu trong đề trước khi chọn."] },
+   { "h": "Các cặp dễ nhầm", "qs": [],
+     "pts": [
+      "Slider chọn MỘT giá trị; RangeSlider chọn một KHOẢNG. Input là nhập chữ; Dropdown là chọn trong danh sách.",
+      "Ridge phạt BÌNH PHƯƠNG hệ số; Lasso phạt GIÁ TRỊ TUYỆT ĐỐI và có thể đưa hệ số về 0.",
+      "bfill điền từ giá trị KẾ TIẾP; ffill điền từ giá trị TRƯỚC.",
+      "Precision = TP/(TP+FP); Recall = TP/(TP+FN).",
+      "Hồi quy dùng R², RMSE, MSE; phân loại dùng Accuracy, Precision, Recall, F1.",
+      "Intent là mục đích; Entity là thông tin cụ thể; Dialog node là luồng hội thoại.",
+      "Speech-to-Text ra văn bản; Text-to-Speech ra giọng nói.",
+      "Câu có \"All of the above\": kiểm tra từng lựa chọn, đừng bấm theo phản xạ. Trên web, mục Câu dễ nhầm đáp án có phần luyện riêng các cặp này."] }
+  ]
+ }
+ ]
+}

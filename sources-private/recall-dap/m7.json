@@ -1,0 +1,1674 @@
+[
+ {
+  "ref": "7.1",
+  "q": "Pha đầu tiên của quy trình phân tích dữ liệu là gì?",
+  "correct": "Ask",
+  "wrong": [
+   "Prepare",
+   "Process",
+   "Act"
+  ],
+  "explain": "Ask → Prepare → Process → Analyze → Share → Act."
+ },
+ {
+  "ref": "7.1",
+  "q": "Nhà phân tích so sánh trạng thái nào với trạng thái lý tưởng để xác định cần thu thập dữ liệu gì?",
+  "correct": "Trạng thái hiện tại (current)",
+  "wrong": [
+   "Trạng thái tương đối (relative)",
+   "Trạng thái tuyệt đối (absolute)",
+   "Trạng thái \"sick\""
+  ],
+  "explain": "So sánh current state với ideal state."
+ },
+ {
+  "ref": "7.1",
+  "q": "Thay đổi quy trình gây hệ quả xấu thì nên tập trung vào đâu?",
+  "correct": "Nguyên nhân gốc của vấn đề (source cause)",
+  "wrong": [
+   "Từng hệ quả riêng lẻ",
+   "Các bên liên quan",
+   "Người quản lý dự án ban đầu"
+  ],
+  "explain": "Cần điều tra nguyên nhân gốc."
+ },
+ {
+  "ref": "7.1",
+  "q": "Dự án liên tục trễ hạn, bước đầu tiên của người lãnh đạo mới là gì?",
+  "correct": "Phân tích nguyên nhân gốc (root cause analysis)",
+  "wrong": [
+   "Phỏng vấn đánh giá từng cá nhân",
+   "Đánh giá hiệu quả các nền tảng",
+   "Vẽ biểu đồ tròn để lập lịch mới"
+  ],
+  "explain": "Bắt đầu bằng root cause analysis."
+ },
+ {
+  "ref": "7.1",
+  "q": "Điều nào KHÔNG phải bước tiền xử lý dữ liệu thông thường?",
+  "correct": "Triển khai mô hình (model deployment)",
+  "wrong": [
+   "Xử lý dữ liệu thiếu",
+   "Thu phóng đặc trưng",
+   "Mã hóa biến phân loại"
+  ],
+  "explain": "Triển khai mô hình diễn ra sau khi xây dựng."
+ },
+ {
+  "ref": "7.1",
+  "q": "Phát biểu nào về EDA đúng?",
+  "correct": "EDA tập trung hiểu cấu trúc và mẫu của bộ dữ liệu",
+  "wrong": [
+   "EDA chỉ làm sau khi huấn luyện mô hình",
+   "EDA thường bị bỏ qua",
+   "EDA giống feature engineering"
+  ],
+  "explain": "EDA = Exploratory Data Analysis."
+ },
+ {
+  "ref": "7.2",
+  "q": "Trong list các ngày bắt đầu từ Sunday, chỉ số của Wednesday là gì?",
+  "correct": "[3]",
+  "wrong": [
+   "[4]",
+   "\"Wednesday\"",
+   "[-4]"
+  ],
+  "explain": "Chỉ số bắt đầu từ 0."
+ },
+ {
+  "ref": "7.2",
+  "q": "Mở file để ghi thêm vào dữ liệu hiện có, cần mode nào?",
+  "correct": "\"a\"",
+  "wrong": [
+   "\"w\"",
+   "\"x\"",
+   "\"n\""
+  ],
+  "explain": "\"a\" = append; \"w\" ghi đè."
+ },
+ {
+  "ref": "7.2",
+  "q": "Cách mở file để không lo quên đóng file là gì?",
+  "correct": "Dùng câu lệnh with cùng lệnh open",
+  "wrong": [
+   "Dùng close trước open",
+   "Dùng close thay cho open",
+   "Dùng with thay cho open"
+  ],
+  "explain": "with open(...) tự đóng file."
+ },
+ {
+  "ref": "7.2",
+  "q": "Cách đúng để gán giá trị nhỏ nhất của mảng grades cho biến lowest_grade là gì?",
+  "correct": "lowest_grade = grades.min()",
+  "wrong": [
+   "grades.min() = lowest_grade",
+   "grades = grades.min()",
+   "grades.min() = grades"
+  ],
+  "explain": "Biến ở bên trái dấu =, có dấu ngoặc ở .min()."
+ },
+ {
+  "ref": "7.2",
+  "q": "Cần thêm gì vào highest_gpa = grades để lấy giá trị lớn nhất?",
+  "correct": ".max()",
+  "wrong": [
+   ".max",
+   "(high)",
+   ".high"
+  ],
+  "explain": "Gọi phương thức .max() có dấu ngoặc."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào chủ yếu dùng để xử lý và phân tích dữ liệu trong Python?",
+  "correct": "Pandas",
+  "wrong": [
+   "NumPy",
+   "Scikit-learn",
+   "Matplotlib"
+  ],
+  "explain": "Pandas = data manipulation and analysis."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào dùng để gửi HTTP request truy cập trang web và API?",
+  "correct": "Requests",
+  "wrong": [
+   "BeautifulSoup",
+   "Scrapy",
+   "Selenium"
+  ],
+  "explain": "Requests gửi HTTP request."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào thường dùng để phân tích HTML trong web scraping?",
+  "correct": "BeautifulSoup",
+  "wrong": [
+   "Pandas",
+   "Requests",
+   "Scrapy"
+  ],
+  "explain": "BeautifulSoup parse HTML/XML."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào thiết kế riêng để xây dựng ứng dụng web phân tích?",
+  "correct": "Dash",
+  "wrong": [
+   "Matplotlib",
+   "Seaborn",
+   "Folium"
+  ],
+  "explain": "Dash là framework ứng dụng web phân tích."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào thường cài đặt grid search để tinh chỉnh siêu tham số?",
+  "correct": "Scikit-learn",
+  "wrong": [
+   "Pandas",
+   "NumPy",
+   "TensorFlow"
+  ],
+  "explain": "GridSearchCV của scikit-learn."
+ },
+ {
+  "ref": "7.4",
+  "q": "Hàm Pandas nào đọc file CSV?",
+  "correct": "read_csv()",
+  "wrong": [
+   "load_csv()",
+   "import_csv()",
+   "open_csv()"
+  ],
+  "explain": "pd.read_csv()."
+ },
+ {
+  "ref": "7.4",
+  "q": "Hàm Pandas nào đọc bảng từ HTML?",
+  "correct": "read_html()",
+  "wrong": [
+   "read_html_table()",
+   "parse_html()",
+   "import_html()"
+  ],
+  "explain": "pd.read_html()."
+ },
+ {
+  "ref": "7.4",
+  "q": "Thuộc tính nào cho biết kiểu dữ liệu của từng cột?",
+  "correct": "dtypes",
+  "wrong": [
+   "ftypes",
+   "itypes",
+   "ntypes"
+  ],
+  "explain": "df.dtypes."
+ },
+ {
+  "ref": "7.4",
+  "q": "Phương thức nào đếm số lần xuất hiện của các giá trị duy nhất?",
+  "correct": "value_counts()",
+  "wrong": [
+   "count()",
+   "get_total()",
+   "describe()"
+  ],
+  "explain": "value_counts() trả về số lần của từng giá trị."
+ },
+ {
+  "ref": "7.4",
+  "q": "Đổi tên cột \"point\" thành \"location\" bằng đoạn mã nào?",
+  "correct": "df.rename(columns={\"point\": \"location\"}, inplace=True)",
+  "wrong": [
+   "df.rename(columns={\"location\": \"point\"}, inplace=True)",
+   "df.change(columns={\"point\": \"location\"}, inplace=True)",
+   "df.Change(columns={\"location\": \"point\"}, inplace=True)"
+  ],
+  "explain": "Dict {tên cũ: tên mới}."
+ },
+ {
+  "ref": "7.4",
+  "q": "Toán tử nào kết hợp điều kiện khi lọc DataFrame bằng Pandas?",
+  "correct": "& (mỗi điều kiện trong ngoặc)",
+  "wrong": [
+   "&&",
+   "AND",
+   "= (một dấu bằng)"
+  ],
+  "explain": "df[(df['gender']=='M') & (df['age']>=40)]."
+ },
+ {
+  "ref": "7.4",
+  "q": "Phương thức nào cho thống kê mô tả cho các cột số?",
+  "correct": "describe()",
+  "wrong": [
+   "summary()",
+   "stats()",
+   "statistics()"
+  ],
+  "explain": "df.describe()."
+ },
+ {
+  "ref": "7.5",
+  "q": "Phương thức nào phát hiện dữ liệu thiếu trong DataFrame?",
+  "correct": "isnull()",
+  "wrong": [
+   "find_missing()",
+   "missing_data()",
+   "NaN_check()"
+  ],
+  "explain": "isnull() trả về mặt nạ giá trị thiếu."
+ },
+ {
+  "ref": "7.5",
+  "q": "Phương thức nào xóa các dòng có giá trị thiếu?",
+  "correct": "dropna()",
+  "wrong": [
+   "remove_missing()",
+   "clean_data()",
+   "remove_nulls()"
+  ],
+  "explain": "dropna()."
+ },
+ {
+  "ref": "7.5",
+  "q": "Phương thức nào điền dữ liệu thiếu bằng giá trị hợp lệ KẾ TIẾP phía sau?",
+  "correct": "bfill()",
+  "wrong": [
+   "ffill()",
+   "backward_fill()",
+   "backfill()"
+  ],
+  "explain": "bfill = backward fill."
+ },
+ {
+  "ref": "7.5",
+  "q": "Với [20, NaN, 25, NaN, 30], điền bằng ffill thì giá trị ở vị trí thiếu đầu tiên là bao nhiêu?",
+  "correct": "20",
+  "wrong": [
+   "25",
+   "30",
+   "27.5"
+  ],
+  "explain": "ffill lấy giá trị hợp lệ trước đó."
+ },
+ {
+  "ref": "7.5",
+  "q": "Với [20, NaN, 25, NaN, 30], nội suy tuyến tính cho giá trị thiếu đầu tiên là bao nhiêu?",
+  "correct": "22.5",
+  "wrong": [
+   "23.0",
+   "27.5",
+   "26.0"
+  ],
+  "explain": "Trung điểm của 20 và 25."
+ },
+ {
+  "ref": "7.5",
+  "q": "Điền NaN của chuỗi [NaN, 15, NaN, 25, 30] bằng median thì NaN ở chỉ số 0 thành bao nhiêu?",
+  "correct": "25.0",
+  "wrong": [
+   "30.0",
+   "15.0",
+   "23.33"
+  ],
+  "explain": "Median của 15, 25, 30 là 25."
+ },
+ {
+  "ref": "7.5",
+  "q": "Câu nào dưới đây xử lý dữ liệu thiếu được?",
+  "correct": "Cả xóa dòng, imputation và bỏ qua khi phân tích (All of the above)",
+  "wrong": [
+   "Chỉ xóa dòng",
+   "Chỉ imputation",
+   "Không xử lý được"
+  ],
+  "explain": "Câu bộ đề đáp án là All of the above."
+ },
+ {
+  "ref": "7.6",
+  "q": "Kỹ thuật nào đưa dữ liệu về mean bằng 0 và độ lệch chuẩn bằng 1?",
+  "correct": "Z-score normalization",
+  "wrong": [
+   "Min-Max scaling",
+   "Log transformation",
+   "Robust scaling"
+  ],
+  "explain": "z = (x − mean) / std."
+ },
+ {
+  "ref": "7.6",
+  "q": "Với mean = 75, độ lệch chuẩn = 15, điểm dữ liệu 90 có z-score bằng bao nhiêu?",
+  "correct": "1",
+  "wrong": [
+   "2",
+   "3",
+   "4"
+  ],
+  "explain": "(90 − 75) / 15 = 1."
+ },
+ {
+  "ref": "7.6",
+  "q": "Min-Max scaling làm gì với dữ liệu?",
+  "correct": "Đưa dữ liệu về khoảng cố định, thường 0 đến 1",
+  "wrong": [
+   "Đưa mean về 0 và phương sai về 1",
+   "Chuẩn hóa theo median và IQR",
+   "Biến đổi bằng logarit tự nhiên"
+  ],
+  "explain": "Min-Max → [0, 1]."
+ },
+ {
+  "ref": "7.6",
+  "q": "Khi nào thường áp dụng log transformation?",
+  "correct": "Khi dữ liệu có phân phối lệch (skewed)",
+  "wrong": [
+   "Khi dữ liệu phân phối tuyến tính",
+   "Khi dữ liệu phân phối chuẩn",
+   "Khi dữ liệu có giá trị thiếu"
+  ],
+  "explain": "Log giảm độ lệch."
+ },
+ {
+  "ref": "7.6",
+  "q": "Mã hóa tần suất (frequency encoding) cột Gender làm thế nào?",
+  "correct": "df['Gender'].map(df['Gender'].value_counts())",
+  "wrong": [
+   "df['Gender'].map({'Male': 3, 'Female': 3})",
+   "df['Gender'].astype('category').cat.codes",
+   "df['Gender'].value_counts(normalize=True)"
+  ],
+  "explain": "Thay nhãn bằng số lần xuất hiện."
+ },
+ {
+  "ref": "7.6",
+  "q": "Hàm nào chuyển cột thành các cột one-hot?",
+  "correct": "pd.get_dummies()",
+  "wrong": [
+   "pd.one_hot()",
+   "df.encode()",
+   "df.fillna()"
+  ],
+  "explain": "get_dummies tạo các cột one-hot."
+ },
+ {
+  "ref": "7.6",
+  "q": "Kỹ thuật nào thường dùng để giảm chiều dữ liệu nhiều chiều?",
+  "correct": "PCA (Principal Component Analysis)",
+  "wrong": [
+   "Feature scaling",
+   "One-Hot Encoding",
+   "Min-Max scaling"
+  ],
+  "explain": "PCA giảm chiều."
+ },
+ {
+  "ref": "7.7",
+  "q": "Hệ số tương quan nằm trong khoảng nào?",
+  "correct": "[-1, 1]",
+  "wrong": [
+   "[0, 1]",
+   "[-∞, ∞]",
+   "[0, ∞]"
+  ],
+  "explain": "Tương quan từ -1 đến 1."
+ },
+ {
+  "ref": "7.7",
+  "q": "Theo bộ đề, tương quan mạnh khi p-value như thế nào?",
+  "correct": "Nhỏ hơn 0.001",
+  "wrong": [
+   "Nhỏ hơn 0.05",
+   "Nhỏ hơn 0.1",
+   "Lớn hơn 0.1"
+  ],
+  "explain": "Bộ đề: p < 0.001."
+ },
+ {
+  "ref": "7.7",
+  "q": "Trong kiểm định Chi-square, p-value nhỏ hơn 0.05 gợi ý điều gì?",
+  "correct": "Bác bỏ giả thuyết không",
+  "wrong": [
+   "Không bác bỏ giả thuyết không",
+   "Không đủ bằng chứng",
+   "Không có tương quan"
+  ],
+  "explain": "p < 0.05 → reject the null hypothesis."
+ },
+ {
+  "ref": "7.7",
+  "q": "Giá trị R² nào cho thấy mô hình tốt nhất?",
+  "correct": "1",
+  "wrong": [
+   "0",
+   "-1",
+   "Vô cùng"
+  ],
+  "explain": "R² = 1 là khớp hoàn hảo."
+ },
+ {
+  "ref": "7.7",
+  "q": "IQR của [15, 10, 5, 25, 20, 30, 40, 35] là bao nhiêu?",
+  "correct": "20",
+  "wrong": [
+   "15",
+   "25",
+   "30"
+  ],
+  "explain": "Q3 − Q1 = 32.5 − 12.5 = 20."
+ },
+ {
+  "ref": "7.7",
+  "q": "Râu trên của box plot biểu diễn khoảng phân vị nào?",
+  "correct": "Từ phân vị 75 đến 100",
+  "wrong": [
+   "Từ phân vị 50 đến 75",
+   "Từ phân vị 25 đến 50",
+   "Từ phân vị 0 đến 25"
+  ],
+  "explain": "Upper whisker: 75th–100th."
+ },
+ {
+  "ref": "7.7",
+  "q": "Max của box plot là 100, Q1 = 20. Q3 và Min bằng bao nhiêu?",
+  "correct": "Q3 = 52, Min = −28",
+  "wrong": [
+   "Q3 = 80, Min = 0",
+   "Q3 = 50, Min = 25",
+   "Q3 = 68, Min = −22"
+  ],
+  "explain": "Max = Q3 + 1.5·IQR, Min = Q1 − 1.5·IQR."
+ },
+ {
+  "ref": "7.7",
+  "q": "Phân phối lệch biểu diễn thế nào trên box plot?",
+  "correct": "Độ dài hai râu không đối xứng",
+  "wrong": [
+   "Hai râu có độ dài bằng nhau",
+   "Hộp và râu có cùng chiều rộng",
+   "Hộp biến mất"
+  ],
+  "explain": "Skewed → asymmetrical whiskers."
+ },
+ {
+  "ref": "7.8",
+  "q": "Loại biểu đồ nào hiển thị quan hệ giữa hai biến liên tục?",
+  "correct": "Scatter plot",
+  "wrong": [
+   "Box plot",
+   "Histogram",
+   "Pie chart"
+  ],
+  "explain": "Scatter = hai biến."
+ },
+ {
+  "ref": "7.8",
+  "q": "Loại biểu đồ nào hợp nhất để hiển thị phân phối của MỘT biến liên tục?",
+  "correct": "Histogram",
+  "wrong": [
+   "Pie chart",
+   "Bar chart",
+   "Line chart"
+  ],
+  "explain": "Histogram = phân phối một biến."
+ },
+ {
+  "ref": "7.8",
+  "q": "Đường ngang bên trong hộp của box plot biểu diễn gì?",
+  "correct": "Median (trung vị)",
+  "wrong": [
+   "Mean",
+   "Độ lệch chuẩn",
+   "IQR"
+  ],
+  "explain": "Đường giữa là median."
+ },
+ {
+  "ref": "7.8",
+  "q": "Chiều rộng của hộp trong box plot mô tả gì (theo bộ đề)?",
+  "correct": "IQR",
+  "wrong": [
+   "Phạm vi dữ liệu",
+   "Phương sai",
+   "Độ lệch chuẩn"
+  ],
+  "explain": "Theo bộ đề: IQR."
+ },
+ {
+  "ref": "7.8",
+  "q": "Màu đậm nhạt trong heatmap thể hiện điều gì?",
+  "correct": "Độ mạnh của tương quan",
+  "wrong": [
+   "Tần suất xuất hiện",
+   "Độ lớn một biến",
+   "Phạm vi giá trị"
+  ],
+  "explain": "Heatmap: strength of correlations."
+ },
+ {
+  "ref": "7.8",
+  "q": "Kích thước từ trong word cloud thường dựa vào gì?",
+  "correct": "Số lần xuất hiện (word count)",
+  "wrong": [
+   "Độ dài từ",
+   "Thứ tự bảng chữ cái",
+   "Ngẫu nhiên"
+  ],
+  "explain": "Từ xuất hiện nhiều thì to."
+ },
+ {
+  "ref": "7.8",
+  "q": "Hai biến có xu hướng cùng tăng trên scatter plot là quan hệ gì?",
+  "correct": "Positive linear relationship",
+  "wrong": [
+   "Independent linear relationship",
+   "Dependent cross relationship",
+   "Dispositive multi-linear relationship"
+  ],
+  "explain": "Tăng cùng nhau = tuyến tính dương."
+ },
+ {
+  "ref": "7.9",
+  "q": "Module nào của Matplotlib cung cấp giao diện kiểu MATLAB?",
+  "correct": "matplotlib.pyplot",
+  "wrong": [
+   "matplotlib.figure",
+   "matplotlib.axis",
+   "matplotlib.plot"
+  ],
+  "explain": "pyplot."
+ },
+ {
+  "ref": "7.9",
+  "q": "Hàm nào vẽ biểu đồ vùng xếp chồng (stack plot)?",
+  "correct": "plt.stackplot()",
+  "wrong": [
+   "plt.area()",
+   "plt.stack()",
+   "plt.plot()"
+  ],
+  "explain": "Không có plt.area hay plt.stack."
+ },
+ {
+  "ref": "7.9",
+  "q": "Lệnh nào hiển thị biểu đồ trực tiếp trong Jupyter Notebook?",
+  "correct": "%matplotlib inline",
+  "wrong": [
+   "%inline plot",
+   "plt.inline()",
+   "plt.notebook()"
+  ],
+  "explain": "Magic command %matplotlib inline."
+ },
+ {
+  "ref": "7.9",
+  "q": "Hàm nào lưu hình ra file?",
+  "correct": "savefig()",
+  "wrong": [
+   "save()",
+   "export()",
+   "saveas()"
+  ],
+  "explain": "plt.savefig()."
+ },
+ {
+  "ref": "7.9",
+  "q": "Tham số nào của plt.plot() đặt độ dày đường?",
+  "correct": "linewidth",
+  "wrong": [
+   "line_width",
+   "width",
+   "line"
+  ],
+  "explain": "linewidth."
+ },
+ {
+  "ref": "7.9",
+  "q": "Tham số autopct trong plot(kind=\"pie\") làm gì?",
+  "correct": "Tự động định dạng nhãn phần trăm",
+  "wrong": [
+   "Đặt tỉ lệ khung hình",
+   "Chỉnh phần trăm mỗi lát",
+   "Tự vẽ thêm biểu đồ tròn"
+  ],
+  "explain": "autopct định dạng nhãn."
+ },
+ {
+  "ref": "7.9",
+  "q": "Tham số bins của hist() điều khiển điều gì?",
+  "correct": "Số cột (bin) của histogram",
+  "wrong": [
+   "Độ rộng mỗi cột",
+   "Số dòng của histogram",
+   "Kích thước hình"
+  ],
+  "explain": "bins = số bin."
+ },
+ {
+  "ref": "7.9",
+  "q": "Hàm subplot() cho phép làm gì?",
+  "correct": "Tạo nhiều biểu đồ trong một hình",
+  "wrong": [
+   "Đổi màu nền",
+   "Chỉnh kích thước marker",
+   "Bỏ ticks trên trục"
+  ],
+  "explain": "subplot chia hình thành nhiều ô."
+ },
+ {
+  "ref": "7.9",
+  "q": "Phương thức Pandas nào vẽ biểu đồ vùng?",
+  "correct": "plot.area()",
+  "wrong": [
+   "plot(kind='area')",
+   "plot(type='area')",
+   "plot.area"
+  ],
+  "explain": "Theo bộ đề: plot.area()."
+ },
+ {
+  "ref": "7.10",
+  "q": "Hàm Seaborn nào hiển thị ma trận tương quan dạng bản đồ nhiệt?",
+  "correct": "sns.heatmap()",
+  "wrong": [
+   "sns.pairplot()",
+   "sns.jointplot()",
+   "sns.scatterplot()"
+  ],
+  "explain": "sns.heatmap()."
+ },
+ {
+  "ref": "7.10",
+  "q": "Hàm nào đếm số lần xuất hiện của mỗi giá trị duy nhất của biến phân loại?",
+  "correct": "sns.countplot()",
+  "wrong": [
+   "sns.barplot()",
+   "sns.pointplot()",
+   "sns.boxplot()"
+  ],
+  "explain": "countplot đếm số lượng."
+ },
+ {
+  "ref": "7.10",
+  "q": "Hàm nào hiển thị phân phối biến liên tục theo từng nhóm phân loại?",
+  "correct": "sns.violinplot()",
+  "wrong": [
+   "sns.histplot()",
+   "sns.kdeplot()",
+   "sns.boxplot()"
+  ],
+  "explain": "violinplot."
+ },
+ {
+  "ref": "7.10",
+  "q": "Hàm nào vẽ box plot để xem phân phối biến số?",
+  "correct": "sns.boxplot()",
+  "wrong": [
+   "sns.barplot()",
+   "sns.violinplot()",
+   "sns.countplot()"
+  ],
+  "explain": "boxplot."
+ },
+ {
+  "ref": "7.10",
+  "q": "Tham số order của regplot điều khiển điều gì?",
+  "correct": "Bậc của hồi quy đa thức",
+  "wrong": [
+   "Kích thước marker",
+   "Thứ tự marker trong chú giải",
+   "Màu đường hồi quy"
+  ],
+  "explain": "order = bậc đa thức."
+ },
+ {
+  "ref": "7.10",
+  "q": "Seaborn là gì?",
+  "correct": "Thư viện trực quan hóa cấp cao dựa trên Matplotlib",
+  "wrong": [
+   "Thư viện trực quan hóa dựa trên scikit-learn",
+   "Thư viện tăng số dòng mã",
+   "Thư viện học sâu"
+  ],
+  "explain": "Seaborn có giao diện high-level."
+ },
+ {
+  "ref": "7.11",
+  "q": "Thư viện Folium chủ yếu dùng để làm gì?",
+  "correct": "Hiển thị dữ liệu địa lý trên bản đồ tương tác",
+  "wrong": [
+   "Tạo dashboard tương tác",
+   "Tạo biểu đồ tĩnh",
+   "Vẽ đồ thị 3D"
+  ],
+  "explain": "Folium = bản đồ."
+ },
+ {
+  "ref": "7.11",
+  "q": "Tạo bản đồ cơ bản trong Folium bằng hàm nào?",
+  "correct": "folium.Map()",
+  "wrong": [
+   "BaseMap()",
+   "create_map()",
+   "Không có cách trực tiếp"
+  ],
+  "explain": "folium.Map()."
+ },
+ {
+  "ref": "7.11",
+  "q": "Tham số nào đặt tâm bản đồ?",
+  "correct": "location",
+  "wrong": [
+   "change_center()",
+   "center()",
+   "set_center"
+  ],
+  "explain": "Map(location=[lat, lon])."
+ },
+ {
+  "ref": "7.11",
+  "q": "Hàm nào thêm vòng tròn có bán kính thay đổi vào bản đồ?",
+  "correct": "folium.Circle()",
+  "wrong": [
+   "folium.Marker()",
+   "folium.PolyLine()",
+   "folium.Choropleth()"
+  ],
+  "explain": "Circle thêm vòng tròn."
+ },
+ {
+  "ref": "7.11",
+  "q": "Choropleth map thể hiện điều gì?",
+  "correct": "Các vùng địa lý được tô màu theo giá trị dữ liệu",
+  "wrong": [
+   "Các vị trí địa lý có marker gom cụm",
+   "Phân bố mật độ điểm dữ liệu",
+   "Đường nối giữa các vị trí"
+  ],
+  "explain": "Choropleth tô màu vùng."
+ },
+ {
+  "ref": "7.11",
+  "q": "Định dạng file nào thường lưu dữ liệu biên giới địa lý cho choropleth?",
+  "correct": "GeoJSON",
+  "wrong": [
+   "CSV",
+   "Excel",
+   "TXT"
+  ],
+  "explain": "GeoJSON."
+ },
+ {
+  "ref": "7.12",
+  "q": "dcc trong dcc.Graph là viết tắt của gì?",
+  "correct": "Dash Core Components",
+  "wrong": [
+   "Dynamic Chart Creator",
+   "Data Collection Component",
+   "Display Chart Component"
+  ],
+  "explain": "dcc = Dash Core Components."
+ },
+ {
+  "ref": "7.12",
+  "q": "Thành phần Dash nào tạo thanh trượt chọn MỘT khoảng giá trị?",
+  "correct": "dcc.RangeSlider()",
+  "wrong": [
+   "dcc.Slider()",
+   "dcc.Input()",
+   "dcc.Dropdown()"
+  ],
+  "explain": "RangeSlider chọn khoảng."
+ },
+ {
+  "ref": "7.12",
+  "q": "Thành phần nào tạo ô nhập văn bản?",
+  "correct": "dcc.Input()",
+  "wrong": [
+   "dcc.Dropdown()",
+   "dcc.Slider()",
+   "dcc.Graph()"
+  ],
+  "explain": "Input."
+ },
+ {
+  "ref": "7.12",
+  "q": "Thành phần nào hiển thị đồ thị và hình trực quan?",
+  "correct": "dcc.Graph()",
+  "wrong": [
+   "dcc.Input()",
+   "dcc.Dropdown()",
+   "dcc.Slider()"
+  ],
+  "explain": "Graph."
+ },
+ {
+  "ref": "7.12",
+  "q": "Decorator nào cập nhật nội dung thành phần theo thao tác người dùng?",
+  "correct": "@app.callback",
+  "wrong": [
+   "@dash_callback",
+   "@app.route",
+   "@update_content"
+  ],
+  "explain": "Callback."
+ },
+ {
+  "ref": "7.12",
+  "q": "Thuộc tính marks của dcc.Slider làm gì?",
+  "correct": "Gắn nhãn cho các giá trị cụ thể trên thanh trượt",
+  "wrong": [
+   "Xác định khoảng giá trị",
+   "Đặt màu thanh trượt",
+   "Đặt giá trị ban đầu"
+  ],
+  "explain": "marks = nhãn."
+ },
+ {
+  "ref": "7.13",
+  "q": "Dữ liệu được lấy khi client gửi loại request nào đến server?",
+  "correct": "GET",
+  "wrong": [
+   "PORT",
+   "PUT",
+   "HTTP"
+  ],
+  "explain": "GET lấy dữ liệu."
+ },
+ {
+  "ref": "7.13",
+  "q": "Mã trạng thái nào xuất hiện khi server gặp lỗi nội bộ?",
+  "correct": "500",
+  "wrong": [
+   "200",
+   "300",
+   "400"
+  ],
+  "explain": "500 = Internal Server Error."
+ },
+ {
+  "ref": "7.13",
+  "q": "Mã trạng thái nào xuất hiện khi tài nguyên chỉ dành cho vai trò admin?",
+  "correct": "401",
+  "wrong": [
+   "500",
+   "303",
+   "200"
+  ],
+  "explain": "401 = chưa được phép."
+ },
+ {
+  "ref": "7.13",
+  "q": "URI là viết tắt của gì?",
+  "correct": "Uniform Resource Identifier",
+  "wrong": [
+   "Universal Resource Identifier",
+   "Unique Resource Identifier",
+   "Unrestricted Resource Identifier"
+  ],
+  "explain": "Uniform Resource Identifier."
+ },
+ {
+  "ref": "7.13",
+  "q": "Gửi dữ liệu JSON mà không hiện trên URL, dùng cách nào?",
+  "correct": "requests.post(url, json={...})",
+  "wrong": [
+   "requests.post(url, params={...})",
+   "requests.get(url, json={...})",
+   "requests.get(url, params={...})"
+  ],
+  "explain": "POST với json; params đưa dữ liệu lên URL."
+ },
+ {
+  "ref": "7.14",
+  "q": "Beautiful Soup có chức năng chính nào trong web scraping?",
+  "correct": "Phân tích và duyệt tài liệu HTML/XML",
+  "wrong": [
+   "Gửi HTTP request",
+   "Lưu dữ liệu vào cơ sở dữ liệu",
+   "Trực quan hóa dữ liệu"
+  ],
+  "explain": "Parse HTML."
+ },
+ {
+  "ref": "7.14",
+  "q": "\"HTML parsing\" trong web scraping nghĩa là gì?",
+  "correct": "Xác định và trích các phần tử cụ thể từ trang web",
+  "wrong": [
+   "Chuyển HTML thành văn bản thuần",
+   "Phân tích cấu trúc CSDL của website",
+   "Lấy dữ liệu từ endpoint API"
+  ],
+  "explain": "Parsing = trích phần tử."
+ },
+ {
+  "ref": "7.14",
+  "q": "Hàm requests.get() làm gì?",
+  "correct": "Gửi GET request đến URL chỉ định",
+  "wrong": [
+   "Gửi POST request",
+   "Lấy dữ liệu từ CSDL",
+   "Phân tích HTML"
+  ],
+  "explain": "requests.get."
+ },
+ {
+  "ref": "7.15",
+  "q": "Tiện ích nào của IBM DB2 nạp dữ liệu từ file ngoài vào bảng?",
+  "correct": "LOAD DATA",
+  "wrong": [
+   "IMPORT DATA",
+   "INSERT DATA",
+   "EXPORT DATA"
+  ],
+  "explain": "LOAD DATA."
+ },
+ {
+  "ref": "7.15",
+  "q": "Trường SEPARATOR trong tab LOAD DATA của DB2 dùng để làm gì?",
+  "correct": "Chỉ định ký tự phân cách các cột trong file đầu vào",
+  "wrong": [
+   "Đặt khóa chính cho bảng",
+   "Xác định kiểu dữ liệu các cột",
+   "Điều khiển tốc độ nạp"
+  ],
+  "explain": "SEPARATOR = delimiter."
+ },
+ {
+  "ref": "7.16",
+  "q": "Hồi quy tuyến tính giả định quan hệ nào giữa biến độc lập và phụ thuộc?",
+  "correct": "Tuyến tính",
+  "wrong": [
+   "Phi tuyến",
+   "Hàm mũ",
+   "Ngẫu nhiên"
+  ],
+  "explain": "Linear."
+ },
+ {
+  "ref": "7.16",
+  "q": "Trong Y = b0 + b1x, x là gì?",
+  "correct": "Biến dự đoán (predictor)",
+  "wrong": [
+   "Biến mục tiêu",
+   "Hệ số chặn",
+   "Độ dốc"
+  ],
+  "explain": "x là predictor."
+ },
+ {
+  "ref": "7.16",
+  "q": "Trong y = mx + c, m là gì?",
+  "correct": "Độ dốc (slope)",
+  "wrong": [
+   "Hệ số chặn",
+   "Phần dư",
+   "Biến phụ thuộc"
+  ],
+  "explain": "m = slope."
+ },
+ {
+  "ref": "7.16",
+  "q": "Hàm y = b0 + b1x1 + b2x2 + b3x3 + b4x4 là phương pháp nào?",
+  "correct": "Multiple linear regression",
+  "wrong": [
+   "Linear regression",
+   "None linear regression",
+   "Polynomial regression"
+  ],
+  "explain": "Nhiều biến độc lập."
+ },
+ {
+  "ref": "7.16",
+  "q": "Mục tiêu của hồi quy tuyến tính là gì?",
+  "correct": "Cực tiểu tổng bình phương phần dư",
+  "wrong": [
+   "Cực đại R²",
+   "Cực tiểu số biến dự đoán",
+   "Cực đại hệ số xác định"
+  ],
+  "explain": "Minimize sum of squared residuals."
+ },
+ {
+  "ref": "7.16",
+  "q": "Độ đo nào phù hợp nhất để đánh giá mô hình hồi quy?",
+  "correct": "RMSE",
+  "wrong": [
+   "Accuracy",
+   "Precision",
+   "Recall"
+  ],
+  "explain": "RMSE cho hồi quy."
+ },
+ {
+  "ref": "7.16",
+  "q": "Điểm trong residual plot biểu diễn gì?",
+  "correct": "Hiệu giữa giá trị quan sát và giá trị dự đoán",
+  "wrong": [
+   "Giá trị dự đoán",
+   "Giá trị quan sát thực",
+   "Điểm ngoại lai"
+  ],
+  "explain": "Residual = thực − dự đoán."
+ },
+ {
+  "ref": "7.17",
+  "q": "Kỹ thuật hồi quy nào phạt theo GIÁ TRỊ TUYỆT ĐỐI của hệ số?",
+  "correct": "Lasso regression",
+  "wrong": [
+   "Ridge regression",
+   "ElasticNet regression",
+   "Polynomial regression"
+  ],
+  "explain": "Lasso = L1."
+ },
+ {
+  "ref": "7.17",
+  "q": "Kỹ thuật nào phạt bằng BÌNH PHƯƠNG hệ số?",
+  "correct": "Ridge regression",
+  "wrong": [
+   "Lasso regression",
+   "Polynomial regression",
+   "Linear regression"
+  ],
+  "explain": "Ridge = L2."
+ },
+ {
+  "ref": "7.17",
+  "q": "Mục tiêu chính của Ridge regression là gì?",
+  "correct": "Xử lý đa cộng tuyến, giảm overfitting",
+  "wrong": [
+   "Chọn đặc trưng",
+   "Giảm phương sai về 0",
+   "Giảm bias"
+  ],
+  "explain": "Ridge xử lý multicollinearity."
+ },
+ {
+  "ref": "7.17",
+  "q": "Phương pháp nào kết hợp hình phạt của Ridge và Lasso?",
+  "correct": "ElasticNet regression",
+  "wrong": [
+   "Polynomial regression",
+   "Stepwise regression",
+   "Gradient Boosting"
+  ],
+  "explain": "ElasticNet."
+ },
+ {
+  "ref": "7.17",
+  "q": "Tăng alpha trong Lasso làm hệ số thay đổi thế nào?",
+  "correct": "Hệ số co về 0",
+  "wrong": [
+   "Hệ số tăng lên",
+   "Hệ số giữ nguyên",
+   "Hệ số chặn tăng"
+  ],
+  "explain": "Alpha lớn → shrink."
+ },
+ {
+  "ref": "7.17",
+  "q": "Tăng bậc trong hồi quy đa thức dẫn đến điều gì?",
+  "correct": "Overfitting",
+  "wrong": [
+   "Underfitting",
+   "Tăng bias",
+   "Giảm phương sai"
+  ],
+  "explain": "Bậc cao dễ overfitting."
+ },
+ {
+  "ref": "7.17",
+  "q": "Khi nào chọn hồi quy đa thức thay cho tuyến tính?",
+  "correct": "Khi quan hệ giữa các biến là phi tuyến",
+  "wrong": [
+   "Khi quan hệ là tuyến tính",
+   "Khi chỉ có hai biến",
+   "Khi không có tương quan"
+  ],
+  "explain": "Polynomial cho phi tuyến."
+ },
+ {
+  "ref": "7.17",
+  "q": "Lớp PolynomialFeatures trong scikit-learn làm gì?",
+  "correct": "Tạo các biến đổi đa thức của đặc trưng",
+  "wrong": [
+   "Chọn đặc trưng",
+   "Chuẩn hóa đặc trưng",
+   "Giảm chiều"
+  ],
+  "explain": "Tạo đặc trưng đa thức."
+ },
+ {
+  "ref": "7.18",
+  "q": "Mục đích chính của hồi quy logistic là gì?",
+  "correct": "Phân loại dữ liệu vào hai hoặc nhiều nhóm",
+  "wrong": [
+   "Dự đoán kết quả liên tục",
+   "Gom cụm",
+   "Phát hiện ngoại lai"
+  ],
+  "explain": "Logistic = phân loại."
+ },
+ {
+  "ref": "7.18",
+  "q": "Thuật toán nào là học có giám sát?",
+  "correct": "Linear Regression",
+  "wrong": [
+   "K-Means",
+   "Apriori",
+   "PCA"
+  ],
+  "explain": "Linear Regression có nhãn."
+ },
+ {
+  "ref": "7.18",
+  "q": "Đường chéo của confusion matrix biểu diễn gì?",
+  "correct": "True positives và true negatives",
+  "wrong": [
+   "False positives và false negatives",
+   "True positives và false positives",
+   "True negatives và false negatives"
+  ],
+  "explain": "Dự đoán đúng."
+ },
+ {
+  "ref": "7.18",
+  "q": "Precision tính bằng công thức nào?",
+  "correct": "TP / (TP + FP)",
+  "wrong": [
+   "TP / (TP + FN)",
+   "TP / (TP + TN)",
+   "TP / (FP + FN)"
+  ],
+  "explain": "Precision = TP/(TP+FP)."
+ },
+ {
+  "ref": "7.18",
+  "q": "Quan hệ giữa precision và recall là gì?",
+  "correct": "Tỉ lệ nghịch",
+  "wrong": [
+   "Độc lập",
+   "Tỉ lệ thuận",
+   "Bậc hai"
+  ],
+  "explain": "Tăng cái này thường giảm cái kia."
+ },
+ {
+  "ref": "7.18",
+  "q": "Độ đo nào phù hợp nhất cho bài toán phân loại mất cân bằng?",
+  "correct": "F1-Score",
+  "wrong": [
+   "Accuracy",
+   "Precision",
+   "Recall"
+  ],
+  "explain": "F1 cân bằng precision và recall."
+ },
+ {
+  "ref": "7.18",
+  "q": "False positive (FP) là gì?",
+  "correct": "Mẫu bị dự đoán SAI là dương",
+  "wrong": [
+   "Mẫu dự đoán đúng là dương",
+   "Mẫu dự đoán đúng là âm",
+   "Mẫu dự đoán sai là âm"
+  ],
+  "explain": "FP = dự đoán dương nhưng thực là âm."
+ },
+ {
+  "ref": "7.19",
+  "q": "Gini impurity của nút có 80 mẫu lớp A và 20 mẫu lớp B là bao nhiêu?",
+  "correct": "0.32",
+  "wrong": [
+   "0.40",
+   "0.48",
+   "0.64"
+  ],
+  "explain": "1 − (0.8² + 0.2²) = 0.32."
+ },
+ {
+  "ref": "7.19",
+  "q": "Tăng min_samples_split của cây quyết định dẫn đến điều gì?",
+  "correct": "Cây đơn giản hơn, có thể underfitting",
+  "wrong": [
+   "Cây phức tạp hơn, overfitting",
+   "Giảm bias",
+   "Tăng phương sai"
+  ],
+  "explain": "Khó tách nút hơn → đơn giản hơn."
+ },
+ {
+  "ref": "7.19",
+  "q": "min_samples_split = 10 nghĩa là gì?",
+  "correct": "Một nút chỉ được tách khi có ít nhất 10 mẫu",
+  "wrong": [
+   "Độ sâu tối thiểu của cây là 10",
+   "Mỗi độ sâu phải có hơn 10 nút",
+   "Tổng số nút phải lớn hơn 10"
+  ],
+  "explain": "Số mẫu tối thiểu để tách nút."
+ },
+ {
+  "ref": "7.19",
+  "q": "Best C = 10 trong SVC cho biết điều gì về mức điều chuẩn?",
+  "correct": "Điều chuẩn yếu (low regularization strength)",
+  "wrong": [
+   "Điều chuẩn mạnh",
+   "Không có điều chuẩn",
+   "Không kết luận được"
+  ],
+  "explain": "C lớn → điều chuẩn yếu."
+ },
+ {
+  "ref": "7.19",
+  "q": "Phương pháp nào chọn siêu tham số C tốt nhất cho SVC?",
+  "correct": "Grid Search",
+  "wrong": [
+   "Random Search",
+   "Sequential Feature Selection",
+   "Recursive Feature Elimination"
+  ],
+  "explain": "Grid Search."
+ },
+ {
+  "ref": "7.20",
+  "q": "GridSearchCV tìm siêu tham số tốt nhất bằng cách nào?",
+  "correct": "Thử tất cả các tổ hợp siêu tham số",
+  "wrong": [
+   "Chọn ngẫu nhiên",
+   "Dùng gradient descent",
+   "Dùng siêu tham số mặc định"
+  ],
+  "explain": "Exhaustive search."
+ },
+ {
+  "ref": "7.20",
+  "q": "\"Grid\" trong grid search là gì?",
+  "correct": "Tập các tham số mô hình tiềm năng",
+  "wrong": [
+   "Tập các đặc trưng đầu vào",
+   "Tập các dự đoán đầu ra",
+   "Tập các độ đo đánh giá"
+  ],
+  "explain": "Lưới tham số."
+ },
+ {
+  "ref": "7.20",
+  "q": "Hàm nào dùng cross-validation để đánh giá mô hình?",
+  "correct": "cross_val_score()",
+  "wrong": [
+   "evaluate()",
+   "validate()",
+   "model_performance()"
+  ],
+  "explain": "cross_val_score."
+ },
+ {
+  "ref": "7.20",
+  "q": "Tham số cv trong cross-validation là gì?",
+  "correct": "Số fold hoặc số lần lặp cross-validation",
+  "wrong": [
+   "Giá trị độ phức tạp",
+   "Điểm cross-validation",
+   "Tham số điều chuẩn"
+  ],
+  "explain": "cv = số fold."
+ },
+ {
+  "ref": "7.20",
+  "q": "Hàm nào tạo pipeline với các bước tuần tự?",
+  "correct": "make_pipeline()",
+  "wrong": [
+   "build_pipeline()",
+   "create_pipeline()",
+   "init_pipeline()"
+  ],
+  "explain": "make_pipeline hoặc lớp Pipeline."
+ },
+ {
+  "ref": "7.20",
+  "q": "fit_transform() thường làm gì?",
+  "correct": "Vừa fit vừa biến đổi dữ liệu huấn luyện",
+  "wrong": [
+   "Chỉ fit mô hình",
+   "Chỉ biến đổi dữ liệu",
+   "Không làm gì"
+  ],
+  "explain": "Fit và transform đồng thời."
+ },
+ {
+  "ref": "7.21",
+  "q": "Mục đích chính của hàm kích hoạt trong mạng nơ-ron là gì?",
+  "correct": "Thêm tính phi tuyến cho mô hình",
+  "wrong": [
+   "Khởi tạo trọng số",
+   "Giảm độ phức tạp",
+   "Tính gradient"
+  ],
+  "explain": "Activation → non-linearity."
+ },
+ {
+  "ref": "7.21",
+  "q": "Hàm kích hoạt nào hay dùng ở lớp ẩn của CNN?",
+  "correct": "ReLU",
+  "wrong": [
+   "Sigmoid",
+   "Tanh",
+   "Softmax"
+  ],
+  "explain": "ReLU."
+ },
+ {
+  "ref": "7.21",
+  "q": "Softmax ở lớp ra của mô hình nhiều lớp làm gì?",
+  "correct": "Chuyển logits thành phân phối xác suất trên nhiều lớp",
+  "wrong": [
+   "Áp ngưỡng cho phân loại nhị phân",
+   "Chuẩn hóa đầu vào",
+   "Tính đạo hàm"
+  ],
+  "explain": "Softmax → xác suất."
+ },
+ {
+  "ref": "7.21",
+  "q": "Lớp nào giảm kích thước không gian và kiểm soát overfitting trong CNN?",
+  "correct": "MaxPooling",
+  "wrong": [
+   "Convolutional",
+   "Dense",
+   "Flatten"
+  ],
+  "explain": "MaxPooling."
+ },
+ {
+  "ref": "7.21",
+  "q": "Dropout trong CNN để làm gì?",
+  "correct": "Chống overfitting bằng cách ngẫu nhiên bỏ nơ-ron khi huấn luyện",
+  "wrong": [
+   "Giảm learning rate",
+   "Tăng số tham số",
+   "Tăng độ chính xác trực tiếp"
+  ],
+  "explain": "Dropout chống overfitting."
+ },
+ {
+  "ref": "7.21",
+  "q": "model.compile() làm gì?",
+  "correct": "Gắn optimizer, loss function và metrics",
+  "wrong": [
+   "Khởi tạo trọng số",
+   "Định nghĩa kiến trúc",
+   "Đánh giá mô hình"
+  ],
+  "explain": "compile."
+ },
+ {
+  "ref": "7.21",
+  "q": "model.fit() làm gì?",
+  "correct": "Huấn luyện mô hình trên dữ liệu huấn luyện",
+  "wrong": [
+   "Biên dịch mô hình",
+   "Khởi tạo trọng số",
+   "Đánh giá mô hình"
+  ],
+  "explain": "fit."
+ },
+ {
+  "ref": "7.21",
+  "q": "model.evaluate() làm gì?",
+  "correct": "Đánh giá hiệu năng trên dữ liệu kiểm tra",
+  "wrong": [
+   "Biên dịch mô hình",
+   "Huấn luyện mô hình",
+   "Khởi tạo trọng số"
+  ],
+  "explain": "evaluate."
+ },
+ {
+  "ref": "7.22",
+  "q": "Intent trong Watson Assistant là gì?",
+  "correct": "Mục đích hoặc mục tiêu thể hiện trong câu nhập của khách hàng",
+  "wrong": [
+   "Thông tin cụ thể trích từ câu nhập",
+   "Luồng hội thoại",
+   "Hồ sơ người dùng"
+  ],
+  "explain": "Intent = mục đích."
+ },
+ {
+  "ref": "7.22",
+  "q": "Entity trong Watson Assistant dùng để làm gì?",
+  "correct": "Trích thông tin cụ thể từ câu nhập của người dùng",
+  "wrong": [
+   "Xác thực người dùng",
+   "Định nghĩa luồng hội thoại",
+   "Lưu hồ sơ người dùng"
+  ],
+  "explain": "Entity = thông tin cụ thể."
+ },
+ {
+  "ref": "7.22",
+  "q": "Dialog node dùng để làm gì?",
+  "correct": "Điều khiển luồng hội thoại",
+  "wrong": [
+   "Biểu diễn tin nhắn người dùng",
+   "Định nghĩa intents",
+   "Lưu dữ liệu người dùng"
+  ],
+  "explain": "Dialog node điều khiển luồng."
+ },
+ {
+  "ref": "7.22",
+  "q": "Tính năng Slots trong dialog node để làm gì?",
+  "correct": "Thu thập thông tin từ câu nhập của người dùng",
+  "wrong": [
+   "Biểu diễn khoảng trống trong hội thoại",
+   "Dự trữ bộ nhớ",
+   "Định nghĩa màu giao diện"
+  ],
+  "explain": "Slots thu thập thông tin."
+ },
+ {
+  "ref": "7.22",
+  "q": "Dialog skill dùng công nghệ nào để hiểu câu hỏi?",
+  "correct": "Xử lý ngôn ngữ tự nhiên của Watson và học máy",
+  "wrong": [
+   "Chỉ xử lý ngôn ngữ tự nhiên của Watson",
+   "Chỉ học máy",
+   "Không dùng công nghệ nào"
+  ],
+  "explain": "Cả NLP và ML."
+ },
+ {
+  "ref": "7.23",
+  "q": "Khi thay đổi dialog của chatbot, có cần triển khai lại không?",
+  "correct": "Không cần triển khai lại",
+  "wrong": [
+   "Luôn phải triển khai lại",
+   "Phải xóa chatbot",
+   "Phải tạo skill mới"
+  ],
+  "explain": "Không cần re-deploy."
+ },
+ {
+  "ref": "7.23",
+  "q": "Tích hợp chatbot với Facebook Messenger cần gì để thiết lập?",
+  "correct": "Access token",
+  "wrong": [
+   "Developer API key",
+   "Facebook Graph API",
+   "OAuth token"
+  ],
+  "explain": "Access token."
+ },
+ {
+  "ref": "7.23",
+  "q": "Tính năng \"Try it out\" dùng để làm gì?",
+  "correct": "Gỡ lỗi chatbot",
+  "wrong": [
+   "Triển khai chatbot lên môi trường thật",
+   "Tự tạo dữ liệu huấn luyện",
+   "Nhập cấu hình chatbot có sẵn"
+  ],
+  "explain": "Try it out = debug."
+ },
+ {
+  "ref": "7.23",
+  "q": "Phương thức nào thường dùng để xác thực truy cập API Watson?",
+  "correct": "API key",
+  "wrong": [
+   "OAuth authentication",
+   "API token",
+   "Access key"
+  ],
+  "explain": "API key."
+ },
+ {
+  "ref": "7.23",
+  "q": "Ba cách làm giao diện giọng nói cho chatbot Watson Assistant là gì?",
+  "correct": "Cuộc gọi điện thoại, Speech to Text và Text to Speech APIs, Voice Agent with Watson",
+  "wrong": [
+   "Cuộc gọi điện thoại, chỉ Speech to Text và Text Agent",
+   "Cuộc gọi điện thoại, chỉ Text to Speech và Voice Agent",
+   "Chỉ Text Agent with Watson"
+  ],
+  "explain": "Ba cách đầy đủ."
+ },
+ {
+  "ref": "7.23",
+  "q": "Webhook kết nối DB2 được cấu hình như thế nào?",
+  "correct": "Cung cấp endpoint URL của webhook trong thiết lập webhook",
+  "wrong": [
+   "Ghi câu SQL trực tiếp trong thiết lập webhook",
+   "Nhúng thông tin đăng nhập CSDL vào câu trả lời",
+   "Tạo một webhook riêng cho mỗi truy vấn"
+  ],
+  "explain": "Endpoint URL."
+ },
+ {
+  "ref": "7.24",
+  "q": "Đầu ra của Watson Speech to Text là gì?",
+  "correct": "Văn bản (text)",
+  "wrong": [
+   "Âm thanh",
+   "JSON",
+   "Hình ảnh"
+  ],
+  "explain": "Giọng nói → văn bản."
+ },
+ {
+  "ref": "7.24",
+  "q": "Dịch vụ Watson nào chuyển văn bản thành giọng nói?",
+  "correct": "Text-to-Speech",
+  "wrong": [
+   "Speech-to-Text",
+   "Discovery",
+   "Natural Language Understanding"
+  ],
+  "explain": "Text-to-Speech."
+ },
+ {
+  "ref": "7.24",
+  "q": "Dịch vụ Watson nào dùng cho lập chỉ mục và tìm kiếm tài liệu?",
+  "correct": "Watson Discovery",
+  "wrong": [
+   "Watson Assistant",
+   "Watson Language Translator",
+   "Watson Natural Language Understanding"
+  ],
+  "explain": "Discovery."
+ },
+ {
+  "ref": "7.24",
+  "q": "Dịch vụ Watson nào dùng để hiểu và xử lý nội dung văn bản?",
+  "correct": "Natural Language Understanding",
+  "wrong": [
+   "Watson Assistant",
+   "Watson Discovery",
+   "Language Translator"
+  ],
+  "explain": "NLU."
+ },
+ {
+  "ref": "7.25",
+  "q": "Với câu polynomial regression nhiệt độ theo giờ (câu 91 và 99), bộ hệ số đúng theo bộ đề là gì?",
+  "correct": "a=0.83, b=1.77, c=1.07",
+  "wrong": [
+   "a=0.82, b=1.74, c=1.02",
+   "a=0.83, b=1.77, c=1.09",
+   "a=0.84, b=1.78, c=1.10"
+  ],
+  "explain": "Đáp án của bộ đề."
+ },
+ {
+  "ref": "7.25",
+  "q": "Với câu logistic regression nhiệt độ theo giờ có a, b ban đầu 0.8 và 1.2 (câu 95), đáp án theo bộ đề là gì?",
+  "correct": "a=0.56, b=1.14",
+  "wrong": [
+   "a=0.32, b=1.08",
+   "a=0.09, b=1.02",
+   "a=-0.15, b=0.96"
+  ],
+  "explain": "Đáp án của bộ đề."
+ },
+ {
+  "ref": "7.25",
+  "q": "Với câu logistic regression theo lượng mưa (câu 98), đáp án theo bộ đề là gì?",
+  "correct": "a=0.46, b=0.48",
+  "wrong": [
+   "a=0.42, b=0.46",
+   "a=0.39, b=0.43",
+   "a=0.35, b=0.41"
+  ],
+  "explain": "Đáp án của bộ đề."
+ },
+ {
+  "ref": "7.26",
+  "q": "Dcc.Slider khác dcc.RangeSlider ở điểm nào?",
+  "correct": "Slider chọn một giá trị; RangeSlider chọn một khoảng",
+  "wrong": [
+   "Slider chọn một khoảng; RangeSlider chọn một giá trị",
+   "Cả hai đều chỉ nhập văn bản",
+   "Cả hai đều là danh sách thả xuống"
+  ],
+  "explain": "Slider: một giá trị; RangeSlider: một khoảng."
+ },
+ {
+  "ref": "7.26",
+  "q": "Khác biệt cơ bản giữa Ridge và Lasso là gì?",
+  "correct": "Ridge phạt bình phương hệ số; Lasso phạt giá trị tuyệt đối và có thể đưa hệ số về 0",
+  "wrong": [
+   "Ridge phạt giá trị tuyệt đối; Lasso phạt bình phương",
+   "Cả hai phạt theo cách giống nhau",
+   "Ridge luôn đưa hệ số về 0"
+  ],
+  "explain": "Ridge L2, Lasso L1."
+ },
+ {
+  "ref": "7.26",
+  "q": "Độ đo nào dành cho hồi quy, độ đo nào dành cho phân loại?",
+  "correct": "R², RMSE, MSE cho hồi quy; Accuracy, Precision, Recall, F1 cho phân loại",
+  "wrong": [
+   "Accuracy cho hồi quy; R² cho phân loại",
+   "Mọi độ đo dùng cho cả hai",
+   "F1 cho hồi quy"
+  ],
+  "explain": "Phân biệt hồi quy và phân loại."
+ },
+ {
+  "ref": "7.26",
+  "q": "Với câu có đáp án \"All of the above\", nên làm gì?",
+  "correct": "Kiểm tra từng lựa chọn rồi mới quyết định",
+  "wrong": [
+   "Luôn chọn \"All of the above\"",
+   "Không bao giờ chọn",
+   "Chọn theo độ dài đáp án"
+  ],
+  "explain": "Đừng chọn theo phản xạ."
+ }
+]

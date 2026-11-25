@@ -52,9 +52,9 @@ function digestModule(dg, idx) {
     let h = `<p class="muted">${esc(ch.title)}</p><ul>${s.pts.map(p => `<li>${md(p)}</li>`).join('')}</ul>`;
     if (s.tbl) h += `<table><thead><tr>${s.tbl.head.map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${s.tbl.rows.map(r => `<tr>${r.map(x => `<td>${md(x)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
     if (s.qs && s.qs.length) h += `<p class="small muted">Câu liên quan trong bộ đề: ${s.qs.join(', ')}</p>`;
-    sections.push({ id: '8.' + n, t: s.h, h });
+    sections.push({ id: (idx + 1) + '.' + n, t: s.h, h });
   }
-  return { id: 'm8', short: 'C' + (idx + 1), title: 'Tổng hợp theo bộ đề', color: '#7c5cff', weight: 0, priority: 1, keyPoints: [], digest: true, sections };
+  return { id: 'm' + (idx + 1), short: 'C' + (idx + 1), title: 'Tổng hợp theo bộ đề', color: '#7c5cff', weight: 0, priority: 1, keyPoints: [], digest: true, sections };
 }
 
 for (const [id, S] of Object.entries(SUBJECTS)) {
@@ -70,7 +70,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
   const topicMod = { ...S.topicMod }; for (const q of bank) if (!topicMod[q.topic]) topicMod[q.topic] = S.defMod;
   const perMod = {}; bank.forEach(q => perMod[topicMod[q.topic]] = (perMod[topicMod[q.topic]] || 0) + 1);
   const modules = L.modules.map((m, i) => ({ id: m.id, short: 'C' + (i + 1), title: S.rename[m.id] || m.title, color: COLORS[i % COLORS.length], weight: perMod[m.id] || 1, priority: 3, keyPoints: [], sections: m.sections }));
-  if (S.file === 'cpv' && fs.existsSync(path.join(W, 'data', 'cpv-digest.json'))) modules.push(digestModule(JSON.parse(rd(W, 'data', 'cpv-digest.json')), modules.length));
+  if (fs.existsSync(path.join(W, 'data', `${S.file}-digest.json`))) modules.push(digestModule(JSON.parse(rd(W, 'data', `${S.file}-digest.json`)), modules.length));
   // câu hỏi lại lý thuyết: ưu tiên bản Antigravity viết tay, chương nào thiếu thì dùng bộ sinh tự động
   const recallDir = path.join(ROOT, 'sources-private', `recall-${S.file}`), manual = {};
   if (fs.existsSync(recallDir)) for (const f of fs.readdirSync(recallDir).filter(f => /^m\d+\.json$/.test(f))) { try { manual[f.replace('.json', '')] = JSON.parse(rd(recallDir, f)); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
@@ -90,7 +90,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
     if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;
     rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
   const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
-  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: S.file === 'cpv' && fs.existsSync(path.join(W, 'data', 'cpv-confuse.json')) ? JSON.parse(rd(W, 'data', 'cpv-confuse.json')) : [] })};`;
+  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: fs.existsSync(path.join(W, 'data', `${S.file}-confuse.json`)) ? JSON.parse(rd(W, 'data', `${S.file}-confuse.json`)) : [] })};`;
   const html = `<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n<title>${S.name} · Ôn thi cuối kỳ</title>\n<style>\n${style}\n</style></head><body>\n<noscript>App cần bật JavaScript.</noscript>\n<script id="data">\n${safe(data)}\n</script>\n<script id="app">\n${safe(appJs)}\n</script>\n</body></html>`;
   fs.writeFileSync(path.join(W, 'data', `app-${id}.html`), html);
   const multi = bank.filter(q => q.answer.length > 1).length;
