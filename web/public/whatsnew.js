@@ -3,6 +3,7 @@
 (function(){
 if(window.WebWhatsNew)return;
 var CHANGELOG=[
+ {id:'2026-12-05-quiz-keys',date:'05/12/2026',title:'Phím tắt mới khi làm quiz',items:['T: dịch cả câu hỏi. R: gợi ý (khi chưa trả lời) hoặc kiểm tra đáp án (sau khi trả lời). L: mở lý thuyết.','Space: sang câu tiếp theo sau khi đã trả lời. Mũi tên phải: câu sau (câu chưa làm sẽ bỏ qua). Mũi tên trái: quay lại câu trước, xem lại đáp án đã chọn.']},
  {id:'2026-12-04-confuse',date:'04/12/2026',title:'CPV301: ôn các câu dễ nhầm đáp án',items:['Môn CPV301 có mục mới "Câu dễ nhầm đáp án" (ở trang chủ và trang Bộ đề): 272 câu chia 29 nhóm, gồm các câu khác nhau nhưng đáp án giống nhau hoặc chỉ đổi một từ (giới hạn trên/dưới của dải động, Semantic/Instance, Mean shift/K-means, "All of the others" là đáp án hay bẫy, câu NOT...).','Mỗi nhóm có quy tắc phân biệt, có thể luyện riêng từng nhóm, ôn xen kẽ tất cả hoặc làm nhanh 20 câu. Sau mỗi câu có ghi chú "Dễ nhầm" để nhớ lâu.']},
  {id:'2026-12-03-profile',date:'03/12/2026',title:'Hồ sơ cá nhân',items:['Menu tài khoản có mục Hồ sơ của tôi: đổi ảnh đại diện, viết câu nói, giới thiệu và chọn màu hồ sơ.','Bấm vào avatar của bất kỳ ai (bảng xếp hạng, danh sách online trong chat) để xem hồ sơ và thành tích của họ.','Bảng xếp hạng được ẩn khi đang ở chế độ Tập trung.']},
  {id:'2026-12-02-giacngo',date:'02/12/2026',title:'Danh hiệu mới: Tuất giác ngộ',items:['Thêm danh hiệu cao nhất Tuất giác ngộ (1.000.000 điểm) với hiệu ứng hào quang riêng.','Bảng xếp hạng hiện thêm email nhỏ dưới tên mỗi người.']},
