@@ -1,0 +1,1461 @@
+[
+ {
+  "id": "dyn",
+  "title": "Dải động: giới hạn TRÊN hay DƯỚI?",
+  "why": "Hai câu hỏi gần như giống hệt, chỉ đổi “upper” ↔ “lower”, nên bấm nhanh rất dễ đổi chỗ đáp án.",
+  "rules": [
+   "Giới hạn TRÊN của dynamic range → Saturation (bão hòa)",
+   "Giới hạn DƯỚI → Noise (nhiễu)"
+  ],
+  "items": [
+   [
+    25,
+    "Giới hạn TRÊN → Saturation"
+   ],
+   [
+    30,
+    "Giới hạn DƯỚI → Noise"
+   ],
+   [
+    158,
+    "Giới hạn DƯỚI → Noise"
+   ]
+  ]
+ },
+ {
+  "id": "seg",
+  "title": "Semantic hay Instance segmentation?",
+  "why": "Hai thuật ngữ chỉ khác một chữ; câu mô tả gần như giống nhau, chỉ khác “lớp” và “từng đối tượng”.",
+  "rules": [
+   "Mỗi pixel thuộc LỚP nào → Semantic",
+   "Mỗi pixel thuộc đối tượng (instance) nào, tách từng vật → Instance",
+   "Instance phức tạp hơn, cần thêm dữ liệu huấn luyện"
+  ],
+  "items": [
+   [
+    134,
+    "Pixel thuộc LỚP nào → Semantic segmentation"
+   ],
+   [
+    151,
+    "Từng đối tượng riêng → Instance segmentation"
+   ],
+   [
+    274,
+    "Instance phức tạp hơn, cần thêm dữ liệu huấn luyện"
+   ]
+  ]
+ },
+ {
+  "id": "track",
+  "title": "Các kiểu object tracking",
+  "why": "Kernel / Template / Point / Silhouette đều “theo vùng đối tượng”, mô tả khác nhau rất ít.",
+  "rules": [
+   "Vùng đối tượng “phôi thai”, nhấn mạnh hình dạng + hình thức → Kernel tracking",
+   "Dùng thông tin ngay trong vùng đối tượng → Template matching",
+   "Đối tượng là các điểm qua từng frame → Point tracking",
+   "Cửa sổ tìm kiếm thích nghi (scale, xoay, che khuất) → CamShift",
+   "Factored sampling lặp → Condensation"
+  ],
+  "items": [
+   [
+    123,
+    "Thông tin trong chính vùng đối tượng → Template Matching"
+   ],
+   [
+    145,
+    "Vùng “phôi thai”, hình dạng + hình thức → Kernel Tracking"
+   ],
+   [
+    150,
+    "Từ frame này sang frame sau → Kernel Tracking"
+   ],
+   [
+    116,
+    "Theo bộ đề, Kernel tracking thuộc nhóm Deterministic method"
+   ],
+   [
+    282,
+    "Point tracking: đối tượng là điểm, cần cơ chế ngoài để detect"
+   ],
+   [
+    91,
+    "Theo dõi = gán ID cho mỗi vật rồi giữ ID qua các frame"
+   ],
+   [
+    124,
+    "Thích nghi cửa sổ tìm kiếm → CamShift (không phải Mean Shift)"
+   ],
+   [
+    297,
+    "Factored sampling lặp qua chuỗi ảnh → Condensation"
+   ]
+  ]
+ },
+ {
+  "id": "conv",
+  "title": "Convolution – Correlation – Fourier",
+  "why": "Cùng một họ công thức: dễ lẫn cộng/nhân, convolution/correlation, miền thời gian/tần số.",
+  "rules": [
+   "Convolution ở miền không gian ⇔ NHÂN ở miền tần số: F(w)H(w), không phải cộng",
+   "Correlation = đo độ giống nhau giữa hai ảnh",
+   "Convolution = correlation sau khi xoay kernel 180° quanh tâm"
+  ],
+  "items": [
+   [
+    129,
+    "Kết quả: F(w)H(w) (tích, không phải tổng)"
+   ],
+   [
+    144,
+    "Convolution ↔ tích trong miền biến đổi"
+   ],
+   [
+    293,
+    "Convolution ↔ NHÂN trong miền tần số"
+   ],
+   [
+    249,
+    "Correlation = độ giống nhau của hai ảnh"
+   ],
+   [
+    266,
+    "Xoay kernel 180° rồi correlation = convolution"
+   ],
+   [
+    291,
+    "Xoay kernel 180° quanh tâm"
+   ]
+  ]
+ },
+ {
+  "id": "contrast",
+  "title": "Contrast stretching vs Histogram equalization",
+  "why": "Cả hai “trải cường độ ra dải rộng hơn”, nhưng mỗi câu hỏi chỉ khớp một kỹ thuật.",
+  "rules": [
+   "“Phân bố cường độ khắp TOÀN dải” → Histogram equalization",
+   "“KÉO GIÃN khoảng cường độ để dùng hết giá trị” → Contrast stretching",
+   "White patch / Gray world = cân bằng trắng; Ground truth = nhãn đúng, không liên quan"
+  ],
+  "items": [
+   [
+    107,
+    "Phân bố cường độ khắp toàn dải → Histogram equalization"
+   ],
+   [
+    118,
+    "Kéo giãn dải để dùng hết giá trị → Contrast stretching"
+   ],
+   [
+    68,
+    "Contrast stretching = kéo giãn khoảng cường độ hiện có"
+   ],
+   [
+    171,
+    "Contrast stretching = kéo giãn để tận dụng tối ưu dải cường độ"
+   ]
+  ]
+ },
+ {
+  "id": "refl",
+  "title": "Phản xạ ánh sáng: diffuse, specular, Phong, BRDF",
+  "why": "Nhiều thuật ngữ gần nhau và đáp án nhiễu đều là loại phản xạ khác.",
+  "rules": [
+   "Diffuse / Lambertian: tán xạ nhiều hướng",
+   "Specular: như gương, MỘT hướng",
+   "Phong đầy đủ = ambient + diffuse + specular",
+   "Ray tracing hợp bề mặt bóng; radiosity hợp bề mặt mờ"
+  ],
+  "items": [
+   [
+    141,
+    "Lambertian → Diffuse"
+   ],
+   [
+    166,
+    "Nhiều hướng → Diffuse"
+   ],
+   [
+    198,
+    "Như gương, một hướng → Specular"
+   ],
+   [
+    88,
+    "BRDF (theo bộ đề): mô hình hóa phản xạ gương"
+   ],
+   [
+    280,
+    "Phong đầy đủ: diffuse + specular + ambient"
+   ],
+   [
+    248,
+    "Ray tracing: bề mặt bóng; radiosity: bề mặt mờ"
+   ],
+   [
+    234,
+    "Phong giả định đường sáng trực tiếp"
+   ],
+   [
+    82,
+    "Illumination model: đầu vào, giả định, đầu ra"
+   ],
+   [
+    257,
+    "Illumination model: mô tả đầu vào, giả định, đầu ra"
+   ]
+  ]
+ },
+ {
+  "id": "cam",
+  "title": "Camera: khẩu độ, tốc độ màn trập, ISO",
+  "why": "Aperture và shutter speed đều “điều khiển lượng sáng”; câu hỏi chỉ khác ở chữ nào được hỏi.",
+  "rules": [
+   "Aperture (khẩu độ): lượng sáng đi qua ống kính",
+   "Shutter speed: thời gian phơi sáng, lượng sáng tới cảm biến",
+   "ISO: độ nhạy sáng của cảm biến",
+   "AGC: khuếch đại + black level cho khớp dải động"
+  ],
+  "items": [
+   [
+    190,
+    "Aperture → lượng sáng vào ống kính"
+   ],
+   [
+    121,
+    "Shutter speed → lượng sáng tới cảm biến, mức phơi sáng"
+   ],
+   [
+    260,
+    "Shutter speed → lượng sáng tới cảm biến"
+   ],
+   [
+    149,
+    "ISO → độ nhạy sáng của cảm biến"
+   ],
+   [
+    101,
+    "Khuếch đại + black level → AGC"
+   ],
+   [
+    162,
+    "Smartphone, máy compact → CMOS"
+   ],
+   [
+    103,
+    "Số hóa ảnh → hệ thống cảm biến (Sensor)"
+   ],
+   [
+    93,
+    "Chromatic aberration do tán sắc ánh sáng (dispersion)"
+   ],
+   [
+    89,
+    "Méo ảnh thường do ống kính góc rộng"
+   ]
+  ]
+ },
+ {
+  "id": "harris",
+  "title": "Harris: phẳng – cạnh – góc",
+  "why": "Cùng đại lượng R nhưng đáp án đổi theo loại vùng: nhỏ, âm hay lớn.",
+  "rules": [
+   "|R| nhỏ → vùng phẳng (flat)",
+   "R < 0 (λ1 ≫ λ2) → cạnh",
+   "|R| lớn và λ1 ≈ λ2 → góc (corner)"
+  ],
+  "items": [
+   [
+    143,
+    "Góc có độ lớn gradient CAO"
+   ],
+   [
+    146,
+    "|R| nhỏ → vùng phẳng"
+   ],
+   [
+    216,
+    "|R| lớn và λ1 ≈ λ2 → góc"
+   ]
+  ]
+ },
+ {
+  "id": "zero",
+  "title": "Đạo hàm bậc 2, zero-crossing, LoG, DoG",
+  "why": "Gradient bậc 1 / bậc 2, LoG / DoG / Canny dùng chung từ “Gaussian”, “edge”, “zero-crossing”.",
+  "rules": [
+   "Zero-crossing → đạo hàm bậc 2",
+   "LoG: làm mờ Gaussian rồi Laplacian (đạo hàm bậc 2)",
+   "Phát hiện blob → Normalized LoG",
+   "DoG xấp xỉ NLoG nhưng tính NHANH hơn",
+   "Gaussian trong Canny/LoG chỉ để làm mờ, giảm nhiễu"
+  ],
+  "items": [
+   [
+    110,
+    "Zero-crossing → đạo hàm bậc 2"
+   ],
+   [
+    113,
+    "Theo bộ đề: Canny dùng Laplacian of Gaussian"
+   ],
+   [
+    228,
+    "LoG: Laplacian tính đạo hàm bậc 2"
+   ],
+   [
+    49,
+    "Đếm điểm đổi dấu của đạo hàm bậc 2"
+   ],
+   [
+    117,
+    "Vị trí blob → Normalized LoG"
+   ],
+   [
+    1,
+    "Công thức normalized LoG (câu hình)"
+   ],
+   [
+    295,
+    "DoG xấp xỉ NLoG, tính hiệu quả hơn"
+   ],
+   [
+    172,
+    "Gaussian trong LoG: làm mờ, giảm nhiễu"
+   ],
+   [
+    227,
+    "Gaussian trong Canny: giảm nhiễu"
+   ]
+  ]
+ },
+ {
+  "id": "edgeop",
+  "title": "Toán tử cạnh: Sobel, Prewitt, Canny",
+  "why": "Các toán tử có mô tả tương tự nhau; đáp án nhiễu hay đảo “ưu điểm” ↔ “nhược điểm”.",
+  "rules": [
+   "Sobel cơ bản: nhạy với nhiễu",
+   "Prewitt: tốt với cạnh dọc/ngang; khác Sobel ở trọng số kernel",
+   "Canny: kết hợp nhiều bước để cạnh bền vững",
+   "Edge detection: tìm điểm gián đoạn độ sáng, ranh giới giữa các vùng"
+  ],
+  "items": [
+   [
+    87,
+    "Nhược điểm Sobel: nhạy với nhiễu"
+   ],
+   [
+    71,
+    "Prewitt: tốt với cạnh dọc và ngang"
+   ],
+   [
+    224,
+    "Prewitt khác Sobel ở kernel"
+   ],
+   [
+    237,
+    "Canny: kết hợp nhiều bước → bền vững"
+   ],
+   [
+    281,
+    "Canny: kết hợp nhiều bước → bền vững"
+   ],
+   [
+    278,
+    "Sobel ngang: tổng có trọng số theo hướng ngang"
+   ],
+   [
+    86,
+    "Gradient: trích xuất thông tin hữu ích"
+   ],
+   [
+    28,
+    "Gradient: đo độ biến thiên của hàm cường độ"
+   ],
+   [
+    15,
+    "Edge detection: điểm gián đoạn độ sáng"
+   ],
+   [
+    213,
+    "Edge detection: ranh giới giữa các vùng"
+   ],
+   [
+    250,
+    "Edge linking: sắp xếp pixel cạnh thành danh sách có thứ tự"
+   ]
+  ]
+ },
+ {
+  "id": "hough",
+  "title": "Hough Transform và dò đường bằng convolution",
+  "why": "Có hai kỹ thuật tìm đường thẳng; đáp án nhiễu hay hoán đổi bước đầu / không gian tham số.",
+  "rules": [
+   "Hough: bước đầu = edge detection; không gian = Polar; bỏ phiếu, rồi lấy các đỉnh (peak)",
+   "Nhiễu nhiều → đỉnh giả",
+   "Ứng dụng điển hình: vạch kẻ đường",
+   "Kỹ thuật thứ hai dò đường: Convolution-based (mặt nạ theo độ rộng n và góc θ)"
+  ],
+  "items": [
+   [
+    98,
+    "Bước đầu: edge detection"
+   ],
+   [
+    122,
+    "Không gian tham số: Polar"
+   ],
+   [
+    176,
+    "Mục tiêu: thủ tục bỏ phiếu (voting)"
+   ],
+   [
+    210,
+    "Sau bỏ phiếu: tìm các đỉnh (peak)"
+   ],
+   [
+    236,
+    "Chuyển điểm cạnh sang không gian tham số"
+   ],
+   [
+    256,
+    "Vạch kẻ đường → Hough"
+   ],
+   [
+    292,
+    "Vạch kẻ đường → Hough"
+   ],
+   [
+    261,
+    "Nhiễu nhiều → đỉnh giả"
+   ],
+   [
+    279,
+    "Tìm thể hiện không hoàn hảo của đối tượng"
+   ],
+   [
+    155,
+    "Hai kỹ thuật: Hough và Convolution-based"
+   ],
+   [
+    23,
+    "Mặt nạ theo độ rộng n, góc θ → Convolution-based"
+   ],
+   [
+    47,
+    "Mặt nạ đường chéo: ±45°"
+   ],
+   [
+    220,
+    "Xe tự lái: nhận biết ranh giới làn đường"
+   ]
+  ]
+ },
+ {
+  "id": "ransac",
+  "title": "RANSAC",
+  "why": "Rất nhiều câu về cùng một thuật toán; đáp án nhiễu là khái niệm lân cận (overfitting, tổng bình phương...).",
+  "rules": [
+   "RANSAC = RANdom SAmple Consensus",
+   "Đối phó với OUTLIERS (không phải overfitting/underfitting)",
+   "Chọn mẫu NGẪU NHIÊN, tập TỐI THIỂU",
+   "Consensus = đa số inliers",
+   "Số lần thử = log(1-P) CHIA log(1-p^k)"
+  ],
+  "items": [
+   [
+    11,
+    "Ước lượng tham số chịu nhiều outlier → RANSAC"
+   ],
+   [
+    12,
+    "Tập trung outlier ở biến hồi quy → S-estimation"
+   ],
+   [
+    102,
+    "RANSAC giải quyết outliers"
+   ],
+   [
+    186,
+    "Lặp: ước lượng mô hình từ mẫu ngẫu nhiên, đếm inlier"
+   ],
+   [
+    195,
+    "RANdom SAmple Consensus"
+   ],
+   [
+    196,
+    "Consensus = đa số inliers"
+   ],
+   [
+    127,
+    "log(1-P) / log(1-p^k): phép CHIA"
+   ],
+   [
+    51,
+    "Thứ tự: 1 → 6 → 3 → 2 → 5 → 4 (163254)"
+   ]
+  ]
+ },
+ {
+  "id": "snake",
+  "title": "Active contour / Snake",
+  "why": "Năng lượng nội và ngoại có vai trò đối lập; câu hỏi đảo chữ “internal” ↔ “external”.",
+  "rules": [
+   "Năng lượng NỘI (internal): phạt biến dạng lớn, giữ contour trơn",
+   "Năng lượng NGOẠI (external): kéo contour về biên đối tượng",
+   "Thuật toán: Snakes model"
+  ],
+  "items": [
+   [
+    109,
+    "Dùng lực năng lượng + ràng buộc → Active contours"
+   ],
+   [
+    132,
+    "Thuật toán trong active contour: Snakes model"
+   ],
+   [
+    184,
+    "Năng lượng NỘI: phạt biến dạng lớn"
+   ],
+   [
+    199,
+    "Năng lượng NGOẠI: hút contour về biên"
+   ],
+   [
+    79,
+    "Xác định biên/đường cong cho vùng mục tiêu (không phải gán màu)"
+   ]
+  ]
+ },
+ {
+  "id": "cluster",
+  "title": "Mean shift – K-means – GMM",
+  "why": "Ba thuật toán gom cụm có mô tả gần giống; đáp án nhiễu chỉ đổi một từ (range ↔ clustering, tổng ↔ tích).",
+  "rules": [
+   "Mean shift: thay pixel bằng trung bình các pixel TRONG KHOẢNG (range) lân cận; tìm đỉnh phân phối",
+   "K-means: K = số cụm; khởi tạo centroid NGẪU NHIÊN; gom theo cường độ",
+   "GMM: gom cụm MỀM; mỗi cụm là một phân phối Gaussian; TỔNG của nhiều Gaussian (không phải tích)"
+  ],
+  "items": [
+   [
+    7,
+    "Trung bình pixel trong khoảng gần → Mean-shift"
+   ],
+   [
+    9,
+    "Gom theo độ giống nhau → K-means"
+   ],
+   [
+    19,
+    "Mô hình xác suất, gom cụm mềm → GMM"
+   ],
+   [
+    152,
+    "Tìm đỉnh phân phối, không tính hàm đầy đủ → Mean shift"
+   ],
+   [
+    170,
+    "Mean shift: dời pixel về màu trung bình"
+   ],
+   [
+    173,
+    "Trung bình pixel trong một KHOẢNG (range), không phải trong cluster"
+   ],
+   [
+    126,
+    "GMM biểu diễn mỗi cụm bằng một phân phối"
+   ],
+   [
+    37,
+    "GMM = TỔNG nhiều Gaussian"
+   ],
+   [
+    39,
+    "GMM: mỗi cụm là Gaussian có mean và variance riêng → True"
+   ],
+   [
+    61,
+    "K-Means là thuật toán phân loại/gom cụm"
+   ],
+   [
+    80,
+    "Khởi tạo K centroid: NGẪU NHIÊN"
+   ],
+   [
+    95,
+    "K = số cụm"
+   ],
+   [
+    142,
+    "K = số cụm"
+   ],
+   [
+    217,
+    "K = số cụm"
+   ],
+   [
+    148,
+    "K-means gom pixel theo cường độ"
+   ],
+   [
+    52,
+    "Thứ tự K-means theo bộ đề: 3 → 1 → 2 → 4 (3124)"
+   ]
+  ]
+ },
+ {
+  "id": "region",
+  "title": "Region splitting / growing / graph-based / probabilistic merging",
+  "why": "Hai câu khác nhau (graph-based, probabilistic merging) có CÙNG cụm đáp án “gray-level + texture similarity”.",
+  "rules": [
+   "Region splitting: chia thành các vùng rời nhau (thường 4 vùng con)",
+   "Region growing: nhạy với nhiễu và thay đổi cường độ nhỏ",
+   "Graph-based: phân đoạn theo mức xám + kết cấu",
+   "Probabilistic merging: hai tín hiệu = gray-level + texture similarity"
+  ],
+  "items": [
+   [
+    29,
+    "Chia thành các vùng rời nhau, mạch lạc → Region splitting"
+   ],
+   [
+    40,
+    "Chia 4 vùng con bằng nhau → True"
+   ],
+   [
+    175,
+    "Region growing: nhạy với nhiễu"
+   ],
+   [
+    218,
+    "Region growing: nhạy với nhiễu"
+   ],
+   [
+    112,
+    "Mức xám + kết cấu → Graph-based segmentation"
+   ],
+   [
+    192,
+    "Probabilistic merging dùng gray-level + texture similarity"
+   ]
+  ]
+ },
+ {
+  "id": "ws",
+  "title": "Watershed",
+  "why": "Từ khóa “nước”, “thung lũng”, “cạnh” dễ làm bấm nhầm đáp án; ranh giới watershed là cạnh đối tượng, không phải thung lũng.",
+  "rules": [
+   "Ảnh như bản đồ địa hình, độ sáng = độ cao",
+   "Đặt nguồn nước ở mỗi cực tiểu rồi dựng đập",
+   "Lưu ý nền có kết cấu: over-segmentation",
+   "Ranh giới watershed = cạnh đối tượng"
+  ],
+  "items": [
+   [
+    27,
+    "Ảnh như bản đồ địa hình → Watershed transformation"
+   ],
+   [
+    104,
+    "Nền có kết cấu → over-segmentation"
+   ],
+   [
+    139,
+    "Ranh giới watershed = cạnh đối tượng"
+   ],
+   [
+    160,
+    "Nguồn nước ở mỗi cực tiểu → Watershed segmentation"
+   ],
+   [
+    296,
+    "Giống đổ nước vào cảnh quan, lưu vực = đối tượng"
+   ]
+  ]
+ },
+ {
+  "id": "segdef",
+  "title": "Segmentation và Thresholding",
+  "why": "Định nghĩa “segmentation” lặp lại nhiều lần; đáp án nhiễu hay là “gán màu cho từng pixel”.",
+  "rules": [
+   "Segmentation = chia ảnh thành các vùng theo đặc tính pixel",
+   "KHÔNG phải “gán màu cho từng pixel”",
+   "Thresholding: chuyển ảnh sang nhị phân theo ngưỡng"
+  ],
+  "items": [
+   [
+    13,
+    "Chia ảnh thành vùng theo đặc điểm pixel → Image segmentation"
+   ],
+   [
+    154,
+    "Chuyển sang nhị phân theo ngưỡng → Thresholding Segmentation"
+   ],
+   [
+    239,
+    "Chia ảnh thành nhiều vùng (không phải gán màu)"
+   ],
+   [
+    259,
+    "Cả ý đen và ý trắng đều đúng → “first and second”"
+   ],
+   [
+    270,
+    "Thresholding: thay pixel đen/trắng theo giá trị ngưỡng"
+   ]
+  ]
+ },
+ {
+  "id": "recog",
+  "title": "Recognition – Detection – Pattern recognition",
+  "why": "Các thuật ngữ gần nghĩa; đáp án nhiễu là thuật ngữ lân cận (locating, tracking...).",
+  "rules": [
+   "Recognition = nhận biết thuộc tính + gán ngữ nghĩa",
+   "Recognition gồm: detection, identifying, locating",
+   "Detection = nhận ra VÀ định vị đối tượng",
+   "Pattern recognition = nghiên cứu kỹ thuật phân loại mẫu"
+  ],
+  "items": [
+   [
+    136,
+    "Thuộc tính vật lý + gán ngữ nghĩa → Object recognition"
+   ],
+   [
+    24,
+    "Gồm detection, identifying, and locating"
+   ],
+   [
+    177,
+    "Detection: nhận ra và định vị đối tượng"
+   ],
+   [
+    115,
+    "Phân loại mẫu → Pattern Recognition"
+   ]
+  ]
+ },
+ {
+  "id": "face",
+  "title": "Nhận dạng khuôn mặt",
+  "why": "Hai hướng tiếp cận (feature-based / holistic) và nhiều bước dùng từ gần nhau (detection, analysis).",
+  "rules": [
+   "Feature-based: trích đặc trưng cục bộ (mắt, mũi, miệng)",
+   "Holistic: coi là bài toán 2D, dùng PCA, LDA",
+   "Face analysis: tìm landmark",
+   "Eigenfaces: đặc trưng nổi bật giữa các cá nhân"
+  ],
+  "items": [
+   [
+    100,
+    "Đặc trưng cục bộ (mắt, mũi, miệng) → Feature-based"
+   ],
+   [
+    169,
+    "PCA, LDA, bài toán 2D → Holistic Matching"
+   ],
+   [
+    277,
+    "Eigenfaces: đặc trưng nổi bật giữa các cá nhân"
+   ],
+   [
+    159,
+    "Tìm landmark → Face analysis"
+   ],
+   [
+    131,
+    "Mắt, lông mày, mũi, MIỆNG, hàm"
+   ],
+   [
+    209,
+    "Landmark = điểm neo để căn chỉnh khuôn mặt"
+   ],
+   [
+    221,
+    "Enrollment: chụp nhiều ảnh từ các góc khác nhau"
+   ]
+  ]
+ },
+ {
+  "id": "detect",
+  "title": "HOG – Haar – R-CNN",
+  "why": "Phương pháp truyền thống và học sâu xuất hiện lẫn trong đáp án.",
+  "rules": [
+   "Truyền thống / non-neural: HOG",
+   "Hướng thứ hai: neural networks (YOLO, R-CNN, RetinaNet)",
+   "Hai giai đoạn (region proposal + phân loại): Faster R-CNN",
+   "Haar Cascade: đặc trưng dạng đường, tính hiệu trung bình vùng sáng – tối",
+   "HOG: bin theo HƯỚNG gradient"
+  ],
+  "items": [
+   [
+    106,
+    "Truyền thống → HOG (YOLO, RCNN, RetinaNet là học sâu)"
+   ],
+   [
+    156,
+    "Non-neural → HOG"
+   ],
+   [
+    157,
+    "Hướng thứ hai → Neural networks"
+   ],
+   [
+    125,
+    "Hai giai đoạn → Faster R-CNN"
+   ],
+   [
+    99,
+    "Haar Cascade → đặc trưng dạng đường"
+   ],
+   [
+    262,
+    "Haar: hiệu giữa trung bình vùng sáng và tối"
+   ],
+   [
+    226,
+    "HOG: bin theo hướng gradient"
+   ],
+   [
+    265,
+    "Cửa sổ HOG quá lớn có thể bỏ sót vật nhỏ"
+   ],
+   [
+    97,
+    "Multiclass không cần sửa đổi → KNN"
+   ]
+  ]
+ },
+ {
+  "id": "align",
+  "title": "Feature-based alignment",
+  "why": "Nhiều câu cùng chủ đề, đáp án đúng nghe “giống” nhau; đáp án nhiễu hay là so pixel trực tiếp hoặc thao tác thủ công.",
+  "rules": [
+   "Phát hiện + khớp tập đặc trưng THƯA, rồi tính phép căn chỉnh",
+   "Khớp bằng cách so sánh descriptor (không so pixel trực tiếp)",
+   "Đặc trưng tốt: đặc biệt, dễ nhận ra ở cả hai ảnh",
+   "Least squares: tối thiểu hóa tổng bình phương khoảng cách"
+  ],
+  "items": [
+   [
+    147,
+    "Đặc trưng thưa ở một ảnh khớp sang ảnh kia → Feature-Based alignment"
+   ],
+   [
+    183,
+    "Mục tiêu: ước lượng chuyển động giữa các điểm khớp"
+   ],
+   [
+    208,
+    "Phát hiện và khớp tập đặc trưng thưa"
+   ],
+   [
+    243,
+    "Tìm vài đặc trưng khớp rồi tính căn chỉnh"
+   ],
+   [
+    247,
+    "Nhận diện và khớp đặc trưng đặc biệt (góc, cạnh)"
+   ],
+   [
+    290,
+    "Khớp bằng cách so sánh descriptor"
+   ],
+   [
+    253,
+    "Đặc trưng tốt: đặc biệt, dễ nhận ra ở cả hai ảnh"
+   ],
+   [
+    178,
+    "Least squares: tối thiểu tổng bình phương khoảng cách"
+   ],
+   [
+    232,
+    "Bền vững kể cả khi ảnh bị xoay, đổi tỉ lệ"
+   ]
+  ]
+ },
+ {
+  "id": "stitch",
+  "title": "Panorama, bundle adjustment, parallax",
+  "why": "Global alignment / bundle adjustment / local alignment / parallax là các bước gần nhau của một quy trình.",
+  "rules": [
+   "Global alignment: bộ tham số nhất quán TOÀN CỤC",
+   "Bundle adjustment: chỉnh đồng thời pose của nhiều ảnh",
+   "Chuyển động nhỏ, sửa parallax → local alignment",
+   "Parallax = dịch chuyển vị trí vật khi đổi góc nhìn",
+   "Recognizing panoramas: tìm ảnh nào đi cùng nhau"
+  ],
+  "items": [
+   [
+    225,
+    "Global alignment: bộ tham số nhất quán toàn cục"
+   ],
+   [
+    229,
+    "Global: nhất quán toàn cục (không phải “inconsistent”)"
+   ],
+   [
+    235,
+    "Bundle adjustment: chỉnh đồng thời pose nhiều ảnh"
+   ],
+   [
+    179,
+    "Global bundle adjustment: tối ưu pose camera"
+   ],
+   [
+    167,
+    "Sửa parallax khi chuyển động nhỏ → Local alignment"
+   ],
+   [
+    185,
+    "Parallax = dịch chuyển vật khi đổi góc nhìn"
+   ],
+   [
+    85,
+    "Connected components → nhận ra từng panorama"
+   ],
+   [
+    135,
+    "Ảnh nào đi cùng nhau → Recognizing panoramas"
+   ],
+   [
+    8,
+    "Ghép tự động, nhận ra ảnh đi cùng nhau → Recognize panoramas"
+   ],
+   [
+    10,
+    "Ghép nhiều ảnh chồng lấn → Image stitching"
+   ],
+   [
+    22,
+    "Ứng dụng: tóm tắt và nén video"
+   ],
+   [
+    168,
+    "Dựng lại giấy bị xé → pháp y (forensic)"
+   ],
+   [
+    130,
+    "Sau trích đặc trưng + descriptor → feature matching"
+   ]
+  ]
+ },
+ {
+  "id": "geo",
+  "title": "Phép biến đổi hình học, hệ tọa độ, hệ chiếu",
+  "why": "Affine / Euclidean / projective và cylindrical / spherical / polar đều có đáp án nhiễu rất giống đáp án đúng.",
+  "rules": [
+   "Affine: bảo toàn thẳng hàng và tỉ lệ khoảng cách",
+   "Translation = dịch chuyển",
+   "Cylindrical: bán kính, góc phương vị, độ cao; camera nằm ngang xoay quanh trục dọc",
+   "Spherical panorama chụp cả hướng lên/xuống"
+  ],
+  "items": [
+   [
+    21,
+    "Bảo toàn thẳng hàng và tỉ lệ khoảng cách → Affine"
+   ],
+   [
+    164,
+    "Cùng đặc điểm → Affine"
+   ],
+   [
+    242,
+    "Translation: dời đối tượng sang vị trí khác"
+   ],
+   [
+    288,
+    "Translation = Shifting the image"
+   ],
+   [
+    180,
+    "Ma trận: scale 2, tịnh tiến 1 theo x và 2 theo y"
+   ],
+   [
+    215,
+    "Mesh = tập đỉnh và cạnh"
+   ],
+   [
+    137,
+    "Bán kính + góc phương vị + độ cao → Cylindrical"
+   ],
+   [
+    41,
+    "Cylindrical: camera nằm ngang, xoay quanh trục dọc → True"
+   ],
+   [
+    18,
+    "Nhìn như từ trong hình trụ → Cylindrical projection"
+   ],
+   [
+    241,
+    "Spherical: 360° kể cả trên-dưới; cylindrical thì không"
+   ]
+  ]
+ },
+ {
+  "id": "cvip",
+  "title": "Computer vision vs Image processing",
+  "why": "Hai lĩnh vực bị nhầm lẫn; đầu vào/ra và mục tiêu chỉ khác một chữ.",
+  "rules": [
+   "CV: vào ảnh, ra sự DIỄN GIẢI ảnh",
+   "IP: vào ảnh, ra ảnh (nâng cao chất lượng)",
+   "Pixel operator: vào một hoặc nhiều ảnh, ra MỘT ảnh"
+  ],
+  "items": [
+   [
+    31,
+    "CV: diễn giải và ra quyết định từ dữ liệu thị giác"
+   ],
+   [
+    84,
+    "CV nhận diện các thành phần trong ảnh"
+   ],
+   [
+    90,
+    "Đầu vào của CV: ảnh"
+   ],
+   [
+    174,
+    "IP: trích thông tin hữu ích và nâng cao ảnh"
+   ],
+   [
+    193,
+    "IP: vào ảnh, ra ảnh"
+   ],
+   [
+    219,
+    "Pixel operator: nhiều ảnh vào, MỘT ảnh ra"
+   ],
+   [
+    245,
+    "CV: phân tích ảnh; IP: tăng độ rõ"
+   ],
+   [
+    289,
+    "Đầu ra của CV: sự diễn giải ảnh"
+   ],
+   [
+    231,
+    "CV: lĩnh vực giúp máy hiểu ảnh/video"
+   ],
+   [
+    197,
+    "Pixel = địa chỉ vị trí + giá trị cường độ"
+   ],
+   [
+    63,
+    "Ảnh số = ma trận pixel"
+   ],
+   [
+    16,
+    "Image transformation: hàm nhận ảnh, trả ảnh"
+   ],
+   [
+    17,
+    "Graph transformation (không phải Image transformation)"
+   ],
+   [
+    258,
+    "Pixel transform: xử lý từng pixel một"
+   ]
+  ]
+ },
+ {
+  "id": "four",
+  "title": "Fourier và lọc theo tần số",
+  "why": "Nyquist, Parseval, shift, DFT… mỗi định lý một vế, đáp án nhiễu hoán đổi vế.",
+  "rules": [
+   "Nyquist = MỘT NỬA tần số lấy mẫu",
+   "Dịch tín hiệu → phổ PHA đổi, biên độ giữ nguyên",
+   "Parseval: năng lượng miền thời gian = miền tần số",
+   "Low-pass làm mịn; band-pass cho một DẢI tần qua"
+  ],
+  "items": [
+   [
+    140,
+    "DFT = Discrete Fourier Transform"
+   ],
+   [
+    181,
+    "Nyquist = một nửa tần số lấy mẫu"
+   ],
+   [
+    182,
+    "Dịch tín hiệu → phổ pha dịch"
+   ],
+   [
+    205,
+    "Lấy mẫu cao hơn → chính xác tần số hơn"
+   ],
+   [
+    222,
+    "Parseval: quan hệ năng lượng hai miền"
+   ],
+   [
+    251,
+    "Phân rã thành các thành phần sin theo tần số"
+   ],
+   [
+    92,
+    "Mục đích chính: phân tích tần số"
+   ],
+   [
+    189,
+    "Band-pass: cho một dải tần xác định đi qua"
+   ],
+   [
+    165,
+    "Low-pass: làm mịn, giảm nhiễu"
+   ]
+  ]
+ },
+ {
+  "id": "filt",
+  "title": "Anisotropic, EWA, MIP, aliasing",
+  "why": "Các kỹ thuật lọc texture có tên gần giống và mô tả chỉ khác vài từ.",
+  "rules": [
+   "Anisotropic filtering: cải thiện texture ở góc nhìn xiên, chống aliasing",
+   "EWA: ánh xạ affine, hệ tọa độ xiên, hình ELIP",
+   "Mean filter làm mờ cạnh",
+   "Resample từ MIP: bước đầu ước lượng hệ số lấy mẫu"
+  ],
+  "items": [
+   [
+    14,
+    "Texture ở góc nhìn xiên → Anisotropic filtering"
+   ],
+   [
+    26,
+    "Ánh xạ affine, hệ tọa độ xiên → EWA"
+   ],
+   [
+    238,
+    "EWA: Gaussian có ma trận hiệp phương sai nghịch đảo là elip"
+   ],
+   [
+    202,
+    "Anisotropic ở góc xiên: làm nét chi tiết"
+   ],
+   [
+    204,
+    "Anisotropic: loại bỏ aliasing ở góc nhìn cực đoan"
+   ],
+   [
+    191,
+    "Bước đầu: ước lượng hệ số lấy mẫu"
+   ],
+   [
+    212,
+    "Pre-filter để giảm méo khi texture mapping"
+   ],
+   [
+    211,
+    "Chống aliasing trước shear: upsample hướng ngược lại"
+   ],
+   [
+    188,
+    "Mean filter: làm mờ cạnh và chi tiết"
+   ],
+   [
+    94,
+    "Chuỗi biến đổi 1D → hiệu quả tính toán"
+   ],
+   [
+    263,
+    "Lọc tuyến tính: tổ hợp tuyến tính các pixel lân cận"
+   ]
+  ]
+ },
+ {
+  "id": "nums",
+  "title": "Con số, tên hàm và thứ tự phải thuộc",
+  "why": "Đáp án là con số hoặc tên hàm; học vẹt dễ đảo số (3 hay 4, 1 hay -1...).",
+  "rules": [
+   "SIFT: descriptor 128 chiều",
+   "Phổ nhìn thấy 400–700 nm",
+   "Ảnh xám: 1 kênh",
+   "Affine cần tối thiểu 3 điểm; vẽ đường thẳng cần 2 điểm",
+   "OpenCV: -1 để tô kín (và lật cả hai trục), hàm line()"
+  ],
+  "items": [
+   [
+    42,
+    "SIFT: 128 chiều"
+   ],
+   [
+    43,
+    "Phổ nhìn thấy: 400–700 nm"
+   ],
+   [
+    44,
+    "Ảnh xám: 1 kênh"
+   ],
+   [
+    45,
+    "Nhận dạng khuôn mặt: 4 bước"
+   ],
+   [
+    46,
+    "Affine cần tối thiểu 3 điểm"
+   ],
+   [
+    50,
+    "Tô kín hình trong OpenCV: -1"
+   ],
+   [
+    53,
+    "Vẽ đường thẳng: 2 điểm"
+   ],
+   [
+    161,
+    "cv2.flip(img, -1): lật cả hai trục"
+   ],
+   [
+    120,
+    "Hàm vẽ đường: line()"
+   ],
+   [
+    108,
+    "Tần số lớn nhất trong phổ nhìn thấy: Violet"
+   ],
+   [
+    48,
+    "PCA ban đầu: 112×112 = 12544 thành phần"
+   ],
+   [
+    133,
+    "Đặc trưng trong eigenspace: 1200 × 1000"
+   ]
+  ]
+ },
+ {
+  "id": "not",
+  "title": "Câu NOT / incorrect: đáp án là ý SAI",
+  "why": "Nhiều người bấm theo phản xạ “chọn ý đúng”. Với câu phủ định, đáp án đúng chính là phát biểu SAI.",
+  "rules": [
+   "Gạch chân chữ NOT / incorrect / not true",
+   "Chọn ý SAI hoặc KHÔNG liên quan",
+   "Đọc kỹ 3 ý đúng trước, ý còn lại là đáp án"
+  ],
+  "items": [
+   [
+    32,
+    "KHÔNG phải ứng dụng căn chỉnh ảnh: nhận diện mẫu tài liệu"
+   ],
+   [
+    33,
+    "EWA KHÔNG dùng phép chiếu tròn (dùng elip)"
+   ],
+   [
+    34,
+    "Stitching KHÔNG ghép pixel chỉ vì giống cường độ"
+   ],
+   [
+    35,
+    "Object detection KHÔNG “nhận ra bằng đường viền”"
+   ],
+   [
+    36,
+    "RANSAC dùng số điểm TỐI THIỂU, không phải tối đa"
+   ],
+   [
+    38,
+    "Optical flow KHÔNG cho gia tốc"
+   ],
+   [
+    114,
+    "Blue Blur không phải filter của OpenCV"
+   ],
+   [
+    223,
+    "Zero-crossing KHÔNG phải ưu điểm của Canny (là của LoG)"
+   ],
+   [
+    254,
+    "Truyền thống KHÔNG dễ nhận dạng khi tư thế biểu cảm đổi nhiều"
+   ],
+   [
+    255,
+    "Nhận danh tính bằng sinh trắc là recognition, không phải tracking"
+   ]
+  ]
+ },
+ {
+  "id": "all",
+  "title": "“All of the others”: đáp án thật hay bẫy?",
+  "why": "Đề hay ra dạng “Choose the best description…”. Có câu đáp án CHÍNH là “All of the others”, có câu chỉ một ý đúng còn “All” là bẫy. Học vẹt rất dễ luôn chọn hoặc luôn tránh.",
+  "rules": [
+   "Nếu CẢ 3 ý đầu đều đúng → chọn All of the others",
+   "Nếu có một ý sai rõ ràng → “All” là bẫy, chọn ý đúng",
+   "Đừng chọn theo phản xạ: kiểm tra từng ý"
+  ],
+  "items": [
+   [
+    66,
+    "Cả 3 ý đều đúng → All of others"
+   ],
+   [
+    69,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    72,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    73,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    75,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    77,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    78,
+    "Cả 3 ý đều đúng → All of the others"
+   ],
+   [
+    105,
+    "Security, Robotics, Medicine → All of above"
+   ],
+   [
+    111,
+    "Mọi ứng dụng đều đúng → All of the above"
+   ],
+   [
+    128,
+    "Mọi thách thức đều đúng → All the above"
+   ],
+   [
+    187,
+    "Mọi ý đều đúng → All of the others"
+   ],
+   [
+    194,
+    "Mọi lĩnh vực đều liên quan → All of the others"
+   ],
+   [
+    200,
+    "Mọi nhược điểm đều đúng → All of the above"
+   ],
+   [
+    201,
+    "SIFT, Harris, FAST đều là feature detection → All"
+   ],
+   [
+    230,
+    "Mọi định nghĩa đều đúng → All of the answers"
+   ],
+   [
+    233,
+    "Mọi mô tả đều đúng → All of the others"
+   ],
+   [
+    240,
+    "Mọi mô tả đều đúng → All of the others"
+   ],
+   [
+    246,
+    "Mọi mô tả đều đúng → All of the others"
+   ],
+   [
+    272,
+    "Mọi lý do đều đúng → All of the others"
+   ],
+   [
+    284,
+    "Mọi mô tả đều đúng → All of the others"
+   ],
+   [
+    54,
+    "Chỉ ý “cạnh = thay đổi cường độ cục bộ” đúng; “All” là bẫy"
+   ],
+   [
+    55,
+    "2D point = vị trí (x,y); “All” là bẫy"
+   ],
+   [
+    57,
+    "Feature descriptor: thuật toán nhận ảnh xuất ra đặc trưng; “All” là bẫy"
+   ],
+   [
+    58,
+    "Segmentation = chia/phân vùng ảnh; “All” là bẫy"
+   ],
+   [
+    59,
+    "Mean shift mô hình phân phối bằng hàm mật độ trơn; “All” là bẫy"
+   ],
+   [
+    60,
+    "Biến đổi không gian của ảnh; “All” là bẫy"
+   ],
+   [
+    64,
+    "Fourier: công cụ xử lý ảnh quan trọng; “All” là bẫy"
+   ],
+   [
+    65,
+    "Photometry = khoa học đo ánh sáng; “All” là bẫy"
+   ],
+   [
+    70,
+    "Convolution-based tạo mô tả các đường; “All” là bẫy"
+   ],
+   [
+    74,
+    "Gaussian smoothing: mờ như nhìn qua kính mờ; “All” là bẫy"
+   ],
+   [
+    76,
+    "BRDF: tỉ lệ ánh sáng theo hướng tới; “All” là bẫy"
+   ],
+   [
+    81,
+    "Chromatic aberration: ống kính không hội tụ mọi màu; “All” là bẫy"
+   ],
+   [
+    83,
+    "Color do chất lượng ánh sáng khác nhau; “All” là bẫy"
+   ],
+   [
+    244,
+    "Detection dựa trên đặc trưng cấu thành vật; “All” là bẫy"
+   ],
+   [
+    269,
+    "Detection: phân loại và định vị vật; “All” là bẫy"
+   ],
+   [
+    271,
+    "Dùng feature để giảm tài nguyên mô tả; “All” là bẫy"
+   ],
+   [
+    275,
+    "Hình dạng tế bào quan trọng; “All” là bẫy"
+   ],
+   [
+    276,
+    "Edge detection giúp quan sát đặc trưng ảnh; “All” là bẫy"
+   ],
+   [
+    283,
+    "Đáp án là một ý cụ thể; “All” là bẫy"
+   ],
+   [
+    285,
+    "Đáp án là một ý cụ thể; “All” là bẫy"
+   ],
+   [
+    264,
+    "Đáp án là một ý cụ thể; “All” là bẫy"
+   ]
+  ]
+ }
+]

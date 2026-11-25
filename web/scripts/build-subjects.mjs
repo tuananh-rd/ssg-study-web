@@ -75,7 +75,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
     if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;
     rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
   const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
-  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl })};`;
+  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: S.file === 'cpv' && fs.existsSync(path.join(W, 'data', 'cpv-confuse.json')) ? JSON.parse(rd(W, 'data', 'cpv-confuse.json')) : [] })};`;
   const html = `<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n<title>${S.name} · Ôn thi cuối kỳ</title>\n<style>\n${style}\n</style></head><body>\n<noscript>App cần bật JavaScript.</noscript>\n<script id="data">\n${safe(data)}\n</script>\n<script id="app">\n${safe(appJs)}\n</script>\n</body></html>`;
   fs.writeFileSync(path.join(W, 'data', `app-${id}.html`), html);
   const multi = bank.filter(q => q.answer.length > 1).length;

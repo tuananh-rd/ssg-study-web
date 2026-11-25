@@ -40,6 +40,14 @@ var EXAMQ=D.questions.length?D.questions:BANK.filter(function(q){return q.answer
 var KEYQ=(D.keyq||[]).map(function(k,i){return {id:'k-'+String(i+1).padStart(3,'0'),module:modOfRef(k.ref),ref:k.ref,type:'key',q:k.q,correct:k.correct,wrong:k.wrong,explain:k.explain,tip:k.tip};});
 function keyOf(m){return KEYQ.filter(function(q){return !m||q.module===m;});}
 var QMAP={};ALLQ.concat(RECALL,BANK,KEYQ).forEach(function(q){QMAP[q.id]=q;});
+// Nhóm câu hỏi dễ nhầm đáp án (chỉ môn có D.confuse, hiện là CPV301): mỗi câu thuộc đúng một nhóm
+var CNOTE={},CGRP={};
+var CONF=(D.confuse||[]).map(function(g){var its=g.items.map(function(x){return {id:'b-'+x[0],note:x[1]};}).filter(function(x){return QMAP[x.id];});
+  its.forEach(function(x){CNOTE[x.id]=x.note;});var G={id:g.id,title:g.title,why:g.why,rules:g.rules||[],items:its};its.forEach(function(x){CGRP[x.id]=G;});return G;}).filter(function(g){return g.items.length;});
+function confQs(g){return g.items.map(function(x){return QMAP[x.id];});}
+function confStat(list){var d=0,ok=0;list.forEach(function(q){var an=P.answers[q.id];if(an){d++;if(an.lastOk)ok++;}});return {d:d,ok:ok,n:list.length};}
+function confCard(){if(!CONF.length)return '';var all=[];CONF.forEach(function(g){all=all.concat(confQs(g));});var s=confStat(all);
+  return '<a class="card keycard" href="#/confuse"><span class="kc-ic">'+ic('bulb')+'</span><span style="flex:1;min-width:0"><b>Câu dễ nhầm đáp án</b><span class="small muted" style="display:block">'+all.length+' câu chia '+CONF.length+' nhóm: các câu khác nhau nhưng đáp án giống nhau, bấm nhanh rất dễ nhầm · đã thuộc '+s.ok+'/'+all.length+'</span></span><span class="btn sm primary">Ôn ngay '+ic('arrow')+'</span></a>';}
 var ALLQ_ID={};ALLQ.forEach(function(q){ALLQ_ID[q.id]=1;});
 var EXAMS={};(D.pastExams||[]).forEach(function(e){EXAMS[e.id]=e;});
 // text of a question in a language: past-exam questions are always in their original English
@@ -210,7 +218,7 @@ function runQuiz(list,title,back,lang,resume){
       var gp=reaskGap();if(!ok&&gp>0&&(q._retry||0)<3){var cl=Object.assign({},q,{_retry:(q._retry||0)+1});list.splice(Math.min(i+1+gp,list.length),0,cl);}
       $$('.opt').forEach(function(b,j){b.disabled=true;b.classList.remove('sel');if(good.indexOf(opts[j])>=0)b.classList.add('ok');else if(sel.indexOf(j)>=0)b.classList.add('bad');else b.classList.add('dim');});
       var ans=good.map(function(g){return L[opts.indexOf(g)]+'. '+od(g);}).join(' · ');
-      $('#fb').innerHTML='<div class="feedback '+(ok?'ok':'bad')+'"><b>'+(ok?'Chính xác!':'Chưa đúng — đáp án: '+esc(ans))+'</b>'+esc(q.bank?'':(q.explain||''))+((q.ref||(q.module&&MOD[q.module]))?' <button type="button" class="link-btn" data-thref="'+(q.ref||'')+'" data-thmod="'+(q.module||'')+'">Xem lý thuyết'+(q.ref?' §'+q.ref:'')+'</button>':'')+(q.tip?'<div class="ktip">'+ic('bulb')+'<span><b>Mẹo nhớ:</b> '+esc(q.tip)+'</span></div>':'')+(lang==='en'&&q.en?'<div class="small muted" style="margin-top:6px">Tiếng Việt: '+esc(q.q)+' → <b>'+esc(q.correct)+'</b></div>':'')+'</div>';
+      $('#fb').innerHTML='<div class="feedback '+(ok?'ok':'bad')+'"><b>'+(ok?'Chính xác!':'Chưa đúng — đáp án: '+esc(ans))+'</b>'+esc(q.bank?'':(q.explain||''))+((q.ref||(q.module&&MOD[q.module]))?' <button type="button" class="link-btn" data-thref="'+(q.ref||'')+'" data-thmod="'+(q.module||'')+'">Xem lý thuyết'+(q.ref?' §'+q.ref:'')+'</button>':'')+(q.tip?'<div class="ktip">'+ic('bulb')+'<span><b>Mẹo nhớ:</b> '+esc(q.tip)+'</span></div>':'')+(CGRP[q.id]?'<div class="ktip">'+ic('bulb')+'<span><b>Dễ nhầm · '+esc(CGRP[q.id].title)+':</b> '+esc(CNOTE[q.id])+'</span></div>':'')+(lang==='en'&&q.en?'<div class="small muted" style="margin-top:6px">Tiếng Việt: '+esc(q.q)+' → <b>'+esc(q.correct)+'</b></div>':'')+'</div>';
       $('#nxw').innerHTML='<div class="sticky-act"><button class="btn primary big" id="nx">'+(i===list.length-1?'Xem kết quả':'Câu tiếp theo')+' '+ic('arrow')+'</button></div>';
       $$('[data-thref]',$('#fb')).forEach(function(bt){bt.onclick=function(){thOpen(bt.dataset.thmod,bt.dataset.thref);};});
       persist(i+1);
@@ -260,7 +268,7 @@ routes['']=function(){
   render('<div class="card hero"><div><div class="small" style="opacity:.85;font-weight:600">'+(dl==null?'<a href="#" id="setDate" style="color:#fff;text-decoration:underline">Đặt ngày thi</a>':dl<0?'Đã qua ngày thi':dl===0?'Hôm nay thi — bình tĩnh nhé!':'Còn '+dl+' ngày đến ngày thi')+'</div>'+
     '<h1 style="margin:.25em 0 .1em">'+esc(cta[0])+'</h1><p>'+esc(cta[1])+'</p><div class="row"><a class="btn" href="'+cta[2]+'">Bắt đầu '+ic('arrow')+'</a><a class="btn ghost" href="#/exam">Thi thử 50 câu</a></div></div>'+
     '<div class="ring">'+ring(r/100,118,10,'#fff','rgba(255,255,255,.25)')+'<b>'+r+'%<small>sẵn sàng</small></b></div></div>'+
-    '<div class="stats"><div class="stat"><b>'+pct(overallAcc())+'</b><span>Độ chính xác gần đây</span></div><div class="stat"><b>'+Math.round(coverage()*ALLQ.length)+'/'+ALLQ.length+'</b><span>Câu đã làm</span></div><div class="stat"><b>'+(le?le.score.toFixed(1):'—')+'</b><span>Thi thử gần nhất</span></div></div>'+
+    confCard()+'<div class="stats"><div class="stat"><b>'+pct(overallAcc())+'</b><span>Độ chính xác gần đây</span></div><div class="stat"><b>'+Math.round(coverage()*ALLQ.length)+'/'+ALLQ.length+'</b><span>Câu đã làm</span></div><div class="stat"><b>'+(le?le.score.toFixed(1):'—')+'</b><span>Thi thử gần nhất</span></div></div>'+
     (KEYQ.length?'<a class="card keycard" href="#/practice?tab=key"><span class="kc-ic">'+ic('bulb')+'</span><span style="flex:1;min-width:0"><b>Kiến thức key</b><span class="small muted" style="display:block">'+KEYQ.length+' câu ôn nhanh các ý bắt buộc phải nhớ · đã thuộc '+recallDone(KEYQ)+'/'+KEYQ.length+'</span></span><span class="btn sm primary">Ôn ngay '+ic('arrow')+'</span></a>':'')+'<div class="card"><div class="row between"><h3 style="margin:0">Theo chương</h3><span class="small muted">20 câu gần nhất mỗi chương</span></div>'+
     QMODS.map(function(m){var a=modAcc(m.id);return '<div class="mrow"><a class="nm" href="#/learn/'+m.id+'" style="color:var(--text)">'+dot(m.id)+'<span><b>'+m.short+'</b> '+esc(m.title)+'</span></a><div class="bar '+barClass(a)+'"><i style="width:'+(a==null?0:a*100)+'%"></i></div><span class="small muted">'+(a==null?'—':pct(a))+'</span><div class="row act"><a class="btn sm" href="#/learn/'+m.id+'">Đọc</a>'+(recallOf(m.id).length?'<a class="btn sm" href="#/practice?recall='+m.id+'">Ôn lý thuyết</a>':'')+'</div></div>';}).join('')+
     '</div><p class="small muted">Điểm sẵn sàng = 60% độ chính xác gần đây + 25% độ phủ ngân hàng câu + 15% điểm thi thử gần nhất. Mục tiêu: thi thử ≥ 8/10 hai lần liên tiếp và sổ câu sai ≤ 10 câu.</p>');
@@ -812,6 +820,26 @@ function examResult(i){
     var ctx={lang:'en',opts:[t.correct].concat(t.wrong),picked:a||null,answered:true};aiBox(el,q,function(){return ctx;});});
 }
 
+// ===== Câu dễ nhầm đáp án =====
+var confSt={open:null};
+routes.confuse=function(){
+  if(!CONF.length){location.hash='#/bank';return;}
+  var all=[];CONF.forEach(function(g){all=all.concat(confQs(g));});var sa=confStat(all);
+  var todo=all.filter(function(q){var an=P.answers[q.id];return !(an&&an.lastOk);});
+  render('<div class="row between" style="flex-wrap:wrap;gap:8px"><h1 style="margin:0">Câu dễ nhầm đáp án</h1><a class="btn sm ghost" href="#/bank" style="border-radius:8px">Về bộ đề</a></div>'+
+    '<p class="muted" style="margin:6px 0 12px">Những câu <b>khác nhau</b> nhưng đáp án hay <b>giống nhau</b> hoặc chỉ đổi một từ: bấm nhanh, học vẹt là dễ chọn nhầm. Chia '+CONF.length+' nhóm; mỗi nhóm có <b>quy tắc phân biệt</b>, và sau mỗi câu có ghi chú “dễ nhầm” để nhớ lâu.</p>'+
+    '<div class="card row between"><div style="flex:1;min-width:220px"><b>Ôn xen kẽ tất cả nhóm</b><div class="small muted">Trộn ngẫu nhiên '+all.length+' câu của mọi nhóm · đã thuộc '+sa.ok+'/'+all.length+'</div><div class="bar '+barClass(sa.ok/all.length)+'" style="margin-top:8px;max-width:360px"><i style="width:'+(sa.ok/all.length*100)+'%"></i></div></div><div class="row" style="gap:8px"><button class="btn" data-crun="quick">20 câu nhanh</button>'+(todo.length&&todo.length<all.length?'<button class="btn" data-crun="todo">Chưa thuộc ('+todo.length+')</button>':'')+'<button class="btn primary" data-crun="all">Tất cả '+ic('arrow')+'</button></div></div>'+
+    CONF.map(function(g){var qs=confQs(g),s=confStat(qs),open=confSt.open===g.id;
+      return '<div class="card"><div class="row between" style="gap:10px;flex-wrap:wrap"><div style="flex:1;min-width:220px"><b>'+esc(g.title)+'</b><div class="small muted" style="margin-top:3px">'+esc(g.why)+'</div></div><div class="row" style="gap:8px"><span class="small muted">'+s.ok+'/'+s.n+'</span><button class="btn sm" data-cog="'+g.id+'">'+(open?'Ẩn quy tắc':'Quy tắc')+'</button><button class="btn sm primary" data-crun="'+g.id+'">Luyện · '+s.n+' câu</button></div></div>'+
+        '<div class="bar '+barClass(s.n?s.ok/s.n:null)+'" style="margin-top:8px"><i style="width:'+(s.n?s.ok/s.n*100:0)+'%"></i></div>'+
+        (open?'<ul class="small" style="margin:10px 0 0;padding-left:20px">'+g.rules.map(function(r){return '<li style="margin:3px 0">'+esc(r)+'</li>';}).join('')+'</ul><div class="small muted" style="margin-top:10px">Các câu trong nhóm:</div><ol class="small" style="margin:4px 0 0;padding-left:22px">'+g.items.map(function(x){var q=QMAP[x.id];return '<li style="margin:3px 0">'+esc(q.q.replace(/\s+/g,' ').slice(0,110))+(q.q.length>110?'…':'')+' <span class="muted">→ '+esc(x.note)+'</span></li>';}).join('')+'</ol>':'')+'</div>';}).join(''));
+  bind('[data-cog]','click',function(e,b){confSt.open=confSt.open===b.dataset.cog?null:b.dataset.cog;routes.confuse();});
+  bind('[data-crun]','click',function(e,b){var k=b.dataset.crun,l,t;
+    if(k==='all'){l=all;t='Dễ nhầm · tất cả nhóm';}else if(k==='quick'){l=shuffle(all).slice(0,20);t='Dễ nhầm · 20 câu nhanh';}else if(k==='todo'){l=todo;t='Dễ nhầm · câu chưa thuộc';}
+    else{var g=CONF.filter(function(x){return x.id===k;})[0];l=confQs(g);t='Dễ nhầm · '+g.title;}
+    runQuiz(shuffle(l),t,'#/confuse','en');});
+};
+
 // ===== Bộ đề SSG105 =====
 var bankSt={topics:[],sections:[],filter:'all',order:'shuffle',n:20,query:'',source:SJ.slides?'slides':'all'};
 function bankStat(list){var done=0,ok=0;list.forEach(function(q){var a=P.answers[q.id];if(a){done++;if(a.lastOk)ok++;}});return {done:done,ok:ok,n:list.length};}
@@ -836,7 +864,7 @@ routes.bank=function(){
     var list=pickList();
     render('<div class="row between" style="flex-wrap:wrap;gap:8px"><h1 style="margin:0">'+esc(SJ.bankTitle)+'</h1><div class="seg"><button class="on" type="button">Luyện tập</button><a class="btn sm ghost" href="#/review" style="border-radius:8px">Xem tất cả câu hỏi</a></div></div><p class="muted" style="margin:6px 0 12px">'+pool.length+' câu tiếng Anh tổng hợp từ đề các kì và tài liệu ôn của giảng viên. Mỗi câu có nút <b>Dịch</b> và <b>Bố Tuấn Anh</b>.</p>'+
       '<div class="stats"><div class="stat"><b>'+all.done+'/'+all.n+'</b><span>Câu đã làm</span></div><div class="stat"><b>'+(all.done?pct(all.ok/all.done):'—')+'</b><span>Đúng ở lần gần nhất</span></div><div class="stat"><b>'+pool.filter(function(q){return P.mistakes[q.id];}).length+'</b><span>Câu đang trong sổ sai</span></div></div>'+
-      '<div class="card"><h3 style="margin-top:0">Luyện tập</h3>'+
+      confCard()+'<div class="card"><h3 style="margin-top:0">Luyện tập</h3>'+
         (!SJ.slides?'':'<div class="seg" style="margin-bottom:14px"><button data-source="slides" class="'+(st.source==='slides'?'on':'')+'">'+SLIDES_BANK.length+' câu đầu từ Google Slides</button><button data-source="all" class="'+(st.source==='all'?'on':'')+'">Toàn bộ '+BANK.length+' câu</button></div>')+
         '<div class="small muted" style="margin-bottom:6px">Chủ đề <span class="muted">(không chọn = tất cả)</span></div><div class="chips">'+topics.map(function(t){var s=bankStat(pool.filter(function(q){return q.topic===t;}));return '<button data-topic="'+esc(t)+'" class="'+(st.topics.indexOf(t)>=0?'on':'')+'">'+esc(t)+' <span class="muted">'+s.done+'/'+s.n+'</span></button>';}).join('')+'</div>'+
         '<div class="small muted" style="margin:14px 0 6px">Dạng câu</div><div class="chips">'+sections.map(function(s){var n=pool.filter(function(q){return q.section===s;}).length;return '<button data-sec="'+esc(s)+'" class="'+(st.sections.indexOf(s)>=0?'on':'')+'">'+esc(s)+' <span class="muted">'+n+'</span></button>';}).join('')+'</div>'+
