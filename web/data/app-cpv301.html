@@ -1233,12 +1233,13 @@ function runQuiz(list,title,back,lang,resume){
     var opts=rec0?rec0.opts:q.orig?(q.keep?q.orig.slice():shuffle(q.orig)):shuffle([t.correct].concat(t.wrong));
     var good=q.answers||[t.correct],multi=good.length>1;
     var head=q.bank?esc(q.topic):(q.type==='recall'||q.type==='key'?'§'+q.ref+' '+esc(secTitle(q.ref)):esc(MOD[q.module].title));
-    render('<div class="qtop"><a class="btn sm ghost" href="'+back+'" aria-label="Thoát bài làm">'+ic('close')+'</a><div class="bar"><i style="width:'+(i/list.length*100)+'%"></i></div><span class="small muted">'+(i+1)+'/'+list.length+'</span>'+quizTools(q,lang)+'</div>'+
+    render('<div class="qtop"><a class="btn sm ghost" href="'+back+'" aria-label="Thoát bài làm">'+ic('close')+'</a><div class="bar"><i style="width:'+(i/list.length*100)+'%"></i></div><span class="small muted">'+(i+1)+'/'+list.length+'</span>'+(back==='#/confuse'&&CGRP[q.id]?'<button class="btn sm" id="crb" type="button">Xem quy tắc</button>':'')+quizTools(q,lang)+'</div>'+
       (!localStorage.getItem('ssg_quiz_tip_dismissed')?'<div class="quiz-tip-pill" id="quizTip"><span class="qt-ic">'+ic('info')+'</span><span class="qt-txt"><b>Gợi ý sử dụng.</b> Bôi đen cụm từ tiếng Anh để xem bản dịch; dùng nút Gợi ý bên dưới khi cần định hướng cách làm.</span><button class="qt-close" id="qtClose" aria-label="Đóng">'+ic('close')+'</button></div>':'')+
       '<div class="qlay"><aside class="qside" id="aib" aria-label="Bố Tuấn Anh"></aside><div class="card qmain"><div class="row small muted">'+(q.bank?'':dot(q.module)+MOD[q.module].short+' · ')+head+' '+(q._retry?'<span class="tag warn">Hỏi lại câu đã sai</span> ':'')+srcTag(q)+(q.bank||q.past||(lang==='en'&&q.en)?'<button class="link-btn" id="trb" style="margin-left:auto">Dịch</button>':'')+'</div><div class="q">'+qhtml(tv?tv.q:t.q)+(multi?' <span class="tag warn">Chọn '+good.length+' đáp án</span>':'')+'</div>'+(q.img?'<img class="q-img" src="'+esc(q.img)+'" alt="Hình của câu hỏi">':'')+'<div id="trx"></div><div class="opts">'+opts.map(function(o,k){return '<button class="opt" data-k="'+k+'"><b>'+L[k]+'</b><span>'+esc(od(o))+'</span></button>';}).join('')+'</div><div id="fb"></div><div id="nxw"></div></div></div>'+
       '<p class="small muted hide-m">Phím tắt: <kbd>1</kbd>–<kbd>'+opts.length+'</kbd> hoặc <kbd>A</kbd>–<kbd>'+L[opts.length-1]+'</kbd> để chọn'+(multi?', <kbd>Enter</kbd> để kiểm tra rồi sang câu tiếp':', <kbd>Enter</kbd> hoặc <kbd>Space</kbd> để sang câu tiếp')+' · <kbd>T</kbd> dịch cả câu · <kbd>R</kbd> gợi ý / kiểm tra đáp án · <kbd>L</kbd> lý thuyết · <kbd>←</kbd><kbd>→</kbd> câu trước / sau.</p>');
     $$('[data-ql]').forEach(function(b){b.onclick=function(){var nl=b.dataset.ql;if(nl===lang)return;lang=nl;try{localStorage.setItem('ui_qlang',lang);}catch(e){}if(answered){toast('Ngôn ngữ mới áp dụng từ câu tiếp theo');$$('[data-ql]').forEach(function(x){x.classList.toggle('on',x.dataset.ql===lang);});}else show();};});
     if($('#focusBtn'))$('#focusBtn').onclick=function(){focusToggle();};
+    if($('#crb'))$('#crb').onclick=function(){var g=CGRP[q.id];if(g)modal('<h3 style="margin-top:0">'+esc(g.title)+'</h3><p class="small muted">'+esc(g.why)+'</p><ul style="padding-left:20px;margin:8px 0 0">'+g.rules.map(function(r){return '<li style="margin:5px 0">'+esc(r)+'</li>';}).join('')+'</ul>');};
     qsideResize();
     if($('#thBtn'))$('#thBtn').onclick=function(){if(TH.open)thClose();else thOpen(q.module,q.ref);};
     $$('[data-rg]').forEach(function(b){b.onclick=function(){var v=+b.dataset.rg;try{localStorage.setItem('ui_reask',v);}catch(e){}$$('[data-rg]').forEach(function(x){x.classList.toggle('on',x===b);});toast(v?'Câu sai sẽ được hỏi lại sau '+v+' câu':'Đã tắt hỏi lại câu sai');};});
@@ -1291,7 +1292,11 @@ function runQuiz(list,title,back,lang,resume){
     P.quiz=null;save();track('quiz_finish',{title:title,n:base,score:score,fixed:fixed,secs:spent+Math.round((Date.now()-t0)/1000)});
     setKeys(null);var p=base?score/base:0,qs0=list.filter(function(q){return !q._retry;}),secs=allSecs(),ord={};secs.forEach(function(s,k){ord[s.id]=k;});
     var refs=[];qs0.forEach(function(q){if(q.ref&&refs.indexOf(q.ref)<0)refs.push(q.ref);});refs.sort(function(x,y){return (ord[x]||0)-(ord[y]||0);});
-    var lastQ=qs0[qs0.length-1]||{},modId=refs.length?modOfRef(refs[refs.length-1]):(lastQ.module||''),acts='',nxt=null;
+    var lastQ=qs0[qs0.length-1]||{},modId=refs.length?modOfRef(refs[refs.length-1]):(lastQ.module||''),acts='',nxt=null,cnextG=null;
+    if(back==='#/confuse'){refs=[];modId='';   // đang ôn câu dễ nhầm: gợi ý nhóm dễ nhầm tiếp theo, không dẫn sang lý thuyết
+      var g0=CGRP[lastQ.id];if(g0&&qs0.every(function(q){return CGRP[q.id]===g0;})){var gi=CONF.indexOf(g0);cnextG=CONF[gi+1]||null;}
+      if(cnextG)acts+='<button class="btn primary" id="cnext" type="button">Nhóm tiếp theo: '+esc(cnextG.title)+' '+ic('arrow')+'</button>';
+      acts+='<a class="btn" href="#/confuse">Danh sách nhóm</a>';}
     if(refs.length)acts+='<a class="btn" href="#/learn/'+modOfRef(refs[0])+'?s='+refs[0]+'">'+ic('book')+' '+(refs.length===1?'Đọc lại §'+refs[0]+' '+esc(secTitle(refs[0])):'Đọc lại lý thuyết')+'</a>';
     else if(MOD[modId])acts+='<a class="btn" href="#/learn/'+modId+'">'+ic('book')+' Đọc lại chương '+esc(MOD[modId].short)+'</a>';
     if(refs.length)nxt=nextSecOf(refs[refs.length-1]);
@@ -1304,6 +1309,7 @@ function runQuiz(list,title,back,lang,resume){
       '<div class="row" style="justify-content:center;margin-top:12px"><button class="btn" id="again">Làm lượt mới</button>'+(wrong.length?'<a class="btn" href="#/mistakes">Làm lại câu sai</a>':'')+'<a class="btn ghost" href="#/">Trang chủ</a></div></div>'+
       (wrong.length?'<h2>Câu sai lượt này</h2>'+wrong.map(function(q){var t=T(q,lang);return '<div class="card"><div style="font-weight:600">'+qhtml(t.q)+'</div><div class="small" style="margin-top:6px">Đáp án: <b style="color:var(--ok)">'+esc(t.correct)+'</b></div><div class="small muted">'+(q.explain&&q.explain.length<260?esc(q.explain):'')+(q.ref?' <a href="'+refLink(q.ref)+'">§'+q.ref+'</a>':'')+'</div></div>';}).join(''):''));
     bind('#again','click',function(){go();});
+    bind('#cnext','click',function(){if(cnextG)runQuiz(shuffle(confQs(cnextG)),'Dễ nhầm · '+cnextG.title,'#/confuse','en');});
   }
   show();
 }
