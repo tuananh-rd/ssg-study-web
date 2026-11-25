@@ -2667,7 +2667,8 @@ routes.confuse=function(){
       return '<div class="card"><div class="row between" style="gap:10px;flex-wrap:wrap"><div style="flex:1;min-width:220px"><b>'+esc(g.title)+'</b><div class="small muted" style="margin-top:3px">'+esc(g.why)+'</div></div><div class="row" style="gap:8px"><span class="small muted">'+s.ok+'/'+s.n+'</span><button class="btn sm" data-cog="'+g.id+'">'+(open?'Ẩn quy tắc':'Quy tắc')+'</button><button class="btn sm primary" data-crun="'+g.id+'">Luyện · '+s.n+' câu</button></div></div>'+
         '<div class="bar '+barClass(s.n?s.ok/s.n:null)+'" style="margin-top:8px"><i style="width:'+(s.n?s.ok/s.n*100:0)+'%"></i></div>'+
         (open?'<ul class="small" style="margin:10px 0 0;padding-left:20px">'+g.rules.map(function(r){return '<li style="margin:3px 0">'+esc(r)+'</li>';}).join('')+'</ul><div class="small muted" style="margin-top:10px">Các câu trong nhóm:</div><ol class="small" style="margin:4px 0 0;padding-left:22px">'+g.items.map(function(x){var q=QMAP[x.id];return '<li style="margin:3px 0">'+esc(q.q.replace(/\s+/g,' ').slice(0,110))+(q.q.length>110?'…':'')+' <span class="muted">→ '+esc(x.note)+'</span></li>';}).join('')+'</ol>':'')+'</div>';}).join(''));
-  bind('[data-cog]','click',function(e,b){confSt.open=confSt.open===b.dataset.cog?null:b.dataset.cog;routes.confuse();});
+  bind('[data-cog]','click',function(e,b){var y=window.scrollY,id=b.dataset.cog;confSt.open=confSt.open===id?null:id;routes.confuse();
+    var nb=document.querySelector('[data-cog="'+id+'"]');if(nb)window.scrollTo(0,y);});
   bind('[data-crun]','click',function(e,b){var k=b.dataset.crun,l,t;
     if(k==='all'){l=all;t='Dễ nhầm · tất cả nhóm';}else if(k==='quick'){l=shuffle(all).slice(0,20);t='Dễ nhầm · 20 câu nhanh';}else if(k==='todo'){l=todo;t='Dễ nhầm · câu chưa thuộc';}
     else{var g=CONF.filter(function(x){return x.id===k;})[0];l=confQs(g);t='Dễ nhầm · '+g.title;}
