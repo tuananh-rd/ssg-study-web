@@ -49,8 +49,40 @@ export async function scoreEvents(env, uid, evs) {
       `INSERT INTO score_daily (user_id,day,quiz,ok,read_sec,exam_pts,duel_pts,focus_min,pts) VALUES (?,?,?,?,?,?,?,?,?)
        ON CONFLICT(user_id,day) DO UPDATE SET quiz=excluded.quiz,ok=excluded.ok,read_sec=excluded.read_sec,exam_pts=excluded.exam_pts,duel_pts=excluded.duel_pts,focus_min=excluded.focus_min,pts=excluded.pts`)
       .bind(uid, day, r.quiz, r.ok, r.read_sec, r.exam_pts, r.duel_pts, r.focus_min, pointsOf(r)));
-    if (st.length) await env.DB.batch(st);
+    if (st.length) { await env.DB.batch(st); await checkThrone(env, uid); }
   } catch (e) { console.error('score fail', e && e.message); }
+}
+
+/** Ngôi vương = người đứng đầu bảng tổng điểm. Gọi sau khi một người vừa được cộng điểm: nếu họ vượt hẳn vua hiện tại thì ghi nhận đổi chủ
+ *  (hoà điểm thì vua cũ giữ ngôi). Bảng throne_log chưa tạo → bỏ qua lặng lẽ. */
+export async function checkThrone(env, uid) {
+  try {
+    const q = (sql, ...b) => env.DB.prepare(sql).bind(...b);
+    const total = async id => (await q('SELECT COALESCE(SUM(pts),0) p FROM score_daily WHERE user_id=?', id).first()).p;
+    const eligible = async id => !!(await q("SELECT 1 x FROM users WHERE id=? AND status='active' AND no_rank=0", id).first());
+    const cur = await q('SELECT king_id FROM throne_log ORDER BY id DESC LIMIT 1').first(), now = Date.now();
+    let next = null;   // { id, pts }
+    if (cur && cur.king_id === uid) return;
+    if (cur && await eligible(cur.king_id)) {
+      if (!await eligible(uid)) return;
+      const mine = await total(uid);
+      if (mine > await total(cur.king_id)) next = { id: uid, pts: mine };
+    } else {   // chưa có vua, hoặc vua bị khoá/ẩn khỏi bảng: tìm lại người đứng đầu
+      const top = await q("SELECT s.user_id id,SUM(s.pts) p FROM score_daily s JOIN users u ON u.id=s.user_id AND u.status='active' AND u.no_rank=0 GROUP BY s.user_id ORDER BY p DESC,s.user_id LIMIT 1").first();
+      if (top && top.p > 0 && (!cur || top.id !== cur.king_id)) next = { id: top.id, pts: top.p };
+    }
+    if (next) await q('INSERT INTO throne_log (ts,king_id,prev_id,pts) VALUES (?,?,?,?)').bind(now, next.id, cur ? cur.king_id : null, next.pts).run();
+  } catch (e) { console.error('throne fail', e && e.message); }
+}
+
+/** Lần đổi chủ gần nhất (trong vòng ms) để báo cho mọi người đang mở web; chưa có → null */
+export async function recentThrone(env, ms = 300000) {
+  try {
+    const r = await env.DB.prepare(`SELECT t.id,t.ts,t.king_id uid,t.pts,k.name,(SELECT av_ts FROM profiles p WHERE p.user_id=t.king_id AND p.avatar IS NOT NULL) pv,pu.name prev,
+      (SELECT SUM(pts) FROM score_daily WHERE user_id=t.king_id) tot FROM throne_log t JOIN users k ON k.id=t.king_id LEFT JOIN users pu ON pu.id=t.prev_id
+      WHERE t.prev_id IS NOT NULL AND t.ts>? AND t.id=(SELECT MAX(id) FROM throne_log) `).bind(Date.now() - ms).first();
+    return r ? { id: r.id, uid: r.uid, name: r.name, prev: r.prev || '', pts: r.tot || r.pts, title: titleOf(r.tot || r.pts).name, pv: r.pv || 0 } : null;
+  } catch (e) { return null; }
 }
 
 /** Danh hiệu theo tổng điểm cho một nhóm người dùng (tài khoản đặt no_rank → không có danh hiệu): Map id → [tên, màu, bậc] */

@@ -280,9 +280,13 @@ b.innerHTML='<b>'+esc(v.from)+' mời bạn vào phòng thi đấu</b><div style
 document.body.appendChild(b);function seenIt(){try{sessionStorage.setItem('inv_seen',String(v.id));}catch(e){}}
 document.getElementById('wc-ivn').onclick=function(){seenIt();b.remove();};
 document.getElementById('wc-ivy').onclick=function(){seenIt();b.remove();location.href='/app/'+encodeURIComponent(v.subj)+'#/duel?join='+encodeURIComponent(v.code);};}
+function loadTh(cb){if(window.WebThrone)return cb();var s=document.getElementById('x-throne.js');if(s){document.addEventListener('throne-ready',function f(){document.removeEventListener('throne-ready',f);cb();});return;}
+s=document.createElement('script');s.id='x-throne.js';s.src='/throne.js?v='+encodeURIComponent(BASE||'1');s.onload=cb;document.head.appendChild(s);}
+function throne(j){var t=j.th;if(!t)return;var last=0;try{last=+localStorage.getItem('th_seen')||0;}catch(e){}if(t.id<=last)return;try{localStorage.setItem('th_seen',String(t.id));}catch(e){}loadTh(function(){window.WebThrone.show(t);});}
+try{if(/[?&]throne-demo\b/.test(location.search))setTimeout(function(){loadTh(function(){window.WebThrone.show({uid:0,name:'Bạn Tuất (demo)',prev:'Vua cũ',pts:12345,title:'Thần Tuất',me:false});});},900);}catch(e){}
 function tick(){fetch('/api/live',{credentials:'same-origin',cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(j){
  if(!j)return;
- invite(j);
+ invite(j);throne(j);
  if(seen===null){seen={rl:+j.rl||0,v:BASE||j.v};}
  else if((+j.rl||0)>seen.rl){seen.rl=+j.rl;banner('Quản trị viên yêu cầu tải lại trang',j.rlmsg||'',8);}
  else if(j.v&&seen.v&&j.v!==seen.v&&!ask){ask=1;banner('Web vừa có bản cập nhật mới','',30);}

@@ -92,3 +92,6 @@ CREATE INDEX IF NOT EXISTS idx_score_day ON score_daily (day);
 
 -- Hồ sơ người dùng (ảnh đại diện, câu nói, giới thiệu, màu nhấn)
 CREATE TABLE IF NOT EXISTS profiles (user_id INTEGER PRIMARY KEY, bio TEXT, motto TEXT, accent TEXT, avatar TEXT, av_ts INTEGER, updated_at INTEGER NOT NULL);
+
+-- Lịch sử ngôi vương (người đứng đầu bảng điểm tổng); prev_id NULL = lần ghi nhận đầu tiên, không thông báo
+CREATE TABLE IF NOT EXISTS throne_log (id INTEGER PRIMARY KEY AUTOINCREMENT, ts INTEGER NOT NULL, king_id INTEGER NOT NULL, prev_id INTEGER, pts INTEGER NOT NULL DEFAULT 0);
