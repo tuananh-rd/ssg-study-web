@@ -1,0 +1,1366 @@
+[
+ {
+  "ref": "8.1",
+  "q": "Computer vision khác image processing ở đầu ra như thế nào?",
+  "correct": "Computer vision cho ra sự diễn giải ảnh; image processing cho ra ảnh",
+  "wrong": [
+   "Cả hai đều chỉ cho ra ảnh",
+   "Computer vision cho ra ảnh; image processing cho ra sự diễn giải ảnh",
+   "Cả hai đều cho ra văn bản"
+  ],
+  "explain": "Image processing: ảnh vào, ảnh ra. Computer vision: ảnh/video vào, hiểu và diễn giải ảnh ra."
+ },
+ {
+  "ref": "8.1",
+  "q": "Yếu tố nào thúc đẩy sự phát triển của xử lý ảnh số?",
+  "correct": "Sự phát triển của máy tính và tiến bộ toán học",
+  "wrong": [
+   "Xu hướng mạng xã hội",
+   "Phạm vi ứng dụng hẹp",
+   "Sự suy giảm của máy tính"
+  ],
+  "explain": "Bộ đề: computer development và mathematical progress."
+ },
+ {
+  "ref": "8.1",
+  "q": "Mục tiêu chung của image processing là gì?",
+  "correct": "Trích thông tin hữu ích và nâng cao chất lượng ảnh",
+  "wrong": [
+   "Tạo âm thanh từ ảnh",
+   "Dựng mô hình 3D từ ảnh",
+   "Sinh văn bản mô tả ảnh"
+  ],
+  "explain": "Image processing tập trung nâng cao ảnh và trích thông tin hữu ích."
+ },
+ {
+  "ref": "8.2",
+  "q": "Một pixel gồm những thành phần nào?",
+  "correct": "Địa chỉ vị trí và giá trị cường độ",
+  "wrong": [
+   "Kích thước ảnh và giá trị cường độ",
+   "Địa chỉ vị trí và kích thước ảnh",
+   "Màu nền và kích thước ảnh"
+  ],
+  "explain": "Pixel = vị trí + giá trị cường độ."
+ },
+ {
+  "ref": "8.2",
+  "q": "Pixel operator có đầu vào và đầu ra như thế nào?",
+  "correct": "Vào một hoặc nhiều ảnh, ra MỘT ảnh",
+  "wrong": [
+   "Vào một ảnh, ra nhiều ảnh",
+   "Vào nhiều ảnh, ra nhiều ảnh",
+   "Vào một ảnh, ra văn bản"
+  ],
+  "explain": "Đầu ra của pixel operator là một ảnh."
+ },
+ {
+  "ref": "8.2",
+  "q": "Ảnh xám (grayscale) có bao nhiêu kênh màu?",
+  "correct": "1",
+  "wrong": [
+   "2",
+   "3",
+   "4"
+  ],
+  "explain": "Ảnh xám 1 kênh, ảnh màu RGB 3 kênh."
+ },
+ {
+  "ref": "8.3",
+  "q": "Giới hạn TRÊN của dải động (dynamic range) do yếu tố nào quyết định?",
+  "correct": "Saturation (bão hòa)",
+  "wrong": [
+   "Noise (nhiễu)",
+   "Contrast",
+   "Brightness"
+  ],
+  "explain": "Trên = bão hòa; dưới = nhiễu."
+ },
+ {
+  "ref": "8.3",
+  "q": "Giới hạn DƯỚI của dải động do yếu tố nào quyết định?",
+  "correct": "Noise (nhiễu)",
+  "wrong": [
+   "Saturation",
+   "Contrast",
+   "Brightness"
+  ],
+  "explain": "Dưới = nhiễu."
+ },
+ {
+  "ref": "8.3",
+  "q": "Thông số nào của camera điều khiển lượng sáng ĐI VÀO ỐNG KÍNH?",
+  "correct": "Aperture (khẩu độ)",
+  "wrong": [
+   "ISO",
+   "Shutter speed",
+   "White balance"
+  ],
+  "explain": "Khẩu độ điều khiển lượng sáng vào ống kính; shutter speed điều khiển thời gian phơi sáng."
+ },
+ {
+  "ref": "8.3",
+  "q": "ISO trong camera số điều khiển điều gì?",
+  "correct": "Độ nhạy sáng của cảm biến",
+  "wrong": [
+   "Kích thước khẩu độ",
+   "Tốc độ màn trập",
+   "Tốc độ lấy nét"
+  ],
+  "explain": "ISO = độ nhạy của cảm biến."
+ },
+ {
+  "ref": "8.3",
+  "q": "Nguyên nhân chính của chromatic aberration trong ống kính là gì?",
+  "correct": "Tán sắc ánh sáng (dispersion)",
+  "wrong": [
+   "Độ cong ống kính",
+   "Độ dày ống kính",
+   "Chất liệu thấu kính"
+  ],
+  "explain": "Chiết suất kính khác nhau theo bước sóng nên các màu hội tụ ở những điểm khác nhau."
+ },
+ {
+  "ref": "8.4",
+  "q": "Phản xạ nào tán xạ ánh sáng theo nhiều hướng (Lambertian)?",
+  "correct": "Diffuse reflection",
+  "wrong": [
+   "Specular reflection",
+   "Refraction",
+   "Translucency"
+  ],
+  "explain": "Lambertian mô tả phản xạ khuếch tán."
+ },
+ {
+  "ref": "8.4",
+  "q": "Phản xạ kiểu gương, ánh sáng ra theo MỘT hướng, gọi là gì?",
+  "correct": "Specular reflection",
+  "wrong": [
+   "Diffuse reflection",
+   "Ambient reflection",
+   "Emissive reflection"
+  ],
+  "explain": "Specular = phản xạ gương."
+ },
+ {
+  "ref": "8.4",
+  "q": "Mô hình Phong đầy đủ gồm những thành phần nào?",
+  "correct": "Ambient + diffuse + specular",
+  "wrong": [
+   "Chỉ ambient",
+   "Chỉ specular",
+   "Diffuse + ambient, không có specular"
+  ],
+  "explain": "Phong đầy đủ = ambient + diffuse + specular từ nguồn sáng chính."
+ },
+ {
+  "ref": "8.4",
+  "q": "Hai phương pháp truyền thống mô hình hóa ánh sáng theo bề mặt là gì?",
+  "correct": "Ray tracing cho bề mặt chủ yếu bóng, radiosity cho bề mặt chủ yếu mờ",
+  "wrong": [
+   "Ray tracing cho bề mặt mờ, radiosity cho bề mặt bóng",
+   "Ray tracing cho cả hai loại",
+   "Radiosity cho cả hai loại"
+  ],
+  "explain": "Ray tracing: specular. Radiosity: matte."
+ },
+ {
+  "ref": "8.5",
+  "q": "Dải bước sóng mắt người nhìn thấy như màu sắc là bao nhiêu?",
+  "correct": "400 nm – 700 nm",
+  "wrong": [
+   "200 nm – 500 nm",
+   "300 nm – 600 nm",
+   "500 nm – 900 nm"
+  ],
+  "explain": "Phổ nhìn thấy 400–700 nm."
+ },
+ {
+  "ref": "8.5",
+  "q": "Trong phổ nhìn thấy, màu nào có tần số lớn nhất?",
+  "correct": "Violet (tím)",
+  "wrong": [
+   "Red (đỏ)",
+   "Green (lục)",
+   "Blue (lam)"
+  ],
+  "explain": "Tím có bước sóng ngắn nhất nên tần số cao nhất."
+ },
+ {
+  "ref": "8.5",
+  "q": "Định dạng ảnh nào là nén có mất mát (lossy)?",
+  "correct": "jpg",
+  "wrong": [
+   "bmp",
+   "ppm",
+   "iac"
+  ],
+  "explain": "JPG là lossy."
+ },
+ {
+  "ref": "8.6",
+  "q": "Muốn vẽ hình và tô kín bên trong bằng OpenCV, giá trị độ dày là bao nhiêu?",
+  "correct": "-1",
+  "wrong": [
+   "1",
+   "True",
+   "fillInside = True"
+  ],
+  "explain": "Độ dày -1 tô kín hình."
+ },
+ {
+  "ref": "8.6",
+  "q": "Cần bao nhiêu điểm để vẽ một đường thẳng bằng OpenCV?",
+  "correct": "2",
+  "wrong": [
+   "3",
+   "4",
+   "5"
+  ],
+  "explain": "Đường thẳng cần hai điểm đầu và cuối (hàm line())."
+ },
+ {
+  "ref": "8.6",
+  "q": "Lật ảnh theo cả trục dọc và ngang dùng lệnh nào?",
+  "correct": "cv2.flip(img, -1)",
+  "wrong": [
+   "cv2.flip(img, 1)",
+   "cv2.flip(img, 0)",
+   "cv2.flip(img, 2)"
+  ],
+  "explain": "flipCode = -1 lật cả hai trục."
+ },
+ {
+  "ref": "8.7",
+  "q": "Kỹ thuật nào kéo giãn khoảng cường độ hiện có để dùng hết các giá trị có thể?",
+  "correct": "Contrast stretching",
+  "wrong": [
+   "Histogram equalization",
+   "Gray world",
+   "Ground truth"
+  ],
+  "explain": "Contrast stretching kéo giãn dải cường độ."
+ },
+ {
+  "ref": "8.7",
+  "q": "Kỹ thuật nào phân bố đều cường độ ra toàn dải?",
+  "correct": "Histogram equalization",
+  "wrong": [
+   "Contrast stretching",
+   "White patch",
+   "Ground truth"
+  ],
+  "explain": "Histogram equalization trải đều cường độ."
+ },
+ {
+  "ref": "8.7",
+  "q": "White patch và Gray world thuộc nhóm nào?",
+  "correct": "Cân bằng trắng",
+  "wrong": [
+   "Tăng tương phản",
+   "Phân đoạn ảnh",
+   "Dò cạnh"
+  ],
+  "explain": "Hai phương pháp cân bằng trắng."
+ },
+ {
+  "ref": "8.8",
+  "q": "Convolution tính được từ correlation bằng cách nào?",
+  "correct": "Xoay kernel 180° quanh tâm rồi correlation",
+  "wrong": [
+   "Dùng thẳng kết quả correlation",
+   "Chia kết quả cho một hằng số",
+   "Không có khác biệt"
+  ],
+  "explain": "Convolution = correlation sau khi xoay kernel 180°."
+ },
+ {
+  "ref": "8.8",
+  "q": "Nhược điểm chính của mean filter khi khử nhiễu là gì?",
+  "correct": "Làm mờ cạnh và chi tiết",
+  "wrong": [
+   "Tốn rất nhiều tính toán",
+   "Chỉ dùng được cho ảnh xám",
+   "Khuếch đại nhiễu"
+  ],
+  "explain": "Mean filter làm mờ cạnh."
+ },
+ {
+  "ref": "8.8",
+  "q": "Ưu điểm của chuỗi biến đổi 1 chiều so với kernel 2 chiều lớn không tách được là gì?",
+  "correct": "Tăng hiệu quả tính toán",
+  "wrong": [
+   "Tăng độ chính xác màu",
+   "Giữ chi tiết tốt hơn",
+   "Giảm bộ nhớ"
+  ],
+  "explain": "Bộ đề: increased computational efficiency."
+ },
+ {
+  "ref": "8.8",
+  "q": "Bộ lọc nào dùng để làm mịn ảnh và giảm nhiễu?",
+  "correct": "Low-pass filter",
+  "wrong": [
+   "High-pass filter",
+   "Band-pass filter",
+   "Adaptive filter"
+  ],
+  "explain": "Low-pass làm mịn."
+ },
+ {
+  "ref": "8.9",
+  "q": "Kỹ thuật nào cải thiện texture trên bề mặt nhìn từ góc xiên?",
+  "correct": "Anisotropic filtering",
+  "wrong": [
+   "MIP mapping filter",
+   "Gaussian white filter",
+   "Box filter"
+  ],
+  "explain": "Anisotropic filtering làm nét texture ở góc xiên."
+ },
+ {
+  "ref": "8.9",
+  "q": "EWA filter dựa trên ánh xạ nào?",
+  "correct": "Ánh xạ affine tạo hệ tọa độ xiên, lọc Gaussian với ma trận hiệp phương sai nghịch đảo là elip",
+  "wrong": [
+   "Phép chiếu tròn của pixel đích",
+   "Lọc trung vị",
+   "Phép biến đổi Fourier"
+  ],
+  "explain": "EWA dùng elip, không dùng phép chiếu tròn."
+ },
+ {
+  "ref": "8.9",
+  "q": "Bước đầu tiên khi lấy mẫu lại ảnh từ MIP là gì?",
+  "correct": "Ước lượng hệ số tỉ lệ (scalar) của tốc độ lấy mẫu lại",
+  "wrong": [
+   "Tính logarit cơ số 2 của ảnh",
+   "Áp dụng bộ lọc chất lượng cao",
+   "Dùng mức pyramid phân số"
+  ],
+  "explain": "Bước đầu: ước lượng resampling rate."
+ },
+ {
+  "ref": "8.10",
+  "q": "Convolution trong miền không gian tương ứng với phép gì trong miền tần số?",
+  "correct": "Phép nhân F(w)H(w)",
+  "wrong": [
+   "Phép cộng F(w)+H(w)",
+   "Phép tích chập tiếp",
+   "Không có quan hệ"
+  ],
+  "explain": "Convolution ↔ nhân trong miền tần số."
+ },
+ {
+  "ref": "8.10",
+  "q": "Tần số Nyquist bằng bao nhiêu?",
+  "correct": "Một nửa tần số lấy mẫu",
+  "wrong": [
+   "Tần số cao nhất của tín hiệu",
+   "Gấp đôi tần số lấy mẫu",
+   "Tần số làm tín hiệu tuần hoàn"
+  ],
+  "explain": "Nyquist = 1/2 tần số lấy mẫu."
+ },
+ {
+  "ref": "8.10",
+  "q": "Dịch một tín hiệu theo thời gian thì phổ Fourier của nó thay đổi thế nào?",
+  "correct": "Phổ pha bị dịch",
+  "wrong": [
+   "Phổ biên độ bị co giãn",
+   "Các tần số bị suy giảm",
+   "Tần số Nyquist thay đổi"
+  ],
+  "explain": "Phổ biên độ giữ nguyên, phổ pha dịch."
+ },
+ {
+  "ref": "8.10",
+  "q": "Định lý Parseval nói về điều gì?",
+  "correct": "Liên hệ năng lượng giữa miền thời gian và miền tần số",
+  "wrong": [
+   "Biến đổi Fourier khả nghịch",
+   "Liên hệ biên độ và tần số",
+   "Biến đổi Fourier luôn thực"
+  ],
+  "explain": "Parseval: bảo toàn năng lượng giữa hai miền."
+ },
+ {
+  "ref": "8.10",
+  "q": "Band-pass filter có đặc điểm gì?",
+  "correct": "Cho một dải tần số xác định đi qua",
+  "wrong": [
+   "Chỉ cho tần số thấp đi qua",
+   "Cho mọi tần số đi qua",
+   "Chặn mọi tần số"
+  ],
+  "explain": "Band-pass = cho một dải tần qua."
+ },
+ {
+  "ref": "8.11",
+  "q": "Gradient của ảnh dùng chủ yếu để làm gì?",
+  "correct": "Trích xuất thông tin hữu ích (biên)",
+  "wrong": [
+   "Tăng độ phân giải",
+   "Tìm outlier",
+   "Chỉnh độ sáng"
+  ],
+  "explain": "Mục đích chính của gradient: trích thông tin hữu ích."
+ },
+ {
+  "ref": "8.11",
+  "q": "Edge linking có vai trò gì sau khi dò cạnh?",
+  "correct": "Sắp xếp tập pixel cạnh rời rạc thành danh sách cạnh có thứ tự",
+  "wrong": [
+   "Xóa thông tin cạnh",
+   "Xáo trộn thứ tự pixel cạnh",
+   "Làm mờ cạnh"
+  ],
+  "explain": "Edge linking nối các pixel cạnh."
+ },
+ {
+  "ref": "8.11",
+  "q": "Cạnh trong ảnh là gì?",
+  "correct": "Thay đổi cục bộ đáng kể của cường độ",
+  "wrong": [
+   "Vùng có màu đồng nhất",
+   "Vùng có kết cấu dày",
+   "Một đối tượng cụ thể"
+  ],
+  "explain": "Edges are significant local changes of intensity."
+ },
+ {
+  "ref": "8.12",
+  "q": "Phương pháp dò cạnh nào bằng kỹ thuật zero-crossing?",
+  "correct": "Đạo hàm bậc hai (second derivative)",
+  "wrong": [
+   "Đạo hàm bậc nhất",
+   "Toán tử Prewitt",
+   "Toán tử Robert"
+  ],
+  "explain": "Cạnh ứng với điểm cắt không của đạo hàm bậc hai."
+ },
+ {
+  "ref": "8.12",
+  "q": "Nhược điểm cơ bản của toán tử Sobel là gì?",
+  "correct": "Nhạy với nhiễu",
+  "wrong": [
+   "Không dò được cạnh chéo",
+   "Tính toán chậm",
+   "Thiếu bất biến xoay"
+  ],
+  "explain": "Bộ đề: sensitivity to noise."
+ },
+ {
+  "ref": "8.12",
+  "q": "Toán tử Prewitt tốt ở điểm nào?",
+  "correct": "Dò cạnh dọc và ngang",
+  "wrong": [
+   "Dò cạnh tròn",
+   "Dò màu",
+   "Dò vân"
+  ],
+  "explain": "Prewitt: good for vertical and horizontal edges."
+ },
+ {
+  "ref": "8.12",
+  "q": "Gaussian trong Canny/LoG có vai trò gì?",
+  "correct": "Làm mờ ảnh, giảm nhiễu",
+  "wrong": [
+   "Tăng tương phản",
+   "Tính gradient",
+   "Loại điểm không cực đại"
+  ],
+  "explain": "Gaussian chỉ làm mờ để giảm nhiễu."
+ },
+ {
+  "ref": "8.12",
+  "q": "Điều nào KHÔNG phải ưu điểm của Canny?",
+  "correct": "True zero crossing",
+  "wrong": [
+   "Định vị tốt",
+   "Ít nhạy với nhiễu",
+   "Trích đặc trưng không làm đổi đặc trưng"
+  ],
+  "explain": "Zero-crossing là của LoG/đạo hàm bậc 2."
+ },
+ {
+  "ref": "8.13",
+  "q": "Thuật toán nào dùng để tìm vị trí blob?",
+  "correct": "Normalized Laplacian of Gaussian",
+  "wrong": [
+   "Đạo hàm bậc nhất",
+   "Đạo hàm bậc hai",
+   "Laplacian of Gaussian không chuẩn hóa"
+  ],
+  "explain": "Blob: NLoG."
+ },
+ {
+  "ref": "8.13",
+  "q": "Vì sao dùng DoG thay cho NLoG?",
+  "correct": "DoG xấp xỉ NLoG nhưng tính hiệu quả hơn",
+  "wrong": [
+   "DoG chính xác hơn và tính nhanh hơn",
+   "DoG xấp xỉ NLoG nhưng tốn tính toán như nhau",
+   "DoG tốt hơn dù tính chậm hơn"
+  ],
+  "explain": "DoG xấp xỉ NLoG và rẻ hơn."
+ },
+ {
+  "ref": "8.13",
+  "q": "Trong Harris, khi nào cửa sổ là vùng phẳng?",
+  "correct": "|R| nhỏ",
+  "wrong": [
+   "|R| lớn",
+   "R < 0",
+   "Không xác định được"
+  ],
+  "explain": "|R| nhỏ: phẳng."
+ },
+ {
+  "ref": "8.13",
+  "q": "Trong Harris, khi nào cửa sổ chứa một góc?",
+  "correct": "|R| lớn và λ1 ≈ λ2",
+  "wrong": [
+   "|R| nhỏ và λ1, λ2 nhỏ",
+   "R < 0 và λ1 ≫ λ2",
+   "Không xác định được"
+  ],
+  "explain": "Góc: |R| lớn, hai trị riêng gần nhau."
+ },
+ {
+  "ref": "8.13",
+  "q": "Sau bước dò đặc trưng (feature detection) là bước nào?",
+  "correct": "Mô tả đặc trưng (feature description)",
+  "wrong": [
+   "Tiền xử lý",
+   "Gộp đặc trưng",
+   "Lọc nhiễu"
+  ],
+  "explain": "Detection → description."
+ },
+ {
+  "ref": "8.14",
+  "q": "Vector mô tả SIFT có bao nhiêu chiều?",
+  "correct": "128",
+  "wrong": [
+   "64",
+   "256",
+   "512"
+  ],
+  "explain": "SIFT 128 chiều."
+ },
+ {
+  "ref": "8.14",
+  "q": "SIFT xử lý xoay khi khớp keypoint bằng cách nào?",
+  "correct": "Căn chỉnh keypoint theo hướng chủ đạo",
+  "wrong": [
+   "Xoay cả ảnh về hướng chuẩn",
+   "Dùng hướng cố định cho mọi keypoint",
+   "Loại các keypoint có hướng khác nhau"
+  ],
+  "explain": "Dominant orientation."
+ },
+ {
+  "ref": "8.14",
+  "q": "SIFT đạt bất biến tỉ lệ bằng cách nào?",
+  "correct": "Thu nhỏ ảnh ở nhiều độ phân giải",
+  "wrong": [
+   "Chuẩn hóa cường độ pixel",
+   "Lọc Gaussian toàn ảnh",
+   "Dùng cửa sổ thích nghi"
+  ],
+  "explain": "Scale-space nhiều độ phân giải."
+ },
+ {
+  "ref": "8.15",
+  "q": "Bước đầu cần thiết cho Hough transform khi nhận dạng đường phức tạp là gì?",
+  "correct": "Dò cạnh (edge detection)",
+  "wrong": [
+   "Chỉnh màu",
+   "Ánh xạ texture",
+   "Chỉnh tương phản"
+  ],
+  "explain": "Hough làm việc trên các điểm cạnh."
+ },
+ {
+  "ref": "8.15",
+  "q": "Hough transform dùng không gian nào để biểu diễn đường thẳng trong không gian tham số?",
+  "correct": "Polar space",
+  "wrong": [
+   "Cartesian space",
+   "Transform space",
+   "Gradient space"
+  ],
+  "explain": "Biểu diễn (ρ, θ)."
+ },
+ {
+  "ref": "8.15",
+  "q": "Sau khi bỏ phiếu, các đường thẳng được xác định bằng cách nào?",
+  "correct": "Tìm các đỉnh (peak) có nhiều phiếu nhất",
+  "wrong": [
+   "Mọi ô có phiếu khác 0 đều là đường",
+   "Nối mọi điểm cạnh đã bỏ phiếu",
+   "Hough cho ra đoạn thẳng trực tiếp"
+  ],
+  "explain": "Peak = đường."
+ },
+ {
+  "ref": "8.15",
+  "q": "Nhiễu nhiều ảnh hưởng thế nào đến Hough?",
+  "correct": "Tạo đỉnh giả trong không gian tham số",
+  "wrong": [
+   "Không ảnh hưởng",
+   "Hough không dùng được cho mọi mức nhiễu",
+   "Làm mất toàn bộ phiếu"
+  ],
+  "explain": "Nhiễu tạo false peaks."
+ },
+ {
+  "ref": "8.15",
+  "q": "Hai kỹ thuật dò đường thẳng được nhắc trong bộ đề là gì?",
+  "correct": "Hough transform và convolution-based",
+  "wrong": [
+   "Hough và Canny",
+   "Sobel và Prewitt",
+   "K-means và Mean shift"
+  ],
+  "explain": "Hough và convolution-based technique."
+ },
+ {
+  "ref": "8.16",
+  "q": "Image segmentation là gì?",
+  "correct": "Chia ảnh thành các vùng theo đặc tính pixel",
+  "wrong": [
+   "Gán một màu cho từng pixel",
+   "Nhận dạng đối tượng và tên của chúng",
+   "Làm mờ ảnh"
+  ],
+  "explain": "Không phải gán màu cho từng pixel."
+ },
+ {
+  "ref": "8.16",
+  "q": "Thresholding segmentation làm gì?",
+  "correct": "Chuyển ảnh xám/màu thành ảnh nhị phân theo ngưỡng",
+  "wrong": [
+   "Phân cụm theo K-means",
+   "Nối cạnh",
+   "Dựng bản đồ địa hình"
+  ],
+  "explain": "Thresholding = ngưỡng → nhị phân."
+ },
+ {
+  "ref": "8.17",
+  "q": "Hạn chế chính của region growing là gì?",
+  "correct": "Rất nhạy với nhiễu và thay đổi cường độ nhỏ",
+  "wrong": [
+   "Không xử lý được ảnh nhiều màu",
+   "Chi phí tính toán rất lớn",
+   "Không xử lý được vật thể rời rạc"
+  ],
+  "explain": "Region growing nhạy với nhiễu."
+ },
+ {
+  "ref": "8.17",
+  "q": "Phương pháp nào phân đoạn ảnh theo độ giống nhau về mức xám và kết cấu?",
+  "correct": "Graph-based segmentation",
+  "wrong": [
+   "Region splitting",
+   "Watershed",
+   "Active contours"
+  ],
+  "explain": "Graph-based dùng gray-level và texture."
+ },
+ {
+  "ref": "8.17",
+  "q": "Hai dấu hiệu probabilistic merging dùng để gộp vùng là gì?",
+  "correct": "Gray-level similarity và texture similarity",
+  "wrong": [
+   "Saturation và độ sáng",
+   "Cạnh và tương phản",
+   "Hue và nhận dạng mẫu"
+  ],
+  "explain": "Gray-level + texture similarity."
+ },
+ {
+  "ref": "8.17",
+  "q": "Region splitting làm gì?",
+  "correct": "Chia ảnh thành các vùng rời nhau, đồng nhất trong từng vùng",
+  "wrong": [
+   "Gộp các vùng giống nhau",
+   "Chia thành K cụm",
+   "Dựng đường viền động"
+  ],
+  "explain": "Chia thường thành 4 vùng con."
+ },
+ {
+  "ref": "8.18",
+  "q": "Watershed xem ảnh như gì?",
+  "correct": "Bản đồ địa hình, độ sáng là độ cao",
+  "wrong": [
+   "Một tập điểm dữ liệu nhiều chiều",
+   "Một đồ thị",
+   "Một chuỗi tín hiệu"
+  ],
+  "explain": "Watershed = bản đồ địa hình."
+ },
+ {
+  "ref": "8.18",
+  "q": "Vấn đề thường gặp khi dùng watershed với nền có kết cấu?",
+  "correct": "Over-segmentation",
+  "wrong": [
+   "Tốc độ xử lý cao",
+   "Mất màu",
+   "Ràng buộc thời gian"
+  ],
+  "explain": "Phân đoạn quá mức."
+ },
+ {
+  "ref": "8.18",
+  "q": "Ranh giới watershed biểu diễn điều gì?",
+  "correct": "Cạnh của đối tượng",
+  "wrong": [
+   "Tâm đối tượng",
+   "Thung lũng của ảnh",
+   "Các pixel ảnh"
+  ],
+  "explain": "Watershed boundary = object edges."
+ },
+ {
+  "ref": "8.18",
+  "q": "Năng lượng nội (internal) trong mô hình Snake có vai trò gì?",
+  "correct": "Phạt biến dạng lớn, giữ contour trơn",
+  "wrong": [
+   "Hút contour về biên đối tượng",
+   "Loại điểm không cực đại",
+   "Chỉnh cường độ pixel cạnh"
+  ],
+  "explain": "Internal giữ trơn; external hút về biên."
+ },
+ {
+  "ref": "8.18",
+  "q": "Năng lượng ngoại (external) trong Snake có vai trò gì?",
+  "correct": "Hút contour về biên đối tượng",
+  "wrong": [
+   "Giữ contour trơn",
+   "Phạt độ lệch khỏi đường thẳng",
+   "Chỉnh cường độ pixel cạnh"
+  ],
+  "explain": "External kéo contour về biên."
+ },
+ {
+  "ref": "8.18",
+  "q": "Thuật toán nào dùng trong active contour?",
+  "correct": "Snakes model",
+  "wrong": [
+   "Scissors model",
+   "Sets model",
+   "Watershed"
+  ],
+  "explain": "Active contour dùng Snakes."
+ },
+ {
+  "ref": "8.19",
+  "q": "K trong K-means là gì?",
+  "correct": "Số cụm",
+  "wrong": [
+   "Số chiều",
+   "Số điểm dữ liệu",
+   "Số vòng lặp"
+  ],
+  "explain": "K = number of clusters."
+ },
+ {
+  "ref": "8.19",
+  "q": "Vị trí K centroid ban đầu trong K-means được chọn thế nào?",
+  "correct": "Ngẫu nhiên",
+  "wrong": [
+   "Phân bố đều trong ảnh",
+   "Giá trị trung tâm",
+   "Chia theo K và tỉ lệ ảnh"
+  ],
+  "explain": "Khởi tạo ngẫu nhiên."
+ },
+ {
+  "ref": "8.19",
+  "q": "Gaussian Mixture Model biểu diễn phân phối như thế nào?",
+  "correct": "Tổng của nhiều mô hình Gaussian",
+  "wrong": [
+   "Tích của nhiều mô hình Gaussian",
+   "Một Gaussian duy nhất",
+   "Cây quyết định"
+  ],
+  "explain": "GMM = tổng các Gaussian, gom cụm mềm."
+ },
+ {
+  "ref": "8.19",
+  "q": "Mean shift thay mỗi pixel bằng gì?",
+  "correct": "Trung bình các pixel trong một khoảng (range) lân cận",
+  "wrong": [
+   "Trung bình các pixel trong cụm",
+   "Trung vị toàn ảnh",
+   "Giá trị lớn nhất lân cận"
+  ],
+  "explain": "Mean of the pixels in a range."
+ },
+ {
+  "ref": "8.19",
+  "q": "Thuật toán nào gom cụm mềm theo xác suất?",
+  "correct": "Gaussian Mixture Models",
+  "wrong": [
+   "K-means",
+   "Mean shift",
+   "K-nearest"
+  ],
+  "explain": "GMM là soft clustering."
+ },
+ {
+  "ref": "8.20",
+  "q": "Cách tiếp cận gán mỗi pixel vào một lớp gọi là gì?",
+  "correct": "Semantic segmentation",
+  "wrong": [
+   "Instance segmentation",
+   "Instance detection",
+   "Semantic detection"
+  ],
+  "explain": "Semantic = lớp."
+ },
+ {
+  "ref": "8.20",
+  "q": "Cách tiếp cận tách từng đối tượng riêng (mỗi pixel thuộc instance nào) gọi là gì?",
+  "correct": "Instance segmentation",
+  "wrong": [
+   "Semantic segmentation",
+   "Semantic detection",
+   "Instance detection"
+  ],
+  "explain": "Instance = từng đối tượng."
+ },
+ {
+  "ref": "8.20",
+  "q": "So với semantic segmentation, instance segmentation thường như thế nào?",
+  "correct": "Phức tạp hơn và cần thêm dữ liệu huấn luyện",
+  "wrong": [
+   "Đơn giản hơn",
+   "Phức tạp tương đương",
+   "Đơn giản nhưng cần ảnh độ phân giải rất cao"
+  ],
+  "explain": "Instance khó hơn."
+ },
+ {
+  "ref": "8.21",
+  "q": "Phép biến đổi nào bảo toàn tính thẳng hàng và tỉ lệ khoảng cách?",
+  "correct": "Affine",
+  "wrong": [
+   "Projective",
+   "Euclidean",
+   "Perspective"
+  ],
+  "explain": "Affine giữ collinearity và ratio of distances."
+ },
+ {
+  "ref": "8.21",
+  "q": "Cần tối thiểu bao nhiêu điểm để tìm ma trận biến đổi affine?",
+  "correct": "3",
+  "wrong": [
+   "4",
+   "5",
+   "6"
+  ],
+  "explain": "Affine 6 tham số, 3 cặp điểm."
+ },
+ {
+  "ref": "8.21",
+  "q": "Ma trận [[2,0,1],[0,2,2],[0,0,1]] là phép biến đổi nào?",
+  "correct": "Scale 2, tịnh tiến 1 theo x và 2 theo y",
+  "wrong": [
+   "Scale 2, tịnh tiến 2 theo x và 1 theo y",
+   "Chỉ tịnh tiến 2 theo x, 1 theo y",
+   "Scale 2 theo x, giữ nguyên y"
+  ],
+  "explain": "Cột cuối (1, 2) là tịnh tiến."
+ },
+ {
+  "ref": "8.21",
+  "q": "Hệ tọa độ dùng bán kính, góc phương vị và độ cao là gì?",
+  "correct": "Cylindrical coordinates",
+  "wrong": [
+   "Cartesian coordinates",
+   "Spherical coordinates",
+   "Polar coordinates"
+  ],
+  "explain": "Cylindrical = (r, θ, z)."
+ },
+ {
+  "ref": "8.22",
+  "q": "Ý chính của feature-based alignment là gì?",
+  "correct": "Dò vài đặc trưng khớp ở cả hai ảnh rồi tính phép căn chỉnh",
+  "wrong": [
+   "So sánh pixel trực tiếp giữa hai ảnh",
+   "Áp biến đổi ngẫu nhiên",
+   "Chia ảnh thành các vùng"
+  ],
+  "explain": "Detect + match đặc trưng thưa."
+ },
+ {
+  "ref": "8.22",
+  "q": "Khớp đặc trưng giữa hai ảnh được thực hiện bằng cách nào?",
+  "correct": "So sánh descriptor mô tả cấu trúc cục bộ",
+  "wrong": [
+   "So pixel trực tiếp",
+   "Chọn tay theo cảm nhận",
+   "Ưu tiên đặc trưng gần tâm ảnh"
+  ],
+  "explain": "Khớp bằng descriptor."
+ },
+ {
+  "ref": "8.22",
+  "q": "Phát biểu nào về \"least squares\" trong căn chỉnh 2D là đúng?",
+  "correct": "Tối thiểu hóa tổng bình phương khoảng cách giữa các điểm",
+  "wrong": [
+   "Cực đại hóa entropy",
+   "Cực đại hóa tổng bình phương sai khác",
+   "Tối thiểu hóa entropy ảnh"
+  ],
+  "explain": "Least squares = minimize sum of squared distances."
+ },
+ {
+  "ref": "8.22",
+  "q": "Ứng dụng nào KHÔNG thuộc image alignment?",
+  "correct": "Nhận diện mẫu tài liệu",
+  "wrong": [
+   "Tạo ảnh panorama",
+   "So sánh các lần quét mô ở thời điểm khác nhau",
+   "Nâng cao ảnh tài liệu quét"
+  ],
+  "explain": "Bộ đề: NOT identifying document templates."
+ },
+ {
+  "ref": "8.23",
+  "q": "RANSAC là viết tắt của gì?",
+  "correct": "Random Sample Consensus",
+  "wrong": [
+   "Random Assignment for Numerical Stability",
+   "Robust Analysis for Noisy Alignment",
+   "Recursive Alignment and Sampling"
+  ],
+  "explain": "RANdom SAmple Consensus."
+ },
+ {
+  "ref": "8.23",
+  "q": "RANSAC chủ yếu giải quyết vấn đề gì?",
+  "correct": "Outliers trong dữ liệu đầu vào",
+  "wrong": [
+   "Overfitting",
+   "Underfitting",
+   "Độ phức tạp tính toán"
+  ],
+  "explain": "RANSAC chịu được nhiều outliers."
+ },
+ {
+  "ref": "8.23",
+  "q": "Số lần thử tối thiểu của RANSAC tính bằng công thức nào?",
+  "correct": "log(1−P) / log(1−p^k)",
+  "wrong": [
+   "log(1−P) × log(1−p^k)",
+   "log[(1−P)(1−p^k)]",
+   "log[(1−P)/(1−p^k)]"
+  ],
+  "explain": "Phép chia hai logarit."
+ },
+ {
+  "ref": "8.23",
+  "q": "Phát biểu nào KHÔNG đúng về RANSAC?",
+  "correct": "Sinh nghiệm ứng viên bằng số điểm dữ liệu tối đa",
+  "wrong": [
+   "Ước lượng tham số khi có nhiều outlier",
+   "Chọn ngẫu nhiên rồi đếm số điểm khớp",
+   "Nếu đủ điểm khớp thì chấp nhận và thoát"
+  ],
+  "explain": "RANSAC dùng số điểm TỐI THIỂU."
+ },
+ {
+  "ref": "8.23",
+  "q": "\"Consensus\" trong RANSAC nghĩa là gì?",
+  "correct": "Đa số inliers trong tập dữ liệu",
+  "wrong": [
+   "Giá trị trung bình của các điểm",
+   "Độ lệch của mô hình so với dữ liệu",
+   "Tổng số lần lặp"
+  ],
+  "explain": "Consensus = đa số inliers."
+ },
+ {
+  "ref": "8.24",
+  "q": "Quá trình tự động xác định ảnh nào thuộc cùng một panorama gọi là gì?",
+  "correct": "Recognizing panoramas",
+  "wrong": [
+   "Parallax removal",
+   "Bundle adjustment",
+   "Panoramas creating"
+  ],
+  "explain": "Recognizing panoramas."
+ },
+ {
+  "ref": "8.24",
+  "q": "Kết nối connected components trong đồ thị chồng lấn dùng để làm gì?",
+  "correct": "Nhận ra từng panorama riêng",
+  "wrong": [
+   "Tìm outlier",
+   "Ước lượng pose camera",
+   "Tính góc chồng lấn"
+  ],
+  "explain": "Mỗi connected component là một panorama."
+ },
+ {
+  "ref": "8.24",
+  "q": "Image stitching dùng trong lĩnh vực nào để dựng lại giấy bị xé?",
+  "correct": "Pháp y và điều tra (forensic)",
+  "wrong": [
+   "Phục chế nghệ thuật",
+   "Ảnh y tế",
+   "Khảo cổ"
+  ],
+  "explain": "Bộ đề: forensic and investigative science."
+ },
+ {
+  "ref": "8.24",
+  "q": "Phát biểu nào KHÔNG đúng về image stitching?",
+  "correct": "Nó ghép hai pixel có cường độ giống nhau ở hai ảnh kề nhau",
+  "wrong": [
+   "Ghép nhiều ảnh có vùng nhìn chồng lấn",
+   "Dùng để lập bản đồ một nơi",
+   "Dùng trong pháp y để dựng lại vật bị xé"
+  ],
+  "explain": "Stitching dùng đặc trưng, không ghép theo cường độ."
+ },
+ {
+  "ref": "8.25",
+  "q": "Mục tiêu của global alignment là gì?",
+  "correct": "Tìm bộ tham số căn chỉnh nhất quán toàn cục",
+  "wrong": [
+   "Giảm méo trong từng ảnh",
+   "Giảm số đặc trưng khớp",
+   "Chỉ tập trung chi tiết toàn cục"
+  ],
+  "explain": "Globally consistent set of alignment parameters."
+ },
+ {
+  "ref": "8.25",
+  "q": "Bundle adjustment dùng để làm gì?",
+  "correct": "Chỉnh đồng thời tham số pose của nhiều ảnh chồng lấn",
+  "wrong": [
+   "Thêm ảnh mới vào panorama",
+   "Giảm kích thước ảnh",
+   "Căn chỉnh ảnh tuần tự"
+  ],
+  "explain": "Simultaneous pose adjustment."
+ },
+ {
+  "ref": "8.25",
+  "q": "Parallax là gì?",
+  "correct": "Sự dịch chuyển vị trí vật khi đổi góc nhìn",
+  "wrong": [
+   "Méo ảnh do ống kính",
+   "Chromatic aberration",
+   "Mờ do chuyển động khi chụp"
+  ],
+  "explain": "Parallax = shift in apparent position."
+ },
+ {
+  "ref": "8.25",
+  "q": "Khi chuyển động nhỏ, sửa parallax bằng cách nào?",
+  "correct": "Local alignment",
+  "wrong": [
+   "Global bundle adjustment",
+   "General 2D motion estimation",
+   "Back-projection averaging"
+  ],
+  "explain": "Local alignment."
+ },
+ {
+  "ref": "8.26",
+  "q": "Panorama dạng cylindrical dùng khi nào?",
+  "correct": "Camera nằm ngang, chỉ xoay quanh trục dọc",
+  "wrong": [
+   "Camera xoay mọi hướng",
+   "Camera chuyển động tịnh tiến",
+   "Chụp ảnh tĩnh một khung"
+  ],
+  "explain": "Cylindrical: rotation quanh trục dọc."
+ },
+ {
+  "ref": "8.26",
+  "q": "Spherical panorama khác cylindrical ở điểm nào?",
+  "correct": "Ngoài 360° ngang còn chụp cả hướng lên và xuống",
+  "wrong": [
+   "Chỉ chụp một góc hẹp",
+   "Không chụp 360° ngang",
+   "Dùng camera cố định"
+  ],
+  "explain": "Cylindrical không phủ trên-dưới."
+ },
+ {
+  "ref": "8.27",
+  "q": "Chuyển động của đối tượng giữa các frame liên tiếp do chuyển động tương đối vật–camera gọi là gì?",
+  "correct": "Optical flow",
+  "wrong": [
+   "Image stitching",
+   "Object moving",
+   "Tracking ID"
+  ],
+  "explain": "Đó là optical flow."
+ },
+ {
+  "ref": "8.27",
+  "q": "Thông tin nào Optical Flow KHÔNG cung cấp?",
+  "correct": "Gia tốc của vật",
+  "wrong": [
+   "Vận tốc chuyển động của pixel",
+   "Hướng chuyển động của pixel",
+   "Vị trí điểm khóa"
+  ],
+  "explain": "Optical flow: vận tốc và hướng."
+ },
+ {
+  "ref": "8.27",
+  "q": "Ước lượng chuyển động pixel từ I(x,y,t) sang I(x,y,t+1) là tìm gì?",
+  "correct": "Các pixel GẦN ở thời điểm t+1 có cùng màu",
+  "wrong": [
+   "Các pixel xa ở thời điểm t có cùng màu",
+   "Các pixel xa ở thời điểm t+1 có cùng màu",
+   "Các pixel gần ở thời điểm t có cùng màu"
+  ],
+  "explain": "Closed pixels at t+1 with the same color."
+ },
+ {
+  "ref": "8.28",
+  "q": "Phương pháp tracking nào nhấn mạnh hình dạng và hình thức của vùng đối tượng \"phôi thai\"?",
+  "correct": "Kernel tracking",
+  "wrong": [
+   "Point tracking",
+   "Silhouette tracking",
+   "Template matching"
+  ],
+  "explain": "Kernel tracking."
+ },
+ {
+  "ref": "8.28",
+  "q": "Tracking nào ước lượng vùng đối tượng ở mỗi frame bằng thông tin trong chính vùng đối tượng?",
+  "correct": "Template matching",
+  "wrong": [
+   "Multi-view tracking",
+   "Silhouette tracking",
+   "Contour evolution"
+  ],
+  "explain": "Template matching."
+ },
+ {
+  "ref": "8.28",
+  "q": "Thuật toán tracking nào xử lý đổi tỉ lệ, xoay, che khuất bằng cửa sổ tìm kiếm thích nghi?",
+  "correct": "CamShift",
+  "wrong": [
+   "Kalman filtering",
+   "Mean Shift tracking",
+   "Optical flow tracking"
+  ],
+  "explain": "CamShift."
+ },
+ {
+  "ref": "8.28",
+  "q": "Đặc điểm cốt lõi của object tracking là gì?",
+  "correct": "Gán ID riêng cho mỗi vật và duy trì ID qua các frame",
+  "wrong": [
+   "Phân loại đối tượng",
+   "Dự đoán quỹ đạo",
+   "Phân đoạn thể hiện"
+  ],
+  "explain": "ID assignment maintenance."
+ },
+ {
+  "ref": "8.28",
+  "q": "Phương pháp nào dựa trên factored sampling và áp dụng lặp qua chuỗi ảnh?",
+  "correct": "Condensation",
+  "wrong": [
+   "Feature descriptor",
+   "Feature matching",
+   "Hough transform"
+  ],
+  "explain": "Condensation."
+ },
+ {
+  "ref": "8.29",
+  "q": "Object recognition khác object detection ở chỗ nào?",
+  "correct": "Recognition gán thuộc tính ngữ nghĩa cho vật dựa trên thuộc tính vật lý của nó",
+  "wrong": [
+   "Detection chỉ phân loại, không định vị",
+   "Recognition chỉ định vị",
+   "Không khác"
+  ],
+  "explain": "Recognition: perceive physical properties and apply semantic attributes."
+ },
+ {
+  "ref": "8.29",
+  "q": "Object detection cần làm những gì?",
+  "correct": "Nhận ra và định vị các thể hiện của vật trong ảnh hoặc video",
+  "wrong": [
+   "Nhận ra vật mà không cần vị trí",
+   "Mô tả nội dung ảnh",
+   "Phân loại ảnh theo đặc trưng thị giác"
+  ],
+  "explain": "Detection = identify + locate."
+ },
+ {
+  "ref": "8.29",
+  "q": "Phương pháp phát hiện đối tượng truyền thống (không nơ-ron) nào được hỏi?",
+  "correct": "HOG detector",
+  "wrong": [
+   "YOLO",
+   "RCNN",
+   "RetinaNet"
+  ],
+  "explain": "HOG là phi nơ-ron."
+ },
+ {
+  "ref": "8.29",
+  "q": "Thuật toán detection hai giai đoạn (region proposal + phân loại) là gì?",
+  "correct": "Faster R-CNN",
+  "wrong": [
+   "YOLO",
+   "SSD",
+   "Haar Cascade"
+  ],
+  "explain": "Faster R-CNN."
+ },
+ {
+  "ref": "8.29",
+  "q": "Haar Cascade dùng loại đặc trưng nào?",
+  "correct": "Đặc trưng dạng đường (line features)",
+  "wrong": [
+   "Histogram màu",
+   "Đặc trưng kết cấu",
+   "Eigenfaces"
+  ],
+  "explain": "Haar-like: line features."
+ },
+ {
+  "ref": "8.29",
+  "q": "Bin của histogram trong HOG được chọn dựa trên gì?",
+  "correct": "Hướng của gradient",
+  "wrong": [
+   "Độ sáng pixel",
+   "Giá trị pixel ngẫu nhiên",
+   "Kích thước vật"
+  ],
+  "explain": "HOG = histogram of oriented gradients."
+ },
+ {
+  "ref": "8.30",
+  "q": "Phương pháp nào trích đặc trưng cục bộ (mắt, mũi, miệng) rồi đưa vị trí và thống kê vào bộ phân loại?",
+  "correct": "Feature-based methods",
+  "wrong": [
+   "Holistic matching methods",
+   "Eigenfaces",
+   "Linear Discriminant Analysis"
+  ],
+  "explain": "Feature-based."
+ },
+ {
+  "ref": "8.30",
+  "q": "Cách tiếp cận coi nhận dạng khuôn mặt là bài toán 2 chiều, dùng PCA, LDA là gì?",
+  "correct": "Holistic matching methods",
+  "wrong": [
+   "Feature-based methods",
+   "Structural classifier methods",
+   "Neural network based method"
+  ],
+  "explain": "Holistic matching."
+ },
+ {
+  "ref": "8.30",
+  "q": "Bước xác định các mốc (landmarks) quan trọng của khuôn mặt gọi là gì?",
+  "correct": "Face analysis",
+  "wrong": [
+   "Face detection",
+   "Face locating",
+   "Features analysis"
+  ],
+  "explain": "Face analysis."
+ },
+ {
+  "ref": "8.30",
+  "q": "Các đặc trưng nào được dùng để nhận ra khuôn mặt trong bộ đề?",
+  "correct": "Mắt, lông mày, mũi, miệng, hàm",
+  "wrong": [
+   "Mắt, lông mày, mũi, tóc, hàm",
+   "Mắt, lông mày, mũi, cổ, miệng",
+   "Mắt, lông mày, hàm, cổ, tai"
+  ],
+  "explain": "Bộ đề: eyes, eyebrows, nose, mouth, jaw."
+ },
+ {
+  "ref": "8.30",
+  "q": "PCA giữ 1200 thành phần cho 1000 ảnh 128×128. Số đặc trưng của cả tập trong eigenspace là gì?",
+  "correct": "1200×1000",
+  "wrong": [
+   "1000×128",
+   "128×1200",
+   "128×128"
+  ],
+  "explain": "k × N = 1200 × 1000."
+ },
+ {
+  "ref": "8.31",
+  "q": "Chọn đáp án đúng: SIFT descriptor có bao nhiêu chiều, và phổ nhìn thấy là bao nhiêu nm?",
+  "correct": "128 chiều; 400–700 nm",
+  "wrong": [
+   "64 chiều; 400–700 nm",
+   "128 chiều; 300–600 nm",
+   "256 chiều; 500–900 nm"
+  ],
+  "explain": "SIFT 128; phổ 400–700 nm."
+ },
+ {
+  "ref": "8.31",
+  "q": "Mặt nạ convolution dò đường chéo ±? độ trong bộ đề",
+  "correct": "45",
+  "wrong": [
+   "15",
+   "90",
+   "180"
+  ],
+  "explain": "Chéo ±45°."
+ },
+ {
+  "ref": "8.32",
+  "q": "Với câu hỏi có chữ NOT / incorrect, nên chọn phát biểu nào?",
+  "correct": "Phát biểu sai hoặc không liên quan",
+  "wrong": [
+   "Phát biểu đúng nhất",
+   "Luôn chọn \"All of the others\"",
+   "Phát biểu dài nhất"
+  ],
+  "explain": "Câu phủ định: đáp án là ý sai."
+ },
+ {
+  "ref": "8.32",
+  "q": "Câu \"Choose the best description…\" có đáp án \"All of the others\" thì nên làm gì?",
+  "correct": "Kiểm tra từng ý: nếu có ý sai thì \"All\" là bẫy",
+  "wrong": [
+   "Luôn chọn \"All\"",
+   "Không bao giờ chọn \"All\"",
+   "Chọn theo độ dài đáp án"
+  ],
+  "explain": "Phải kiểm tra từng ý."
+ },
+ {
+  "ref": "8.32",
+  "q": "Trên web, mục nào luyện riêng các cặp câu dễ nhầm đáp án của CPV301?",
+  "correct": "Câu dễ nhầm đáp án",
+  "wrong": [
+   "Thi đấu",
+   "Câu sai",
+   "Kiểu đề thi"
+  ],
+  "explain": "Mục \"Câu dễ nhầm đáp án\" ở trang chủ và Bộ đề."
+ }
+]

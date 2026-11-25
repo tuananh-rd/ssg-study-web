@@ -1,0 +1,310 @@
+{
+ "title": "Lý thuyết CPV301 theo bộ đề",
+ "intro": "Tóm tắt toàn bộ kiến thức mà 297 câu của bộ đề CPV301 đã hỏi, sắp theo chủ đề. Mỗi mục có các ý phải nhớ, bảng so sánh các khái niệm dễ nhầm, và số câu liên quan trong bộ đề (xem ở mục Xem tất cả câu hỏi). Những chỗ ghi \"theo bộ đề\" là đáp án của bộ đề, có thể khác cách nói trong sách.",
+ "chapters": [
+ {
+  "id": "c1", "title": "1. Tổng quan: Computer vision, Image processing, ảnh số",
+  "sections": [
+   { "h": "Computer vision và Image processing", "qs": [31, 84, 90, 174, 193, 230, 231, 245, 289, 194, 105, 6],
+     "pts": [
+      "**Image processing (xử lý ảnh)**: đầu vào là ảnh, đầu ra cũng là ảnh. Mục tiêu: nâng cao chất lượng ảnh và trích thông tin hữu ích (lọc nhiễu, tăng tương phản, làm nét).",
+      "**Computer vision (thị giác máy tính)**: đầu vào là ảnh hoặc video, đầu ra là sự DIỄN GIẢI ảnh: nhận biết các thành phần trong ảnh, hiểu cảnh, ra quyết định.",
+      "Hai lĩnh vực liên quan nhưng không giống nhau. Image processing làm việc ở mức thấp (lọc, biến đổi); computer vision đi tới mức hiểu.",
+      "Lĩnh vực liên quan tới computer vision: xử lý ảnh, thuật toán đồ họa, khoa học nhận thức, robot, thần kinh học, truy hồi thông tin. Câu hỏi dạng này đáp án là \"All of the others\".",
+      "Ứng dụng: an ninh, robot, y tế... Đáp án \"All of above\".",
+      "Yếu tố thúc đẩy sự phát triển của xử lý ảnh số: sự phát triển của máy tính và tiến bộ toán học (không phải xu hướng mạng xã hội)."],
+     "tbl": { "head": ["", "Image processing", "Computer vision"],
+              "rows": [["Đầu vào", "Ảnh", "Ảnh / video"], ["Đầu ra", "Ảnh", "Sự diễn giải ảnh"], ["Mục tiêu", "Nâng cao chất lượng, trích thông tin hữu ích", "Hiểu nội dung, ra quyết định"]] } },
+   { "h": "Ảnh số, pixel, toán tử điểm ảnh", "qs": [63, 197, 264, 44, 16, 17, 258, 219, 163],
+     "pts": [
+      "Ảnh số là một ma trận pixel hai chiều; máy tính \"hiểu\" ảnh như ma trận các pixel.",
+      "Một pixel gồm hai thành phần: địa chỉ vị trí và giá trị cường độ.",
+      "Ảnh xám (grayscale) có 1 kênh màu. Ảnh màu thường 3 kênh.",
+      "Điểm 2D trong ảnh tương ứng với một pixel, được biểu diễn bằng vị trí trong tọa độ (x, y).",
+      "**Pixel operator**: đầu vào là một hoặc nhiều ảnh, đầu ra là MỘT ảnh. **Pixel transform**: biến đổi xử lý từng pixel một.",
+      "**Image transformation**: hàm hoặc toán tử nhận ảnh và trả ra ảnh. \"Graph transformation\" là biến đổi đồ thị, không phải ảnh."] }
+  ]
+ },
+ {
+  "id": "c2", "title": "2. Hình thành ảnh: camera, ánh sáng, màu sắc",
+  "sections": [
+   { "h": "Camera và cảm biến", "qs": [103, 162, 190, 121, 260, 149, 101, 25, 30, 158, 252, 89, 81, 93],
+     "pts": [
+      "Camera số dùng hệ thống cảm biến (sensor system) để số hóa ảnh. Smartphone và máy compact thường dùng cảm biến CMOS.",
+      "**Dải động** (dynamic range): giới hạn TRÊN do bão hòa (Saturation) quyết định; giới hạn DƯỚI do nhiễu (Noise) quyết định.",
+      "**Automatic Gain Control (AGC)**: chỉnh độ khuếch đại và mức đen (black level) cho khớp với công suất ánh sáng tới và dải động của ảnh.",
+      "Biến dạng ảnh thường gặp do ống kính góc rộng.",
+      "**Chromatic aberration** (sắc sai): ống kính không hội tụ mọi màu về cùng một điểm. Nguyên nhân chính: tán sắc ánh sáng (dispersion), chiết suất kính khác nhau theo bước sóng.",
+      "Thin lens model (theo bộ đề): vật đặt trước hoặc sau thấu kính cho cùng kết quả."],
+     "tbl": { "head": ["Thông số", "Điều khiển", "Ghi nhớ"],
+              "rows": [["Aperture (khẩu độ)", "Lượng sáng đi vào ống kính", "Khẩu độ = lỗ mở"],
+                       ["Shutter speed (tốc độ màn trập)", "Lượng sáng tới cảm biến và mức phơi sáng", "Thời gian phơi sáng"],
+                       ["ISO", "Độ nhạy sáng của cảm biến", "Độ nhạy"],
+                       ["AGC", "Khuếch đại và black level để khớp dải động", "Tự động khuếch đại"]] } },
+   { "h": "Ánh sáng và các mô hình phản xạ", "qs": [65, 82, 257, 76, 88, 141, 166, 198, 280, 248, 234],
+     "pts": [
+      "**Photometry**: khoa học đo ánh sáng theo cảm nhận của mắt người.",
+      "**Illumination model** (mô hình chiếu sáng): mô tả đầu vào, giả định và đầu ra dùng để tính ánh sáng trên bề mặt.",
+      "**Diffuse / Lambertian**: ánh sáng phản xạ tán xạ đều theo nhiều hướng.",
+      "**Specular** (phản xạ gương): ánh sáng phản xạ theo MỘT hướng, như gương.",
+      "**Mô hình Phong** đầy đủ = ambient + diffuse + specular từ nguồn sáng chính. Phong giả định đường sáng trực tiếp, còn thực tế nguồn sáng có thể bị che.",
+      "**BRDF**: mô tả tỉ lệ ánh sáng đi ra theo từng hướng ứng với mỗi hướng ánh sáng tới. Theo bộ đề, mục đích của BRDF được hỏi là mô hình hóa phản xạ gương.",
+      "Hai phương pháp truyền thống: ray tracing hợp với bề mặt chủ yếu bóng (specular), radiosity hợp với bề mặt chủ yếu mờ (matte)."] },
+   { "h": "Màu sắc và định dạng ảnh", "qs": [43, 108, 83, 62, 268, 153],
+     "pts": [
+      "Mắt người thấy phổ 400–700 nm. Màu tím (violet) có tần số lớn nhất, ứng với bước sóng ngắn nhất.",
+      "Màu sắc là khía cạnh của vật do chất lượng khác nhau của ánh sáng phản xạ mà ra.",
+      "**Color space**: một cách tổ chức cụ thể các màu (mô hình toán học mô tả cách biểu diễn màu).",
+      "Cường độ pixel trong không gian màu (theo bộ đề): trung bình của các giá trị màu.",
+      "JPG là định dạng nén có mất mát (lossy); BMP không nén."] },
+   { "h": "Lệnh OpenCV hay hỏi", "qs": [120, 53, 50, 161],
+     "pts": [
+      "Vẽ đường thẳng: hàm line(), cần 2 điểm.",
+      "Vẽ hình và tô kín bên trong: độ dày = -1.",
+      "cv2.flip(img, -1): lật cả hai trục. Quy ước: 0 lật theo trục ngang (đảo trên-dưới), 1 lật theo trục dọc (đảo trái-phải), -1 lật cả hai.",
+      "Bộ lọc có trong OpenCV: Box filter, Bilateral filter, Build Pyramid. \"Blue Blur\" không có."] }
+  ]
+ },
+ {
+  "id": "c3", "title": "3. Histogram và tăng tương phản",
+  "sections": [
+   { "h": "Histogram ảnh", "qs": [56, 107, 118, 68, 171],
+     "pts": [
+      "**Image histogram**: biểu đồ biểu diễn sự phân bố cường độ pixel của ảnh. Hai ảnh có bố cục khác nhau vẫn có thể cho histogram giống nhau.",
+      "**Contrast stretching**: kéo giãn khoảng cường độ hiện có để dùng hết các giá trị có thể; hay hỏi dưới dạng \"spread the range of intensity\".",
+      "**Histogram equalization**: phân bố đều cường độ ra TOÀN dải cường độ.",
+      "White patch và Gray world là phương pháp cân bằng trắng. Ground truth là nhãn chuẩn, không phải thuật toán tăng tương phản."],
+     "tbl": { "head": ["Kỹ thuật", "Ý chính"],
+              "rows": [["Contrast stretching", "Kéo giãn khoảng cường độ hiện có để dùng hết giá trị có thể"],
+                       ["Histogram equalization", "Phân bố cường độ khắp toàn dải"],
+                       ["White patch / Gray world", "Cân bằng trắng (màu), không phải tăng tương phản"]] } }
+  ]
+ },
+ {
+  "id": "c4", "title": "4. Lọc ảnh và tích chập",
+  "sections": [
+   { "h": "Bộ lọc, kernel, tích chập", "qs": [233, 67, 263, 165, 188, 94, 249, 266, 291, 47],
+     "pts": [
+      "**Filter**: hệ thống tạo ảnh mới, thường được cải thiện, từ ảnh vào. Lọc là phép toán trên vùng lân cận: giá trị mỗi pixel ra phụ thuộc các pixel xung quanh.",
+      "**Kernel**: ma trận nhỏ dùng để làm rõ các đặc trưng nhất định.",
+      "**Lọc tuyến tính**: giá trị ra là tổ hợp tuyến tính của các pixel lân cận. Lọc phi tuyến thì không.",
+      "**Low-pass**: làm mịn ảnh, giảm nhiễu. **Mean filter** là low-pass đơn giản nhưng làm mờ cạnh và chi tiết.",
+      "Dùng chuỗi biến đổi 1 chiều thay vì kernel 2 chiều lớn không tách được: tăng hiệu quả tính toán.",
+      "**Correlation**: đo độ giống nhau giữa ảnh và kernel. **Convolution** = correlation sau khi xoay kernel 180° quanh tâm.",
+      "Dò đường bằng convolution: mặt nạ (mask) chỉnh theo độ rộng n và hướng θ. Bốn mặt nạ cho đường ngang, dọc và chéo ±45°."] },
+   { "h": "Lọc texture: MIP, EWA, anisotropic, aliasing", "qs": [14, 26, 33, 238, 202, 204, 191, 212, 211],
+     "pts": [
+      "**Anisotropic filtering**: nâng chất lượng texture trên bề mặt nhìn từ góc xiên. Làm nét chi tiết texture và loại bỏ aliasing ở góc nhìn cực đoan.",
+      "**EWA (Elliptical Weighted Average)**: dựa trên ánh xạ affine tạo hệ tọa độ xiên quanh mỗi pixel nguồn; lọc Gaussian với ma trận hiệp phương sai nghịch đảo là hình ELIP. Không dùng phép chiếu tròn.",
+      "**MIP mapping**: dùng các mức ảnh đã thu nhỏ trước (pyramid). Bước đầu khi lấy mẫu lại từ MIP: ước lượng hệ số tỉ lệ (scalar) của tốc độ lấy mẫu lại.",
+      "**Pre-filter** cần để giảm méo, chống aliasing khi texture mapping. Trước khi shear, để chống aliasing cần upsample theo hướng ngược lại."] }
+  ]
+ },
+ {
+  "id": "c5", "title": "5. Miền tần số và biến đổi Fourier",
+  "sections": [
+   { "h": "Fourier transform", "qs": [64, 73, 251, 92, 140, 181, 182, 205, 222, 189, 129, 144, 293],
+     "pts": [
+      "Fourier transform phân rã tín hiệu hoặc ảnh thành các thành phần sin theo tần số. Mục đích chính: phân tích tần số. Nhờ đó dùng được cho khử nhiễu, dò cạnh.",
+      "DFT = Discrete Fourier Transform.",
+      "**Nyquist frequency** = một nửa tần số lấy mẫu. Lấy mẫu cao hơn thì độ chính xác tần số tăng.",
+      "Dịch tín hiệu theo thời gian: phổ PHA bị dịch, phổ biên độ giữ nguyên.",
+      "**Parseval**: liên hệ năng lượng của tín hiệu trong miền thời gian và miền tần số.",
+      "**Convolution trong miền không gian/thời gian = phép NHÂN trong miền tần số**: F(w)·H(w). Không phải phép cộng, không phải F·H*.",
+      "**Band-pass**: cho một dải tần xác định đi qua. Low-pass chỉ cho tần số thấp (làm mịn); high-pass cho tần số cao (làm nét, cạnh)."] }
+  ]
+ },
+ {
+  "id": "c6", "title": "6. Gradient, biên và đặc trưng",
+  "sections": [
+   { "h": "Gradient và phát hiện biên", "qs": [28, 86, 2, 15, 213, 54, 276, 250],
+     "pts": [
+      "**Gradient**: độ đo sự thay đổi của hàm; ảnh được xem như mảng mẫu của hàm cường độ liên tục. Mục đích tính gradient: trích thông tin hữu ích (biên).",
+      "**Cạnh (edge)**: thay đổi cục bộ đáng kể của cường độ. **Edge detection**: tìm các điểm gián đoạn, thay đổi mạnh về độ sáng; kết quả cho ranh giới giữa các vùng.",
+      "**Edge linking**: sắp xếp tập pixel cạnh rời rạc thành danh sách cạnh có thứ tự.",
+      "Đạo hàm bậc 1 cho cực đại ở cạnh; đạo hàm bậc 2 cắt không (zero-crossing) ở cạnh."] },
+   { "h": "Các toán tử cạnh", "qs": [87, 71, 224, 278, 237, 281, 223, 113, 110, 228, 172, 227, 49],
+     "pts": [
+      "**Sobel**: kernel có trọng số (-1 0 1; -2 0 2; -1 0 1), tính tổng có trọng số theo hướng ngang. Nhược điểm cơ bản: nhạy với nhiễu.",
+      "**Prewitt**: tốt với cạnh dọc và ngang; khác Sobel ở trọng số kernel.",
+      "**Canny**: kết hợp nhiều bước để cạnh bền vững: làm mờ Gaussian giảm nhiễu, tính gradient, loại điểm không cực đại, ngưỡng và nối cạnh. Ưu điểm: định vị tốt, ít nhạy nhiễu, không làm đổi đặc trưng. Zero-crossing thật sự KHÔNG phải ưu điểm của Canny.",
+      "**Laplacian of Gaussian (LoG)**: làm mờ Gaussian rồi dùng Laplacian tính đạo hàm bậc 2; dò cạnh bằng zero-crossing. Gaussian có vai trò làm mờ và giảm nhiễu (cả trong LoG lẫn Canny).",
+      "Theo bộ đề, câu \"toán tử nào dùng Laplacian of Gaussian\" có đáp án Canny.",
+      "Đếm zero-crossing: đếm số lần chuỗi đạo hàm bậc 2 đổi dấu."],
+     "tbl": { "head": ["Phương pháp", "Điểm nhớ"],
+              "rows": [["Đạo hàm bậc 1", "Cạnh = cực đại"], ["Đạo hàm bậc 2 / LoG", "Cạnh = zero-crossing"], ["Sobel", "Nhạy nhiễu"], ["Prewitt", "Giỏi cạnh dọc và ngang"], ["Canny", "Nhiều bước, bền vững"]] } },
+   { "h": "Blob, DoG và Harris corner", "qs": [117, 1, 295, 143, 146, 216, 20, 201, 138, 57, 78, 271],
+     "pts": [
+      "Tìm vị trí blob: Normalized Laplacian of Gaussian. **DoG (Difference of Gaussian)** xấp xỉ NLoG nhưng tính nhanh hơn.",
+      "**Harris corner**: góc có độ lớn gradient cao theo mọi hướng. Xét điểm số R: |R| nhỏ = vùng phẳng; R < 0 (λ1 ≫ λ2) = cạnh; |R| lớn và λ1 ≈ λ2 = góc.",
+      "Điểm đặc trưng (point features) dùng để tìm tập thưa các vị trí tương ứng giữa các ảnh. SIFT, Harris, FAST đều là thuật toán dò đặc trưng.",
+      "Sau bước dò đặc trưng (detection) là bước mô tả đặc trưng (description). Feature descriptor là thuật toán nhận ảnh và xuất ra đặc trưng.",
+      "Đặc trưng (feature) giúp giảm tài nguyên cần để mô tả một tập dữ liệu lớn, nên dùng đặc trưng thay vì cả ảnh."] },
+   { "h": "SIFT", "qs": [42, 96, 119, 203, 207, 206],
+     "pts": [
+      "Descriptor SIFT có 128 chiều.",
+      "SIFT đạt bất biến tỉ lệ bằng cách tạo ảnh ở nhiều độ phân giải (thu nhỏ). Bất biến tỉ lệ cho phép dò đặc trưng bất kể kích thước.",
+      "Xử lý xoay: căn chỉnh keypoint theo hướng chủ đạo (dominant orientation).",
+      "SIFT là kỹ thuật hay dùng để dò keypoint và descriptor trong nhận dạng panorama."] },
+   { "h": "Hough transform", "qs": [72, 98, 122, 176, 210, 236, 256, 292, 261, 279, 155, 23, 70, 220],
+     "pts": [
+      "Hough là một trong hai kỹ thuật tìm đường thẳng; kỹ thuật còn lại là convolution-based.",
+      "Ý chính: chuyển điểm cạnh từ không gian ảnh sang không gian tham số; mỗi điểm bỏ phiếu (voting) cho các đường đi qua nó.",
+      "Bước đầu bắt buộc: phát hiện cạnh (edge detection). Biểu diễn tham số dùng không gian Polar. Sau khi bỏ phiếu, lấy các đỉnh (peak) có số phiếu cao.",
+      "Nhiễu nhiều tạo ra đỉnh giả trong không gian tham số.",
+      "Hough tìm được các thể hiện không hoàn hảo của đối tượng thuộc một lớp hình dạng.",
+      "Ứng dụng điển hình: phát hiện vạch kẻ đường cho xe tự lái và robot."] }
+  ]
+ },
+ {
+  "id": "c7", "title": "7. Phân đoạn ảnh",
+  "sections": [
+   { "h": "Khái niệm và thresholding", "qs": [13, 58, 239, 240, 154, 259, 270],
+     "pts": [
+      "**Image segmentation**: chia ảnh thành các vùng dựa trên đặc tính của pixel, để tìm đối tượng hoặc ranh giới và đơn giản hóa ảnh. Không phải là \"gán màu cho từng pixel\".",
+      "**Thresholding**: chuyển ảnh xám hoặc màu thành ảnh nhị phân theo ngưỡng. Pixel thành đen khi cường độ vượt ngưỡng, thành trắng khi dưới ngưỡng (hoặc ngược lại tùy cách đặt); câu \"cả hai ý đều đúng\" thường là đáp án."] },
+   { "h": "Phân đoạn theo vùng", "qs": [29, 40, 175, 218, 112, 192],
+     "pts": [
+      "**Region splitting**: chia ảnh thành các vùng rời nhau, đồng nhất trong từng vùng (thường chia 4 vùng con bằng nhau rồi xét tiếp từng vùng).",
+      "**Region growing**: hạn chế chính là rất nhạy với nhiễu và thay đổi cường độ nhỏ.",
+      "**Graph-based segmentation**: phân đoạn theo sự giống nhau về mức xám và kết cấu (texture).",
+      "**Probabilistic merging (aggregation)**: dùng hai dấu hiệu để gộp vùng là gray-level similarity và texture similarity."] },
+   { "h": "Watershed và active contour", "qs": [27, 160, 296, 104, 139, 109, 132, 184, 199, 200, 79],
+     "pts": [
+      "**Watershed**: coi ảnh như bản đồ địa hình, độ sáng là độ cao; đặt nguồn nước ở mỗi cực tiểu, dâng nước và dựng đập khi các vùng gặp nhau. Ranh giới watershed là cạnh đối tượng. Hay bị over-segmentation khi nền có kết cấu.",
+      "**Active contour (snake)**: dùng lực năng lượng và ràng buộc để tách pixel quan tâm; xác định biên cho vùng đích.",
+      "Năng lượng NỘI (internal) phạt biến dạng lớn, giữ contour trơn. Năng lượng NGOẠI (external) kéo contour về biên đối tượng.",
+      "Nhược điểm snake: nhạy với cực tiểu cục bộ, không hoàn hảo kể cả với ảnh nhị phân, phụ thuộc tham số (đáp án \"All of the above\")."] },
+   { "h": "Phân cụm: K-means, GMM, Mean shift", "qs": [9, 80, 95, 142, 217, 148, 61, 52, 19, 37, 39, 126, 7, 152, 170, 173, 59],
+     "pts": [
+      "**K-means**: K là số cụm. Khởi tạo K centroid NGẪU NHIÊN. Thứ tự: đoán K centroid → gán mỗi quan sát cho centroid gần nhất → tính lại K centroid → lặp đến khi không đổi. Gom pixel theo cường độ.",
+      "**Gaussian Mixture Model (GMM)**: mô hình xác suất, gom cụm MỀM. Mỗi cụm là một phân phối Gaussian với mean và variance riêng. Phân phối chung là TỔNG nhiều Gaussian (không phải tích).",
+      "**Mean shift**: thay mỗi pixel bằng trung bình các pixel trong một KHOẢNG (range) lân cận và gần về giá trị. Tìm các đỉnh của phân bố dữ liệu nhiều chiều mà không tính cả hàm. Dời pixel về giá trị trung bình.",
+      "Mean shift không cần chọn K."],
+     "tbl": { "head": ["", "K-means", "GMM", "Mean shift"],
+              "rows": [["Loại gom cụm", "Cứng", "Mềm (xác suất)", "Tìm đỉnh phân phối"], ["Tham số chính", "K = số cụm", "Số Gaussian", "Bán kính (range)"], ["Mô hình cụm", "Centroid", "Gaussian (mean, variance)", "Trung bình trong khoảng"]] } },
+   { "h": "Semantic và Instance segmentation", "qs": [134, 151, 274, 275],
+     "pts": [
+      "**Semantic segmentation**: gán mỗi pixel vào một lớp (class).",
+      "**Instance segmentation**: gán mỗi pixel vào một đối tượng riêng (instance), tách từng đối tượng.",
+      "Instance phức tạp hơn semantic và cần thêm dữ liệu huấn luyện.",
+      "Segmentation hữu ích hơn detection khi cần hình dạng, ví dụ tế bào ung thư: bounding box không mô tả được hình dạng."] }
+  ]
+ },
+ {
+  "id": "c8", "title": "8. Biến đổi hình học và căn chỉnh ảnh",
+  "sections": [
+   { "h": "Các phép biến đổi và hệ tọa độ", "qs": [60, 187, 242, 288, 180, 21, 164, 46, 215, 137, 66],
+     "pts": [
+      "**Geometric transformation**: biến đổi không gian của ảnh; vị trí pixel thay đổi, giá trị pixel giữ nguyên. Ứng dụng: căn chỉnh ảnh chụp ở các thời điểm khác nhau, sửa méo ống kính, chỉnh theo hướng camera.",
+      "**Translation**: dịch (di chuyển) ảnh. Ma trận [[2,0,1],[0,2,2],[0,0,1]] = scale 2 rồi tịnh tiến 1 theo x, 2 theo y.",
+      "**Affine**: bảo toàn tính thẳng hàng và tỉ lệ khoảng cách. Cần tối thiểu 3 điểm để tìm ma trận affine (homography cần 4).",
+      "**Mesh** (trong mesh-based warping): tập đỉnh và cạnh.",
+      "**Cylindrical coordinates**: bán kính, góc phương vị, độ cao.",
+      "Đường thẳng 2D: có nhiều cách mô tả; câu hỏi dạng \"All of others\"."] },
+   { "h": "Feature-based alignment", "qs": [147, 183, 208, 243, 247, 290, 253, 178, 232, 285, 32],
+     "pts": [
+      "**Image alignment**: ghép một ảnh (mẫu/template) với ảnh khác. Ứng dụng: theo dõi vật trong video, phân tích chuyển động, so sánh các lần quét mô, tạo panorama, nâng cao ảnh tài liệu. KHÔNG phải để nhận diện mẫu tài liệu.",
+      "**Feature-based alignment**: dò một tập đặc trưng thưa ở một ảnh, khớp với ảnh kia, rồi tính phép biến đổi dựa trên các điểm khớp.",
+      "Khớp bằng cách so sánh descriptor (mô tả cấu trúc cục bộ), không so pixel trực tiếp, không chọn tay.",
+      "Đặc trưng tốt: đặc biệt (distinctive), dễ nhận ra ở cả hai ảnh.",
+      "Mục tiêu: ước lượng chuyển động giữa các cặp điểm khớp. Lợi ích: căn chỉnh bền vững ngay cả khi ảnh xoay hoặc đổi tỉ lệ.",
+      "**Least squares**: tối thiểu hóa tổng bình phương khoảng cách giữa các điểm."] },
+   { "h": "RANSAC", "qs": [11, 12, 102, 186, 195, 196, 127, 51, 36, 77, 111],
+     "pts": [
+      "**RANSAC = RANdom SAmple Consensus**. Phương pháp ước lượng tham số chịu được tỉ lệ lớn outlier trong dữ liệu. Mục đích là giải quyết outliers, không phải overfitting hay underfitting.",
+      "Ý chính: lặp lại việc chọn ngẫu nhiên một tập mẫu tối thiểu, ước lượng mô hình, đếm số điểm khớp (inlier). **Consensus** = đa số inliers.",
+      "Thuật toán: 1) chọn ngẫu nhiên N điểm, 6) ước lượng tham số, 3) đếm K điểm khớp trong ngưỡng, 2) nếu K đủ lớn thì nhận và thoát thành công, 5) lặp L lần, 4) thất bại nếu hết lần lặp (thứ tự 1-6-3-2-5-4).",
+      "Số lần thử tối thiểu = log(1-P) / log(1-p^k): phép CHIA.",
+      "RANSAC dùng số điểm TỐI THIỂU để sinh nghiệm ứng viên, không phải số điểm tối đa.",
+      "S-estimation: thủ tục tính toán nặng, tập trung outlier ở biến hồi quy. Ứng dụng RANSAC: xử lý tài liệu, y tế, tạo panorama (All of the above)."] }
+  ]
+ },
+ {
+  "id": "c9", "title": "9. Ghép ảnh và panorama",
+  "sections": [
+   { "h": "Image stitching", "qs": [10, 8, 135, 85, 22, 168, 34, 272, 283, 130],
+     "pts": [
+      "**Image stitching**: ghép nhiều ảnh có vùng nhìn chồng lấn thành ảnh panorama hoặc ảnh độ phân giải cao.",
+      "Phần khó nhất của ghép tự động: quyết định cặp ảnh nào thực sự cùng một phần của cảnh. Bước này gọi là **recognizing panoramas**. Tìm connected components trong đồ thị chồng lấn để nhận ra từng panorama riêng.",
+      "Quy trình: trích đặc trưng và descriptor (thường SIFT), khớp đặc trưng (feature matching), ước lượng phép biến đổi (RANSAC), tinh chỉnh tổng thể, hòa trộn.",
+      "Ứng dụng: lập bản đồ, pháp y (dựng lại giấy bị xé), tóm tắt và nén video. Stitching KHÔNG ghép hai pixel chỉ vì giống cường độ."] },
+   { "h": "Global alignment, bundle adjustment, parallax", "qs": [69, 225, 229, 235, 179, 167, 185, 75],
+     "pts": [
+      "**Global alignment**: tìm bộ tham số căn chỉnh nhất quán toàn cục để bản ghép liền mạch.",
+      "**Bundle adjustment**: chỉnh đồng thời các tham số pose của nhiều ảnh chồng lấn; global bundle adjustment tối ưu pose camera.",
+      "**Parallax**: sự dịch chuyển vị trí biểu kiến của vật khi đổi góc nhìn. Là thách thức gây đăng ký sai. Khi chuyển động nhỏ, sửa parallax bằng local alignment.",
+      "Parallax removal là một bước riêng, khác với recognizing panoramas."] },
+   { "h": "Cylindrical và Spherical panorama", "qs": [18, 41, 241],
+     "pts": [
+      "**Cylindrical**: ảnh xem như từ bên trong một hình trụ, nhìn ngang 360°. Dùng khi camera nằm ngang và chỉ xoay quanh trục dọc.",
+      "**Spherical**: không chỉ 360° ngang mà cả hướng lên và xuống; cylindrical thì không phủ trên-dưới."] }
+  ]
+ },
+ {
+  "id": "c10", "title": "10. Chuyển động và theo dõi đối tượng",
+  "sections": [
+   { "h": "Optical flow", "qs": [214, 286, 287, 38],
+     "pts": [
+      "**Optical flow**: chuyển động của đối tượng giữa các frame liên tiếp do chuyển động tương đối giữa vật và camera.",
+      "Ước lượng chuyển động pixel từ I(x,y,t) sang I(x,y,t+1): với pixel ở thời điểm t, tìm các pixel GẦN ở thời điểm t+1 có cùng màu.",
+      "Optical flow cho biết vận tốc và hướng chuyển động của pixel, vị trí điểm khóa. KHÔNG cho gia tốc."] },
+   { "h": "Object tracking", "qs": [91, 255, 284, 123, 145, 150, 116, 282, 124, 297],
+     "pts": [
+      "**Object tracking**: nhận các phát hiện ban đầu, tạo ID riêng cho mỗi vật, theo dõi các vật qua các frame và giữ nguyên ID. Nhận danh tính bằng sinh trắc là nhận dạng (recognition), không phải tracking.",
+      "Single Object Tracking (SOT) còn gọi Visual Object Tracking: theo dõi MỘT vật, kể cả khi môi trường đông.",
+      "**Point tracking**: đối tượng ở các frame liên tiếp được biểu diễn bằng điểm; cần cơ chế bên ngoài để phát hiện đối tượng ở mỗi frame.",
+      "**Kernel tracking**: vùng đối tượng \"phôi thai\", nhấn mạnh hình dạng và hình thức, định vị vật từ frame này sang frame sau. Theo bộ đề, thuộc nhóm Deterministic method.",
+      "**Template matching**: ước lượng vùng đối tượng ở mỗi frame bằng thông tin chứa trong chính vùng đối tượng.",
+      "**CamShift**: xử lý thay đổi tỉ lệ, xoay, che khuất bằng cách điều chỉnh cửa sổ tìm kiếm thích nghi (khác Mean shift).",
+      "**Condensation**: dựa trên factored sampling, mở rộng áp dụng lặp qua chuỗi ảnh."],
+     "tbl": { "head": ["Phương pháp", "Dấu hiệu nhận biết"],
+              "rows": [["Point tracking", "Đối tượng là các điểm, cần detect ở mỗi frame"], ["Kernel tracking", "Vùng phôi thai, hình dạng + hình thức"], ["Template matching", "Dùng thông tin trong chính vùng đối tượng"], ["CamShift", "Cửa sổ tìm kiếm thích nghi (scale, xoay, che khuất)"], ["Condensation", "Factored sampling lặp"]] } }
+  ]
+ },
+ {
+  "id": "c11", "title": "11. Nhận dạng đối tượng và khuôn mặt",
+  "sections": [
+   { "h": "Object detection và recognition", "qs": [136, 24, 177, 269, 244, 35, 115, 128, 97, 106, 156, 157, 125, 99, 262, 226, 265],
+     "pts": [
+      "**Object recognition**: cảm nhận thuộc tính vật lý (hình dạng, màu, kết cấu) của vật và gán thuộc tính ngữ nghĩa. Gồm: phát hiện, nhận dạng và định vị.",
+      "**Object detection**: phát hiện các thể hiện của vật thuộc một lớp, VÀ định vị chúng trong ảnh hoặc video. Nguyên lý: dựa vào đặc trưng cấu thành vật. KHÔNG phải \"nhận ra bằng đường viền\".",
+      "**Pattern recognition**: nghiên cứu các kỹ thuật phân loại mẫu.",
+      "Thách thức khi phân loại ảnh: thay đổi tỉ lệ, chiếu sáng, che khuất (All the above).",
+      "Multiclass classification không cần sửa đổi: KNN.",
+      "Hai hướng phát hiện đối tượng: phi nơ-ron (truyền thống, ví dụ HOG detector) và nơ-ron (YOLO, R-CNN, RetinaNet, SSD). **Faster R-CNN**: hai giai đoạn (region proposal rồi phân loại).",
+      "**Haar Cascade**: đặc trưng dạng đường (line features); tính bằng hiệu giữa trung bình pixel ở vùng sáng và vùng tối.",
+      "**HOG**: bin của histogram chọn theo HƯỚNG gradient. Cửa sổ lớn có thể bỏ sót vật nhỏ."] },
+   { "h": "Nhận dạng khuôn mặt", "qs": [45, 159, 131, 100, 169, 277, 209, 221, 254, 48, 133],
+     "pts": [
+      "Quy trình 4 bước. Bước tìm các mốc khuôn mặt (landmarks) tạo nên nét riêng gọi là **face analysis**. Landmark là điểm neo để căn chỉnh khuôn mặt chính xác.",
+      "Đặc trưng cho nhận dạng dựa trên: mắt, lông mày, mũi, MIỆNG, hàm.",
+      "**Feature-based**: trích đặc trưng cục bộ (mắt, mũi, miệng) rồi đưa vị trí và thống kê của chúng vào bộ phân loại.",
+      "**Holistic matching**: coi là bài toán 2 chiều, dùng PCA, LDA.",
+      "**Eigenfaces**: biểu diễn các đặc trưng khuôn mặt nổi bật nhất giữa các cá nhân.",
+      "Một số hệ truyền thống cần enrollment: chụp nhiều ảnh khuôn mặt từ các góc khác nhau. Phương pháp truyền thống khó nhận dạng khi tư thế biểu cảm thay đổi nhiều.",
+      "**PCA, bài toán số**: ảnh 112×112 được PCA phân rã ban đầu thành 12544 thành phần (112×112), sau đó giữ 200. Với 1000 ảnh 128×128 giữ 1200 thành phần, số đặc trưng của cả tập trong eigenspace là 1200×1000."] }
+  ]
+ },
+ {
+  "id": "c12", "title": "12. Các con số, bẫy và mẹo làm bài",
+  "sections": [
+   { "h": "Con số phải thuộc", "qs": [42, 43, 44, 45, 46, 47, 50, 53, 161],
+     "pts": [
+      "SIFT descriptor: 128 chiều. Phổ nhìn thấy: 400–700 nm. Ảnh xám: 1 kênh. Nhận dạng khuôn mặt: 4 bước.",
+      "Tìm ma trận affine: tối thiểu 3 điểm. Vẽ đường thẳng trong OpenCV: 2 điểm. Tô kín hình: -1. Lật cả hai trục: cv2.flip(img, -1). Mặt nạ dò đường chéo: ±45°."] },
+   { "h": "Bẫy thường gặp khi bấm nhanh", "qs": [],
+     "pts": [
+      "Câu có NOT / incorrect / not true: đáp án là phát biểu SAI. Gạch chân chữ NOT trước khi chọn.",
+      "Câu \"Choose the best description…\" có thể có đáp án \"All of the others\" hoặc không: kiểm tra từng ý, đừng chọn theo phản xạ. Nếu một ý rõ ràng sai thì \"All\" là bẫy.",
+      "Dải động: giới hạn TRÊN là Saturation, giới hạn DƯỚI là Noise.",
+      "Semantic = lớp của pixel; Instance = từng đối tượng.",
+      "Contrast stretching kéo giãn khoảng hiện có; Histogram equalization phân bố đều toàn dải.",
+      "Mean shift trung bình trong KHOẢNG (range); GMM là TỔNG nhiều Gaussian; K-means khởi tạo NGẪU NHIÊN.",
+      "Năng lượng nội (internal) = giữ trơn; ngoại (external) = hút về biên.",
+      "Convolution ↔ NHÂN trong miền tần số, không phải cộng.",
+      "Trên web, mục Câu dễ nhầm đáp án luyện riêng các cặp câu này."] }
+  ]
+ }
+ ]
+}

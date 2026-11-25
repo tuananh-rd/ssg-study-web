@@ -16,7 +16,8 @@ function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(M
 function fmtTime(s){s=Math.max(0,Math.round(s));return pad(Math.floor(s/60))+':'+pad(s%60);}
 function pct(x){return Math.round(x*100)+'%';}
 var MOD={};D.modules.forEach(function(m){MOD[m.id]=m;});
-var QMODS=D.modules.filter(function(m){return !m.noQuiz;});   // chương có câu hỏi ôn (bỏ M1 – tổng quan môn)
+var QMODS=D.modules.filter(function(m){return !m.noQuiz&&!m.digest;});   // chương có câu hỏi trong bộ đề (chương "digest" chỉ có lý thuyết + câu ôn lý thuyết)
+var RMODS=D.modules.filter(function(m){return !m.noQuiz;});   // chương có câu ôn lý thuyết   // chương có câu hỏi ôn (bỏ M1 – tổng quan môn)
 var ALLQ=D.questions.concat(D.past||[]);
 var RECALL=D.recall||[];
 // câu hỏi lại lý thuyết của 1 chương (và 1 mục nếu có), giữ đúng thứ tự trong bài
@@ -725,7 +726,7 @@ routes.practice=function(_,qs){
   function recallHtml(){
     return '<p class="small muted" style="margin:0 0 10px">Hỏi lại đúng nội dung từng mục trong bài: định nghĩa, thành phần, thứ tự, con số. Không có câu tình huống. Câu đi lần lượt theo thứ tự mục để bạn rà hết lý thuyết.</p>'+
       '<label class="small row" style="gap:8px;margin-bottom:10px"><input type="checkbox" id="todo"'+(st.todo?' checked':'')+'> Chỉ hỏi những câu chưa trả lời đúng</label>'+
-      '<div class="card" style="padding:6px 16px">'+QMODS.map(function(m){
+      '<div class="card" style="padding:6px 16px">'+RMODS.map(function(m){
         var rq=recallOf(m.id),ok=recallDone(rq),open=st.open===m.id;
         return '<div class="rc-row'+(open?' open':'')+'"><div class="rc-head" data-open="'+m.id+'" role="button" tabindex="0"><span class="nm">'+dot(m.id)+'<span><b>'+m.short+'</b> '+esc(m.title)+'</span></span>'+
           '<div class="bar '+barClass(rq.length?ok/rq.length:null)+'"><i style="width:'+(rq.length?ok/rq.length*100:0)+'%"></i></div><span class="small muted">'+ok+'/'+rq.length+'</span>'+

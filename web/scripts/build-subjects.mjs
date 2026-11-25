@@ -43,6 +43,20 @@ const SUBJECTS = {
 const style = rd(ROOT, 'src', 'style.css'), appJs = rd(ROOT, 'src', 'app.js').replace('/*@AI@*/', () => rd(ROOT, 'src', 'ai.js'));
 const safe = s => s.replace(/<\/script/gi, '<\\/script');
 
+// Chương lý thuyết "Tổng hợp theo bộ đề" của CPV301, sinh từ web/data/cpv-digest.json (chỉ có lý thuyết và câu ôn lý thuyết, không có câu trong bộ đề)
+function digestModule(dg, idx) {
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'), md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  const sections = []; let n = 0;
+  for (const ch of dg.chapters) for (const s of ch.sections) {
+    n++;
+    let h = `<p class="muted">${esc(ch.title)}</p><ul>${s.pts.map(p => `<li>${md(p)}</li>`).join('')}</ul>`;
+    if (s.tbl) h += `<table><thead><tr>${s.tbl.head.map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${s.tbl.rows.map(r => `<tr>${r.map(x => `<td>${md(x)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    if (s.qs && s.qs.length) h += `<p class="small muted">Câu liên quan trong bộ đề: ${s.qs.join(', ')}</p>`;
+    sections.push({ id: '8.' + n, t: s.h, h });
+  }
+  return { id: 'm8', short: 'C' + (idx + 1), title: 'Tổng hợp theo bộ đề', color: '#7c5cff', weight: 0, priority: 1, keyPoints: [], digest: true, sections };
+}
+
 for (const [id, S] of Object.entries(SUBJECTS)) {
   const L = JSON.parse(rd(W, 'data', `lessons-${S.file}.json`));
   { const r = applyFormulas(S.file, L.modules); console.log('  công thức ' + S.name + ':', r.n, r.miss.length ? 'LỆCH ' + r.miss.join(', ') : ''); }
@@ -56,6 +70,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
   const topicMod = { ...S.topicMod }; for (const q of bank) if (!topicMod[q.topic]) topicMod[q.topic] = S.defMod;
   const perMod = {}; bank.forEach(q => perMod[topicMod[q.topic]] = (perMod[topicMod[q.topic]] || 0) + 1);
   const modules = L.modules.map((m, i) => ({ id: m.id, short: 'C' + (i + 1), title: S.rename[m.id] || m.title, color: COLORS[i % COLORS.length], weight: perMod[m.id] || 1, priority: 3, keyPoints: [], sections: m.sections }));
+  if (S.file === 'cpv' && fs.existsSync(path.join(W, 'data', 'cpv-digest.json'))) modules.push(digestModule(JSON.parse(rd(W, 'data', 'cpv-digest.json')), modules.length));
   // câu hỏi lại lý thuyết: ưu tiên bản Antigravity viết tay, chương nào thiếu thì dùng bộ sinh tự động
   const recallDir = path.join(ROOT, 'sources-private', `recall-${S.file}`), manual = {};
   if (fs.existsSync(recallDir)) for (const f of fs.readdirSync(recallDir).filter(f => /^m\d+\.json$/.test(f))) { try { manual[f.replace('.json', '')] = JSON.parse(rd(recallDir, f)); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
