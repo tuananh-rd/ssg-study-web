@@ -378,12 +378,13 @@ routes.learn=function(id,qs){
    (nsec>1?'<nav class="outline" aria-label="Mục lục"><div class="ol-t">Nội dung chương</div>'+m.sections.map(function(s){return '<a href="#/learn/'+id+'?s='+s.id+'" data-sid="s-'+s.id+'"><span>'+s.id+'</span>'+esc(s.t)+'</a>';}).join('')+'</nav>':'')+
    '<div class="lesson-main">'+
    m.sections.map(function(s,ix){var nS=m.sections[ix+1],rq=recallOf(id,s.id),ok=recallDone(rq);return '<section class="sec" id="s-'+s.id+'"><div class="sec-no">Mục '+s.id+'</div><h2>'+esc(s.t)+'</h2><div class="prose" style="--sid:&quot;'+s.id+'.&quot;">'+tidyLesson(s.h)+'</div>'+
-     (rq.length?'<div class="sec-check"><span class="small muted">'+(ok?'Đã trả lời đúng '+ok+'/'+rq.length+' câu của mục này':'Đọc xong? Tự kiểm tra lại mục này')+'</span><a class="btn sm" href="#/practice?recall='+id+'&s='+s.id+'">Hỏi lại mục này · '+rq.length+' câu</a></div>':'')+(nS?'<a class="sec-next" href="#/learn/'+id+'?s='+nS.id+'">Mục tiếp theo: '+esc(nS.t)+' '+ic('arrow')+'</a>':'')+'</section>';}).join('')+
+     (rq.length?'<div class="sec-check"><span class="small muted">'+(ok?'Đã trả lời đúng '+ok+'/'+rq.length+' câu của mục này':'Đọc xong? Tự kiểm tra lại mục này')+'</span><a class="btn sm" href="#/practice?recall='+id+'&s='+s.id+'">Hỏi lại mục này · '+rq.length+' câu</a></div>':'')+(SJ.tutor?'<div class="sec-check"><span class="small muted">Muốn ôn kỹ hơn? Chatbot sẽ hỏi lại ngay kiến thức của mục này.</span><button class="btn sm" type="button" data-tsec="'+s.id+'">Hỏi đáp mục này (chatbot)</button></div><div class="tsec-box" id="ts-'+s.id+'" hidden></div>':'')+(nS?'<a class="sec-next" href="#/learn/'+id+'?s='+nS.id+'">Mục tiếp theo: '+esc(nS.t)+' '+ic('arrow')+'</a>':'')+'</section>';}).join('')+
    (m.noQuiz?'':(function(){var rq=recallOf(id),ok=recallDone(rq);return '<div class="card row between"><div><b>Hỏi lại toàn bộ lý thuyết chương này</b><div class="small muted">'+rq.length+' câu đi lần lượt theo từng mục, chỉ hỏi định nghĩa, thành phần, thứ tự — không có câu tình huống.'+(ok?' Đã đúng '+ok+'/'+rq.length+'.':'')+'</div></div><a class="btn primary" href="#/practice?recall='+id+'">Ôn lý thuyết '+m.short+' '+ic('arrow')+'</a></div>';})()+
    '<div class="row" style="justify-content:flex-end;margin:-4px 0 12px"><a class="small" href="#/practice?m='+id+'">Hoặc luyện 10 câu kiểu đề thi của '+m.short+' →</a></div>')+
    '<div class="row between">'+(prev?'<a class="btn" href="#/learn/'+prev.id+'">← '+prev.short+'</a>':'<span></span>')+(nxt?'<a class="btn" href="#/learn/'+nxt.id+'">'+nxt.short+' →</a>':'')+'</div></div></div>');
   if($('#focusBtn'))$('#focusBtn').onclick=function(){focusToggle();};
   lessonProgress();
+  bind('[data-tsec]','click',function(e,b){tutSecToggle(b.dataset.tsec,b);});
   (function(){var links=$$('.outline a');if(!links.length||!window.IntersectionObserver)return;
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.dataset.sid===e.target.id);});}});},{rootMargin:'-80px 0px -65% 0px'});
     $$('.lesson .sec').forEach(function(s){io.observe(s);});})();
@@ -844,6 +845,42 @@ function examResult(i){
 }
 
 // ===== Gia sư ôn lý thuyết (chatbot riêng) =====
+// Chatbot ôn ngay tại từng mục lý thuyết (môn có SJ.tutor)
+function tutSecToggle(ref,btn){
+  var box=document.getElementById('ts-'+ref);if(!box)return;
+  if(!box.hidden){box.hidden=true;btn.textContent='Hỏi đáp mục này (chatbot)';return;}
+  box.hidden=false;btn.textContent='Ẩn chatbot';
+  if(!box.dataset.ready){box.dataset.ready='1';tutSecPanel(box,ref);}else{var S=TUTS[ref];if(S&&S.chat.view)S.chat.view();}
+}
+function tutSecPanel(box,ref){
+  var S=tutSecSession(ref),C=S.chat,sec=tutFindSec(ref);
+  var QUICK=[['Hỏi câu tiếp','Hỏi câu tiếp theo về mục này.'],['Gợi ý','Cho mình gợi ý cho câu này (chưa nói đáp án).'],['Giải thích thêm','Giải thích thêm giúp mình.'],['Câu dễ hơn','Cho mình câu dễ hơn.'],['Câu khó hơn','Cho mình câu khó hơn.'],['Chốt mục này','Hãy chốt lại mình đã nắm được gì và còn yếu gì ở mục này.']];
+  box.innerHTML='<div class="ai-chat tt-chat tsec"><div class="ai-chat-head"><div class="ai-who"><span class="ai-badge sm">'+ic('spark')+'</span><div><b>Gia sư · mục '+esc(ref)+'</b><div class="small muted">Hỏi lại kiến thức của riêng mục này</div></div></div><span class="row" style="gap:6px;align-items:center"><span class="small muted" data-st></span><button class="iconbtn sm" data-clr title="Xoá hội thoại" aria-label="Xoá hội thoại">'+ic('trash')+'</button></span></div>'+
+    '<div class="ai-log" aria-live="polite"></div><div class="ai-chips"></div>'+
+    '<div class="ai-compose"><textarea class="ai-input" rows="1" placeholder="Trả lời hoặc hỏi gia sư về mục này…"></textarea><button class="btn sm" data-stop hidden>■ Dừng</button><button class="ai-send" data-send aria-label="Gửi">'+ic('arrow')+'</button></div></div>';
+  var log=$('.ai-log',box),input=$('.ai-input',box),chips=$('.ai-chips',box);
+  function grow(){input.style.height='auto';input.style.height=Math.min(input.scrollHeight,140)+'px';}
+  function bubble(m,i){var as=m.role==='assistant';
+    return '<div class="ai-msg '+m.role+'">'+(as?'<span class="ai-badge xs">'+ic('spark')+'</span>':'')+'<div class="ai-bub"><div class="ai-msg-text">'+(as?mdLite(m.shown):esc(m.shown))+'</div></div></div>';}
+  function draw(){
+    var st=tutStats()[ref];$('[data-st]',box).textContent=st&&st.n?'Đã chấm '+st.n+' câu · '+(Math.round(st.ok*10)/10)+' điểm':'';
+    log.innerHTML=(!S.msgs.length&&!C.busy&&!C.err?'<div class="ai-empty">Bấm <b>Bắt đầu ôn mục này</b>: gia sư sẽ hỏi lại kiến thức của mục “'+esc(sec?sec.t:ref)+'”, chấm câu trả lời và giải thích chỗ nhầm.</div>':'')+
+      S.msgs.map(bubble).join('')+
+      (C.busy?'<div class="ai-msg assistant pending"><span class="ai-badge xs">'+ic('spark')+'</span><div class="ai-bub"><div class="ai-msg-text">'+(C.partial?mdLite(C.partial):'<span class="typing"><i></i><i></i><i></i></span>')+'</div></div></div>':'')+
+      (C.err?'<div class="ai-err"><span>'+esc(C.err)+'</span>'+(C.retry?'<button class="btn sm" data-retry>Thử lại</button>':'')+'</div>':'');
+    var list=S.msgs.length?QUICK:[['Bắt đầu ôn mục này','Bắt đầu buổi ôn nhanh mục này. Hãy chào thật ngắn rồi hỏi mình câu đầu tiên về mục này.']];
+    chips.innerHTML=C.busy?'':list.map(function(c,k){return '<button class="ai-chip" data-chip="'+k+'">'+esc(c[0])+'</button>';}).join('');
+    $$('[data-chip]',chips).forEach(function(b){b.onclick=function(){var c=list[+b.dataset.chip];tutSend(c[1],c[0],S);};});
+    if($('[data-retry]',log))$('[data-retry]',log).onclick=function(){var r=C.retry;C.retry=null;C.err=null;if(r)tutSend(r.text,r.shown,S);};
+    $('[data-send]',box).disabled=C.busy;$('[data-stop]',box).hidden=!C.busy;$('[data-clr]',box).hidden=!S.msgs.length||C.busy;
+    log.scrollTop=log.scrollHeight;
+  }
+  function send(){var t=input.value.trim();if(!t||C.busy)return;input.value='';grow();tutSend(t,t,S);}
+  input.oninput=grow;input.onkeydown=function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}if(e.key==='Escape')input.blur();};
+  $('[data-send]',box).onclick=send;$('[data-stop]',box).onclick=function(){if(C.ctrl)C.ctrl.abort();};
+  $('[data-clr]',box).onclick=function(){if(C.busy)return;S.msgs=[];C.err=null;C.retry=null;S.save();draw();};
+  C.view=function(){if(log.isConnected)draw();};draw();grow();
+}
 function tutCard(){var dg=tutDig();if(!dg)return '';var st=tutStats(),n=0;Object.keys(st).forEach(function(k){n+=st[k].n;});
   return '<a class="card keycard" href="#/tutor"><span class="kc-ic">'+ic('chat')+'</span><span style="flex:1;min-width:0"><b>Gia sư lý thuyết (chatbot)</b><span class="small muted" style="display:block">Chatbot tự hỏi, chấm và giải thích kiến thức lý thuyết '+esc(SJ.name)+' để xem bạn học đến đâu'+(n?' · đã chấm '+n+' câu':'')+'</span></span><span class="btn sm primary">Trò chuyện '+ic('arrow')+'</span></a>';}
 routes.tutor=function(){
@@ -878,9 +915,9 @@ routes.tutor=function(){
       (C.err?'<div class="ai-err"><span>'+esc(C.err)+'</span>'+(C.retry?'<button class="btn sm" id="ttretry">Thử lại</button>':'')+'</div>':'');
     var list=TUT.msgs.length?QUICK:[['Bắt đầu ôn','Bắt đầu buổi ôn. Hãy chào ngắn gọn rồi hỏi mình câu đầu tiên.']];
     chips.innerHTML=C.busy?'':list.map(function(c,k){return '<button class="ai-chip" data-chip="'+k+'">'+esc(c[0])+'</button>';}).join('');
-    $$('[data-chip]',chips).forEach(function(b){b.onclick=function(){var c=list[+b.dataset.chip];tutSend(c[1],c[0]);};});
+    $$('[data-chip]',chips).forEach(function(b){b.onclick=function(){var c=list[+b.dataset.chip];tutSend(c[1],c[0],TUT);};});
     $$('[data-copy]',log).forEach(function(b){b.onclick=function(){copyText(TUT.msgs[+b.dataset.copy].shown);b.textContent='Đã chép';setTimeout(function(){b.textContent='Chép';},1500);};});
-    if($('#ttretry',log))$('#ttretry',log).onclick=function(){var r=C.retry;C.retry=null;C.err=null;if(r)tutSend(r.text,r.shown);};
+    if($('#ttretry',log))$('#ttretry',log).onclick=function(){var r=C.retry;C.retry=null;C.err=null;if(r)tutSend(r.text,r.shown,TUT);};
     $('#ttsend').disabled=C.busy;$('#ttstop').hidden=!C.busy;$('#ttclr').hidden=!TUT.msgs.length||C.busy;
     log.scrollTop=log.scrollHeight;
   }

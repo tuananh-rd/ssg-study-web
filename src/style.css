@@ -1032,3 +1032,4 @@ body.dock-open #focusBtn.focus-fab{display:none}
 @media(max-width:860px){.tt-wrap{grid-template-columns:1fr}.tt-side{position:static}}
 .tt-chat .ai-msg-text{overflow-wrap:break-word;word-break:normal}.tt-chat .ai-bub{min-width:0}
 .tt-chat .ai-msg{max-width:92%}.tt-chat .ai-msg .ai-bub{max-width:none}
+.tsec-box{margin:10px 0 4px}.tsec .ai-log{max-height:min(50vh,440px);min-height:110px}

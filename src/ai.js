@@ -623,7 +623,7 @@ function practiceExplain(q,t,opts,good,btn){
 }
 
 // ===== Gia sư ôn lý thuyết: chatbot riêng, tự hỏi – chấm – giải thích – tổng kết (chỉ môn có SJ.tutor và chương "digest") =====
-var TUT={chat:{msgs:[],busy:false,system:'',ctrl:null,view:null,err:null,retry:null,partial:''},msgs:null,focus:'all'};
+var TUT={chat:{msgs:[],busy:false,system:'',ctrl:null,view:null,err:null,retry:null,partial:''},msgs:null,focus:'all',save:function(){tutSave();},sys:function(){return tutSystem();}};
 function tutKey(){return KEY+'_tutor';}
 function tutLoad(){if(TUT.msgs)return;try{var j=JSON.parse(localStorage.getItem(tutKey())||'null');TUT.msgs=(j&&Array.isArray(j.msgs))?j.msgs:[];TUT.focus=(j&&j.focus)||'all';}catch(e){TUT.msgs=[];}}
 function tutSave(){try{localStorage.setItem(tutKey(),JSON.stringify({msgs:TUT.msgs.slice(-60),focus:TUT.focus}));}catch(e){}}
@@ -631,8 +631,10 @@ function tutDig(){return SJ.tutor?(D.modules.filter(function(m){return m.digest;
 function tutStats(){if(!P.tutor||typeof P.tutor!=='object')P.tutor={};if(!P.tutor.stats)P.tutor.stats={};return P.tutor.stats;}
 function tutIds(){var dg=tutDig();if(!dg)return [];if(TUT.focus!=='all'){var g=(dg.groups||[]).filter(function(x){return x.id===TUT.focus;})[0];if(g)return g.ids;}return dg.sections.map(function(s){return s.id;});}
 function tutPlain(s){var d=document.createElement('div');d.innerHTML=s.h.replace(/<\/(li|p|tr|h\d)>/g,'\n</$1>').replace(/<\/t[dh]>/g,' | ');return d.textContent.replace(/[ \t]+/g,' ').replace(/\n\s*\n+/g,'\n').trim();}
-function tutSystem(){
-  var dg=tutDig(),ids=tutIds(),secs=dg.sections.filter(function(s){return ids.indexOf(s.id)>=0;});
+function tutFindSec(ref){for(var i=0;i<D.modules.length;i++){var s=D.modules[i].sections.filter(function(x){return x.id===ref;})[0];if(s)return s;}return null;}
+function tutHasSec(ref){return !!tutFindSec(ref);}
+function tutSystem(only,onlyRef){
+  var dg=tutDig(),ids=only?only.map(function(s){return s.id;}):tutIds(),secs=only||dg.sections.filter(function(s){return ids.indexOf(s.id)>=0;});
   var doc=secs.map(function(s){return '### Mục '+s.id+' — '+s.t+'\n'+tutPlain(s);}).join('\n\n').slice(0,34000);
   var st=tutStats(),done=Object.keys(st).filter(function(k){return st[k].n>0;}).sort(function(a,b){return parseFloat(a.split('.')[1])-parseFloat(b.split('.')[1]);}).map(function(k){return k+': '+(Math.round(st[k].ok*2)/2)+'/'+st[k].n;}).join('; ');
   return 'Bạn là GIA SƯ ÔN LÝ THUYẾT môn '+SJ.name+' ('+SJ.aiField+'). Nhiệm vụ: trò chuyện với người học để KIỂM TRA họ đã hiểu lý thuyết đến đâu và giúp họ vững hơn. Đây không phải chatbot "Bố Tuấn Anh": xưng "mình", gọi người học là "bạn", giọng thân thiện, kiên nhẫn, khích lệ, không trêu chọc. '+
@@ -642,26 +644,35 @@ function tutSystem(){
    'GHI KẾT QUẢ (BẮT BUỘC): ngay sau khi chấm một câu, thêm ở CUỐI tin nhắn đúng một dòng dạng [[KQ:7.5:d]] với d = đúng, m = đúng một phần, s = sai, và 7.5 là số mục tài liệu liên quan nhất tới câu vừa chấm. Giao diện sẽ ẩn dòng này; đừng nhắc tới nó. Không thêm dòng này khi chưa chấm câu nào (ví dụ ở lời chào hoặc khi chỉ trả lời thắc mắc). '+
    'TỔNG KẾT: khi người học yêu cầu hoặc sau khoảng 8 câu, nêu họ đang học đến đâu: nhóm chủ đề vững, tạm ổn, còn yếu; các lỗi nhầm hay gặp; và 2–3 mục (ghi số mục) nên đọc lại. '+
    'PHONG CÁCH: tiếng Việt, giữ nguyên thuật ngữ tiếng Anh; ngắn gọn (khoảng 150 từ mỗi lượt, trừ khi đang giảng); Markdown nhẹ, **đậm** cho ý chính, mã trong khối ```. Từ chối lịch sự mọi yêu cầu không phải ôn lý thuyết môn '+SJ.name+'.\n\n'+
-   (ids.length<dg.sections.length?'PHẠM VI HIỆN TẠI: chỉ hỏi trong các mục '+ids.join(', ')+'.\n\n':'')+
+   (onlyRef?'CHẾ ĐỘ ÔN NGAY TẠI MỘT MỤC: người học đang đọc mục '+onlyRef+' và muốn được hỏi lại kiến thức của chính mục này. Chỉ hỏi và giải thích trong phạm vi mục này; trong dòng ghi kết quả luôn dùng đúng số mục '+onlyRef+' (ví dụ [[KQ:'+onlyRef+':d]]); sau khoảng 5 câu hãy chốt lại người học đã nắm được gì và còn yếu gì ở mục này, rồi hỏi họ có muốn ôn tiếp không.\n\n':(ids.length<dg.sections.length?'PHẠM VI HIỆN TẠI: chỉ hỏi trong các mục '+ids.join(', ')+'.\n\n':''))+
    (done?'KẾT QUẢ ĐÃ GHI NHẬN CỦA NGƯỜI HỌC (số điểm/số câu theo mục): '+done+'. Hãy dùng thông tin này để chọn câu hỏi và nhận xét.\n\n':'')+
    'TÀI LIỆU:\n'+doc;
 }
 function tutStrip(t){return String(t||'').replace(/\s*\[\[KQ:[^\]]*\]\]/g,'').replace(/\s*\[\[[^\]]*$/,'').trim();}
 function tutRecord(text){
-  var dg=tutDig(),re=/\[\[KQ:\s*([0-9]+\.[0-9]+)\s*:\s*([dmsDMS])\s*\]\]/g,m,n=0,st=tutStats();
-  while((m=re.exec(text))){var ref=m[1];if(!dg.sections.some(function(s){return s.id===ref;}))continue;var o=st[ref]||(st[ref]={n:0,ok:0});o.n++;o.ok+={d:1,m:0.5,s:0}[m[2].toLowerCase()];n++;}
+  var re=/\[\[KQ:\s*([0-9]+\.[0-9]+)\s*:\s*([dmsDMS])\s*\]\]/g,m,n=0,st=tutStats();
+  while((m=re.exec(text))){var ref=m[1];if(!tutHasSec(ref))continue;var o=st[ref]||(st[ref]={n:0,ok:0});o.n++;o.ok+={d:1,m:0.5,s:0}[m[2].toLowerCase()];n++;}
   if(n){save();}return n;
 }
-async function tutSend(text,shown){
-  var C=TUT.chat;if(C.busy)return;tutLoad();
-  TUT.msgs.push({role:'user',content:text,shown:shown||text});tutSave();
+async function tutSend(text,shown,S){
+  S=S||TUT;var C=S.chat;if(C.busy)return;if(S===TUT)tutLoad();
+  S.msgs.push({role:'user',content:text,shown:shown||text});S.save();
   C.busy=true;C.err=null;C.retry=null;C.partial='';if(C.view)C.view();
   try{
-    C.msgs=TUT.msgs.slice(-30).map(function(m){return {role:m.role,content:m.content};});
-    var r=await aiStream(C,function(bs){C.partial=tutStrip(blocksText(bs));if(C.view)C.view();},{system:tutSystem()});
+    C.msgs=S.msgs.slice(-30).map(function(m){return {role:m.role,content:m.content};});
+    var r=await aiStream(C,function(bs){C.partial=tutStrip(blocksText(bs));if(C.view)C.view();},{system:S.sys()});
     if(r.stop==='refusal')throw new Error('AI từ chối trả lời yêu cầu này. Thử hỏi lại theo cách khác.');
     var raw=blocksText(r.blocks)||'(không có nội dung)';if(r.stop==='max_tokens')raw+='\n\n[Câu trả lời bị cắt vì quá dài]';
-    TUT.msgs.push({role:'assistant',content:raw,shown:tutStrip(raw)||'(không có nội dung)'});tutRecord(raw);tutSave();
-  }catch(e){TUT.msgs.pop();tutSave();C.err=aiErrText(e);C.retry=e.name==='AbortError'?null:{text:text,shown:shown||text};}
+    S.msgs.push({role:'assistant',content:raw,shown:tutStrip(raw)||'(không có nội dung)'});tutRecord(raw);S.save();
+  }catch(e){S.msgs.pop();S.save();C.err=aiErrText(e);C.retry=e.name==='AbortError'?null:{text:text,shown:shown||text};}
   finally{C.busy=false;C.partial='';C.ctrl=null;if(C.view)C.view();}
+}
+// Phiên chat theo từng mục lý thuyết (ôn ngay tại mục): lưu trong trình duyệt, tối đa 24 tin gần nhất mỗi mục
+var TUTS={};
+function tutSecAll(){try{return JSON.parse(localStorage.getItem(KEY+'_tutor_sec')||'{}')||{};}catch(e){return {};}}
+function tutSecSave(){try{var o=tutSecAll();Object.keys(TUTS).forEach(function(k){delete o[k];o[k]=TUTS[k].msgs.slice(-24);});var ks=Object.keys(o);while(ks.length>40){delete o[ks.shift()];}localStorage.setItem(KEY+'_tutor_sec',JSON.stringify(o));}catch(e){}}
+function tutSecSession(ref){
+  if(TUTS[ref])return TUTS[ref];
+  var S=TUTS[ref]={ref:ref,chat:{msgs:[],busy:false,ctrl:null,view:null,err:null,retry:null,partial:''},msgs:tutSecAll()[ref]||[]};
+  S.save=function(){tutSecSave();};S.sys=function(){return tutSystem([tutFindSec(ref)],ref);};return S;
 }
