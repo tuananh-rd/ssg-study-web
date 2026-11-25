@@ -31,7 +31,7 @@ function cpvSourceOverrides(kind) {
 }
 
 const SUBJECTS = {
-  dap391m: { file: 'dap', name: 'DAP391m', bank: () => loadQ('dap-data.js'), aiField: 'Data Science / phân tích dữ liệu (DAP391m: Pandas, Matplotlib, Seaborn, Dash, Folium, Watson, scikit-learn)',
+  dap391m: { file: 'dap', tutor: true, name: 'DAP391m', bank: () => loadQ('dap-data.js'), aiField: 'Data Science / phân tích dữ liệu (DAP391m: Pandas, Matplotlib, Seaborn, Dash, Folium, Watson, scikit-learn)',
     rename: { m3: 'Watson (đọc để biết)', m4: 'SpaceX · Tổng quan dự án', m5: 'SpaceX · GitHub và Watson Studio', m6: 'SpaceX · Thu thập dữ liệu' },
     topicMod: { 'Matplotlib & Seaborn': 'm2', 'Biểu đồ & trực quan hoá': 'm2', 'Folium & bản đồ': 'm2', 'Dash & Dashboard': 'm2', 'Watson Assistant & Chatbot': 'm3', 'IBM DB2 & SQL': 'm5', 'Thu thập dữ liệu (API, Web scraping)': 'm6' }, defMod: 'm1' },
   ail303m: { file: 'ail', name: 'AIL303m', bank: () => loadQ('ail-data.js'), aiField: 'Machine Learning (AIL303m: hồi quy, phân loại, SVM, cây quyết định, ensemble, clustering, đánh giá mô hình)', rename: {},
@@ -54,15 +54,16 @@ function pastData(file) {
 // Chương lý thuyết "Tổng hợp theo bộ đề" của CPV301, sinh từ web/data/cpv-digest.json (chỉ có lý thuyết và câu ôn lý thuyết, không có câu trong bộ đề)
 function digestModule(dg, idx) {
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'), md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  const sections = []; let n = 0;
+  const sections = [], groups = []; let n = 0;
   for (const ch of dg.chapters) for (const s of ch.sections) {
     n++;
+    { let g = groups[groups.length - 1]; if (!g || g.id !== ch.id) groups.push(g = { id: ch.id, t: ch.title.replace(/^\d+\.\s*/, ''), ids: [] }); g.ids.push((idx + 1) + '.' + n); }
     let h = `<p class="muted">${esc(ch.title)}</p><ul>${s.pts.map(p => `<li>${md(p)}</li>`).join('')}</ul>`;
     if (s.tbl) h += `<table><thead><tr>${s.tbl.head.map(x => `<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${s.tbl.rows.map(r => `<tr>${r.map(x => `<td>${md(x)}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
     if (s.qs && s.qs.length) h += `<p class="small muted">Câu liên quan trong bộ đề: ${s.qs.join(', ')}</p>`;
     sections.push({ id: (idx + 1) + '.' + n, t: s.h, h });
   }
-  return { id: 'm' + (idx + 1), short: 'C' + (idx + 1), title: 'Tổng hợp theo bộ đề', color: '#7c5cff', weight: 0, priority: 1, keyPoints: [], digest: true, sections };
+  return { id: 'm' + (idx + 1), short: 'C' + (idx + 1), title: 'Tổng hợp theo bộ đề', color: '#7c5cff', weight: 0, priority: 1, keyPoints: [], digest: true, groups, sections };
 }
 
 for (const [id, S] of Object.entries(SUBJECTS)) {
@@ -101,7 +102,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
     rdd('translate-out-' + S.file, o => { for (const [k, v] of Object.entries(o)) xl['b-' + k] = v; });
     if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;
     rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
-  const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
+  const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false, tutor: !!S.tutor };
   const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: pastData(S.file).past, pastExams: pastData(S.file).pastExams, glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: fs.existsSync(path.join(W, 'data', `${S.file}-confuse.json`)) ? JSON.parse(rd(W, 'data', `${S.file}-confuse.json`)) : [] })};`;
   const html = `<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n<title>${S.name} · Ôn thi cuối kỳ</title>\n<style>\n${style}\n</style></head><body>\n<noscript>App cần bật JavaScript.</noscript>\n<script id="data">\n${safe(data)}\n</script>\n<script id="app">\n${safe(appJs)}\n</script>\n</body></html>`;
   fs.writeFileSync(path.join(W, 'data', `app-${id}.html`), html);

@@ -253,7 +253,7 @@ function logView(){
   summary();reload();
 }
 function loadExtras(){
-  ['chat.js','whatsnew.js','music.js','rank.js','profile.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();if(f==='music.js'&&window.WebMusic)window.WebMusic.start();if(f==='rank.js'&&window.WebRank)window.WebRank.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=20';document.body.appendChild(s);});
+  ['chat.js','whatsnew.js','music.js','rank.js','profile.js'].forEach(function(f){var id='x-'+f;if(document.getElementById(id)){if(f==='chat.js'&&window.WebChat)window.WebChat.start();if(f==='whatsnew.js'&&window.WebWhatsNew)window.WebWhatsNew.start();if(f==='music.js'&&window.WebMusic)window.WebMusic.start();if(f==='rank.js'&&window.WebRank)window.WebRank.start();return;}var s=document.createElement('script');s.id=id;s.src='/'+f+'?v=21';document.body.appendChild(s);});
 }
 function boot(){
   api('me').then(function(j){

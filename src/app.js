@@ -47,7 +47,8 @@ var CONF=(D.confuse||[]).map(function(g){var its=g.items.map(function(x){return 
   its.forEach(function(x){CNOTE[x.id]=x.note;});var G={id:g.id,title:g.title,why:g.why,rules:g.rules||[],items:its};its.forEach(function(x){CGRP[x.id]=G;});return G;}).filter(function(g){return g.items.length;});
 function confQs(g){return g.items.map(function(x){return QMAP[x.id];});}
 function confStat(list){var d=0,ok=0;list.forEach(function(q){var an=P.answers[q.id];if(an){d++;if(an.lastOk)ok++;}});return {d:d,ok:ok,n:list.length};}
-function confCard(){if(!CONF.length)return '';var all=[];CONF.forEach(function(g){all=all.concat(confQs(g));});var s=confStat(all);
+function confCard(){return tutCard()+confCard2();}
+function confCard2(){if(!CONF.length)return '';var all=[];CONF.forEach(function(g){all=all.concat(confQs(g));});var s=confStat(all);
   return '<a class="card keycard" href="#/confuse"><span class="kc-ic">'+ic('bulb')+'</span><span style="flex:1;min-width:0"><b>Câu dễ nhầm đáp án</b><span class="small muted" style="display:block">'+all.length+' câu chia '+CONF.length+' nhóm: các câu khác nhau nhưng đáp án giống nhau, bấm nhanh rất dễ nhầm · đã thuộc '+s.ok+'/'+all.length+'</span></span><span class="btn sm primary">Ôn ngay '+ic('arrow')+'</span></a>';}
 var ALLQ_ID={};ALLQ.forEach(function(q){ALLQ_ID[q.id]=1;});
 var EXAMS={};(D.pastExams||[]).forEach(function(e){EXAMS[e.id]=e;});
@@ -357,7 +358,7 @@ function readMins(m){var n=0;m.sections.forEach(function(s){n+=s.h.replace(/<[^>
 routes.learn=function(id,qs){
   if(!id){
     var tab=qs.tab||'chapters';
-    var h='<h1>Lý thuyết</h1><div class="seg full" style="margin-bottom:14px"><button data-t="chapters" class="'+(tab==='chapters'?'on':'')+'">'+D.modules.length+' chương</button>'+(D.quick.length?'<button data-t="quick" class="'+(tab==='quick'?'on':'')+'">Ôn nhanh</button>':'')+(D.compares.length?'<button data-t="compare" class="'+(tab==='compare'?'on':'')+'">Dễ nhầm</button>':'')+'</div>';
+    var h='<h1>Lý thuyết</h1>'+tutCard()+'<div class="seg full" style="margin-bottom:14px"><button data-t="chapters" class="'+(tab==='chapters'?'on':'')+'">'+D.modules.length+' chương</button>'+(D.quick.length?'<button data-t="quick" class="'+(tab==='quick'?'on':'')+'">Ôn nhanh</button>':'')+(D.compares.length?'<button data-t="compare" class="'+(tab==='compare'?'on':'')+'">Dễ nhầm</button>':'')+'</div>';
     if(tab==='chapters')h+=D.modules.map(function(m){var rd=P.read[m.id],a=modAcc(m.id);return '<a class="lcard" href="#/learn/'+m.id+'"><span class="num" style="background:'+m.color+'">'+m.short+'</span><span class="t"><div>'+esc(m.title)+'</div><span class="small muted">'+m.sections.length+' mục · '+qCount(m.id)+' câu hỏi'+(a!=null?' · đúng '+pct(a):'')+'</span></span>'+(rd?'<span class="tag ok">Đã đọc</span>':'')+(m.priority===4?'<span class="tag warn hide-m">Hay ra thi</span>':'')+'</a>';}).join('');
     else if(tab==='quick')h+=(KEYQ.length?'<a class="card keycard" href="#/practice?tab=key"><span class="kc-ic">'+ic('bulb')+'</span><span style="flex:1;min-width:0"><b>Kiến thức key</b><span class="small muted" style="display:block">'+KEYQ.length+' câu ôn nhanh các ý bắt buộc phải nhớ · đã thuộc '+recallDone(KEYQ)+'/'+KEYQ.length+'</span></span><span class="btn sm primary">Ôn ngay '+ic('arrow')+'</span></a>':'')+'<div class="card"><p class="small muted" style="margin-top:0">28 ý dễ ra kiểm tra nhất (mục 13 của tài liệu). Đọc lại trước giờ thi.</p><ol class="quick" style="padding-left:22px;margin:0">'+D.quick.map(function(x){return '<li>'+esc(x[0])+' <a class="small" href="'+refLink(x[1])+'">§'+x[1]+'</a></li>';}).join('')+'</ol></div>';
     else h+='<p class="muted small">12 cặp khái niệm hay bị nhầm. Mỗi cặp có 2 câu “Cái nào đây?” để tự kiểm tra.</p>'+D.compares.map(function(c,ci){return '<div class="card"><div class="row between"><h3 style="margin:0">'+esc(c.a)+' <span class="muted">vs</span> '+esc(c.b)+'</h3><a class="small" href="'+refLink(c.ref)+'">§'+c.ref+'</a></div><table><tr><th></th><th>'+esc(c.a)+'</th><th>'+esc(c.b)+'</th></tr>'+c.rows.map(function(r){return '<tr><td class="muted small">'+esc(r[0])+'</td><td>'+esc(r[1])+'</td><td>'+esc(r[2])+'</td></tr>';}).join('')+'</table>'+c.quiz.map(function(q,qi){return '<div class="row between" style="padding:6px 0"><span style="flex:1;min-width:200px">'+esc(q[0])+'</span><span class="row"><button class="btn sm" data-c="'+ci+'" data-q="'+qi+'" data-v="0">'+esc(c.a)+'</button><button class="btn sm" data-c="'+ci+'" data-q="'+qi+'" data-v="1">'+esc(c.b)+'</button></span></div>';}).join('')+'</div>';}).join('');
@@ -841,6 +842,56 @@ function examResult(i){
   $$('.aibox').forEach(function(el){var q=QMAP[el.dataset.id],t=T(q,'en'),a=x.answers[el.dataset.id];
     var ctx={lang:'en',opts:[t.correct].concat(t.wrong),picked:a||null,answered:true};aiBox(el,q,function(){return ctx;});});
 }
+
+// ===== Gia sư ôn lý thuyết (chatbot riêng) =====
+function tutCard(){var dg=tutDig();if(!dg)return '';var st=tutStats(),n=0;Object.keys(st).forEach(function(k){n+=st[k].n;});
+  return '<a class="card keycard" href="#/tutor"><span class="kc-ic">'+ic('chat')+'</span><span style="flex:1;min-width:0"><b>Gia sư lý thuyết (chatbot)</b><span class="small muted" style="display:block">Chatbot tự hỏi, chấm và giải thích kiến thức lý thuyết '+esc(SJ.name)+' để xem bạn học đến đâu'+(n?' · đã chấm '+n+' câu':'')+'</span></span><span class="btn sm primary">Trò chuyện '+ic('arrow')+'</span></a>';}
+routes.tutor=function(){
+  var dg=tutDig();if(!dg){location.hash='#/';return;}
+  tutLoad();var C=TUT.chat,groups=dg.groups||[];
+  function stat(ids){var st=tutStats(),n=0,ok=0;ids.forEach(function(r){if(st[r]){n+=st[r].n;ok+=st[r].ok;}});return {n:n,ok:ok};}
+  var QUICK=[['Hỏi câu tiếp','Hỏi câu tiếp theo.'],['Gợi ý','Cho mình gợi ý cho câu này (chưa nói đáp án).'],['Giải thích thêm','Giải thích thêm giúp mình.'],['Câu dễ hơn','Cho mình câu dễ hơn.'],['Câu khó hơn','Cho mình câu khó hơn.'],['Tóm tắt trình độ','Hãy tóm tắt xem mình đã học đến đâu và nên đọc lại mục nào.']];
+  render('<div class="row between" style="flex-wrap:wrap;gap:8px"><h1 style="margin:0">Gia sư lý thuyết</h1><a class="btn sm ghost" href="#/learn/'+dg.id+'" style="border-radius:8px">Đọc lý thuyết '+esc(dg.short)+'</a></div>'+
+    '<p class="muted" style="margin:6px 0 14px">Chatbot riêng cho lý thuyết '+esc(SJ.name)+': tự đặt câu hỏi, chấm câu trả lời của bạn, giải thích chỗ nhầm và tổng kết bạn học đến đâu. Kiến thức lấy từ chương '+esc(dg.short)+' “'+esc(dg.title)+'”.</p>'+
+    '<div class="tt-wrap"><div class="ai-chat tt-chat"><div class="ai-chat-head"><div class="ai-who"><span class="ai-badge sm">'+ic('spark')+'</span><div><b>Gia sư '+esc(SJ.name)+'</b><div class="small muted" id="ttscope"></div></div></div><span class="row" style="gap:2px"><button class="iconbtn sm" id="ttclr" title="Xoá hội thoại" aria-label="Xoá hội thoại">'+ic('trash')+'</button></span></div>'+
+    '<div class="ai-log" id="ttlog" aria-live="polite"></div><div class="ai-chips" id="ttchips"></div>'+
+    '<div class="ai-compose"><textarea class="ai-input" id="ttin" rows="1" placeholder="Trả lời hoặc hỏi gia sư…"></textarea><button class="btn sm" id="ttstop" hidden>■ Dừng</button><button class="ai-send" id="ttsend" aria-label="Gửi">'+ic('arrow')+'</button></div>'+
+    '<div class="ai-foot small muted"><span><kbd>Enter</kbd> gửi · <kbd>Shift</kbd>+<kbd>Enter</kbd> xuống dòng</span><span>Hội thoại lưu trong trình duyệt này</span></div></div>'+
+    '<aside class="card tt-side"><b>Phạm vi ôn</b><div class="chips" id="ttfocus"></div><div class="small muted" style="margin-bottom:10px">Áp dụng từ câu hỏi tiếp theo.</div><b>Bạn học đến đâu</b><div id="ttprog"></div><div class="small muted" style="margin-top:8px">Điểm tính theo từng câu gia sư đã chấm: đúng 1, một phần 0,5, sai 0.</div><button class="btn sm ghost" id="ttreset" style="margin-top:10px;align-self:flex-start">Đặt lại tiến độ</button></aside></div>');
+  var log=$('#ttlog'),input=$('#ttin'),chips=$('#ttchips');
+  function grow(){input.style.height='auto';input.style.height=Math.min(input.scrollHeight,160)+'px';}
+  function drawSide(){
+    var cur=TUT.focus==='all'?null:groups.filter(function(g){return g.id===TUT.focus;})[0];
+    $('#ttscope').textContent=cur?cur.t:'Toàn bộ chương '+dg.short;
+    $('#ttfocus').innerHTML=[{id:'all',t:'Tất cả'}].concat(groups).map(function(g){return '<button data-f="'+esc(g.id)+'" class="'+(TUT.focus===g.id?'on':'')+'">'+esc(g.t)+'</button>';}).join('');
+    $$('[data-f]',$('#ttfocus')).forEach(function(b){b.onclick=function(){TUT.focus=b.dataset.f;tutSave();drawSide();};});
+    var all=stat(dg.sections.map(function(s){return s.id;}));
+    function row(t,s){var p=s.n?s.ok/s.n:null;return '<div class="tt-prog-row"><div class="top"><span>'+esc(t)+'</span><span class="muted">'+(s.n?(Math.round(s.ok*10)/10)+'/'+s.n+' · '+pct(p):'chưa hỏi')+'</span></div><div class="bar '+barClass(p)+'"><i style="width:'+(p==null?0:p*100)+'%"></i></div></div>';}
+    $('#ttprog').innerHTML=row('Toàn bộ',all)+groups.map(function(g){return row(g.t,stat(g.ids));}).join('');
+  }
+  function bubble(m,i){var as=m.role==='assistant';
+    return '<div class="ai-msg '+m.role+'">'+(as?'<span class="ai-badge xs">'+ic('spark')+'</span>':'')+'<div class="ai-bub"><div class="ai-msg-text">'+(as?mdLite(m.shown):esc(m.shown))+'</div>'+(as?'<div class="ai-msg-meta"><span></span><button class="link-btn" data-copy="'+i+'">Chép</button></div>':'')+'</div></div>';}
+  function drawLog(){
+    log.innerHTML=(!TUT.msgs.length&&!C.busy&&!C.err?'<div class="ai-empty">Bấm <b>Bắt đầu ôn</b>: gia sư sẽ hỏi bạn từng câu, chấm câu trả lời, giải thích chỗ nhầm và tổng kết bạn học đến đâu. Bạn cũng có thể hỏi bất cứ điều gì về lý thuyết.</div>':'')+
+      TUT.msgs.map(bubble).join('')+
+      (C.busy?'<div class="ai-msg assistant pending"><span class="ai-badge xs">'+ic('spark')+'</span><div class="ai-bub"><div class="ai-msg-text">'+(C.partial?mdLite(C.partial):'<span class="typing"><i></i><i></i><i></i></span>')+'</div></div></div>':'')+
+      (C.err?'<div class="ai-err"><span>'+esc(C.err)+'</span>'+(C.retry?'<button class="btn sm" id="ttretry">Thử lại</button>':'')+'</div>':'');
+    var list=TUT.msgs.length?QUICK:[['Bắt đầu ôn','Bắt đầu buổi ôn. Hãy chào ngắn gọn rồi hỏi mình câu đầu tiên.']];
+    chips.innerHTML=C.busy?'':list.map(function(c,k){return '<button class="ai-chip" data-chip="'+k+'">'+esc(c[0])+'</button>';}).join('');
+    $$('[data-chip]',chips).forEach(function(b){b.onclick=function(){var c=list[+b.dataset.chip];tutSend(c[1],c[0]);};});
+    $$('[data-copy]',log).forEach(function(b){b.onclick=function(){copyText(TUT.msgs[+b.dataset.copy].shown);b.textContent='Đã chép';setTimeout(function(){b.textContent='Chép';},1500);};});
+    if($('#ttretry',log))$('#ttretry',log).onclick=function(){var r=C.retry;C.retry=null;C.err=null;if(r)tutSend(r.text,r.shown);};
+    $('#ttsend').disabled=C.busy;$('#ttstop').hidden=!C.busy;$('#ttclr').hidden=!TUT.msgs.length||C.busy;
+    log.scrollTop=log.scrollHeight;
+  }
+  function send(){var t=input.value.trim();if(!t||C.busy)return;input.value='';grow();tutSend(t,t);}
+  input.oninput=grow;input.onkeydown=function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();send();}if(e.key==='Escape')input.blur();};
+  $('#ttsend').onclick=send;$('#ttstop').onclick=function(){if(C.ctrl)C.ctrl.abort();};
+  $('#ttclr').onclick=function(){if(C.busy)return;confirmBox('Xoá hội thoại hiện tại với gia sư? Tiến độ “bạn học đến đâu” vẫn được giữ.','Xoá hội thoại',true).then(function(y){if(y){TUT.msgs=[];C.err=null;C.retry=null;tutSave();drawLog();}});};
+  $('#ttreset').onclick=function(){confirmBox('Xoá toàn bộ tiến độ đã chấm với gia sư (cả bảng “bạn học đến đâu”)?','Đặt lại',true).then(function(y){if(y){tutStats();P.tutor.stats={};save();drawSide();}});};
+  C.view=function(){if(log.isConnected){drawLog();drawSide();}};
+  drawSide();drawLog();grow();
+};
 
 // ===== Câu dễ nhầm đáp án =====
 var confSt={open:null};
