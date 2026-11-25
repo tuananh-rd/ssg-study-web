@@ -1028,6 +1028,7 @@ body.dock-open #focusBtn.focus-fab{display:none}
   .qlay.qs-h>.qside{max-height:none}.qlay.qs-h .qside .ai-log{flex:none;height:var(--qlh);max-height:none}
   body.qs-dragging{user-select:none;cursor:grabbing}body.qs-dragging iframe{pointer-events:none}
 }
+.qtop #crb{width:auto;min-height:38px;padding:0 14px;white-space:nowrap}
 
 </style></head><body>
 <noscript>App cần bật JavaScript.</noscript>
@@ -1208,7 +1209,7 @@ function thOpen(mod,ref,keep){
 function hasLang(q,l){return l==='en'?!!(q.bank||q.en):!!(!q.bank||q.vi);}
 function quizTools(q,lang){
   var g=reaskGap(),has=!!(q&&(q.ref||(q.module&&MOD[q.module])));
-  return '<span class="qtools"><span class="qlang" role="group" aria-label="Ngôn ngữ câu hỏi"><button type="button" data-ql="vi" class="'+(lang==='vi'?'on':'')+'" title="Tiếng Việt">VI</button><button type="button" data-ql="en" class="'+(lang==='en'?'on':'')+'" title="English">EN</button></span>'+(hasLang(q,lang)?'':'<span class="tag" title="Câu này chưa có bản dịch sang ngôn ngữ đang chọn, đang hiển thị bản gốc">chưa có bản dịch</span>')+(has?'<button type="button" class="btn sm" id="thBtn" title="Mở lý thuyết bên cạnh (phím T)">'+ic('book')+'<span>Lý thuyết</span></button>':'')+
+  return '<span class="qtools"><span class="qlang" role="group" aria-label="Ngôn ngữ câu hỏi"><button type="button" data-ql="vi" class="'+(lang==='vi'?'on':'')+'" title="Tiếng Việt">VI</button><button type="button" data-ql="en" class="'+(lang==='en'?'on':'')+'" title="English">EN</button></span>'+(hasLang(q,lang)?'':'<span class="tag" title="Câu này chưa có bản dịch sang ngôn ngữ đang chọn, đang hiển thị bản gốc">chưa có bản dịch</span>')+(has?'<button type="button" class="btn sm" id="thBtn" title="Mở lý thuyết bên cạnh (phím L)">'+ic('book')+'<span>Lý thuyết</span></button>':'')+
     '<span class="rgap" title="Câu trả lời sai sẽ được hỏi lại sau số câu bạn chọn"><span class="small muted">Hỏi lại câu sai</span><span class="qlang rg" role="group" aria-label="Hỏi lại câu sai sau bao nhiêu câu">'+[[0,'Tắt'],[3,'3'],[5,'5'],[10,'10']].map(function(o){return '<button type="button" data-rg="'+o[0]+'" class="'+(g===o[0]?'on':'')+'" title="'+(o[0]?'Sau '+o[0]+' câu':'Không hỏi lại')+'">'+o[1]+'</button>';}).join('')+'</span></span></span>';
 }
 

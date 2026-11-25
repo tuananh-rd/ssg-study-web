@@ -1024,3 +1024,4 @@ body.dock-open #focusBtn.focus-fab{display:none}
   .qlay.qs-h>.qside{max-height:none}.qlay.qs-h .qside .ai-log{flex:none;height:var(--qlh);max-height:none}
   body.qs-dragging{user-select:none;cursor:grabbing}body.qs-dragging iframe{pointer-events:none}
 }
+.qtop #crb{width:auto;min-height:38px;padding:0 14px;white-space:nowrap}
