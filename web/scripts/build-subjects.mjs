@@ -85,16 +85,18 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
   const recallDir = path.join(ROOT, 'sources-private', `recall-${S.file}`), manual = {};
   if (fs.existsSync(recallDir)) for (const f of fs.readdirSync(recallDir).filter(f => /^m\d+\.json$/.test(f))) { try { manual[f.replace('.json', '')] = JSON.parse(rd(recallDir, f)); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
   const auto = genRecall({ modules: modules.map(m => ({ ...m })) });
+  const recallEn = {};
   const secOrder = modules.flatMap(m => m.sections.map(s => s.id)), valid = new Set(secOrder), recall = [], seenR = new Set(); let nManual = 0, nAuto = 0;
   for (const m of modules) {
     const src = manual[m.id] && manual[m.id].length ? manual[m.id].filter(x => valid.has(x.ref) && x.q && x.correct && Array.isArray(x.wrong) && x.wrong.length === 3 && new Set([x.correct, ...x.wrong]).size === 4).map(x => ({ ...x, kind: 'manual' })) : auto.filter(x => x.module === m.id);
     for (const s of m.sections) for (const x of src.filter(y => y.ref === s.id)) {
       const k = (x.q + '|' + x.correct).toLowerCase(); if (seenR.has(k)) continue; seenR.add(k);
       recall.push({ id: `r-${m.id}-${String(recall.filter(r => r.module === m.id).length + 1).padStart(3, '0')}`, module: m.id, ref: s.id, type: 'recall', kind: x.kind, q: x.q, correct: x.correct, wrong: x.wrong, explain: x.explain || `Theo §${s.id} ${s.t}.`, ...(x.tip ? { tip: x.tip } : {}) });
+      if (x.en && x.en.q) recallEn[recall[recall.length - 1].id] = x.en;   // bản tiếng Anh kèm theo (chương "Tổng hợp theo bộ đề")
       x.kind === 'manual' ? nManual++ : nAuto++;
     }
   }
-  const xl = {};
+  const xl = { ...recallEn };
   { const rdd = (d, fn) => { const dir = path.join(ROOT, 'sources-private', d); if (!fs.existsSync(dir)) return; for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f) && !(d === 'translate-out-cpv' && f === 'cpv-901.json'))) { try { fn(JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } } };
     rdd('translate-out-' + S.file, o => { for (const [k, v] of Object.entries(o)) xl['b-' + k] = v; });
     if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;

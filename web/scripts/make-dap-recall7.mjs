@@ -185,8 +185,10 @@ const Q = [
 ];
 const FE26 = (await import('./dap-recall7-fe26.mjs')).default;   // câu bổ sung từ đề FE Fall 2026
 Q.push(...FE26);
-const out = Q.map(([ref, q, correct, w1, w2, w3, explain]) => ({ ref, q, correct, wrong: [w1, w2, w3], explain }));
-const bad = out.filter(x => new Set([x.correct, ...x.wrong]).size !== 4 || !x.q || x.wrong.some(w => !w));
+const EN = (await import('./dap-recall7-en.mjs')).default;   // bản tiếng Anh, cùng thứ tự
+if (EN.length !== Q.length) { console.log('Số câu tiếng Anh', EN.length, 'khác số câu', Q.length); process.exit(1); }
+const out = Q.map(([ref, q, correct, w1, w2, w3, explain], i) => { const [r2, eq, ec, e1, e2, e3] = EN[i]; if (r2 !== ref) { console.log('Lệch mục ở câu', i + 1, ref, r2); process.exit(1); } return { ref, q, correct, wrong: [w1, w2, w3], explain, en: { q: eq, correct: ec, wrong: [e1, e2, e3] } }; });
+const bad = out.filter(x => new Set([x.correct, ...x.wrong]).size !== 4 || !x.q || x.wrong.some(w => !w) || new Set([x.en.correct, ...x.en.wrong]).size !== 4);
 if (bad.length) { console.log('Câu lỗi:', bad.map(b => b.q)); process.exit(1); }
 const dir = path.join(ROOT, 'sources-private', 'recall-dap'); fs.mkdirSync(dir, { recursive: true });
 fs.writeFileSync(path.join(dir, 'm7.json'), JSON.stringify(out, null, 1));

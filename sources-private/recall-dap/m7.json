@@ -8,7 +8,16 @@
    "Process",
    "Act"
   ],
-  "explain": "Ask → Prepare → Process → Analyze → Share → Act."
+  "explain": "Ask → Prepare → Process → Analyze → Share → Act.",
+  "en": {
+   "q": "What is the first phase of the data analysis process?",
+   "correct": "Ask",
+   "wrong": [
+    "Prepare",
+    "Process",
+    "Act"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -19,7 +28,16 @@
    "Trạng thái tuyệt đối (absolute)",
    "Trạng thái \"sick\""
   ],
-  "explain": "So sánh current state với ideal state."
+  "explain": "So sánh current state với ideal state.",
+  "en": {
+   "q": "Which state does an analyst compare with the ideal state to decide what data needs to be collected?",
+   "correct": "The current state",
+   "wrong": [
+    "The relative state",
+    "The absolute state",
+    "The \"sick\" state"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -30,7 +48,16 @@
    "Các bên liên quan",
    "Người quản lý dự án ban đầu"
   ],
-  "explain": "Cần điều tra nguyên nhân gốc."
+  "explain": "Cần điều tra nguyên nhân gốc.",
+  "en": {
+   "q": "When a process change causes unfavorable effects, where should the focus be?",
+   "correct": "The source cause of the problem",
+   "wrong": [
+    "Each individual effect",
+    "The stakeholders involved",
+    "The original project manager"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -41,7 +68,16 @@
    "Đánh giá hiệu quả các nền tảng",
    "Vẽ biểu đồ tròn để lập lịch mới"
   ],
-  "explain": "Bắt đầu bằng root cause analysis."
+  "explain": "Bắt đầu bằng root cause analysis.",
+  "en": {
+   "q": "A project keeps missing deadlines. What should the new leader do first?",
+   "correct": "Perform a root cause analysis",
+   "wrong": [
+    "Assess individual performance through interviews",
+    "Evaluate the efficiency of the platforms",
+    "Draw a pie chart to set a new timeline"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -52,7 +88,16 @@
    "Thu phóng đặc trưng",
    "Mã hóa biến phân loại"
   ],
-  "explain": "Triển khai mô hình diễn ra sau khi xây dựng."
+  "explain": "Triển khai mô hình diễn ra sau khi xây dựng.",
+  "en": {
+   "q": "Which of the following is NOT a common data preprocessing step?",
+   "correct": "Model deployment",
+   "wrong": [
+    "Handling missing values",
+    "Feature scaling",
+    "Encoding categorical variables"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -63,7 +108,16 @@
    "EDA thường bị bỏ qua",
    "EDA giống feature engineering"
   ],
-  "explain": "EDA = Exploratory Data Analysis."
+  "explain": "EDA = Exploratory Data Analysis.",
+  "en": {
+   "q": "Which statement about EDA is correct?",
+   "correct": "EDA focuses on understanding the structure and patterns of the dataset",
+   "wrong": [
+    "EDA is performed only after model training",
+    "EDA is usually skipped",
+    "EDA is the same as feature engineering"
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -74,7 +128,16 @@
    "\"Wednesday\"",
    "[-4]"
   ],
-  "explain": "Chỉ số bắt đầu từ 0."
+  "explain": "Chỉ số bắt đầu từ 0.",
+  "en": {
+   "q": "In a list of weekdays starting from Sunday, what is the index of Wednesday?",
+   "correct": "[3]",
+   "wrong": [
+    "[4]",
+    "\"Wednesday\"",
+    "[-4]"
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -85,7 +148,16 @@
    "\"x\"",
    "\"n\""
   ],
-  "explain": "\"a\" = append; \"w\" ghi đè."
+  "explain": "\"a\" = append; \"w\" ghi đè.",
+  "en": {
+   "q": "Which file mode opens a file to append new data to its existing content?",
+   "correct": "\"a\"",
+   "wrong": [
+    "\"w\"",
+    "\"x\"",
+    "\"n\""
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -96,7 +168,16 @@
    "Dùng close thay cho open",
    "Dùng with thay cho open"
   ],
-  "explain": "with open(...) tự đóng file."
+  "explain": "with open(...) tự đóng file.",
+  "en": {
+   "q": "How can an analyst avoid leaving a file open after reading it?",
+   "correct": "Use a WITH statement together with the open command",
+   "wrong": [
+    "Use the CLOSE statement before the open command",
+    "Use the CLOSE statement instead of the open command",
+    "Use a WITH statement instead of the open command"
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -107,7 +188,16 @@
    "grades = grades.min()",
    "grades.min() = grades"
   ],
-  "explain": "Biến ở bên trái dấu =, có dấu ngoặc ở .min()."
+  "explain": "Biến ở bên trái dấu =, có dấu ngoặc ở .min().",
+  "en": {
+   "q": "Which code assigns the lowest value of the array grades to the variable lowest_grade?",
+   "correct": "lowest_grade = grades.min()",
+   "wrong": [
+    "grades.min() = lowest_grade",
+    "grades = grades.min()",
+    "grades.min() = grades"
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -118,7 +208,16 @@
    "(high)",
    ".high"
   ],
-  "explain": "Gọi phương thức .max() có dấu ngoặc."
+  "explain": "Gọi phương thức .max() có dấu ngoặc.",
+  "en": {
+   "q": "What must be added to highest_gpa = grades to get the highest GPA in the array?",
+   "correct": ".max()",
+   "wrong": [
+    ".max",
+    "(high)",
+    ".high"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -129,7 +228,16 @@
    "Scikit-learn",
    "Matplotlib"
   ],
-  "explain": "Pandas = data manipulation and analysis."
+  "explain": "Pandas = data manipulation and analysis.",
+  "en": {
+   "q": "Which Python library is mainly used for data manipulation and analysis?",
+   "correct": "Pandas",
+   "wrong": [
+    "NumPy",
+    "Scikit-learn",
+    "Matplotlib"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -140,7 +248,16 @@
    "Scrapy",
    "Selenium"
   ],
-  "explain": "Requests gửi HTTP request."
+  "explain": "Requests gửi HTTP request.",
+  "en": {
+   "q": "Which library is used to send HTTP requests to web pages and APIs?",
+   "correct": "Requests",
+   "wrong": [
+    "BeautifulSoup",
+    "Scrapy",
+    "Selenium"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -151,7 +268,16 @@
    "Requests",
    "Scrapy"
   ],
-  "explain": "BeautifulSoup parse HTML/XML."
+  "explain": "BeautifulSoup parse HTML/XML.",
+  "en": {
+   "q": "Which library is commonly used to parse HTML in web scraping?",
+   "correct": "BeautifulSoup",
+   "wrong": [
+    "Pandas",
+    "Requests",
+    "Scrapy"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -162,7 +288,16 @@
    "Seaborn",
    "Folium"
   ],
-  "explain": "Dash là framework ứng dụng web phân tích."
+  "explain": "Dash là framework ứng dụng web phân tích.",
+  "en": {
+   "q": "Which library is specifically designed for building web-based analytic applications?",
+   "correct": "Dash",
+   "wrong": [
+    "Matplotlib",
+    "Seaborn",
+    "Folium"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -173,7 +308,16 @@
    "NumPy",
    "TensorFlow"
   ],
-  "explain": "GridSearchCV của scikit-learn."
+  "explain": "GridSearchCV của scikit-learn.",
+  "en": {
+   "q": "Which library commonly implements grid search for hyperparameter tuning?",
+   "correct": "Scikit-learn",
+   "wrong": [
+    "Pandas",
+    "NumPy",
+    "TensorFlow"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -184,7 +328,16 @@
    "import_csv()",
    "open_csv()"
   ],
-  "explain": "pd.read_csv()."
+  "explain": "pd.read_csv().",
+  "en": {
+   "q": "Which Pandas function reads a CSV file?",
+   "correct": "read_csv()",
+   "wrong": [
+    "load_csv()",
+    "import_csv()",
+    "open_csv()"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -195,7 +348,16 @@
    "parse_html()",
    "import_html()"
   ],
-  "explain": "pd.read_html()."
+  "explain": "pd.read_html().",
+  "en": {
+   "q": "Which Pandas function reads a table from HTML?",
+   "correct": "read_html()",
+   "wrong": [
+    "read_html_table()",
+    "parse_html()",
+    "import_html()"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -206,7 +368,16 @@
    "itypes",
    "ntypes"
   ],
-  "explain": "df.dtypes."
+  "explain": "df.dtypes.",
+  "en": {
+   "q": "Which attribute gives the data type of each column?",
+   "correct": "dtypes",
+   "wrong": [
+    "ftypes",
+    "itypes",
+    "ntypes"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -217,7 +388,16 @@
    "get_total()",
    "describe()"
   ],
-  "explain": "value_counts() trả về số lần của từng giá trị."
+  "explain": "value_counts() trả về số lần của từng giá trị.",
+  "en": {
+   "q": "Which method counts the occurrences of each unique value?",
+   "correct": "value_counts()",
+   "wrong": [
+    "count()",
+    "get_total()",
+    "describe()"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -228,7 +408,16 @@
    "df.change(columns={\"point\": \"location\"}, inplace=True)",
    "df.Change(columns={\"location\": \"point\"}, inplace=True)"
   ],
-  "explain": "Dict {tên cũ: tên mới}."
+  "explain": "Dict {tên cũ: tên mới}.",
+  "en": {
+   "q": "Which code renames the column \"point\" to \"location\"?",
+   "correct": "df.rename(columns={\"point\": \"location\"}, inplace=True)",
+   "wrong": [
+    "df.rename(columns={\"location\": \"point\"}, inplace=True)",
+    "df.change(columns={\"point\": \"location\"}, inplace=True)",
+    "df.Change(columns={\"location\": \"point\"}, inplace=True)"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -239,7 +428,16 @@
    "AND",
    "= (một dấu bằng)"
   ],
-  "explain": "df[(df['gender']=='M') & (df['age']>=40)]."
+  "explain": "df[(df['gender']=='M') & (df['age']>=40)].",
+  "en": {
+   "q": "Which operator combines conditions when filtering a Pandas DataFrame?",
+   "correct": "& (each condition in parentheses)",
+   "wrong": [
+    "&&",
+    "AND",
+    "= (a single equals sign)"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -250,7 +448,16 @@
    "stats()",
    "statistics()"
   ],
-  "explain": "df.describe()."
+  "explain": "df.describe().",
+  "en": {
+   "q": "Which method gives descriptive statistics for the numeric columns?",
+   "correct": "describe()",
+   "wrong": [
+    "summary()",
+    "stats()",
+    "statistics()"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -261,7 +468,16 @@
    "missing_data()",
    "NaN_check()"
   ],
-  "explain": "isnull() trả về mặt nạ giá trị thiếu."
+  "explain": "isnull() trả về mặt nạ giá trị thiếu.",
+  "en": {
+   "q": "Which method detects missing data in a DataFrame?",
+   "correct": "isnull()",
+   "wrong": [
+    "find_missing()",
+    "missing_data()",
+    "NaN_check()"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -272,7 +488,16 @@
    "clean_data()",
    "remove_nulls()"
   ],
-  "explain": "dropna()."
+  "explain": "dropna().",
+  "en": {
+   "q": "Which method drops the rows that contain missing values?",
+   "correct": "dropna()",
+   "wrong": [
+    "remove_missing()",
+    "clean_data()",
+    "remove_nulls()"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -283,7 +508,16 @@
    "backward_fill()",
    "backfill()"
   ],
-  "explain": "bfill = backward fill."
+  "explain": "bfill = backward fill.",
+  "en": {
+   "q": "Which method fills missing data using the NEXT valid value (backward fill)?",
+   "correct": "bfill()",
+   "wrong": [
+    "ffill()",
+    "backward_fill()",
+    "backfill()"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -294,7 +528,16 @@
    "30",
    "27.5"
   ],
-  "explain": "ffill lấy giá trị hợp lệ trước đó."
+  "explain": "ffill lấy giá trị hợp lệ trước đó.",
+  "en": {
+   "q": "For [20, NaN, 25, NaN, 30], what is the first missing value after ffill?",
+   "correct": "20",
+   "wrong": [
+    "25",
+    "30",
+    "27.5"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -305,7 +548,16 @@
    "27.5",
    "26.0"
   ],
-  "explain": "Trung điểm của 20 và 25."
+  "explain": "Trung điểm của 20 và 25.",
+  "en": {
+   "q": "For [20, NaN, 25, NaN, 30], what is the first missing value after linear interpolation?",
+   "correct": "22.5",
+   "wrong": [
+    "23.0",
+    "27.5",
+    "26.0"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -316,7 +568,16 @@
    "15.0",
    "23.33"
   ],
-  "explain": "Median của 15, 25, 30 là 25."
+  "explain": "Median của 15, 25, 30 là 25.",
+  "en": {
+   "q": "If the NaN values in the Series [NaN, 15, NaN, 25, 30] are filled with the median, what replaces the NaN at index 0?",
+   "correct": "25.0",
+   "wrong": [
+    "30.0",
+    "15.0",
+    "23.33"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -327,7 +588,16 @@
    "Chỉ imputation",
    "Không xử lý được"
   ],
-  "explain": "Câu bộ đề đáp án là All of the above."
+  "explain": "Câu bộ đề đáp án là All of the above.",
+  "en": {
+   "q": "Which of the following can handle missing data?",
+   "correct": "Deleting rows, imputation and ignoring them during analysis (All of the above)",
+   "wrong": [
+    "Only deleting rows",
+    "Only imputation",
+    "It cannot be handled"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -338,7 +608,16 @@
    "Log transformation",
    "Robust scaling"
   ],
-  "explain": "z = (x − mean) / std."
+  "explain": "z = (x − mean) / std.",
+  "en": {
+   "q": "Which technique transforms data to have a mean of 0 and a standard deviation of 1?",
+   "correct": "Z-score normalization",
+   "wrong": [
+    "Min-Max scaling",
+    "Log transformation",
+    "Robust scaling"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -349,7 +628,16 @@
    "3",
    "4"
   ],
-  "explain": "(90 − 75) / 15 = 1."
+  "explain": "(90 − 75) / 15 = 1.",
+  "en": {
+   "q": "With a mean of 75 and a standard deviation of 15, what is the z-score of the data point 90?",
+   "correct": "1",
+   "wrong": [
+    "2",
+    "3",
+    "4"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -360,7 +648,16 @@
    "Chuẩn hóa theo median và IQR",
    "Biến đổi bằng logarit tự nhiên"
   ],
-  "explain": "Min-Max → [0, 1]."
+  "explain": "Min-Max → [0, 1].",
+  "en": {
+   "q": "What does Min-Max scaling do to the data?",
+   "correct": "Scales data to a fixed range, usually 0 to 1",
+   "wrong": [
+    "Shifts the mean to 0 and the variance to 1",
+    "Normalizes using the median and the IQR",
+    "Transforms using the natural logarithm"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -371,7 +668,16 @@
    "Khi dữ liệu phân phối chuẩn",
    "Khi dữ liệu có giá trị thiếu"
   ],
-  "explain": "Log giảm độ lệch."
+  "explain": "Log giảm độ lệch.",
+  "en": {
+   "q": "When is log transformation commonly applied?",
+   "correct": "When data has a skewed distribution",
+   "wrong": [
+    "When data has a linear distribution",
+    "When data has a normal distribution",
+    "When data has missing values"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -382,7 +688,16 @@
    "df['Gender'].astype('category').cat.codes",
    "df['Gender'].value_counts(normalize=True)"
   ],
-  "explain": "Thay nhãn bằng số lần xuất hiện."
+  "explain": "Thay nhãn bằng số lần xuất hiện.",
+  "en": {
+   "q": "How is frequency encoding applied to the Gender column?",
+   "correct": "df['Gender'].map(df['Gender'].value_counts())",
+   "wrong": [
+    "df['Gender'].map({'Male': 3, 'Female': 3})",
+    "df['Gender'].astype('category').cat.codes",
+    "df['Gender'].value_counts(normalize=True)"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -393,7 +708,16 @@
    "df.encode()",
    "df.fillna()"
   ],
-  "explain": "get_dummies tạo các cột one-hot."
+  "explain": "get_dummies tạo các cột one-hot.",
+  "en": {
+   "q": "Which function converts a column into one-hot columns?",
+   "correct": "pd.get_dummies()",
+   "wrong": [
+    "pd.one_hot()",
+    "df.encode()",
+    "df.fillna()"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -404,7 +728,16 @@
    "One-Hot Encoding",
    "Min-Max scaling"
   ],
-  "explain": "PCA giảm chiều."
+  "explain": "PCA giảm chiều.",
+  "en": {
+   "q": "Which technique is commonly used to reduce the dimensionality of high-dimensional data?",
+   "correct": "PCA (Principal Component Analysis)",
+   "wrong": [
+    "Feature scaling",
+    "One-Hot Encoding",
+    "Min-Max scaling"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -415,7 +748,16 @@
    "[-∞, ∞]",
    "[0, ∞]"
   ],
-  "explain": "Tương quan từ -1 đến 1."
+  "explain": "Tương quan từ -1 đến 1.",
+  "en": {
+   "q": "What range of values can the correlation coefficient take?",
+   "correct": "[-1, 1]",
+   "wrong": [
+    "[0, 1]",
+    "[-∞, ∞]",
+    "[0, ∞]"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -426,7 +768,16 @@
    "Nhỏ hơn 0.1",
    "Lớn hơn 0.1"
   ],
-  "explain": "Bộ đề: p < 0.001."
+  "explain": "Bộ đề: p < 0.001.",
+  "en": {
+   "q": "According to the question bank, a strong correlation corresponds to which p-value?",
+   "correct": "Less than 0.001",
+   "wrong": [
+    "Less than 0.05",
+    "Less than 0.1",
+    "Greater than 0.1"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -437,7 +788,16 @@
    "Không đủ bằng chứng",
    "Không có tương quan"
   ],
-  "explain": "p < 0.05 → reject the null hypothesis."
+  "explain": "p < 0.05 → reject the null hypothesis.",
+  "en": {
+   "q": "In a Chi-square test, what does a p-value less than 0.05 suggest?",
+   "correct": "Reject the null hypothesis",
+   "wrong": [
+    "Fail to reject the null hypothesis",
+    "Insufficient evidence",
+    "No correlation exists"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -448,7 +808,16 @@
    "-1",
    "Vô cùng"
   ],
-  "explain": "R² = 1 là khớp hoàn hảo."
+  "explain": "R² = 1 là khớp hoàn hảo.",
+  "en": {
+   "q": "Which R² value indicates the best model?",
+   "correct": "1",
+   "wrong": [
+    "0",
+    "-1",
+    "Infinity"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -459,7 +828,16 @@
    "25",
    "30"
   ],
-  "explain": "Q3 − Q1 = 32.5 − 12.5 = 20."
+  "explain": "Q3 − Q1 = 32.5 − 12.5 = 20.",
+  "en": {
+   "q": "What is the IQR of [15, 10, 5, 25, 20, 30, 40, 35]?",
+   "correct": "20",
+   "wrong": [
+    "15",
+    "25",
+    "30"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -470,7 +848,16 @@
    "Từ phân vị 25 đến 50",
    "Từ phân vị 0 đến 25"
   ],
-  "explain": "Upper whisker: 75th–100th."
+  "explain": "Upper whisker: 75th–100th.",
+  "en": {
+   "q": "Which percentile range does the upper whisker of a box plot represent?",
+   "correct": "75th to 100th percentile",
+   "wrong": [
+    "50th to 75th percentile",
+    "25th to 50th percentile",
+    "0th to 25th percentile"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -481,7 +868,16 @@
    "Q3 = 50, Min = 25",
    "Q3 = 68, Min = −22"
   ],
-  "explain": "Max = Q3 + 1.5·IQR, Min = Q1 − 1.5·IQR."
+  "explain": "Max = Q3 + 1.5·IQR, Min = Q1 − 1.5·IQR.",
+  "en": {
+   "q": "The maximum of a box plot is 100 and Q1 = 20. What are Q3 and the minimum?",
+   "correct": "Q3 = 52, Min = −28",
+   "wrong": [
+    "Q3 = 80, Min = 0",
+    "Q3 = 50, Min = 25",
+    "Q3 = 68, Min = −22"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -492,7 +888,16 @@
    "Hộp và râu có cùng chiều rộng",
    "Hộp biến mất"
   ],
-  "explain": "Skewed → asymmetrical whiskers."
+  "explain": "Skewed → asymmetrical whiskers.",
+  "en": {
+   "q": "How is a skewed distribution represented in a box plot?",
+   "correct": "Asymmetrical whisker lengths",
+   "wrong": [
+    "Equal whisker lengths",
+    "The box and whiskers have the same width",
+    "The box disappears"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -503,7 +908,16 @@
    "Histogram",
    "Pie chart"
   ],
-  "explain": "Scatter = hai biến."
+  "explain": "Scatter = hai biến.",
+  "en": {
+   "q": "Which chart shows the relationship between two continuous variables?",
+   "correct": "Scatter plot",
+   "wrong": [
+    "Box plot",
+    "Histogram",
+    "Pie chart"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -514,7 +928,16 @@
    "Bar chart",
    "Line chart"
   ],
-  "explain": "Histogram = phân phối một biến."
+  "explain": "Histogram = phân phối một biến.",
+  "en": {
+   "q": "Which chart type is best suited for the distribution of a SINGLE continuous variable?",
+   "correct": "Histogram",
+   "wrong": [
+    "Pie chart",
+    "Bar chart",
+    "Line chart"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -525,7 +948,16 @@
    "Độ lệch chuẩn",
    "IQR"
   ],
-  "explain": "Đường giữa là median."
+  "explain": "Đường giữa là median.",
+  "en": {
+   "q": "What does the horizontal line inside the box of a box plot represent?",
+   "correct": "Median",
+   "wrong": [
+    "Mean",
+    "Standard deviation",
+    "IQR"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -536,7 +968,16 @@
    "Phương sai",
    "Độ lệch chuẩn"
   ],
-  "explain": "Theo bộ đề: IQR."
+  "explain": "Theo bộ đề: IQR.",
+  "en": {
+   "q": "According to the question bank, what does the width of the box in a box plot depict?",
+   "correct": "IQR",
+   "wrong": [
+    "Range of the dataset",
+    "Variance",
+    "Standard deviation"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -547,7 +988,16 @@
    "Độ lớn một biến",
    "Phạm vi giá trị"
   ],
-  "explain": "Heatmap: strength of correlations."
+  "explain": "Heatmap: strength of correlations.",
+  "en": {
+   "q": "What does the color intensity in a heatmap signify?",
+   "correct": "Strength of correlations",
+   "wrong": [
+    "Frequency of occurrence",
+    "Magnitude of a single variable",
+    "Range of values in the dataset"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -558,7 +1008,16 @@
    "Thứ tự bảng chữ cái",
    "Ngẫu nhiên"
   ],
-  "explain": "Từ xuất hiện nhiều thì to."
+  "explain": "Từ xuất hiện nhiều thì to.",
+  "en": {
+   "q": "How is word size typically determined in a word cloud?",
+   "correct": "By word count",
+   "wrong": [
+    "By word length",
+    "By alphabetical order",
+    "Randomly"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -569,7 +1028,16 @@
    "Dependent cross relationship",
    "Dispositive multi-linear relationship"
   ],
-  "explain": "Tăng cùng nhau = tuyến tính dương."
+  "explain": "Tăng cùng nhau = tuyến tính dương.",
+  "en": {
+   "q": "When two variables tend to increase together on a scatter plot, what kind of relationship is it?",
+   "correct": "Positive linear relationship",
+   "wrong": [
+    "Independent linear relationship",
+    "Dependent cross relationship",
+    "Dispositive multi-linear relationship"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -580,7 +1048,16 @@
    "matplotlib.axis",
    "matplotlib.plot"
   ],
-  "explain": "pyplot."
+  "explain": "pyplot.",
+  "en": {
+   "q": "Which Matplotlib module provides a MATLAB-like plotting interface?",
+   "correct": "matplotlib.pyplot",
+   "wrong": [
+    "matplotlib.figure",
+    "matplotlib.axis",
+    "matplotlib.plot"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -591,7 +1068,16 @@
    "plt.stack()",
    "plt.plot()"
   ],
-  "explain": "Không có plt.area hay plt.stack."
+  "explain": "Không có plt.area hay plt.stack.",
+  "en": {
+   "q": "Which function draws a stacked area plot (stack plot)?",
+   "correct": "plt.stackplot()",
+   "wrong": [
+    "plt.area()",
+    "plt.stack()",
+    "plt.plot()"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -602,7 +1088,16 @@
    "plt.inline()",
    "plt.notebook()"
   ],
-  "explain": "Magic command %matplotlib inline."
+  "explain": "Magic command %matplotlib inline.",
+  "en": {
+   "q": "Which command displays plots inline in Jupyter Notebook?",
+   "correct": "%matplotlib inline",
+   "wrong": [
+    "%inline plot",
+    "plt.inline()",
+    "plt.notebook()"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -613,7 +1108,16 @@
    "export()",
    "saveas()"
   ],
-  "explain": "plt.savefig()."
+  "explain": "plt.savefig().",
+  "en": {
+   "q": "Which function saves a figure to a file?",
+   "correct": "savefig()",
+   "wrong": [
+    "save()",
+    "export()",
+    "saveas()"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -624,7 +1128,16 @@
    "width",
    "line"
   ],
-  "explain": "linewidth."
+  "explain": "linewidth.",
+  "en": {
+   "q": "Which parameter of plt.plot() sets the line width?",
+   "correct": "linewidth",
+   "wrong": [
+    "line_width",
+    "width",
+    "line"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -635,7 +1148,16 @@
    "Chỉnh phần trăm mỗi lát",
    "Tự vẽ thêm biểu đồ tròn"
   ],
-  "explain": "autopct định dạng nhãn."
+  "explain": "autopct định dạng nhãn.",
+  "en": {
+   "q": "What does the autopct parameter in plot(kind=\"pie\") do?",
+   "correct": "Automatically formats the percentage labels",
+   "wrong": [
+    "Sets the aspect ratio",
+    "Adjusts the percentage of each slice",
+    "Automatically plots additional pie charts"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -646,7 +1168,16 @@
    "Số dòng của histogram",
    "Kích thước hình"
   ],
-  "explain": "bins = số bin."
+  "explain": "bins = số bin.",
+  "en": {
+   "q": "What does the bins parameter of hist() control?",
+   "correct": "The number of bins in the histogram",
+   "wrong": [
+    "The width of each bar",
+    "The number of rows",
+    "The size of the figure"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -657,7 +1188,16 @@
    "Chỉnh kích thước marker",
    "Bỏ ticks trên trục"
   ],
-  "explain": "subplot chia hình thành nhiều ô."
+  "explain": "subplot chia hình thành nhiều ô.",
+  "en": {
+   "q": "What does the subplot() function allow you to do?",
+   "correct": "Create multiple plots in one figure",
+   "wrong": [
+    "Change the background color",
+    "Adjust the marker size",
+    "Remove the axis ticks"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -668,7 +1208,16 @@
    "plot(type='area')",
    "plot.area"
   ],
-  "explain": "Theo bộ đề: plot.area()."
+  "explain": "Theo bộ đề: plot.area().",
+  "en": {
+   "q": "Which Pandas method draws an area plot?",
+   "correct": "plot.area()",
+   "wrong": [
+    "plot(kind='area')",
+    "plot(type='area')",
+    "plot.area"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -679,7 +1228,16 @@
    "sns.jointplot()",
    "sns.scatterplot()"
   ],
-  "explain": "sns.heatmap()."
+  "explain": "sns.heatmap().",
+  "en": {
+   "q": "Which Seaborn function shows a correlation matrix as a heatmap?",
+   "correct": "sns.heatmap()",
+   "wrong": [
+    "sns.pairplot()",
+    "sns.jointplot()",
+    "sns.scatterplot()"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -690,7 +1248,16 @@
    "sns.pointplot()",
    "sns.boxplot()"
   ],
-  "explain": "countplot đếm số lượng."
+  "explain": "countplot đếm số lượng.",
+  "en": {
+   "q": "Which function counts the occurrences of each unique value of a categorical variable?",
+   "correct": "sns.countplot()",
+   "wrong": [
+    "sns.barplot()",
+    "sns.pointplot()",
+    "sns.boxplot()"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -701,7 +1268,16 @@
    "sns.kdeplot()",
    "sns.boxplot()"
   ],
-  "explain": "violinplot."
+  "explain": "violinplot.",
+  "en": {
+   "q": "Which function shows the distribution of a continuous variable for each category?",
+   "correct": "sns.violinplot()",
+   "wrong": [
+    "sns.histplot()",
+    "sns.kdeplot()",
+    "sns.boxplot()"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -712,7 +1288,16 @@
    "sns.violinplot()",
    "sns.countplot()"
   ],
-  "explain": "boxplot."
+  "explain": "boxplot.",
+  "en": {
+   "q": "Which function draws a box plot to see the distribution of a numerical variable?",
+   "correct": "sns.boxplot()",
+   "wrong": [
+    "sns.barplot()",
+    "sns.violinplot()",
+    "sns.countplot()"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -723,7 +1308,16 @@
    "Thứ tự marker trong chú giải",
    "Màu đường hồi quy"
   ],
-  "explain": "order = bậc đa thức."
+  "explain": "order = bậc đa thức.",
+  "en": {
+   "q": "What does the order parameter of regplot control?",
+   "correct": "The order (degree) of the polynomial regression",
+   "wrong": [
+    "The marker size",
+    "The order of the markers in the legend",
+    "The color of the regression line"
+   ]
+  }
  },
  {
   "ref": "7.10",
@@ -734,7 +1328,16 @@
    "Thư viện tăng số dòng mã",
    "Thư viện học sâu"
   ],
-  "explain": "Seaborn có giao diện high-level."
+  "explain": "Seaborn có giao diện high-level.",
+  "en": {
+   "q": "What is Seaborn?",
+   "correct": "A high-level visualization library built on Matplotlib",
+   "wrong": [
+    "A visualization library built on scikit-learn",
+    "A library that increases the number of lines of code",
+    "A deep learning library"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -745,7 +1348,16 @@
    "Tạo biểu đồ tĩnh",
    "Vẽ đồ thị 3D"
   ],
-  "explain": "Folium = bản đồ."
+  "explain": "Folium = bản đồ.",
+  "en": {
+   "q": "What is the Folium library mainly used for?",
+   "correct": "Displaying geographic data on interactive maps",
+   "wrong": [
+    "Creating interactive dashboards",
+    "Generating static visualizations",
+    "Plotting 3D graphs"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -756,7 +1368,16 @@
    "create_map()",
    "Không có cách trực tiếp"
   ],
-  "explain": "folium.Map()."
+  "explain": "folium.Map().",
+  "en": {
+   "q": "Which function creates a basic map in Folium?",
+   "correct": "folium.Map()",
+   "wrong": [
+    "BaseMap()",
+    "create_map()",
+    "There is no direct way"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -767,7 +1388,16 @@
    "center()",
    "set_center"
   ],
-  "explain": "Map(location=[lat, lon])."
+  "explain": "Map(location=[lat, lon]).",
+  "en": {
+   "q": "Which parameter sets the center of the map?",
+   "correct": "location",
+   "wrong": [
+    "change_center()",
+    "center()",
+    "set_center"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -778,7 +1408,16 @@
    "folium.PolyLine()",
    "folium.Choropleth()"
   ],
-  "explain": "Circle thêm vòng tròn."
+  "explain": "Circle thêm vòng tròn.",
+  "en": {
+   "q": "Which function adds circles with varying radius to a map?",
+   "correct": "folium.Circle()",
+   "wrong": [
+    "folium.Marker()",
+    "folium.PolyLine()",
+    "folium.Choropleth()"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -789,7 +1428,16 @@
    "Phân bố mật độ điểm dữ liệu",
    "Đường nối giữa các vị trí"
   ],
-  "explain": "Choropleth tô màu vùng."
+  "explain": "Choropleth tô màu vùng.",
+  "en": {
+   "q": "What does a choropleth map represent?",
+   "correct": "Geographic areas colored according to data values",
+   "wrong": [
+    "Geographic locations with clustered markers",
+    "The density distribution of data points",
+    "A polyline connecting locations"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -800,7 +1448,16 @@
    "Excel",
    "TXT"
   ],
-  "explain": "GeoJSON."
+  "explain": "GeoJSON.",
+  "en": {
+   "q": "Which file format commonly stores geographic boundary data for choropleth maps?",
+   "correct": "GeoJSON",
+   "wrong": [
+    "CSV",
+    "Excel",
+    "TXT"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -811,7 +1468,16 @@
    "Data Collection Component",
    "Display Chart Component"
   ],
-  "explain": "dcc = Dash Core Components."
+  "explain": "dcc = Dash Core Components.",
+  "en": {
+   "q": "What does dcc stand for in dcc.Graph?",
+   "correct": "Dash Core Components",
+   "wrong": [
+    "Dynamic Chart Creator",
+    "Data Collection Component",
+    "Display Chart Component"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -822,7 +1488,16 @@
    "dcc.Input()",
    "dcc.Dropdown()"
   ],
-  "explain": "RangeSlider chọn khoảng."
+  "explain": "RangeSlider chọn khoảng.",
+  "en": {
+   "q": "Which Dash component creates a slider to select a RANGE of values?",
+   "correct": "dcc.RangeSlider()",
+   "wrong": [
+    "dcc.Slider()",
+    "dcc.Input()",
+    "dcc.Dropdown()"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -833,7 +1508,16 @@
    "dcc.Slider()",
    "dcc.Graph()"
   ],
-  "explain": "Input."
+  "explain": "Input.",
+  "en": {
+   "q": "Which Dash component creates a text input box?",
+   "correct": "dcc.Input()",
+   "wrong": [
+    "dcc.Dropdown()",
+    "dcc.Slider()",
+    "dcc.Graph()"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -844,7 +1528,16 @@
    "dcc.Dropdown()",
    "dcc.Slider()"
   ],
-  "explain": "Graph."
+  "explain": "Graph.",
+  "en": {
+   "q": "Which Dash component displays graphs and visualizations?",
+   "correct": "dcc.Graph()",
+   "wrong": [
+    "dcc.Input()",
+    "dcc.Dropdown()",
+    "dcc.Slider()"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -855,7 +1548,16 @@
    "@app.route",
    "@update_content"
   ],
-  "explain": "Callback."
+  "explain": "Callback.",
+  "en": {
+   "q": "Which decorator updates a component's content based on user input?",
+   "correct": "@app.callback",
+   "wrong": [
+    "@dash_callback",
+    "@app.route",
+    "@update_content"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -866,7 +1568,16 @@
    "Đặt màu thanh trượt",
    "Đặt giá trị ban đầu"
   ],
-  "explain": "marks = nhãn."
+  "explain": "marks = nhãn.",
+  "en": {
+   "q": "What does the marks property of dcc.Slider do?",
+   "correct": "Labels specific values on the slider",
+   "wrong": [
+    "Defines the range of values",
+    "Sets the slider color",
+    "Sets the initial value"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -877,7 +1588,16 @@
    "PUT",
    "HTTP"
   ],
-  "explain": "GET lấy dữ liệu."
+  "explain": "GET lấy dữ liệu.",
+  "en": {
+   "q": "Data is collected when a client makes which type of request to a server?",
+   "correct": "GET",
+   "wrong": [
+    "PORT",
+    "PUT",
+    "HTTP"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -888,7 +1608,16 @@
    "300",
    "400"
   ],
-  "explain": "500 = Internal Server Error."
+  "explain": "500 = Internal Server Error.",
+  "en": {
+   "q": "Which status code appears when the server has an internal error?",
+   "correct": "500",
+   "wrong": [
+    "200",
+    "300",
+    "400"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -899,7 +1628,16 @@
    "303",
    "200"
   ],
-  "explain": "401 = chưa được phép."
+  "explain": "401 = chưa được phép.",
+  "en": {
+   "q": "Which status code appears when the requested resource is available only to the admin role?",
+   "correct": "401",
+   "wrong": [
+    "500",
+    "303",
+    "200"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -910,7 +1648,16 @@
    "Unique Resource Identifier",
    "Unrestricted Resource Identifier"
   ],
-  "explain": "Uniform Resource Identifier."
+  "explain": "Uniform Resource Identifier.",
+  "en": {
+   "q": "What does URI stand for?",
+   "correct": "Uniform Resource Identifier",
+   "wrong": [
+    "Universal Resource Identifier",
+    "Unique Resource Identifier",
+    "Unrestricted Resource Identifier"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -921,7 +1668,16 @@
    "requests.get(url, json={...})",
    "requests.get(url, params={...})"
   ],
-  "explain": "POST với json; params đưa dữ liệu lên URL."
+  "explain": "POST với json; params đưa dữ liệu lên URL.",
+  "en": {
+   "q": "How do you send JSON data without showing it in the URL?",
+   "correct": "requests.post(url, json={...})",
+   "wrong": [
+    "requests.post(url, params={...})",
+    "requests.get(url, json={...})",
+    "requests.get(url, params={...})"
+   ]
+  }
  },
  {
   "ref": "7.14",
@@ -932,7 +1688,16 @@
    "Lưu dữ liệu vào cơ sở dữ liệu",
    "Trực quan hóa dữ liệu"
   ],
-  "explain": "Parse HTML."
+  "explain": "Parse HTML.",
+  "en": {
+   "q": "What is the main function of Beautiful Soup in web scraping?",
+   "correct": "Parsing and navigating HTML/XML documents",
+   "wrong": [
+    "Sending HTTP requests",
+    "Storing data in a database",
+    "Visualizing data"
+   ]
+  }
  },
  {
   "ref": "7.14",
@@ -943,7 +1708,16 @@
    "Phân tích cấu trúc CSDL của website",
    "Lấy dữ liệu từ endpoint API"
   ],
-  "explain": "Parsing = trích phần tử."
+  "explain": "Parsing = trích phần tử.",
+  "en": {
+   "q": "What does \"HTML parsing\" mean in web scraping?",
+   "correct": "Identifying and extracting specific elements from a webpage",
+   "wrong": [
+    "Converting HTML to plain text",
+    "Analyzing the structure of a website's database",
+    "Retrieving data from API endpoints"
+   ]
+  }
  },
  {
   "ref": "7.14",
@@ -954,7 +1728,16 @@
    "Lấy dữ liệu từ CSDL",
    "Phân tích HTML"
   ],
-  "explain": "requests.get."
+  "explain": "requests.get.",
+  "en": {
+   "q": "What does requests.get() do?",
+   "correct": "Sends a GET request to the specified URL",
+   "wrong": [
+    "Sends a POST request",
+    "Retrieves data from a database",
+    "Parses HTML content"
+   ]
+  }
  },
  {
   "ref": "7.15",
@@ -965,7 +1748,16 @@
    "INSERT DATA",
    "EXPORT DATA"
   ],
-  "explain": "LOAD DATA."
+  "explain": "LOAD DATA.",
+  "en": {
+   "q": "Which IBM DB2 utility loads data from external files into a table?",
+   "correct": "LOAD DATA",
+   "wrong": [
+    "IMPORT DATA",
+    "INSERT DATA",
+    "EXPORT DATA"
+   ]
+  }
  },
  {
   "ref": "7.15",
@@ -976,7 +1768,16 @@
    "Xác định kiểu dữ liệu các cột",
    "Điều khiển tốc độ nạp"
   ],
-  "explain": "SEPARATOR = delimiter."
+  "explain": "SEPARATOR = delimiter.",
+  "en": {
+   "q": "What is the SEPARATOR field in the DB2 LOAD DATA tab used for?",
+   "correct": "Specifying the character that delimits the columns in the input file",
+   "wrong": [
+    "Setting the primary key of the table",
+    "Defining the data types of the columns",
+    "Controlling the loading speed"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -987,7 +1788,16 @@
    "Hàm mũ",
    "Ngẫu nhiên"
   ],
-  "explain": "Linear."
+  "explain": "Linear.",
+  "en": {
+   "q": "What relationship does linear regression assume between the independent and dependent variables?",
+   "correct": "Linear",
+   "wrong": [
+    "Non-linear",
+    "Exponential",
+    "Random"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -998,7 +1808,16 @@
    "Hệ số chặn",
    "Độ dốc"
   ],
-  "explain": "x là predictor."
+  "explain": "x là predictor.",
+  "en": {
+   "q": "In Y = b0 + b1x, what is x?",
+   "correct": "The predictor",
+   "wrong": [
+    "The target",
+    "The intercept",
+    "The slope"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1009,7 +1828,16 @@
    "Phần dư",
    "Biến phụ thuộc"
   ],
-  "explain": "m = slope."
+  "explain": "m = slope.",
+  "en": {
+   "q": "In y = mx + c, what is m?",
+   "correct": "The slope",
+   "wrong": [
+    "The intercept",
+    "The residuals",
+    "The dependent variable"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1020,7 +1848,16 @@
    "None linear regression",
    "Polynomial regression"
   ],
-  "explain": "Nhiều biến độc lập."
+  "explain": "Nhiều biến độc lập.",
+  "en": {
+   "q": "Which method uses y = b0 + b1x1 + b2x2 + b3x3 + b4x4?",
+   "correct": "Multiple linear regression",
+   "wrong": [
+    "Linear regression",
+    "Non-linear regression",
+    "Polynomial regression"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1031,7 +1868,16 @@
    "Cực tiểu số biến dự đoán",
    "Cực đại hệ số xác định"
   ],
-  "explain": "Minimize sum of squared residuals."
+  "explain": "Minimize sum of squared residuals.",
+  "en": {
+   "q": "What is the objective of linear regression?",
+   "correct": "Minimize the sum of squared residuals",
+   "wrong": [
+    "Maximize R²",
+    "Minimize the number of predictors",
+    "Maximize the coefficient of determination"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1042,7 +1888,16 @@
    "Precision",
    "Recall"
   ],
-  "explain": "RMSE cho hồi quy."
+  "explain": "RMSE cho hồi quy.",
+  "en": {
+   "q": "Which metric is best for evaluating a regression model?",
+   "correct": "RMSE",
+   "wrong": [
+    "Accuracy",
+    "Precision",
+    "Recall"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1053,7 +1908,16 @@
    "Giá trị quan sát thực",
    "Điểm ngoại lai"
   ],
-  "explain": "Residual = thực − dự đoán."
+  "explain": "Residual = thực − dự đoán.",
+  "en": {
+   "q": "What do the points in a residual plot represent?",
+   "correct": "The difference between observed and predicted values",
+   "wrong": [
+    "The predicted values",
+    "The actual observed values",
+    "Outliers"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1064,7 +1928,16 @@
    "ElasticNet regression",
    "Polynomial regression"
   ],
-  "explain": "Lasso = L1."
+  "explain": "Lasso = L1.",
+  "en": {
+   "q": "Which regression technique penalizes the ABSOLUTE VALUE of the coefficients?",
+   "correct": "Lasso regression",
+   "wrong": [
+    "Ridge regression",
+    "ElasticNet regression",
+    "Polynomial regression"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1075,7 +1948,16 @@
    "Polynomial regression",
    "Linear regression"
   ],
-  "explain": "Ridge = L2."
+  "explain": "Ridge = L2.",
+  "en": {
+   "q": "Which technique penalizes the SQUARES of the coefficients?",
+   "correct": "Ridge regression",
+   "wrong": [
+    "Lasso regression",
+    "Polynomial regression",
+    "Linear regression"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1086,7 +1968,16 @@
    "Giảm phương sai về 0",
    "Giảm bias"
   ],
-  "explain": "Ridge xử lý multicollinearity."
+  "explain": "Ridge xử lý multicollinearity.",
+  "en": {
+   "q": "What is the primary goal of Ridge regression?",
+   "correct": "Handling multicollinearity and reducing overfitting",
+   "wrong": [
+    "Feature selection",
+    "Minimizing variance to zero",
+    "Reducing bias"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1097,7 +1988,16 @@
    "Stepwise regression",
    "Gradient Boosting"
   ],
-  "explain": "ElasticNet."
+  "explain": "ElasticNet.",
+  "en": {
+   "q": "Which method combines the Ridge and Lasso penalties?",
+   "correct": "ElasticNet regression",
+   "wrong": [
+    "Polynomial regression",
+    "Stepwise regression",
+    "Gradient Boosting"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1108,7 +2008,16 @@
    "Hệ số giữ nguyên",
    "Hệ số chặn tăng"
   ],
-  "explain": "Alpha lớn → shrink."
+  "explain": "Alpha lớn → shrink.",
+  "en": {
+   "q": "How does increasing alpha affect the coefficients in Lasso?",
+   "correct": "The coefficients shrink toward zero",
+   "wrong": [
+    "The coefficients increase",
+    "The coefficients remain unchanged",
+    "The intercept increases"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1119,7 +2028,16 @@
    "Tăng bias",
    "Giảm phương sai"
   ],
-  "explain": "Bậc cao dễ overfitting."
+  "explain": "Bậc cao dễ overfitting.",
+  "en": {
+   "q": "What does increasing the degree in polynomial regression lead to?",
+   "correct": "Overfitting",
+   "wrong": [
+    "Underfitting",
+    "Increased bias",
+    "Reduced variance"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1130,7 +2048,16 @@
    "Khi chỉ có hai biến",
    "Khi không có tương quan"
   ],
-  "explain": "Polynomial cho phi tuyến."
+  "explain": "Polynomial cho phi tuyến.",
+  "en": {
+   "q": "When would you choose polynomial regression over linear regression?",
+   "correct": "When the relationship between the variables is non-linear",
+   "wrong": [
+    "When the relationship between the variables is linear",
+    "When there are only two variables",
+    "When there is no correlation"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1141,7 +2068,16 @@
    "Chuẩn hóa đặc trưng",
    "Giảm chiều"
   ],
-  "explain": "Tạo đặc trưng đa thức."
+  "explain": "Tạo đặc trưng đa thức.",
+  "en": {
+   "q": "What does the PolynomialFeatures class in scikit-learn do?",
+   "correct": "Computes polynomial transformations of the features",
+   "wrong": [
+    "Performs feature selection",
+    "Scales the features",
+    "Reduces dimensionality"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1152,7 +2088,16 @@
    "Gom cụm",
    "Phát hiện ngoại lai"
   ],
-  "explain": "Logistic = phân loại."
+  "explain": "Logistic = phân loại.",
+  "en": {
+   "q": "What is the primary purpose of logistic regression?",
+   "correct": "Classifying data into two or more categories",
+   "wrong": [
+    "Predicting continuous outcomes",
+    "Clustering data points",
+    "Identifying outliers"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1163,7 +2108,16 @@
    "Apriori",
    "PCA"
   ],
-  "explain": "Linear Regression có nhãn."
+  "explain": "Linear Regression có nhãn.",
+  "en": {
+   "q": "Which algorithm is a supervised learning algorithm?",
+   "correct": "Linear Regression",
+   "wrong": [
+    "K-Means",
+    "Apriori",
+    "PCA"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1174,7 +2128,16 @@
    "True positives và false positives",
    "True negatives và false negatives"
   ],
-  "explain": "Dự đoán đúng."
+  "explain": "Dự đoán đúng.",
+  "en": {
+   "q": "What do the diagonal elements of a confusion matrix represent?",
+   "correct": "True positives and true negatives",
+   "wrong": [
+    "False positives and false negatives",
+    "True positives and false positives",
+    "True negatives and false negatives"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1185,7 +2148,16 @@
    "TP / (TP + TN)",
    "TP / (FP + FN)"
   ],
-  "explain": "Precision = TP/(TP+FP)."
+  "explain": "Precision = TP/(TP+FP).",
+  "en": {
+   "q": "How is precision calculated?",
+   "correct": "TP / (TP + FP)",
+   "wrong": [
+    "TP / (TP + FN)",
+    "TP / (TP + TN)",
+    "TP / (FP + FN)"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1196,7 +2168,16 @@
    "Tỉ lệ thuận",
    "Bậc hai"
   ],
-  "explain": "Tăng cái này thường giảm cái kia."
+  "explain": "Tăng cái này thường giảm cái kia.",
+  "en": {
+   "q": "What is the relationship between precision and recall?",
+   "correct": "Inversely proportional",
+   "wrong": [
+    "Independent",
+    "Directly proportional",
+    "Quadratic"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1207,7 +2188,16 @@
    "Precision",
    "Recall"
   ],
-  "explain": "F1 cân bằng precision và recall."
+  "explain": "F1 cân bằng precision và recall.",
+  "en": {
+   "q": "Which metric is most suitable for an imbalanced classification problem?",
+   "correct": "F1-Score",
+   "wrong": [
+    "Accuracy",
+    "Precision",
+    "Recall"
+   ]
+  }
  },
  {
   "ref": "7.18",
@@ -1218,7 +2208,16 @@
    "Mẫu dự đoán đúng là âm",
    "Mẫu dự đoán sai là âm"
   ],
-  "explain": "FP = dự đoán dương nhưng thực là âm."
+  "explain": "FP = dự đoán dương nhưng thực là âm.",
+  "en": {
+   "q": "What is a false positive (FP)?",
+   "correct": "An instance incorrectly predicted as positive",
+   "wrong": [
+    "An instance correctly predicted as positive",
+    "An instance correctly predicted as negative",
+    "An instance incorrectly predicted as negative"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1229,7 +2228,16 @@
    "0.48",
    "0.64"
   ],
-  "explain": "1 − (0.8² + 0.2²) = 0.32."
+  "explain": "1 − (0.8² + 0.2²) = 0.32.",
+  "en": {
+   "q": "What is the Gini impurity of a node with 80 samples of class A and 20 samples of class B?",
+   "correct": "0.32",
+   "wrong": [
+    "0.40",
+    "0.48",
+    "0.64"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1240,7 +2248,16 @@
    "Giảm bias",
    "Tăng phương sai"
   ],
-  "explain": "Khó tách nút hơn → đơn giản hơn."
+  "explain": "Khó tách nút hơn → đơn giản hơn.",
+  "en": {
+   "q": "What does increasing min_samples_split of a decision tree lead to?",
+   "correct": "A simpler tree, possibly underfitting",
+   "wrong": [
+    "A more complex tree, overfitting",
+    "Lower bias",
+    "Higher variance"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1251,7 +2268,16 @@
    "Mỗi độ sâu phải có hơn 10 nút",
    "Tổng số nút phải lớn hơn 10"
   ],
-  "explain": "Số mẫu tối thiểu để tách nút."
+  "explain": "Số mẫu tối thiểu để tách nút.",
+  "en": {
+   "q": "What does min_samples_split = 10 mean?",
+   "correct": "A node can be split only if it has at least 10 samples",
+   "wrong": [
+    "The minimum depth of the tree is 10",
+    "Each depth must have more than 10 nodes",
+    "The total number of nodes must be greater than 10"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1262,7 +2288,16 @@
    "Không có điều chuẩn",
    "Không kết luận được"
   ],
-  "explain": "C lớn → điều chuẩn yếu."
+  "explain": "C lớn → điều chuẩn yếu.",
+  "en": {
+   "q": "What does a best C value of 10 for an SVC indicate about regularization strength?",
+   "correct": "Low regularization strength",
+   "wrong": [
+    "High regularization strength",
+    "No regularization",
+    "No conclusion can be drawn"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1273,7 +2308,16 @@
    "Sequential Feature Selection",
    "Recursive Feature Elimination"
   ],
-  "explain": "Grid Search."
+  "explain": "Grid Search.",
+  "en": {
+   "q": "Which method selects the best C hyperparameter for an SVC?",
+   "correct": "Grid Search",
+   "wrong": [
+    "Random Search",
+    "Sequential Feature Selection",
+    "Recursive Feature Elimination"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1284,7 +2328,16 @@
    "Dùng gradient descent",
    "Dùng siêu tham số mặc định"
   ],
-  "explain": "Exhaustive search."
+  "explain": "Exhaustive search.",
+  "en": {
+   "q": "How does GridSearchCV find the best hyperparameters?",
+   "correct": "By trying all combinations of hyperparameters",
+   "wrong": [
+    "By random selection",
+    "By gradient descent",
+    "By using the default hyperparameters"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1295,7 +2348,16 @@
    "Tập các dự đoán đầu ra",
    "Tập các độ đo đánh giá"
   ],
-  "explain": "Lưới tham số."
+  "explain": "Lưới tham số.",
+  "en": {
+   "q": "What does the \"grid\" in grid search refer to?",
+   "correct": "A set of potential model parameters",
+   "wrong": [
+    "A set of input features",
+    "A set of output predictions",
+    "A set of evaluation metrics"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1306,7 +2368,16 @@
    "validate()",
    "model_performance()"
   ],
-  "explain": "cross_val_score."
+  "explain": "cross_val_score.",
+  "en": {
+   "q": "Which function uses cross-validation to evaluate a model?",
+   "correct": "cross_val_score()",
+   "wrong": [
+    "evaluate()",
+    "validate()",
+    "model_performance()"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1317,7 +2388,16 @@
    "Điểm cross-validation",
    "Tham số điều chuẩn"
   ],
-  "explain": "cv = số fold."
+  "explain": "cv = số fold.",
+  "en": {
+   "q": "What does the cv parameter represent?",
+   "correct": "The number of folds or cross-validation iterations",
+   "wrong": [
+    "Complexity value",
+    "Cross-validation score",
+    "Regularization parameter"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1328,7 +2408,16 @@
    "create_pipeline()",
    "init_pipeline()"
   ],
-  "explain": "make_pipeline hoặc lớp Pipeline."
+  "explain": "make_pipeline hoặc lớp Pipeline.",
+  "en": {
+   "q": "Which function creates a pipeline of sequential steps?",
+   "correct": "make_pipeline()",
+   "wrong": [
+    "build_pipeline()",
+    "create_pipeline()",
+    "init_pipeline()"
+   ]
+  }
  },
  {
   "ref": "7.20",
@@ -1339,7 +2428,16 @@
    "Chỉ biến đổi dữ liệu",
    "Không làm gì"
   ],
-  "explain": "Fit và transform đồng thời."
+  "explain": "Fit và transform đồng thời.",
+  "en": {
+   "q": "What does fit_transform() typically do?",
+   "correct": "Fits and transforms the training data at the same time",
+   "wrong": [
+    "Only fits the model",
+    "Only transforms the data",
+    "Does nothing"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1350,7 +2448,16 @@
    "Giảm độ phức tạp",
    "Tính gradient"
   ],
-  "explain": "Activation → non-linearity."
+  "explain": "Activation → non-linearity.",
+  "en": {
+   "q": "What is the main purpose of activation functions in neural networks?",
+   "correct": "Adding non-linearity to the model",
+   "wrong": [
+    "Initializing weights",
+    "Reducing model complexity",
+    "Calculating gradients"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1361,7 +2468,16 @@
    "Tanh",
    "Softmax"
   ],
-  "explain": "ReLU."
+  "explain": "ReLU.",
+  "en": {
+   "q": "Which activation function is commonly used in the hidden layers of a CNN?",
+   "correct": "ReLU",
+   "wrong": [
+    "Sigmoid",
+    "Tanh",
+    "Softmax"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1372,7 +2488,16 @@
    "Chuẩn hóa đầu vào",
    "Tính đạo hàm"
   ],
-  "explain": "Softmax → xác suất."
+  "explain": "Softmax → xác suất.",
+  "en": {
+   "q": "What does softmax do in the output layer of a multi-class model?",
+   "correct": "Converts logits into a probability distribution over multiple classes",
+   "wrong": [
+    "Applies a threshold for binary classification",
+    "Normalizes the input features",
+    "Calculates the derivative"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1383,7 +2508,16 @@
    "Dense",
    "Flatten"
   ],
-  "explain": "MaxPooling."
+  "explain": "MaxPooling.",
+  "en": {
+   "q": "Which CNN layer reduces the spatial dimensions and controls overfitting?",
+   "correct": "MaxPooling",
+   "wrong": [
+    "Convolutional",
+    "Dense",
+    "Flatten"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1394,7 +2528,16 @@
    "Tăng số tham số",
    "Tăng độ chính xác trực tiếp"
   ],
-  "explain": "Dropout chống overfitting."
+  "explain": "Dropout chống overfitting.",
+  "en": {
+   "q": "What is the purpose of dropout in a CNN?",
+   "correct": "Preventing overfitting by randomly dropping neurons during training",
+   "wrong": [
+    "Reducing the learning rate",
+    "Increasing the number of parameters",
+    "Directly increasing accuracy"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1405,7 +2548,16 @@
    "Định nghĩa kiến trúc",
    "Đánh giá mô hình"
   ],
-  "explain": "compile."
+  "explain": "compile.",
+  "en": {
+   "q": "What does model.compile() do?",
+   "correct": "Attaches the optimizer, loss function and metrics",
+   "wrong": [
+    "Initializes the weights",
+    "Defines the architecture",
+    "Evaluates the model"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1416,7 +2568,16 @@
    "Khởi tạo trọng số",
    "Đánh giá mô hình"
   ],
-  "explain": "fit."
+  "explain": "fit.",
+  "en": {
+   "q": "What does model.fit() do?",
+   "correct": "Trains the model on the training data",
+   "wrong": [
+    "Compiles the model",
+    "Initializes the weights",
+    "Evaluates the model"
+   ]
+  }
  },
  {
   "ref": "7.21",
@@ -1427,7 +2588,16 @@
    "Huấn luyện mô hình",
    "Khởi tạo trọng số"
   ],
-  "explain": "evaluate."
+  "explain": "evaluate.",
+  "en": {
+   "q": "What does model.evaluate() do?",
+   "correct": "Evaluates the performance on test data",
+   "wrong": [
+    "Compiles the model",
+    "Trains the model",
+    "Initializes the weights"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1438,7 +2608,16 @@
    "Luồng hội thoại",
    "Hồ sơ người dùng"
   ],
-  "explain": "Intent = mục đích."
+  "explain": "Intent = mục đích.",
+  "en": {
+   "q": "What is an Intent in Watson Assistant?",
+   "correct": "The purpose or goal expressed in the customer's input",
+   "wrong": [
+    "Specific information extracted from the input",
+    "The conversation flow",
+    "A user profile"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1449,7 +2628,16 @@
    "Định nghĩa luồng hội thoại",
    "Lưu hồ sơ người dùng"
   ],
-  "explain": "Entity = thông tin cụ thể."
+  "explain": "Entity = thông tin cụ thể.",
+  "en": {
+   "q": "What are entities used for in Watson Assistant?",
+   "correct": "Extracting specific information from the user's input",
+   "wrong": [
+    "Authenticating users",
+    "Defining the conversation flow",
+    "Storing user profiles"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1460,7 +2648,16 @@
    "Định nghĩa intents",
    "Lưu dữ liệu người dùng"
   ],
-  "explain": "Dialog node điều khiển luồng."
+  "explain": "Dialog node điều khiển luồng.",
+  "en": {
+   "q": "What is a dialog node used for?",
+   "correct": "Controlling the flow of the conversation",
+   "wrong": [
+    "Representing user messages",
+    "Defining intents",
+    "Storing user data"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1471,7 +2668,16 @@
    "Dự trữ bộ nhớ",
    "Định nghĩa màu giao diện"
   ],
-  "explain": "Slots thu thập thông tin."
+  "explain": "Slots thu thập thông tin.",
+  "en": {
+   "q": "What is the Slots feature in dialog nodes used for?",
+   "correct": "Capturing information from the user's input",
+   "wrong": [
+    "Representing empty spaces in the conversation",
+    "Reserving memory",
+    "Defining the color scheme of the chatbot"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1482,7 +2688,16 @@
    "Chỉ học máy",
    "Không dùng công nghệ nào"
   ],
-  "explain": "Cả NLP và ML."
+  "explain": "Cả NLP và ML.",
+  "en": {
+   "q": "What technology does a dialog skill use to understand questions?",
+   "correct": "Watson natural language processing and machine learning",
+   "wrong": [
+    "Only Watson natural language processing",
+    "Only machine learning",
+    "No technology"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1493,7 +2708,16 @@
    "Phải xóa chatbot",
    "Phải tạo skill mới"
   ],
-  "explain": "Không cần re-deploy."
+  "explain": "Không cần re-deploy.",
+  "en": {
+   "q": "Do you need to re-deploy a chatbot after changing its dialog?",
+   "correct": "No, re-deployment is not needed",
+   "wrong": [
+    "Always re-deploy",
+    "The chatbot must be deleted",
+    "A new skill must be created"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1504,7 +2728,16 @@
    "Facebook Graph API",
    "OAuth token"
   ],
-  "explain": "Access token."
+  "explain": "Access token.",
+  "en": {
+   "q": "What is required to set up the Facebook Messenger integration?",
+   "correct": "An access token",
+   "wrong": [
+    "A developer API key",
+    "The Facebook Graph API",
+    "An OAuth token"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1515,7 +2748,16 @@
    "Tự tạo dữ liệu huấn luyện",
    "Nhập cấu hình chatbot có sẵn"
   ],
-  "explain": "Try it out = debug."
+  "explain": "Try it out = debug.",
+  "en": {
+   "q": "What is the \"Try it out\" feature used for?",
+   "correct": "Debugging the chatbot",
+   "wrong": [
+    "Deploying to a live environment",
+    "Automatically generating training data",
+    "Importing existing configurations"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1526,7 +2768,16 @@
    "API token",
    "Access key"
   ],
-  "explain": "API key."
+  "explain": "API key.",
+  "en": {
+   "q": "Which method is commonly used to authenticate Watson AI service APIs?",
+   "correct": "API key",
+   "wrong": [
+    "OAuth authentication",
+    "API token",
+    "Access key"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1537,7 +2788,16 @@
    "Cuộc gọi điện thoại, chỉ Text to Speech và Voice Agent",
    "Chỉ Text Agent with Watson"
   ],
-  "explain": "Ba cách đầy đủ."
+  "explain": "Ba cách đầy đủ.",
+  "en": {
+   "q": "What are the three approaches for a voice-based interface for Watson Assistant chatbots?",
+   "correct": "Phone calls, Speech to Text and Text to Speech APIs, and Voice Agent with Watson",
+   "wrong": [
+    "Phone calls, only Speech to Text, and Text Agent",
+    "Phone calls, only Text to Speech, and Voice Agent",
+    "Only Text Agent with Watson"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1548,7 +2808,16 @@
    "Nhúng thông tin đăng nhập CSDL vào câu trả lời",
    "Tạo một webhook riêng cho mỗi truy vấn"
   ],
-  "explain": "Endpoint URL."
+  "explain": "Endpoint URL.",
+  "en": {
+   "q": "How is a webhook configured to connect to a DB2 database?",
+   "correct": "By providing the webhook endpoint URL in the webhook settings",
+   "wrong": [
+    "By writing SQL queries directly in the webhook settings",
+    "By embedding database credentials in chatbot responses",
+    "By creating a separate webhook for each query"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1559,7 +2828,16 @@
    "JSON",
    "Hình ảnh"
   ],
-  "explain": "Giọng nói → văn bản."
+  "explain": "Giọng nói → văn bản.",
+  "en": {
+   "q": "What is the output of Watson Speech to Text?",
+   "correct": "Text",
+   "wrong": [
+    "Audio",
+    "JSON",
+    "Image"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1570,7 +2848,16 @@
    "Discovery",
    "Natural Language Understanding"
   ],
-  "explain": "Text-to-Speech."
+  "explain": "Text-to-Speech.",
+  "en": {
+   "q": "Which Watson service converts text into speech?",
+   "correct": "Text-to-Speech",
+   "wrong": [
+    "Speech-to-Text",
+    "Discovery",
+    "Natural Language Understanding"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1581,7 +2868,16 @@
    "Watson Language Translator",
    "Watson Natural Language Understanding"
   ],
-  "explain": "Discovery."
+  "explain": "Discovery.",
+  "en": {
+   "q": "Which Watson service is used for document indexing and search?",
+   "correct": "Watson Discovery",
+   "wrong": [
+    "Watson Assistant",
+    "Watson Language Translator",
+    "Watson Natural Language Understanding"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1592,7 +2888,16 @@
    "Watson Discovery",
    "Language Translator"
   ],
-  "explain": "NLU."
+  "explain": "NLU.",
+  "en": {
+   "q": "Which Watson service understands and processes textual content?",
+   "correct": "Natural Language Understanding",
+   "wrong": [
+    "Watson Assistant",
+    "Watson Discovery",
+    "Language Translator"
+   ]
+  }
  },
  {
   "ref": "7.25",
@@ -1603,7 +2908,16 @@
    "a=0.83, b=1.77, c=1.09",
    "a=0.84, b=1.78, c=1.10"
   ],
-  "explain": "Đáp án của bộ đề."
+  "explain": "Đáp án của bộ đề.",
+  "en": {
+   "q": "For the polynomial regression question about temperature by hour (questions 91 and 99), what is the correct set of coefficients according to the question bank?",
+   "correct": "a=0.83, b=1.77, c=1.07",
+   "wrong": [
+    "a=0.82, b=1.74, c=1.02",
+    "a=0.83, b=1.77, c=1.09",
+    "a=0.84, b=1.78, c=1.10"
+   ]
+  }
  },
  {
   "ref": "7.25",
@@ -1614,7 +2928,16 @@
    "a=0.09, b=1.02",
    "a=-0.15, b=0.96"
   ],
-  "explain": "Đáp án của bộ đề."
+  "explain": "Đáp án của bộ đề.",
+  "en": {
+   "q": "For the logistic regression question about temperature by hour with initial a and b of 0.8 and 1.2 (question 95), what is the answer according to the question bank?",
+   "correct": "a=0.56, b=1.14",
+   "wrong": [
+    "a=0.32, b=1.08",
+    "a=0.09, b=1.02",
+    "a=-0.15, b=0.96"
+   ]
+  }
  },
  {
   "ref": "7.25",
@@ -1625,7 +2948,16 @@
    "a=0.39, b=0.43",
    "a=0.35, b=0.41"
   ],
-  "explain": "Đáp án của bộ đề."
+  "explain": "Đáp án của bộ đề.",
+  "en": {
+   "q": "For the logistic regression question about rainfall (question 98), what is the answer according to the question bank?",
+   "correct": "a=0.46, b=0.48",
+   "wrong": [
+    "a=0.42, b=0.46",
+    "a=0.39, b=0.43",
+    "a=0.35, b=0.41"
+   ]
+  }
  },
  {
   "ref": "7.26",
@@ -1636,7 +2968,16 @@
    "Cả hai đều chỉ nhập văn bản",
    "Cả hai đều là danh sách thả xuống"
   ],
-  "explain": "Slider: một giá trị; RangeSlider: một khoảng."
+  "explain": "Slider: một giá trị; RangeSlider: một khoảng.",
+  "en": {
+   "q": "How does dcc.Slider differ from dcc.RangeSlider?",
+   "correct": "Slider selects one value; RangeSlider selects a range",
+   "wrong": [
+    "Slider selects a range; RangeSlider selects one value",
+    "Both only take text input",
+    "Both are dropdown lists"
+   ]
+  }
  },
  {
   "ref": "7.26",
@@ -1647,7 +2988,16 @@
    "Cả hai phạt theo cách giống nhau",
    "Ridge luôn đưa hệ số về 0"
   ],
-  "explain": "Ridge L2, Lasso L1."
+  "explain": "Ridge L2, Lasso L1.",
+  "en": {
+   "q": "What is the basic difference between Ridge and Lasso?",
+   "correct": "Ridge penalizes squared coefficients; Lasso penalizes absolute values and can set coefficients to zero",
+   "wrong": [
+    "Ridge penalizes absolute values; Lasso penalizes squares",
+    "Both penalize in the same way",
+    "Ridge always sets coefficients to zero"
+   ]
+  }
  },
  {
   "ref": "7.26",
@@ -1658,7 +3008,16 @@
    "Mọi độ đo dùng cho cả hai",
    "F1 cho hồi quy"
   ],
-  "explain": "Phân biệt hồi quy và phân loại."
+  "explain": "Phân biệt hồi quy và phân loại.",
+  "en": {
+   "q": "Which metrics are for regression and which are for classification?",
+   "correct": "R², RMSE and MSE for regression; Accuracy, Precision, Recall and F1 for classification",
+   "wrong": [
+    "Accuracy for regression; R² for classification",
+    "All metrics work for both",
+    "F1 for regression"
+   ]
+  }
  },
  {
   "ref": "7.26",
@@ -1669,7 +3028,16 @@
    "Không bao giờ chọn",
    "Chọn theo độ dài đáp án"
   ],
-  "explain": "Đừng chọn theo phản xạ."
+  "explain": "Đừng chọn theo phản xạ.",
+  "en": {
+   "q": "For a question with an \"All of the above\" option, what should you do?",
+   "correct": "Check each option before deciding",
+   "wrong": [
+    "Always choose \"All of the above\"",
+    "Never choose it",
+    "Choose by answer length"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -1680,7 +3048,16 @@
    "Để thiết lập quy trình thay đổi",
    "Để liên hệ trực tiếp cập nhật tiến độ"
   ],
-  "explain": "Truyền đạt kết quả là pha Share; pha Ask cần hiểu mục tiêu của stakeholder."
+  "explain": "Truyền đạt kết quả là pha Share; pha Ask cần hiểu mục tiêu của stakeholder.",
+  "en": {
+   "q": "Why are communication skills important in the first phase (Ask) of data analysis?",
+   "correct": "To identify the specific goals of the stakeholders",
+   "wrong": [
+    "To communicate results to stakeholders",
+    "To establish a process for change",
+    "For direct contact to give updates"
+   ]
+  }
  },
  {
   "ref": "7.1",
@@ -1691,7 +3068,16 @@
    "Process",
    "Analysis"
   ],
-  "explain": "Pha Ask: đặt câu hỏi và xác định vấn đề."
+  "explain": "Pha Ask: đặt câu hỏi và xác định vấn đề.",
+  "en": {
+   "q": "At which stage should an analyst define the problem?",
+   "correct": "The Ask phase",
+   "wrong": [
+    "Prepare",
+    "Process",
+    "Analysis"
+   ]
+  }
  },
  {
   "ref": "7.2",
@@ -1702,7 +3088,16 @@
    "Một tên người dùng",
    "Một quản trị viên"
   ],
-  "explain": "chmod nhận mode như 755 hoặc u+x."
+  "explain": "chmod nhận mode như 755 hoặc u+x.",
+  "en": {
+   "q": "In Linux, what must be given to the chmod command to set a specific type of permission on a file?",
+   "correct": "A mode",
+   "wrong": [
+    "An ID",
+    "A username",
+    "An administrator"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -1713,7 +3108,16 @@
    "Phải xuất (export)",
    "Phải trích xuất (extract)"
   ],
-  "explain": "import pandas as pd."
+  "explain": "import pandas as pd.",
+  "en": {
+   "q": "What must be done before using the pandas library?",
+   "correct": "It must be imported",
+   "wrong": [
+    "It must be declared",
+    "It must be exported",
+    "It must be extracted"
+   ]
+  }
  },
  {
   "ref": "7.3",
@@ -1724,7 +3128,16 @@
    "Dash",
    "Flask"
   ],
-  "explain": "Folium là bản đồ; Dash và Flask là web."
+  "explain": "Folium là bản đồ; Dash và Flask là web.",
+  "en": {
+   "q": "Which library provides a high-level interface for statistical graphics, built on Matplotlib?",
+   "correct": "Seaborn",
+   "wrong": [
+    "Folium",
+    "Dash",
+    "Flask"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -1735,7 +3148,16 @@
    "Độ lệch chuẩn",
    "Trung vị"
   ],
-  "explain": "df.groupby(...).mean()."
+  "explain": "df.groupby(...).mean().",
+  "en": {
+   "q": "What does the mean() method of a GroupBy object calculate?",
+   "correct": "The average of each group",
+   "wrong": [
+    "The mode",
+    "The standard deviation",
+    "The median"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -1746,7 +3168,16 @@
    "df.show(include=\"all\")",
    "df.show(include=\"None\")"
   ],
-  "explain": "DataFrame không có hàm show()."
+  "explain": "DataFrame không có hàm show().",
+  "en": {
+   "q": "Which method returns a summary of all columns (including categorical ones)?",
+   "correct": "df.describe(include=\"all\")",
+   "wrong": [
+    "df.describe(include=\"None\")",
+    "df.show(include=\"all\")",
+    "df.show(include=\"None\")"
+   ]
+  }
  },
  {
   "ref": "7.4",
@@ -1757,7 +3188,16 @@
    "df.type()",
    "df.totype()"
   ],
-  "explain": "df[\"col\"].astype(\"int\")."
+  "explain": "df[\"col\"].astype(\"int\").",
+  "en": {
+   "q": "Which pandas method converts a column to a specified data type?",
+   "correct": "df.astype()",
+   "wrong": [
+    "df.change_type()",
+    "df.type()",
+    "df.totype()"
+   ]
+  }
  },
  {
   "ref": "7.5",
@@ -1768,7 +3208,16 @@
    "Toàn bộ dòng bị xóa",
    "Toàn bộ cột bị xóa"
   ],
-  "explain": "mean bỏ qua giá trị thiếu: (1+2+4)/3."
+  "explain": "mean bỏ qua giá trị thiếu: (1+2+4)/3.",
+  "en": {
+   "q": "What is the result of df[\"A\"].fillna(df[\"A\"].mean()) when column A = [1, 2, None, 4]?",
+   "correct": "The missing value is replaced by approximately 2.33",
+   "wrong": [
+    "It is replaced by 0",
+    "The entire row is deleted",
+    "The entire column is deleted"
+   ]
+  }
  },
  {
   "ref": "7.6",
@@ -1779,7 +3228,16 @@
    "pandas.get_dummie(df['price'])",
    "pandas.get_dummies('price')"
   ],
-  "explain": "Hàm tên đúng là get_dummies và nhận Series/DataFrame."
+  "explain": "Hàm tên đúng là get_dummies và nhận Series/DataFrame.",
+  "en": {
+   "q": "Which line of code correctly performs one-hot encoding on the column \"price\"?",
+   "correct": "pandas.get_dummies(df['price'])",
+   "wrong": [
+    "pandas.get_dum(df['price'])",
+    "pandas.get_dummie(df['price'])",
+    "pandas.get_dummies('price')"
+   ]
+  }
  },
  {
   "ref": "7.7",
@@ -1790,7 +3248,16 @@
    "-1",
    "+vô cùng"
   ],
-  "explain": "Tương quan tuyến tính dương hoàn hảo."
+  "explain": "Tương quan tuyến tính dương hoàn hảo.",
+  "en": {
+   "q": "What is the Pearson correlation between X and Y when X = Y?",
+   "correct": "1",
+   "wrong": [
+    "0",
+    "-1",
+    "+infinity"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -1801,7 +3268,16 @@
    "Biểu diễn phân phối tần suất",
    "Tổng tích lũy theo thời gian"
   ],
-  "explain": "Bar chart so sánh giá trị, histogram là phân phối, area chart là tổng tích lũy."
+  "explain": "Bar chart so sánh giá trị, histogram là phân phối, area chart là tổng tích lũy.",
+  "en": {
+   "q": "Which description of a pie chart is correct?",
+   "correct": "A circular statistical graphic divided into slices to illustrate numerical proportion",
+   "wrong": [
+    "Compares values of a variable at a point in time",
+    "Represents the frequency distribution",
+    "Cumulated totals over time"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -1812,7 +3288,16 @@
    "Word cloud",
    "Bar chart"
   ],
-  "explain": "Stacked area xếp chồng các chuỗi."
+  "explain": "Stacked area xếp chồng các chuỗi.",
+  "en": {
+   "q": "Which visualization shows how multiple quantities change over an ordered variable while emphasizing their cumulative composition?",
+   "correct": "Stacked area plot",
+   "wrong": [
+    "Histogram",
+    "Word cloud",
+    "Bar chart"
+   ]
+  }
  },
  {
   "ref": "7.8",
@@ -1823,7 +3308,16 @@
    "Phạm vi giá trị",
    "Kiểu dữ liệu của mỗi cột"
   ],
-  "explain": "Câu cũ của bộ đề ghi: độ mạnh của tương quan."
+  "explain": "Câu cũ của bộ đề ghi: độ mạnh của tương quan.",
+  "en": {
+   "q": "In the FE Fall 2026 exam, what does the color intensity in a heatmap signify?",
+   "correct": "The magnitude of the value in each cell",
+   "wrong": [
+    "Number of variables",
+    "Range of values",
+    "Data type of each column"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -1834,7 +3328,16 @@
    "Backend, Middle, Front End",
    "Hard, Connect, Display"
   ],
-  "explain": "Scripting layer chính là pyplot."
+  "explain": "Scripting layer chính là pyplot.",
+  "en": {
+   "q": "What are the three main layers of the Matplotlib architecture?",
+   "correct": "Backend layer, Artist layer, Scripting layer",
+   "wrong": [
+    "End, Middle, Top",
+    "Backend, Middle, Front End",
+    "Hard, Connect, Display"
+   ]
+  }
  },
  {
   "ref": "7.9",
@@ -1845,7 +3348,16 @@
    "Biểu đồ cột",
    "Biểu đồ tròn"
   ],
-  "explain": "plot mặc định vẽ đường."
+  "explain": "plot mặc định vẽ đường.",
+  "en": {
+   "q": "What does plt.plot([1,2,3], [2,4,6]) create?",
+   "correct": "A line plot connecting the points",
+   "wrong": [
+    "A histogram",
+    "A bar chart",
+    "A pie chart"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -1856,7 +3368,16 @@
    "Stamen Toner, Stamen Terrain, Rectangle Bright",
    "Darker Make, Mapbox Bright, Stamen Toner"
   ],
-  "explain": "Ba kiểu tile trong khóa IBM."
+  "explain": "Ba kiểu tile trong khóa IBM.",
+  "en": {
+   "q": "What are the three tile styles of Folium maps?",
+   "correct": "Stamen Terrain, Stamen Toner, Mapbox Bright",
+   "wrong": [
+    "Makeup Style, Open Set, Mapbox Bright",
+    "Stamen Toner, Stamen Terrain, Rectangle Bright",
+    "Darker Make, Mapbox Bright, Stamen Toner"
+   ]
+  }
  },
  {
   "ref": "7.11",
@@ -1867,7 +3388,16 @@
    "Tạo bản đồ Choropleth",
    "Tạo biểu đồ cột"
   ],
-  "explain": "Map chỉ tạo bản đồ nền; marker cần folium.Marker."
+  "explain": "Map chỉ tạo bản đồ nền; marker cần folium.Marker.",
+  "en": {
+   "q": "What does folium.Map(location=[10.03, 105.78], zoom_start=12) do?",
+   "correct": "Creates a map centered at the coordinates with initial zoom level 12",
+   "wrong": [
+    "Adds a marker",
+    "Creates a Choropleth map",
+    "Creates a bar chart"
+   ]
+  }
  },
  {
   "ref": "7.12",
@@ -1878,7 +3408,16 @@
    "Bản đồ Folium",
    "Biểu đồ hồi quy của Seaborn"
   ],
-  "explain": "plotly.express.line."
+  "explain": "plotly.express.line.",
+  "en": {
+   "q": "What does px.line(df, x=\"Year\", y=\"Sales\"); fig.show() create?",
+   "correct": "A Plotly line figure showing Sales against Year",
+   "wrong": [
+    "A Matplotlib histogram",
+    "A Folium map",
+    "A Seaborn regression plot"
+   ]
+  }
  },
  {
   "ref": "7.13",
@@ -1889,7 +3428,16 @@
    "Cơ sở dữ liệu",
    "Nền tảng"
   ],
-  "explain": "Web service over HTTP."
+  "explain": "Web service over HTTP.",
+  "en": {
+   "q": "REST APIs allow applications to communicate with what kind of service over HTTP?",
+   "correct": "A web service",
+   "wrong": [
+    "An infrastructure service",
+    "A database service",
+    "A platform service"
+   ]
+  }
  },
  {
   "ref": "7.14",
@@ -1900,7 +3448,16 @@
    "Tệp CSV đính kèm",
    "Sitemap XML"
   ],
-  "explain": "BeautifulSoup parse HTML."
+  "explain": "BeautifulSoup parse HTML.",
+  "en": {
+   "q": "A data engineer uses BeautifulSoup to collect records without an API. What source is parsed?",
+   "correct": "An HTML table embedded in a Wikipedia page",
+   "wrong": [
+    "A JSON feed",
+    "A CSV attachment",
+    "An XML sitemap"
+   ]
+  }
  },
  {
   "ref": "7.16",
@@ -1911,7 +3468,16 @@
    "Tùy mô hình",
    "Không xác định được"
   ],
-  "explain": "Nhiều biến là multiple regression."
+  "explain": "Nhiều biến là multiple regression.",
+  "en": {
+   "q": "In simple linear regression, how many independent variables are used?",
+   "correct": "One",
+   "wrong": [
+    "Three",
+    "Depends on the model",
+    "Cannot be defined"
+   ]
+  }
  },
  {
   "ref": "7.17",
@@ -1922,7 +3488,16 @@
    "Hiệu năng cao tương tự trên cả hai tập",
    "Mô hình không có đặc trưng"
   ],
-  "explain": "Đáp án \"đều cao\" là underfitting."
+  "explain": "Đáp án \"đều cao\" là underfitting.",
+  "en": {
+   "q": "What is a typical indication of overfitting?",
+   "correct": "Very low training error but substantially higher testing error",
+   "wrong": [
+    "High training and testing error",
+    "Similar high performance on both sets",
+    "The model has no features"
+   ]
+  }
  },
  {
   "ref": "7.19",
@@ -1933,7 +3508,16 @@
    "Giảm ảnh hưởng của các support vector",
    "Không thay đổi"
   ],
-  "explain": "C lớn phạt lỗi nặng hơn."
+  "explain": "C lớn phạt lỗi nặng hơn.",
+  "en": {
+   "q": "What is the effect of increasing the regularization parameter C in an SVM on the decision boundary?",
+   "correct": "It tightens the decision boundary, fits the training data closely and is prone to overfitting",
+   "wrong": [
+    "It widens the margin",
+    "It decreases the influence of support vectors",
+    "It does not change"
+   ]
+  }
  },
  {
   "ref": "7.22",
@@ -1944,7 +3528,16 @@
    "Hello và Anything else",
    "Hello, else và final"
   ],
-  "explain": "Welcome (lời chào) và Anything else (không hiểu)."
+  "explain": "Welcome (lời chào) và Anything else (không hiểu).",
+  "en": {
+   "q": "When you add a dialog to your dialog skill, which nodes are added automatically?",
+   "correct": "Welcome and Anything else",
+   "wrong": [
+    "Welcome and else",
+    "Hello and Anything else",
+    "Hello, else and final"
+   ]
+  }
  },
  {
   "ref": "7.23",
@@ -1955,7 +3548,16 @@
    "Quyền riêng tư công khai, kể cả tập huấn luyện",
    "Quyền riêng tư công khai, trừ tập huấn luyện"
   ],
-  "explain": "App chế độ development chỉ cho admin và tester."
+  "explain": "App chế độ development chỉ cho admin và tester.",
+  "en": {
+   "q": "Which statement is true about deploying a chatbot on Facebook?",
+   "correct": "Unless you make the Facebook app public, you need to add testers manually to grant them access",
+   "wrong": [
+    "You must authorize hosting on a specific server",
+    "Public privacy including the training dataset",
+    "Public privacy except the training dataset"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1966,7 +3568,16 @@
    "Tạo bảng cơ sở dữ liệu",
    "Gửi tin nhắn chatbot"
   ],
-  "explain": "synthesize = tổng hợp giọng nói."
+  "explain": "synthesize = tổng hợp giọng nói.",
+  "en": {
+   "q": "What is POST /v1/synthesize in IBM Text to Speech used for?",
+   "correct": "Converting text into synthesized speech audio",
+   "wrong": [
+    "Converting speech into text",
+    "Creating a database table",
+    "Sending a chatbot message"
+   ]
+  }
  },
  {
   "ref": "7.24",
@@ -1977,6 +3588,15 @@
    "Document Query Language",
    "Discovery Query Lexer"
   ],
-  "explain": "Ngôn ngữ truy vấn của Watson Discovery."
+  "explain": "Ngôn ngữ truy vấn của Watson Discovery.",
+  "en": {
+   "q": "In Watson services, what does DQL stand for?",
+   "correct": "Discovery Query Language",
+   "wrong": [
+    "Direct Query Language",
+    "Document Query Language",
+    "Discovery Query Lexer"
+   ]
+  }
  }
 ]
