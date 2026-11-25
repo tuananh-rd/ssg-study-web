@@ -183,6 +183,8 @@ const Q = [
  ['7.26', 'Độ đo nào dành cho hồi quy, độ đo nào dành cho phân loại?', 'R², RMSE, MSE cho hồi quy; Accuracy, Precision, Recall, F1 cho phân loại', 'Accuracy cho hồi quy; R² cho phân loại', 'Mọi độ đo dùng cho cả hai', 'F1 cho hồi quy', 'Phân biệt hồi quy và phân loại.'],
  ['7.26', 'Với câu có đáp án "All of the above", nên làm gì?', 'Kiểm tra từng lựa chọn rồi mới quyết định', 'Luôn chọn "All of the above"', 'Không bao giờ chọn', 'Chọn theo độ dài đáp án', 'Đừng chọn theo phản xạ.']
 ];
+const FE26 = (await import('./dap-recall7-fe26.mjs')).default;   // câu bổ sung từ đề FE Fall 2026
+Q.push(...FE26);
 const out = Q.map(([ref, q, correct, w1, w2, w3, explain]) => ({ ref, q, correct, wrong: [w1, w2, w3], explain }));
 const bad = out.filter(x => new Set([x.correct, ...x.wrong]).size !== 4 || !x.q || x.wrong.some(w => !w));
 if (bad.length) { console.log('Câu lỗi:', bad.map(b => b.q)); process.exit(1); }

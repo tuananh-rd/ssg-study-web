@@ -1,0 +1,554 @@
+[
+ {
+  "id": 293,
+  "slide": null,
+  "topic": "Python cơ bản & NumPy",
+  "section": "Câu trung bình",
+  "question": "In Linux, what must be given to the chmod command to set a specific type of permission on a file?",
+  "options": [
+   "Assign IDs to the command",
+   "Assign a username to the command",
+   "Assign an administrator to the command",
+   "Assign a mode to the command"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "chmod nhận một \"mode\" (dạng số như 755 hoặc ký hiệu như u+x) để đặt quyền cho file.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 294,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu trung bình",
+  "question": "What is the result of: df = pd.DataFrame({'A':[1,2,None,4]}); df['A'] = df['A'].fillna(df['A'].mean())?",
+  "options": [
+   "The missing value is replaced by 2.33 approximately",
+   "Replaced by 0",
+   "The entire row is deleted",
+   "The entire column is deleted"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "mean() bỏ qua giá trị thiếu: (1+2+4)/3 = 2,33. fillna điền giá trị này vào chỗ None.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 295,
+  "slide": null,
+  "topic": "Matplotlib & Seaborn",
+  "section": "Câu ngắn",
+  "question": "Describe the 3 main layers of Matplotlib Architecture.",
+  "options": [
+   "End; Middle; Top",
+   "Backend; Middle; Front End",
+   "Hard; Connect; Display",
+   "Backend Layer; Artist Layer; Scripting Layer"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "Kiến trúc Matplotlib gồm Backend (vẽ ra thiết bị), Artist (các đối tượng đồ hoạ), Scripting (pyplot).",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 296,
+  "slide": null,
+  "topic": "Biểu đồ & trực quan hoá",
+  "section": "Câu ngắn",
+  "question": "Choose the one that best describes a Pie chart.",
+  "options": [
+   "Compare values of a variable at a point in time",
+   "Represent the frequency distribution",
+   "A circular statistical graphic divided into slices to illustrate numerical proportion",
+   "Cumulated totals over time"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "Biểu đồ tròn chia lát để thể hiện tỷ lệ. B là histogram, D là area chart.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 297,
+  "slide": null,
+  "topic": "Folium & bản đồ",
+  "section": "Câu ngắn",
+  "question": "There are three tile styles of Folium maps.",
+  "options": [
+   "Makeup Style, Open Set, Mapbox Bright",
+   "Stamen Toner, Stamen Terrain, Rectangle Bright",
+   "Stamen Terrain, Stamen Toner, Mapbox Bright",
+   "Darker Make, Mapbox Bright, Stamen Toner"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "Ba kiểu tile được giới thiệu trong khoá IBM là Stamen Toner, Stamen Terrain và Mapbox Bright.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 298,
+  "slide": null,
+  "topic": "Watson Assistant & Chatbot",
+  "section": "Câu ngắn",
+  "question": "Which statement is true about the deployment of a chatbot application?",
+  "options": [
+   "Re-deploy every time you add a new intent",
+   "Don't need to re-deploy every time you change the dialog",
+   "Delete and recreate every time you change the dialog",
+   "You don't need to re-deploy your chatbot every time you change the content within Watson Assistant"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "Chatbot đã deploy luôn đọc nội dung mới nhất trong Watson Assistant. Đáp án theo quiz IBM là D; B cũng đúng một phần nên câu này cần cân nhắc.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 299,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu ngắn",
+  "question": "What must be done before a developer can use the pandas library?",
+  "options": [
+   "Exported",
+   "Declared",
+   "It must be imported",
+   "Extracted"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "import pandas as pd.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 300,
+  "slide": null,
+  "topic": "Biểu đồ & trực quan hoá",
+  "section": "Câu trung bình",
+  "question": "Which visualization shows how multiple quantities change over an ordered variable while emphasizing their cumulative composition?",
+  "options": [
+   "Stacked area plot",
+   "Histogram",
+   "Word cloud",
+   "Bar chart"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Stacked area xếp chồng các chuỗi theo trục thời gian, thể hiện tổng tích luỹ và phần đóng góp của từng chuỗi.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 301,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu ngắn",
+  "question": "Correct line of code to perform one-hot encoding on column \"price\"?",
+  "options": [
+   "pandas.get_dum(df['price'])",
+   "pandas.get_dummie(df['price'])",
+   "pandas.get_dummies(df['price'])",
+   "pandas.get_dummies('price')"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "Hàm đúng tên là get_dummies và nhận vào Series/DataFrame, không phải chuỗi tên cột.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 302,
+  "slide": null,
+  "topic": "Matplotlib & Seaborn",
+  "section": "Câu trung bình",
+  "question": "Which library provides a high-level interface for statistical graphics, built on Matplotlib?",
+  "options": [
+   "Seaborn",
+   "Folium",
+   "Dash",
+   "Flask"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Seaborn xây trên Matplotlib. Folium là bản đồ, Dash và Flask là web.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 303,
+  "slide": null,
+  "topic": "Folium & bản đồ",
+  "section": "Câu ngắn",
+  "question": "What does m = folium.Map(location=[10.03, 105.78], zoom_start=12) do?",
+  "options": [
+   "Creates a map centered at the coordinates with initial zoom level 12",
+   "Adds a marker",
+   "Creates a Choropleth map",
+   "Creates a bar chart"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "folium.Map chỉ tạo bản đồ nền; marker cần folium.Marker.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 304,
+  "slide": null,
+  "topic": "Thống kê",
+  "section": "Câu ngắn",
+  "question": "Pearson correlation between X and Y if X = Y?",
+  "options": [
+   "0",
+   "-1",
+   "1",
+   "+infinity"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "Hai biến giống hệt nhau có tương quan tuyến tính dương hoàn hảo, r = 1.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 305,
+  "slide": null,
+  "topic": "Quy trình phân tích dữ liệu",
+  "section": "Câu ngắn",
+  "question": "Why are communication skills important in the first phase of data analysis?",
+  "options": [
+   "Direct contact for updates",
+   "Communicate results to stakeholders",
+   "Establish a process for change",
+   "To identify the specific goals that stakeholders have"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "Pha đầu là Ask: cần giao tiếp để hiểu mục tiêu của stakeholder. Trình bày kết quả (B) thuộc pha Share.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 306,
+  "slide": null,
+  "topic": "Hồi quy (Linear, Polynomial, Ridge, Lasso)",
+  "section": "Câu ngắn",
+  "question": "In simple linear regression, how many independent variables are used?",
+  "options": [
+   "One",
+   "Three",
+   "Depends on model",
+   "Cannot define"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Simple = 1 biến độc lập; nhiều biến là multiple regression.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 307,
+  "slide": null,
+  "topic": "Tối ưu mô hình (CV, GridSearch, Pipeline)",
+  "section": "Câu ngắn",
+  "question": "Typical indication of overfitting?",
+  "options": [
+   "High training and testing error",
+   "Very low training error but substantially higher testing error",
+   "Similar high performance on both",
+   "Model has no features"
+  ],
+  "answer": [
+   1
+  ],
+  "multi": false,
+  "explanation": "Overfit thì mô hình học thuộc dữ liệu train nhưng tổng quát hoá kém. A là underfitting.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 308,
+  "slide": null,
+  "topic": "Dash & Dashboard",
+  "section": "Câu ngắn",
+  "question": "What does px.line(df, x='Year', y='Sales'); fig.show() create?",
+  "options": [
+   "A Plotly line figure showing Sales against Year",
+   "Matplotlib histogram",
+   "Folium map",
+   "Seaborn regression plot"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "plotly.express.line vẽ biểu đồ đường.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 309,
+  "slide": null,
+  "topic": "Watson Assistant & Chatbot",
+  "section": "Câu trung bình",
+  "question": "When you add a dialog to your dialog skill, which nodes are added automatically?",
+  "options": [
+   "Welcome, else",
+   "Hello and anything else",
+   "Hello, else and final",
+   "Welcome and Anything else"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "Watson tự tạo node \"Welcome\" (lời chào) và \"Anything else\" (khi không hiểu câu hỏi).",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 310,
+  "slide": null,
+  "topic": "Biểu đồ & trực quan hoá",
+  "section": "Câu ngắn",
+  "question": "In a heatmap, what does color intensity signify?",
+  "options": [
+   "Number of variables",
+   "Range of values",
+   "Data type of each column",
+   "Magnitude of the value in each cell"
+  ],
+  "answer": [
+   3
+  ],
+  "multi": false,
+  "explanation": "Màu đậm/nhạt biểu diễn độ lớn giá trị của từng ô.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 311,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu ngắn",
+  "question": "What does the mean() method of a GroupBy object calculate?",
+  "options": [
+   "Average of each group",
+   "Mode",
+   "Standard deviation",
+   "Median"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "df.groupby(...).mean() tính trung bình theo từng nhóm.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 312,
+  "slide": null,
+  "topic": "Watson Assistant & Chatbot",
+  "section": "Câu ngắn",
+  "question": "What is POST /v1/synthesize in IBM Text to Speech?",
+  "options": [
+   "To convert text into synthesized speech audio",
+   "Speech into text",
+   "Create a database table",
+   "Send a chatbot message"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "\"synthesize\" = tổng hợp giọng nói từ văn bản.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 313,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu ngắn",
+  "question": "Which method returns a summary of all columns?",
+  "options": [
+   "df.describe(include=\"all\")",
+   "df.describe(include=\"None\")",
+   "df.show(include=\"all\")",
+   "df.show(include=\"None\")"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Mặc định describe() chỉ tóm tắt cột số; include=\"all\" thêm cả cột phân loại. DataFrame không có hàm show().",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 314,
+  "slide": null,
+  "topic": "Watson Assistant & Chatbot",
+  "section": "Câu ngắn",
+  "question": "True about deploying a chatbot on Facebook?",
+  "options": [
+   "Unless you make a Facebook app public, you'll need to add testers manually to grant them access",
+   "Authorize to host on a specific server",
+   "Public privacy incl. training dataset",
+   "Public privacy except training dataset"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "App Facebook ở chế độ development chỉ cho admin/tester đã thêm thủ công dùng.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 315,
+  "slide": null,
+  "topic": "Thu thập dữ liệu (API, Web scraping)",
+  "section": "Câu trung bình",
+  "question": "A data engineer uses BeautifulSoup to collect launch records without an API. What source/format is parsed?",
+  "options": [
+   "JSON feed",
+   "CSV attachment",
+   "An HTML table embedded in a Wikipedia page",
+   "XML sitemap"
+  ],
+  "answer": [
+   2
+  ],
+  "multi": false,
+  "explanation": "BeautifulSoup parse HTML; đây chính là bài lab SpaceX Falcon 9 lấy bảng từ Wikipedia.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 316,
+  "slide": null,
+  "topic": "Phân loại & đánh giá",
+  "section": "Nhiều đáp án",
+  "question": "Impact of increasing the regularization parameter C in SVM?",
+  "options": [
+   "Increases the risk of overfitting",
+   "Widens the margin",
+   "Tightens the decision boundary",
+   "Decreases the influence of support vectors"
+  ],
+  "answer": [
+   0,
+   2
+  ],
+  "multi": true,
+  "explanation": "C lớn phạt lỗi phân loại nặng hơn, nên lề hẹp lại, ranh giới bám sát dữ liệu train và dễ overfit.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 317,
+  "slide": null,
+  "topic": "Pandas & xử lý dữ liệu",
+  "section": "Câu ngắn",
+  "question": "Which pandas method converts a column to a specified data type?",
+  "options": [
+   "df.astype()",
+   "df.change_type()",
+   "df.type()",
+   "df.totype()"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Ví dụ df['col'].astype('int').",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 318,
+  "slide": null,
+  "topic": "Matplotlib & Seaborn",
+  "section": "Câu ngắn",
+  "question": "What does plt.plot([1,2,3], [2,4,6]) create?",
+  "options": [
+   "A line plot connecting the points",
+   "Histogram",
+   "Bar chart",
+   "Pie chart"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "plt.plot mặc định vẽ đường nối các điểm.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 319,
+  "slide": null,
+  "topic": "Thu thập dữ liệu (API, Web scraping)",
+  "section": "Câu ngắn",
+  "question": "REST APIs allow applications to communicate with a ___ service over HTTP.",
+  "options": [
+   "web",
+   "infrastructure",
+   "database",
+   "platform"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "REST API cho phép các ứng dụng giao tiếp với một dịch vụ web qua giao thức HTTP (GET, POST, PUT, DELETE).",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 320,
+  "slide": null,
+  "topic": "Watson Assistant & Chatbot",
+  "section": "Câu ngắn",
+  "question": "In Watson service, what does DQL stand for?",
+  "options": [
+   "Direct Query Language",
+   "Discovery Query Language",
+   "Document Query Language",
+   "Discovery Query Lexer"
+  ],
+  "answer": [
+   1
+  ],
+  "multi": false,
+  "explanation": "DQL là ngôn ngữ truy vấn của Watson Discovery.",
+  "source": "FE Fall 2026"
+ },
+ {
+  "id": 321,
+  "slide": null,
+  "topic": "Quy trình phân tích dữ liệu",
+  "section": "Câu ngắn",
+  "question": "At which stage should an analyst define the problem?",
+  "options": [
+   "The ask phase",
+   "Prepare",
+   "Process",
+   "Analysis"
+  ],
+  "answer": [
+   0
+  ],
+  "multi": false,
+  "explanation": "Giai đoạn Ask (đặt câu hỏi) là lúc xác định vấn đề và mục tiêu của dự án phân tích.",
+  "source": "FE Fall 2026"
+ }
+]

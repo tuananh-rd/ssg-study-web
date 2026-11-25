@@ -1,0 +1,263 @@
+{
+ "293": {
+  "q": "Trong Linux, cần đưa gì cho lệnh chmod để đặt một loại quyền cụ thể cho file?",
+  "options": [
+   "Gán ID cho lệnh",
+   "Gán tên người dùng cho lệnh",
+   "Gán quản trị viên cho lệnh",
+   "Gán một chế độ (mode) cho lệnh"
+  ]
+ },
+ "294": {
+  "q": "Kết quả của: df = pd.DataFrame({'A':[1,2,None,4]}); df['A'] = df['A'].fillna(df['A'].mean()) là gì?",
+  "options": [
+   "Giá trị thiếu được thay bằng khoảng 2,33",
+   "Được thay bằng 0",
+   "Toàn bộ dòng bị xóa",
+   "Toàn bộ cột bị xóa"
+  ]
+ },
+ "295": {
+  "q": "Mô tả 3 tầng chính của kiến trúc Matplotlib.",
+  "options": [
+   "End; Middle; Top",
+   "Backend; Middle; Front End",
+   "Hard; Connect; Display",
+   "Backend Layer; Artist Layer; Scripting Layer"
+  ]
+ },
+ "296": {
+  "q": "Chọn mô tả đúng nhất về biểu đồ tròn (Pie chart).",
+  "options": [
+   "So sánh giá trị của một biến tại một thời điểm",
+   "Biểu diễn phân phối tần suất",
+   "Đồ thị hình tròn chia thành các lát để minh họa tỉ lệ số liệu",
+   "Tổng tích lũy theo thời gian"
+  ]
+ },
+ "297": {
+  "q": "Có ba kiểu tile (nền bản đồ) của bản đồ Folium.",
+  "options": [
+   "Makeup Style, Open Set, Mapbox Bright",
+   "Stamen Toner, Stamen Terrain, Rectangle Bright",
+   "Stamen Terrain, Stamen Toner, Mapbox Bright",
+   "Darker Make, Mapbox Bright, Stamen Toner"
+  ]
+ },
+ "298": {
+  "q": "Phát biểu nào đúng về việc triển khai (deploy) ứng dụng chatbot?",
+  "options": [
+   "Phải triển khai lại mỗi khi thêm một intent mới",
+   "Không cần triển khai lại mỗi khi thay đổi dialog",
+   "Phải xóa và tạo lại mỗi khi thay đổi dialog",
+   "Không cần triển khai lại chatbot mỗi khi thay đổi nội dung trong Watson Assistant"
+  ]
+ },
+ "299": {
+  "q": "Cần làm gì trước khi nhà phát triển có thể dùng thư viện pandas?",
+  "options": [
+   "Xuất (exported)",
+   "Khai báo (declared)",
+   "Phải được nhập (imported)",
+   "Trích xuất (extracted)"
+  ]
+ },
+ "300": {
+  "q": "Biểu đồ nào cho thấy nhiều đại lượng thay đổi theo một biến có thứ tự, đồng thời nhấn mạnh thành phần tích lũy?",
+  "options": [
+   "Biểu đồ vùng xếp chồng (stacked area plot)",
+   "Histogram",
+   "Word cloud",
+   "Biểu đồ cột"
+  ]
+ },
+ "301": {
+  "q": "Dòng mã đúng để thực hiện one-hot encoding cho cột \"price\"?",
+  "options": [
+   "pandas.get_dum(df['price'])",
+   "pandas.get_dummie(df['price'])",
+   "pandas.get_dummies(df['price'])",
+   "pandas.get_dummies('price')"
+  ]
+ },
+ "302": {
+  "q": "Thư viện nào cung cấp giao diện cấp cao cho đồ họa thống kê, xây dựng trên Matplotlib?",
+  "options": [
+   "Seaborn",
+   "Folium",
+   "Dash",
+   "Flask"
+  ]
+ },
+ "303": {
+  "q": "m = folium.Map(location=[10.03, 105.78], zoom_start=12) làm gì?",
+  "options": [
+   "Tạo bản đồ có tâm tại tọa độ đó với mức zoom ban đầu 12",
+   "Thêm một marker",
+   "Tạo bản đồ Choropleth",
+   "Tạo biểu đồ cột"
+  ]
+ },
+ "304": {
+  "q": "Hệ số tương quan Pearson giữa X và Y nếu X = Y là bao nhiêu?",
+  "options": [
+   "0",
+   "-1",
+   "1",
+   "+vô cùng"
+  ]
+ },
+ "305": {
+  "q": "Vì sao kỹ năng giao tiếp quan trọng trong pha đầu tiên của phân tích dữ liệu?",
+  "options": [
+   "Để liên hệ trực tiếp cập nhật tiến độ",
+   "Để truyền đạt kết quả cho các bên liên quan",
+   "Để thiết lập quy trình thay đổi",
+   "Để xác định các mục tiêu cụ thể của các bên liên quan"
+  ]
+ },
+ "306": {
+  "q": "Trong hồi quy tuyến tính đơn giản (simple linear regression), dùng bao nhiêu biến độc lập?",
+  "options": [
+   "Một",
+   "Ba",
+   "Tùy mô hình",
+   "Không xác định được"
+  ]
+ },
+ "307": {
+  "q": "Dấu hiệu điển hình của overfitting là gì?",
+  "options": [
+   "Sai số huấn luyện và sai số kiểm tra đều cao",
+   "Sai số huấn luyện rất thấp nhưng sai số kiểm tra cao hơn đáng kể",
+   "Hiệu năng cao tương tự trên cả hai tập",
+   "Mô hình không có đặc trưng nào"
+  ]
+ },
+ "308": {
+  "q": "px.line(df, x='Year', y='Sales'); fig.show() tạo ra gì?",
+  "options": [
+   "Một biểu đồ đường Plotly thể hiện Sales theo Year",
+   "Histogram của Matplotlib",
+   "Bản đồ Folium",
+   "Biểu đồ hồi quy của Seaborn"
+  ]
+ },
+ "309": {
+  "q": "Khi thêm một dialog vào dialog skill, những node nào được tự động thêm?",
+  "options": [
+   "Welcome, else",
+   "Hello and anything else",
+   "Hello, else and final",
+   "Welcome and Anything else"
+  ]
+ },
+ "310": {
+  "q": "Trong heatmap, cường độ màu biểu thị điều gì?",
+  "options": [
+   "Số lượng biến",
+   "Phạm vi giá trị",
+   "Kiểu dữ liệu của mỗi cột",
+   "Độ lớn của giá trị trong mỗi ô"
+  ]
+ },
+ "311": {
+  "q": "Phương thức mean() của một đối tượng GroupBy tính gì?",
+  "options": [
+   "Trung bình của mỗi nhóm",
+   "Yếu vị (mode)",
+   "Độ lệch chuẩn",
+   "Trung vị"
+  ]
+ },
+ "312": {
+  "q": "POST /v1/synthesize trong IBM Text to Speech dùng để làm gì?",
+  "options": [
+   "Chuyển văn bản thành âm thanh giọng nói tổng hợp",
+   "Chuyển giọng nói thành văn bản",
+   "Tạo một bảng cơ sở dữ liệu",
+   "Gửi một tin nhắn chatbot"
+  ]
+ },
+ "313": {
+  "q": "Phương thức nào trả về tóm tắt của tất cả các cột?",
+  "options": [
+   "df.describe(include=\"all\")",
+   "df.describe(include=\"None\")",
+   "df.show(include=\"all\")",
+   "df.show(include=\"None\")"
+  ]
+ },
+ "314": {
+  "q": "Điều nào đúng khi triển khai chatbot trên Facebook?",
+  "options": [
+   "Trừ khi bạn công khai ứng dụng Facebook, bạn cần thêm người thử nghiệm (tester) thủ công để cấp quyền truy cập cho họ",
+   "Cấp quyền để lưu trữ trên một máy chủ cụ thể",
+   "Quyền riêng tư công khai, bao gồm cả tập dữ liệu huấn luyện",
+   "Quyền riêng tư công khai, trừ tập dữ liệu huấn luyện"
+  ]
+ },
+ "315": {
+  "q": "Một kỹ sư dữ liệu dùng BeautifulSoup để thu thập bản ghi các lần phóng tên lửa mà không có API. Nguồn hoặc định dạng nào được phân tích?",
+  "options": [
+   "Một nguồn cấp JSON",
+   "Tệp CSV đính kèm",
+   "Một bảng HTML nhúng trong trang Wikipedia",
+   "Một sitemap XML"
+  ]
+ },
+ "316": {
+  "q": "Tác động của việc tăng tham số điều chuẩn C trong SVM là gì? (Chọn 2 đáp án)",
+  "options": [
+   "Tăng nguy cơ overfitting",
+   "Mở rộng lề (margin)",
+   "Siết chặt ranh giới quyết định",
+   "Giảm ảnh hưởng của các support vector"
+  ]
+ },
+ "317": {
+  "q": "Phương thức pandas nào chuyển một cột sang kiểu dữ liệu được chỉ định?",
+  "options": [
+   "df.astype()",
+   "df.change_type()",
+   "df.type()",
+   "df.totype()"
+  ]
+ },
+ "318": {
+  "q": "plt.plot([1,2,3], [2,4,6]) tạo ra gì?",
+  "options": [
+   "Một biểu đồ đường nối các điểm",
+   "Histogram",
+   "Biểu đồ cột",
+   "Biểu đồ tròn"
+  ]
+ },
+ "319": {
+  "q": "REST API cho phép các ứng dụng giao tiếp với một dịch vụ ___ qua HTTP.",
+  "options": [
+   "web",
+   "hạ tầng",
+   "cơ sở dữ liệu",
+   "nền tảng"
+  ]
+ },
+ "320": {
+  "q": "Trong dịch vụ Watson, DQL là viết tắt của gì?",
+  "options": [
+   "Direct Query Language",
+   "Discovery Query Language",
+   "Document Query Language",
+   "Discovery Query Lexer"
+  ]
+ },
+ "321": {
+  "q": "Nhà phân tích nên xác định vấn đề ở giai đoạn nào?",
+  "options": [
+   "Giai đoạn ask",
+   "Prepare",
+   "Process",
+   "Analysis"
+  ]
+ }
+}

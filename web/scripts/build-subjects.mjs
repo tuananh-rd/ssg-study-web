@@ -43,6 +43,14 @@ const SUBJECTS = {
 const style = rd(ROOT, 'src', 'style.css'), appJs = rd(ROOT, 'src', 'app.js').replace('/*@AI@*/', () => rd(ROOT, 'src', 'ai.js'));
 const safe = s => s.replace(/<\/script/gi, '<\\/script');
 
+// Đề kì trước (làm lại nguyên đề): web/data/<môn>-past.json → D.pastExams + D.past
+function pastData(file) {
+  const fp = path.join(W, 'data', `${file}-past.json`); if (!fs.existsSync(fp)) return { pastExams: [], past: [] };
+  const d = JSON.parse(rd(fp)), ex = d.exams[0], pad = n => String(n).padStart(2, '0');
+  const past = d.items.map(it => ({ id: `p-${ex.id}-${pad(it.no)}`, exam: ex.id, no: it.no, module: d.module, ref: it.ref, type: 'past', past: true, q: it.q, correct: it.options[it.answer], wrong: it.options.filter((_, i) => i !== it.answer), orig: it.options, explain: it.explain || '', unsure: false, en: null }));
+  return { pastExams: d.exams, past };
+}
+
 // Chương lý thuyết "Tổng hợp theo bộ đề" của CPV301, sinh từ web/data/cpv-digest.json (chỉ có lý thuyết và câu ôn lý thuyết, không có câu trong bộ đề)
 function digestModule(dg, idx) {
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'), md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
@@ -60,7 +68,9 @@ function digestModule(dg, idx) {
 for (const [id, S] of Object.entries(SUBJECTS)) {
   const L = JSON.parse(rd(W, 'data', `lessons-${S.file}.json`));
   { const r = applyFormulas(S.file, L.modules); console.log('  công thức ' + S.name + ':', r.n, r.miss.length ? 'LỆCH ' + r.miss.join(', ') : ''); }
-  const bank = S.bank().map((q, i) => ({ id: q.id ?? i + 1, slide: q.slide, topic: q.topic, section: q.section || '', question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '', ...(q.img ? { img: q.img } : {}) }));
+  // câu bổ sung vào bộ đề (đề mới thêm sau): web/data/<môn>-extra.json, cùng định dạng với bộ đề
+  const extraBank = fs.existsSync(path.join(W, 'data', `${S.file}-extra.json`)) ? JSON.parse(rd(W, 'data', `${S.file}-extra.json`)) : [];
+  const bank = [...S.bank(), ...extraBank].map((q, i) => ({ id: q.id ?? i + 1, slide: q.slide, topic: q.topic, section: q.section || '', question: q.question, options: q.options, answer: q.answer, explanation: q.explanation || '', ...(q.img ? { img: q.img } : {}) }));
   { const dir = path.join(ROOT, 'sources-private', 'explain-out-' + S.file), ex = {}; let n = 0;
     if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir).filter(f => /^[a-z]+-\d+\.json$/.test(f) && !(S.file === 'cpv' && f === 'cpv-901.json'))) { try { Object.assign(ex, JSON.parse(rd(dir, f))); } catch (e) { console.log('  ! bỏ qua', f, e.message); } }
     const overrides = S.file === 'cpv' ? cpvSourceOverrides('explain-out') : {};
@@ -90,7 +100,7 @@ for (const [id, S] of Object.entries(SUBJECTS)) {
     if (S.file === 'cpv') for (const [k, v] of Object.entries(cpvSourceOverrides('translate-out'))) xl['b-' + k] = v;
     rdd('translate-recall-out-' + S.file, o => Object.assign(xl, o)); console.log('  bản dịch ' + S.name + ':', Object.keys(xl).length); }
   const subject = { id, name: S.name, title: 'Ôn thi cuối kỳ', aiField: S.aiField, key: `${id}_progress_v2`, peer: `${id}-duel-`, bankTitle: `Bộ đề ${S.name}`, slides: false };
-  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: [], pastExams: [], glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: fs.existsSync(path.join(W, 'data', `${S.file}-confuse.json`)) ? JSON.parse(rd(W, 'data', `${S.file}-confuse.json`)) : [] })};`;
+  const data = `window.DATA=${JSON.stringify({ subject, modules, questions: [], past: pastData(S.file).past, pastExams: pastData(S.file).pastExams, glossary: [], quick: [], compares: [], keyq: [], recall, bank, topicMod, xl, confuse: fs.existsSync(path.join(W, 'data', `${S.file}-confuse.json`)) ? JSON.parse(rd(W, 'data', `${S.file}-confuse.json`)) : [] })};`;
   const html = `<!doctype html>\n<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n<title>${S.name} · Ôn thi cuối kỳ</title>\n<style>\n${style}\n</style></head><body>\n<noscript>App cần bật JavaScript.</noscript>\n<script id="data">\n${safe(data)}\n</script>\n<script id="app">\n${safe(appJs)}\n</script>\n</body></html>`;
   fs.writeFileSync(path.join(W, 'data', `app-${id}.html`), html);
   const multi = bank.filter(q => q.answer.length > 1).length;

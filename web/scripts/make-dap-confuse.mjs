@@ -109,9 +109,34 @@ const G = [
    items: [[16, 'Mọi loại biểu đồ đều dùng được → All of the above'], [37, 'dropna, fillna, isnull đều xử lý được → All of the above'], [170, 'Bậc tuyến tính, bậc hai, bậc ba → All of the above'], [185, 'Xóa dòng, imputation, bỏ qua → All of the above'], [276, 'Chỉ một ý đúng (giao diện cấp cao); “All answer is correct” là bẫy'], [222, 'fit_transform(): fit và transform cùng lúc; “None of the above” là bẫy'], [177, 'Multiple linear regression; “None of the others” là bẫy'], [281, 'Dialog skill: NLP và học máy; “None of the others” là bẫy'], [278, 'Choropleth: vùng tô màu hoặc hoa văn; “None of the others” là bẫy'], [270, 'Ridge giảm đều, Lasso có thể về 0; “None of the others” là bẫy']] },
 ];
 
+// Các câu thêm từ đề FE Fall 2026 (id 293–321 trong bộ đề), xếp vào nhóm tương ứng
+const ADD = {
+  chart: [[296, 'Đồ thị hình tròn chia lát thể hiện tỉ lệ → Pie chart'], [300, 'Nhiều đại lượng theo trục có thứ tự, nhấn mạnh tích lũy → Stacked area plot'], [310, 'Heatmap (đề FE): màu = độ lớn giá trị của mỗi ô']],
+  folmap: [[297, 'Ba kiểu tile: Stamen Toner, Stamen Terrain, Mapbox Bright'], [303, 'folium.Map(location, zoom_start): bản đồ nền có tâm và mức zoom, không thêm marker']],
+  wa2: [[298, 'Đổi nội dung trong Watson Assistant: không cần triển khai lại (đề FE)'], [314, 'Facebook chưa công khai: phải thêm tester thủ công']],
+  wa1: [[309, 'Node tự động thêm: Welcome và Anything else']],
+  wa3: [[312, 'POST /v1/synthesize: văn bản → giọng nói'], [320, 'DQL = Discovery Query Language']],
+  calc: [[294, 'fillna(mean) của [1, 2, None, 4] → 2.33']],
+  encode: [[301, 'get_dummies (đúng tên), truyền Series/DataFrame']],
+  look: [[311, 'groupby().mean(): trung bình từng nhóm'], [313, 'describe(include="all"): tóm tắt mọi cột'], [317, 'astype(): đổi kiểu dữ liệu cột']],
+  py: [[293, 'Linux chmod nhận một mode'], [299, 'Phải import pandas trước khi dùng']],
+  mpl: [[295, '3 tầng Matplotlib: Backend, Artist, Scripting'], [318, 'plt.plot([1,2,3],[2,4,6]): đường nối các điểm']],
+  libs: [[302, 'Giao diện cấp cao cho đồ họa thống kê, trên Matplotlib → Seaborn']],
+  stats: [[304, 'X = Y → Pearson r = 1']],
+  linreg: [[306, 'Simple linear regression: một biến độc lập']],
+  poly: [[307, 'Overfitting: lỗi huấn luyện rất thấp, lỗi kiểm tra cao']],
+  tree: [[316, 'C tăng: ranh giới siết chặt và dễ overfit (chọn 2)']],
+  proc: [[305, 'Giao tiếp ở pha Ask để xác định mục tiêu của các bên liên quan'], [321, 'Xác định vấn đề ở pha Ask']],
+  scrape: [[315, 'BeautifulSoup parse bảng HTML nhúng trong trang Wikipedia']],
+  http: [[319, 'REST API giao tiếp với dịch vụ web qua HTTP']],
+  dashfw: [[308, 'px.line: biểu đồ đường Plotly']],
+};
+for (const g of G) if (ADD[g.id]) g.items.push(...ADD[g.id]);
+
 // kiểm tra
 const t = fs.readFileSync(path.join(W, 'data', 'dap-data.js'), 'utf8'), bank = JSON.parse(t.match(/window\.QUESTIONS\s*=\s*([\s\S]*?);\s*$/)[1]);
-const ids = new Set(bank.map((x, i) => x.id ?? i + 1));
+const extraBank = JSON.parse(fs.readFileSync(path.join(W, 'data', 'dap-extra.json'), 'utf8'));
+const ids = new Set([...bank, ...extraBank].map((x, i) => x.id ?? i + 1));
 const used = new Map(); let bad = 0, nItems = 0;
 for (const g of G) for (const [n, note] of g.items) {
   nItems++;

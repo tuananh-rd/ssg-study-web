@@ -2666,7 +2666,7 @@ var EXAMQ=D.questions.length?D.questions:BANK.filter(function(q){return q.answer
 // Kiến thức key: quiz viết tay ôn các ý bắt buộc phải nhớ
 var KEYQ=(D.keyq||[]).map(function(k,i){return {id:'k-'+String(i+1).padStart(3,'0'),module:modOfRef(k.ref),ref:k.ref,type:'key',q:k.q,correct:k.correct,wrong:k.wrong,explain:k.explain,tip:k.tip};});
 function keyOf(m){return KEYQ.filter(function(q){return !m||q.module===m;});}
-var QMAP={};ALLQ.concat(RECALL,BANK,KEYQ).forEach(function(q){QMAP[q.id]=q;});
+var QMAP={};ALLQ.concat(RECALL,BANK,KEYQ,D.past||[]).forEach(function(q){QMAP[q.id]=q;});
 // Nhóm câu hỏi dễ nhầm đáp án (chỉ môn có D.confuse, hiện là CPV301): mỗi câu thuộc đúng một nhóm
 var CNOTE={},CGRP={};
 var CONF=(D.confuse||[]).map(function(g){var its=g.items.map(function(x){return {id:'b-'+x[0],note:x[1]};}).filter(function(x){return QMAP[x.id];});

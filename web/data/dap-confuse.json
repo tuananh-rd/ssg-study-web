@@ -92,6 +92,10 @@
    [
     264,
     "add_trace(): thêm nhiều trace vào một biểu đồ"
+   ],
+   [
+    308,
+    "px.line: biểu đồ đường Plotly"
    ]
   ]
  },
@@ -141,6 +145,10 @@
    [
     125,
     "Folium tạo bản đồ (Maps)"
+   ],
+   [
+    302,
+    "Giao diện cấp cao cho đồ họa thống kê, trên Matplotlib → Seaborn"
    ]
   ]
  },
@@ -222,6 +230,14 @@
    [
     224,
     "subplot(): nhiều biểu đồ trong một hình"
+   ],
+   [
+    295,
+    "3 tầng Matplotlib: Backend, Artist, Scripting"
+   ],
+   [
+    318,
+    "plt.plot([1,2,3],[2,4,6]): đường nối các điểm"
    ]
   ]
  },
@@ -395,6 +411,18 @@
    [
     277,
     "Tổng tích lũy → Area chart"
+   ],
+   [
+    296,
+    "Đồ thị hình tròn chia lát thể hiện tỉ lệ → Pie chart"
+   ],
+   [
+    300,
+    "Nhiều đại lượng theo trục có thứ tự, nhấn mạnh tích lũy → Stacked area plot"
+   ],
+   [
+    310,
+    "Heatmap (đề FE): màu = độ lớn giá trị của mỗi ô"
    ]
   ]
  },
@@ -468,6 +496,14 @@
    [
     143,
     "Tham số chỉ định dữ liệu trong Choropleth (theo bộ đề): value"
+   ],
+   [
+    297,
+    "Ba kiểu tile: Stamen Toner, Stamen Terrain, Mapbox Bright"
+   ],
+   [
+    303,
+    "folium.Map(location, zoom_start): bản đồ nền có tâm và mức zoom, không thêm marker"
    ]
   ]
  },
@@ -553,6 +589,18 @@
    [
     178,
     "Nhóm có số lượng lớn nhất: Asia"
+   ],
+   [
+    311,
+    "groupby().mean(): trung bình từng nhóm"
+   ],
+   [
+    313,
+    "describe(include=\"all\"): tóm tắt mọi cột"
+   ],
+   [
+    317,
+    "astype(): đổi kiểu dữ liệu cột"
    ]
   ]
  },
@@ -647,6 +695,10 @@
    [
     58,
     "str.replace(r\"[^\\w\\s]\", \"\"): bỏ dấu câu (bộ đề: bỏ dấu phẩy)"
+   ],
+   [
+    301,
+    "get_dummies (đúng tên), truyền Series/DataFrame"
    ]
   ]
  },
@@ -717,6 +769,10 @@
    [
     102,
     "Gini 80/20 = 0.32"
+   ],
+   [
+    294,
+    "fillna(mean) của [1, 2, None, 4] → 2.33"
    ]
   ]
  },
@@ -758,6 +814,10 @@
    [
     285,
     "Chi-square p = 0.001: có liên quan, nam và nữ có thể chọn khác nhau"
+   ],
+   [
+    304,
+    "X = Y → Pearson r = 1"
    ]
   ]
  },
@@ -853,6 +913,10 @@
    [
     248,
     "Hệ số của Size² → ảnh hưởng phi tuyến"
+   ],
+   [
+    307,
+    "Overfitting: lỗi huấn luyện rất thấp, lỗi kiểm tra cao"
    ]
   ]
  },
@@ -907,6 +971,10 @@
    [
     220,
     "Residual plot: hiệu giữa quan sát và dự đoán"
+   ],
+   [
+    306,
+    "Simple linear regression: một biến độc lập"
    ]
   ]
  },
@@ -999,6 +1067,10 @@
    [
     263,
     "Best C = 0.01 → dữ liệu đơn giản, C nhỏ"
+   ],
+   [
+    316,
+    "C tăng: ranh giới siết chặt và dễ overfit (chọn 2)"
    ]
   ]
  },
@@ -1188,6 +1260,10 @@
    [
     260,
     "Slots: thu thập thông tin từ câu nhập"
+   ],
+   [
+    309,
+    "Node tự động thêm: Welcome và Anything else"
    ]
   ]
  },
@@ -1243,6 +1319,14 @@
    [
     287,
     "Giao diện giọng nói: Phone + Speech to Text và Text to Speech + Voice Agent"
+   ],
+   [
+    298,
+    "Đổi nội dung trong Watson Assistant: không cần triển khai lại (đề FE)"
+   ],
+   [
+    314,
+    "Facebook chưa công khai: phải thêm tester thủ công"
    ]
   ]
  },
@@ -1285,6 +1369,14 @@
    [
     137,
     "Xây chatbot → Watson Assistant"
+   ],
+   [
+    312,
+    "POST /v1/synthesize: văn bản → giọng nói"
+   ],
+   [
+    320,
+    "DQL = Discovery Query Language"
    ]
   ]
  },
@@ -1331,6 +1423,10 @@
    [
     175,
     "requests: xử lý HTTP request và response"
+   ],
+   [
+    319,
+    "REST API giao tiếp với dịch vụ web qua HTTP"
    ]
   ]
  },
@@ -1368,6 +1464,10 @@
    [
     63,
     "Chọn đúng thẻ, class và chỉ số phần tử khi find_all"
+   ],
+   [
+    315,
+    "BeautifulSoup parse bảng HTML nhúng trong trang Wikipedia"
    ]
   ]
  },
@@ -1432,6 +1532,14 @@
    [
     246,
     "Trung bình và nhỏ nhất: grades.mean(), min()"
+   ],
+   [
+    293,
+    "Linux chmod nhận một mode"
+   ],
+   [
+    299,
+    "Phải import pandas trước khi dùng"
    ]
   ]
  },
@@ -1478,6 +1586,14 @@
    [
     187,
     "Model deployment không phải bước tiền xử lý"
+   ],
+   [
+    305,
+    "Giao tiếp ở pha Ask để xác định mục tiêu của các bên liên quan"
+   ],
+   [
+    321,
+    "Xác định vấn đề ở pha Ask"
    ]
   ]
  },

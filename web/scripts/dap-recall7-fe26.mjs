@@ -1,0 +1,32 @@
+// Câu ôn lý thuyết bổ sung từ đề FE Fall 2026 cho chương m7 của DAP391m (được make-dap-recall7.mjs nạp thêm).
+// Mỗi câu: [mục, câu hỏi, đáp án đúng, sai 1, sai 2, sai 3, giải thích]
+export default [
+ ['7.1', 'Vì sao kỹ năng giao tiếp quan trọng trong pha đầu tiên (Ask) của phân tích dữ liệu?', 'Để xác định các mục tiêu cụ thể của các bên liên quan', 'Để truyền đạt kết quả cho các bên liên quan', 'Để thiết lập quy trình thay đổi', 'Để liên hệ trực tiếp cập nhật tiến độ', 'Truyền đạt kết quả là pha Share; pha Ask cần hiểu mục tiêu của stakeholder.'],
+ ['7.1', 'Nhà phân tích nên xác định vấn đề ở giai đoạn nào?', 'Giai đoạn Ask', 'Prepare', 'Process', 'Analysis', 'Pha Ask: đặt câu hỏi và xác định vấn đề.'],
+ ['7.2', 'Trong Linux, cần đưa gì cho lệnh chmod để đặt một loại quyền cụ thể cho file?', 'Một chế độ (mode)', 'Một ID', 'Một tên người dùng', 'Một quản trị viên', 'chmod nhận mode như 755 hoặc u+x.'],
+ ['7.3', 'Cần làm gì trước khi dùng thư viện pandas?', 'Phải nhập (import) thư viện', 'Phải khai báo (declare)', 'Phải xuất (export)', 'Phải trích xuất (extract)', 'import pandas as pd.'],
+ ['7.3', 'Thư viện nào cung cấp giao diện cấp cao cho đồ họa thống kê, xây dựng trên Matplotlib?', 'Seaborn', 'Folium', 'Dash', 'Flask', 'Folium là bản đồ; Dash và Flask là web.'],
+ ['7.4', 'Phương thức mean() của đối tượng GroupBy tính gì?', 'Trung bình của mỗi nhóm', 'Yếu vị (mode)', 'Độ lệch chuẩn', 'Trung vị', 'df.groupby(...).mean().'],
+ ['7.4', 'Phương thức nào trả về tóm tắt của tất cả các cột (kể cả cột phân loại)?', 'df.describe(include="all")', 'df.describe(include="None")', 'df.show(include="all")', 'df.show(include="None")', 'DataFrame không có hàm show().'],
+ ['7.4', 'Phương thức pandas nào chuyển một cột sang kiểu dữ liệu chỉ định?', 'df.astype()', 'df.change_type()', 'df.type()', 'df.totype()', 'df["col"].astype("int").'],
+ ['7.5', 'Kết quả của df["A"].fillna(df["A"].mean()) với cột A = [1, 2, None, 4] là gì?', 'Giá trị thiếu được thay bằng khoảng 2.33', 'Được thay bằng 0', 'Toàn bộ dòng bị xóa', 'Toàn bộ cột bị xóa', 'mean bỏ qua giá trị thiếu: (1+2+4)/3.'],
+ ['7.6', 'Dòng mã đúng để one-hot encoding cột "price" là gì?', "pandas.get_dummies(df['price'])", "pandas.get_dum(df['price'])", "pandas.get_dummie(df['price'])", "pandas.get_dummies('price')", 'Hàm tên đúng là get_dummies và nhận Series/DataFrame.'],
+ ['7.7', 'Hệ số tương quan Pearson giữa X và Y khi X = Y là bao nhiêu?', '1', '0', '-1', '+vô cùng', 'Tương quan tuyến tính dương hoàn hảo.'],
+ ['7.8', 'Mô tả nào đúng về biểu đồ tròn (pie chart)?', 'Đồ thị hình tròn chia thành các lát để minh họa tỉ lệ số liệu', 'So sánh giá trị của một biến tại một thời điểm', 'Biểu diễn phân phối tần suất', 'Tổng tích lũy theo thời gian', 'Bar chart so sánh giá trị, histogram là phân phối, area chart là tổng tích lũy.'],
+ ['7.8', 'Biểu đồ nào cho thấy nhiều đại lượng thay đổi theo biến có thứ tự và nhấn mạnh thành phần tích lũy?', 'Stacked area plot', 'Histogram', 'Word cloud', 'Bar chart', 'Stacked area xếp chồng các chuỗi.'],
+ ['7.8', 'Trong đề FE Fall 2026, cường độ màu trong heatmap biểu thị điều gì?', 'Độ lớn của giá trị trong mỗi ô', 'Số lượng biến', 'Phạm vi giá trị', 'Kiểu dữ liệu của mỗi cột', 'Câu cũ của bộ đề ghi: độ mạnh của tương quan.'],
+ ['7.9', 'Ba tầng chính của kiến trúc Matplotlib là gì?', 'Backend layer, Artist layer, Scripting layer', 'End, Middle, Top', 'Backend, Middle, Front End', 'Hard, Connect, Display', 'Scripting layer chính là pyplot.'],
+ ['7.9', 'plt.plot([1,2,3], [2,4,6]) tạo ra gì?', 'Biểu đồ đường nối các điểm', 'Histogram', 'Biểu đồ cột', 'Biểu đồ tròn', 'plot mặc định vẽ đường.'],
+ ['7.11', 'Ba kiểu tile của bản đồ Folium là gì?', 'Stamen Terrain, Stamen Toner, Mapbox Bright', 'Makeup Style, Open Set, Mapbox Bright', 'Stamen Toner, Stamen Terrain, Rectangle Bright', 'Darker Make, Mapbox Bright, Stamen Toner', 'Ba kiểu tile trong khóa IBM.'],
+ ['7.11', 'folium.Map(location=[10.03, 105.78], zoom_start=12) làm gì?', 'Tạo bản đồ có tâm tại tọa độ với mức zoom ban đầu 12', 'Thêm một marker', 'Tạo bản đồ Choropleth', 'Tạo biểu đồ cột', 'Map chỉ tạo bản đồ nền; marker cần folium.Marker.'],
+ ['7.12', 'px.line(df, x="Year", y="Sales"); fig.show() tạo ra gì?', 'Một biểu đồ đường Plotly thể hiện Sales theo Year', 'Histogram của Matplotlib', 'Bản đồ Folium', 'Biểu đồ hồi quy của Seaborn', 'plotly.express.line.'],
+ ['7.13', 'REST API cho phép các ứng dụng giao tiếp với loại dịch vụ nào qua HTTP?', 'Dịch vụ web', 'Hạ tầng', 'Cơ sở dữ liệu', 'Nền tảng', 'Web service over HTTP.'],
+ ['7.14', 'Kỹ sư dùng BeautifulSoup thu thập bản ghi mà không có API, nguồn được phân tích là gì?', 'Bảng HTML nhúng trong trang Wikipedia', 'Nguồn cấp JSON', 'Tệp CSV đính kèm', 'Sitemap XML', 'BeautifulSoup parse HTML.'],
+ ['7.16', 'Trong simple linear regression dùng bao nhiêu biến độc lập?', 'Một', 'Ba', 'Tùy mô hình', 'Không xác định được', 'Nhiều biến là multiple regression.'],
+ ['7.17', 'Dấu hiệu điển hình của overfitting là gì?', 'Sai số huấn luyện rất thấp nhưng sai số kiểm tra cao hơn đáng kể', 'Sai số huấn luyện và kiểm tra đều cao', 'Hiệu năng cao tương tự trên cả hai tập', 'Mô hình không có đặc trưng', 'Đáp án "đều cao" là underfitting.'],
+ ['7.19', 'Tăng tham số điều chuẩn C trong SVM thì ranh giới quyết định thế nào?', 'Siết chặt hơn, bám sát dữ liệu huấn luyện, dễ overfit', 'Mở rộng lề', 'Giảm ảnh hưởng của các support vector', 'Không thay đổi', 'C lớn phạt lỗi nặng hơn.'],
+ ['7.22', 'Khi thêm dialog vào dialog skill, những node nào được tự động thêm?', 'Welcome và Anything else', 'Welcome và else', 'Hello và Anything else', 'Hello, else và final', 'Welcome (lời chào) và Anything else (không hiểu).'],
+ ['7.23', 'Điều nào đúng khi triển khai chatbot trên Facebook?', 'Nếu chưa công khai app Facebook thì phải thêm tester thủ công để họ truy cập', 'Cấp quyền lưu trữ trên một máy chủ cụ thể', 'Quyền riêng tư công khai, kể cả tập huấn luyện', 'Quyền riêng tư công khai, trừ tập huấn luyện', 'App chế độ development chỉ cho admin và tester.'],
+ ['7.24', 'POST /v1/synthesize trong IBM Text to Speech dùng để làm gì?', 'Chuyển văn bản thành âm thanh giọng nói tổng hợp', 'Chuyển giọng nói thành văn bản', 'Tạo bảng cơ sở dữ liệu', 'Gửi tin nhắn chatbot', 'synthesize = tổng hợp giọng nói.'],
+ ['7.24', 'DQL trong dịch vụ Watson là viết tắt của gì?', 'Discovery Query Language', 'Direct Query Language', 'Document Query Language', 'Discovery Query Lexer', 'Ngôn ngữ truy vấn của Watson Discovery.']
+];

@@ -1670,5 +1670,313 @@
    "Chọn theo độ dài đáp án"
   ],
   "explain": "Đừng chọn theo phản xạ."
+ },
+ {
+  "ref": "7.1",
+  "q": "Vì sao kỹ năng giao tiếp quan trọng trong pha đầu tiên (Ask) của phân tích dữ liệu?",
+  "correct": "Để xác định các mục tiêu cụ thể của các bên liên quan",
+  "wrong": [
+   "Để truyền đạt kết quả cho các bên liên quan",
+   "Để thiết lập quy trình thay đổi",
+   "Để liên hệ trực tiếp cập nhật tiến độ"
+  ],
+  "explain": "Truyền đạt kết quả là pha Share; pha Ask cần hiểu mục tiêu của stakeholder."
+ },
+ {
+  "ref": "7.1",
+  "q": "Nhà phân tích nên xác định vấn đề ở giai đoạn nào?",
+  "correct": "Giai đoạn Ask",
+  "wrong": [
+   "Prepare",
+   "Process",
+   "Analysis"
+  ],
+  "explain": "Pha Ask: đặt câu hỏi và xác định vấn đề."
+ },
+ {
+  "ref": "7.2",
+  "q": "Trong Linux, cần đưa gì cho lệnh chmod để đặt một loại quyền cụ thể cho file?",
+  "correct": "Một chế độ (mode)",
+  "wrong": [
+   "Một ID",
+   "Một tên người dùng",
+   "Một quản trị viên"
+  ],
+  "explain": "chmod nhận mode như 755 hoặc u+x."
+ },
+ {
+  "ref": "7.3",
+  "q": "Cần làm gì trước khi dùng thư viện pandas?",
+  "correct": "Phải nhập (import) thư viện",
+  "wrong": [
+   "Phải khai báo (declare)",
+   "Phải xuất (export)",
+   "Phải trích xuất (extract)"
+  ],
+  "explain": "import pandas as pd."
+ },
+ {
+  "ref": "7.3",
+  "q": "Thư viện nào cung cấp giao diện cấp cao cho đồ họa thống kê, xây dựng trên Matplotlib?",
+  "correct": "Seaborn",
+  "wrong": [
+   "Folium",
+   "Dash",
+   "Flask"
+  ],
+  "explain": "Folium là bản đồ; Dash và Flask là web."
+ },
+ {
+  "ref": "7.4",
+  "q": "Phương thức mean() của đối tượng GroupBy tính gì?",
+  "correct": "Trung bình của mỗi nhóm",
+  "wrong": [
+   "Yếu vị (mode)",
+   "Độ lệch chuẩn",
+   "Trung vị"
+  ],
+  "explain": "df.groupby(...).mean()."
+ },
+ {
+  "ref": "7.4",
+  "q": "Phương thức nào trả về tóm tắt của tất cả các cột (kể cả cột phân loại)?",
+  "correct": "df.describe(include=\"all\")",
+  "wrong": [
+   "df.describe(include=\"None\")",
+   "df.show(include=\"all\")",
+   "df.show(include=\"None\")"
+  ],
+  "explain": "DataFrame không có hàm show()."
+ },
+ {
+  "ref": "7.4",
+  "q": "Phương thức pandas nào chuyển một cột sang kiểu dữ liệu chỉ định?",
+  "correct": "df.astype()",
+  "wrong": [
+   "df.change_type()",
+   "df.type()",
+   "df.totype()"
+  ],
+  "explain": "df[\"col\"].astype(\"int\")."
+ },
+ {
+  "ref": "7.5",
+  "q": "Kết quả của df[\"A\"].fillna(df[\"A\"].mean()) với cột A = [1, 2, None, 4] là gì?",
+  "correct": "Giá trị thiếu được thay bằng khoảng 2.33",
+  "wrong": [
+   "Được thay bằng 0",
+   "Toàn bộ dòng bị xóa",
+   "Toàn bộ cột bị xóa"
+  ],
+  "explain": "mean bỏ qua giá trị thiếu: (1+2+4)/3."
+ },
+ {
+  "ref": "7.6",
+  "q": "Dòng mã đúng để one-hot encoding cột \"price\" là gì?",
+  "correct": "pandas.get_dummies(df['price'])",
+  "wrong": [
+   "pandas.get_dum(df['price'])",
+   "pandas.get_dummie(df['price'])",
+   "pandas.get_dummies('price')"
+  ],
+  "explain": "Hàm tên đúng là get_dummies và nhận Series/DataFrame."
+ },
+ {
+  "ref": "7.7",
+  "q": "Hệ số tương quan Pearson giữa X và Y khi X = Y là bao nhiêu?",
+  "correct": "1",
+  "wrong": [
+   "0",
+   "-1",
+   "+vô cùng"
+  ],
+  "explain": "Tương quan tuyến tính dương hoàn hảo."
+ },
+ {
+  "ref": "7.8",
+  "q": "Mô tả nào đúng về biểu đồ tròn (pie chart)?",
+  "correct": "Đồ thị hình tròn chia thành các lát để minh họa tỉ lệ số liệu",
+  "wrong": [
+   "So sánh giá trị của một biến tại một thời điểm",
+   "Biểu diễn phân phối tần suất",
+   "Tổng tích lũy theo thời gian"
+  ],
+  "explain": "Bar chart so sánh giá trị, histogram là phân phối, area chart là tổng tích lũy."
+ },
+ {
+  "ref": "7.8",
+  "q": "Biểu đồ nào cho thấy nhiều đại lượng thay đổi theo biến có thứ tự và nhấn mạnh thành phần tích lũy?",
+  "correct": "Stacked area plot",
+  "wrong": [
+   "Histogram",
+   "Word cloud",
+   "Bar chart"
+  ],
+  "explain": "Stacked area xếp chồng các chuỗi."
+ },
+ {
+  "ref": "7.8",
+  "q": "Trong đề FE Fall 2026, cường độ màu trong heatmap biểu thị điều gì?",
+  "correct": "Độ lớn của giá trị trong mỗi ô",
+  "wrong": [
+   "Số lượng biến",
+   "Phạm vi giá trị",
+   "Kiểu dữ liệu của mỗi cột"
+  ],
+  "explain": "Câu cũ của bộ đề ghi: độ mạnh của tương quan."
+ },
+ {
+  "ref": "7.9",
+  "q": "Ba tầng chính của kiến trúc Matplotlib là gì?",
+  "correct": "Backend layer, Artist layer, Scripting layer",
+  "wrong": [
+   "End, Middle, Top",
+   "Backend, Middle, Front End",
+   "Hard, Connect, Display"
+  ],
+  "explain": "Scripting layer chính là pyplot."
+ },
+ {
+  "ref": "7.9",
+  "q": "plt.plot([1,2,3], [2,4,6]) tạo ra gì?",
+  "correct": "Biểu đồ đường nối các điểm",
+  "wrong": [
+   "Histogram",
+   "Biểu đồ cột",
+   "Biểu đồ tròn"
+  ],
+  "explain": "plot mặc định vẽ đường."
+ },
+ {
+  "ref": "7.11",
+  "q": "Ba kiểu tile của bản đồ Folium là gì?",
+  "correct": "Stamen Terrain, Stamen Toner, Mapbox Bright",
+  "wrong": [
+   "Makeup Style, Open Set, Mapbox Bright",
+   "Stamen Toner, Stamen Terrain, Rectangle Bright",
+   "Darker Make, Mapbox Bright, Stamen Toner"
+  ],
+  "explain": "Ba kiểu tile trong khóa IBM."
+ },
+ {
+  "ref": "7.11",
+  "q": "folium.Map(location=[10.03, 105.78], zoom_start=12) làm gì?",
+  "correct": "Tạo bản đồ có tâm tại tọa độ với mức zoom ban đầu 12",
+  "wrong": [
+   "Thêm một marker",
+   "Tạo bản đồ Choropleth",
+   "Tạo biểu đồ cột"
+  ],
+  "explain": "Map chỉ tạo bản đồ nền; marker cần folium.Marker."
+ },
+ {
+  "ref": "7.12",
+  "q": "px.line(df, x=\"Year\", y=\"Sales\"); fig.show() tạo ra gì?",
+  "correct": "Một biểu đồ đường Plotly thể hiện Sales theo Year",
+  "wrong": [
+   "Histogram của Matplotlib",
+   "Bản đồ Folium",
+   "Biểu đồ hồi quy của Seaborn"
+  ],
+  "explain": "plotly.express.line."
+ },
+ {
+  "ref": "7.13",
+  "q": "REST API cho phép các ứng dụng giao tiếp với loại dịch vụ nào qua HTTP?",
+  "correct": "Dịch vụ web",
+  "wrong": [
+   "Hạ tầng",
+   "Cơ sở dữ liệu",
+   "Nền tảng"
+  ],
+  "explain": "Web service over HTTP."
+ },
+ {
+  "ref": "7.14",
+  "q": "Kỹ sư dùng BeautifulSoup thu thập bản ghi mà không có API, nguồn được phân tích là gì?",
+  "correct": "Bảng HTML nhúng trong trang Wikipedia",
+  "wrong": [
+   "Nguồn cấp JSON",
+   "Tệp CSV đính kèm",
+   "Sitemap XML"
+  ],
+  "explain": "BeautifulSoup parse HTML."
+ },
+ {
+  "ref": "7.16",
+  "q": "Trong simple linear regression dùng bao nhiêu biến độc lập?",
+  "correct": "Một",
+  "wrong": [
+   "Ba",
+   "Tùy mô hình",
+   "Không xác định được"
+  ],
+  "explain": "Nhiều biến là multiple regression."
+ },
+ {
+  "ref": "7.17",
+  "q": "Dấu hiệu điển hình của overfitting là gì?",
+  "correct": "Sai số huấn luyện rất thấp nhưng sai số kiểm tra cao hơn đáng kể",
+  "wrong": [
+   "Sai số huấn luyện và kiểm tra đều cao",
+   "Hiệu năng cao tương tự trên cả hai tập",
+   "Mô hình không có đặc trưng"
+  ],
+  "explain": "Đáp án \"đều cao\" là underfitting."
+ },
+ {
+  "ref": "7.19",
+  "q": "Tăng tham số điều chuẩn C trong SVM thì ranh giới quyết định thế nào?",
+  "correct": "Siết chặt hơn, bám sát dữ liệu huấn luyện, dễ overfit",
+  "wrong": [
+   "Mở rộng lề",
+   "Giảm ảnh hưởng của các support vector",
+   "Không thay đổi"
+  ],
+  "explain": "C lớn phạt lỗi nặng hơn."
+ },
+ {
+  "ref": "7.22",
+  "q": "Khi thêm dialog vào dialog skill, những node nào được tự động thêm?",
+  "correct": "Welcome và Anything else",
+  "wrong": [
+   "Welcome và else",
+   "Hello và Anything else",
+   "Hello, else và final"
+  ],
+  "explain": "Welcome (lời chào) và Anything else (không hiểu)."
+ },
+ {
+  "ref": "7.23",
+  "q": "Điều nào đúng khi triển khai chatbot trên Facebook?",
+  "correct": "Nếu chưa công khai app Facebook thì phải thêm tester thủ công để họ truy cập",
+  "wrong": [
+   "Cấp quyền lưu trữ trên một máy chủ cụ thể",
+   "Quyền riêng tư công khai, kể cả tập huấn luyện",
+   "Quyền riêng tư công khai, trừ tập huấn luyện"
+  ],
+  "explain": "App chế độ development chỉ cho admin và tester."
+ },
+ {
+  "ref": "7.24",
+  "q": "POST /v1/synthesize trong IBM Text to Speech dùng để làm gì?",
+  "correct": "Chuyển văn bản thành âm thanh giọng nói tổng hợp",
+  "wrong": [
+   "Chuyển giọng nói thành văn bản",
+   "Tạo bảng cơ sở dữ liệu",
+   "Gửi tin nhắn chatbot"
+  ],
+  "explain": "synthesize = tổng hợp giọng nói."
+ },
+ {
+  "ref": "7.24",
+  "q": "DQL trong dịch vụ Watson là viết tắt của gì?",
+  "correct": "Discovery Query Language",
+  "wrong": [
+   "Direct Query Language",
+   "Document Query Language",
+   "Discovery Query Lexer"
+  ],
+  "explain": "Ngôn ngữ truy vấn của Watson Discovery."
  }
 ]

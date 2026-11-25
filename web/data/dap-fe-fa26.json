@@ -1,0 +1,703 @@
+[
+ {
+  "no": 1,
+  "q": "In Linux, what must be given to the chmod command to set a specific type of permission on a file?",
+  "options": [
+   "Assign IDs to the command",
+   "Assign a username to the command",
+   "Assign an administrator to the command",
+   "Assign a mode to the command"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "chmod nhận một \"mode\" (dạng số như 755 hoặc ký hiệu như u+x) để đặt quyền cho file."
+ },
+ {
+  "no": 2,
+  "q": "What is the result of: df = pd.DataFrame({'A':[1,2,None,4]}); df['A'] = df['A'].fillna(df['A'].mean())?",
+  "options": [
+   "The missing value is replaced by 2.33 approximately",
+   "Replaced by 0",
+   "The entire row is deleted",
+   "The entire column is deleted"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "mean() bỏ qua giá trị thiếu: (1+2+4)/3 = 2,33. fillna điền giá trị này vào chỗ None."
+ },
+ {
+  "no": 3,
+  "q": "Describe the 3 main layers of Matplotlib Architecture.",
+  "options": [
+   "End; Middle; Top",
+   "Backend; Middle; Front End",
+   "Hard; Connect; Display",
+   "Backend Layer; Artist Layer; Scripting Layer"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "Kiến trúc Matplotlib gồm Backend (vẽ ra thiết bị), Artist (các đối tượng đồ hoạ), Scripting (pyplot)."
+ },
+ {
+  "no": 4,
+  "q": "Choose the one that best describes a Pie chart.",
+  "options": [
+   "Compare values of a variable at a point in time",
+   "Represent the frequency distribution",
+   "A circular statistical graphic divided into slices to illustrate numerical proportion",
+   "Cumulated totals over time"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Biểu đồ tròn chia lát để thể hiện tỷ lệ. B là histogram, D là area chart."
+ },
+ {
+  "no": 5,
+  "q": "There are three tile styles of Folium maps.",
+  "options": [
+   "Makeup Style, Open Set, Mapbox Bright",
+   "Stamen Toner, Stamen Terrain, Rectangle Bright",
+   "Stamen Terrain, Stamen Toner, Mapbox Bright",
+   "Darker Make, Mapbox Bright, Stamen Toner"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Ba kiểu tile được giới thiệu trong khoá IBM là Stamen Toner, Stamen Terrain và Mapbox Bright."
+ },
+ {
+  "no": 6,
+  "q": "Which statement is true about the deployment of a chatbot application?",
+  "options": [
+   "Re-deploy every time you add a new intent",
+   "Don't need to re-deploy every time you change the dialog",
+   "Delete and recreate every time you change the dialog",
+   "You don't need to re-deploy your chatbot every time you change the content within Watson Assistant"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "Chatbot đã deploy luôn đọc nội dung mới nhất trong Watson Assistant. Đáp án theo quiz IBM là D; B cũng đúng một phần nên câu này cần cân nhắc."
+ },
+ {
+  "no": 7,
+  "q": "What must be done before a developer can use the pandas library?",
+  "options": [
+   "Exported",
+   "Declared",
+   "It must be imported",
+   "Extracted"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "import pandas as pd."
+ },
+ {
+  "no": 8,
+  "q": "Which visualization shows how multiple quantities change over an ordered variable while emphasizing their cumulative composition?",
+  "options": [
+   "Stacked area plot",
+   "Histogram",
+   "Word cloud",
+   "Bar chart"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Stacked area xếp chồng các chuỗi theo trục thời gian, thể hiện tổng tích luỹ và phần đóng góp của từng chuỗi."
+ },
+ {
+  "no": 9,
+  "q": "Correct line of code to perform one-hot encoding on column \"price\"?",
+  "options": [
+   "pandas.get_dum(df['price'])",
+   "pandas.get_dummie(df['price'])",
+   "pandas.get_dummies(df['price'])",
+   "pandas.get_dummies('price')"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Hàm đúng tên là get_dummies và nhận vào Series/DataFrame, không phải chuỗi tên cột."
+ },
+ {
+  "no": 10,
+  "q": "Which library provides a high-level interface for statistical graphics, built on Matplotlib?",
+  "options": [
+   "Seaborn",
+   "Folium",
+   "Dash",
+   "Flask"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Seaborn xây trên Matplotlib. Folium là bản đồ, Dash và Flask là web."
+ },
+ {
+  "no": 11,
+  "q": "What does m = folium.Map(location=[10.03, 105.78], zoom_start=12) do?",
+  "options": [
+   "Creates a map centered at the coordinates with initial zoom level 12",
+   "Adds a marker",
+   "Creates a Choropleth map",
+   "Creates a bar chart"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "folium.Map chỉ tạo bản đồ nền; marker cần folium.Marker."
+ },
+ {
+  "no": 12,
+  "q": "Pearson correlation between X and Y if X = Y?",
+  "options": [
+   "0",
+   "-1",
+   "1",
+   "+infinity"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Hai biến giống hệt nhau có tương quan tuyến tính dương hoàn hảo, r = 1."
+ },
+ {
+  "no": 13,
+  "q": "Why are communication skills important in the first phase of data analysis?",
+  "options": [
+   "Direct contact for updates",
+   "Communicate results to stakeholders",
+   "Establish a process for change",
+   "To identify the specific goals that stakeholders have"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "Pha đầu là Ask: cần giao tiếp để hiểu mục tiêu của stakeholder. Trình bày kết quả (B) thuộc pha Share."
+ },
+ {
+  "no": 14,
+  "q": "(df['len'] - df['len'].mean()) / df['len'].std() is an example of?",
+  "options": [
+   "z-score",
+   "t-score",
+   "m-score",
+   "r-score"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "z = (x − μ) / σ."
+ },
+ {
+  "no": 15,
+  "q": "In simple linear regression, how many independent variables are used?",
+  "options": [
+   "One",
+   "Three",
+   "Depends on model",
+   "Cannot define"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Simple = 1 biến độc lập; nhiều biến là multiple regression."
+ },
+ {
+  "no": 16,
+  "q": "Typical indication of overfitting?",
+  "options": [
+   "High training and testing error",
+   "Very low training error but substantially higher testing error",
+   "Similar high performance on both",
+   "Model has no features"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "Overfit thì mô hình học thuộc dữ liệu train nhưng tổng quát hoá kém. A là underfitting."
+ },
+ {
+  "no": 17,
+  "q": "Effects of a process change are mostly unfavorable. Where should the focus on rectifying lie?",
+  "options": [
+   "The individual effects",
+   "The root cause of the effects",
+   "Stakeholders involved",
+   "The original project manager"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "Sửa tận gốc nguyên nhân thay vì từng triệu chứng."
+ },
+ {
+  "no": 18,
+  "q": "What does px.line(df, x='Year', y='Sales'); fig.show() create?",
+  "options": [
+   "A Plotly line figure showing Sales against Year",
+   "Matplotlib histogram",
+   "Folium map",
+   "Seaborn regression plot"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "plotly.express.line vẽ biểu đồ đường."
+ },
+ {
+  "no": 19,
+  "q": "In Watson Assistant, what is an Intent?",
+  "options": [
+   "Intents are purposes or goals expressed in a customer's input",
+   "Container for conversation flow artifacts",
+   "A Watson NLP service",
+   "A collection of questions"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Intent là mục đích của người dùng. B mô tả dialog skill."
+ },
+ {
+  "no": 20,
+  "q": "When you add a dialog to your dialog skill, which nodes are added automatically?",
+  "options": [
+   "Welcome, else",
+   "Hello and anything else",
+   "Hello, else and final",
+   "Welcome and Anything else"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "Watson tự tạo node \"Welcome\" (lời chào) và \"Anything else\" (khi không hiểu câu hỏi)."
+ },
+ {
+  "no": 21,
+  "q": "In a heatmap, what does color intensity signify?",
+  "options": [
+   "Number of variables",
+   "Range of values",
+   "Data type of each column",
+   "Magnitude of the value in each cell"
+  ],
+  "answer": [
+   3
+  ],
+  "exp": "Màu đậm/nhạt biểu diễn độ lớn giá trị của từng ô."
+ },
+ {
+  "no": 22,
+  "q": "When is Log Transformation often applied for normalization?",
+  "options": [
+   "When data has a skewed distribution",
+   "Linear distribution",
+   "Normal distribution",
+   "Missing values"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Log nén các giá trị lớn, giảm độ lệch (thường lệch phải)."
+ },
+ {
+  "no": 23,
+  "q": "Which metric is commonly used for a regression model in TensorFlow?",
+  "options": [
+   "Accuracy",
+   "Mean Squared Error (MSE)",
+   "Precision",
+   "F1 Score"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "Accuracy, Precision, F1 là metric phân loại."
+ },
+ {
+  "no": 24,
+  "q": "What does the mean() method of a GroupBy object calculate?",
+  "options": [
+   "Average of each group",
+   "Mode",
+   "Standard deviation",
+   "Median"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "df.groupby(...).mean() tính trung bình theo từng nhóm."
+ },
+ {
+  "no": 25,
+  "q": "A project missed several deadlines; a new leader comes in. First step?",
+  "options": [
+   "Perform a root cause analysis",
+   "Assess individual performance by interviews",
+   "Evaluate platform efficiency",
+   "Make a pie chart for a new timeline"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Phải tìm nguyên nhân gốc trước khi sửa."
+ },
+ {
+  "no": 26,
+  "q": "Three approaches for a voice-based interface for Watson Assistant chatbots?",
+  "options": [
+   "Phone calls, STT APIs and Text Agent",
+   "Phone calls, TTS APIs and Voice Agent",
+   "Phone calls, Watson Speech to Text – Text to Speech APIs and Voice Agent with Watson",
+   "Phone calls, STT–TTS APIs and Text Agent"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Giao diện giọng nói cần cả STT lẫn TTS, và dịch vụ là Voice Agent (không phải Text Agent)."
+ },
+ {
+  "no": 27,
+  "q": "What is POST /v1/synthesize in IBM Text to Speech?",
+  "options": [
+   "To convert text into synthesized speech audio",
+   "Speech into text",
+   "Create a database table",
+   "Send a chatbot message"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "\"synthesize\" = tổng hợp giọng nói từ văn bản."
+ },
+ {
+  "no": 28,
+  "q": "Which method returns a summary of all columns?",
+  "options": [
+   "df.describe(include=\"all\")",
+   "df.describe(include=\"None\")",
+   "df.show(include=\"all\")",
+   "df.show(include=\"None\")"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Mặc định describe() chỉ tóm tắt cột số; include=\"all\" thêm cả cột phân loại. DataFrame không có hàm show()."
+ },
+ {
+  "no": 29,
+  "q": "What should be investigated for remediation when a process change error occurs?",
+  "options": [
+   "Source cause",
+   "Stakeholders involved",
+   "Purpose",
+   "Original intent"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Cùng ý với câu 17 và 25: tìm nguyên nhân gốc."
+ },
+ {
+  "no": 30,
+  "q": "Key advantage of integrating a chatbot with multiple platforms (Facebook, Slack)?",
+  "options": [
+   "Enhanced data security",
+   "Centralized conversation history",
+   "Improved user engagement across different channels",
+   "Streamlined API authentication"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "Có mặt trên nhiều kênh giúp tiếp cận và tương tác với nhiều người dùng hơn."
+ },
+ {
+  "no": 31,
+  "q": "In web scraping, what does \"HTML parsing\" refer to?",
+  "options": [
+   "Identifying and extracting specific elements from a webpage",
+   "Converting HTML to plain text",
+   "Analyzing a website's database",
+   "Scraping API endpoints"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Parse HTML là phân tích cây thẻ để lấy đúng phần tử cần (vd. BeautifulSoup)."
+ },
+ {
+  "no": 32,
+  "q": "Which library makes HTTP requests to web pages and APIs?",
+  "options": [
+   "BeautifulSoup",
+   "Scrapy",
+   "Requests",
+   "Selenium"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "requests.get()/post() gửi HTTP. BeautifulSoup chỉ parse HTML."
+ },
+ {
+  "no": 33,
+  "q": "Best metric for regression model evaluation?",
+  "options": [
+   "Accuracy",
+   "RMSE",
+   "Precision",
+   "Recall"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "RMSE đo sai số giá trị liên tục; các đáp án khác dành cho phân loại."
+ },
+ {
+  "no": 34,
+  "q": "True about deploying a chatbot on Facebook?",
+  "options": [
+   "Unless you make a Facebook app public, you'll need to add testers manually to grant them access",
+   "Authorize to host on a specific server",
+   "Public privacy incl. training dataset",
+   "Public privacy except training dataset"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "App Facebook ở chế độ development chỉ cho admin/tester đã thêm thủ công dùng."
+ },
+ {
+  "no": 35,
+  "q": "How does TensorFlow help optimize model training?",
+  "options": [
+   "Automatically adjusting learning rates",
+   "Providing pre-trained models",
+   "By implementing various optimization algorithms",
+   "Reducing number of layers"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "TensorFlow cung cấp sẵn các optimizer như SGD, Adam, RMSprop."
+ },
+ {
+  "no": 36,
+  "q": "A data engineer uses BeautifulSoup to collect launch records without an API. What source/format is parsed?",
+  "options": [
+   "JSON feed",
+   "CSV attachment",
+   "An HTML table embedded in a Wikipedia page",
+   "XML sitemap"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "BeautifulSoup parse HTML; đây chính là bài lab SpaceX Falcon 9 lấy bảng từ Wikipedia."
+ },
+ {
+  "no": 37,
+  "q": "Impact of increasing the regularization parameter C in SVM?",
+  "options": [
+   "Increases the risk of overfitting",
+   "Widens the margin",
+   "Tightens the decision boundary",
+   "Decreases the influence of support vectors"
+  ],
+  "answer": [
+   0,
+   2
+  ],
+  "exp": "C lớn phạt lỗi phân loại nặng hơn, nên lề hẹp lại, ranh giới bám sát dữ liệu train và dễ overfit."
+ },
+ {
+  "no": 38,
+  "q": "Activation function commonly used in hidden layers of a CNN?",
+  "options": [
+   "ReLU",
+   "Sigmoid",
+   "Tanh",
+   "Softmax"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "ReLU tính nhanh và giảm vanishing gradient. Softmax dùng ở lớp đầu ra."
+ },
+ {
+  "no": 39,
+  "q": "Which pandas method converts a column to a specified data type?",
+  "options": [
+   "df.astype()",
+   "df.change_type()",
+   "df.type()",
+   "df.totype()"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Ví dụ df['col'].astype('int')."
+ },
+ {
+  "no": 40,
+  "q": "If the predicted function is y = b0 + b1x1 + b2x2 + b3x3 + b4x4, the method is?",
+  "options": [
+   "Multiple linear regression",
+   "Non-linear regression",
+   "Simple linear regression",
+   "None"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Nhiều biến độc lập, quan hệ tuyến tính."
+ },
+ {
+  "no": 41,
+  "q": "What does plt.plot([1,2,3], [2,4,6]) create?",
+  "options": [
+   "A line plot connecting the points",
+   "Histogram",
+   "Bar chart",
+   "Pie chart"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "plt.plot mặc định vẽ đường nối các điểm."
+ },
+ {
+  "no": 42,
+  "q": "REST APIs allow applications to communicate with a ___ service over HTTP.",
+  "options": [
+   "web",
+   "infrastructure",
+   "database",
+   "platform"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": ""
+ },
+ {
+  "no": 43,
+  "q": "In Watson service, what does DQL stand for?",
+  "options": [
+   "Direct Query Language",
+   "Discovery Query Language",
+   "Document Query Language",
+   "Discovery Query Lexer"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "DQL là ngôn ngữ truy vấn của Watson Discovery."
+ },
+ {
+  "no": 44,
+  "q": "What is the first phase in data analysis?",
+  "options": [
+   "Ask",
+   "Act",
+   "Prepare",
+   "Process"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Quy trình 6 bước (Google): Ask → Prepare → Process → Analyze → Share → Act."
+ },
+ {
+  "no": 45,
+  "q": "At which stage should an analyst define the problem?",
+  "options": [
+   "The ask phase",
+   "Prepare",
+   "Process",
+   "Analysis"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": ""
+ },
+ {
+  "no": 46,
+  "q": "Which state does an analyst compare with the ideal state to determine what data needs to be captured?",
+  "options": [
+   "Relative",
+   "Sick",
+   "Current",
+   "Absolute"
+  ],
+  "answer": [
+   2
+  ],
+  "exp": "So sánh trạng thái hiện tại với trạng thái lý tưởng để thấy khoảng cách (gap analysis)."
+ },
+ {
+  "no": 47,
+  "q": "What does a box plot primarily show?",
+  "options": [
+   "Data distribution",
+   "Individual points",
+   "Mean and std",
+   "Correlation"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Box plot thể hiện trung vị, tứ phân vị, khoảng biến thiên và ngoại lai, tức là phân phối dữ liệu."
+ },
+ {
+  "no": 48,
+  "q": "Which Matplotlib function creates a line plot with multiple lines on the same axes?",
+  "options": [
+   "plt.plot()",
+   "plt.bar()",
+   "plt.scatter()",
+   "plt.stackplot()"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "Gọi plt.plot nhiều lần (hoặc truyền nhiều cặp x, y) trên cùng một axes."
+ },
+ {
+  "no": 49,
+  "q": "Primary use of Choropleth() in Folium?",
+  "options": [
+   "Scatter plots",
+   "Displaying geographical data with colors on maps",
+   "Pie charts",
+   "Line plots"
+  ],
+  "answer": [
+   1
+  ],
+  "exp": "Choropleth tô màu từng vùng theo giá trị dữ liệu."
+ },
+ {
+  "no": 50,
+  "q": "Which Matplotlib module provides a MATLAB-like plotting interface?",
+  "options": [
+   "matplotlib.pyplot",
+   "matplotlib.figure",
+   "matplotlib.axis",
+   "matplotlib.plot"
+  ],
+  "answer": [
+   0
+  ],
+  "exp": "pyplot chính là scripting layer, mô phỏng cách vẽ của MATLAB."
+ }
+]
